@@ -2,15 +2,20 @@
 
 <section xml:id="sec-DayOne" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> First Day Introduction </title>
-
+<introduction>
+    <p> A review of terminology to understand statistics. </p>
+  </introduction>
 
 <objectives>
         <introduction>
-          <p>
-            At the end of this section you will able to:
-          </p>
+        <p> At the end of this section you will able to:  </p>
+         <ol>
+          <li> <p> Identify the cases and variables in a data set.</p> </li>
+          <li> <p> Distinguish between a sample and a poplulation. </p> </li>
+          <li> <p> Classify variables as qualitative or quantitative. </p> </li>
+          </ol>   
         </introduction>
-        </objectives>
+</objectives>
 <p> You may ask yourself, what is statistics? <term>Statistics </term> is the science of conducting studies to collect, organize, analyze and interpret data. </p>
 <p>We are going to use an investigative approach to learning about statistics. We will look at different ways of collecting data (such as with surveys and questionnaires). We will organize the data with graphs and tables so we can see what the data tells us at a glance. We will describe the data with numerical summaries (known as statistics) and word descriptions.  Later in the semester we will look at other ways to analyze data, such as finding intervals to predict a typical value and compare whether the sample is similar or different from previously known values. We will also investigate if there is an association between varibles. </p>
   
