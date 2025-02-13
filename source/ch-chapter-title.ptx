@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+  <title>Introduction to Statistics</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> A review of terminology to understand statistics. </p>
   </introduction>
-
+<objectives>
+        <introduction>
+          <p> At the end of this section you will able to: </p>
+            <ol>
+          <li> <p> Identify the cases and variables in a data set.</p> </li>
+          <li> <p> Distinguish between a sample and a poplulation. </p> </li>
+          <li> <p> Classify variables as qualitative or quantitative. </p> </li>
+            </ol>
+        </introduction>
+</objectives>
   <!-- include sections -->
+  <xi:include href="sec-DayOne.ptx" />
+  <xi:include href="sec-DayTwo.ptx" />
+  <xi:include href="sec-DayThree.ptx"/> 
   <xi:include href="sec-section-name.ptx" />
 
 </chapter>

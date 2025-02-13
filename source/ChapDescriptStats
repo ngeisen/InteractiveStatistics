@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ChapDescriptStats" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+  <title>Descriptive Statistics </title>
 
   <introduction>
-    <p> Text before the first section. </p>
-  </introduction>
+        <p> In this chapter we will investigate multiple ways to describe the data with graphs and numerical statistics. </p>
+      </introduction> 
 
+      <objectives>
+        <introduction>
+          <p>
+            At the end of this section you will able to:
+          </p>
+        </introduction>
+        <ol>
+          <li>
+            <p> Describe the shape of the data distribution. </p> </li>
+            <li> <p> Describe the center of the data with mean, median, mode. </p>
+          </li>
+          <li> <p> Describe the spread of a data set with range, interquartile-range, and standard deviation. </p> </li>
+        </ol>
+      </objectives>
 
+<xi:include href="sec-CatData" />
+<xi:include href="sec-QuantData" />
+<xi:include href="sec-QuantStats" />
+<xi:include href="sec-GraphStatkey.ptx" />
   </chapter>

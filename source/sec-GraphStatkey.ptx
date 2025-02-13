@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-GraphStatky" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Using StatKey</title>
+
+    <p>  </p> 
+        <objective> <term> Graphing One Categorical Variable </term> </objective>
+
+        <p> How to graph students eye color with StatKey. </p>
+        <p> Open a web browser and copy <url href="http://www.lock5stat.com/StatKey/" /> </p>
+        <p> Download the csv file <c> Lab 1 Data.csv </c> posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors. </p>
+        <p> Under the <em> Descriptive Statistics and Graph </em> column on the left, choose the <em> One Categorical Variable </em>. </p>
+
+
+
+    <p> Click on the <c> Upload File  </c> button and locate the data file on your computer. </p> 
+    <p>  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below. </p>
+     
+<objective> <term>Interpreting Bar Graphs</term> </objective>
+<p> From the bar graph we can see that most students have brown eyes and green eyes occur the least often. </p>
+<p> From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class. </p>
+ 
+<p> Using the graph above, which of the following statements are correct? Select all that apply. </p>
+
+<exercise label="some-matching">
+    <title> Interpreting information from a graph </title>
+    <statement>
+    <p>
+        Using the graph above, select all true statements that apply to the eye color graph.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p>
+            Brown eyes occur most often for these students.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            This is represented by the tallest bar.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+            Blue eyes occurred 22.2%
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Take the frequency count and divide by the sample size for the percentage.
+        </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p>
+            The sample size is 54 students.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Look at the total from the frequency table.
+        </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p>
+            The distribution is right skewed.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            We do not discuss distribution shape with categorical data.
+        </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
+
+
+   </section>     

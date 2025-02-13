@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>STAT 250 Statistical Analysis </title>
+    <subtitle>Interactive Statistics</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
@@ -15,7 +15,7 @@
     <xi:include href="./ch-chapter-title.ptx" />
     <xi:include href="ChapDescriptStats" />
     <xi:include href="ChapProb" />
-<xi:include href="ChapDistributions" />
+    <xi:include href="ChapDistributions" />
 
 
     <!-- Include backmatter -->
