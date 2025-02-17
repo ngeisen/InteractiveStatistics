@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-DayOne" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title> First Day Introduction </title>
+    <title> Introduction </title>
 <introduction>
     <p> A review of terminology to understand statistics. </p>
   </introduction>
@@ -26,19 +26,210 @@
 <li> <p> <term> Data </term> are the values or measurements the variables assume. </p> </li>
 
 <p> <em>For example </em>, what are the majors for the students in your class? The major is the variable since there are multiple responses from the students (such as math major, history major, education, nursing, biology major). Other variables you can ask students in your class are their grade level (freshman, sophomore, junior, senior) and the number of credit hours taken this semester.
-If we asked the students (case) in class, there will be lots of different majors (data). </p>
+If we asked the students (each student is a case) in class, there will be lots of different answers for the majors (thus the data). </p>
+<p>      </p> 
+  <p> <em> Checkpoint: </em> Dr. Steve Mackessy has been researching snake venom. Suppose he collects data from a sample of 5 snakes. He measures the length and weight of each snake, identifies the species of snake, and the amount of myotoxin A from its venom, if applicable. Identify the cases and variables in this scenario. </p>
+    <p>     </p> 
+<exercise label="Snake-matching">
+    <title> Identify the cases </title>
+    <statement>
+    <p>
+        Which of the following are the cases in this scenario? Select all statements that apply.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> The five snakes. </p>
+        </statement>
+        <feedback>
+        <p>
+            Yes, each snake is a case.
+        </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> The length and weight of the snakes.  </p>
+        </statement>
+        <feedback>
+        <p> The length and weight are variables.  </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p> The amount of myotoxin A. </p>
+        </statement>
+        <feedback>
+        <p> amount of myotoxin A is a variable. </p>
+        </feedback>
+    </choice>
+    
+    </choices>
+</exercise>
+<p>     </p> 
+  <exercise label="Snake2-matching">
+    <title> Identify the variables </title>
+    <statement>
+    <p> Which of the following are the variables in this scenario? Select all statements that apply.  </p>
+    </statement>
+    <choices randomize="yes">
+    <choice >
+        <statement>
+        <p> The snakes. </p>
+        </statement>
+        <feedback>
+        <p>  No, each snake is a case.  </p>
+        </feedback>
+    </choice>
+    <choice correct="yes" >
+        <statement>
+        <p> The length and weight of the snakes.  </p>
+        </statement>
+        <feedback>
+        <p> Yes, the length and weight are variables.  </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p> The amount of myotoxin A. </p>
+        </statement>
+        <feedback>
+        <p> Yes, the amount of myotoxin A is a variable. </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p> The name of the species. </p>
+        </statement>
+        <feedback>
+        <p> Yes, species is a variable since some may be rattlesnakes and some could be bull snakes. </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
 
 <p> There are two key terms we use to distinguish the groups we collect data from: </p>
 <li> <p> The <term> population </term> is the set of all subjects in the study. </p> </li>
 <li> <p> A <term> sample </term> is a group or subset of subjects selected from the population. </p> </li>
 <p> If we asked ALL residents of the state of Colorado where they were born, then the Colorado residents would be the population. But if we asked just some people from a single city in the state of Colorado, they would a sample from the state. </p>
 
+<p> <em> Checkpoint: </em> At the Denver Zoo, every animal gets a yearly checkup. The new veterinarian selects 20 female animals to determine if they are pregnant in the spring. </p> 
+<p>     </p> 
+<exercise label="Pop-matching">
+    <title> Identify the population </title>
+    <statement>
+    <p> What is the population?  </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> Every animal at the Denver Zoo. </p>
+        </statement>
+        <feedback>
+        <p>  Yes, every animal makes the population.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> The 20 female animals.  </p>
+        </statement>
+        <feedback>
+        <p> No, the 20 female animals is the sample.  </p>
+        </feedback>
+    </choice>
+   </choices>
+</exercise>
+
+
+
 <p>There are two main branches of statistics that we are interested in. </p>
 <p>In <term>descriptive statistics </term> the statistician tries to describe a situation.  It consists of collecting, organizing, summarizing and presenting the data. </p>
 <p> While with <term> inferential statistics </term> the statisticians make inferences from samples to make predictions about the population.  It consists of generalizing data from samples, performing estimations and hypothesis testing, determining relationships among variables, and making predictions. </p>
+<p> <em> Example:</em> According to the Center for Disease Control and Prevention (CDC) for the week January 9, 2021, there were 25,974 deaths in the United States attributed to COVID. This is descriptive since it is stating the total deaths. </p
+>
+<p> <em>Example:</em> According to a 2023 Pew Research Center study, approximately 32% of Americans have at least one tattoo. This is inferential since the since they are assuming what is true for the population from a sample study. </p> 
+<p>     </p> 
+    <p> Identify if each situation is descriptive or inferential statistics: </p>
+        <p>     </p> 
+<exercise label="Infer-matching">
+    <title> Identify if descriptive or inferential statistic </title>
+    <statement>
+    <p> It is estimated that about 9% of the people in the United States have green eyes.
+  </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> inferential statistic. </p>
+        </statement>
+        <feedback>
+        <p>  Yes, they used a sample to predict the population proportion.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> descriptive statistic.  </p>
+        </statement>
+        <feedback>
+        <p> Since they are estimating, its inferential. It is unlikey they asked every US citizen their eye color.
+         </p>
+        </feedback>
+    </choice>
+   </choices>
+</exercise>
 
-<p> Identify if each situation is descriptive or inferential statistics: </p>
+<exercise label="Desc2-matching">
+    <title> Identify if descriptive or inferential statistic </title>
+    <statement>
+    <p> There are 125 women in the US House of Representatives in 2025.   </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> descriptive statistic. </p>
+        </statement>
+        <feedback>
+        <p> Yes, its a descriptive statistsic.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> inferential statistics.  </p>
+        </statement>
+        <feedback>
+        <p> This is descriptive since it is summarizing the actual count.  </p>
+        </feedback>
+    </choice>
+   </choices>
+</exercise>
 
+
+<exercise label="Desc-matching">
+    <title> Identify if descriptive or inferential statistic </title>
+    <statement>
+    <p> In 2025, 26% of the United States Senators are women.   </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> descriptive statistic. </p>
+        </statement>
+        <feedback>
+        <p>  Yes, since 26 of the 100 senators are women, its descriptive.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> inferential statistics.  </p>
+        </statement>
+        <feedback>
+        <p> Since 26 of the 100 senators are women, its descriptive.  </p>
+        </feedback>
+    </choice>
+   </choices>
+</exercise>
 
 
 <p>  There are two main types of data we will be working with: </p>
