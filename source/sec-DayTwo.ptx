@@ -14,13 +14,14 @@
         </introduction>
     </objectives>
 
-<p> Recall that the <term> population </term> is the set of all subjects in the study, while a <term> sample </term> is a group or subset selected from the population. We are going to simulate several sampling methods using Gettysburg’s Address as the population. </p>
-<p> Our goal is to estimate the average length of words in Abraham Lincoln’s Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln’s Gettysburg Address is given below.  </p> 
+<p> Recall that the <term> population </term> is the set of all subjects for the study, while a <term> sample </term> is a group or subset selected from the population. We are going to simulate several sampling methods using Gettysburg’s Address as the population. </p>
+
+<p> President Abraham Lincoln delivered one of the most famous speeches in United States history at the dedication of the Gettysburg National Cemetery on November 19, 1863. After the featured speaker spoke for two hours, Lincoln delivered his 269-word message in approximately two minutes. Our goal is to estimate the average word length in Abraham Lincoln’s Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln’s Gettysburg Address is given below.  </p> 
 <p> Step 1: Your task is to select a sample of 10 words to estimate the average length of words in his speech.  Pick words that appear to be representative of the population of all the words.  If you print the address, you can circle the ten words you choose. </p>
  <p> Step 2: Find the lengths (number of letters) for each of the 10 words you selected. </p> 
  <p> Step 3: Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average. </p>  
 
-<p> The image below is a class distribution of the average number of letters for the Gettysburg Address. We can see the values range from 3 to 8 with the center around 5.5,  thus this will be our predicted value for the typical word length. But it turns out, we are often biased in the words we select. Some students selected bigger words to be representative. Did you notice how many two and three letter words there were? Were you bias?? </p>
+<p> The image below is a class distribution of the average number of letters per word for the Gettysburg Address. We can see the values range from 3 to 8 with the center around 5.5,  thus this will be our predicted value for the typical word length. But it turns out, we are often biased in the words we select. Some students selected bigger words to be representative. Did you notice how many two and three letter words there were? Were you bias?? </p>
 
 
 
@@ -37,13 +38,57 @@
 
 
 
-<p> Lets look at some common sampling methods in statistics. </p>
+<p> Let's look at some common sampling methods in statistics. </p>
 <p> <term> Simple Random Sample </term> is a method in which every element in the population has an equal chance of being selected for the sample.  It’s like putting all the names of the students in class in a hat and randomly drawing ten names. </p>
 <p> <term> Systematic Sampling </term> is a method that useful when the population is already ordered in some way and every kth item is selected. While standing in line at a game, every 10th person gets a 10% off coupon. There is a system in how the sample is collected. </p>
 <p> <term>Stratified Sampling </term> occurs when the population is divided into natural groups or strata. People are randomly polled in each group and the number of people polled in each group is determined by the ratio of the group to size of the total population. When sampling for how students study, the sample should consist of some freshman, sophomore, juniors, and seniors. If there are twice as many freshman as seniors, then the sample would also have twice as many freshman. </p>
 <p> <term>Cluster Sampling</term>  is a method that randomly selects a naturally occurring group or cluster and <em> all </em> in that cluster are selected. This is common in education where all of one class is selected to participate in the study.  It is helpful to think of a cluster of grapes: you take the whole cluster rather than just grabbing a couple of grapes. </p>
 <p> <term> Convenience Sampling </term>  occurs when a group of subjects are convenient to sample. Around election time, people stand outside grocery stores to gather easy sample of people. </p>
 
-
+<p> <em> Exercise: </em> Identify the type of sampling method described for each scenario: </p>  
+   <exercise label="Sample-matching">
+    <title>Sampling Methods Matching Problem</title>
+    <statement>
+    <p> Match the type of sampling method described with the appropriate scenario. Drag the sampling method name to the description.  </p>
+    </statement>
+    <matches>
+    <match>
+        <premise>
+        Systematic Sampling 
+        </premise>
+        <response>
+Alfred is conducting a survey to determine who students will vote for as their next Student Affairs President. He decided to survey students in a dormitory and knocks on every 10th door
+        </response>
+    </match>
+    <match>
+        <premise>
+        Simple Random Sample
+        </premise>
+        <response>
+ Betty is conducting a survey to determine if students like the new plus/minus grading system. She randomly draws 100 bear numbers from a list and surveys those students.
+        </response>
+    </match>
+    <match>
+        <premise>
+        Stratified Sampling 
+        </premise>
+        <response> Charlotte is conducting a survey to determine if students make use of the campus recreation center. She polls 100 freshman, 100 sophomores, 100 juniors, and 100 seniors on how frequently they use the recreation center.        </response>
+    </match>
+<match>
+        <premise>
+        Cluster Sampling 
+        </premise>
+    <response> Eugene is conducting a survey to determine if the dorms should have more study break sessions during finals week. He asks everyone on the 5th floor of Turner their opinion. 
+</response>
+    </match>
+<match>
+        <premise>
+        Convenience Sampling 
+        </premise>
+    <response> Douglas is conducting a survey to determine if the University Center should open up a McDonalds, Wendy’s, or Burger King. He stands outside the UC and surveys students as they enter the building.  </response>
+    </match>
+    </matches>
+</exercise>
+ 
     
  </section>

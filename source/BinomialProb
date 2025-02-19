@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="BinomialProb" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title> Binomial Distribution </title>
+ <objectives>
+        <introduction>
+          <p> At the end of this section you will able to:   </p>
+            <ol>
+           <li> <p> Determine the conditions of a binomial event.   </p> </li>
+            <li> <p> Calcuate the probabilty for binomial event  </p> </li>
+            <li> <p> Calculate the mean and standard deviaton for binomial events    </p> </li>  
+            
+          </ol>
+        </introduction>
+    </objectives>  
+
+
+
+    </section>

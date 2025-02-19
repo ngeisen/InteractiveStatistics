@@ -13,9 +13,16 @@
         <ol>
           <li> <p> Calculate the probability of simple events. </p> </li>
           <li> <p> Use the probability rules for OR, AND, GIVEN statements. </p> </li>
+          <li> <p> Determine conditional probability. </p> </li>
           <li> <p> Use a tree diagram to determine the probability for multiple events. </p> </li>
+          <li> <p> Calcuate permutations and combinations. </p> </li>
         </ol>
       </objectives>
 
+<xi:include href="BasicProb.ptx" />
+<xi:include href="ProbRules.ptx" />
+<xi:include href="CondProb.ptx" />
+<xi:include href="ProbDist" />
+<xi:include href="BinomialProb" />
 
   </chapter>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="CondProb" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title> Conditional Probability </title>
+ <objectives>
+        <introduction>
+          <p> At the end of this section you will able to:   </p>
+            <ol>
+           <li> <p> Determine if events independent or dependent.   </p> </li>
+            <li> <p> Determine the probability using the rules for “and”, and “given   </p> </li>
+            <li> <p> Distinguish between permutations and combinations    </p> </li>  
+            
+          </ol>
+        </introduction>
+    </objectives>  
+
+
+
+    </section> 
