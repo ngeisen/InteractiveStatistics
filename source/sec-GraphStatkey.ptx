@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-GraphStatky" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Using StatKey</title>
+    <title>Graphing with StatKey</title>
 
     <p>  </p> 
         <objective> <term> Graphing One Categorical Variable </term> </objective>
@@ -22,7 +22,7 @@
  
 <p> Using the graph above, which of the following statements are correct? Select all that apply. </p>
 
-<exercise label="some-matching">
+<exercise label="graph-matching">
     <title> Interpreting information from a graph </title>
     <statement>
     <p>

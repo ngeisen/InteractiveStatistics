@@ -17,7 +17,7 @@
     <xi:include href="ChapProb" />
     <xi:include href="ChapDistributions" />
     <xi:include href="ConfIntervals" />
-   <xi:include href="ChapHypothesis" />
+    <xi:include href="ChapHypothesis" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
