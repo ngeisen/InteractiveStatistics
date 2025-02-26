@@ -104,6 +104,26 @@
 <p> <em> Solution:</em> P (win at home) = 8/15 = .533 = 53.3% </p>
 <p> <em> Solution:</em> P (win at away) = 5/16 = 0.3125 = 31.3% </p>
 <p> So it does appear they win more at home. </p>
+<p>      </p>
+<p> <term>Side by side bar graph  </term>compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table. </p>
+<p> <term>Segmented bar graph </term> is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories. </p>
+
+<p> The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins  in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games. </p>
+
+<figure xml:id="WBgraph">
+            <caption>Image of WB home and away</caption>
+            <image source="WBgraph.png" width="50%">
+                <shortdescription>Segment bar graph comparing home and away wins.</shortdescription>
+            </image>
+        </figure> 
+
+<p> If we switch the variables on the axes, we have the segmented bar graph below. It is easy to see there were more losses for the season. </p>
+<figure xml:id="WBwins">
+            <caption>Image of WB wins and losses</caption>
+            <image source="WBwins.png" width="50%">
+                <shortdescription>Segment bar graph comparing wins and losses.</shortdescription>
+            </image>
+</figure> 
 
 <p> See the section <term>Graphing with StatKey</term> for more information on graphing two categorical variables with technology. </p> 
 
