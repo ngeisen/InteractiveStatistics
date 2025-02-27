@@ -23,7 +23,7 @@
 <p>To begin this journey, let us look at some vocabulary commonly associated with statistics.</p>
 
 <li> <p> A <term> case </term> is the unit of observation, typically a person or object that you are interested in finding information about. </p> </li>
-<li> <p> A <term> variable </term> is a characteristic that can assume different values, the measurement or observation about the case (unit). </p> </li>
+<li> <p> A <term> variable </term> is a characteristic that can assume different values, the measurement or observation about the case. </p> </li>
 <li> <p> <term> Data </term> are the values or measurements the variables assume. </p> </li>
 
 <p> <em>For example </em>, what are the majors for the students in your class? The major is the variable since there are multiple responses from the students (such as math major, history major, education, nursing, biology major). Other variables you can ask students in your class are their grade level (freshman, sophomore, junior, senior) and the number of credit hours taken this semester.
@@ -112,7 +112,7 @@ If we asked the students (each student is a case) in class, there will be lots o
 
 
 <p> There are two key terms we use to distinguish the groups we collect data from: </p>
-<li> <p> The <term> population </term> is the set of all subjects in the study. </p> </li>
+<li> <p> The <term> population </term> is the set of all subjects the study is about. </p> </li>
 <li> <p> A <term> sample </term> is a group or subset of subjects selected from the population. </p> </li>
 <p> If we asked ALL residents of the state of Colorado where they were born, then the Colorado residents would be the population. But if we asked just some people from a single city in the state of Colorado, they would a sample from the state. </p>
 
@@ -236,7 +236,7 @@ If we asked the students (each student is a case) in class, there will be lots o
 
 <p>  There are two main types of data we will be working with: </p>
 <p>  <term> Qualitative variables</term>  are when the data are placed into distinct categories. Such as the color of cars found in a parking lot. The car colors can be classified as white, red, blue, black and other colors. </p>
-<p>  <term> Quantitative variables </term> are numerical and can be ordered. There are two types of quantitative variables. <term> Discrete variables </term> can be counted, such as the number of cars in the different parking lots across campus. The values are whole numbers. Other numerical variables are <term> continuous variables </term> , meaning any value (decimal or fraction) can occur. These are often obtained by measuring something. A continuous variable could be the length of the cars in the parking lot or the time it takes a car to stop when traveling 20 miles per hour. The numberical value can be something besides a whole number. </p>
+<p>  <term> Quantitative variables </term> are numerical and can be ordered. There are two types of quantitative variables. <term> Discrete variables </term> can be counted, such as the number of cars in the different parking lots across campus. The values are whole numbers. Other numerical variables are <term> continuous variables </term> , meaning any value (decimal or fraction) can occur. These are often obtained by measuring something. A continuous variable could be the length of the cars in the parking lot or the time it takes a car to stop when traveling 20 miles per hour. The numerical value can be something besides a whole number. </p>
  <p>     </p> 
 <exercise label="Qual-matching">
     <title> Identify the type of variable </title>
@@ -314,7 +314,7 @@ If we asked the students (each student is a case) in class, there will be lots o
     <choices randomize="yes">
     <choice correct="yes">
         <statement>
-        <p> number of muffins purchased each day at a local bakery. </p>
+        <p> Number of muffins purchased each day at a local bakery. </p>
         </statement>
         <feedback>
         <p> Number of muffins is discrete (cannot sell half a muffin).  </p>
