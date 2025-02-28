@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-Rstats" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title> Statistics with R</title>
+  <p> Text of section. </p>
+
+<p> <term> Finding Summary Statistics with R Studio </term>  </p>
+<p> We are going to complete Lesson 2 for Finding Summary Statistics with R Studio. Add the Lesson 2 Statistic text file to your Using R Files folder. We are going to use the same Cereal data set as for graphing data. You may need to update your working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots on the far right to relocate your file and click <c>Open</c>. You should now see the Lesson 2 file. Click on this and it opens in the top left panel so you can copy the code or you can type it in the bottom left panel. We will need to import the data file: by clicking on file and <c>Import Dataset </c>then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio make sure to <term> attach(Cereal) </term> so  you can call up the variable names. </p>
+<p> Recall that the commands in R or R studio are all lower case. I tend to use a capital for the first letter of the variables names to help distinguish them. </p>
+<p> We will start by looking at some of the summary statistical values for number of calories per serving for a variety of cereal brands. </p>
+<p> The most common measures for the center of the distribution are the mean and median. Use the following commands: </p>
+<p> mean(Calories) </p>
+<p> median(Calories) </p>
+<p> To find the measures of spread we look at variance (var) and standard deviation (sd). Use the following commands: </p>
+<p> var(Calories) </p>
+<p> sd(Calories) </p>
+<p> To find the maximum (largest) and minimum (smallest) values use the following commands: </p>
+<p> max(Calories) </p>
+<p> min(Calories) </p>
+
+<p> <em> Summary of the output: </em>The number of calories per serving has a mean of 133.83 and median of 118. The variance is x.The standard deviation of 34.81 tells us that most values are within 34.81 calories of the mean. The number of calories is between 80 (minimum) and 214 (maximum) per serving. This gives a range of 214 - 80 = 134 calories.</p>
+<p> A handy command is a six number summary which contains the typical five-number summary from boxplots and the mean. </p>
+<p> summary(Calories) </p>
+
+<p> Sometimes you want the summary for all the variables for the data set. In this case we use <term> summary </term> with the name for the data file which is <term> Cereal </term> </p>
+<p> summary(Cereal) </p>
+
+<p> Now repeat the process with one of the other variables. What do these summary statistics tell you about the cereal data set? </p>
+
+
+
+</section>

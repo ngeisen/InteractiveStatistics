@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ChapR" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Using R Studio</title>
+
+  <introduction>
+    <p> This chapter introduces you to using R studio to analyze data. </p>
+  </introduction>
+
+
+<p> <tag>mean(Calories) </tag> </p>
+<p> <c>mean(Calories) </c> </p>
+
+<xi:include href="sec-DownloadR.ptx" />
+<xi:include href="sec-GraphR.ptx" />
+<xi:include href="sec-Rstats.ptx" />
+<xi:include href="sec-Rtests.ptx" />
+<xi:include href="sec-Rcompare.ptx" />
+<xi:include href="sec-Rcorr.ptx" />
+<xi:include href="sec-Rassoc.ptx" />
+<xi:include href="sec-Ranova.ptx" />
+
+
+
+  </chapter>

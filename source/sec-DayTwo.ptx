@@ -70,6 +70,14 @@ Which best describes your average value for the average word length?
         </figure> 
 <p> Now let’s investigate using a more random approach in selecting the words for a better estimate of the population average. </p>
 <p> Randomly choose ten numbers between 1 and 269 and record them. Find the corresponding word in Lincoln’s Gettysburg Address and find the average word length for your new sample. </p>
+        <figure xml:id="GettysAddressNumbers">
+            <caption>Image of Gettysburg Address numbered</caption>
+            <image source="GettyAddressNum.png">
+                <shortdescription> Image of Gettysburg Address numbered.</shortdescription>
+            </image>
+        </figure>
+
+
 <p> You can also use technology to find the random numbers. Try the link for a random number generator at <url href=" https://www.random.org/" />  </p> 
     <p> Go midway down the page to <c> Numbers </c> and select <c>Integer Generator</c>. Generate 10 random integers between 1 and 269. Click on <c>Get Numbers</c>. </p>
 
@@ -89,12 +97,13 @@ Which best describes your average value for the average word length?
 
 <p> Matching these numbers to the corresponding word in Gettysburg Address gives the average of 3.9 letters per word,  which is closer to the population mean of 4.29 letters per word. We will look at the distributions again later. </p>
 
-        <figure xml:id="GettysAddressNumbers">
-            <caption>Image of Gettysburg Address numbered</caption>
-            <image source="GettyAddressNum.png" >
-                <shortdescription> Image of Gettysburg Address numbered.</shortdescription>
+        <figure xml:id="GettysWords">
+            <caption>Sample of Gettysburg Address wods</caption>
+            <image source="GettyYellow.png" >
+                <shortdescription> Image of highlighted words.</shortdescription>
             </image>
         </figure>
+
 
 
 <p> <term> Sampling bias </term> occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way. If sampling bias exists, we cannot trust generalizations from the sample to the population. So, we need a better method for predicting the typical or average value.    </p>
