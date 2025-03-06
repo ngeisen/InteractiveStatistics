@@ -10,18 +10,54 @@
           </p>
         </introduction>
         <ol>
-          <li> <p> Accurately graph quantitative data.   </p>   </li>
+          <li> <p> Accurately graph quantitative data with dotplots, boxplots, and histograms.   </p>   </li>
           <li> <p> Describe the shape of a data distribution. </p> </li>
-          <li> <p> Describe the center of data. </p> </li>
-           <li> <p> Describe the spread of data. </p> </li>
+          <li> <p> Describe the center of a data distribution. </p> </li>
+           <li> <p> Describe the spread of a data distribution. </p> </li>
         </ol>
       </objectives>
 
+<p> In this course we will use technology to graph quantitataive data. So our focus will be on interpreting the infomration from the graph. The three graphs we will use the most are dotpltos, boxplots, and histograms.</p>
+<p> A <term> dotplot</term> is a graph where the values are listed along the x-axis and each dot reprents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos from a sample of studetns.</p>
 
+<p> A <term> histogram </term> is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution. </p>
 
+<p> A <term> boxplot </term> splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots becasue the box represents the middle 50% of tge data and there is a whisker to the smallest value and a whisker to the largest value. </p>
 
+<p> Another graph you may occasional see is the <term> ogive</term>, also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero. </p>
 
+<p> <term> Shapes of Distributions </term></p>
+<p> When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a <term> uniform </term> distribution. The center of the distribution is around the center of the middle intervals. </p>
+<image source="ShapeUniform.png" width="60%">
+                <shortdescription> uniform with equal heights</shortdescription>
+            </image>
+<p>      </p>
+<p> A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is refered to as <term> normally </term> distributed. Symmeteric refers to imagining folding the graph in half about the middle and the two sides will align.  If one of the tails is longer than the other, we refer to it as being skewed.</p>
+<image source="ShapeSym.png" width="60%">
+                <shortdescription> symmetric with hump in middle</shortdescription>
+            </image>
+<p>      </p>
 
-     <p> See the section for Graphing with StatKey for uploading one quantitative variable. </p>  
+<p> If the data tends to cluster on the right side, and we see a few values on the left side, this is known as <term> left skewed </term> since the tail goes to the left of the data. This indicates the mean will be left of the median. </p>
+<image source="ShapeLeft.png" width="60%">
+                <shortdescription> left skew</shortdescription>
+            </image>
+<p>      </p>
+
+<p> If the data tends to cluster on the left side, and we see a few values on the rigt side, this is known as <term> right skewed </term> since the tail goes to the right of the data. This indicates the mean will be right of the median.</p>
+<image source="ShapeRight.png" width="60%">
+                <shortdescription> right skew</shortdescription>
+            </image>
+<p>      </p>
+
+<p> Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of <term> bimodal </term> (meaning two values occur more often than others). </p>
+<image source="ShapeBimodal.png" width="60%">
+                <shortdescription> bimodal with two humps</shortdescription>
+            </image>
+<p>      </p>
+
+<p> See the section for <em>Graphing with StatKey </em> for uploading one quantitative variable into StatKey to graph the data. </p>  
+<p>         </p>
+<P> <term> Other Graphs</term></P>
 
 </section> 

@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-DownloadR" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Downloading R and R Studio</title>
-  <p> Text of section. </p>
+  <p> This section gives you the directions for download R for the first time. R is a free, open-source programming language for statistical computing. </p>
+
+<p> <term> Download R </term> </p> 
+<p> How to download R visit </p> 
+
+<p> <term> Download R Studio </term> </p> 
+<p> How to download R Studio visit </p> 
+
+<p> For UNC students only: if you cannot download R and R Studio, you can still access the programs through UNC’s Apporto link. Log in with your UNC credentials. Details can be found in Canvas.  </p> 
+<p> Note: For my classes we will be using R Studio since it has a friendlier interface. R Studio will split the screen into 4 panels, each panel has a different purpose. The top left is where you will see the files that are currently open in R Studio. The bottom left panel is where you will type in the commands and see the computational outputs. The top right panel summarizes the variables. The bottom right panel is where you can access the folders, and this is where the graphical output will show. The R commands are the same for both programs. </p>
+<p> <term> Getting ready to use R </term> </p> 
+<ul>
+<li> <p> Set up a folder for the Using R Files</p> </li>
+<li> <p> Save the data and lesson files in this folder </p> </li>
+<li> <p> Launch R or R Studio</p> </li>
+<li> <p> Set up the working directory </p> </li>
+<li> <p> You are ready to begin. </p> </li>
+</ul>
+
 </section>

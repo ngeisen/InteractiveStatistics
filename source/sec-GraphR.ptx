@@ -16,7 +16,7 @@
 
 <p> First, add the <term>Lesson 1 Graphing </term> text file to your <c>Using R Files </c> folder and the <term> Cereal.csv </term> dataset. </p>
 <p> You may need to link your <term> Using R Files</term> folder with the working directory, to do this go to the bottom right panel and under the <c>Files</c> tab click on the triple dots <c> … </c> on the far right to locate your folder and click <c>Open</c>. You should now see the Lesson 1 file and the Cereal data in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it in the bottom left panel. </p>
-<p> Next, you will need to import the data file by clicking on file and <c>Import Dataset </c>, the file will give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
+<p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset </c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
 <p> Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors. </p>
 
 <p> <term> Boxplots </term> </p>
@@ -39,7 +39,7 @@
 <p>  <c> hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content') </c> </p>
 
 <p> <term> Frequency Table </term> </p>
-<p> To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company. </p>
+<p> To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the <em> table </em> command for the variable Company. </p>
 <p>  <c> table(Company) </c> </p>
 <p> Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.  </p>
 <p>  <c> Brand - c('General Mills', 'Kelloggs',  'Quacker') </c> </p>
@@ -47,23 +47,23 @@
 <p> Warning: There needs to be a left pointing arrow before the dashed sign which PreTeXt does not like. </p> 
 
 <p> <term> Pie Graph </term> </p>
-<p> Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the label = Brand names were created. </p>
+<p> Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the <em>labels </em> = Brand names were created. </p>
 <p>  <c> pie(Totals, labels=Brand) </c> </p>
 <p> Next let us add some brighter colors to the graph and give it a main title. </p>
 <p>  <c>  pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies') </c> </p>
 
 <p> <term> Bar Graph </term> </p>
-<p> Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created. </p>
+<p> Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the <em>names.arg </em> = Brand names were created. </p>
 <p>  <c>   barplot(Totals, names.arg=Brand) </c> </p>
 <p> Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis. </p>
 <p>  <c>   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies') </c> </p>
 
 <p> <term> Scatterplot </term> </p>
-<p> Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the <em> plot </em> command and identify the x-variable then the y-variable. </p>
+<p> Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the <em> plot </em> command and identify the x-variable first and then the y-variable. </p>
 <p> <c> plot(Fat,Carbs) </c> </p>	
-<p> To add at title to the graph we add the main= to the command. </p>			
+<p> To add at title to the graph we add the <em> main=</em> to the command with the title in quotes. </p>			
 <p> <c> plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates') </c> </p>	
-<p>  To find the linear correlation coefficient we use the <em> cor </em>command and identify the x-variable first, then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative. </p>			 
+<p>  To find the linear correlation coefficient we use the <em> cor </em> command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative. </p>			 
 <p> <c> cor(Fat,Carbs)   </c> </p>                               
 
 <p> <term> Quantile Plots </term> </p>

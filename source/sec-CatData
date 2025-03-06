@@ -11,7 +11,7 @@
         </introduction>
         <ol>
           <li> <p> Organize categorical data into a frequency table. </p>   </li>
-          <li> <p> Graph categorical data appropriately.   </p>   </li>
+          <li> <p> Graph categorical data with bar graph or pie gprah.   </p>   </li>
           <li> <p> Accurately describe the data with proportions. </p> </li>
         </ol>
       </objectives>
@@ -60,15 +60,19 @@
 <p> Brown eyes occurred 10 times out of the sample of 20 students thus p^=10/20=.5 which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus p^=4/20=.2 which is 20% of the students. </p>
 <p> The proportion for a sample is denoted <em> p^ </em> and read "p-hat." </p>
 <p> The proportion for a population is denoted <em> p </em>. </p>
-<p> Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories. </p>
+<p> Categorical data can also be graphed as <term>pie graph </term> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample. </p>
 <figure xml:id="EyeCircle">
             <caption>Image of Eye Circle Graph</caption>
             <image source="EyeCircle.png" width="50%">
                 <shortdescription>Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.</shortdescription>
             </image>
         </figure>
-
+<p> A third type of qualitative data graph is a <term>Pareto chart</term>, which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantace is you can visually see the more popular responses to the least popular.  </p>
 <p>      </p>
+<caption>Image of Pareto Chart</caption>
+<image source="EyeBar.jpg" width="60%">
+                <shortdescription>Pareto Chart showing of 10 brown, 4 blue, 4 green, and 2 hazel.</shortdescription>
+            </image>
 <p>      </p>
    <p> See the section for <term>Graphing with StatKey </term> for graphing one categorical variable with technology. </p> 
 
