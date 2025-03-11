@@ -4,8 +4,27 @@
   <p> In this section we will perform hypothesis testing and find confidence intervals for a single sample. </p>
 
 
+<p> Import Cereal Data instructions </p> 
+<p> Once the data has been imported into R, use the command <em> attach</em> so you can call the data by the variable name. </p>
+<p> <c> attach(Cereal) </c> </p>
+<p> A handy command is <em> summary </em> of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition. </p> 
+<p> <c> summary(Cereal) </c> </p>
+<p> <term> t-test for the mean </term> </p> 
+<p> Lets begin our investigation with a one-sample t-test for the mean. The R command is <em> t.test </em>.   We will need to identify the variable, set the null hypothesis to <em> mu= </em> null value, and identify the alternative hypothesis using greater,  less or two.sided in quotes. The default is 95% confidence level for the intervals.  </p>
+<p> We are going to test if the mean of the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving. </p>
+<p> <c> mean(Calories) </c> </p>
+Can we determine if the mean calories is significantly more than 100 calories per serving?  The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command.
+<p> <c> t.test(Calories,mu=100,alternative="greater") </c> </p>
 
+<p> Let us determine what the mean fiber is per serving. </p>
+<p> <c>mean(Fiber) </c> </p>
+<p> Next, test if the mean fiber is less than 2 grams per serving. </p>
+<p> <c> t.test(Fiber,mu=2,alternative="less") </c> </p>
 
+<p> What is the mean amount of fat per serving? </p> 
+<p> <c> mean(Fat) </c> </p>
+<p> Test if fat is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use <em> two.sided </em>  as the alternative hypothesis and add the command <em> conf.level = </em> to specify we want 90% precision. </p>
+<p> <c>  t.test(Fat,mu=1,alternative="two.sided", conf.level = 0.90) </c> </p>
 
 
 
