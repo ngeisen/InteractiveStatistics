@@ -22,21 +22,84 @@
 <p> <term> Boxplots </term> </p>
 <p> Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot.  The graphs will show up in the bottom right panel of R Studio. </p>
 <p> <c> boxplot(Calories) </c>	</p>
-<p> Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol <c> ~ </c> followed by the categorical variable. </p>		
-<p> <c> boxplot(Calories~Company) </c>	</p>	
+<figure xml:id="BoxCalorie">
+            <caption>Image of Vertical Boxplot</caption>
+            <image source="Rgraph1.png" width="80%">
+                <shortdescription>Boxplot with values from 80 to 214.</shortdescription>
+            </image>
+        </figure> 
+<p> <em> Interpreting the Boxplot:</em> The boxplot shows the smallest value at 80 and the largest is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The interquartile range = Q3-Q1 =160-113.2 =  46.8. The thick line in the middle is the median = 118 .  To calculate the actual values use the <em> summary </em> command with the variable name. </p>
+<p> <c> summary(Calories) </c> </p> 
+<figure xml:id="SummaryCalorie">
+            <caption>Image of summary output</caption>
+            <image source="Rgraph2.png" width="80%">
+                <shortdescription>summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.</shortdescription>
+            </image>
+        </figure> 
+
 <p> Now let's add a label along the x-axis and make the boxplot horizontal.	</p>			
 <p> <c> boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving") </c></p>
+<p> With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values. </p>
+ <figure xml:id="BoxHorzCalorie">
+            <caption>Image of horizontal boxplot</caption>
+            <image source="Rgraph3.png" width="80%">
+                <shortdescription>horizontal boxplot with values from 80 to 214.</shortdescription>
+            </image>
+        </figure> 
+ 
+<p> Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol <c> ~ </c> followed by the categorical variable. </p>		
+<p> <c> boxplot(Calories~Company) </c>	</p>	
+<figure xml:id="BoxplotbyCompany">
+            <caption>Image of comparing boxplots</caption>
+            <image source="Rgraph4.png" width="80%">
+                <shortdescription> Boxplot for each company.</shortdescription>
+            </image>
+        </figure> 
+<p> <em> Comparing Boxplots: </em> With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed. </p> 
+
 <p> Next we will add some color to the graph for fun and give the graph a main title. But let us investigate the amount of fat in each serving. </p>
 <p> <c> boxplot(Fat,horizontal = TRUE, col='blue', border='red',main="Fat Content") </c> </p>
-
+<figure xml:id="BoxplotColor">
+            <caption>Image of Fat Content Boxplot</caption>
+            <image source="Rgraph5.png" width="80%">
+                <shortdescription> Boxplot with colors.</shortdescription>
+            </image>
+        </figure> 
+<p>     </p> 
+  <p>     </p> 
 
 <p> <term> Histograms </term> </p>
 <p> Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram. </p>
 <p>  <c> hist(Sugars) </c> </p>
-<p> Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of <em> breaks </em> we want. Suppose we want 10 bars instead of the default of X. </p>
+<figure xml:id="HistoSugar">
+            <caption>Image of histogram</caption>
+            <image source="Rgraph6.png" width="80%">
+                <shortdescription> Histogram of sugar content.</shortdescription>
+            </image>
+        </figure> 
+<p> The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution. </p> 
+
+<p> Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of <em> breaks </em> we want. Suppose we want 10 bars instead of the default of four. </p>
 <p>  <c> hist(Sugars,breaks=10) </c>	</p>
+<figure xml:id="HistoSugar2">
+            <caption>Image of histogram</caption>
+            <image source="Rgraph7.png" width="80%">
+                <shortdescription> Histogram of sugar content with 10 bars.</shortdescription>
+            </image>
+        </figure>
+<p> This histogram has 10 bars showing more variation in the amount of sugar per serving. </p> 
+
 <p> Let us investigate the amount of sodium in each serving and add some labels to the axes. </p>			
 <p>  <c> hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content') </c> </p>
+<figure xml:id="HistoSodium">
+            <caption>Image of histogram for sodium</caption>
+            <image source="Rgraph8.png" width="80%">
+                <shortdescription> Histogram of sodium content.</shortdescription>
+            </image>
+        </figure>
+<p> This histogram has nine intervals for sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms. </p> 
+
+
 
 <p> <term> Frequency Table </term> </p>
 <p> To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the <em> table </em> command for the variable Company. </p>
