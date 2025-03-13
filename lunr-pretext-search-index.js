@@ -1,13 +1,13 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "frontmatter-2",
+  "id": "front-colophon",
   "level": "1",
-  "url": "frontmatter-2.html",
+  "url": "front-colophon.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": "  My Website   copyright  "
+  "body": ""
 },
 {
   "id": "sec-DayOne",
@@ -601,7 +601,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Section Title",
-  "body": " Section Title  Text of section.  "
+  "body": " Section Title  Text of section.   example of something   write a < word > or something else   inline math equation   or fractions centered as   probability equation as     Statistics is the science of       Statistics is the science of conducting studies to collect, organize, analyze and interpret data.        use for less than and for greater than symbols     Differentiating a polynomial   Differentiate the function .         We use the power, sum, and constant rules to find that the derivative is .    "
+},
+{
+  "id": "sec-section-name-3",
+  "level": "2",
+  "url": "sec-section-name.html#sec-section-name-3",
+  "type": "Note",
+  "number": "1.4.1",
+  "title": "",
+  "body": " example of something  "
+},
+{
+  "id": "claim-stats",
+  "level": "2",
+  "url": "sec-section-name.html#claim-stats",
+  "type": "Claim",
+  "number": "1.4.2",
+  "title": "",
+  "body": "  Statistics is the science of   "
+},
+{
+  "id": "def-statistics",
+  "level": "2",
+  "url": "sec-section-name.html#def-statistics",
+  "type": "Definition",
+  "number": "1.4.3",
+  "title": "",
+  "body": "   Statistics is the science of conducting studies to collect, organize, analyze and interpret data.   "
+},
+{
+  "id": "sec-section-name-13",
+  "level": "2",
+  "url": "sec-section-name.html#sec-section-name-13",
+  "type": "Example",
+  "number": "1.4.4",
+  "title": "Differentiating a polynomial.",
+  "body": " Differentiating a polynomial   Differentiate the function .         We use the power, sum, and constant rules to find that the derivative is .   "
 },
 {
   "id": "sec-CatData",
@@ -916,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "2.3",
   "title": "Descriptive Statistics for Quantitative Variables",
-  "body": " Descriptive Statistics for Quantitative Variables   In this chapter we will investigate multiple ways to describe the data with graphs and numerical statistics.     At the end of this section you will able to:     Describe the center of the data with mean, median, mode.    Describe the spread of a data set with range, interquartile-range, and standard deviation.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Sample: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .   Sample: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.  Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5   .   "
+  "body": " Descriptive Statistics for Quantitative Variables   In this chapter we will investigate multiple ways to describe the data with graphs and numerical statistics.     At the end of this section you will able to:     Describe the center of the data with mean, median, mode.    Describe the spread of a data set with range, interquartile-range, and standard deviation.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Sample: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .   Sample: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.  Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5   Find the mean     Find the measures of center   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72    bimodal with modes 36 and 72, median = 42 and mean = 48.167    This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.    "
 },
 {
   "id": "sec-QuantStats-3",
@@ -1006,7 +1042,16 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "2.3.1",
   "title": "Find the measures of center.",
-  "body": "Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5   .  "
+  "body": "Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5   Find the mean   "
+},
+{
+  "id": "sec-QuantStats-14",
+  "level": "2",
+  "url": "sec-QuantStats.html#sec-QuantStats-14",
+  "type": "Example",
+  "number": "2.3.2",
+  "title": "Find the measures of center.",
+  "body": " Find the measures of center   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72    bimodal with modes 36 and 72, median = 42 and mean = 48.167    This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.   "
 },
 {
   "id": "sec-GraphStatky",
@@ -1141,7 +1186,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Probability Distribution",
-  "body": " Probability Distribution    At the end of this section you will able to:    Determine the .    Calcuate the probabilty for b    Calculate the mean and standard deviaton for probabilty distributions      "
+  "body": " Probability Distribution    At the end of this section you will able to:    Create a probability distrubtion.    Calcuate the events from a probability distribution.    Calculate the mean and standard deviaton for probabilty distributions      "
 },
 {
   "id": "ProbDist-2",
@@ -1150,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.4",
   "title": "",
-  "body": "  At the end of this section you will able to:    Determine the .    Calcuate the probabilty for b    Calculate the mean and standard deviaton for probabilty distributions     "
+  "body": "  At the end of this section you will able to:    Create a probability distrubtion.    Calcuate the events from a probability distribution.    Calculate the mean and standard deviaton for probabilty distributions     "
 },
 {
   "id": "BinomialProb",
@@ -1240,7 +1285,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Graphing with R",
-  "body": " Graphing with R  In this section we will learn how to do serveral common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners.    At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.     First, add the Lesson 1 Graphing text file to your Using R Files folder and the Cereal.csv dataset.  You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should now see the Lesson 1 file and the Cereal data in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it in the bottom left panel.  Next, you will need to import the data file by clicking on the file and select Import Dataset , a new window will open to give you a preview of the spreadsheet and then click on the Import button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type attach(Cereal) so you can call up the variable names.  Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors.   Boxplots   Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot. The graphs will show up in the bottom right panel of R Studio.   boxplot(Calories)   Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol ~ followed by the categorical variable.   boxplot(Calories~Company)   Now let's add a label along the x-axis and make the boxplot horizontal.   boxplot(Calories,horizontal = TRUE,xlab = \"Calories per Serving\")  Next we will add some color to the graph for fun and give the graph a main title. But let us investigate the amount of fat in each serving.   boxplot(Fat,horizontal = TRUE, col='blue', border='red',main=\"Fat Content\")    Histograms   Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.   hist(Sugars)   Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of breaks we want. Suppose we want 10 bars instead of the default of X.   hist(Sugars,breaks=10)   Let us investigate the amount of sodium in each serving and add some labels to the axes.   hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content')    Frequency Table   To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company.   table(Company)   Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.   Brand - c('General Mills', 'Kelloggs', 'Quacker')    Totals - c(13,11,6)   Warning: There needs to be a left pointing arrow before the dashed sign which PreTeXt does not like.   Pie Graph   Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the labels = Brand names were created.   pie(Totals, labels=Brand)   Next let us add some brighter colors to the graph and give it a main title.   pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies')    Bar Graph   Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created.   barplot(Totals, names.arg=Brand)   Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis.   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies')    Scatterplot   Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the plot command and identify the x-variable first and then the y-variable.   plot(Fat,Carbs)   To add at title to the graph we add the main= to the command with the title in quotes.   plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates')   To find the linear correlation coefficient we use the cor command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative.   cor(Fat,Carbs)    Quantile Plots   We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the qqnorm command for the quantile plot. We can add the qqline command afterwards to draw a line through the data to see if it appears linear.   qqnorm(Calories)    qqline(Calories)   "
+  "body": " Graphing with R  In this section we will learn how to do serveral common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners.    At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.     First, add the Lesson 1 Graphing text file to your Using R Files folder and the Cereal.csv dataset.  You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should now see the Lesson 1 file and the Cereal data in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it in the bottom left panel.  Next, you will need to import the data file by clicking on the file and select Import Dataset , a new window will open to give you a preview of the spreadsheet and then click on the Import button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type attach(Cereal) so you can call up the variable names.  Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors.   Boxplots  Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot. The graphs will show up in the bottom right panel of R Studio.   boxplot(Calories)    Image of Vertical Boxplot   Boxplot with values from 80 to 214.     Interpreting the Boxplot: The boxplot shows the smallest value at 80 and the largest is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The interquartile range = Q3-Q1 =160-113.2 = 46.8. The thick line in the middle is the median = 118 . To calculate the actual values use the summary command with the variable name.   summary(Calories)    Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.    Now let's add a label along the x-axis and make the boxplot horizontal.   boxplot(Calories,horizontal = TRUE,xlab = \"Calories per Serving\")  With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values.   Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.    Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol ~ followed by the categorical variable.   boxplot(Calories~Company)    Image of comparing boxplots   Boxplot for each company.     Comparing Boxplots: With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed.  Next we will add some color to the graph for fun and give the graph a main title. But investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right.   boxplot(Fat,horizontal = TRUE, col='blue', border='red',main=\"Fat Content\")    Image of Fat Content Boxplot   Boxplot with colors.           Histograms  Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.   hist(Sugars)    Image of histogram   Histogram of sugar content.    The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution.  Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of breaks we want. Suppose we want 10 bars instead of the default of four.   hist(Sugars,breaks=10)    Image of histogram   Histogram of sugar content with 10 bars.    This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.  Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title.   hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content')    Image of histogram for sodium   Histogram of sodium content.    This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms.    Categorical Graphs     Frequency Table   To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company.   table(Company)   Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.   Brand   c('General Mills', 'Kelloggs', 'Quacker')    Totals   c(13,11,6)       Pie Graph   Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the labels = Brand names were created.   pie(Totals, labels=Brand)   Next let us add some brighter colors to the graph and give it a main title.   pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies')    Bar Graph   Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created.   barplot(Totals, names.arg=Brand)   Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis.   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies')     Scatterplots   Scatterplots   Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the plot command and identify the x-variable first and then the y-variable.   plot(Fat,Carbs)   To add at title to the graph we add the main= to the command with the title in quotes.   plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates')   To find the linear correlation coefficient we use the cor command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative.   cor(Fat,Carbs)     Quantile Plots   We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the qqnorm command for the quantile plot. We can add the qqline command afterwards to draw a line through the data to see if it appears linear.   qqnorm(Calories)    qqline(Calories)   "
 },
 {
   "id": "sec-GraphR-3",
@@ -1279,63 +1324,117 @@ var ptx_lunr_docs = [
   "body": "attach(Cereal) "
 },
 {
-  "id": "sec-GraphR-8",
+  "id": "BoxCalorie",
   "level": "2",
-  "url": "sec-GraphR.html#sec-GraphR-8",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-GraphR.html#BoxCalorie",
+  "type": "Figure",
+  "number": "8.2.1",
   "title": "",
-  "body": "Boxplots "
+  "body": " Image of Vertical Boxplot   Boxplot with values from 80 to 214.   "
 },
 {
-  "id": "sec-GraphR-17",
+  "id": "SummaryCalorie",
   "level": "2",
-  "url": "sec-GraphR.html#sec-GraphR-17",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-GraphR.html#SummaryCalorie",
+  "type": "Figure",
+  "number": "8.2.2",
   "title": "",
-  "body": "Histograms "
+  "body": " Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.   "
 },
 {
-  "id": "sec-GraphR-24",
+  "id": "BoxHorzCalorie",
   "level": "2",
-  "url": "sec-GraphR.html#sec-GraphR-24",
+  "url": "sec-GraphR.html#BoxHorzCalorie",
+  "type": "Figure",
+  "number": "8.2.3",
+  "title": "",
+  "body": " Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.   "
+},
+{
+  "id": "BoxplotbyCompany",
+  "level": "2",
+  "url": "sec-GraphR.html#BoxplotbyCompany",
+  "type": "Figure",
+  "number": "8.2.4",
+  "title": "",
+  "body": " Image of comparing boxplots   Boxplot for each company.   "
+},
+{
+  "id": "BoxplotColor",
+  "level": "2",
+  "url": "sec-GraphR.html#BoxplotColor",
+  "type": "Figure",
+  "number": "8.2.5",
+  "title": "",
+  "body": " Image of Fat Content Boxplot   Boxplot with colors.   "
+},
+{
+  "id": "HistoSugar",
+  "level": "2",
+  "url": "sec-GraphR.html#HistoSugar",
+  "type": "Figure",
+  "number": "8.2.6",
+  "title": "",
+  "body": " Image of histogram   Histogram of sugar content.   "
+},
+{
+  "id": "HistoSugar2",
+  "level": "2",
+  "url": "sec-GraphR.html#HistoSugar2",
+  "type": "Figure",
+  "number": "8.2.7",
+  "title": "",
+  "body": " Image of histogram   Histogram of sugar content with 10 bars.   "
+},
+{
+  "id": "HistoSodium",
+  "level": "2",
+  "url": "sec-GraphR.html#HistoSodium",
+  "type": "Figure",
+  "number": "8.2.8",
+  "title": "",
+  "body": " Image of histogram for sodium   Histogram of sodium content.   "
+},
+{
+  "id": "subsec-Categorical-3",
+  "level": "2",
+  "url": "sec-GraphR.html#subsec-Categorical-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Frequency Table "
 },
 {
-  "id": "sec-GraphR-31",
+  "id": "subsec-Categorical-10",
   "level": "2",
-  "url": "sec-GraphR.html#sec-GraphR-31",
+  "url": "sec-GraphR.html#subsec-Categorical-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Pie Graph "
 },
 {
-  "id": "sec-GraphR-36",
+  "id": "subsec-Categorical-15",
   "level": "2",
-  "url": "sec-GraphR.html#sec-GraphR-36",
+  "url": "sec-GraphR.html#subsec-Categorical-15",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Bar Graph "
 },
 {
-  "id": "sec-GraphR-41",
+  "id": "subsec-Scatterplots-2",
   "level": "2",
-  "url": "sec-GraphR.html#sec-GraphR-41",
+  "url": "sec-GraphR.html#subsec-Scatterplots-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Scatterplot "
+  "body": "Scatterplots "
 },
 {
-  "id": "sec-GraphR-48",
+  "id": "sec-GraphR-12",
   "level": "2",
-  "url": "sec-GraphR.html#sec-GraphR-48",
+  "url": "sec-GraphR.html#sec-GraphR-12",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1393,7 +1492,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.5",
   "title": "Comparison Tests with R",
-  "body": " Comparison Tests with R  Two group comparisons.  "
+  "body": " Comparison Tests with R  Two group comparisons.   Comparing Two Independent Means    Paired Means    Comparing Two Proportions    Comparing Two Variances   "
 },
 {
   "id": "sec-Rcorr",
