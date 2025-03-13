@@ -5,4 +5,62 @@
 
   <p> Text of section. </p>
 
+
+
+<note> <p> example of something </p> </note> 
+
+<p> write a <tag> word </tag> or something <q> else </q> </p> 
+
+<p> inline math equation <m> ax^2+bx+c=0</m> </p> 
+  <p> or fractions centered as <me>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</me> </p> 
+
+<p> probability equation as <me> p=\frac{number  of  events}{total outcomes}</me> </p> 
+
+<claim xml:id="claim-stats">
+  <statement>
+    <p>
+      Statistics is the science of
+    </p>
+  </statement>
+</claim>
+
+
+<definition xml:id="def-statistics">
+  <statement>
+    <p>
+      <term>Statistics </term> is the science of conducting studies to collect, organize, analyze and interpret data. 
+    </p>
+  </statement>
+</definition>
+
+<p>     </p> 
+
+<!--this leaves me a note --> 
+<!-- use \lt for less than and \gt for greater than symbols within the math-->
+<p>
+  use <m> \lt </m>  for less than and <m> \gt </m> for greater than symbols
+</p>
+<p>        </p>
+<example>
+  <title>Differentiating a polynomial</title>
+  <statement>
+    <p>       Differentiate the function <m>f(x) = 3x^5-7x+5</m>.      </p>
+  </statement>
+  <answer>
+    <p>       <m>f'(x) = 15x^4-7</m>     </p>
+  </answer>
+  <solution>
+    <p>       We use the power, sum, and constant rules to find that the derivative is <m>f'(x) = 15x^4-7</m>.      </p>
+  </solution>
+
+
+  
+</example>
+
+
+
+
+
+
+
 </section>

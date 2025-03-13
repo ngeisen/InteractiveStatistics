@@ -50,11 +50,23 @@ data set. There are three measures of the <term> center </term> of the data. The
         <hint><p> Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values.</p></hint>
         <answer><p> No mode, median = 5, mean = 5 </p> </answer>
         <solution>
-          <p><me> Find the mean (4+5+6)/3=5</me>.</p>
+          <p> Find the mean <m>(4+5+6)/3=5 </m> </p>
         </solution>
     </exercise>
 
 
+<example>
+  <title>Find the measures of center</title>
+  <statement>
+    <p>   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72      </p>
+  </statement>
+  <answer>
+    <p>  bimodal with modes 36 and 72, median = 42 and mean = 48.167  </p>
+  </answer>
+  <solution>
+    <p>       This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289/6 = 48.167 for the mean.</p>
+  </solution>
+</example>
 
 
 

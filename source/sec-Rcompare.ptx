@@ -3,6 +3,36 @@
   <title>Comparison Tests with R</title>
   <p> Two group comparisons. </p>
 
+<subsection xml:id="subsec-ComparingMeans">
+  <title>Comparing Two Independent Means</title>
+  
+</subsection>
+
+
+<subsection xml:id="subsec-PairedMeans">
+  <title>Paired Means</title>
+  
+</subsection>
+
+
+
+<subsection xml:id="subsec-CompareProportions">
+  <title>Comparing Two Proportions</title>
+  
+</subsection>
+
+
+
+
+
+<subsection xml:id="subsec-CompareVariances">
+  <title>Comparing Two Variances</title>
+  
+</subsection>
+
+
+
+
 
 
 </section>

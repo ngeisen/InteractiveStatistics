@@ -19,7 +19,9 @@
 <p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset </c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
 <p> Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors. </p>
 
-<p> <term> Boxplots </term> </p>
+<subsection xml:id="subsec-Boxplots">
+    <title>Boxplots </title>
+   
 <p> Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot.  The graphs will show up in the bottom right panel of R Studio. </p>
 <p> <c> boxplot(Calories) </c>	</p>
 <figure xml:id="BoxCalorie">
@@ -57,7 +59,7 @@
         </figure> 
 <p> <em> Comparing Boxplots: </em> With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed. </p> 
 
-<p> Next we will add some color to the graph for fun and give the graph a main title. But let us investigate the amount of fat in each serving. </p>
+<p> Next we will add some color to the graph for fun and give the graph a main title. But investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right. </p>
 <p> <c> boxplot(Fat,horizontal = TRUE, col='blue', border='red',main="Fat Content") </c> </p>
 <figure xml:id="BoxplotColor">
             <caption>Image of Fat Content Boxplot</caption>
@@ -67,8 +69,12 @@
         </figure> 
 <p>     </p> 
   <p>     </p> 
+</subsection>
+<!--note maybe change colors on boxplot to read easier -->
 
-<p> <term> Histograms </term> </p>
+<subsection xml:id="subsec-Histograms">
+    <title>Histograms </title>
+   
 <p> Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram. </p>
 <p>  <c> hist(Sugars) </c> </p>
 <figure xml:id="HistoSugar">
@@ -87,9 +93,9 @@
                 <shortdescription> Histogram of sugar content with 10 bars.</shortdescription>
             </image>
         </figure>
-<p> This histogram has 10 bars showing more variation in the amount of sugar per serving. </p> 
+<p> This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.</p> 
 
-<p> Let us investigate the amount of sodium in each serving and add some labels to the axes. </p>			
+<p> Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title. </p>			
 <p>  <c> hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content') </c> </p>
 <figure xml:id="HistoSodium">
             <caption>Image of histogram for sodium</caption>
@@ -97,17 +103,22 @@
                 <shortdescription> Histogram of sodium content.</shortdescription>
             </image>
         </figure>
-<p> This histogram has nine intervals for sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms. </p> 
+<p> This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms. </p> 
+</subsection>
 
 
-
+<subsection xml:id="subsec-Categorical">
+    <title>Categorical Graphs</title>
+    
+<p>      </p> 
 <p> <term> Frequency Table </term> </p>
 <p> To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the <em> table </em> command for the variable Company. </p>
 <p>  <c> table(Company) </c> </p>
 <p> Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.  </p>
-<p>  <c> Brand - c('General Mills', 'Kelloggs',  'Quacker') </c> </p>
-<p>  <c> Totals - c(13,11,6) </c> </p>
-<p> Warning: There needs to be a left pointing arrow before the dashed sign which PreTeXt does not like. </p> 
+<p> <c>  Brand </c> <m>\lt-</m> <c> c('General Mills', 'Kelloggs',  'Quacker') </c> </p>
+<p>  <c> Totals</c> <m>\lt-</m> <c> c(13,11,6) </c> </p>
+<p>        </p> 
+<!-- Warning: There needs to be a left pointing arrow before the dashed sign which PreTeXt does not like.-->
 
 <p> <term> Pie Graph </term> </p>
 <p> Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the <em>labels </em> = Brand names were created. </p>
@@ -120,14 +131,20 @@
 <p>  <c>   barplot(Totals, names.arg=Brand) </c> </p>
 <p> Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis. </p>
 <p>  <c>   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies') </c> </p>
+</subsection>
 
-<p> <term> Scatterplot </term> </p>
+<subsection xml:id="subsec-Scatterplots">
+    <title>Scatterplots</title>
+    
+<p> <term> Scatterplots </term> </p>
 <p> Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the <em> plot </em> command and identify the x-variable first and then the y-variable. </p>
 <p> <c> plot(Fat,Carbs) </c> </p>	
 <p> To add at title to the graph we add the <em> main=</em> to the command with the title in quotes. </p>			
 <p> <c> plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates') </c> </p>	
 <p>  To find the linear correlation coefficient we use the <em> cor </em> command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative. </p>			 
 <p> <c> cor(Fat,Carbs)   </c> </p>                               
+</subsection>
+
 
 <p> <term> Quantile Plots </term> </p>
 <p> We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the <em> qqnorm </em> command for the quantile plot. We can add the <em> qqline </em> command afterwards to draw a line through the data to see if it appears linear. </p>
