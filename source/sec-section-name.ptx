@@ -4,8 +4,7 @@
   <title>Section Title</title>
 
   <p> Text of section. </p>
-
-
+|<p> this is a sentence </p>
 
 <note> <p> example of something </p> </note> 
 
@@ -14,7 +13,7 @@
 <p> inline math equation <m> ax^2+bx+c=0</m> </p> 
   <p> or fractions centered as <me>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</me> </p> 
 
-<p> probability equation as <me> p=\frac{number  of  events}{total outcomes}</me> </p> 
+<p> probability equation as <me> p=\frac{\text{number  of  events}}{\text{total outcomes}}</me> </p> 
 
 <claim xml:id="claim-stats">
   <statement>

@@ -4,12 +4,16 @@
   <p> In this section we will perform hypothesis testing and find confidence intervals for a single sample. </p>
 
 
-<p> Import Cereal Data instructions </p> 
+<p> <term> Import Cereal Data instructions </term> </p> 
 <p> Once the data has been imported into R, use the command <em> attach</em> so you can call the data by the variable name. </p>
 <p> <c> attach(Cereal) </c> </p>
 <p> A handy command is <em> summary </em> of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition. </p> 
 <p> <c> summary(Cereal) </c> </p>
-<p> <term> t-test for the mean </term> </p> 
+ <subsection xml:id="subsec-SingleMean">
+  <title>Single Mean</title>
+  
+
+<p> <term> Single t-test for the mean </term> </p> 
 <p> Lets begin our investigation with a one-sample t-test for the mean. The R command is <em> t.test </em>.   We will need to identify the variable, set the null hypothesis to <em> mu= </em> null value, and identify the alternative hypothesis using greater,  less or two.sided in quotes. The default is 95% confidence level for the intervals.  </p>
 <p> We are going to test if the mean of the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving. </p>
 <p> <c> mean(Calories) </c> </p>
@@ -25,10 +29,26 @@ Can we determine if the mean calories is significantly more than 100 calories pe
 <p> <c> mean(Fat) </c> </p>
 <p> Test if fat is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use <em> two.sided </em>  as the alternative hypothesis and add the command <em> conf.level = </em> to specify we want 90% precision. </p>
 <p> <c>  t.test(Fat,mu=1,alternative="two.sided", conf.level = 0.90) </c> </p>
+</subsection>
 
 
+<subsection xml:id="subsec-SingleProportion">
+  <title>Single Proportion Test</title>
+ 
+<p> We are going to conduct several proportion tests using the cereal data set. Rather than using the standard z-test for proportions, R Studio does a chi-square test which can be generalized to multiple proportions. The format of <em> prop.test </em>(count x, sample size,p=null value, alternative=  ) with a default of 95% confidence for a two-tailed test. </p>
+<p> First, find the proportions of each brand of cereal using the <em> table </em> command with the variable name. </p> 
+<p> <c> table(Company) </c> </p>
 
+<p> The first test is to determine if the proportion of Kellogg cereals is different than 50%. Use the <em> prop.test </em> command with the count of 11 out of the sample of 30 cereals. The null hypothesis is p=.50 and we will use the two-tailed test default. </p>
+<p> <c>prop.test(11,30,p=.5) </c> </p>
 
+<p> Next, determine if the proportion of Quaker cereals is less than 50%.  Here we need to identify the alternative hypothesis as <em> less </em>  with a count of 6 out of 30 cereals. </p>
+<p> <c>prop.test(6,30,p=.5, alternative="less") </c> </p>
+
+<p> Now determine if the proportion of General Mills cereal is greater than 1/3 of the cereals at the 90% confidence level. The alternative hypothesis as <em> greater </em>  with a count of 13 out of the 30 cereals. We also need to add the condition <em> conf.level = 0.90 </em> to the command. </p>
+<p> <c>prop.test(13,30,p=.333, alternative="greater", conf.level = 0.90) </c> </p>
+
+ </subsection>
 
 
 </section>

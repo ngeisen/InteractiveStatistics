@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Rcompare" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Comparison Tests with R</title>
-  <p> Two group comparisons. </p>
+  <p> We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group. </p>
 
 <subsection xml:id="subsec-ComparingMeans">
   <title>Comparing Two Independent Means</title>
-  
+  <p> The standard  format for a <em> t.test </em> for the mean is identifying the two variables names separated by commas, the alternative hypothesis as <em> alternative = </em>, and the confidence level using <em> conf.level =  </em> with the default being 95%.R Studio finds the difference is u1 - u2 so list them in the order you are calculating them. </p>
+<p> For our first example, we are comparing the mean time for completing a maze. Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX </p>
+<p> We are going to perform a simple t-test for the difference in mean times. Thus the alternative hypothesis is that the means are not equal. We will using the default settings at 95% level. Import the data set and <em> attach </em> the variable names. We will be using the variables WhiteMice and BrownMice. There are no spaces in the name of variables when using R. </p> 
+<p> <c> t.test(WhiteMice,BrownMice) </c> </p> 
+
+<p> Suppose we claim the average mean time is greater for the white mice using alpha = 0.10 level. We can use White mice is <em> greater </em> than Brown mice or brown mice is <em> less </em> than white mice as shown below, and we need to add <em>  conf.level = .90 </em> to both commands. </p> 
+<p> <c> t.test(WhiteMice,BrownMice,alternative = 'greater',conf.level = .90) </c> </p>
+<p> <c> t.test(BrownMice,WhiteMice,alternative = 'less',conf.level = .90) </c> </p>
+<p> compare the R outputs </p> 
+
+
 </subsection>
 
 
 <subsection xml:id="subsec-PairedMeans">
   <title>Paired Means</title>
-  
+<p> When the data is paired in some way we only look at the difference between those paired values. This is also known as a dependent t-test. </p> 
+<p> The format I use for the paired t-test is <em>  t.test(PostValues, PreValues , paired=TRUE, alternative=, conf.level= ) </em>. The difference is u1 - u2 by default, so list the Post values first  so it aligns with the claim better. </p>
+<p> A physical education director claims that by taking special vitamins a weight lifter can increase his or her strength.  Eight athletes are selected and given a test of strength using the standard bench press. Test the effectiveness of the vitamin regimen at alpha = 0.05. Each value represents the maximum number of pounds the athlete can bench press. </p>
+<p> Use the data XX and the variables are WeightAfter and the WeightBefore. Since we are comparing the bench press weights before and after the vitamin regiment, it is a paired or dependent t-test.  Enter the following R command to compare the change in weights lifted. </p> 
+<p> <c>  t.test(WeightAfter,WeightBefore, paired=TRUE, alternative='greater', conf.level=.95) </c> </p>
+
 </subsection>
 
 
@@ -27,7 +42,13 @@
 
 <subsection xml:id="subsec-CompareVariances">
   <title>Comparing Two Variances</title>
-  
+ <p> Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX. Only this time we want to compare the variance of time between the white and brown mice.  So  we are checking if the variance is equal or not equal.  We will use the R command <em> var.test </em> and we identify our two variables. </p>
+   <p> <c>  var.test(WhiteMice,BrownMice) </c> </p>
+<p> Sometimes when we use a data set, not all values are included. In that case we want to ignore any cells without data. We do this by using <em> na.rm=TRUE. </em> Find the standard deviation for the times for both mice groups. </p> 
+<p> <c>  sd(WhiteMice, na.rm=TRUE) </c> </p>
+<p> <c>  sd(BrownMice, na.rm=TRUE) </c> </p>
+
+
 </subsection>
 
 
