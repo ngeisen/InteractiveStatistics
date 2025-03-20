@@ -10,6 +10,15 @@ var ptx_lunr_docs = [
   "body": ""
 },
 {
+  "id": "frontmatter-4",
+  "level": "1",
+  "url": "frontmatter-4.html",
+  "type": "Acknowledgements",
+  "number": "",
+  "title": "Acknowledgements",
+  "body": " Special thanks to my contributors for sharing reasearch data:  Kathryn Kozak, Coconio Community College, Statistics Using Technolgoy.   Lauryn Benedict, Alexandra Charles, and Amirah Brockington from Biology Sciences at the University of Northern Colorado, and Cristine Dahlin from the University of Pettsburgh, for A survey of vocal mimicry in companion parrots.   "
+},
+{
   "id": "sec-DayOne",
   "level": "1",
   "url": "sec-DayOne.html",
@@ -601,12 +610,12 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Section Title",
-  "body": " Section Title  Text of section.   example of something   write a < word > or something else   inline math equation   or fractions centered as   probability equation as     Statistics is the science of       Statistics is the science of conducting studies to collect, organize, analyze and interpret data.        use for less than and for greater than symbols     Differentiating a polynomial   Differentiate the function .         We use the power, sum, and constant rules to find that the derivative is .    "
+  "body": " Section Title  Text of section. | this is a sentence   example of something   write a < word > or something else   inline math equation   or fractions centered as   probability equation as     Statistics is the science of       Statistics is the science of conducting studies to collect, organize, analyze and interpret data.        use for less than and for greater than symbols     Differentiating a polynomial   Differentiate the function .         We use the power, sum, and constant rules to find that the derivative is .    "
 },
 {
-  "id": "sec-section-name-3",
+  "id": "sec-section-name-4",
   "level": "2",
-  "url": "sec-section-name.html#sec-section-name-3",
+  "url": "sec-section-name.html#sec-section-name-4",
   "type": "Note",
   "number": "1.4.1",
   "title": "",
@@ -631,9 +640,9 @@ var ptx_lunr_docs = [
   "body": "   Statistics is the science of conducting studies to collect, organize, analyze and interpret data.   "
 },
 {
-  "id": "sec-section-name-13",
+  "id": "sec-section-name-14",
   "level": "2",
-  "url": "sec-section-name.html#sec-section-name-13",
+  "url": "sec-section-name.html#sec-section-name-14",
   "type": "Example",
   "number": "1.4.4",
   "title": "Differentiating a polynomial.",
@@ -1474,16 +1483,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.4",
   "title": "Testing with R",
-  "body": " Testing with R  In this section we will perform hypothesis testing and find confidence intervals for a single sample.  Import Cereal Data instructions  Once the data has been imported into R, use the command attach so you can call the data by the variable name.   attach(Cereal)   A handy command is summary of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition.   summary(Cereal)    t-test for the mean   Lets begin our investigation with a one-sample t-test for the mean. The R command is t.test . We will need to identify the variable, set the null hypothesis to mu= null value, and identify the alternative hypothesis using greater, less or two.sided in quotes. The default is 95% confidence level for the intervals.  We are going to test if the mean of the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving.   mean(Calories)  Can we determine if the mean calories is significantly more than 100 calories per serving? The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command.  t.test(Calories,mu=100,alternative=\"greater\")   Let us determine what the mean fiber is per serving.   mean(Fiber)   Next, test if the mean fiber is less than 2 grams per serving.   t.test(Fiber,mu=2,alternative=\"less\")   What is the mean amount of fat per serving?   mean(Fat)   Test if fat is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use two.sided as the alternative hypothesis and add the command conf.level = to specify we want 90% precision.   t.test(Fat,mu=1,alternative=\"two.sided\", conf.level = 0.90)   "
+  "body": " Testing with R  In this section we will perform hypothesis testing and find confidence intervals for a single sample.   Import Cereal Data instructions   Once the data has been imported into R, use the command attach so you can call the data by the variable name.   attach(Cereal)   A handy command is summary of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition.   summary(Cereal)    Single Mean   Single t-test for the mean   Lets begin our investigation with a one-sample t-test for the mean. The R command is t.test . We will need to identify the variable, set the null hypothesis to mu= null value, and identify the alternative hypothesis using greater, less or two.sided in quotes. The default is 95% confidence level for the intervals.  We are going to test if the mean of the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving.   mean(Calories)  Can we determine if the mean calories is significantly more than 100 calories per serving? The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command.  t.test(Calories,mu=100,alternative=\"greater\")   Let us determine what the mean fiber is per serving.   mean(Fiber)   Next, test if the mean fiber is less than 2 grams per serving.   t.test(Fiber,mu=2,alternative=\"less\")   What is the mean amount of fat per serving?   mean(Fat)   Test if fat is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use two.sided as the alternative hypothesis and add the command conf.level = to specify we want 90% precision.   t.test(Fat,mu=1,alternative=\"two.sided\", conf.level = 0.90)     Single Proportion Test  We are going to conduct several proportion tests using the cereal data set. Rather than using the standard z-test for proportions, R Studio does a chi-square test which can be generalized to multiple proportions. The format of prop.test (count x, sample size,p=null value, alternative= ) with a default of 95% confidence for a two-tailed test.  First, find the proportions of each brand of cereal using the table command with the variable name.   table(Company)   The first test is to determine if the proportion of Kellogg cereals is different than 50%. Use the prop.test command with the count of 11 out of the sample of 30 cereals. The null hypothesis is p=.50 and we will use the two-tailed test default.   prop.test(11,30,p=.5)   Next, determine if the proportion of Quaker cereals is less than 50%. Here we need to identify the alternative hypothesis as less with a count of 6 out of 30 cereals.   prop.test(6,30,p=.5, alternative=\"less\")   Now determine if the proportion of General Mills cereal is greater than 1\/3 of the cereals at the 90% confidence level. The alternative hypothesis as greater with a count of 13 out of the 30 cereals. We also need to add the condition conf.level = 0.90 to the command.   prop.test(13,30,p=.333, alternative=\"greater\", conf.level = 0.90)    "
 },
 {
-  "id": "sec-Rtests-8",
+  "id": "sec-Rtests-3",
   "level": "2",
-  "url": "sec-Rtests.html#sec-Rtests-8",
+  "url": "sec-Rtests.html#sec-Rtests-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "t-test for the mean "
+  "body": "Import Cereal Data instructions "
+},
+{
+  "id": "subsec-SingleMean-2",
+  "level": "2",
+  "url": "sec-Rtests.html#subsec-SingleMean-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Single t-test for the mean "
 },
 {
   "id": "sec-Rcompare",
@@ -1492,7 +1510,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.5",
   "title": "Comparison Tests with R",
-  "body": " Comparison Tests with R  Two group comparisons.   Comparing Two Independent Means    Paired Means    Comparing Two Proportions    Comparing Two Variances   "
+  "body": " Comparison Tests with R  We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group.   Comparing Two Independent Means  The standard format for a t.test for the mean is identifying the two variables names separated by commas, the alternative hypothesis as alternative = , and the confidence level using conf.level = with the default being 95%.R Studio finds the difference is u1 - u2 so list them in the order you are calculating them.  For our first example, we are comparing the mean time for completing a maze. Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX  We are going to perform a simple t-test for the difference in mean times. Thus the alternative hypothesis is that the means are not equal. We will using the default settings at 95% level. Import the data set and attach the variable names. We will be using the variables WhiteMice and BrownMice. There are no spaces in the name of variables when using R.   t.test(WhiteMice,BrownMice)   Suppose we claim the average mean time is greater for the white mice using alpha = 0.10 level. We can use White mice is greater than Brown mice or brown mice is less than white mice as shown below, and we need to add conf.level = .90 to both commands.   t.test(WhiteMice,BrownMice,alternative = 'greater',conf.level = .90)    t.test(BrownMice,WhiteMice,alternative = 'less',conf.level = .90)   compare the R outputs    Paired Means  When the data is paired in some way we only look at the difference between those paired values. This is also known as a dependent t-test.  The format I use for the paired t-test is t.test(PostValues, PreValues , paired=TRUE, alternative=, conf.level= ) . The difference is u1 - u2 by default, so list the Post values first so it aligns with the claim better.  A physical education director claims that by taking special vitamins a weight lifter can increase his or her strength. Eight athletes are selected and given a test of strength using the standard bench press. Test the effectiveness of the vitamin regimen at alpha = 0.05. Each value represents the maximum number of pounds the athlete can bench press.  Use the data XX and the variables are WeightAfter and the WeightBefore. Since we are comparing the bench press weights before and after the vitamin regiment, it is a paired or dependent t-test. Enter the following R command to compare the change in weights lifted.   t.test(WeightAfter,WeightBefore, paired=TRUE, alternative='greater', conf.level=.95)     Comparing Two Proportions    Comparing Two Variances  Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX. Only this time we want to compare the variance of time between the white and brown mice. So we are checking if the variance is equal or not equal. We will use the R command var.test and we identify our two variables.   var.test(WhiteMice,BrownMice)   Sometimes when we use a data set, not all values are included. In that case we want to ignore any cells without data. We do this by using na.rm=TRUE. Find the standard deviation for the times for both mice groups.   sd(WhiteMice, na.rm=TRUE)    sd(BrownMice, na.rm=TRUE)    "
 },
 {
   "id": "sec-Rcorr",
@@ -1501,7 +1519,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.6",
   "title": "Correlation Tests with R",
-  "body": " Correlation Tests with R  Text of section.  "
+  "body": " Correlation Tests with R  Text of section.   Correlation Between Quantitative Variables   Hurricanes   Climate change is a long-term change in the average weather patterns that have come to define Earth’s local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature. One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes.  The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant.  First, construct a scatterplot to describe the nature of the relationship. Use the plot command and identify the independent x-variable, Years, and the dependent y-variable, Hurricanes. It is also helpful to include a main title.   plot(Year, Hurricanes, main='Hurricanes over the Years’)    Interpret: We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes.  Second, calculate the correlation coefficient to describe the strength of the relationship. We will use the cor command with the x-variable and y-variable.   cor(Year, Hurricanes)    Interpret: r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a correlation test . The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant.   cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95)   Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the regression equation so we can make predictions. We will use the command lm for a linear model and we identify the y-variable, Hurricanes, first with the tilda then the x-variable, Year.   lm(Hurricanes~Year)    Interpret: The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation where x represents the year and y represents the predicted number of hurricanes for that year.  We create a Simple Linear Regression Model and then summarize the results for some additional information.   SLRmodelHurr=lm(Hurricanes~Year)    summary(SLRmodelHurr)    Interpret: Tis shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination means 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables.    Association Between Categorical Variables   "
+},
+{
+  "id": "subsec-CorrTests-2",
+  "level": "2",
+  "url": "sec-Rcorr.html#subsec-CorrTests-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Hurricanes "
+},
+{
+  "id": "subsec-CorrTests-5",
+  "level": "2",
+  "url": "sec-Rcorr.html#subsec-CorrTests-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "scatterplot "
+},
+{
+  "id": "subsec-CorrTests-8",
+  "level": "2",
+  "url": "sec-Rcorr.html#subsec-CorrTests-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "correlation coefficient "
+},
+{
+  "id": "subsec-CorrTests-10",
+  "level": "2",
+  "url": "sec-Rcorr.html#subsec-CorrTests-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "correlation test "
 },
 {
   "id": "sec-Rassoc",
