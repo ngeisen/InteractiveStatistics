@@ -6,24 +6,24 @@
 <subsection xml:id="subsec-CorrTests">
   <title>Correlation Between Quantitative Variables </title>
   <p> <term> Hurricanes </term> </p> 
-<p> Climate change is a long-term change in the average weather patterns that have come to define Earth’s local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature.  One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes. </p> 
+<p> Climate change is a long-term change in the average weather patterns that have come to define Earth's local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature.  One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes. </p> 
 <p> The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant. </p> 
-<p> First, construct a <term> scatterplot </term> to describe the nature of the relationship. Use the <em> plot </em> command and identify the independent x-variable, Years, and the dependent y-variable, Hurricanes. It is also helpful to include a main title. </p>
-<p> <c> plot(Year, Hurricanes, main='Hurricanes over the Years’) </c> </p> 
+<p> First, construct a <term> scatterplot </term> to describe the nature of the relationship. Use the <em> plot </em> command and identify the independent <em> x</em>-variable, Years, and the dependent <em> y</em> -variable, Hurricanes. It is also helpful to include a main title. </p>
+<p> <c> plot(Year, Hurricanes, main='Hurricanes over the Years') </c> </p> 
 <p> <em> Interpret: </em> We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes. </p> 
  <p> Second, calculate the <term> correlation coefficient </term> to describe the strength of the relationship. We will use the <em> cor </em> command with the x-variable and y-variable. </p> 
 <p> <c>  cor(Year, Hurricanes) </c> </p>
 <p> <em> Interpret: </em> r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a <term> correlation test </term>. The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant. </p> 
 <p> <c>  cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95) </c> </p>
 
-<p> Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the regression equation so we can make predictions. We will use the command <em> lm </em> for a linear model and we identify the y-variable, Hurricanes, first with the tilda then the x-variable, Year.</p> 
+<p> Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the <term> regression equation </term> so we can make predictions. We will use the command <em> lm </em> for a linear model and we identify the y-variable, Hurricanes, first with the tilda symbol <c> ~ </c> then the x-variable, Year.</p> 
 <p> <c>  lm(Hurricanes~Year) </c> </p>
 <p> <em> Interpret: </em> The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation <m> y =0.031x-56.01 </m> where <em> x </em> represents the year and <em> y </em> represents the predicted number of hurricanes for that year. </p> 
 
-<p> We create a Simple Linear Regression Model and then summarize the results for some additional information. </p> 
+<p> We can create a Simple Linear Regression Model (naming it SLRmodelHurr for Hurricanes) and then summarize the results for some additional information. </p> 
 <p> <c>  SLRmodelHurr=lm(Hurricanes~Year) </c> </p>
 <p> <c>  summary(SLRmodelHurr) </c> </p>
-<p> <em> Interpret: </em> Tis shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination <m> r^2 = .1304 </m> means 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables. </p> 
+<p> <em> Interpret: </em> This shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination is <m> r^2 = .1304 </m> which indicates that 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables. </p> 
 
 
 

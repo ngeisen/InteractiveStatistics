@@ -36,7 +36,7 @@
             </image>
         </figure> 
 
-<p> Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category. </p>
+<p> Once we have the tallies, we can graph the data as a <term> bar graph </term> or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category. </p>
 <figure xml:id="EyeBar">
             <caption>Image of Eye Bar Graph</caption>
             <image source="EyeBar.jpg" width="60%">
