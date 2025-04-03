@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ChapSummaryStats" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Descriptive Statistics</title>
+  <introduction>
+    <p> <p> Previously we learned how to describe data using tables and graphs. Next, is to describe the data with statistical measures. We will describe the typical value using the mean, median, and mode to measure its center. We will describe the amount of variation and spread in the data using the range, variance, and standard deviation. We will summarize the position of an individual value within the data with percentiles, quartiles, and z-score. Lastly, we will describe the relationship between quantitative variables with linear regression. </p>  </p>
+  </introduction>
+
+
+<xi:include href="sec-DesStats-Centers.ptx" />
+<xi:include href="sec-DesStats-Spread.ptx" />
+<xi:include href="sec-DesStats-Position.ptx" />
+<xi:include href="sec-DesStats-Regression.ptx" />
+
+  </chapter>

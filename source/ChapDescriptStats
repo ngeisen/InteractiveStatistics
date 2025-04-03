@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ChapDescriptStats" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Descriptive Statistics </title>
+  <title>Graphing Data </title>
 
   <introduction>
-        <p> In this chapter we will investigate multiple ways to describe the data with graphs and numerical statistics. </p>
+        <p> In this chapter we will investigate multiple ways to describe the data with graphs. </p>
       </introduction> 
 
       <objectives>
@@ -15,10 +15,10 @@
         </introduction>
         <ol>
           <li>
-            <p> Graph data appropriately. </p> </li>
-            <li> <p> Describe the center of the data with mean, median, mode. </p>
+            <p> Graph categorical data with bar graphs and pie graphs. </p> </li>
+            <li> <p> Graph quantitative data with dotplots, histograms, and boxplots. </p>
           </li>
-          <li> <p> Describe the spread of a data set with range, interquartile-range, and standard deviation. </p> </li>
+          <li> <p> Compare data with scatterplots and boxplots. </p> </li>
         </ol>
       </objectives>
 

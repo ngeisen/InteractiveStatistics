@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-DesStat-Spread" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Measures of Spread</title>
+  <p> Variability is an important idea in statistics. If we were to measure the height of everyone in our class, every observation could give a different value. That means not every student is the same height. Thus, there is variability in the heights of the students in class. If we asked the heights of students in several different classes, there will be variation among the different samples. Variability describes how the data are spread out. If the data are very close to each other, then there is low variability. If the data are very spread out, then there is high variability. We will investigate the range, variance, and standard deviation as measures of spread in the values. </p>
+
+<subsection xml:id="subsec-SpreadBasics">
+  <title>Understanding the Basics</title>
+
+<p> The <term> range </term> of a set of data is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are. </p>
+
+<p> A better way is to describe the variability is with the standard deviation, which is the average distance each value is from the mean. We will illustrate this with an example and then review how to calculate it using technology. </p>
+<p> Suppose you need to re-stain the fence in your backyard. There are two common brands at the local hardware store. Before purchasing the new stain, you ask your neighbors how long the stain lasts before having to re-stain the fence. For Brand A you find it needs reapplied after 25, 30, 35, 40, 45 months. For Brand B it needed to be reapplied after 10, 35, 35, 45, 50 months. </p>
+
+<p> Based on this small sample, which brand would you choose and why? </p>
+
+<p> As a new statistics student, you decided to compare the centers to see how long each brand typically lasts. We see there is no mode for Brand A, the mean is 175/5= 35 months, and the median is 35 months. For Brand B the mode is 35 months, the mean is 175/5= 35 months, and the median is 35 months. From these results one might assume both brands will last equally long. So, we need another way to analyze the data – thus the amount of spread and variation in how long each brand lasts. </p>
+<p> Range of Brand A = 45-25 = 20 months </p>
+<p> Range of Brand B = 50-10 = 40 months. </p>
+<p> Brand A has a smaller spread in values while Brand B is more spread out in how long the stain lasts. Brand B may only last 10 months or as long as 50 months. </p>
+<p> To find the <term> deviation </term>, we find the distance between each value and the mean. Take the value and subtract the mean of 35. Keep track of the negative values to indicate the values was below the mean and positive that it lasted longer than the mean. The sum of the deviations should be around zero.  </p>
+<p> Next, we will square each deviation value. Find the total deviation by adding them together and then divide by one less than the sample size. This will give the sample variance for each brand. </p>
+<image source="DeviationTable.png" width="80%">
+                <shortdescription> table showing deviation computation</shortdescription>
+            </image>
+<p> Variance for Brand A is 250/4 = 62.5 and the variance for Brand B is 950/4 =237.5 </p>
+<p> Square root the variance to get the standard deviation. This describes how far most values are from the mean. The smaller the standard deviation, the more consistent the brand of stain lasts. </p>
+<p> Standard deviation for Brand A is sqrt625 = 7.9 </p> 
+<p> Standard deviation for Brand A is sqrt 237.5 = 15.4  </p>
+<p> Therefore, Brand A is more consistent around the mean while Brand B has more variation in how long the stain will last. </p>
+<image source="StainBoxplot.png" >
+                <shortdescription> boxplot of stain values</shortdescription>
+            </image>
+
+<p> The boxplot helps to see that Brand A is more consistent while Brand B is more spread out. The value of 10 is an outlier in the boxplot for Brand B. </p>
+<p> In general a <q>small </q> standard deviation indicates the data is close together around the mean (more consistent) while a <q>large</q> standard deviation indicates the data is more spread out (less consistent). If a manufacturer is making bolts, they want the diameters to be very consistent so the nuts still fit, thus they want a small standard deviation. </p>
+<p> Claiming the standard deviation is small or large also depends on the actual data values. To a bicyclist whose average speed is 20 mph, s = 10 mph is huge. To an airplane whose average speed is 500 mph, s = 10 mph is relatively small. The size of the variation depends on the size of the numbers in the data and the mean. </p>
+
+<p> The good news is we can use technology to find the standard deviation. This is the only time we will do it by hand. Next is to find standard deviation on the calculator.  </p> 
+
+  </subsection>
+
+
+<subsection xml:id="subsec-SpreadCalc">
+  <title> Using TI-83 Calculator for Summary Statistics </title>
+  </subsection>
+
+
+<subsection xml:id="subsec-SpreadUses">
+  <title> Using the Standard Deviation </title>
+<p> One of the uses of the standard deviation is to describe how a population is distributed by using the Empirical Rule. This rule describes how much data is within a certain distance on either side of the mean. </p>
+<p> Approximately 68% of the data fall with one standard deviation of the mean, giving the interval from μ − σ to μ + σ  for the middle 68% of the values in a distribution. </p>
+<p> Approximately 95% of the data fall with two standard deviations of the mean, giving the interval from μ − 2σ to μ + 2σ . This gives the middle 95% of the values in the distribution. This is often called the 95% Rule. </p>
+<p> Approximately 99% of the data fall with three standard deviations of the mean, giving the interval from μ − 3σ to μ + 3σ . </p>
+<p> <term> Example: </term> Find the interval for middle 68% of time that the stain will last for Brand A. </p> 
+<p> <em> Solution: </em> The 68% rules says the values are within 1 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 7.9, the interval is 35-7.9 to 35+7.9 giving 27.1 to 42.9 months. </p>
+<p> <term> Example: </term> Use the 95% ruler for the interval that Brand B will last. </p>
+<p>  <em> Solution: </em> The 95% rules says the values are within 2 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 15.4, the interval is 35-2(15.4) to 35+2(15.4) giving 4.2 to 65.8 months. This interval is much wider because there was more variation in the original data. </p>
+
+
+  </subsection>
+<p> <term> Summary of formulas and notations </term> </p>
+
+
+</section>
