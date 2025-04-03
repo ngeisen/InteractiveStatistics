@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Acknowledgements",
   "number": "",
   "title": "Acknowledgements",
-  "body": " Special thanks to my contributors for sharing reasearch data:  Kathryn Kozak, Coconio Community College, Statistics Using Technolgoy.   Lauryn Benedict, Alexandra Charles, and Amirah Brockington from Biology Sciences at the University of Northern Colorado, and Cristine Dahlin from the University of Pettsburgh, for A survey of vocal mimicry in companion parrots.   "
+  "body": " This book would not exist without the contributions of many collaborators. Thank you for sharing your ideas and research data.  Special thanks to my contributors:  Kathryn Kozak, Coconio Community College, Statistics Using Technology (2018).   Lauryn Benedict, Alexandra Charles, and Amirah Brockington from Biology Sciences at the University of Northern Colorado, and Cristine Dahlin from the University of Pettsburgh, for A survey of vocal mimicry in companion parrots.   Kristin King, Robert Powers, and Sam R at UNC   This is an introductory textbook for statistics, intended for freshman or first-year undergraduate students. Each section begins with understanding the basics of the vocabulary and formulas, a few simple exercises to test your understanding, and followed by a case study illustrating a way to analyze the data with the new content. The goal is to make the textbook interactive so you can test your understanding as the semester progresses. We will be using StatKey as a free online tool for graphing data and creating simulations illustrating …. There is a section explaining how to use R and R Studio for statistical analysis. I tend to save using R until about midpoint in the class, then we can spiral through the content as a review as we learn to use R for the hypothesis testing.   "
 },
 {
   "id": "sec-DayOne",
@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Describing Categorical Data",
-  "body": " Describing Categorical Data    At the end of this section you will able to     Organize categorical data into a frequency table.    Graph categorical data with bar graph or pie gprah.    Accurately describe the data with proportions.     Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the frequency represents the number of times a particular category occurs from the raw data. This is organized in a frequency table summarizing each category with its frequency. This works best with nominal and ordinal level data.  On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data.   Image of Raw Eye Color Data   Lists 20 eye colors.    The data is organized into 4 distinct categories. With this smaller data set we can count how many have brown eyes, how many have blue eyes, then green and hazel. With a larger data set we will use technology to help us find the frequency. From this sample there are 10 with brown eyes, 4 have blue eyes, 4 have green eyes, and 2 have hazel eyes. If we add the counts together, we get our sample of 20 students.   Image of Eye Frequency   Frequency of 10 brown, 4 blue, 4 green, and 2 hazel.    Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category.   Image of Eye Bar Graph   Bar graph showing of 10 brown, 4blue, 4 green, and 2 hazel.    The bar graph allows us to quickly see that brown occurs most often and hazel eyes occurred least often in this sample.  A relative frequency table also shows the proportion or percentage of cases that fall in each category, as shown below.   Image of Eye Relative Frequency Table   Relative frequency table showing of 50% brown, 20% blue, 20% green, and 10% hazel.    The proportion of some category is found by  . Brown eyes occurred 10 times out of the sample of 20 students thus p^=10\/20=.5 which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus p^=4\/20=.2 which is 20% of the students.  The proportion for a sample is denoted p^ and read \"p-hat.\"  The proportion for a population is denoted p .  Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample.   Image of Eye Circle Graph   Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.    A third type of qualitative data graph is a Pareto chart , which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantace is you can visually see the more popular responses to the least popular.    Image of Pareto Chart   Pareto Chart showing of 10 brown, 4 blue, 4 green, and 2 hazel.     See the section for Graphing with StatKey for graphing one categorical variable with technology.     Two Categorical Variables   When working with two categorical variables, we often look for possible relationships between the two variables using a two-way table . The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.  We are going to investigate the possible relationship using the UNC Women's basketball data set. The dataset 22-23 UNCWBB gives the results of the UNC Women's Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were Win Loss variable which stated if the UNC team won or lost the game and the HomeAway variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set .   Image of partial data set   Lists 9 games as home\/awa and win\/loss.    The results for these variables are shown in the two-way table below. To create the table, in StatKey choose Two Categorical Variables along the left menu and select the variable WinLoss and HomeAway for the table.   Image of WB two-way table   Summarizes value for 31 games.    From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games.  As a review, is the study an experiment or an observational study?   Solution: This is an observational study since we are looking at recorded data, there was no manipulation of variables.  What proportion of games did the UNC Women's Basketball team win during the 2022-2023 season?   Solution: p(win) = 13\/31 = 0.419 so 42% of the games.  What proportion of games did the UNC Women's Basketball team play at Away during the 2022-2023 season?  Solution: p(away) = 16\/31 = .516 so 51.6% of the games.  Does the UNC Women’s Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games?   Solution: P (win at home) = 8\/15 = .533 = 53.3%   Solution: P (win at away) = 5\/16 = 0.3125 = 31.3%  So it does appear they win more at home.     Side by side bar graph compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table.   Segmented bar graph is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories.  The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games.   Image of WB home and away   Segment bar graph comparing home and away wins.    If we switch the variables on the axes, we have the segmented bar graph below. It is easy to see there were more losses for the season.   Image of WB wins and losses   Segment bar graph comparing wins and losses.    See the section Graphing with StatKey for more information on graphing two categorical variables with technology.  "
+  "body": " Describing Categorical Data    At the end of this section you will able to     Organize categorical data into a frequency table.    Graph categorical data with bar graph or pie graph.    Accurately describe the data with proportions.     Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the frequency represents the number of times a particular category occurs from the raw data. This is organized in a frequency table summarizing each category with its frequency. This works best with nominal and ordinal level data.  On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data.   Image of Raw Eye Color Data   Lists 20 eye colors.    The data is organized into 4 distinct categories. With this smaller data set we can count how many have brown eyes, how many have blue eyes, then green and hazel. With a larger data set we will use technology to help us find the frequency. From this sample there are 10 with brown eyes, 4 have blue eyes, 4 have green eyes, and 2 have hazel eyes. If we add the counts together, we get our sample of 20 students.   Image of Eye Frequency   Frequency of 10 brown, 4 blue, 4 green, and 2 hazel.    Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category.   Image of Eye Bar Graph   Bar graph showing of 10 brown, 4blue, 4 green, and 2 hazel.    The bar graph allows us to quickly see that brown occurs most often and hazel eyes occurred least often in this sample.  A relative frequency table also shows the proportion or percentage of cases that fall in each category, as shown below.   Image of Eye Relative Frequency Table   Relative frequency table showing of 50% brown, 20% blue, 20% green, and 10% hazel.    The proportion of some category is found by  . Brown eyes occurred 10 times out of the sample of 20 students thus p^=10\/20=.5 which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus p^=4\/20=.2 which is 20% of the students.  The proportion for a sample is denoted p^ and read \"p-hat.\"  The proportion for a population is denoted p .  Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample.   Image of Eye Circle Graph   Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.    A third type of qualitative data graph is a Pareto chart , which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantace is you can visually see the more popular responses to the least popular.    Image of Pareto Chart   Pareto Chart showing of 10 brown, 4 blue, 4 green, and 2 hazel.     See the section for Graphing with StatKey for graphing one categorical variable with technology.     Two Categorical Variables   When working with two categorical variables, we often look for possible relationships between the two variables using a two-way table . The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.  We are going to investigate the possible relationship using the UNC Women's basketball data set. The dataset 22-23 UNCWBB gives the results of the UNC Women's Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were Win Loss variable which stated if the UNC team won or lost the game and the HomeAway variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set .   Image of partial data set   Lists 9 games as home\/awa and win\/loss.    The results for these variables are shown in the two-way table below. To create the table, in StatKey choose Two Categorical Variables along the left menu and select the variable WinLoss and HomeAway for the table.   Image of WB two-way table   Summarizes value for 31 games.    From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games.  As a review, is the study an experiment or an observational study?   Solution: This is an observational study since we are looking at recorded data, there was no manipulation of variables.  What proportion of games did the UNC Women's Basketball team win during the 2022-2023 season?   Solution: p(win) = 13\/31 = 0.419 so 42% of the games.  What proportion of games did the UNC Women's Basketball team play at Away during the 2022-2023 season?  Solution: p(away) = 16\/31 = .516 so 51.6% of the games.  Does the UNC Women’s Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games?   Solution: P (win at home) = 8\/15 = .533 = 53.3%   Solution: P (win at away) = 5\/16 = 0.3125 = 31.3%  So it does appear they win more at home.     Side by side bar graph compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table.   Segmented bar graph is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories.  The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games.   Image of WB home and away   Segment bar graph comparing home and away wins.    If we switch the variables on the axes, we have the segmented bar graph below. It is easy to see there were more losses for the season.   Image of WB wins and losses   Segment bar graph comparing wins and losses.    See the section Graphing with StatKey for more information on graphing two categorical variables with technology.  "
 },
 {
   "id": "sec-CatData-2",
@@ -664,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "2.1",
   "title": "",
-  "body": "  At the end of this section you will able to     Organize categorical data into a frequency table.    Graph categorical data with bar graph or pie gprah.    Accurately describe the data with proportions.    "
+  "body": "  At the end of this section you will able to     Organize categorical data into a frequency table.    Graph categorical data with bar graph or pie graph.    Accurately describe the data with proportions.    "
 },
 {
   "id": "sec-CatData-3",
@@ -862,7 +862,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Graphing Quantitative Data",
-  "body": " Graphing Quantitative Data    At the end of this section you will able to     Accurately graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data distribution.    Describe the center of a data distribution.    Describe the spread of a data distribution.     In this course we will use technology to graph quantitataive data. So our focus will be on interpreting the infomration from the graph. The three graphs we will use the most are dotpltos, boxplots, and histograms.  A dotplot is a graph where the values are listed along the x-axis and each dot reprents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos from a sample of studetns.  A histogram is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution.  A boxplot splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots becasue the box represents the middle 50% of tge data and there is a whisker to the smallest value and a whisker to the largest value.  Another graph you may occasional see is the ogive , also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero.   Shapes of Distributions  When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is refered to as normally distributed. Symmeteric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the rigt side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps     See the section for Graphing with StatKey for uploading one quantitative variable into StatKey to graph the data.     Other Graphs  "
+  "body": " Graphing Quantitative Data    At the end of this section you will able to     Accurately graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data distribution.    Describe the center and spread of a data distribution.    Describe the spread of a data distribution.     In this course we will use technology to graph quantitataive data. So our focus will be on interpreting the infomration from the graph. The three graphs we will use the most are dotpltos, boxplots, and histograms.  A dotplot is a graph where the values are listed along the x-axis and each dot reprents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos from a sample of studetns.  A histogram is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution.  A boxplot splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots becasue the box represents the middle 50% of tge data and there is a whisker to the smallest value and a whisker to the largest value.  Another graph you may occasional see is the ogive , also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero.   Shapes of Distributions  When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is refered to as normally distributed. Symmeteric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the rigt side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps     See the section for Graphing with StatKey for uploading one quantitative variable into StatKey to graph the data.     Other Graphs  "
 },
 {
   "id": "sec-QuantData-2",
@@ -871,7 +871,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "2.2",
   "title": "",
-  "body": "  At the end of this section you will able to     Accurately graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data distribution.    Describe the center of a data distribution.    Describe the spread of a data distribution.    "
+  "body": "  At the end of this section you will able to     Accurately graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data distribution.    Describe the center and spread of a data distribution.    Describe the spread of a data distribution.    "
 },
 {
   "id": "sec-QuantData-4",
@@ -1090,11 +1090,209 @@ var ptx_lunr_docs = [
   "body": "Interpreting information from a graph  Using the graph above, select all true statements that apply to the eye color graph.     Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.    "
 },
 {
+  "id": "sec-DesStat-Centers",
+  "level": "1",
+  "url": "sec-DesStat-Centers.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Measures of Center",
+  "body": " Measures of Center   This section focuses on measures of central tendency to describe the center of the data. We are looking at what is considered a typical value. We will use the mean, median, mode, and midrange to describe the center.    Understanding the Basics   Many times, you are asked what to expect on average or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center that we will focus on: the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs and then determine which data value occurs most often. This is easily seen with a dot plot or a list of values.   Example: A sample of five students are taking the number of credits this semester: 12, 15, 15,16,18. The mode is 15 credits since it occurs more often than the other values.   Example: A sample of six students are taking the number of credits this semester: 12, 15, 15,16,18, 18. This example is bimodal since there are two modes: 15 credits and 18 credits since they occur more often than the other values.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to largest and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actual data value. When there is an even number of values you will need to average the middle two values.   Example: A sample of five students are taking the number of credits this semester: 18, 12, 15,16, 14.   Solution: First put the value in order: 12, 14, 15 ,16, 18. There are 5 values so the middle value when in order is 15.   Example: A sample of six students are taking the number of credits this semester: 18, 16, 15,19, 12, 14.   Solution: First put the values in order: 12, 14, 15,16, 18, 19. There are 6 values so the middle value is between the middle two values of 15 and 16, thus the median is credits.  The mean is the arithmetic average of the numbers. You will add all the values together and then divide by the number of values.  The formula for the sample mean is   where x-bar represents the mean, the sigma symbol indicates to find the sum of the data values, where each x is a data value, and then divide by the sample size of n .   Example: A sample of five students are taking the number of credits this semester: 12, 14, 15,16, 18.   Solution: The sum is 75 divided by the 5 values so the mean is 15 credits per person.    The formula for the population mean is     where represents the mean, the sigma symbol indicates to find the sum of the data values, where each X is a data value in the population, and then divide by the size N of the population.  Another measure of the center is the midrange which is the average of the smallest and largest value of the data set. The midrange is the middle of the range of values in the data.   Example: A sample of five students are taking the number of credits this semester: 12, 14, 15,16, 18. The average of the smallest and largest is (12+18)\/2 = 15 credits.  A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.   The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus apps per student. This is higher than the median because it is skewed to the right by the large value of 72. The midrange which is also shifted to the right.    A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.    The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus apps per student. This is higher than the median because it is skewed to the right by the large value of 72. The midrange which is also shifted to the right.     Using TI-83 Calculator for Summary Statistics  Next, we will use technology to find the measures of center. These directions are for the TI-83 Plus which should be the same for the TI-84. We will use the same scenario as our last check point. Example: A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.  First, enter the raw data into one of the lists: Start with the STAT button and under the EDIT menu choose option 1:Edit and then hit the enter button.   image of STAT button 1:Edit   Type in the values and hit [enter] after each entry.   image of entering data   Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for 1-Var Stats which refers to 1-variable statistics and then hit [enter]. Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then the number 1 which has L1 above it and then [enter] button.   image of 1VarStat   Note: If you are using a TI-84 the x=list is L1 and the y-list is left blank, scroll to Calculate and hit [enter]. You should see the following outputs for either calculator.   image of summary statistics    Interpretation: Reading the values going down, X-bar is the mean of 43.4, the sum of the values is 217, if we squared each value and found the sum that is the value 10705. Sx=17.9388 is the sample standard deviation and σx=16.045 is the population standard deviation (which we will not use in this course). The sample size is n=5, the arrow pointing down indicates there are more values to follow so click on the arrow down button until all the other values show. MinX=25 is the smallest value, Q1=30.5 is the first quartile, Med=36 is the median, Q3=60 is the third quartile, and maxX=72 is the maximum value in the data. We will talk about these values later in this chapter.  Note: the mode is not given in the summary statistics. But we can find it by sorting the data from smallest to largest and check the frequencies.  Click on the [STAT] button and under EDIT select option 2: Sort A( and hit the [enter] button.  Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then the number 1 which has L1 above it and the ) button and then [enter]. It should say Done .   image to sort data   Now go back to [STAT] button and select option 1:Edit and [enter] to look at the data. It is now sorted in ascending order. Now we can see the mode is 36.   image of sorted data    Now that we understand the basics, let's analyze a larger data set with technology.   Using StatKey to Find Summary Statistics   "
+},
+{
+  "id": "sec-DesStat-Centers-5",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mode "
+},
+{
+  "id": "sec-DesStat-Centers-7",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "bimodal "
+},
+{
+  "id": "sec-DesStat-Centers-8",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "median "
+},
+{
+  "id": "sec-DesStat-Centers-13",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mean "
+},
+{
+  "id": "sec-DesStat-Centers-23",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "midrange "
+},
+{
+  "id": "sec-DesStat-Centers-24",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "sec-DesStat-Centers-25",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-25",
+  "type": "Checkpoint",
+  "number": "4.1.1",
+  "title": "",
+  "body": "A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.   The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus apps per student. This is higher than the median because it is skewed to the right by the large value of 72. The midrange which is also shifted to the right.  "
+},
+{
+  "id": "sec-DesStat-Centers-26",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#sec-DesStat-Centers-26",
+  "type": "Example",
+  "number": "4.1.2",
+  "title": "",
+  "body": " A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.    The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus apps per student. This is higher than the median because it is skewed to the right by the large value of 72. The midrange which is also shifted to the right.   "
+},
+{
+  "id": "subsec-CenterCalc-2",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#subsec-CenterCalc-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "subsec-CenterCalc-3",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#subsec-CenterCalc-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "1:Edit "
+},
+{
+  "id": "subsec-CenterCalc-7",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#subsec-CenterCalc-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "1-Var Stats "
+},
+{
+  "id": "subsec-CenterCalc-13",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#subsec-CenterCalc-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "2: Sort A( "
+},
+{
+  "id": "subsec-CenterCalc-16",
+  "level": "2",
+  "url": "sec-DesStat-Centers.html#subsec-CenterCalc-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "1:Edit "
+},
+{
+  "id": "sec-DesStat-Spread",
+  "level": "1",
+  "url": "sec-DesStat-Spread.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Measures of Spread",
+  "body": " Measures of Spread  Variability is an important idea in statistics. If we were to measure the height of everyone in our class, every observation could give a different value. That means not every student is the same height. Thus, there is variability in the heights of the students in class. If we asked the heights of students in several different classes, there will be variation among the different samples. Variability describes how the data are spread out. If the data are very close to each other, then there is low variability. If the data are very spread out, then there is high variability. We will investigate the range, variance, and standard deviation as measures of spread in the values.   Understanding the Basics  The range of a set of data is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are.  A better way is to describe the variability is with the standard deviation, which is the average distance each value is from the mean. We will illustrate this with an example and then review how to calculate it using technology.  Suppose you need to re-stain the fence in your backyard. There are two common brands at the local hardware store. Before purchasing the new stain, you ask your neighbors how long the stain lasts before having to re-stain the fence. For Brand A you find it needs reapplied after 25, 30, 35, 40, 45 months. For Brand B it needed to be reapplied after 10, 35, 35, 45, 50 months.  Based on this small sample, which brand would you choose and why?  As a new statistics student, you decided to compare the centers to see how long each brand typically lasts. We see there is no mode for Brand A, the mean is 175\/5= 35 months, and the median is 35 months. For Brand B the mode is 35 months, the mean is 175\/5= 35 months, and the median is 35 months. From these results one might assume both brands will last equally long. So, we need another way to analyze the data – thus the amount of spread and variation in how long each brand lasts.  Range of Brand A = 45-25 = 20 months  Range of Brand B = 50-10 = 40 months.  Brand A has a smaller spread in values while Brand B is more spread out in how long the stain lasts. Brand B may only last 10 months or as long as 50 months.  To find the deviation , we find the distance between each value and the mean. Take the value and subtract the mean of 35. Keep track of the negative values to indicate the values was below the mean and positive that it lasted longer than the mean. The sum of the deviations should be around zero.  Next, we will square each deviation value. Find the total deviation by adding them together and then divide by one less than the sample size. This will give the sample variance for each brand.   table showing deviation computation   Variance for Brand A is 250\/4 = 62.5 and the variance for Brand B is 950\/4 =237.5  Square root the variance to get the standard deviation. This describes how far most values are from the mean. The smaller the standard deviation, the more consistent the brand of stain lasts.  Standard deviation for Brand A is sqrt625 = 7.9  Standard deviation for Brand A is sqrt 237.5 = 15.4  Therefore, Brand A is more consistent around the mean while Brand B has more variation in how long the stain will last.   boxplot of stain values   The boxplot helps to see that Brand A is more consistent while Brand B is more spread out. The value of 10 is an outlier in the boxplot for Brand B.  In general a small standard deviation indicates the data is close together around the mean (more consistent) while a large standard deviation indicates the data is more spread out (less consistent). If a manufacturer is making bolts, they want the diameters to be very consistent so the nuts still fit, thus they want a small standard deviation.  Claiming the standard deviation is small or large also depends on the actual data values. To a bicyclist whose average speed is 20 mph, s = 10 mph is huge. To an airplane whose average speed is 500 mph, s = 10 mph is relatively small. The size of the variation depends on the size of the numbers in the data and the mean.  The good news is we can use technology to find the standard deviation. This is the only time we will do it by hand. Next is to find standard deviation on the calculator.    Using TI-83 Calculator for Summary Statistics    Using the Standard Deviation  One of the uses of the standard deviation is to describe how a population is distributed by using the Empirical Rule. This rule describes how much data is within a certain distance on either side of the mean.  Approximately 68% of the data fall with one standard deviation of the mean, giving the interval from μ − σ to μ + σ for the middle 68% of the values in a distribution.  Approximately 95% of the data fall with two standard deviations of the mean, giving the interval from μ − 2σ to μ + 2σ . This gives the middle 95% of the values in the distribution. This is often called the 95% Rule.  Approximately 99% of the data fall with three standard deviations of the mean, giving the interval from μ − 3σ to μ + 3σ .   Example: Find the interval for middle 68% of time that the stain will last for Brand A.   Solution: The 68% rules says the values are within 1 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 7.9, the interval is 35-7.9 to 35+7.9 giving 27.1 to 42.9 months.   Example: Use the 95% ruler for the interval that Brand B will last.   Solution: The 95% rules says the values are within 2 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 15.4, the interval is 35-2(15.4) to 35+2(15.4) giving 4.2 to 65.8 months. This interval is much wider because there was more variation in the original data.    Summary of formulas and notations   "
+},
+{
+  "id": "subsec-SpreadBasics-2",
+  "level": "2",
+  "url": "sec-DesStat-Spread.html#subsec-SpreadBasics-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "range "
+},
+{
+  "id": "subsec-SpreadBasics-10",
+  "level": "2",
+  "url": "sec-DesStat-Spread.html#subsec-SpreadBasics-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "deviation "
+},
+{
+  "id": "subsec-SpreadUses-6",
+  "level": "2",
+  "url": "sec-DesStat-Spread.html#subsec-SpreadUses-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "subsec-SpreadUses-8",
+  "level": "2",
+  "url": "sec-DesStat-Spread.html#subsec-SpreadUses-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "sec-DesStat-Spread-6",
+  "level": "2",
+  "url": "sec-DesStat-Spread.html#sec-DesStat-Spread-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Summary of formulas and notations "
+},
+{
+  "id": "sec-DesStat-Position",
+  "level": "1",
+  "url": "sec-DesStat-Position.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Measures of Position",
+  "body": " Measures of Position  Text of section.  "
+},
+{
+  "id": "sec-DesStat-Regression",
+  "level": "1",
+  "url": "sec-DesStat-Regression.html",
+  "type": "Section",
+  "number": "4.4",
+  "title": "Linear Regression",
+  "body": " Linear Regression  Text of section.  "
+},
+{
   "id": "BasicProb",
   "level": "1",
   "url": "BasicProb.html",
   "type": "Section",
-  "number": "4.1",
+  "number": "5.1",
   "title": "Basic Probability",
   "body": " Basic Probability    At the end of this section you will able to:    Determine the probabilty of a single event.    Identify the sample space of an event.    Determine if outcomes are equally likely.    Compare experimental probabilty with theoretical probabilty.      In this chapter we will learn a little about probability. Many people are familiar with probability from playing games of chance, such as flipping coins, rolling dice and playing cards. We will use several of these examples to help explain the rules of probability.  The questions that probability can help with are your chances that the car you are buying will need more maintenance, your chances of passing a class, your chances of winning the lottery, your chances of being in a car accident. The chance of winning the lottery is very small, yet many people will spend the money on lottery tickets. Yet, if instead they saved the money that they spend on the lottery, they would have more money. In general, events that have a low probability (under 5%) are unlikely to occur. Whereas if an event has a high probability of happening (over 80%), then there is a good chance that the event will happen.  First let us review some definitions to help us understand probability.   Experiment is an activity that has specific results that can occur, but the result is unknown before you begin. Such as flipping a coin.  The outcomes are the results of an experiment. The outcomes from flipping a coin is head or tail.  An event is a set of certain outcomes of an experiment that you want to have happen. So if I want to know the likelihood of getting heads, getting heads is the event I want to happen.  The sample space is the collection of all possible outcomes of the experiment. For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space.  exerciese  To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4\/10 = 2\/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513\/100 = 51.3% of the time. This is an example of experimental probability since the value was found by actually doing the experiment.  The approximate probability of an event A, written as , is  Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates theoretical probability which is based on the sample space. But it assumes that all outcomes are equally likely to occur.  "
 },
@@ -1103,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BasicProb.html#BasicProb-2",
   "type": "Objectives",
-  "number": "4.1",
+  "number": "5.1",
   "title": "",
   "body": "  At the end of this section you will able to:    Determine the probabilty of a single event.    Identify the sample space of an event.    Determine if outcomes are equally likely.    Compare experimental probabilty with theoretical probabilty.     "
 },
@@ -1166,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ProbRules.html",
   "type": "Section",
-  "number": "4.2",
+  "number": "5.2",
   "title": "Probability Rules",
   "body": " Probability Rules    At the end of this section you will able to:    Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given    Use a tree diagram to determine the probability of multiple events      "
 },
@@ -1175,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ProbRules.html#ProbRules-2",
   "type": "Objectives",
-  "number": "4.2",
+  "number": "5.2",
   "title": "",
   "body": "  At the end of this section you will able to:    Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given    Use a tree diagram to determine the probability of multiple events     "
 },
@@ -1184,7 +1382,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "CondProb.html",
   "type": "Section",
-  "number": "4.3",
+  "number": "5.3",
   "title": "Conditional Probability",
   "body": " Conditional Probability    At the end of this section you will able to:    Determine if events independent or dependent.    Determine the probability using the rules for “and”, and “given    Distinguish between permutations and combinations      "
 },
@@ -1193,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CondProb.html#CondProb-2",
   "type": "Objectives",
-  "number": "4.3",
+  "number": "5.3",
   "title": "",
   "body": "  At the end of this section you will able to:    Determine if events independent or dependent.    Determine the probability using the rules for “and”, and “given    Distinguish between permutations and combinations     "
 },
@@ -1202,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ProbDist.html",
   "type": "Section",
-  "number": "4.4",
+  "number": "5.4",
   "title": "Probability Distribution",
   "body": " Probability Distribution    At the end of this section you will able to:    Create a probability distrubtion.    Calcuate the events from a probability distribution.    Calculate the mean and standard deviaton for probabilty distributions      "
 },
@@ -1211,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ProbDist.html#ProbDist-2",
   "type": "Objectives",
-  "number": "4.4",
+  "number": "5.4",
   "title": "",
   "body": "  At the end of this section you will able to:    Create a probability distrubtion.    Calcuate the events from a probability distribution.    Calculate the mean and standard deviaton for probabilty distributions     "
 },
@@ -1220,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "BinomialProb.html",
   "type": "Section",
-  "number": "4.5",
+  "number": "5.5",
   "title": "Binomial Distribution",
   "body": " Binomial Distribution    At the end of this section you will able to:    Determine the conditions of a binomial event.    Calcuate the probabilty for binomial event    Calculate the mean and standard deviaton for binomial events      "
 },
@@ -1229,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BinomialProb.html#BinomialProb-2",
   "type": "Objectives",
-  "number": "4.5",
+  "number": "5.5",
   "title": "",
   "body": "  At the end of this section you will able to:    Determine the conditions of a binomial event.    Calcuate the probabilty for binomial event    Calculate the mean and standard deviaton for binomial events     "
 },
@@ -1238,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ChapDistributions.html",
   "type": "Chapter",
-  "number": "5",
+  "number": "6",
   "title": "Distributions",
   "body": " Distributions   Text before the first section.   "
 },
@@ -1247,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ConfIntervals.html",
   "type": "Chapter",
-  "number": "6",
+  "number": "7",
   "title": "Confidence Intervals",
   "body": " Confidence Intervals   Text before the first section.   "
 },
@@ -1256,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ChapHypothesis.html",
   "type": "Chapter",
-  "number": "7",
+  "number": "8",
   "title": "Hypothesis Testing",
   "body": " Hypothesis Testing   Text before the first section.   "
 },
@@ -1265,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-DownloadR.html",
   "type": "Section",
-  "number": "8.1",
+  "number": "9.1",
   "title": "Downloading R and R Studio",
   "body": " Downloading R and R Studio  This section gives you the directions for download R for the first time. R is a free, open-source programming language for statistical computing.   Download R   How to download R visit   Download R Studio   How to download R Studio visit  For UNC students only: if you cannot download R and R Studio, you can still access the programs through UNC’s Apporto link. Log in with your UNC credentials. Details can be found in Canvas.  Note: For my classes we will be using R Studio since it has a friendlier interface. R Studio will split the screen into 4 panels, each panel has a different purpose. The top left is where you will see the files that are currently open in R Studio. The bottom left panel is where you will type in the commands and see the computational outputs. The top right panel summarizes the variables. The bottom right panel is where you can access the folders, and this is where the graphical output will show. The R commands are the same for both programs.   Getting ready to use R     Set up a folder for the Using R Files    Save the data and lesson files in this folder    Launch R or R Studio    Set up the working directory    You are ready to begin.    "
 },
@@ -1301,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-GraphR.html",
   "type": "Section",
-  "number": "8.2",
+  "number": "9.2",
   "title": "Graphing with R",
   "body": " Graphing with R  In this section we will learn how to do serveral common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners.    At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.     First, add the Lesson 1 Graphing text file to your Using R Files folder and the Cereal.csv dataset.  You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should now see the Lesson 1 file and the Cereal data in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it in the bottom left panel.  Next, you will need to import the data file by clicking on the file and select Import Dataset , a new window will open to give you a preview of the spreadsheet and then click on the Import button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type attach(Cereal) so you can call up the variable names.  Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors.   Boxplots  Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot. The graphs will show up in the bottom right panel of R Studio.   boxplot(Calories)    Image of Vertical Boxplot   Boxplot with values from 80 to 214.     Interpreting the Boxplot: The boxplot shows the smallest value at 80 and the largest is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The interquartile range = Q3-Q1 =160-113.2 = 46.8. The thick line in the middle is the median = 118 . To calculate the actual values use the summary command with the variable name.   summary(Calories)    Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.    Now let's add a label along the x-axis and make the boxplot horizontal.   boxplot(Calories,horizontal = TRUE,xlab = \"Calories per Serving\")  With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values.   Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.    Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol ~ followed by the categorical variable.   boxplot(Calories~Company)    Image of comparing boxplots   Boxplot for each company.     Comparing Boxplots: With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed.  Next we will add some color to the graph for fun and give the graph a main title. But investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right.   boxplot(Fat,horizontal = TRUE, col='blue', border='red',main=\"Fat Content\")    Image of Fat Content Boxplot   Boxplot with colors.           Histograms  Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.   hist(Sugars)    Image of histogram   Histogram of sugar content.    The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution.  Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of breaks we want. Suppose we want 10 bars instead of the default of four.   hist(Sugars,breaks=10)    Image of histogram   Histogram of sugar content with 10 bars.    This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.  Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title.   hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content')    Image of histogram for sodium   Histogram of sodium content.    This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms.    Categorical Graphs     Frequency Table   To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company.   table(Company)   Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.   Brand   c('General Mills', 'Kelloggs', 'Quacker')    Totals   c(13,11,6)       Pie Graph   Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the labels = Brand names were created.   pie(Totals, labels=Brand)   Next let us add some brighter colors to the graph and give it a main title.   pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies')    Bar Graph   Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created.   barplot(Totals, names.arg=Brand)   Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis.   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies')     Scatterplots   Scatterplots   Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the plot command and identify the x-variable first and then the y-variable.   plot(Fat,Carbs)   To add at title to the graph we add the main= to the command with the title in quotes.   plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates')   To find the linear correlation coefficient we use the cor command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative.   cor(Fat,Carbs)     Quantile Plots   We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the qqnorm command for the quantile plot. We can add the qqline command afterwards to draw a line through the data to see if it appears linear.   qqnorm(Calories)    qqline(Calories)   "
 },
@@ -1310,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#sec-GraphR-3",
   "type": "Objectives",
-  "number": "8.2",
+  "number": "9.2",
   "title": "",
   "body": "  At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.    "
 },
@@ -1346,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxCalorie",
   "type": "Figure",
-  "number": "8.2.1",
+  "number": "9.2.1",
   "title": "",
   "body": " Image of Vertical Boxplot   Boxplot with values from 80 to 214.   "
 },
@@ -1355,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#SummaryCalorie",
   "type": "Figure",
-  "number": "8.2.2",
+  "number": "9.2.2",
   "title": "",
   "body": " Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.   "
 },
@@ -1364,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxHorzCalorie",
   "type": "Figure",
-  "number": "8.2.3",
+  "number": "9.2.3",
   "title": "",
   "body": " Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.   "
 },
@@ -1373,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxplotbyCompany",
   "type": "Figure",
-  "number": "8.2.4",
+  "number": "9.2.4",
   "title": "",
   "body": " Image of comparing boxplots   Boxplot for each company.   "
 },
@@ -1382,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxplotColor",
   "type": "Figure",
-  "number": "8.2.5",
+  "number": "9.2.5",
   "title": "",
   "body": " Image of Fat Content Boxplot   Boxplot with colors.   "
 },
@@ -1391,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSugar",
   "type": "Figure",
-  "number": "8.2.6",
+  "number": "9.2.6",
   "title": "",
   "body": " Image of histogram   Histogram of sugar content.   "
 },
@@ -1400,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSugar2",
   "type": "Figure",
-  "number": "8.2.7",
+  "number": "9.2.7",
   "title": "",
   "body": " Image of histogram   Histogram of sugar content with 10 bars.   "
 },
@@ -1409,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSodium",
   "type": "Figure",
-  "number": "8.2.8",
+  "number": "9.2.8",
   "title": "",
   "body": " Image of histogram for sodium   Histogram of sodium content.   "
 },
@@ -1463,7 +1661,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rstats.html",
   "type": "Section",
-  "number": "8.3",
+  "number": "9.3",
   "title": "Statistics with R",
   "body": " Statistics with R  Text of section.   Finding Summary Statistics with R Studio   We are going to complete Lesson 2 for finding the summary statistics with R Studio. Add the Lesson 2 Statistic text file to your Using R Files folder. We are going to use the same Cereal data set as for graphing data.  You may need to update your working directory , to do this go to the bottom right panel and under the Files tab click on the triple dots on the far right to relocate your file and click Open . You should now see the Lesson 2 file. Click on this and it opens in the top left panel so you can copy the code or you can type it in the bottom left panel.  Next, we will need to import the data file by clicking on file and selecting Import Dataset then click on the Import button at the bottom right. Once the data is loaded into R Studio make sure to use the attach command with the data set name Cereal so you can call up the variable names.   attach(Cereal)   Recall that the commands in R or R studio are all lower case. I tend to use a capital for the first letter of the variables names to help distinguish them.  We will start by looking at some of the summary statistical values for number of calories per serving for a variety of cereal brands.  The most common measures for the center of the distribution are the mean and median. Use the following commands:   mean(Calories)    median(Calories)   To find the measures of spread we look at variance (var) and standard deviation (sd). Use the following commands:   var(Calories)    sd(Calories)  To find the maximum (largest) and minimum (smallest) values use the following commands:   max(Calories)    min(Calories)    Summary of the output: The number of calories per serving has a mean of 133.83 and median of 118. The variance is x.The standard deviation of 34.81 tells us that most values are within 34.81 calories of the mean. The number of calories is between 80 (minimum) and 214 (maximum) per serving. This gives a range of 214 - 80 = 134 calories.  A handy command is a six number summary which contains the typical five-number summary from boxplots and the mean.   summary(Calories)  Sometimes you want the summary for all the variables for the data set. In this case we use summary with the name for the data file which is Cereal    summary(Cereal)   Now repeat the process with one of the other variables. What do these summary statistics tell you about the cereal data set?  "
 },
@@ -1490,7 +1688,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rtests.html",
   "type": "Section",
-  "number": "8.4",
+  "number": "9.4",
   "title": "Testing with R",
   "body": " Testing with R  In this section we will perform hypothesis testing and find confidence intervals for a single sample.   Import Cereal Data instructions   Once the data has been imported into R, use the command attach so you can call the data by the variable name.   attach(Cereal)   A handy command is summary of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition.   summary(Cereal)    Single Mean   Single t-test for the mean   Lets begin our investigation with a one-sample t-test for the mean. The R command is t.test . We will need to identify the variable, set the null hypothesis to mu= null value, and identify the alternative hypothesis using greater, less or two.sided in quotes. The default is 95% confidence level for the intervals.  We are going to test if the mean of the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving.   mean(Calories)  Can we determine if the mean calories is significantly more than 100 calories per serving? The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command.  t.test(Calories,mu=100,alternative=\"greater\")   Let us determine what the mean fiber is per serving.   mean(Fiber)   Next, test if the mean fiber is less than 2 grams per serving.   t.test(Fiber,mu=2,alternative=\"less\")   What is the mean amount of fat per serving?   mean(Fat)   Test if fat is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use two.sided as the alternative hypothesis and add the command conf.level = to specify we want 90% precision.   t.test(Fat,mu=1,alternative=\"two.sided\", conf.level = 0.90)     Single Proportion Test  We are going to conduct several proportion tests using the cereal data set. Rather than using the standard z-test for proportions, R Studio does a chi-square test which can be generalized to multiple proportions. The format of prop.test (count x, sample size,p=null value, alternative= ) with a default of 95% confidence for a two-tailed test.  First, find the proportions of each brand of cereal using the table command with the variable name.   table(Company)   The first test is to determine if the proportion of Kellogg cereals is different than 50%. Use the prop.test command with the count of 11 out of the sample of 30 cereals. The null hypothesis is p=.50 and we will use the two-tailed test default.   prop.test(11,30,p=.5)   Next, determine if the proportion of Quaker cereals is less than 50%. Here we need to identify the alternative hypothesis as less with a count of 6 out of 30 cereals.   prop.test(6,30,p=.5, alternative=\"less\")   Now determine if the proportion of General Mills cereal is greater than 1\/3 of the cereals at the 90% confidence level. The alternative hypothesis as greater with a count of 13 out of the 30 cereals. We also need to add the condition conf.level = 0.90 to the command.   prop.test(13,30,p=.333, alternative=\"greater\", conf.level = 0.90)    "
 },
@@ -1517,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rcompare.html",
   "type": "Section",
-  "number": "8.5",
+  "number": "9.5",
   "title": "Comparison Tests with R",
   "body": " Comparison Tests with R  We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group.   Comparing Two Independent Means  The standard format for a t.test for the mean is identifying the two variables names separated by commas, the alternative hypothesis as alternative = , and the confidence level using conf.level = with the default being 95%.R Studio finds the difference is u1 - u2 so list them in the order you are calculating them.  For our first example, we are comparing the mean time for completing a maze. Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX  We are going to perform a simple t-test for the difference in mean times. Thus the alternative hypothesis is that the means are not equal. We will using the default settings at 95% level. Import the data set and attach the variable names. We will be using the variables WhiteMice and BrownMice. There are no spaces in the name of variables when using R.   t.test(WhiteMice,BrownMice)   Suppose we claim the average mean time is greater for the white mice using alpha = 0.10 level. We can use White mice is greater than Brown mice or brown mice is less than white mice as shown below, and we need to add conf.level = .90 to both commands.   t.test(WhiteMice,BrownMice,alternative = 'greater',conf.level = .90)    t.test(BrownMice,WhiteMice,alternative = 'less',conf.level = .90)   compare the R outputs    Paired Means  When the data is paired in some way we only look at the difference between those paired values. This is also known as a dependent t-test.  The format I use for the paired t-test is t.test(PostValues, PreValues , paired=TRUE, alternative=, conf.level= ) . The difference is u1 - u2 by default, so list the Post values first so it aligns with the claim better.  A physical education director claims that by taking special vitamins a weight lifter can increase his or her strength. Eight athletes are selected and given a test of strength using the standard bench press. Test the effectiveness of the vitamin regimen at alpha = 0.05. Each value represents the maximum number of pounds the athlete can bench press.  Use the data XX and the variables are WeightAfter and the WeightBefore. Since we are comparing the bench press weights before and after the vitamin regiment, it is a paired or dependent t-test. Enter the following R command to compare the change in weights lifted.   t.test(WeightAfter,WeightBefore, paired=TRUE, alternative='greater', conf.level=.95)     Comparing Two Proportions    Comparing Two Variances  Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX. Only this time we want to compare the variance of time between the white and brown mice. So we are checking if the variance is equal or not equal. We will use the R command var.test and we identify our two variables.   var.test(WhiteMice,BrownMice)   Sometimes when we use a data set, not all values are included. In that case we want to ignore any cells without data. We do this by using na.rm=TRUE. Find the standard deviation for the times for both mice groups.   sd(WhiteMice, na.rm=TRUE)    sd(BrownMice, na.rm=TRUE)    "
 },
@@ -1526,7 +1724,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rcorr.html",
   "type": "Section",
-  "number": "8.6",
+  "number": "9.6",
   "title": "Correlation Tests with R",
   "body": " Correlation Tests with R  Text of section.   Correlation Between Quantitative Variables   Hurricanes   Climate change is a long-term change in the average weather patterns that have come to define Earth's local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature. One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes.  The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant.  First, construct a scatterplot to describe the nature of the relationship. Use the plot command and identify the independent x -variable, Years, and the dependent y -variable, Hurricanes. It is also helpful to include a main title.   plot(Year, Hurricanes, main='Hurricanes over the Years')    Interpret: We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes.  Second, calculate the correlation coefficient to describe the strength of the relationship. We will use the cor command with the x-variable and y-variable.   cor(Year, Hurricanes)    Interpret: r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a correlation test . The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant.   cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95)   Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the regression equation so we can make predictions. We will use the command lm for a linear model and we identify the y-variable, Hurricanes, first with the tilda symbol ~ then the x-variable, Year.   lm(Hurricanes~Year)    Interpret: The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation where x represents the year and y represents the predicted number of hurricanes for that year.  We can create a Simple Linear Regression Model (naming it SLRmodelHurr for Hurricanes) and then summarize the results for some additional information.   SLRmodelHurr=lm(Hurricanes~Year)    summary(SLRmodelHurr)    Interpret: This shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination is which indicates that 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables.    Association Between Categorical Variables   "
 },
@@ -1580,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rassoc.html",
   "type": "Section",
-  "number": "8.7",
+  "number": "9.7",
   "title": "Associations with R",
   "body": " Associations with R  Chi Square tests for Association.  "
 },
@@ -1589,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Ranova.html",
   "type": "Section",
-  "number": "8.8",
+  "number": "9.8",
   "title": "ANOVA with R",
   "body": " ANOVA with R  ANOVA with R.  "
 },
@@ -1598,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-UNCdata.html",
   "type": "Section",
-  "number": "9.1",
+  "number": "10.1",
   "title": "UNC Data Sets",
   "body": " UNC Data Sets  This section includes the data sets from UNC sports and research conducted by UNC faculty.  "
 },
@@ -1607,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-ClimateData.html",
   "type": "Section",
-  "number": "9.2",
+  "number": "10.2",
   "title": "Climate Data Sets",
   "body": " Climate Data Sets  Data sets to analyze climate change.  "
 },
@@ -1616,7 +1814,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-StudyData.html",
   "type": "Section",
-  "number": "9.3",
+  "number": "10.3",
   "title": "Studies Data Sets",
   "body": " Studies Data Sets  This section includes the data sets for the studies mentioned.  "
 },
