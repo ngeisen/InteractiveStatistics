@@ -6,7 +6,7 @@
   <p> This section introduces you to several case study scenarios. Throughout the semester we will refer to one of these studies. Several are based on class surveys from prior semesters and are the foundation for the examples throughout the text. We will learn different ways to analyze data through these case studies.  </p>
 
 
-<note> <p> The full data sets are listed in the Data Sets Chapter. We will often use just a subset of the whole data file. </p> </note> 
+<note> <p> The full data sets are listed in the Data Sets Chapter. We will often use just a subset of the whole data file as we are learning the concepts.  </p> </note> 
 
 <subsection xml:id="subsec-Survey1">
   <title> Case Study - Class Survey 1</title>
@@ -108,7 +108,7 @@
 <example>
 <title> Sample </title> 
 <statement> <p> How big is the sample based on the screenshot? </p> </statement>
-<solution> <p> The screenshot shows 7 students for the sample. The data file shows 42 students who participated in the survey. </p> </solution>
+<solution> <p> The screenshot shows 7 students for the sample. The data file shows 43 students who participated in the survey. </p> </solution>
 </example>
 <example>
 <title> Population </title> 
@@ -125,9 +125,17 @@
 
 
 
+<subsection xml:id="subsec-Florida">
+  <title> Case Study – Florida Lakes</title>
+
+
+  </subsection>
 
 
 
+<subsection xml:id="subsec-BirdVocals">
+  <title> Case Study – Vocal Mimicry of Parrots  </title>
+  </subsection>
 
 
 

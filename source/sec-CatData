@@ -54,11 +54,11 @@
         </figure>
 
 <p> The proportion of some category is found by  </p>
-<me>Proportion =  frac{(Number in that Category)} / {(Total Number Cases)} </me>. 
+<p> <me> p =  \frac{\text{Number in that Category}} {\text{Total Number Cases}} </me> </p>
+  
 
-
-<p> Brown eyes occurred 10 times out of the sample of 20 students thus p^=10/20=.5 which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus p^=4/20=.2 which is 20% of the students. </p>
-<p> The proportion for a sample is denoted <em> p^ </em> and read "p-hat." </p>
+<p> Brown eyes occurred 10 times out of the sample of 20 students thus <m> \hat p =\frac{10}{20}=.5 </m> which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus <m> \hat p = \frac{4}{20}=0.20 </m> which is 20% of the students. </p>
+<p> The proportion for a sample is denoted <m> \hat p </m> and read "p-hat." </p>
 <p> The proportion for a population is denoted <em> p </em>. </p>
 <p> Categorical data can also be graphed as <term>pie graph </term> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample. </p>
 <figure xml:id="EyeCircle">

@@ -18,16 +18,20 @@
   <colophon>
 
     <website>
-      <url href="https://pretextbook.org">My Website</url>
+      <url href="https://pretextbook.org">PreTeXt Website</url>
     </website>
 
     <copyright>
-      <year>2020<ndash />2023</year>
-      <holder>You</holder>
+      <year>2020<ndash />2025</year>
+      <holder>Nancy Geisendorfer </holder>
       <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
   </colophon>
+
+<preface>
+  <p> This is an introductory textbook for statistics, intended for freshman or first-year undergraduate students. Each section begins with understanding the basics of the vocabulary and formulas, a few simple exercises to test your understanding, and followed by a case study illustrating a way to analyze the data with the new content. The goal is to make the textbook interactive so you can test your understanding as the semester progresses. We will be using StatKey as a free online tool for graphing data and creating simulations illustrating …. There is a section explaining how to use R and R Studio for statistical analysis. I tend to save using R until about midpoint in the class, then we can spiral through the content as a review as we learn to use R for the hypothesis testing. </p> 
+</preface> 
 
   <acknowledgement> 
   <p> This book would not exist without the contributions of many collaborators. Thank you for sharing your ideas and research data. </p> 
@@ -35,14 +39,14 @@
   <p> Kathryn Kozak, Coconio Community College, <em> Statistics Using Technology (2018).</em> </p> 
   <p> Lauryn Benedict, Alexandra Charles, and Amirah Brockington from Biology Sciences at the University of Northern Colorado, and Cristine Dahlin from the University of Pettsburgh, for <em> A survey of vocal mimicry in companion parrots. </em> </p> 
   <p> Kristin King, Robert Powers, and Sam R at UNC</p> 
+  <p> Oscar Levin and COMat </p>
 
 
-<preface>
-  <p> This is an introductory textbook for statistics, intended for freshman or first-year undergraduate students. Each section begins with understanding the basics of the vocabulary and formulas, a few simple exercises to test your understanding, and followed by a case study illustrating a way to analyze the data with the new content. The goal is to make the textbook interactive so you can test your understanding as the semester progresses. We will be using StatKey as a free online tool for graphing data and creating simulations illustrating …. There is a section explaining how to use R and R Studio for statistical analysis. I tend to save using R until about midpoint in the class, then we can spiral through the content as a review as we learn to use R for the hypothesis testing. </p> 
-</preface> 
+
 
 
    </acknowledgement>
-   
+
+
 </frontmatter>
 
