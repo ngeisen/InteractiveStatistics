@@ -1,13 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Section Title</title>
+  <title>Case Studies</title>
 
-  <p> Text of section. </p>
-|<p> this is a sentence </p>
+  <p> This section introduces you to several case study scenarios. Throughout the semester we will refer to one of these studies. Several are based on class surveys from prior semesters and are the foundation for the examples throughout the text. We will learn different ways to analyze data through these case studies.  </p>
 
-<note> <p> example of something </p> </note> 
 
+<note> <p> The full data sets are listed in the Data Sets Chapter. We will often use just a subset of the whole data file. </p> </note> 
+
+<subsection xml:id="subsec-Survey1">
+  <title> Case Study - Class Survey 1</title>
+<p> In the spring semester, a section of UNC students taking an introductory statistics course completed a survey on the first day of class identifying their eye color, current weight, shoe size, height, and the number of siblings they have. The survey was completed through Canvas, so responses were anonymous. Below is a screenshot of the first seven rows. Identify the following using the first day class survey. </p> 
+<image source="Survey1image.png">
+                <shortdescription> image of cases and variable for survey 1</shortdescription>
+            </image>
+<example>
+<title> Cases </title> 
+<statement> <p> What are the cases in the survey? </p> </statement>
+<solution> <p> Each student that responded is a case (the rows in the table).  </p> </solution>
+</example> 
+<example>
+<title> Variables </title> 
+<statement> <p> How many variables are in the survey? </p> </statement>
+<solution> <p> There are 5 variables, these are the columns for eye color, siblings, weights, height, and shoe size.</p> </solution>
+</example> 
+<example>
+<title> Qualitative Variables </title> 
+<statement> <p> Which variables are qualitative in the survey? </p> </statement>
+<solution> <p> Eye color is the only categorial variable in the survey</p> </solution>
+</example> 
+<example>
+<title> Discrete Quantitative Variables </title> 
+<statement> <p> Identify the discrete quantitative variable(s) in the survey. </p> </statement>
+<solution> <p> The number of siblings are counts thus discrete.</p> </solution>
+</example>
+<example>
+<title> Continuous Quantitative Variables </title> 
+<statement> <p> Identify the continuous quantitative variable(s) in the survey. </p> </statement>
+<solution> <p> The weights and heights are continuous measurements. Shoe sizes are unique since they occur in jumps of 1/2 size. </p> </solution>
+</example>
+<example>
+<title> Study Type </title> 
+<statement> <p> What type of study was conducted?  </p> </statement>
+<solution> <p> This is an observational study since no variable was manipulated. </p> </solution>
+</example>
+<example>
+<title> Sample Size</title> 
+<statement> <p> How big is the sample based on the screenshot? </p> </statement>
+<solution> <p> The screenshot shows 7 students for the sample. The data file shows 42 students who participated in the survey. </p> </solution>
+</example>
+<example>
+<title> Population </title> 
+<statement> <p> Who is the population? </p> </statement>
+<solution> <p> We can generalize the population to all UNC students. </p> </solution>
+</example>
+<example> 
+<title> Sampling Method</title> 
+<statement> <p> Which sampling method best describes how the data was collected? </p> </statement>
+<solution> <p> Cluster sampling since one intact group was surveyed. </p> </solution>
+</example>
+
+  </subsection>
+
+
+
+
+
+<subsection xml:id="subsec-Survey2">
+  <title> Case Study – Class Survey 2</title>
+<p> In the Spring semester of 2025,  UNC students proposed some questions for the class survey identifying their favorite season (spring, summer, fall, winter), how they preferred the steak being cooked (as rare, medium, medium well, well done), movie genre preference, and favorite vacation location (as coastal, mountain, theme park, city/cultural exploration, or a staycation). Students also identified how many tattoos they have, the number of credit hours they were taking this semester, the number of pets they currently have, and how many hours they typically sleep per night. Use the screen shot of the first seven rows to answer the following questions.  </p> 
+  <image source="Survey2image.png">
+                <shortdescription> image of cases and variable for survey 2</shortdescription>
+            </image>
+
+<example>
+<title> Cases 2</title> 
+<statement> <p> What are the cases in the survey? </p> </statement>
+<solution> <p> Each student that responded is a case. (rows in table)</p> </solution>
+</example> 
+
+<example>
+<title> Variables 2</title> 
+<statement> <p> How many variables are in the survey? </p> </statement>
+<solution> <p> There are 8 variables, these are the columns.</p> </solution>
+</example> 
+
+<example>
+<title> Qualitative Variables 2</title> 
+<statement> <p> Which variables are qualitative in the survey? </p> </statement>
+<solution> <p> Favorite season, steak cooked, movie preference, and vacation location are all categorial variables in this survey</p> </solution>
+</example> 
+<example>
+<title> Discrete Quantitative Variables 2</title> 
+<statement> <p> Identify the discrete quantitative variable(s) in the survey. </p> </statement>
+<solution> <p> The number of tattoos, credits hours, and pets are the discrete variables.</p> </solution>
+</example>
+<example>
+<title> Continuous Quantitative Variables 2</title> 
+<statement> <p> Identify the continuous quantitative variable(s) in the survey. </p> </statement>
+<solution> <p> Sleep is a continuous measurement. </p> </solution>
+</example>
+<example>
+<title> Study Type 2</title> 
+<statement> <p> What type of study was conducted?  </p> </statement>
+<solution> <p> This is an observational study since no variable was manipulated. </p> </solution>
+</example>
+<example>
+<title> Sample </title> 
+<statement> <p> How big is the sample based on the screenshot? </p> </statement>
+<solution> <p> The screenshot shows 7 students for the sample. The data file shows 42 students who participated in the survey. </p> </solution>
+</example>
+<example>
+<title> Population </title> 
+<statement> <p> Who is the population? </p> </statement>
+<solution> <p> We can generalize the population to all UNC students. </p> </solution>
+</example>
+ <example>
+<title> Sampling Method</title> 
+<statement> <p> Which sampling method best describes how the data was collected? </p> </statement>
+<solution> <p> Cluster sampling since one intact group was surveyed. </p> </solution>
+</example>
+
+  </subsection>
+
+
+
+
+
+
+
+
+
+
+
+<p> experimenting with notations here  </p> 
 <p> write a <tag> word </tag> or something <q> else </q> </p> 
 
 <p> inline math equation <m> ax^2+bx+c=0</m> </p> 

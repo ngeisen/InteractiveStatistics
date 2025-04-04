@@ -53,7 +53,7 @@
 <p> Approximately 99% of the data fall with three standard deviations of the mean, giving the interval from μ − 3σ to μ + 3σ . </p>
 <p> <term> Example: </term> Find the interval for middle 68% of time that the stain will last for Brand A. </p> 
 <p> <em> Solution: </em> The 68% rules says the values are within 1 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 7.9, the interval is 35-7.9 to 35+7.9 giving 27.1 to 42.9 months. </p>
-<p> <term> Example: </term> Use the 95% ruler for the interval that Brand B will last. </p>
+<p> <term> Example: </term> Use the 95% rule for the interval that Brand B will last. </p>
 <p>  <em> Solution: </em> The 95% rules says the values are within 2 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 15.4, the interval is 35-2(15.4) to 35+2(15.4) giving 4.2 to 65.8 months. This interval is much wider because there was more variation in the original data. </p>
 
 

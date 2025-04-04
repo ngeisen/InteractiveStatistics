@@ -1,8 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-DesStat-Position" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Position</title>
-  <p> Text of section. </p>
+  <p> In addition to measures of center and measures of variability of the data, there are measures of position or location within the data. We will investigate percentile ranking, quartiles, outliers, and z-scores in this section.  </p>
+
+<subsection xml:id="subsec-PositionBasics">
+  <title>Understanding the Basics</title>
+<p>      
+</p>
+<p> <term> Percentiles </term> </p> 
+<p> Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <term> percentile </term>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child’s growth. </p>
+
+<p> The percentile corresponding to a given X value is computed by </p> 
+<p>  <me> p=\frac{\text{number  of  values below X plus one-half values at X}}{\text{total number of values}}</me> </p> 
+
+<p> <term> Example:</term> A teacher gives a 20-point test to ten students.  The scores are 18, 15, 12, 6, 8, 12, 3, 5, 20, 10. Find the percentile rank of the student who scored 12. </p>
+<p> <em> Solution: </em> There are 5 scores below 12. There are 2 scores at 12. There is a total of 10 scores. The percentile ranking <m> = \frac{5+0.5(2)}{10} = 0.60 </m> thus the 60th percentile. This student did better than or equal to 60% of the classmates on the test. </p>
+
+<p> The kth percentile is the data value that has k% of the data at or below that value. </p>
+<p> <term> Example: </term> Carlos scored a 1350 on the SAT exam and the report said he was at the 89th percentile. What does this indicate? </p>
+<p> <em> Solution: </em> Carlos scored the same or better than 89% of the students taking the SAT that year nationwide.</p> 
+<p>     </p> 
+<exercise label="Percentile-matching">
+    <title> Percentile Interpretation </title>
+    <statement>
+    <p> Charles scored at the 53rd percentile on the ALEKS Math Assessment when he enrolled at UNC. What does this indicate? </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> Charles scored the same or better than 53% of the students taking the Assessment. </p>
+        </statement>
+        <feedback>
+        <p>  Correct.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> Charles scored 53% on the assessment.  </p>
+        </statement>
+        <feedback>
+        <p> No, we want the percentile ranking not his score.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> Charles scored better than 53% of the students on the assessment.  </p>
+        </statement>
+        <feedback>
+        <p> No, it's better than or equal to 53% of the students.  </p>
+        </feedback>
+    </choice>
+   </choices>
+</exercise>
+<p>      </p> 
+
+<p> <term> Quartiles </term></p>
+<p> There are special percentiles called quartiles. <term> Quartiles </term> are numbers that divide the data into four equal parts. One fourth (or a quarter) of the data falls between consecutive quartile values. To find the quartiles, we find the median and the divide each half of the data into two parts again. </p>
+  <ol>
+    <li> <p> Sort the data in increasing order. </p> </li> 
+   <li> <p> Find the median, this divides the data list into 2 halves, thus the 50th percentile. </p> </li>
+   <li> <p> Find the median of the data below the median. This value is Q1 which is the 25th percentile. </p> </li> 
+   <li> <p> Find the median of the data above the median. This value is Q3 which is the 75th percentile. </p> </li> 
+    </ol> 
+<p> <term>Example: </term>  The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20. </p>
+<p> <em> Solution: </em> </p>
+ <p>Put the values in order and find the median: 5, 6, 12, <c>13</c>, 15, 18, 20 </p>
+<p> Find Q1 of the values below 13: thus 5, <c>6</c>, 12 </p>
+<p> Find Q3 of the values above 13: thus 15, <c>18</c>, 20 </p>
+<p> Thus Q1 = 6, Q2 = 13, Q3 = 15. </p>
+
+<p> If you record the quartiles together with the maximum and minimum you have five-number summary. The <term> five-number summary </term> consists of the minimum, the first quartile (Q1), the median (Q2), the third quartile (Q3), and the maximum (in that order). These are the values that make up the boxplot. </p>
+ <p>The <term>interquartile range (IQR) </term>, is the difference between the first and third quartiles, thus <m> IQR = Q3 - Q1</m> which represents the middle 50% of the data. If the IQR is <em> large </em> the data is spread out and if the IQR is <em>small</em> the data is closer together. </p>
+ <p> <term>Example: </term> The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20, 25 </p>
+<p> Solution: Put the values in order and find the median   5, 6, 12, 13, | 15, 18, 20, 25 which occurs between 13 and 15 since there are an even number of values, thus the median = 14. Q1 is between 6 and 12 and Q3 is between 18 and 20, thus Q1 = 9 and Q3 = 19. Therefore, 50% of the students in ths sample are taking between 9 and 19 credits. The IQR = 19 - 9 = 10, thus the spread is 10 credits. </p>
+ 
+ <p>     </p> 
+  <p> <term> Outliers </term></p>
+<p> Data should be checked for extremely high or extremely low values when compared to the rest of the data, these are known as <term> outliers</term>. Often you see the outliers as the starred values in a boxplot.  To determine the possible outliers using the IQR method, we look at any value that is: </p>
+<ul>
+ <li> <p>  <em> less</em> than <m>Q1-1.5 * IQR </m>  or </p> </li>
+<li> <p>  <em> more</em>  than <m> Q3+1.5 * IQR </m>. </p> </li>
+</ul>
+<p> <term> Example:</term> A sample of seven students identified how many pairs of shoes they have in their closet: 6, 10, 15, 13, 4, 18, 50. Check for any outliers.</p>
+<p> Intuitively we can see that 50 is much larger than the rest of the data, thus we anticipate it being an outlier. But we check mathematically. </p> 
+<p> First, find the Quartiles:	 4, <c>6</c>, 10, <c>13</c>, 15, <c>18</c>, 50 </p>
+<p> Second, find IRQ= 18 - 6 = 12 </p>
+<p> Lower extreme = 6 - 1.5(12) = -12 thus no lower outliers since no value below -12. </p>
+<p> Upper extreme = 18 + 1.5(12) = 36 thus 50 pairs of shoes is an outlier since it is more than 36. So having 50 pairs of shoes is atypical for this group. </p>
+<p>     </p> 
+<example> 
+<title> Check for Outliers </title>
+<statement> <p>
+A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 120, 175, 165, 145, 157, 220. Are there any outliers in the sample? </p>
+</statement>
+<answer> <p> Yes, 220 and 238 are both outliers </p> </answer> 
+<solution> <p> First, find quartiles: 120, 138, <c>140</c>, 145, 157, <c> M=159.5 </c> 162, 165, <c>175</c>, 220, 238 </p>
+<p> Find IQR = 175 - 140 = 35 </p>
+<p> Lower extreme = 140-1.5x35 = 87.5 so no lower outliers. </p>
+<p> Upper extreme = 175+1.5x35 = 192.5 thus 220 and 238 are both outliers. </p>
+ </solution>
+</example>
 
 
-    
+<p>     </p> 
+  <p> <term> z-score </term></p>
+
+  <p> There is an old saying  that <q>You can't compare apples to oranges. </q> But with statistics, we can in a way. There are times when we want to compare how a particular value is in relation to the mean. A <term> z-score </term>  or <em> standard score </em> for a value is obtained by subtracting the mean from the value and dividing the result by the standard deviation.  The z-score represents the number of standard deviations that a data value falls above or below the mean. This allows us to compare two different groups of data to determine which did better in relation to the mean (thus comparing apples to oranges).  If the z-score is positive then it is above the mean, and if the z-score is negative it is below the mean. The formula is: </p> 
+
+<p> <me> z=\frac{X-μ}  {σ} </me> </p>
+
+  <p> <term> Example: </term> A student scored 88 on a calculus test that had a mean of 75 and a standard deviation of 8.  The same student scored 30 on a biology quiz with a mean of 25 and standard deviation of 4.  Compare the student's relative positions on the two tests by finding the z-scores. </p> 
+<p> Calculus test <m> z = \frac{88-75}{8} =1.625 </m>  standard deviation above average. </p>
+<p> Biology quiz <m> z = \frac{30-25}{4} =1.25 </m>  standard deviation above average. </p>
+<p> Thus the student did better on the calculus test since the z-score is higher in comparison. </p>
+
+<example>
+<title> Compare z-scores </title> 
+<statement> <p> Compare the three test scores to see who did the best overall in terms of z-scores. </p>
+<p>Angela earned a 200 on an aptitude test which has a mean of 220 and a standard deviation of 15. </p>  
+<p>Bryce scored 75 on the math test with a mean of 72 and standard deviation of 8. </p>
+<p> Chris earned a 78 on chemistry test with a mean of 81 and standard deviation of 10. </p>
+</statement>
+<solution> <p> Angela <m> z = \frac{200 - 220}{15} = -1.33 </m> which is below average. </p> 
+  <p> Bryce <m> z = \frac{75-72}{8} = 0.375 </m>  which is slightly above average. </p> 
+    <p> Chris <m> z = \frac{78-81}{10} = - 0.30 </m>  which is slightly below average. Therefore Bruce did the best since he has the highest positive score. Angela did the worst overall since she has the lowest z-score (most negative).  
+</p> </solution>
+</example>
+
+
+  </subsection>
+
+
+  <subsection xml:id="subsec-PositionApply">
+  <title>Application</title>
+
+  
+  </subsection>
+
+
+
+
 </section>
