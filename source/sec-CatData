@@ -62,7 +62,7 @@
 <p> The proportion for a population is denoted <em> p </em>. </p>
 <p> Categorical data can also be graphed as <term>pie graph </term> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample. </p>
 <figure xml:id="EyeCircle">
-            <caption>Image of Eye Circle Graph</caption>
+            <caption>Circle Graph of Eye Color</caption>
             <image source="EyeCircle.png" width="50%">
                 <shortdescription>Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.</shortdescription>
             </image>
@@ -109,7 +109,7 @@
 <p> <em> Solution:</em> P (win at away) = 5/16 = 0.3125 = 31.3% </p>
 <p> So it does appear they win more at home. </p>
 <p>      </p>
-<p> <term>Side by side bar graph  </term>compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table. </p>
+<p> <term>Side by side bar graph </term> compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table. </p>
 <p> <term>Segmented bar graph </term> is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories. </p>
 
 <p> The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins  in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games. </p>

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Rstats" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title> Statistics with R</title>
-  <p> Text of section. </p>
+  <p> In this section we will learn to calculate the summary statistics using R studio. We will find the mean and median to measure the center, the variance and standard deviation to measure the spread of values, and find the five-number summary.  </p>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+  <li> <p> Import data into R Studio for analysis. </p> </li>
+  <li> <p> Calculate the summary statistics. </p>    </li>
+  </ol>
+</objectives>
+
 
 <p> <term> Finding Summary Statistics with R Studio </term>  </p>
 <p> We are going to complete Lesson 2 for finding the summary statistics with R Studio. Add the Lesson 2 Statistic text file to your Using R Files folder. We are going to use the same Cereal data set as for graphing data.</p>

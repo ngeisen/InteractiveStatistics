@@ -3,6 +3,17 @@
   <title>Measures of Spread</title>
   <p> Variability is an important idea in statistics. If we were to measure the height of everyone in our class, every observation could give a different value. That means not every student is the same height. Thus, there is variability in the heights of the students in class. If we asked the heights of students in several different classes, there will be variation among the different samples. Variability describes how the data are spread out. If the data are very close to each other, then there is low variability. If the data are very spread out, then there is high variability. We will investigate the range, variance, and standard deviation as measures of spread in the values. </p>
 
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+    <li> <p> Determine the range of values </p>    </li>
+    <li> <p> Calculate the variance and standard deviation </p> </li>
+   <li> <p> Use technology to find the standard deviation </p> </li>
+  </ol>
+</objectives>
+
 <subsection xml:id="subsec-SpreadBasics">
   <title>Understanding the Basics</title>
 

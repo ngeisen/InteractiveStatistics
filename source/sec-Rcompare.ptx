@@ -2,6 +2,20 @@
 <section xml:id="sec-Rcompare" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Comparison Tests with R</title>
   <p> We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group. </p>
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+  <li> <p> Compare two independent means using the t-test </p> </li>
+  <li> <p> Interpret the confidence interval for the difference in means </p>    </li>
+<li> <p> Conduct a t-test for paired means </p> </li>
+<li> <p> Compare two proportions using chi-square test </p>    </li>
+<li> <p> Interpret the confidence interval for the difference in proportions </p>    </li>
+<li> <p> Compare two variances with the F-tst </p>    </li>
+  </ol>
+</objectives>
+
 
 <subsection xml:id="subsec-ComparingMeans">
   <title>Comparing Two Independent Means</title>

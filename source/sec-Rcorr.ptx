@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Rcorr" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Correlation Tests with R</title>
-  <p> Text of section. </p>
+  <p> In this section we will perform the correlation and linear regression analysis with R Studio. We will graph the scatterplot to determine the nature of the relationship, calculate the correlation coefficient to determine its strength. We will conduct a correlation test to determine if it is statistically significant and if so, find the regression equation.  </p>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+  <li> <p> Graph a scatterplot. </p> </li>
+  <li> <p> Calculate the correlation coefficient.  </p>    </li>
+  <li> <p> Determine if the correlation is significant.  </p>    </li>
+  <li> <p> Determine the regression equation.  </p>    </li>
+  <li> <p> Interpret the coefficient of determination.  </p>    </li>
+  </ol>
+</objectives>
 
 <subsection xml:id="subsec-CorrTests">
   <title>Correlation Between Quantitative Variables </title>

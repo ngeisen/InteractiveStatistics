@@ -3,6 +3,17 @@
   <title>Testing with R</title>
   <p> In this section we will perform hypothesis testing and find confidence intervals for a single sample. </p>
 
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+  <li> <p> Conduct a single t-test for the mean </p> </li>
+  <li> <p> Interpret the confidence interval for the mean </p>    </li>
+<li> <p> Conduct a single proportion test using chi square </p> </li>
+<li> <p> Interpret the confidence interval for a proportion </p>    </li>
+  </ol>
+</objectives>
 
 <p> <term> Import Cereal Data instructions </term> </p> 
 <p> Once the data has been imported into R, use the command <em> attach</em> so you can call the data by the variable name. </p>

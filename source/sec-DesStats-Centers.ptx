@@ -2,6 +2,17 @@
 <section xml:id="sec-DesStat-Centers" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Center</title>
   <p> <p> This section focuses on measures of central tendency to describe the center of the data. We are looking at what is considered a typical value. We will use the mean, median, mode, and midrange to describe the center. </p> </p>
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+    <li> <p> Determine if data has a mode or is multimodal </p>    </li>
+    <li> <p> Calculate the mean, median, and midrange for data </p> </li>
+<li> <p> Use technology to find the mean, median, and midrange </p> </li>
+
+  </ol>
+</objectives>
 
 <subsection xml:id="subsec-CenterBasics">
   <title>Understanding the Basics</title>

@@ -3,26 +3,47 @@
 <section xml:id="sec-GraphStatky" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Graphing with StatKey</title>
 
+<p> In this section we will focus on how to graph data with technology. We will be using <term> StatKey </term> which is an online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet. </p>
+<p> We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data. </p>
     <p>  </p> 
-        <objective> <term> Graphing One Categorical Variable </term> </objective>
 
-        <p> How to graph students eye color with StatKey. </p>
-        <p> Open a web browser and copy <url href="http://www.lock5stat.com/StatKey/" /> </p>
-        <p> Download the csv file <c> Lab 1 Data.csv </c> posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors. </p>
+<subsection xml:id="subsec-OneCatStatkey">
+  <title>Graphing One Categorical Variable</title>
+  
+        <p> First, we will explore student eye color which is a categorical variable. StatKey will construct a bar graph and frequency table for the eye colors. </p>
+        <p> Click on the following link to take you to StatKey   <url href="http://www.lock5stat.com/StatKey/" /> </p>
+        <p> Download the csv file <c> ClassSurvey1.csv </c> posted in Canvas and save to your computer where it is easily accessible. We are going to upload the data file to analyze the students eye colors. </p>
         <p> Under the <em> Descriptive Statistics and Graph </em> column on the left, choose the <em> One Categorical Variable </em>. </p>
 
+    
+   <figure xml:id="OneCatStatKey">
+            <caption>Image of StatKey menu</caption>
+            <image source="StatKeyOneCat.png" >
+                <shortdescription>The second option under descriptive statistics menu is the one categorical variable.</shortdescription>
+            </image>
+        </figure> 
 
+    
+<p> Click on the <c>Upload File</c> button and locate the data file on your computer and click <c>open</c>. Identify which variable you will analyze (Eye Color) and click <c> OK </c> near the bottom of the window. </p>
+  <image source="SelectEyes.png" width="50%">
+                <shortdescription>image to click on eye color label.</shortdescription>
+            </image>
+ <p>The program constructs a bar graph and frequency table. The output image is below. </p>
+         <figure xml:id="StatKeyEyeColor">
+            <caption>Sample image of StatKey output. </caption>
+            <image source="StatKeyEyes.png">
+                <shortdescription>Bar graph and frequency table of the students eye color from StatKey.</shortdescription>
+            </image>
+        </figure>    
 
-    <p> Click on the <c> Upload File  </c> button and locate the data file on your computer. </p> 
-    <p>  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below. </p>
      <p>     </p> 
-<objective> <term>Interpreting Bar Graphs</term> </objective>
-<p> From the bar graph we can see that most students have brown eyes and green eyes occur the least often. </p>
-<p> From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class. </p>
- 
-<p> Using the graph above, which of the following statements are correct? Select all that apply. </p>
+<objective> <term>Interpreting the Bar Graph</term> </objective>
+<p> From the bar graph we can see that most students have brown eyes (28 students which represents 66.67% of the class) and hazel eyes occur the least often with just 3 students.  From the frequency table we see the sample consisting of 42 UNC students. There are 6 students with blue eyes and 5 students with green eyes. </p>
 
-<exercise label="graph-matching">
+ 
+<p> <term> Checkpoint </term> Using the eye color graph above, which of the following statements are correct? Select all that apply. </p>
+
+<exercise label="EyeColor-matching">
     <title> Interpreting information from a graph </title>
     <statement>
     <p>
@@ -38,14 +59,14 @@
         </statement>
         <feedback>
         <p>
-            This is represented by the tallest bar.
+            Brown eyes is represented by the tallest bar.
         </p>
         </feedback>
     </choice>
     <choice correct="yes">
         <statement>
         <p>
-            Blue eyes occurred 22.2%
+            Blue eyes occurred 14.3%
         </p>
         </statement>
         <feedback>
@@ -62,7 +83,7 @@
         </statement>
         <feedback>
         <p>
-            Look at the total from the frequency table.
+            Look at the total from the frequency table for 42 total.
         </p>
         </feedback>
     </choice>
@@ -80,7 +101,70 @@
     </choice>
     </choices>
 </exercise>
+<p>     </p>  
+<p> Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the <c> Change Column </c> button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the <c> Show Data Table </c> button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape. </p> 
+<p>     </p> 
+</subsection>
 
 
+<subsection xml:id="subsec-OneQuantStatkey">
+  <title> Graphing One Quantitative Variable </title>
+<p> In this section we will explore the number of siblings for these UNC students. This is a discrete quantitative variable (although one student claimed 1.5 siblings).  StatKey will construct a dotplot, histogram, and boxplot for the data. StatKey will also create a Summary Statistics table identifying the sample size, mean, median, standard deviation, and the five-number summary. </p>
+<p> Click on the following link to take you to StatKey  <url href="http://www.lock5stat.com/StatKey/" /> </p>
+    <p> Download the csv file <c> ClassSurvey1.csv </c> posted in the Data Set Chapter and save to your computer where it is easily accessible. We are going to analyze the numerical data. </p>
+    <p> Under the <em> Descriptive Statistics and Graph </em> column on the left, choose the <em> One Quantitative Variable </em>. </p>
+        <figure xml:id="OneQuantStatKey">
+            <caption>Image of StatKey menu</caption>
+            <image source="StatkeyOneQN.png" >
+                <shortdescription>The first option under descriptive statistics menu is the one quantitative variable.</shortdescription>
+            </image>
+        </figure>
+<p> Click on the <c>Upload File</c> button and locate the data file on your computer and click <c>open</c>. Identify which numerical variable you will analyze (Siblings) and click the <c> OK </c> button at the bottom right of the window.  </p> 
+<image source="SelectSibling.png" width="50%">
+                <shortdescription>select sibling variable.</shortdescription>
+            </image>
+<p>The program will construct all three graphs and the summary table. </p> 
+<figure xml:id="SiblingDotsStatKey">
+            <caption> StatKey Output of Sibling Dotplot</caption>
+            <image source="SiblingDots.png">
+                <shortdescription>Dotplot showing 0 to 7 siblings with most at 2 siblings.</shortdescription>
+            </image>
+        </figure>
+<p> <em> Interpreting the Dotplot:</em>  We can see there are three students with 0 siblings (minimum) and one student with 7 siblings (maximum). Most students have 1-3 siblings, with 2 siblings occurring most for 15 students. Recall each dot represents the number of siblings for that student, thus there are 42 dots to represent the sample size of 42 students.  You can hover over a dot to display the value. The summary statistics table is on the right identifying the mean, median, and standard deviation. </p>
+<p> If we click on the <c>Histogram</c> button we can see the histogram graph and the summary statistics table. </p>
+<figure xml:id="SiblingHistogramStatKey">
+            <caption> StatKey Output of Histogram</caption>
+            <image source="SiblingHisto.png" >
+                <shortdescription>Histogram showing bars for siblings.</shortdescription>
+            </image>
+        </figure>
+<p> <em> Interpreting the Histogram: </em> We can see the data is grouped into 10 bars (although we see just 7 since some intervals are empty).  On the right side we can use the slider to change the number of bars for the histogram. Shift the slider left so you have 8 buckets. This is a better histogram. We can see that the histograms are right skewed since most values are on the left side with a few far to the right. A few larger values pull the mean to the right, thus right skewed. </p>
+<p> Next, click on the <c> Boxplot </c> button to see the boxplot graph, also known as a box-and-whisker plot. </p>  
+
+<figure xml:id="SiblingBoxplotStatKey">
+            <caption> StatKey Output of Boxplot</caption>
+            <image source="SiblingBox.png" >
+                <shortdescription>Boxplot showing box around 1-3 siblings.</shortdescription>
+            </image>
+        </figure>
+ <p> <em> Interpreting the Boxplot: </em> The boxplot displays the five-number summary. The box represents the quartiles Q1 = 1 sibling and Q3 = 3 siblings, with the middle line representing the median of 2 siblings. The whisker goes left to the smallest value of 0 and the right whisker to the largest value of 7 siblings. In this case, 7 siblings is an outlier as indicated by the star or asterisk. The summary statistics table identifies the values for the five-number summary. </p> 
+<p> Click on the <c>Change Columns</c> button to change variables. Weights and Heights are continuous quantitative variables.  Investigate the shape of the graphs, where the center is represented, and how spread out the values are. Use the boxplot to check for outliers. </p> 
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-CatQuantStatkey">
+  <title> One Categorical and One Quantitative Variable </title>
+  </subsection>
+
+<subsection xml:id="subsec-TwoCatStatkey">
+  <title> Graphing Two Categorical Variables </title>
+  </subsection>
+
+
+<subsection xml:id="subsec-TwoQNstatkey">
+  <title> Graphing Two Quantitative Variables  </title>
+  </subsection>
 
    </section>     
