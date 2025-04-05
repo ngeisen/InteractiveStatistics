@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Describing Categorical Data</title>
+<title>Graphing Categorical Data</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.12';
+eBookConfig.runestone_version = '7.5.13';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.8ded03b2da8fab17.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
+<script src="_static/prefix-runtime.a0c870bab402ccbf.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97de40e034b535c5.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
@@ -141,10 +141,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
-<li class="toc-item toc-acknowledgement">
-<div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4-6.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -153,13 +151,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayTwo.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Collecting Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayThree.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Study Types</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Section Title</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Case Studies</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#subsec-Survey1" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Case Study - Class Survey 1</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#subsec-Survey2" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Case Study – Class Survey 2</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#subsec-Florida" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Case Study – Florida Lakes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#subsec-BirdVocals" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Case Study – Vocal Mimicry of Parrots</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ChapDescriptStats.html" class="internal"><span class="codenumber">2</span> <span class="title">Graphing Data</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-CatData.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Describing Categorical Data</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-CatData.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graphing Categorical Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-QuantData.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Quantitative Data</span></a></div></li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="sec-QuantStats.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Descriptive Statistics for Quantitative Variables</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GraphStatky.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
@@ -173,7 +179,8 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterBasics" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterCalc" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Using TI-83 Calculator for Summary Statistics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterStatKey" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Using StatKey to Find Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterApply" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Application Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterStatKey" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Using StatKey to Find Summary Statistics</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -182,9 +189,16 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadBasics" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadCalc" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Using TI-83 Calculator for Summary Statistics</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadUses" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Using the Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadApply" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Application Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DesStat-Position.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Measures of Position</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DesStat-Position.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Measures of Position</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Application</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DesStat-Regression.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Linear Regression</span></a></div></li>
 </ul>
 </li>
@@ -253,7 +267,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-CatData"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Describing Categorical Data</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Graphing Categorical Data</span>
 </h2>
 <article class="objectives goal-like" id="sec-CatData-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <div class="introduction" id="sec-CatData-2-1"><div class="para" id="sec-CatData-2-1-1">At the end of this section you will able to</div></div>
@@ -272,17 +286,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec-CatData-11">A <dfn class="terminology">relative frequency table</dfn> also shows the proportion or percentage of cases that fall in each category, as shown below.</div>
 <figure class="figure figure-like" id="EyeRelFreq"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/EyeRelFreq.png" class="contained" alt="Relative frequency table showing of 50% brown,  20% blue, 20% green, and 10% hazel."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.4<span class="period">.</span></span><span class="space"> </span>Image of Eye Relative Frequency Table</figcaption></figure><div class="para" id="sec-CatData-13">The proportion of some category is found by</div>
-<div class="displaymath process-math">
+<div class="para logical" id="sec-CatData-14"><div class="displaymath process-math">
 \begin{equation*}
-Proportion =  frac{(Number in that Category)} / {(Total Number Cases)} \text{.}
+p =  \frac{\text{Number in that Category}} {\text{Total Number Cases}} 
 \end{equation*}
-</div>
-<div class="para" id="sec-CatData-15">Brown eyes occurred 10 times out of the sample of 20 students thus p^=10/20=.5 which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus p^=4/20=.2 which is 20% of the students.</div>
-<div class="para" id="sec-CatData-16">The proportion for a sample is denoted <em class="emphasis">p^</em> and read "p-hat."</div>
+</div></div>
+<div class="para" id="sec-CatData-15">Brown eyes occurred 10 times out of the sample of 20 students thus <span class="process-math">\(\hat p =\frac{10}{20}=.5 \)</span> which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus <span class="process-math">\(\hat p = \frac{4}{20}=0.20 \)</span> which is 20% of the students.</div>
+<div class="para" id="sec-CatData-16">The proportion for a sample is denoted <span class="process-math">\(\hat p \)</span> and read "p-hat."</div>
 <div class="para" id="sec-CatData-17">The proportion for a population is denoted <em class="emphasis">p</em>.</div>
 <div class="para" id="sec-CatData-18">Categorical data can also be graphed as <dfn class="terminology">pie graph</dfn> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample.</div>
 <figure class="figure figure-like" id="EyeCircle"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/EyeCircle.png" class="contained" alt="Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.5<span class="period">.</span></span><span class="space"> </span>Image of Eye Circle Graph</figcaption></figure><div class="para" id="sec-CatData-20">A third type of qualitative data graph is a <dfn class="terminology">Pareto chart</dfn>, which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantace is you can visually see the more popular responses to the least popular.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.5<span class="period">.</span></span><span class="space"> </span>Circle Graph of Eye Color</figcaption></figure><div class="para" id="sec-CatData-20">A third type of qualitative data graph is a <dfn class="terminology">Pareto chart</dfn>, which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantace is you can visually see the more popular responses to the least popular.</div>
 <div class="para" id="sec-CatData-21"></div>
 <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/EyeBar.jpg" class="contained" alt="Pareto Chart showing of 10 brown, 4 blue, 4 green, and 2 hazel."></div>
 <div class="para" id="sec-CatData-24"></div>
@@ -290,7 +304,7 @@ Proportion =  frac{(Number in that Category)} / {(Total Number Cases)} \text{.}
 <div class="para" id="sec-CatData-26"></div>
 <dfn class="terminology">Two Categorical Variables</dfn><div class="para" id="sec-CatData-28">When working with two categorical variables, we often look for possible relationships between the two variables using a <dfn class="terminology">two-way table</dfn>.  The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.</div>
 <div class="para" id="sec-CatData-29">We are going to investigate the possible relationship using the UNC Women’s basketball data set. The dataset <dfn class="terminology">22-23 UNCWBB</dfn> gives the results of the UNC Women’s Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were <em class="emphasis">Win Loss</em> variable which stated if the UNC team won or lost the game and the <em class="emphasis">HomeAway</em> variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set .</div>
-<figure class="figure figure-like" id="WBdata"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/WBdata.png" class="contained" alt="Lists 9 games as home/awa and win/loss."></div>
+<figure class="figure figure-like" id="WBdata"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/WBdata.png" class="contained" alt="Lists 9 games as home/awa and win/loss."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.6<span class="period">.</span></span><span class="space"> </span>Image of partial data set</figcaption></figure><div class="para" id="sec-CatData-31">The results for these variables are shown in the two-way table below. To create the table, in StatKey choose <dfn class="terminology">Two Categorical Variables</dfn> along the left menu and select the variable <em class="emphasis">WinLoss</em> and <em class="emphasis">HomeAway</em> for the table.</div>
 <figure class="figure figure-like" id="WBtwoWayTable"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WBtwoWayTable.png" class="contained" alt="Summarizes value for 31 games."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.7<span class="period">.</span></span><span class="space"> </span>Image of WB two-way table</figcaption></figure><div class="para" id="sec-CatData-33">From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games.</div>
@@ -311,7 +325,7 @@ Proportion =  frac{(Number in that Category)} / {(Total Number Cases)} \text{.}
 <div class="para" id="sec-CatData-43">So it does appear they win more at home.</div>
 <div class="para" id="sec-CatData-44"></div>
 <div class="para" id="sec-CatData-45">
-<dfn class="terminology">Side by side bar graph</dfn>compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table.</div>
+<dfn class="terminology">Side by side bar graph</dfn> compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table.</div>
 <div class="para" id="sec-CatData-46">
 <dfn class="terminology">Segmented bar graph</dfn> is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories.</div>
 <div class="para" id="sec-CatData-47">The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins  in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games.</div>
