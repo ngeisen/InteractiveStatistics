@@ -29,7 +29,7 @@
 
 <p> The formula for the population mean is </p>
 <p>  <me> \mu=\frac{\sum X}{N} </me>  </p> 
-<p> where <m> mu </m> represents the mean, the sigma symbol indicates to find the sum of the data values, where each <em> X </em> is a data value in the population, and then divide by the size <em> N </em> of the population. </p> 
+<p> where <m> \mu </m> represents the mean, the sigma symbol indicates to find the sum of the data values, where each <em> X </em> is a data value in the population, and then divide by the size <em> N </em> of the population. </p> 
 
 <p> Another measure of the center is the <term> midrange </term> which is the average of the smallest and largest value of the data set. The midrange is the middle of the range of values in the data. </p> 
 <p> <term> Example: </term>  A sample of five students are taking the number of credits this semester: 12, 14, 15,16, 18. The average of the smallest  and largest is (12+18)/2 = 15 credits. </p>
@@ -55,7 +55,7 @@
 
  
 <p> First, enter the raw data into one of the lists: Start with the <c>STAT </c> button and under the EDIT menu choose option <term> 1:Edit </term> and then hit the <c>enter </c> button. </p> 
-<image source="Center1.png" width="80%">
+<image source="Center1.png" width="70%">
                 <shortdescription> image of STAT button 1:Edit</shortdescription>
             </image>
 
@@ -65,36 +65,49 @@
             </image>
 
 <p> Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for <term>1-Var Stats </term> which refers to 1-variable statistics and then hit [enter]. Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then the number <c>1</c> which has L1 above it and then [enter] button. </p>
-<image source="Center3.png" width="60%">
+<image source="Center3.png" width="80%">
                 <shortdescription> image of 1VarStat</shortdescription>
             </image>
 
-<p> Note: If you are using a TI-84 the x=list is L1 and the y-list is left blank, scroll to Calculate and hit [enter]. You should see the following outputs for either calculator. </p>
+<p> Note: If you are using a TI-84 the List is L1 and the FreqList is left blank, scroll to Calculate and hit [enter]. You should see the following outputs for either calculator. </p>
 <image source="Center4.png" width="60%">
                 <shortdescription> image of summary statistics</shortdescription>
             </image>
 
-<p> <em> Interpretation: </em> Reading the values going down, X-bar is the mean of 43.4, the sum of the values is 217,  if we squared each value and found the sum that is the value 10705.  Sx=17.9388 is the sample standard deviation and  σx=16.045 is the population standard deviation (which we will not use in this course). The sample size is n=5, the arrow pointing down indicates there are more values to follow so click on the arrow down button until all the other values show. MinX=25 is the smallest value, Q1=30.5 is the first quartile, Med=36 is the median, Q3=60 is the third quartile, and maxX=72 is the maximum value in the data. We will talk about these values later in this chapter. </p>
+<p> <em> Calculator Summary: </em> Reading the values going down, <m> \bar x </m>  is the mean of 43.4, the sum of the values is 217,  if we squared each value and found the sum that is the value 10705.  Sx = 17.9388 is the sample standard deviation and  σx = 16.045 is the population standard deviation (which we will not use in this course). The sample size is n = 5, the arrow pointing down indicates there are more values to follow so click on the arrow down button until all the other values show. MinX = 25 is the smallest value, Q1 = 30.5 is the first quartile, Med = 36 is the median, Q3 = 60 is the third quartile, and maxX = 72 is the maximum value in the data. We will talk about these values later in this chapter. </p>
 <p> Note: the mode is not given in the summary statistics. But we can find it by sorting the data from smallest to largest and check the frequencies. </p>
-<p> Click on the [STAT] button and under EDIT select option <term>2: Sort A(  </term>  and hit the [enter] button. </p>
+<p> Click on the [STAT] button and under EDIT select option <term>2: Sort A(  </term>   and hit the [enter] button. </p>
 <p> Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then the number <c>1</c> which has L1 above it and the <c> ) </c> button and then [enter].
 It should say <em>Done</em>. </p>
 <image source="Center5.png" width="60%">
                 <shortdescription> image to sort data</shortdescription>
             </image>
 
-<p>Now go back to [STAT] button and select option <term> 1:Edit </term> and [enter] to look at the data. It is now sorted in ascending order. Now we can see the mode is 36. </p>
+<p>Now go back to [STAT] button and select option <term> 1:Edit </term> and [enter] to look at the data. It is now sorted in ascending order. Now we can see the mode is 36 since it occurs twice. </p>
 <image source="Center6.png" width="60%">
+                <shortdescription> image of sorted data</shortdescription>
+            </image>
+
+  </subsection>
+
+
+<subsection xml:id="subsec-CenterApply">
+  <title> Application Problems </title>
+<p> Now that we understand the basics, let's analyze the typical number of siblings from a sample of 20 UNC students from Survey 1 using technology. The data set is below. </p> 
+
+
+  <p> You can clear out the list or enter the values in L2. To clear the list, click on the [STAT] button and under EDIT select option 4:ClrList and hit [enter] then identify the list to clear as L1 and hit [enter]. </p>
+<image source="Center7.png" width="60%">
                 <shortdescription> image of sorted data</shortdescription>
             </image>
 
 
   </subsection>
 
-<p> Now that we understand the basics, let's analyze a larger data set with technology. </p> 
+ 
   <subsection xml:id="subsec-CenterStatKey">
   <title>Using StatKey to Find Summary Statistics</title>
-
+<p> Now that we understand the basics, let's analyze a larger data set with technology. </p>
   </subsection>
   
 

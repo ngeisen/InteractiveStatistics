@@ -7,25 +7,25 @@
   <title>Understanding the Basics</title>
 
 <p> The <term> range </term> of a set of data is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are. </p>
-
-<p> A better way is to describe the variability is with the standard deviation, which is the average distance each value is from the mean. We will illustrate this with an example and then review how to calculate it using technology. </p>
+<p> Range = maximum – minimum </p>
+<p> A better way is to describe the variability within the data with the <term> standard deviation</term> , which is the average distance each value is from the mean. We will illustrate this with an example and then review how to calculate it using technology. </p>
 <p> Suppose you need to re-stain the fence in your backyard. There are two common brands at the local hardware store. Before purchasing the new stain, you ask your neighbors how long the stain lasts before having to re-stain the fence. For Brand A you find it needs reapplied after 25, 30, 35, 40, 45 months. For Brand B it needed to be reapplied after 10, 35, 35, 45, 50 months. </p>
 
 <p> Based on this small sample, which brand would you choose and why? </p>
 
-<p> As a new statistics student, you decided to compare the centers to see how long each brand typically lasts. We see there is no mode for Brand A, the mean is 175/5= 35 months, and the median is 35 months. For Brand B the mode is 35 months, the mean is 175/5= 35 months, and the median is 35 months. From these results one might assume both brands will last equally long. So, we need another way to analyze the data – thus the amount of spread and variation in how long each brand lasts. </p>
-<p> Range of Brand A = 45-25 = 20 months </p>
-<p> Range of Brand B = 50-10 = 40 months. </p>
+<p> As a new statistics student, you decided to compare the centers to see how long each brand typically lasts. We see there is no mode for Brand A, the mean is 175/5= 35 months, and the median is 35 months. For Brand B the mode is 35 months, the mean is 175/5= 35 months, and the median is 35 months. From these results one might assume both brands will last equally as long. So, we need another way to analyze the data – thus the amount of spread and variation in how long each brand lasts. </p>
+<p> Range of Brand A = 45 - 25 = 20 months </p>
+<p> Range of Brand B = 50 - 10 = 40 months. </p>
 <p> Brand A has a smaller spread in values while Brand B is more spread out in how long the stain lasts. Brand B may only last 10 months or as long as 50 months. </p>
 <p> To find the <term> deviation </term>, we find the distance between each value and the mean. Take the value and subtract the mean of 35. Keep track of the negative values to indicate the values was below the mean and positive that it lasted longer than the mean. The sum of the deviations should be around zero.  </p>
-<p> Next, we will square each deviation value. Find the total deviation by adding them together and then divide by one less than the sample size. This will give the sample variance for each brand. </p>
+<p> Next, we will square each deviation value. Find the total deviation by adding them together and then divide by one less than the sample size. This will give the <term> sample variance </term> for each brand. </p>
 <image source="DeviationTable.png" width="80%">
                 <shortdescription> table showing deviation computation</shortdescription>
             </image>
 <p> Variance for Brand A is 250/4 = 62.5 and the variance for Brand B is 950/4 =237.5 </p>
-<p> Square root the variance to get the standard deviation. This describes how far most values are from the mean. The smaller the standard deviation, the more consistent the brand of stain lasts. </p>
-<p> Standard deviation for Brand A is sqrt625 = 7.9 </p> 
-<p> Standard deviation for Brand A is sqrt 237.5 = 15.4  </p>
+<p> Square root the variance to get the standard deviation. This describes how far most values are from the mean. The smaller the standard deviation, the more consistent the brand of stain lasts since it is closer to the mean. </p>
+<p> Standard deviation for Brand A is <m> \sqrt{62.5} = 7.9 </m> </p> 
+<p> Standard deviation for Brand B is <m> \sqrt{237.5} = 15.4 </m>  </p>
 <p> Therefore, Brand A is more consistent around the mean while Brand B has more variation in how long the stain will last. </p>
 <image source="StainBoxplot.png" >
                 <shortdescription> boxplot of stain values</shortdescription>
@@ -42,6 +42,35 @@
 
 <subsection xml:id="subsec-SpreadCalc">
   <title> Using TI-83 Calculator for Summary Statistics </title>
+
+<p> Suppose you need to stain the fence in your backyard. There are two common brands at the local hardware store. Before purchasing the new stain, you ask your neighbors how long the stain lasts before having to re-stain the fence. For Brand A you find it needs reapplied after 25, 30, 35, 40, 45 months. For Brand B it needed to be reapplied after 10, 35, 35, 45, 50 months. </p>
+<p> Let's use technology to find the standard deviation to see which brand is more consistent. </p>
+<p> First, enter the raw data into one of the lists: Start with the <c> STAT </c>button and under the EDIT menu choose option <term> 1:Edit </term> and then hit the <c> enter </c> button. </p> 
+<image source="Center1.png" width="60%">
+                <shortdescription> image of STAT button 1:Edit</shortdescription>
+            </image>
+<p> Type in the values from Brand A in L1 and hit [enter] after each entry. Enter the values from Brand B in L2 and hit [enter] after each entry. </p>
+<image source="Spread1.png" width="60%">
+                <shortdescription> image of entering brand data</shortdescription>
+            </image>
+<p> Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for <term>1-Var Stats </term> which refers to 1-variable statistics and then hit [enter]. Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then the number <c>1</c> which has L1 above it and then [enter] button. This will give the summary for Brand A. The sample standard deviation is 7.9, to find the variance we square the value thus <m> 7.9^2 = 62.41 </m> </p>
+<image source="Spread2.png" width="80%">
+                <shortdescription> values for Brand A</shortdescription>
+            </image>
+<p> Repeat for Brand B.  Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for <term>1-Var Stats </term> and then hit [enter] and select the location L2 by hitting the [2nd] button then the number <c>2</c> which has L2 above it and then [enter] button. The sample standard deviation is 15.41 which lets us know the values are more spread out than Brand A, to find the variance we square the value thus <m> 15.41^2 = 237.4681 </m>. </p>
+<image source="Srpead3.png" width="80%">
+                <shortdescription> values for Brand B</shortdescription>
+            </image>
+<p> Note: If you are using a TI-84 the List is L1 and the FreqList is left blank, scroll down to Calculate and hit [enter]. You should see the following outputs for Brand A. </p>
+<image source="Srpead4.png" width="60%">
+                <shortdescription> TI84 values for Brand A</shortdescription>
+            </image>
+<p> And to the following outputs for Brand B by changing the List to L2. </p>
+<image source="Srpead5.png" width="60%">
+                <shortdescription> TI84 values for Brand B</shortdescription>
+            </image>
+
+
   </subsection>
 
 
@@ -52,13 +81,29 @@
 <p> Approximately 95% of the data fall with two standard deviations of the mean, giving the interval from μ − 2σ to μ + 2σ . This gives the middle 95% of the values in the distribution. This is often called the 95% Rule. </p>
 <p> Approximately 99% of the data fall with three standard deviations of the mean, giving the interval from μ − 3σ to μ + 3σ . </p>
 <p> <term> Example: </term> Find the interval for middle 68% of time that the stain will last for Brand A. </p> 
-<p> <em> Solution: </em> The 68% rules says the values are within 1 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 7.9, the interval is 35-7.9 to 35+7.9 giving 27.1 to 42.9 months. </p>
-<p> <term> Example: </term> Use the 95% rule for the interval that Brand B will last. </p>
-<p>  <em> Solution: </em> The 95% rules says the values are within 2 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 15.4, the interval is 35-2(15.4) to 35+2(15.4) giving 4.2 to 65.8 months. This interval is much wider because there was more variation in the original data. </p>
+<p> <em> Solution: </em> The 68% rules says the values are within 1 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 7.9, the interval is 35 - 7.9 to 35 + 7.9 giving 27.1 to 42.9 months for the typical time the stain will last. </p>
+<p> <term> Example: </term> Use the 95% rule for the time interval that Brand B will last. </p>
+<p>  <em> Solution: </em> The 95% rule says the values are within 2 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 15.4, the interval is 35 - 2(15.4) to 35 + 2(15.4) giving 4.2 to 65.8 months. This interval is much wider because there was more variation in the original data. </p>
 
 
   </subsection>
-<p> <term> Summary of formulas and notations </term> </p>
 
+
+<p> <term> Summary of formulas and notations </term> </p>
+<p> range = maximum – minimum </p>
+<p> The sample standard deviation is designated by <m> s </m> and the sample variance is <m> s^2 </m>. The formula for the sample standard deviation is </p>
+<p> <me> s = \sqrt { \frac{\sum{(x-\bar x)^2}} {n-1} } </me> </p> 
+<p> The formula says we took each value <m> x </m>  and subtract the sample mean <m> \bar x </m>, we square the difference, then add them all together, and then divided by one less than the sample size to get the variance. Then we take the square root to get the standard deviation.  Aren’t you glad we can do this with technology! </p>
+
+  <p> The population standard deviation is designated by <m> σ </m> and the variance is <m> σ^2 </m>. The formula for the population standard deviation is </p>
+    <p> <me>  \sigma = \sqrt { \frac{\sum{(X-\mu)^2}} {N} } </me> </p> 
+
+<p> The formula says we took each value <m> X </m> and subtract the population mean <m> \mu </m>, we square the difference, then add them all together, and then divided by the population size <m> N </m> to get the variance. Then we take the square root to get the population standard deviation <m>  \sigma </m> .   </p>
+
+
+
+<subsection xml:id="subsec-SpreadApply">
+  <title> Application Problems </title>
+  </subsection>
 
 </section>

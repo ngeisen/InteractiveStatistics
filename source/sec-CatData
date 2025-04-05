@@ -84,7 +84,7 @@
 
 <figure xml:id="WBdata">
             <caption>Image of partial data set</caption>
-            <image source="WBdata.png" width="50%">
+            <image source="WBdata.png" width="80%">
                 <shortdescription>Lists 9 games as home/awa and win/loss.</shortdescription>
             </image>
         </figure> 
