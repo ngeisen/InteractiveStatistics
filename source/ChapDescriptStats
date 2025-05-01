@@ -25,5 +25,6 @@
 <xi:include href="sec-CatData" />
 <xi:include href="sec-QuantData" />
 <xi:include href="sec-QuantStats" />
+<xi:include href="sec-MultiGraphs" />
 <xi:include href="sec-GraphStatkey.ptx" />
   </chapter>

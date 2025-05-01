@@ -72,50 +72,7 @@
 <p> See the section for <em>Graphing with StatKey </em> for uploading one quantitative variable into StatKey to graph the data. </p>  
 <p>         </p>
 <P> <term> Other Graphs</term></P>
-<p> There are many other types of graphs that you can use, depending on what the data is intended to display. These are but a few examples involving climate data. </p>
-<p> The National Centers for Environmental Information (NCEI) tracks severe weather and climate events from a historical perspective and their economic and societal impacts. </p>
-<p> The U.S. has sustained 403 weather and climate disasters since 1980 where overall damages/costs reached or exceeded $1 billion (including CPI adjustment to 2025). The total cost of these 403 events exceeds $2.945 trillion. </p>
-<p> Back in the 1980s the average was 9 severe events per year, yet in the most recent 5 years the average is 23 events per year. The increase in the number of climate disasters is costly. </p>
-<p> The graph below denotes the location of 27 separate billion-dollar weather and climate disasters that impacted the United States in 2024. </p>
-<figure xml:id="DisasterMap">
-  <caption>US Map showing Weather Disasters</caption>
-  <image source="ClimateDisasterMap.png" >
-      <shortdescription> US Map showing location of weather disasters that exceeded 1 billion dollars in costs.</shortdescription>
-  </image>
-</figure>
-<p> graph source: <url href="https://www.ncei.noaa.gov/access/billions/" /> </p>
-<p> <em> Graph interpretation:</em> The graph depicts the location of the severe weather disaster as well as their type with a pictograph. The graph also indicates the dates of these disasters in 2024. The tropical cyclones and hurricanes occur along the coasts while the tornadoes occur in the central states. There was only one case of flooding that exceeded the $1 billion mark. </p>
 
-<p> The graph below is a segmented bar graph where each color represents a different type of severe weather event. On the left-side axis, it depicts the number of events for the year listed on the x-axis. We can see that the total number of events is increasing over time. </p>
-<figure xml:id="NumberDisasters">
-  <caption>Number of Weather Disasters since 1980</caption>
-  <image source="NumberUSdisasters.png" >
-      <shortdescription> Summarized number of weather disasters by category that exceeded 1 billion dollars in costs.</shortdescription>
-  </image>
-</figure>
-<p> graph source: <url href="https://www.ncei.noaa.gov/access/billions/time-series/US/cost " /> </p>
-<p> <em>Graph interpretation:</em> We can see in more recent years on the right side of the graph that severe storms (green bars) and tropical cyclones (yellow bars) are occurring more frequently. </p>
-
-<p> If you go to the website, you can click on a specific year to find the totals for each category as well as the 5-year average cost and the 95% confidence interval of the cost. The right-side axis gives the total cost in billions for those events. We can see that the total number of events is increasing over time, as well as the total cost for these events. The graph below summarizes the data for 2024.  </p>
-<figure xml:id="DisasterCosts">
-  <caption>Costs of Weather Disasters since 1980</caption>
-  <image source="Year2024DisasterTotals.png" >
-      <shortdescription> Summarized costs of weather disasters by category in US.</shortdescription>
-  </image>
-</figure>
-<p> Graph interpretation: In 2024, there were 27 confirmed U.S. billion-dollar weather and climate disaster events. These events include: 17 severe storm events (tornado outbreaks, high wind, hailstorms), 5 tropical cyclones, one wildfire, one drought/heat wave, one flooding, and two winter storm events. The total cost of these 27 events was $184.8 billion. </p>
-
-<p> <term>Exercises</term> </p> 
-
-<p> The segmented graph below summarizes the total number of billion-dollar disasters throughout the year since 1980 according to the month they occurred. </p>
-<figure xml:id="MonthlyDisasters">
-  <caption>Monthly Weather Disasters since 1980</caption>
-  <image source="USDiasterCounts.png" >
-      <shortdescription> Summarized number of weather disasters by category that exceeded 1 billion dollars in costs.</shortdescription>
-  </image>
-</figure>
-<p> graph source: <url href="https://www.ncei.noaa.gov/access/billions/climatology" /> </p>
-<p> Using the United States Billion Dollar Disaster Type Counts by Month graph above, answer the following questions. </p>
 
 
 </section> 
