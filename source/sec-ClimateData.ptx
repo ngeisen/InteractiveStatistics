@@ -3,9 +3,23 @@
   <title>Climate Data Sets</title>
   <p> Data sets to analyze climate change. </p>
 
-<p> Greeley Temperatures </p>
-<p> Hurricanes </p>
-<p> Tornadoes </p> 
+  <p> <term> Earthquakes </term> </p>
+  <p> California Earthquakes: <url href="https://scedc.caltech.edu/index.html
+    " /> </p>
+   
+ 
+ <p> <term> Hurricanes </term> </p>
+<p> <url href="https://www.nhc.noaa.gov/  " /> </p>
 
+<p> <term> Severe Weather </term> </p>
+<p> Billion Dollar Weather Events: <url href="https://www.ncei.noaa.gov/access/billions/time-series/US/cost " /> </p>
+
+<p> <term> Temperatures </term> </p>
+ <p> Greeley: <url href="https://scacis.rcc-acis.org/" /> </p>
+    
+<p> <term>Tornadoes </term> </p> 
+<p> US Tornado Mapping: <url href="https://www.spc.noaa.gov/climo/summary/
+  " /> </p>
+ 
 
 </section>
