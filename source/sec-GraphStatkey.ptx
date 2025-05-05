@@ -166,5 +166,41 @@
 <subsection xml:id="subsec-TwoQNstatkey">
   <title> Graphing Two Quantitative Variables  </title>
   </subsection>
+<p> We are going to investigate if there is a relationship between a person’s height and his/her shoe size using the first day survey. </p> 
+<p> Open StatKey, under the left column <em> Descriptive Statistics and Graph </em>, select <c>Two Quantitative Variables.</c> Click on the<c>Upload File</c> button and find the saved data file <c>ClassSurvey1</c> on your computer and click <c> Open</c> on the bottom right. </p>
+<image source="StatkeyTwoQuant.png" >
+    <shortdescription> StatKey two quantitative variables </shortdescription>
+</image>
+<p> Identify the two quantitative variables, select the x-variable first, <em> Shoe size</em>, and then the y-variable, <em>Height</em>, and then click <c> Ok </c> at the bottom right.  </p>
+<image source="SelectTwoQuant.png" >
+    <shortdescription> select the two quantitative variables image </shortdescription>
+</image>
+<p> The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. </p>
+<figure xml:id="ShoeHeightScatterplot">
+    <caption>Image of Scatterplot for Shoe Size and Height </caption>
+    <image source="ShoesHeightsScatter.png" >
+        <shortdescription> Shoe size and Height Scatterplot.</shortdescription>
+    </image>
+</figure>
+<p> If you click on the <c>Switch Variables</c> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well. </p>
+<figure xml:id="HeightvsShoeScatterplot">
+    <caption>Image of Scatterplot for Height and shoe size </caption>
+    <image source="HeightShoesScatterplot.png" >
+        <shortdescription> Scatterplot with height on x-axis.</shortdescription>
+    </image>
+</figure>
+<p> If you click on the box <c> Show Regression Line </c>, the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line. </p> 
+
+
+
+
+
+
+
+
+
+
+
+
 
    </section>     

@@ -15,5 +15,96 @@
   </ol>
 </objectives>
 
-    
+<p>  Recall in Chapter 2, we used a <em> scatterplot </em> to visually determine whether a relationship exists between two quantitative variables and the <em> correlation coefficient </em> to describe the strength and direction of the relationship. Next, we want to make predictions about the linear trend found in the scatterplot, this is known as <term> linear regression</term>. We create a line that goes through the points to help us make the predictions. </p> 
+<p> The regression line is known as the line of best fit since it minimizes the vertical distance each point is from the line. We will focus on linear regression where <m> \hat y = a + bx </m>, where <em>a </em> is the y-intercept and <em> b </em> is the slope of the line. The sign of the slope will match the sign of the correlation coefficient. </p> 
+<p> We are going to continue our investigation of the relationship between a person’s height and his/her shoe size using the first day survey. If we know a person’s height, are we able to predict his/her shoe size? Or if we know a person’s shoe size, can we predict his/her height? Let’s find out. First, let’s review the scatterplot and the correlation value. </p>
+<figure xml:id="ShoeHeightScatterplot">
+  <caption>Image of Scatterplot for Shoe Size and Height </caption>
+  <image source="ShoesHeightsScatter.png" >
+      <shortdescription> Shoe size and Height Scatterplot.</shortdescription>
+  </image>
+</figure>
+<p> The scatterplot shows a strong positive correlation with r = 0.913. As the shoe sizes increase the student heights are also increasing. This matches the positive slope of 2.014. The scatterplot is scaled based on the data values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. Thus, the linear regression equation to predict height is <m> \hat y = 48.396 +2.014x </m> where <em>x</em> is the student shoe size. </p>
+
+<p> If you click on the box <c>Show Regression Line</c> in StatKey, the line goes through the middle if our points by minimizing their distances to it. </p> 
+<figure xml:id="ShoeHeightRegression">
+  <caption>Image of regression line for Shoe Size and Height </caption>
+  <image source="ShoeHeightLine.png" >
+      <shortdescription> Shoe size and Height regression line.</shortdescription>
+  </image>
+</figure>
+
+<p> <term> Making Predictions </term> </p> 
+<p> Predict a person's height if he/she has a size 8 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
+<p> Solution: Using the linear regression equation  <me> \hat y = 48.396 +2.014(8) = 65.508 </me>  So we predict the height to be 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches. </p> 
+<p> Predict a person's height if he/she has a size 11 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
+<p> Solution: Using the linear regression equation  <me> \hat y = 48.396 +2.014(11) = 70.55 </me> 
+   So we predict the height to be 5 feet 10.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 11, go up to the regression line then move to the left to find the height around 71 inches. </p> 
+
+   <p> Suppose a person is 6 feet tall (72 inches), predict his/her shoe size using the current regression equation. Make sure you are solving for the correct variable. </p> 
+   <p>     Solution: Now we use <m> \hat y=72 </m> and we solve for<m> x</m>. 
+        <me> \ 72=48.396 +2.014x </me>
+    Subtract 48.396 from both sides of the equation and then divide by 2.014 to get <m>x= 11.7 </m> shoe size. </p>
+  <p> Estimating the value from the scatterplot, we start with the y-axis where y=72 inches, we go right until we land on the regression line and drop down to x = 11.5 shoe size. </p> 
+  <figure xml:id="HeightShoeRegression">
+    <caption>Image of regression line for Height on x-axis </caption>
+    <image source="HeightShoeLine.png" >
+        <shortdescription> Height regression line.</shortdescription>
+    </image>
+</figure>
+<p> We have the same correlation coefficient of r=0.913 showing a strong positive linear relationship. But the linear regression equation is now <m> \hat y = 0.414x-18.683 </m> where x is the height and y is the shoe size. </p>
+<p> Predicting the shoe size for someone 72 inches becomes <me> \hat y = 0.414(72)-18.683 = 11.125 </me> which is around size 11 shoe. Notice how the two estimates are slightly different.</p> 
+
+<p> Warning: the prediction is only as good as our graph. The y-intercept value often does not make sense in the context, but helps us to make our estimates within the scatterplot (knows as interpolation). Making predictions beyond the bounds of the data, known as extrapolation, can be off. </p> 
+<p> The difference between the actual value <em> y </em> and the predicted value <m> \hat y </m> is called a <term> residual </term>. </p> 
+
+<p> <term> Practice </term> </p> 
+<p> Now complete the correlation and regression analysis for different scenario. </p>
+<p> Seismologists use tools like seismograms to record and analyze earthquake data, including their location, magnitude, depth, and other factors.  Seismologists indicate the size of an earthquake in units of magnitude. Some methods are based on body waves (which travel deep within the structure of the earth) and surface waves. Earthquake magnitude is a logarithmic scale meaning the shaking will be 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. </p> 
+<p>Suppose a seismologist wanted to know if there was a correlation between the magnitude of an earthquake and its depth at the epicenter (where the earthquake originates, measured in kilometers below the earth’s surface).  The data file includes a list of earthquakes that were felt during a one-week period between April 19 and April 25, 2025 around the world, as recorded by the Southern California Earthquake Data Center. Generally, earthquakes with a magnitude of 2.5 can be felt. Use the variables <em> Magnitude</em> and <em>Depth</em> for these earthquakes. </p> 
+<figure xml:id="EarthquakeRegression">
+  <caption>Image of regression line for magnitude and depth of earthquakes </caption>
+  <image source="Earthquake1.png" >
+      <shortdescription> Earthquake regression line.</shortdescription>
+  </image>
+</figure>
+
+<example>
+  <title> Correlation </title> 
+  <statement> <p> State the correlation coefficient. </p> </statement>
+  <solution> <p> Correlation r = 0.473 is a moderate positive relationship (note: this is statistically significant which we will investigate later in the semester).</p> </solution>
+  </example>
+  <example>
+  <title> Nature of the relationship </title> 
+  <statement> <p> Describe the nature of the relationship. </p> </statement>
+  <solution> <p> As the magnitude of an earthquake increases, its depth below the surface also increases </p> </solution>
+  </example>
+  <example>
+    <title> Slope </title> 
+    <statement> <p> Identify the slope when x = magnitude and y = depth. </p> </statement>
+    <solution> <p> Slope = 14.78 is positive.</p> </solution>
+    </example>
+    <example>
+    <title> Y-intercept </title> 
+    <statement> <p> Identify the y-intercept when x = magnitude and y = depth. </p> </statement>
+    <solution> <p> The y-intercept = -23.334 km below surface.</p> </solution>
+    </example>
+    <example>
+      <title> Regression Equation </title> 
+      <statement> <p> Identify the regression equation where x = magnitude and y = depth. </p> </statement>
+      <solution> <p> Depth = 14.78(magnitude)-23.334 or <m> \hat y = 14.78x-23.334 </m>.</p> </solution>
+      </example>
+      <example>
+      <title> Prediction </title> 
+      <statement> <p> Predict the depth of the epicenter for an earthquake with a magnitude of 6.0. </p> </statement>
+      <solution> <p> <m> \hat y = 14.78(6)-23.334=65.34 </m> km below surface.</p> </solution>
+      </example>
+      <example>
+        <title> Residual </title> 
+        <statement> <p> Find the residual for a 4.8 earthquake with a depth of 62.7 km from El Salvador. </p> </statement>
+        <solution> <p> Predict <m> \hat y = 14.78(4.8)-23.334=47.61 </m> km below surface. Residual <m>y-\hat y = 62.7-47.61 = 15.09 </m> km deeper than predicted .</p> </solution>
+        </example>
+               
+
+
 </section>
