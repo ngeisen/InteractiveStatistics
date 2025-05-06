@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-DesStat-Regression" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Linear Regression</title>
-  <p> Text of section. </p>
-
+  <p> Previously, we used a scatterplot to visually determine whether a relationship exists between two quantitative variables. Next, we want to make predictions about the linear trend found in the scatterplot, this process of fitting a line to a set of data is called linear regression.</p>
 <objectives>
   <introduction>
     <p> At the end of this section you will  be able to   </p>
   </introduction>
   <ol>
-    <li> <p> Describe the nature of a relationship from scatterplot. </p>    </li>
-    <li> <p> Interpret the correlation coefficient.  </p> </li>
+   <li> <p> Describe the nature of a relationship from scatterplot. </p>    </li>
+   <li> <p> Interpret the correlation coefficient.  </p> </li>
    <li> <p> Find the linear regression equation. </p> </li>
-<li> <p> Predict values using the regression equation. </p> </li>
+  <li> <p> Predict values using the regression equation. </p> </li>
+ <li> <p> Find the residual. </p> </li>
   </ol>
 </objectives>
 
 <p>  Recall in Chapter 2, we used a <em> scatterplot </em> to visually determine whether a relationship exists between two quantitative variables and the <em> correlation coefficient </em> to describe the strength and direction of the relationship. Next, we want to make predictions about the linear trend found in the scatterplot, this is known as <term> linear regression</term>. We create a line that goes through the points to help us make the predictions. </p> 
-<p> The regression line is known as the line of best fit since it minimizes the vertical distance each point is from the line. We will focus on linear regression where <m> \hat y = a + bx </m>, where <em>a </em> is the y-intercept and <em> b </em> is the slope of the line. The sign of the slope will match the sign of the correlation coefficient. </p> 
-<p> We are going to continue our investigation of the relationship between a person’s height and his/her shoe size using the first day survey. If we know a person’s height, are we able to predict his/her shoe size? Or if we know a person’s shoe size, can we predict his/her height? Let’s find out. First, let’s review the scatterplot and the correlation value. </p>
+<p> Let us do a quick review. A <em> positive</em> relationship exists when both variables increase while a <em>negative </em> relationship exists when one variable increase and the other variable decreases. The correlation coefficient measures its strength on a scale from -1 to +1. </p> 
+<ul>
+  <li> <p> If there is a <em> strong positive</em> linear relationship, the correlation coefficient  is closer to +1.
+</p>    </li>
+<li> <p> If there is a <em> strong negative linear</em> relationship, the correlation coefficient is closer to -1.
+ </p> </li>
+  <li> <p> If there is a <em>moderate</em> linear relationship, the correlation coefficient is around 0.5 or -0.5. </p> </li>
+<li> <p> If there is no relationship or if there is a <em>weak</em> relationship, the correlation coefficient is around 0. </p> </li>
+ </ul>
+
+<p> The regression line is known as the line of best fit since it minimizes the vertical distance each point is from the regression line. We will focus on linear regression where <m> \hat y = a + bx </m>, where <em>a </em> is the y-intercept and <em> b </em> is the slope of the line. The sign of the slope will match the sign of the correlation coefficient. </p> 
+<p> The regression line provides a model of a linear association between two quantitative variables to give a predicted value of the response (dependent) variable, based on a given value of in the explanatory (independent) variable.  </p>
+<p> We are going to continue our investigation of the relationship between a person's height and his/her shoe size using the first day survey. If we know a person's height, are we able to predict his/her shoe size? Or if we know a person’s shoe size, can we predict his/her height? Let’s find out.</p>
+ <p>  First, let's review the scatterplot and the correlation value. </p>
 <figure xml:id="ShoeHeightScatterplot">
   <caption>Image of Scatterplot for Shoe Size and Height </caption>
   <image source="ShoesHeightsScatter.png" >
       <shortdescription> Shoe size and Height Scatterplot.</shortdescription>
   </image>
 </figure>
-<p> The scatterplot shows a strong positive correlation with r = 0.913. As the shoe sizes increase the student heights are also increasing. This matches the positive slope of 2.014. The scatterplot is scaled based on the data values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. Thus, the linear regression equation to predict height is <m> \hat y = 48.396 +2.014x </m> where <em>x</em> is the student shoe size. </p>
+<p> The scatterplot shows a strong positive correlation with r = 0.913. As the shoe sizes increase the student heights are also increasing. This matches the positive slope of 2.014. The slope tells us the height increases by 2 inches for each 1 change in shoe size. The scatterplot is scaled based on the data values, with shoe size ranging from 6 to 15 and heights between 59 inches and 78 inches. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. Thus, the linear regression equation to predict height is <m> \hat y = 48.396 +2.014x </m> where <m>x</m> is the student shoe size. </p>
 
 <p> If you click on the box <c>Show Regression Line</c> in StatKey, the line goes through the middle if our points by minimizing their distances to it. </p> 
 <figure xml:id="ShoeHeightRegression">
@@ -35,33 +47,40 @@
 </figure>
 
 <p> <term> Making Predictions </term> </p> 
-<p> Predict a person's height if he/she has a size 8 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
-<p> Solution: Using the linear regression equation  <me> \hat y = 48.396 +2.014(8) = 65.508 </me>  So we predict the height to be 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches. </p> 
-<p> Predict a person's height if he/she has a size 11 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
+<p> <em> Example: </em> Predict a person's height if the person has a size 8 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
+<p> Solution: Using the linear regression equation  <me> \hat y = 48.396 +2.014(8) = 65.508 </me>  So we predict the person's height to be 65.5 inches or 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches. </p> 
+<p> <em> Example: </em> Predict a person's height for shoe size 11 using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
 <p> Solution: Using the linear regression equation  <me> \hat y = 48.396 +2.014(11) = 70.55 </me> 
-   So we predict the height to be 5 feet 10.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 11, go up to the regression line then move to the left to find the height around 71 inches. </p> 
+   So we predict the height to be 70.55 inches or 5 feet 10.6 inches tall. This does align with the scatter plot. On the x-axis we start at size 11, go up to the regression line then move to the left to find the height around 71 inches. </p> 
 
    <p> Suppose a person is 6 feet tall (72 inches), predict his/her shoe size using the current regression equation. Make sure you are solving for the correct variable. </p> 
    <p>     Solution: Now we use <m> \hat y=72 </m> and we solve for<m> x</m>. 
         <me> \ 72=48.396 +2.014x </me>
     Subtract 48.396 from both sides of the equation and then divide by 2.014 to get <m>x= 11.7 </m> shoe size. </p>
   <p> Estimating the value from the scatterplot, we start with the y-axis where y=72 inches, we go right until we land on the regression line and drop down to x = 11.5 shoe size. </p> 
+  
+  <p> Now lets switch the axes and compare the new scatterplot. The height is now the x-axis and the shoe size is along the y-axis. </p> 
   <figure xml:id="HeightShoeRegression">
     <caption>Image of regression line for Height on x-axis </caption>
     <image source="HeightShoeLine.png" >
         <shortdescription> Height regression line.</shortdescription>
     </image>
 </figure>
-<p> We have the same correlation coefficient of r=0.913 showing a strong positive linear relationship. But the linear regression equation is now <m> \hat y = 0.414x-18.683 </m> where x is the height and y is the shoe size. </p>
+<p> We have the same correlation coefficient of r = 0.913 showing a strong positive linear relationship. But the linear regression equation is now <m> \hat y = 0.414x-18.683 </m> where <m> x </m> is the height and <m>y</m> is the shoe size. The slope tells us that the shoe size increases by .414 for each additional inch in height. Notice that for a height of 0 inches the predicted shoe size is -18.683. </p>
 <p> Predicting the shoe size for someone 72 inches becomes <me> \hat y = 0.414(72)-18.683 = 11.125 </me> which is around size 11 shoe. Notice how the two estimates are slightly different.</p> 
+<p> <em> Example:</em> From the data file, the person who was 72 inches tall has a shoe size of 12. The residual using the second regression equation gave us the predicted size of 11.125. Thus the residual <m>y- \hat y =12-11.125 = .875</m> , the actual shoe size is almost one size greater than the estimate.  The first regression equation gave a predicted size of 11.7, thus the residual is  <m>y- \hat y =12-11.7 = .3</m> which is closer to the actual value. </p> 
+<p> Warning: the prediction is only as good as our graph. The y-intercept value often does not make sense in the context, but helps us to make our estimates within the scatterplot (knows as interpolation). Making predictions beyond the bounds of the data, known as extrapolation, can be off. For example, we do not want to predict former UNC basketball player Dalton Knecht's shoe size using his height of 6 feet 6 inches (78 inches) since it goes off the graph. The prediction would not be reliable. </p> 
+<p> The difference between the actual value <em> y </em> and the predicted value <m> \hat y </m> is called a <term> residual </term>. This lets us know how far off our prediction is. </p> 
+<p> <em> Example:</em> From the data file, the person who was 72 inches tall has a shoe size of 12. The residual using the second regression equation gave us the predicted size of 11.125. Thus the residual <m>y- \hat y =12-11.125 = .875</m> , the actual shoe size is almost one size greater than the estimate.  The first regression equation gave a predicted size of 11.7, thus the residual is  <m>y- \hat y =12-11.7 = .3</m> which is closer to the actual value. </p> 
 
-<p> Warning: the prediction is only as good as our graph. The y-intercept value often does not make sense in the context, but helps us to make our estimates within the scatterplot (knows as interpolation). Making predictions beyond the bounds of the data, known as extrapolation, can be off. </p> 
-<p> The difference between the actual value <em> y </em> and the predicted value <m> \hat y </m> is called a <term> residual </term>. </p> 
 
 <p> <term> Practice </term> </p> 
 <p> Now complete the correlation and regression analysis for different scenario. </p>
 <p> Seismologists use tools like seismograms to record and analyze earthquake data, including their location, magnitude, depth, and other factors.  Seismologists indicate the size of an earthquake in units of magnitude. Some methods are based on body waves (which travel deep within the structure of the earth) and surface waves. Earthquake magnitude is a logarithmic scale meaning the shaking will be 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. </p> 
 <p>Suppose a seismologist wanted to know if there was a correlation between the magnitude of an earthquake and its depth at the epicenter (where the earthquake originates, measured in kilometers below the earth’s surface).  The data file includes a list of earthquakes that were felt during a one-week period between April 19 and April 25, 2025 around the world, as recorded by the Southern California Earthquake Data Center. Generally, earthquakes with a magnitude of 2.5 can be felt. Use the variables <em> Magnitude</em> and <em>Depth</em> for these earthquakes. </p> 
+
+<p> insert the data file </p> 
+
 <figure xml:id="EarthquakeRegression">
   <caption>Image of regression line for magnitude and depth of earthquakes </caption>
   <image source="Earthquake1.png" >

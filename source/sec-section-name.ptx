@@ -126,8 +126,55 @@
 
 
 <subsection xml:id="subsec-Florida">
-  <title> Case Study – Florida Lakes</title>
+  <title> Case Study – Florida Bass</title>
+  <p> Largemouth bass were studied in 53 different Florida lakes to examine the factors that influence the level of mercury contamination. Water samples were collected from the surface of the middle of each lake in August 1990 and then again in March 1991. The pH level, the amount of chlorophyll, calcium, and alkalinity were measured in each sample. Use the screenshot of the first six rows to answer the following questions. </p> 
+  <p>
+    Original data source:   
+    <url href="https://wiki.socr.umich.edu/index.php/NISER_081107_ID_Data /"> Florida  Bass.
+    </url>
+  </p>
 
+  <image source="FloridaLakeData.png">
+    <shortdescription> image of variables for Florida lakes</shortdescription>
+</image>
+<example>
+  <title> Variables </title> 
+  <statement> <p> How many variables are in the screenshot? </p> </statement>
+  <solution> <p> There are 8 variables with measurements. The ID and Lake name are identifiers only.</p> </solution>
+  </example> 
+  
+  <example>
+  <title> Qualitative Variables </title> 
+  <statement> <p> Which variables are qualitative? </p> </statement>
+  <solution> <p> None </p> </solution>
+  </example> 
+  
+  <example>
+  <title> Discrete Quantitative Variables </title> 
+  <statement> <p> Identify the discrete quantitative variable(s). </p> </statement>
+  <solution> <p> Number of samples collected from the lake.</p> </solution>
+  </example>
+  <example>
+  <title> Continuous Quantitative Variables </title> 
+  <statement> <p> Identify the continuous quantitative variable(s). </p> </statement>
+  <solution> <p> Alkalinity, pH, Calcium, Chlorophyll, Mercury . </p> </solution>
+  </example>
+  <example>
+  <title> Study Type </title> 
+  <statement> <p> What type of study was conducted?  </p> </statement>
+  <solution> <p> This is an observational study since no variable was manipulated. They recorded the measurements as present in the lakes. </p> </solution>
+  </example>
+  <example>
+  <title> Sample </title> 
+  <statement> <p> How big is the sample based on the description? </p> </statement>
+  <solution> <p> The description states 53 lakes were sampled. </p> </solution>
+  </example>
+  <example>
+  <title> Population </title> 
+  <statement> <p> What is the population? </p> </statement>
+  <solution> <p> All Florida lakes. </p> </solution>
+  </example>
+  
 
   </subsection>
 
@@ -135,62 +182,70 @@
 
 <subsection xml:id="subsec-BirdVocals">
   <title> Case Study – Vocal Mimicry of Parrots  </title>
+  <p> Parrots are one of the rare animal taxa with life-long vocal learning. Parrot vocal repertoires are difficult to study in the wild, but companion parrots offer a valuable data source. The authors surveyed the public about mimicry repertoires in companion parrots to determine whether vocal learning varied by (1) species, (2) sex, (3) age, and (4) social interaction with other parrots. Species differed significantly in mimicry ability, with grey parrots having the largest mimicry repertoires. Analyses of all birds (n = 877) found no overarching effects of sex, age, or parrot-parrot social interactions on mimicry repertoires. Authors: Lauryn Benedict, Alexandra Charles , Amirah Brockington and Christine R Dahlin. </p> 
+  <p>       A survey of vocal mimicry in companion parrots:   
+    <url href="https://www.nature.com/articles/s41598-022-24335-x"> Article.
+    </url>
+  </p>
+
+<p>       Full data set:   
+    <url href="https://figshare.com/articles/dataset/Data_from_What_Does_Polly_Say_A_Survey_of_Vocal_Mimicry_in_Companion_Parrots/19674330?file=38522039 "> Parrots Data.
+    </url>
+  </p>
+  <image source="ParrotData1.png">
+    <shortdescription> image of variable for parrot data</shortdescription>
+</image>
+<example>
+  <title> Variables </title> 
+  <statement> <p> How many variables are in the screenshot? </p> </statement>
+  <solution> <p> There are 9 variables with measurements. The Ref ID is an identifier only.</p> </solution>
+  </example> 
+  
+  <example>
+  <title> Qualitative Variables </title> 
+  <statement> <p> Which variables are qualitative? </p> </statement>
+  <solution> <p> Genus, Species, sex, social with other parrots, and social with conspecifics </p> </solution>
+  </example> 
+  
+  <example>
+  <title> Discrete Quantitative Variables </title> 
+  <statement> <p> Identify the discrete quantitative variable(s). </p> </statement>
+  <solution> <p> Age, mimicry sounds counts, phrase counts, and word counts.</p> </solution>
+  </example>
+  <example>
+  <title> Continuous Quantitative Variables </title> 
+  <statement> <p> Identify the continuous quantitative variable(s). </p> </statement>
+  <solution> <p> none in this data set shown </p> </solution>
+  </example>
+  <example>
+  <title> Study Type </title> 
+  <statement> <p> What type of study was conducted?  </p> </statement>
+  <solution> <p> This is an observational study since no variable was manipulated. They gathered data from a questionnaire. </p> </solution>
+  </example>
+  <example>
+  <title> Sample </title> 
+  <statement> <p> How big is the sample based on the description? </p> </statement>
+  <solution> <p> The description states 877 birds were in the study. </p> </solution>
+  </example>
+  
+  
+
+
+
+
+
   </subsection>
 
 
 
 
 
-<p> experimenting with notations here  </p> 
-<p> write a <tag> word </tag> or something <q> else </q> </p> 
-
-<p> inline math equation <m> ax^2+bx+c=0</m> </p> 
-  <p> or fractions centered as <me>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</me> </p> 
-
-<p> probability equation as <me> p=\frac{\text{number  of  events}}{\text{total outcomes}}</me> </p> 
-
-<claim xml:id="claim-stats">
-  <statement>
-    <p>
-      Statistics is the science of
-    </p>
-  </statement>
-</claim>
-
-
-<definition xml:id="def-statistics">
-  <statement>
-    <p>
-      <term>Statistics </term> is the science of conducting studies to collect, organize, analyze and interpret data. 
-    </p>
-  </statement>
-</definition>
-
-<p>     </p> 
-
 <!--this leaves me a note --> 
+
 <!-- use \lt for less than and \gt for greater than symbols within the math-->
 <p>
-  use <m> \lt </m>  for less than and <m> \gt </m> for greater than symbols
+  use <m> \lt </m>  for less than and <m> \gt </m> for greater than symbols for R coding
 </p>
-<p>        </p>
-<example>
-  <title>Differentiating a polynomial</title>
-  <statement>
-    <p>       Differentiate the function <m>f(x) = 3x^5-7x+5</m>.      </p>
-  </statement>
-  <answer>
-    <p>       <m>f'(x) = 15x^4-7</m>     </p>
-  </answer>
-  <solution>
-    <p>       We use the power, sum, and constant rules to find that the derivative is <m>f'(x) = 15x^4-7</m>.      </p>
-  </solution>
-
-
-  
-</example>
-
-
 
 
 
