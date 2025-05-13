@@ -7,5 +7,15 @@
     <p> Text before the first section. </p>
   </introduction>
 
+<xi:include href="sec-SingleMean.ptx" />
+<xi:include href="sec-SingleProportion.ptx" />
+<xi:include href="sec-SingleVariance.ptx" />
+<xi:include href="sec-UrbanHeatStudy.ptx" />
+
+  
+
+
+
+
 
   </chapter>
