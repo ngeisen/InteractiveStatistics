@@ -7,6 +7,18 @@
     <p> Text before the first section. </p>
   </introduction>
 
+  <objectives>
+  <introduction>
+    <p> By the end of this chapter you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write appropriate hypotheses for a scenario </p>    </li>
+ <li> <p> Perform hypothesis tests for the mean, proportions, variance, and standard deviation </p>    </li>
+   <li> <p> Correctly interpret p-values to form a conclusion</p>    </li>
+  </ol>
+</objectives>
+
+
 <xi:include href="sec-SingleMean.ptx" />
 <xi:include href="sec-SingleProportion.ptx" />
 <xi:include href="sec-SingleVariance.ptx" />

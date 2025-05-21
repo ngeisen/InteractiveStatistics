@@ -7,5 +7,19 @@
     <p> Text before the first section. </p>
   </introduction>
 
+<objectives>
+  <introduction>
+    <p> At the end of this chapter you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Construct and interpret confidence intervals for the mean </p>    </li>
+ <li> <p> Construct and interpret confidence intervals for proportions </p>    </li>
+   <li> <p> Construct and interpret confidence intervals for variance and standard deviation </p>    </li>
+  </ol>
+</objectives>
+
+
+
+
 
   </chapter>

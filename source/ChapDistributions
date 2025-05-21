@@ -7,5 +7,21 @@
     <p> Text before the first section. </p>
   </introduction>
 
+<objectives>
+  <introduction>
+    <p> At the end of this chapter you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Construct and interpret a sampling distribution </p>    </li>
+    <li> <p> Construct and interpret a bootstrap distribution </p> </li>
+    <li> <p> Construct confidence intervals from a bootstrap distribution </p> </li>
+    <li> <p> Determine if a distribution is approximately normal  </p>    </li>
+    <li> <p> Applications involving the normal distribution   </p>    </li> 
+</ol>
+</objectives>
+
+
+
+
 
   </chapter>
