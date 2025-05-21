@@ -4,11 +4,11 @@
   <title>Probability </title>
 
   <introduction>
-    <p> We will invstigate some basic probability concepts. </p>
+    <p> In this chapter we will investigate some basic probability concepts. We will begin with a brief review of what probability is, how to use a tree diagram to determine the number outcomes, and discuss common rules for compound events. We will extend this to discrete probability distributions. </p>
   </introduction>
 <objectives>
         <introduction>
-          <p> At the end of this section, you will be able to:   </p>
+          <p> At the end of this chapter, you will be able to:   </p>
         </introduction>
         <ol>
           <li> <p> Calculate the probability of simple events. </p> </li>
@@ -16,7 +16,9 @@
           <li> <p> Determine conditional probability. </p> </li>
           <li> <p> Use a tree diagram to determine the probability for multiple events. </p> </li>
           <li> <p> Calculate permutations and combinations. </p> </li>
-        </ol>
+          <li> <p> Determine the likelyhood of events from a probability distribution.  </p> </li>
+          <li> <p> Evaluate a binomial distribution.  </p> </li>  
+      </ol>
       </objectives>
 
 <xi:include href="BasicProb.ptx" />

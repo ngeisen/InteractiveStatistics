@@ -20,15 +20,31 @@
 <p> <term> Experiment</term>  is an activity that has specific results that can occur, but the result is unknown before you begin. Such as flipping a coin. </p>
 <p> The <term> outcomes </term> are the results of an experiment. The outcomes from flipping a coin is head or tail. </p>
 <p> An <term> event </term>  is a set of certain outcomes of an experiment that you want to have happen. So if I want to know the likelihood of getting heads, getting heads is the event I want to happen. </p>
-<p> The <term> sample space</term>  is the collection of all possible outcomes of the experiment.  For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. </p>
+<p> The <term> sample space</term>  is the collection of all possible outcomes of the experiment.  For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. A tree diagrams helps us see all these outcomes.</p>
   
-<p> exerciese </p>
+<exercise> <title> Outcomes </title>
+<p>  Suppose that the experiment is rolling a single die. List the outcomes and sample space. </p>
+<solution> <p>  The outcomes are the die number 1, 2, 3, 4, 5, 6. The sample space is the set {1, 2, 3, 4, 5, 6}.  </p> </solution> 
+</exercise> 
 
- <p> To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4/10 = 2/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513/100 = 51.3% of the time. This is an example of <term> experimental probability </term> since the value was found by actually doing the experiment. </p> 
+
+<p> To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4/10 = 2/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513/100 = 51.3% of the time. This is an example of <term> experimental probability </term> since the value was found by actually doing the experiment. </p> 
 <p> The approximate probability of an event A, written as , is </p>
- <p> Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates <term> theoretical probability </term> which is based on the sample space. But it assumes that all outcomes are equally likely to occur. </p>
-  
+<p> Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates <term> theoretical probability </term> which is based on the sample space. But it assumes that all outcomes are equally likely to occur. </p>
+<p> Consider the experiment of spinning the spinner below. There are four possible outcomes: red, blue, green, and yellow.  We will expect the color blue to be spun about ¼ of the time if we spin it many times.  The probability is indicated by writing P(blue) = ¼. </p>  
+<figure xml:id="ProbSpinner1">
+            <caption>Spinner</caption>
+            <image source="Spinner1.png" >
+                <shortdescription>circlular spinner split into four equal parts.</shortdescription>
+            </image>
+        </figure>
+<p> Since each color represents the same fraction of the circle, we refer to them being <term> equally likely </term> to occur since the probability is the same. Just a rolling any number on a fair die is also equally likely at 1/6. </p>  
+<p> Online Spinner: <url href="https://www.nctm.org/adjustablespinner/ " /> </p>
 
+<exercise> <title> marbles </title>
+<p> Find the probability of selecting a green marble on one draw from a box containing five green marbles and seven blue marbles.  </p>
+<solution> <p> Since there are 5 green marbles and a total of 12 marbles in the bag, the probability is P(G)=5/12. </p> </solution>
+</exercise> 
 
-
+<p> Online Dice: <url href="https://www.virtualdiceroll.com/2/en/two-dice" /> </p>
     </section> 

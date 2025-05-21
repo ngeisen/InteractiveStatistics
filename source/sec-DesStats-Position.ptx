@@ -27,6 +27,11 @@
 
 <p> <term> Example:</term> A teacher gives a 20-point test to ten students.  The scores are 18, 15, 12, 6, 8, 12, 3, 5, 20, 10. Find the percentile rank of the student who scored 12. </p>
 <p> <em> Solution: </em> There are 5 scores below 12. There are 2 scores at 12. There is a total of 10 scores. The percentile ranking <m> = \frac{5+0.5(2)}{10} = 0.60 </m> thus the 60th percentile. This student did better than or equal to 60% of the classmates on the test. </p>
+<p>       </p>  
+<exercise> <title> Percentile </title>
+<p>A teacher gives a 20-point quiz to ten students.  The scores are 16, 15, 16, 6, 8, 16, 3, 5, 20, 10. Find the percentile ranking of the student who scored 16. </p>
+<solution> <p> There are 6 scores below 16. There are 3 scores at 16. There is a total of 10 scores. The percentile ranking <m> = \frac{6+0.5(3)}{10} = 0.75 </m> thus the 75th percentile. This student did better than or equal to 75% of the classmates on the quiz. </p> </solution> 
+</exercise> 
 
 <p> The kth percentile is the data value that has k% of the data at or below that value. </p>
 <p> <term> Example: </term> Carlos scored a 1350 on the SAT exam and the report said he was at the 89th percentile. What does this indicate? </p>
@@ -126,18 +131,17 @@ A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 
 <p> Biology quiz <m> z = \frac{30-25}{4} =1.25 </m>  standard deviation above average. </p>
 <p> Thus the student did better on the calculus test since the z-score is higher in comparison. </p>
 
-<example>
+<exercise> 
 <title> Compare z-scores </title> 
-<statement> <p> Compare the three test scores to see who did the best overall in terms of z-scores. </p>
+ <p> Compare the three test scores to see who did the best overall in terms of z-scores. </p>
 <p>Angela earned a 200 on an aptitude test which has a mean of 220 and a standard deviation of 15. </p>  
 <p>Bryce scored 75 on the math test with a mean of 72 and standard deviation of 8. </p>
 <p> Chris earned a 78 on chemistry test with a mean of 81 and standard deviation of 10. </p>
-</statement>
 <solution> <p> Angela <m> z = \frac{200 - 220}{15} = -1.33 </m> which is below average. </p> 
   <p> Bryce <m> z = \frac{75-72}{8} = 0.375 </m>  which is slightly above average. </p> 
     <p> Chris <m> z = \frac{78-81}{10} = - 0.30 </m>  which is slightly below average. Therefore Bruce did the best since he has the highest positive score. Angela did the worst overall since she has the lowest z-score (most negative).  
 </p> </solution>
-</example>
+</exercise>
 
 
   </subsection>

@@ -18,7 +18,7 @@
   <p> The National Centers for Environmental Information (NCEI) tracks severe weather and climate events from a historical perspective and their economic and societal impacts. </p>
   <p> The U.S. has sustained 403 weather and climate disasters since 1980 where overall damages/costs reached or exceeded $1 billion (including CPI adjustment to 2025). The total cost of these 403 events exceeds $2.945 trillion. </p>
   <p> Back in the 1980s the average was 9 severe events per year, yet in the most recent 5 years the average is 23 events per year. The increase in the number of climate disasters is costly. </p>
-  <p> The graph below denotes the location of 27 separate billion-dollar weather and climate disasters that impacted the United States in 2024. </p>
+  <p> The <term>pictograph</term> below denotes the location of 27 separate billion-dollar weather and climate disasters that impacted the United States in 2024. </p>
   <figure xml:id="DisasterMap">
     <caption>US Map showing Weather Disasters</caption>
     <image source="ClimateDisasterMap.png" >
@@ -28,7 +28,7 @@
   <p> graph source: <url href="https://www.ncei.noaa.gov/access/billions/" /> </p>
   <p> <em> Graph interpretation:</em> The graph depicts the location of the severe weather disaster as well as their type with a pictograph. The graph also indicates the dates of these disasters in 2024. The tropical cyclones and hurricanes occur along the coasts while the tornadoes occur in the central states. There was only one case of flooding that exceeded the $1 billion mark. </p>
   
-  <p> The graph below is a segmented bar graph where each color represents a different type of severe weather event. On the left-side axis, it depicts the number of events for the year listed on the x-axis. We can see that the total number of events is increasing over time. This is an example of a time series plot. </p>
+  <p> The graph below is a <term> segmented bar graph</term> where each color represents a different type of severe weather event. On the left-side axis, it depicts the number of events for the year listed on the x-axis. We can see that the total number of events is increasing over time. This is an example of a time series plot. </p>
   <figure xml:id="NumberDisasters">
     <caption>Number of Weather Disasters since 1980</caption>
     <image source="NumberUSdisasters.png" >
@@ -76,7 +76,7 @@
                 <shortdescription> Shows accumulated cost of wildfires by state.</shortdescription>
             </image>
         </figure>
-<p> The map above summarizes the 19 wildfire events with losses exceeding $1-billion dollars each. The darker the color the more loss for that state. California has between $50-$100 billion in loss while Colorado and Oregon have $5-$10 billion in wildfire loss. The states in white had no billion-dollar level wildfires. The total is between $100-$200 billion for this time period of 2000-2025. </p> 
+<p> The density map above summarizes the 19 wildfire events with losses exceeding $1-billion dollars each. The darker the color the more loss for that state. California has between $50-$100 billion in loss while Colorado and Oregon have $5-$10 billion in wildfire loss. The states in white had no billion-dollar level wildfires. The total is between $100-$200 billion for this time period of 2000-2025. </p> 
 
 <p> This density map of the United States (below) shows which states had the most extensive cost for tropical cyclones and hurricanes for 2000-2024. There were 48 tropical cyclone events with losses exceeding $1 billion each. Florida has experienced over $360 billion in loss. Texas and Louisiana had $200-300 billion in damage. The total for the 25 years displayed is $1.3 trillion dollars. </p> 
 <figure xml:id="CycloneMap">
@@ -89,5 +89,24 @@
    <p> Using the link below, explore other weather disasters and the accumulated costs or frequency per state.  You can adjust to the years of interest since 1980. </p> 
    <p> Interactive website: <url href="https://www.ncei.noaa.gov/access/billions/mapping" /> </p>
         
+<p> The Storm Prediction Center (SPC) is part of the National Weather Service (NWS) and provide timely forecasts and watches for severe thunderstorms and tornadoes over the contiguous United States. </p> 
+<p> Interactive website: <url href="https://www.spc.noaa.gov/climo/summary/" /> </p>
+<p> Below is a severe weather map for the Month of April in 2025. Each red triangle depicts the location of a tornado, blue squares represent severe wind, and green circles represent severe hail. The larger the symbol, the stronger the tornado, wind speed, or hail stone size. </p>
+<figure xml:id="WeatherGraph">
+            <caption>Severe Weather events in April 2025</caption>
+            <image source="Tornado2025.png" >
+                <shortdescription>US map showing location of severe weather.</shortdescription>
+            </image>
+        </figure>
+<p>  <em> Interpretation: </em> From the legend, we can see there were 341 tornadoes in the US with 35 rating of EF2 or greater in the month of April 2025. There were 1781 severe wind storms with 44 of them exceeding 75 mile per hour gusts. There were 1031 severe hailstorms with 444 storms with hail stones of at least 1 inch and 177storms with hailstones more than 2 inches in diameter. </p>
+<p> We can compare this to the severe weather map from April in 2000. Does there appear to be more severe with storms across the United States now or then? </p>
+<figure xml:id="WeatherGraph2">
+            <caption>Severe Weather events in April 2000</caption>
+            <image source="Tornado2000.png" >
+                <shortdescription>US map showing location of severe weather.</shortdescription>
+            </image>
+        </figure>
+<p> In April 2000, there were 136 tornadoes, 737 severe windstorms, and 679 storms with severe hail. It does appear there were more severe weather storms in 2025 than in 2000. </p>
+
 
 </section>
