@@ -13,7 +13,45 @@
           </ol>
         </introduction>
     </objectives>  
+<p> It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.  In this section we will focus on probability rules based on the <em>theoretical probabilities</em>. </p>
 
+<p>There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are <em> equally likely</em> to occur.  This means that every outcome has the same chance of happening.  </p>
+<exercise label="EquallyLikely-matching">
+    <title> Equally Likely </title>
+    <statement>  <p> Which of the following experiments have equally likely outcomes?
+    </p>    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>  <p> Tossing a fair coin. </p>
+        </statement>
+            </choice>
+    <choice >
+        <statement>    <p> Rolling loaded dice.  </p>     </statement>
+        <feedback>
+        <p> Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.  </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p> Pull a ball out of a bag containing 5 red balls and 6 green balls.   </p>
+        </statement>
+        <feedback>
+        <p> Assuming the balls are the same size, then each ball has the same chance of being chosen.  The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different . </p>
+        </feedback>
+    </choice>
+    
+    </choices>
+</exercise>
+
+
+
+<p> First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards. </p> 
+<figure xml:id="StandardDeck">
+            <caption>Standard deck of cards</caption>
+            <image source="DeckCards.png" >
+                <shortdescription>four suits with 13 numbered cards in deck.</shortdescription>
+            </image>
+        </figure>
 
 
     </section> 
