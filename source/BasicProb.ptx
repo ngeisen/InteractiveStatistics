@@ -145,6 +145,22 @@
             </image>
         </figure>
 
+<exercise> <title> Sample Space </title>
+<p>  How many outcomes are in the sample space for a standard deck of cards? </p>
+<solution> <p>  There are 52 outcomes in a standard deck. Each card represents an outcome. </p>  </solution> 
+</exercise>
+<exercise> <title> Spades </title>
+<p>  What is the probability of getting a spade drawing one card randomly from a deck?</p>
+<solution> <p>  There are 13 spades in a deck of 52 cards, thus P(spade)=13/52=1/4 . </p>  </solution> 
+</exercise>
+<exercise> <title> Jack </title>
+<p>  What is the probability of getting a Jack drawing one card randomly from a deck?</p>
+<solution> <p>  There are 4 jacks in a deck of 52 cards, thus P(jack)=4/52=1/13=0.077  </p>  </solution> 
+</exercise>
+<exercise> <title> Complement </title>
+<p>  What is the probability of not getting an Ace by drawing one card randomly from a deck?</p>
+<solution> <p>  P(Ace)=4/52 thus P(not Ace) = 1-4/52 = 0.923 </p>  </solution> 
+</exercise>
 
 
 
@@ -168,6 +184,16 @@
 </solution> 
 </exercise>
 
+<exercise> <title> Rain </title>
+<p>  Suppose the weather person predicted the probability of it raining today is 0.45.  What is the probability of it not raining?  </p>
+<solution> <p>  Since not raining is the complement of raining, then P(not rain) = 1-P(rain) = 1-.45=0.55 
+ </p>  </solution> 
+</exercise>
+<exercise> <title> COVID </title>
+<p>  Moderna estimated the effectiveness of the COVID19 vaccine at 95% for preventing COVID.  What was the probability of getting COVID if you had the vaccine?  </p>
+<solution> <p>  Using the complement, P(COVID) = 1-P(vaccine)=1-.95=0.05 
+</p>  </solution> 
+</exercise>
 
 
 
