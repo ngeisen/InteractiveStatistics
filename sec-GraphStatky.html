@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.16';
+eBookConfig.runestone_version = '7.6.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.a0c870bab402ccbf.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97de40e034b535c5.css">
+<script src="_static/prefix-runtime.c7804631fa963734.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.541c9106f2c605b9.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
@@ -127,7 +127,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-QuantStats.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapDescriptStats.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChapSummaryStats.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-MultiGraphs.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapDescriptStats.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChapSummaryStats.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -166,123 +166,130 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapDescriptStats.html" class="internal"><span class="codenumber">2</span> <span class="title">Graphing Data</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CatData.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graphing Categorical Data</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-QuantData.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Quantitative Data</span></a></div></li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="sec-QuantStats.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Descriptive Statistics for Quantitative Variables</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-QuantData.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Quantitative Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-QuantData.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Quantitative Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-QuantData.html#subsec-Scatterplots" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-QuantStats.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Descriptive Statistics for Quantitative Variables</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-MultiGraphs.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Multivariable Graphs</span></a></div></li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="sec-GraphStatky.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div>
+<div class="toc-title-box"><a href="sec-GraphStatky.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Graphing with StatKey</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-OneCatStatkey" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-OneQuantStatkey" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Graphing One Quantitative Variable</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-CatQuantStatkey" class="internal"><span class="codenumber">2.3.3</span> <span class="title">One Categorical and One Quantitative Variable</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-TwoCatStatkey" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-TwoQNstatkey" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-OneCatStatkey" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-OneQuantStatkey" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Graphing One Quantitative Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-CatQuantStatkey" class="internal"><span class="codenumber">2.5.3</span> <span class="title">One Categorical and One Quantitative Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-TwoCatStatkey" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphStatky.html#subsec-TwoQNstatkey" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ChapSummaryStats.html" class="internal"><span class="codenumber">4</span> <span class="title">Descriptive Statistics</span></a></div>
+<div class="toc-title-box"><a href="ChapSummaryStats.html" class="internal"><span class="codenumber">3</span> <span class="title">Descriptive Statistics</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-DesStat-Centers.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Measures of Center</span></a></div>
+<div class="toc-title-box"><a href="sec-DesStat-Centers.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Measures of Center</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterBasics" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterCalc" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Using TI-83 Calculator for Summary Statistics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterApply" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Application Problems</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterStatKey" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Using StatKey to Find Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterBasics" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterCalc" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Using TI-83 Calculator for Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterApply" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Application Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterStatKey" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Using StatKey to Find Summary Statistics</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-DesStat-Spread.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Measures of Spread</span></a></div>
+<div class="toc-title-box"><a href="sec-DesStat-Spread.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Measures of Spread</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadBasics" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadCalc" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Using TI-83 Calculator for Summary Statistics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadUses" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Using the Standard Deviation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadApply" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Application Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadBasics" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadCalc" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Using TI-83 Calculator for Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadUses" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Using the Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadApply" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Application Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-DesStat-Position.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Measures of Position</span></a></div>
+<div class="toc-title-box"><a href="sec-DesStat-Position.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Measures of Position</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Application</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionBasics" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Application</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DesStat-Regression.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Linear Regression</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DesStat-Regression.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Linear Regression</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ChapProb.html" class="internal"><span class="codenumber">5</span> <span class="title">Probability</span></a></div>
+<div class="toc-title-box"><a href="ChapProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="BasicProb.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Basic Probability</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Probability Rules</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="CondProb.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Conditional Probability</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Probability Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="BinomialProb.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Binomial Distribution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="BasicProb.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Basic Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CondProb.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Conditional Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Probability Distribution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="BinomialProb.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Binomial Distribution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ChapDistributions.html" class="internal"><span class="codenumber">6</span> <span class="title">Distributions</span></a></div></li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ConfIntervals.html" class="internal"><span class="codenumber">7</span> <span class="title">Confidence Intervals</span></a></div></li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ChapHypothesis.html" class="internal"><span class="codenumber">8</span> <span class="title">Hypothesis Testing</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ChapDistributions.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ConfIntervals.html" class="internal"><span class="codenumber">6</span> <span class="title">Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ChapHypothesis.html" class="internal"><span class="codenumber">7</span> <span class="title">Hypothesis Testing</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ChapR.html" class="internal"><span class="codenumber">9</span> <span class="title">Using R Studio</span></a></div>
+<div class="toc-title-box"><a href="ChapR.html" class="internal"><span class="codenumber">8</span> <span class="title">Using R Studio</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DownloadR.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Downloading R and R Studio</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DownloadR.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Downloading R and R Studio</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-GraphR.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Graphing with R</span></a></div>
+<div class="toc-title-box"><a href="sec-GraphR.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Graphing with R</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Boxplots" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Boxplots</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Histograms" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Histograms</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Categorical" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Categorical Graphs</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Scatterplots" class="internal"><span class="codenumber">9.2.4</span> <span class="title">Scatterplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Boxplots" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Boxplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Histograms" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Categorical" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Categorical Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Scatterplots" class="internal"><span class="codenumber">8.2.4</span> <span class="title">Scatterplots</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rstats.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Statistics with R</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rstats.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Statistics with R</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-Rtests.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Testing with R</span></a></div>
+<div class="toc-title-box"><a href="sec-Rtests.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Testing with R</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rtests.html#subsec-SingleMean" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Single Mean</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rtests.html#subsec-SingleProportion" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Single Proportion Test</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-Rcompare.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Comparison Tests with R</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-ComparingMeans" class="internal"><span class="codenumber">9.5.1</span> <span class="title">Comparing Two Independent Means</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-PairedMeans" class="internal"><span class="codenumber">9.5.2</span> <span class="title">Paired Means</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-CompareProportions" class="internal"><span class="codenumber">9.5.3</span> <span class="title">Comparing Two Proportions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-CompareVariances" class="internal"><span class="codenumber">9.5.4</span> <span class="title">Comparing Two Variances</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rtests.html#subsec-SingleMean" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Single Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rtests.html#subsec-SingleProportion" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Single Proportion Test</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-Rcorr.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Correlation Tests with R</span></a></div>
+<div class="toc-title-box"><a href="sec-Rcompare.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Comparison Tests with R</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-CorrTests" class="internal"><span class="codenumber">9.6.1</span> <span class="title">Correlation Between Quantitative Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-AssocTests" class="internal"><span class="codenumber">9.6.2</span> <span class="title">Association Between Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-ComparingMeans" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Comparing Two Independent Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-PairedMeans" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Paired Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-CompareProportions" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Comparing Two Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcompare.html#subsec-CompareVariances" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Comparing Two Variances</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">9.7</span> <span class="title">Associations with R</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">9.8</span> <span class="title">ANOVA with R</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Rcorr.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Correlation Tests with R</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-CorrTests" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Correlation Between Quantitative Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-AssocTests" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Association Between Categorical Variables</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Associations with R</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">8.8</span> <span class="title">ANOVA with R</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ChapData.html" class="internal"><span class="codenumber">10</span> <span class="title">Data Sets</span></a></div>
+<div class="toc-title-box"><a href="ChapData.html" class="internal"><span class="codenumber">9</span> <span class="title">Data Sets</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-UNCdata.html" class="internal"><span class="codenumber">10.1</span> <span class="title">UNC Data Sets</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ClimateData.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Climate Data Sets</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-StudyData.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Studies Data Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-UNCdata.html" class="internal"><span class="codenumber">9.1</span> <span class="title">UNC Data Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ClimateData.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Climate Data Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-StudyData.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Studies Data Sets</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-GraphStatky"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Graphing with StatKey</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">Graphing with StatKey</span>
 </h2>
 <div class="para" id="sec-GraphStatky-2">In this section we will focus on how to graph data with technology. We will be using <dfn class="terminology">StatKey</dfn> which is an online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet.</div>
 <div class="para" id="sec-GraphStatky-3">We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data.</div>
 <div class="para" id="sec-GraphStatky-4"></div>
 <section class="subsection" id="subsec-OneCatStatkey"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="space"> </span><span class="title">Graphing One Categorical Variable</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="space"> </span><span class="title">Graphing One Categorical Variable</span>
 </h3>
 <div class="para" id="subsec-OneCatStatkey-2">First, we will explore student eye color which is a categorical variable. StatKey will construct a bar graph and frequency table for the eye colors.</div>
 <div class="para" id="subsec-OneCatStatkey-3">Click on the following link to take you to StatKey   <a class="external" href="http://www.lock5stat.com/StatKey/" target="_blank"><code class="code-inline tex2jax_ignore">http://www.lock5stat.com/StatKey/</code></a>
@@ -290,16 +297,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-OneCatStatkey-4">Download the csv file <code class="code-inline tex2jax_ignore"> ClassSurvey1.csv </code> posted in Canvas and save to your computer where it is easily accessible. We are going to upload the data file to analyze the students eye colors.</div>
 <div class="para" id="subsec-OneCatStatkey-5">Under the <em class="emphasis">Descriptive Statistics and Graph</em> column on the left, choose the <em class="emphasis">One Categorical Variable</em>.</div>
 <figure class="figure figure-like" id="OneCatStatKey"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatKeyOneCat.png" class="contained" alt="The second option under descriptive statistics menu is the one categorical variable."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.1<span class="period">.</span></span><span class="space"> </span>Image of StatKey menu</figcaption></figure><div class="para" id="subsec-OneCatStatkey-7">Click on the <code class="code-inline tex2jax_ignore">Upload File</code> button and locate the data file on your computer and click <code class="code-inline tex2jax_ignore">open</code>. Identify which variable you will analyze (Eye Color) and click <code class="code-inline tex2jax_ignore"> OK </code> near the bottom of the window.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.1<span class="period">.</span></span><span class="space"> </span>Image of StatKey menu</figcaption></figure><div class="para" id="subsec-OneCatStatkey-7">Click on the <code class="code-inline tex2jax_ignore">Upload File</code> button and locate the data file on your computer and click <code class="code-inline tex2jax_ignore">open</code>. Identify which variable you will analyze (Eye Color) and click <code class="code-inline tex2jax_ignore"> OK </code> near the bottom of the window.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/SelectEyes.png" class="contained" alt="image to click on eye color label."></div>
 <div class="para" id="subsec-OneCatStatkey-9">The program constructs a bar graph and frequency table. The output image is below.</div>
 <figure class="figure figure-like" id="StatKeyEyeColor"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatKeyEyes.png" class="contained" alt="Bar graph and frequency table of the students eye color from StatKey."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.2<span class="period">.</span></span><span class="space"> </span>Sample image of StatKey output.</figcaption></figure><div class="para" id="subsec-OneCatStatkey-11"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.2<span class="period">.</span></span><span class="space"> </span>Sample image of StatKey output.</figcaption></figure><div class="para" id="subsec-OneCatStatkey-11"></div>
 <dfn class="terminology">Interpreting the Bar Graph</dfn><div class="para" id="subsec-OneCatStatkey-13">From the bar graph we can see that most students have brown eyes (28 students which represents 66.67% of the class) and hazel eyes occur the least often with just 3 students.  From the frequency table we see the sample consisting of 42 UNC students. There are 6 students with blue eyes and 5 students with green eyes.</div>
 <div class="para" id="subsec-OneCatStatkey-14">
 <dfn class="terminology">Checkpoint</dfn> Using the eye color graph above, which of the following statements are correct? Select all that apply.</div>
 <details id="EyeColor-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting information from a graph.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting information from a graph.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-EyeColor-matching" data-multipleanswers="true" data-random="">
 <div class="para" id="EyeColor-matching-2-1">Using the graph above, select all true statements that apply to the eye color graph.</div>
 <li data-component="answer" id="rs-EyeColor-matching_opt_a" data-correct=""><div class="para" id="EyeColor-matching-3-1-1-1">Brown eyes occur most often for these students.</div></li>
@@ -313,7 +320,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul></div></div></article></details><div class="para" id="subsec-OneCatStatkey-16"></div>
 <div class="para" id="subsec-OneCatStatkey-17">Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the <code class="code-inline tex2jax_ignore"> Change Column </code> button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the <code class="code-inline tex2jax_ignore"> Show Data Table </code> button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape.</div>
 <div class="para" id="subsec-OneCatStatkey-18"></div></section><section class="subsection" id="subsec-OneQuantStatkey"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="space"> </span><span class="title">Graphing One Quantitative Variable</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="space"> </span><span class="title">Graphing One Quantitative Variable</span>
 </h3>
 <div class="para" id="subsec-OneQuantStatkey-2">In this section we will explore the number of siblings for these UNC students. This is a discrete quantitative variable (although one student claimed 1.5 siblings).  StatKey will construct a dotplot, histogram, and boxplot for the data. StatKey will also create a Summary Statistics table identifying the sample size, mean, median, standard deviation, and the five-number summary.</div>
 <div class="para" id="subsec-OneQuantStatkey-3">Click on the following link to take you to StatKey  <a class="external" href="http://www.lock5stat.com/StatKey/" target="_blank"><code class="code-inline tex2jax_ignore">http://www.lock5stat.com/StatKey/</code></a>
@@ -321,29 +328,38 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-OneQuantStatkey-4">Download the csv file <code class="code-inline tex2jax_ignore"> ClassSurvey1.csv </code> posted in the Data Set Chapter and save to your computer where it is easily accessible. We are going to analyze the numerical data.</div>
 <div class="para" id="subsec-OneQuantStatkey-5">Under the <em class="emphasis">Descriptive Statistics and Graph</em> column on the left, choose the <em class="emphasis">One Quantitative Variable</em>.</div>
 <figure class="figure figure-like" id="OneQuantStatKey"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatkeyOneQN.png" class="contained" alt="The first option under descriptive statistics menu is the one quantitative variable."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.4<span class="period">.</span></span><span class="space"> </span>Image of StatKey menu</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-7">Click on the <code class="code-inline tex2jax_ignore">Upload File</code> button and locate the data file on your computer and click <code class="code-inline tex2jax_ignore">open</code>. Identify which numerical variable you will analyze (Siblings) and click the <code class="code-inline tex2jax_ignore"> OK </code> button at the bottom right of the window.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.4<span class="period">.</span></span><span class="space"> </span>Image of StatKey menu</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-7">Click on the <code class="code-inline tex2jax_ignore">Upload File</code> button and locate the data file on your computer and click <code class="code-inline tex2jax_ignore">open</code>. Identify which numerical variable you will analyze (Siblings) and click the <code class="code-inline tex2jax_ignore"> OK </code> button at the bottom right of the window.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/SelectSibling.png" class="contained" alt="select sibling variable."></div>
 <div class="para" id="subsec-OneQuantStatkey-9">The program will construct all three graphs and the summary table.</div>
 <figure class="figure figure-like" id="SiblingDotsStatKey"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SiblingDots.png" class="contained" alt="Dotplot showing 0 to 7 siblings with most at 2 siblings."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.5<span class="period">.</span></span><span class="space"> </span>StatKey Output of Sibling Dotplot</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-11">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.5<span class="period">.</span></span><span class="space"> </span>StatKey Output of Sibling Dotplot</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-11">
 <em class="emphasis">Interpreting the Dotplot:</em>  We can see there are three students with 0 siblings (minimum) and one student with 7 siblings (maximum). Most students have 1-3 siblings, with 2 siblings occurring most for 15 students. Recall each dot represents the number of siblings for that student, thus there are 42 dots to represent the sample size of 42 students.  You can hover over a dot to display the value. The summary statistics table is on the right identifying the mean, median, and standard deviation.</div>
 <div class="para" id="subsec-OneQuantStatkey-12">If we click on the <code class="code-inline tex2jax_ignore">Histogram</code> button we can see the histogram graph and the summary statistics table.</div>
 <figure class="figure figure-like" id="SiblingHistogramStatKey"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SiblingHisto.png" class="contained" alt="Histogram showing bars for siblings."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.6<span class="period">.</span></span><span class="space"> </span>StatKey Output of Histogram</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-14">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.6<span class="period">.</span></span><span class="space"> </span>StatKey Output of Histogram</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-14">
 <em class="emphasis">Interpreting the Histogram:</em> We can see the data is grouped into 10 bars (although we see just 7 since some intervals are empty).  On the right side we can use the slider to change the number of bars for the histogram. Shift the slider left so you have 8 buckets. This is a better histogram. We can see that the histograms are right skewed since most values are on the left side with a few far to the right. A few larger values pull the mean to the right, thus right skewed.</div>
 <div class="para" id="subsec-OneQuantStatkey-15">Next, click on the <code class="code-inline tex2jax_ignore"> Boxplot </code> button to see the boxplot graph, also known as a box-and-whisker plot.</div>
 <figure class="figure figure-like" id="SiblingBoxplotStatKey"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SiblingBox.png" class="contained" alt="Boxplot showing box around 1-3 siblings."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.7<span class="period">.</span></span><span class="space"> </span>StatKey Output of Boxplot</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-17">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.7<span class="period">.</span></span><span class="space"> </span>StatKey Output of Boxplot</figcaption></figure><div class="para" id="subsec-OneQuantStatkey-17">
 <em class="emphasis">Interpreting the Boxplot:</em> The boxplot displays the five-number summary. The box represents the quartiles Q1 = 1 sibling and Q3 = 3 siblings, with the middle line representing the median of 2 siblings. The whisker goes left to the smallest value of 0 and the right whisker to the largest value of 7 siblings. In this case, 7 siblings is an outlier as indicated by the star or asterisk. The summary statistics table identifies the values for the five-number summary.</div>
 <div class="para" id="subsec-OneQuantStatkey-18">Click on the <code class="code-inline tex2jax_ignore">Change Columns</code> button to change variables. Weights and Heights are continuous quantitative variables.  Investigate the shape of the graphs, where the center is represented, and how spread out the values are. Use the boxplot to check for outliers.</div></section><section class="subsection" id="subsec-CatQuantStatkey"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="space"> </span><span class="title">One Categorical and One Quantitative Variable</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="space"> </span><span class="title">One Categorical and One Quantitative Variable</span>
 </h3></section><section class="subsection" id="subsec-TwoCatStatkey"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="space"> </span><span class="title">Graphing Two Categorical Variables</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="space"> </span><span class="title">Graphing Two Categorical Variables</span>
 </h3></section><section class="subsection" id="subsec-TwoQNstatkey"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="space"> </span><span class="title">Graphing Two Quantitative Variables</span>
-</h3></section></section></div>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="space"> </span><span class="title">Graphing Two Quantitative Variables</span>
+</h3></section><div class="para" id="sec-GraphStatky-10">We are going to investigate if there is a relationship between a person’s height and his/her shoe size using the first day survey.</div>
+<div class="para" id="sec-GraphStatky-11">Open StatKey, under the left column <em class="emphasis">Descriptive Statistics and Graph</em>, select <code class="code-inline tex2jax_ignore">Two Quantitative Variables.</code> Click on the<code class="code-inline tex2jax_ignore">Upload File</code> button and find the saved data file <code class="code-inline tex2jax_ignore">ClassSurvey1</code> on your computer and click <code class="code-inline tex2jax_ignore"> Open</code> on the bottom right.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatkeyTwoQuant.png" class="contained" alt="StatKey two quantitative variables"></div>
+<div class="para" id="sec-GraphStatky-13">Identify the two quantitative variables, select the x-variable first, <em class="emphasis">Shoe size</em>, and then the y-variable, <em class="emphasis">Height</em>, and then click <code class="code-inline tex2jax_ignore"> Ok </code> at the bottom right.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SelectTwoQuant.png" class="contained" alt="select the two quantitative variables image"></div>
+<div class="para" id="sec-GraphStatky-15">The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.</div>
+<figure class="figure figure-like" id="ShoeHeightScatterplot"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ShoesHeightsScatter.png" class="contained" alt="Shoe size and Height Scatterplot."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.8<span class="period">.</span></span><span class="space"> </span>Image of Scatterplot for Shoe Size and Height</figcaption></figure><div class="para" id="sec-GraphStatky-17">If you click on the <code class="code-inline tex2jax_ignore">Switch Variables</code> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.</div>
+<figure class="figure figure-like" id="HeightvsShoeScatterplot"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HeightShoesScatterplot.png" class="contained" alt="Scatterplot with height on x-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.9<span class="period">.</span></span><span class="space"> </span>Image of Scatterplot for Height and shoe size</figcaption></figure><div class="para" id="sec-GraphStatky-19">If you click on the box <code class="code-inline tex2jax_ignore"> Show Regression Line </code>, the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line.</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-QuantStats.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ChapSummaryStats.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-MultiGraphs.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ChapSummaryStats.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
