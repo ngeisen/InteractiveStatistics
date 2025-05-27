@@ -14,10 +14,98 @@
         </introduction>
     </objectives>  
 
+<subsection xml:id="subsec-Independent">
+  <title>Independent Events</title>
+<p> Previously we found probabilities for compound events when one event was chosen. Now we will expand these concepts for when multiple events take place. We can still use a tree diagram to find all possible outcomes, but using some of the probability rules will simplify the process. </p>
+<p> Two events A and B are <term>independent events </term> if the fact that A occurs does not affect the probability of B occurring. When flipping two coins, what happens on the first coin toss does not impact what happens on the second coin toss. Same with rolling multiple dice. Each dice roll is independent of the others. </p> 
+<p> When two events are independent, the probability of both occurring is <me> P(\text{A and B}) = P(A) \times P(B) </me> </p> 
+<p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is <m> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </m> </p> 
+<p> If we used a tree diagram, we would list the four outcomes for the die and add two branches to each die value to represent heads or tails. Since each outcome is equally likely on the dice and the coin, the probability for each event is 1/8. </p>
+
+<p> Insert tree and Exercise </p> 
+
+<p> Other times the events are not equally likely. We can still use a tree diagram to find the outcomes, but we multiply the probability of each event along the tree to find the new probability outcomes. </p>
+<p> During the 2022-23 NBA season, Jamal Murray of the Denver Nuggets had a free throw shooting percentage of 0.833. Assume that the probability Jamal Murray makes any given free throw is fixed at 0.833, and that free throws are independent of each other. Construct a tree diagram to help determine the probability of each event. </p>
+<p> For each shot, Jamal will hit the basket to make the free throw or he will miss the shot. We will use H to represent he hit the basket and M for miss the basket. For his first shot, he either Hit or Miss, thus two branches. Off each branch he has two more lines to represent the Hit or Miss for the second shot. We still have the same four outcomes for two coin tosses, but the probabilities are not the same. </p>
+<p> Since each Hit has a probability of 0.833, then each miss is the complement <m>1-0.833 = 0.167</m>. We list this probabilities along the tree. Then we multiply along each branch for the probabilities for each outcome.</p> 
+<figure xml:id="MurrayTwoShots">
+            <caption>Tree diagram of two shots </caption>
+            <image source="MurrayTree.png" >
+                <shortdescription>lists four outcomes and probabilities.</shortdescription>
+            </image>
+        </figure>
+<p> Now use the tree diagram to answer the following questions about the outcomes when Jamal Murray shoots two free throws. </p> 
+<p> Example: What is the probability that he will make both shots? </p> 
+<p>  Solution: we want Hit and Hit, thus P(HH) = 0.833 x 0.833 = 0.694 </p>
+
+<example>
+<statement> <p> What is the probability that he will miss both shots? </p> </statement>
+<solution> <p> We want Miss and Miss, thus P(MM) = 0.167 x 0.167 = 0.028  </p> </solution>
+</example>
+<example>
+<statement> <p> What is the probability that he will make exactly one free throw? </p> </statement>
+<solution> <p> we want any outcome that has only one hit, so we will add each Hit outcome.  Thus, P(HM) + P(MH) =0.139 + 0.139 = 0.278 </p> </solution>
+</example>
+
+<example>
+<statement> <p> What is the probability that he will make at least one free throw? </p> </statement>
+<solution> <p> we want any outcome that is a hit, so we will add each outcome with a hit together.  Thus, P(HH) +P(HM) + P(MH) = 0.694 + 0.139 + 0.139 = 0.972 </p>
+<p> Alternatively, we can use the complement of missing both shots. Thus 1-P(MM) = 1- 0.028 = 0.972 </p>  </solution>
+</example>
+
+
+  </subsection>
+
+<subsection xml:id="subsec-Dependent">
+  <title>Dependent Events</title>
+<p> Not all probabilistic events are independent. Sometimes the subsequent events depend on what has happened previously. If you think of a bag full of colored marbles. If you pull a marble out and do not replace it, the probability of drawing the same color on the next draw depends on what was removed. The probability of every event has now changed based on what has already happened. </p> 
+<p> A <term> dependent event </term> is when the outcome of the second event is dependent upon the outcome of the first event.  The probability of what will occur on the second event is based off what occurs on the first event. </p> 
+<p> When two events are dependent, the probability of both occurring is  <me> P(\text{A and B}) = P(A) \times P(B|A) </me> </p>
+<p> The formula reads as the product of the probability of event A times the probability of B occurring, given that A has already happened. This makes better sense with an example. </p> 
+<p> Three cards are drawn from a deck of 52 cards and <term> not replaced. </term> Find each probability of each event. </p> 
+<p> Example: Getting three Aces in a row. </p>
+<p> Solutions: On the first draw there is 4/52 chance of getting an Ace. You have an ace in your hand thus the probability that the next card is an Ace is 3/51 since only 3 aces remain and 51 cards left in the deck. Now you have two aces in your hand, so the probability that the next is also is an ace is 2/50 since two aces remain and 50 cards are left in the deck. Now we multiply these event together. </p> 
+<p> <m> P(AAA) = 4/52 \times 3/51 \times 2/50 = 24/132600=0.00018 </m> </p> 
+<example>
+ <statement> <p> Drawing three Aces in a row. </p> </statement>
+<solution> <p> On the first draw there is 4/52 chance of getting an Ace. You have an ace in your hand thus the probability that the next card is an Ace is 3/51 since only 3 aces remain and 51 cards left in the deck. Now you have two aces in your hand, so the probability that the next is also is an ace is 2/50 since two aces remain and 50 cards are left in the deck. Now we multiply these event together. </p> 
+<p> <m> P(AAA) = 4/52 \times 3/51 \times 2/50 = 24/132600=.00018 </m> </p> 
+</solution>
+</example>
+
+<example>
+<statement> <p> Drawing a Jack, Queen, then King? </p> </statement>
+<solution> <p> The chances that the first draw is a Jack is 4/52, you have a Jack in your hand so the chances that the next card drawn is a Queen is 4/51 cards that remain, then the chance the next card is a king  is 4/50. Thus <m>P(JQK) = 4/52 x 4/51 x 4/50 = 64/132600=0.00048</m> </p>  </solution>
+</example>
+<example>
+<statement> <p> Drawing three spades in a row? </p> </statement>
+<solution> <p> There are 13 spades in the deck, so the first draw has 13/52 chance, the second draw ahs 12/51 chance, and the third draw is 11/20. Thus P(SSS) =13/52 x 12/51 x 11/50 = 1716/132600 =.0129   </p> </solution>
+</example>
 
 
 
-    
+  </subsection>
+
+
+<subsection xml:id="subsec-Conditional">
+  <title> Conditional Events</title>
+
+<p> <term>Conditional probability </term>  of an event B in relationship to an event A is defined as the probability that event B occurs after event A has already occurred. It’s the quotient of the events.  P(B|A) = P(A and B) ÷ P(A) </p> 
+<p> The probability that Sam parks in a no-parking zone and gets a parking ticket is 6%, The probability that Sam cannot find a legal parking space thus parks in the no-parking zone is 20%. What’s the probability Sam will get a ticket given that he parks in a no-parking zone? </p> 
+<p> Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is <me> P(\text{ticket|no-park zone})=\frac{P(TandNo)}{P(no)}=\frac{0.06}{0.20}=0.30</me> </p> 
+
+
+
+  </subsection>
+
+
+
+
+
+ <subsection xml:id="subsec-Permutations">
+  <title> Permutations and Combinations</title>
+  </subsection>
+   
 <p> There are times when the sample space or event space are very large, that it is not feasible to write it out.  In that case, it helps to have mathematical tools for counting the size of the sample space and event space.  These tools are known as counting techniques. </p> 
 <p> <term>Counting Principle:</term>  If Task 1 can be performed in m ways,  and Task 2 can be performed in n ways no matter how task 1 turns out,  then the sequence task 1 and task 2 can be performed in m·n ways together (as a product). </p>
 <p> Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options.  How many different meals consisting of one salad, one main dish, and one dessert are possible? </p>

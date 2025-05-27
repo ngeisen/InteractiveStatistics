@@ -98,8 +98,128 @@
 <solution> <p>  P(5 or 6 or diamond) = 4/52 +4/52 + 13/52 – 2/52 = 23/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups</p>  </solution> 
 </exercise>
 
-
 <p>    </p> 
+<p> When two events are mutually exclusive, this is also known as being <term>disjoint </term>. In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.  </p> 
+<figure xml:id="VennDisjoint">
+            <caption>Disjoint Venn Diagram</caption>
+            <image source="VennDisj.png" width="50%">
+                <shortdescription>non touching circles .</shortdescription>
+            </image>
+        </figure> 
+<p> When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula. </p> 
+<figure xml:id="VennNotDisjoint">
+            <caption>Non Disjoint Venn Diagram</caption>
+            <image source="VennNotDisj.png" width="50%">
+                <shortdescription>overlapping circles .</shortdescription>
+            </image>
+        </figure> 
+<p> We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV. </p>
+<figure xml:id="AutoSalesTable">
+            <caption> Iron Mountain Auto Sales Table</caption>
+            <image source="AutoSalesTable.png" width="50%">
+                <shortdescription>First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .</shortdescription>
+            </image>
+        </figure>
+<p> <term> Examples: </term> If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event. </p> 
+<p> a. A foreign car is sold. </p> 
+<p> Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90/300 = 0.30 or 30%</p> 
+<p> b. The car is foreign and compact. </p>
+<p> Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50/300 = 0.1667 or 16.7% </p> 
+<p> c. The car is foreign or compact. </p>
+<p> Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90/300 + 150/300 – 50/300 = 190/300 = 0.633 or 63.3% </p> 
+<p> Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total. </p> 
+
+<p> <term> Checkpoints: </term> If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event. </p> 
+<exercise> <title> Compact </title>
+<p>  The car is compact. </p>
+<solution> <p>  P(compact) = 150/300 = 0.5 or 50%</p>  </solution> 
+</exercise>
+<exercise> <title> domestic or sedan </title>
+<p>  The car is domestic or a sedan. </p>
+<solution> <p>  P(domestic or a sedan) = 210/300+ 65/300 – 45/300 = 230/300 = 0.767 or 76.7%%</p>  </solution> 
+</exercise>
+<exercise> <title> Domestic SUV </title>
+<p>  The car is domestic and SUV. </p>
+<solution> <p>  P(compact) = 65/300 = 0.217 or 21.7%</p>  </solution> 
+</exercise>
+
+<p> given </p> 
+
+<p> <term> Practice Problems </term></p>
+<p> <term> Hockey Hall of Fame: </term> From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com</p> 
+<figure xml:id="HockeyFame">
+            <caption>Hockey Hall of Fame Table</caption>
+            <image source="HockeyFameTable.png" width ="75%">
+                <shortdescription>First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .</shortdescription>
+            </image>
+        </figure> 
+<p> Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table. </p>
+<exercise> <title> Defense </title>
+<p>  What is the probability that an inductee chosen at random is a defenseman? </p>
+<solution> <p>  P(defenseman) = 89/298 = .2987 or 29.9% </p>  </solution> 
+</exercise>
+<exercise> <title> Canadian </title>
+<p>  What is the probability that an inductee chosen at random is not Canadian?</p>
+<solution> <p>  P(not Canadian) = 1 – 251/298 = 47/298 = .1577 or 15.8% </p>  </solution> 
+</exercise>
+<exercise> <title> Canadian goalie </title>
+<p>  What is the probability that a player chosen at random is a goalie born in Canada </p>
+<solution> <p>  P(goalie and Canadian) = 36/298 = .1208  or 12.1% </p>  </solution> 
+</exercise>
+<exercise> <title> Canada or Defense </title>
+<p>  What is the probability that a player chosen at random is either born in Canada or a defenseman?</p>
+<solution> <p>  P(Canada or defenseman) = 251/298 + 89/298 – 74/398 = 266/298 = .8926 </p>  </solution> 
+</exercise>
+<exercise> <title> Defense or Goalie </title>
+<p>  What is the probability that the player chosen at random either plays defense or is a goalie </p>
+<solution> <p>  P(defense or goalie) = 89/298 + 39/298 = 128/298 = .4295 since mutually exclusive events. </p>  </solution> 
+</exercise>
+<exercise> <title> Canada plays Defense </title>
+<p>  What is the probability that a Canadian inductee plays defense?</p>
+<solution> <p>  P(defense | Canada) = 74/251 = .2948 </p>  </solution> 
+</exercise>
+<exercise> <title> Defense is Canadian </title>
+<p>  What is the probability that an inductee who plays defense is Canadian?</p>
+<solution> <p>  P(Canda | defense) = 74/89 = .8315 </p>  </solution> 
+</exercise>
+
+
+<p> <term> Blood Typing:</term> Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative.  The table below presents the results of a representative sample of 360 adults in the U.S. </p> 
+<figure xml:id="BloodTypes">
+            <caption>Blood Type Table</caption>
+            <image source="BloodTable.png" width ="50%">
+                <shortdescription>First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.</shortdescription>
+            </image>
+        </figure> 
+<p> Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table. </p> 
+<exercise> <title> negative </title>
+<p>  What is the probability that a person in the sample chosen at random has a negative Rh factor?</p>
+<solution> <p>  P(negative) 58/360 = .161 have negative blood</p>  </solution> 
+</exercise>
+<exercise> <title> not AB </title>
+<p>  What is the probability that a person in the sample chosen at random is <term>not</term>  a universal plasma donor (universal plasma donors have Type AB blood)?</p>
+<solution> <p> use the complement thus  P(not AB) = 1 – 15/360 = 345/360 = .958  </p>  </solution> 
+</exercise>
+<exercise> <title> B+ </title>
+<p>  What is the probability that a person in the sample chosen at random has type B and positive Rh factor?</p>
+<solution> <p> intersection P(B and pos) = 32/360 = .089</p>  </solution> 
+</exercise>
+<exercise> <title> A or negative </title>
+<p>  What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?</p>
+<solution> <p>  P(A or negative) = 144/360 + 58/360 – 22/360 = 180/360=.500 subtract the intersection since not mutually exclusive </p>  </solution> 
+</exercise>
+<exercise> <title> A or B </title>
+<p>  What is the probability that a person in the sample chosen at random has blood type A or blood type B?</p>
+<solution> <p>  P( A or B) = 144/360 + 39/390 = 183/360 = .508 since mutually exclusive </p>  </solution> 
+</exercise>
+<exercise> <title> Blood </title>
+<p>  What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor? </p>
+<solution> <p>  P(O | neg) = 25/58 = .431</p>  </solution> 
+</exercise>
+<exercise> <title> Blood </title>
+<p>  What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O? </p>
+<solution> <p>  P(neg | O) = 25/162 = .154 </p>  </solution> 
+</exercise>
 
 
 
