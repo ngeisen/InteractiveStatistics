@@ -6,8 +6,8 @@
         <introduction>
           <p> At the end of this section you will able to:   </p>
             <ol>
-           <li> <p> Determine if events independent or dependent.   </p> </li>
-            <li> <p> Determine the probability using the rules for “and”, and “given   </p> </li>
+           <li> <p> Determine if events are independent or dependent.   </p> </li>
+            <li> <p> Determine the probability using "given" statements   </p> </li>
             <li> <p> Distinguish between permutations and combinations    </p> </li>  
             
           </ol>
@@ -17,7 +17,7 @@
 
 
 
-    <p> combos </p> 
+    
 <p> There are times when the sample space or event space are very large, that it is not feasible to write it out.  In that case, it helps to have mathematical tools for counting the size of the sample space and event space.  These tools are known as counting techniques. </p> 
 <p> <term>Counting Principle:</term>  If Task 1 can be performed in m ways,  and Task 2 can be performed in n ways no matter how task 1 turns out,  then the sequence task 1 and task 2 can be performed in m·n ways together (as a product). </p>
 <p> Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options.  How many different meals consisting of one salad, one main dish, and one dessert are possible? </p>
@@ -102,6 +102,24 @@
         </figure>
 
 <p> <term> Practice Problems </term> </p>  
+<exercise> <title> Biology Club </title>
+<p>  In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary/treasurer be chosen? </p>
+<solution> <p>  This is a permutation since the order matters when choosing officers. 
+15P3 = 2730 ways to shoe officers </p> 
+ </solution> 
+</exercise>
+<exercise> <title> Chemistry Club </title>
+<p>  In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen? </p>
+<solution> <p>  This is looking as a group where the order does not matter, thus a combination.
+15C3 = 455 combinations for the committee.  </p> 
+ </solution> 
+</exercise>
+<exercise> <title> license plates </title>
+<p>  A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?
+</p>
+<solution> <p>  Use the counting principles since the letters can be repeated. There are 26 letters in the alphabet and 10 possible digits (0 through 9). 26x26x26x10x10x10 = 17,576,000 possible plates.  </p> 
+ </solution> 
+</exercise>
 
 
 
