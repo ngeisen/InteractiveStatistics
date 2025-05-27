@@ -7,7 +7,7 @@
           <p> At the end of this section you will able to:   </p>
             <ol>
            <li> <p> Determine if events are mutually exclusive.   </p> </li>
-            <li> <p> Determine the probability using the rules for “or”, “and”, and “given   </p> </li>
+            <li> <p> Determine the probability using the rules for “or”, “and”, and “given"   </p> </li>
             <li> <p> Use a tree diagram to determine the probability of multiple events   </p> </li>  
             
           </ol>
@@ -52,6 +52,59 @@
                 <shortdescription>four suits with 13 numbered cards in deck.</shortdescription>
             </image>
         </figure>
+<exercise> <title> Hearts </title>
+<p>  If one card is randomly drawn from a deck, what is the probability of drawing a heart? </p>
+<solution> <p>  There are 13 hearts in a deck of 52 cards, thus P(heart)=13/52=1/4 . </p>  </solution> 
+</exercise>
+<exercise> <title> Queen </title>
+<p>  If one card is randomly drawn from a deck, what is the probability of drawing a Queen?</p>
+<solution> <p>  P(Queen) = 4/52 = 1/13 = 0.077 </p>  </solution> 
+</exercise>
+<exercise> <title> Queen of Hearts</title>
+<p>  If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?</p>
+<solution> <p>  P(Queen of Hearts) = 1/52, only one card in the deck meets this condition. This has a low probability of occurring. </p>  </solution> 
+</exercise>
+<exercise> <title> not Queen of Hearts</title>
+<p>  If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?</p>
+<solution> <p>  P(Queen of Hearts) = 1/52, thus P(not Queen of Hearts) = 1-1/52 = 51/52 is the complement which is likely to happen. </p>  </solution> 
+</exercise>
+
+<p>Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card. </p>
+<p>Two events are <term> mutually exclusive </term> if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5. </p> 
+<p>Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together.  We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  </p>
+<p> When two events A and B are mutually exclusive, the probability that either A or B will occur is <m> P(\text{A or B}) = P(A) + P(B) </m> </p>
+<p> When two events A and B are mutually exclusive, the probability that A and B will occur together is <m> P(\text{A and B}) = 0 </m> since they cannot occur at the same time. </p>
+<p> <em> For example, </em> find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) = <m>P(5) + P(6) = 4/52+4/52=8/52 = 0.1538</m> </p>
+<p> Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus <m> P(\text{5 and 6})=0</m></p> 
+<exercise> <title> Queen or King </title>
+<p>  If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?</p>
+<solution> <p>  P(Queen or King) = 4/52 +4/52 = 8/52 = .01538 </p>  </solution> 
+</exercise>
+<exercise> <title> Face Card </title>
+<p>  If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?</p>
+<solution> <p>  P(Jack or Queen or King) = 4/52 +4/52 +4/52 = 12/52 = 0.2308 </p>  </solution> 
+</exercise>
+<p> So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. <em> For example, </em> what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card. </p>
+<p>  P(Spade or Ace) 13/52 + 4/52 - 1/52 = 16/52 = 0.3077. </p>
+<p> If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event. </p>
+<p> When two events A and B are <em> not </em> mutually exclusive, the probability that either A or B will occur is <m> P(\text{A or B}) = P(A) + P(B) - P(\text{A and B})</m> </p>
+<p>     </p> 
+<exercise> <title> Five or Diamond </title>
+<p>  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond? </p>
+<solution> <p>  P(5 or diamond) = 4/52 +13/52 – 1/52 = 16/52 = 0.3077</p>  </solution> 
+</exercise>
+<exercise> <title> Five or Six or Diamond </title>
+<p>  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond? </p>
+<solution> <p>  P(5 or 6 or diamond) = 4/52 +4/52 + 13/52 – 2/52 = 23/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups</p>  </solution> 
+</exercise>
+
+
+
+
+
+
+
+
 
 
     </section> 
