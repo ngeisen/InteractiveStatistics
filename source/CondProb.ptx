@@ -16,4 +16,99 @@
 
 
 
+
+    <p> combos </p> 
+<p> There are times when the sample space or event space are very large, that it is not feasible to write it out.  In that case, it helps to have mathematical tools for counting the size of the sample space and event space.  These tools are known as counting techniques. </p> 
+<p> <term>Counting Principle:</term>  If Task 1 can be performed in m ways,  and Task 2 can be performed in n ways no matter how task 1 turns out,  then the sequence task 1 and task 2 can be performed in m·n ways together (as a product). </p>
+<p> Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options.  How many different meals consisting of one salad, one main dish, and one dessert are possible? </p>
+<p> <em> Solution:</em>There are three tasks to this meal, picking a salad, a main dish, and a dessert.  The salad has 2 choices, the main dish has 6 choices, and the dessert has 3 options.  Therefore there are <m> 2×6×3=36</m> different meals. </p> 
+<p>If we did this with a tree diagram, we would have 2 lines to represent the two salads, then each salad would have the 6 main dishes branched from it, then each of those branches would have the 3 desserts. If you list each unique outcome, there are 36 different meals.</p>
+<exercise> <title> Password </title>
+<p>  How many three letter passwords can be made from the letters a, b, and c , if the letters can be reused?</p>
+<solution> <p>  3x3x3 = 27 passwords 
+</p>  </solution> 
+</exercise>
+<exercise> <title> Kentucky Derby </title>
+<p>  Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?</p>
+<solution> <p>  We just need to fill three positions, thus <m> 8\times7\times6=336</m> ways for the first three positions.</p>
+<p>Fun fact:  The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom. </p> 
+ </solution> 
+</exercise>
+
+<p> How many three letter passwords can be made from the letters a, b, and c if  no letters can be repeated? </p>
+<p> <em>Solution: </em> There are three tasks that must be done in this case.  The tasks are to pick the first letter, then the second letter, and then the third letter.  There are 3 options for the first letter, once it is chosen there are two remaining options for the second letter. Once one is chosen there is just one letter option for the last position. Therefore there are 3×2×1=6 unique passwords where the letters do not repeat. </p> 
+<p> We can also look at this in a tree diagram: </p> 
+
+<p>  Many counting problems involve multiplying a list of decreasing numbers, such as the non-repeating letters in the password. The product of   3×2×1=3!  is called a <term> factorial</term>.  There is a special symbol <c> ! </c> for this and a special button on your calculator. </p> 
+<p> <term>Factorial </term> </p>
+<p> <m> n!=n(n-1)(n-2)…(3)(2)(1)</m></p> 
+<p> As an example <m> : 5!=5\times4\times3\times2\times1=120 </m></p> 
+<p> There are a few special values: 0 factorial is defined to be 0! = 1 and 1 factorial is 1! = 1. </p> 
+<p> To find the factorial button on the TI83Plus, press the [MATH] button and click on the arrow to the right three times until it highlights PRB across the top, and then select option 4: ! and hit [enter]. </p>
+<p> To calculate 5! input the value 5 first, then [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] [enter] = 120 </p>
+<figure xml:id="FactorialButton">
+            <caption>Factorial button on the calculator </caption>
+            <image source="FactorialButton.png" >
+                <shortdescription>Math to PRB to option 4.</shortdescription>
+            </image>
+        </figure>
+
+<p>Sometimes we are trying to select <em>r</em> objects from <em>n</em> total objects.  The number of ways to do this depends on whether the order you choose the <em>r</em> objects matters or not.  As an example, if you are trying to call a person on the phone, you have to have their number in the right order.  Otherwise, you call someone you did not mean to call.  In this case, the order of the numbers matters.  </p>
+<p>However, you were picking random numbers for the lottery, it does not matter which number you pick first or last.  As long as you have the same correct numbers that the lottery people pick, you win.  In this case the order does not matter.  </p>
+<p> A <term> permutation </term> is an arrangement of items with a specific order.  You use permutations to count items when the order matters, such as passwords or phone numbers.  When the order does not matter you use a <term>combination </term> since the order arrangement of items is not important.  When you do a counting problem, the first thing you should ask yourself is “does order matter?” </p> 
+<p> <term>Permutation Formula</term></p>
+<p>Picking <m>r</m> object from <m>n</m> total object when order matters: <me> nPr=\frac{n!}{(n-r)!}</me> </p> 
+
+
+<p>  <em> Example: </em> Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?</p>
+<p>  Since the order matters we will use a permutation where <m>n=8 </m> total horses and <m>r=3</m> positions. </p> 
+<p> Thus <m> _n P_r = _8 P_3 =\frac{8!}{(8-3)!} = 336</m> ways to finish the race. </p>
+<p> To enter this in the calculator: </p> 
+<p> input the value 8 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], hit the divide button, paratheses <c>( </c> 8-3 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] [enter]  </p>
+<figure xml:id="FactorialCalc">
+            <caption>Factorial calculation on the calculator </caption>
+            <image source="FactorialHorse.png" width="50%">
+                <shortdescription>Math to PRB to option 4.</shortdescription>
+            </image>
+        </figure>
+
+<p> Alternatively, you can use the permutation function in the probability menu. Enter the value 8 first, [MATH] button and three arrows to the right for PRB across the top, then select option 2: nPr, hit [enter] and type the value 3, then [enter] again. </p> 
+<figure xml:id="PermuationCalc">
+            <caption>Permutation on the calculator </caption>
+            <image source="HorsePerm.png" >
+                <shortdescription>Math to PRB to option 2.</shortdescription>
+            </image>
+        </figure>
+
+
+<p> <term>Combination Formula</term></p>
+<p>Picking <m>r</m> object from <m>n</m> total object when order does not matters: <me> nCr=\frac{n!}{r!(n-r)!}</me> </p> 
+<p> <em> Example: </em> In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is <m>n=30</m> and we are selecting <m> r=5</m>. Therefore, nCr = 30C5 </p>
+<p> Thus <m> _n C_r =30 C_5 =\frac{30!}{5!(30-5)!} = 142,506 </m> combinations for a group of 5 people. </p>
+<p> To enter this in the calculator: </p> 
+<p> input 30 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] divide button, paratheses <c>( </c> 5 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], the multiply button, then paratheses <c>( </c> 30-5 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter],  close paratheses <c>)</c> , and finally [enter]  to calculate it. </p>
+<figure xml:id="FactorialCombo">
+            <caption>Combination calculation on the calculator </caption>
+            <image source="ComboFactorial.png" width="50%">
+                <shortdescription>Math to PRB to option 4.</shortdescription>
+            </image>
+        </figure>
+<p> Alternatively, you can use the combination function in the probability menu. Enter the value 30 first, [MATH] button and three arrows to the right for PRB across the top, then select option 3: nCr, hit [enter] and type the value 5, then [enter] again. </p> 
+<figure xml:id="CombinationCalc">
+            <caption>Combination on the calculator </caption>
+            <image source="ComboButton.png" >
+                <shortdescription>Math to PRB to option 3.</shortdescription>
+            </image>
+        </figure>
+
+<p> <term> Practice Problems </term> </p>  
+
+
+
+
+
+
+
+
+
     </section> 
