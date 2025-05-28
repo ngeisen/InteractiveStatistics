@@ -16,11 +16,105 @@
 
 <subsection xml:id="subsec-BinomialBasics">
   <title>Understanding the Basics</title>
+<p> Another type of probability distribution that is created when there are just two events is the binomial probability distribution.  </p>
+<p> A <term>binomial event </term> contains <em> two</em> outcomes: such as male or female, you either win or lose a game, a test question is either true or false. </p>
+<p> A <term>binomial experiment </term> is a probability experiment that satisfies the following four requirements: </p>
+<ol>
+<li> <p> There must be a fixed number of trials. This means that the experiment is repeated a specific number of times. </p> </li> 
+<li> <p> Each trial has only two outcomes (or can be reduced to the two outcomes of success and failure). </p> </li>
+<li> <p> The outcomes of each trial must be independent of each other. what happens on one trial does not influence the outcomes of other trials. </p> </li>
+<li> <p> The probability of success must remain the same for each trial. </p> </li>
+</ol> 
+
+<p> Some notations we will be using for the binomial experiments: </p>
+<p> <m>P(S) </m> is probability for success </p>
+<p> <m>P(F) </m>  is probability of failure </p>
+<p> The numerical probability of success is <m>p</m>  </p>
+<p> The numerical probability of failure is <m>q = 1 -p </m>   </p>
+<p> <m>n </m> is the number of trials in the experiment </p>
+<p> <m>X</m>  is the number of successes in <m>n</m> trials </p>
+
+<p> <term> Deriving the Binomial Probability Formula </term> </p> 
+<p> Suppose you are given a 3-question multiple-choice test. Each question has 4 responses and only one is correct. Suppose you want to find the probability that you can just guess at the answers and get 2 questions right. To help with the idea that you are going to guess, suppose the test is in Martian writing. </p> 
+<p> Let <m>x</m> = number of correct answers</p> 
+
+<example> 
+<title>  Check binomial experiment </title> 
+<statement>  
+<ol>
+<li> <p> There must be a fixed number of trials. </p> </li> 
+<li> <p> Each trial has only two outcomes. </p> </li>
+<li> <p> The outcomes independent of each other. </p> </li>
+<li> <p> The probability of success must remain the same for each trial. </p> </li>
+</ol>
+</statement>  
+<solution> 
+<p> There are 3 questions, and each question is a trial, so there are a fixed number of trials. In this case, n = 3. </p> </solution> 
+<solution>  <p> Getting the first question right has no affect on getting the second or third question right, thus the trials are independent. </p> </solution>
+<solution>  <p> Either you get the question right or you get it wrong, so there are only two outcomes. In this case, the success is getting the question right. </p> </solution>
+<solution>  <p> The probability of getting a question right is one out of four. This is the same for every trial since each question has 4 responses. In this case, <m>p = ¼ </m> and <m> q = 1− ¼ = ¾ . </m> </p>
+<p>This is a binomial experiment, since all of the properties are met. </p>
+</solution> 
+</example> 
+<example> 
+<title>  Getting exactly two correct </title> 
+<statement>  <p> First we need to find the sample space to determine how many ways to get exactly two correct answers out of three choices. Then we can find the probability of getting 2 correct answers. </p> 
+ </statement>  
+<solution> <p>
+Let's start with finding the sample space. We are going to let R represent the right answer was chosen and W represents the wrong answer was chosen. Using a tree diagram we can find the sample space</p>
+<p> Sample space = {RRR, RRW, RWR, WRR, WWR, WRW, RWW, WWW}, where RRW
+means you get the first question right, the second question right, and the third question wrong. The same is similar for the other outcomes. </p> 
+<p> There are <term>three </term> ways to get 2 right answers which are {RRW, RWR, WRR}.  </p> </solution> 
+</example> 
+<example> 
+<title>  Probability exactly two correct </title> 
+<statement>  <p> Find the probability of getting 2 correct answers in three questions. </p> 
+ </statement>  
+<solution> <p>
+Next, we need to determine the probability of getting exactly two right. </p>
+<p> Look at just P(RRW) for the moment. Again, that means P(RRW) = P(R on 1st, R on 2nd, and W on 3rd). Since the trials are independent, P(RRW)= P(R on 1st) * P(R on 2nd) * P(W on 3rd) thus we just multiply p * p * q </p>
+<p> P(RRW) = (1/4)(1/4)(3/4) which is the same as <m>(1/4)^2 (3/4)^1 </m> </p> 
+<p> The same is true for P(RWR) and P(WRR).  </p>
+<p> To find the probability of the 3 ways to get 2 correct answers, just add these three probabilities together. You get <m>3(1/4)^2 (3/4)^1 =.140625</m> </p> 
+</solution>
+</example> 
+<example> 
+<title>  Generalize  </title> 
+<statement>  <p> Generalizing the pattern we can determine the probability of each event and the number of ways to get exactly X correct </p> 
+ </statement>  
+<solution> <p>
+Generalizing the pattern, we can determine the probability of each event with the number of ways to get exactly X correct answers from the sample space. There is 1 way to get 0 right, 3 ways with 1 right, 3 ways with 2 right, and 1 way with 3 right answers.  Since the probability of the right answer is ¼ that is raised to the number of correct answers in the three questions and the ¾ is raised to the number of wrong answers. </p> 
+<figure> 
+           <image source="Binomial1.png" width="75%">
+                <shortdescription> summary of values </shortdescription>
+            </image>
+        </figure>
+
+</solution>
+</example> 
+
+
+  
+ <p> The outcomes of a binomial experiment and the corresponding probabilities of these outcomes is called a <term> binomial distribution. </term> </p> 
+
+<definition xml:id="def-BinomialFormula">
+            <statement>    
+<p> The <term> Binomial Probability Formula </term>  for exactly X successes in n trials is <me> P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X} </me> </p>         </statement>
+        </definition>
+
+         
   </subsection>
 
-
+  
 <subsection xml:id="subsec-BinomialStatistics">
   <title>Summary Statistics</title>
+
+<p> Mean is <m> \mu = np</m> </p>  
+<p> Variance is <m> \sigma^2 = np(1-p) </m> </p> 
+<p> Standard deviation is <m> \sigma=\sqrt{np(1-p)} </m> </p>
+
+
+
   </subsection>
 
 <subsection xml:id="subsec-BinomialCalc">
