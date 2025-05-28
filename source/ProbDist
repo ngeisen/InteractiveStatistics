@@ -249,16 +249,85 @@ where each X is one of the outcomes and each P(X) is the corresponding probabili
 <solution> <p>  Variance is <m> \sigma^2 =  (0-2.16)^2 (.08)+(1-2.16)^2 (.18) +(2-2.16)^2 (.27) +(3-2.16)^2 (.44) +(4-2.16)^2 (.03) = 1.186       </m> </p> </solution>
 <solution> <p> Standard deviation is <m>  \sigma = \sqrt{1.186} =1.009 </m> </p> </solution>
 </exercise>
- 
+
+  </subsection>
 
 
+<subsection xml:id="subsec-ExpectedValue">
+  <title>Expected Value</title>
+ <p>Another concept related to the mean for a probability distribution is that of the expected value or expectations over time. Expected values can be used in various types of games of chance and insurance.  Note that the expected value formula is the same as the theoretical mean formula. </p> 
+<definition xml:id="def-ExpectedValue">
+            <statement>    
 <p>The <term>expected value </term> of a discrete probability distribution is the theoretical average of the variable. It is the net gain of each outcome multiplied by its probability. <me>
 E(X)=\mu=\sum\left(X\cdot P(X)\right) </me> </p>
+        </statement>
+        </definition>
+
+<p>The Greeley Fire Department wishes to raise $5000 to purchase some new equipment.  They decide to conduct a raffle. A cash prize of $5000 is to be awarded. If 2500 tickets are sold at $5 each find the expected gain per ticket.  Are they selling enough tickets to reach their goal? </p>
+<p> The first step is creating the probability distribution table. We want the net gain and the probability for each event. We have two main events: the person wins the raffle or loses. Since each person must pay $5 for the ticket we take the prize of 5000-5=4995 as the net profit outcome for a win. If the person loses, they are out the 5 thus -5 is the outcome.  Since there is just one winner, the probability is 1/2500 since 2500 tickets are sold. There are 2499 losing tickets thus the probability of losing is 2499/2500. </p> 
+<figure> 
+           <image source="RaffleTable.png" width="50%">
+                <shortdescription> win 1/2500 and lose 2499/2500.</shortdescription>
+            </image>
+        </figure>
+ 
+<p> The expected value is <m> E(x)=4995(1/2500)-5(2499/2500)=-3 </m> which means if a person buys a raffle ticket, they lose on average $3 per ticket. </p>
+<p> This means the fire department gains $3 per ticket. Therefore, the Greeley Fire department gains 3(2500) = $7500 profit from the raffle. </p>
+<p> Another way to look at it is $5(2500 tickets) - $5000 prize = $7500 profit for the fire department. So either way they will reach their goal. </p>
+<p>     </p>
+<exercise>
+<title>Expected Value</title> 
+<p> If one thousand tickets are sold at $1 each in a raffle for a TV valued at $350, what is the expected value if you purchase one ticket? </p> 
+<solution> <p> The net win is $349 with a probability of 1/1000. If you lose, the outcome is -1 with a probability of 999/1000. Therefore, the expected value <m>E(x)=349(1/1000)-1(999/1000)=-.65</m>. You lose about $.65 for each ticket. </p> </solution>
+</exercise>
+
 
 </subsection>
 
 <subsection xml:id="subsec-ProbDistCalc">
   <title>Using Technology</title>
+<p> Lucky for us, we can use technology to help us find the summary statistics for a probability distribution. Let’s revisit the 50 dice rolls. </p>
+
+<figure> 
+           <image source="ProbDistDice.png" width="75%">
+                <shortdescription> dice probabilities of .20, .18, .16, .14, .12, .20</shortdescription>
+            </image>
+        </figure>
+
+<p>  To enter the data use [STAT] button and under EDIT select option 1: Edit [enter] to input the values. Enter the dice number in L1 and the probability in L2. </p>
+<figure> 
+           <image source="ProbCalc1.png" width="75%">
+                <shortdescription> input values into calculator</shortdescription>
+            </image>
+        </figure> 
+<p>  To find the summary statistics begin with the [STAT] button, use the arrow to the right once to highlight CALC across the top and select option 1: 1-var Stats and [enter]. Identify where the data is located as [2nd] 1 [,] [2nd] 2 [enter] on the TI83. On the TI84 the Xlist is L1 and Freq is L2 and then Calculate. </p>
+<figure> <caption> Summary statistics on calculator </caption>
+ 
+           <image source="ProbCalc2.png" >
+                <shortdescription> summary values on calculator</shortdescription>
+            </image>
+        </figure>
+<p>  This gives the mean 3.4 and population standard deviation 1.8 (this is the only time we will use σx). To get the variance you will need to square the standard deviation, thus <m> 1.8^2 = 3.24</m> </p> 
+<p>     </p>
+<exercise>
+<title> Statistics </title> 
+<p> A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found. </p>
+<figure> 
+           <image source="Creditcards.png" width="75%">
+                <shortdescription> there are 0 to 4 cards with probabilities of ..08, .18, .27, .44, .03.</shortdescription>
+            </image>
+        </figure>
+
+<p>Find the mean, variance, and standard deviation for the probability distribution. </p>
+
+<solution> <p> Mean is <m> \mu =2.16 </m> and the standard deviation is <m> \sigma =1.017</m> and the variance is <m> \sigma^2 =1.017^2 = 1.03</m> </p> 
+<figure> 
+           <image source="ProbCalc3.png" width="75%">
+                 </image>
+        </figure>
+</solution>
+ </exercise>
+
   </subsection>
 
 
