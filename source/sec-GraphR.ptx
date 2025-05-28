@@ -14,9 +14,9 @@
 </objectives>
 
 
-<p> First, add the <term>Lesson 1 Graphing </term> text file to your <c>Using R Files </c> folder and the <term> Cereal.csv </term> dataset. </p>
-<p> You may need to link your <term> Using R Files</term> folder with the working directory, to do this go to the bottom right panel and under the <c>Files</c> tab click on the triple dots <c> … </c> on the far right to locate your folder and click <c>Open</c>. You should now see the Lesson 1 file and the Cereal data in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it in the bottom left panel. </p>
-<p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset </c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
+<p> First, add the <term>Lesson 1 Graphing </term> text file to your <c>Using R Files </c> folder and the <url href="external/sheets/Cereal.csv"> Cereal.csv </url>  dataset. </p>
+<p> You may need to link your <term> Using R Files</term> folder with the working directory, to do this go to the bottom right panel and under the <c>Files</c> tab click on the triple dots <c> … </c> on the far right to locate your folder and click <c>Open</c>. You should now see the Lesson 1 file and the Cereal datafile in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it directly in the bottom left panel. </p>
+<p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset</c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
 <p> Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors. </p>
 
 <subsection xml:id="subsec-Boxplots">

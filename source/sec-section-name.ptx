@@ -10,10 +10,13 @@
 
 <subsection xml:id="subsec-Survey1">
   <title> Case Study - Class Survey 1</title>
-<p> In the spring semester, a section of UNC students taking an introductory statistics course completed a survey on the first day of class identifying their eye color, current weight, shoe size, height, and the number of siblings they have. The survey was completed through Canvas, so responses were anonymous. Below is a screenshot of the first seven rows. Identify the following using the first day class survey. </p> 
-<image source="Survey1image.png">
+  <p> In the spring semester, a section of UNC students taking an introductory statistics course completed a survey on the first day of class identifying their eye color, current weight, shoe size, height, and the number of siblings they have. The survey was completed through Canvas, so responses were anonymous. Below is a screenshot of the first seven rows. Identify the following using the first day class survey. </p> 
+
+<p> Data: <url href="external/sheets/ClassSurvey1.csv"> ClassSurvey1</url> </p>
+  <image source="Survey1image.png">
                 <shortdescription> image of cases and variable for survey 1</shortdescription>
             </image>
+        
 <example>
 <title> Cases </title> 
 <statement> <p> What are the cases in the survey? </p> </statement>
@@ -69,7 +72,8 @@
 <subsection xml:id="subsec-Survey2">
   <title> Case Study – Class Survey 2</title>
 <p> In the Spring semester of 2025,  UNC students proposed some questions for the class survey identifying their favorite season (spring, summer, fall, winter), how they preferred the steak being cooked (as rare, medium, medium well, well done), movie genre preference, and favorite vacation location (as coastal, mountain, theme park, city/cultural exploration, or a staycation). Students also identified how many tattoos they have, the number of credit hours they were taking this semester, the number of pets they currently have, and how many hours they typically sleep per night. Use the screen shot of the first seven rows to answer the following questions.  </p> 
-  <image source="Survey2image.png">
+ <p> Data: <url href="external/sheets/ClassSurvey2.csv"> ClassSurvey2</url> </p>
+<image source="Survey2image.png">
                 <shortdescription> image of cases and variable for survey 2</shortdescription>
             </image>
 
