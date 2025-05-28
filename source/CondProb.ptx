@@ -7,8 +7,8 @@
           <p> At the end of this section you will able to:   </p>
             <ol>
            <li> <p> Determine if events are independent or dependent.   </p> </li>
-            <li> <p> Determine the probability using "given" statements   </p> </li>
-            <li> <p> Distinguish between permutations and combinations    </p> </li>  
+            <li> <p> Determine the probability using "given" statements.   </p> </li>
+            <li> <p> Distinguish between permutations and combinations.    </p> </li>  
             
           </ol>
         </introduction>
@@ -22,7 +22,27 @@
 <p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is <m> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </m> </p> 
 <p> If we used a tree diagram, we would list the four outcomes for the die and add two branches to each die value to represent heads or tails. Since each outcome is equally likely on the dice and the coin, the probability for each event is 1/8. </p>
 
-<p> Insert tree and Exercise </p> 
+<p> Practice Problems </p> 
+<exercise>
+<p> A card is drawn from a standard deck of 52 cards and is replaced, then a second card is drawn. Find the probability of drawing a queen and then an king. </p> 
+<solution> <p> The probability of getting a queen is 4/52 on the first draw, the card is replaced so the probability of drawing a king is 4/52 on the second draw. Thus the probability P(Q and K) = 4/52 x 4/52 = 16/2704 = 0.0059 </p> </solution>
+</exercise>
+<exercise>
+<p> A Harris poll found that 46% of Americans say they suffer great stress at least once a week. If three people are selected at random, find the probability that all three they suffer great stress at least one a week. </p>
+<solution> <p>We will assume each person is independent so the probability is 0.46 for each person, thus <m> P(SSS)= 0.46 \times  0.46 \times 0.46 = 0.0097 </m> </p> </solution>
+</exercise>
+<exercise>
+<p> Approximately 9% of men have a type of color blindness that prevents them from distinguishing between red and green. If three men are selected at random, find the probability that all three will have this type of red-green color blindness. </p>
+<solution> <p> We will assume each person is independent so the probability is 0.08 for each person, thus <m> P(SSS)= 0.08  \times \ 0.08 \times 0.08  = .000512 </m> </p> </solution>
+</exercise>
+<exercise>
+<p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random, its color is noted, and then returned to the bag. A second ball is randomly selected and its color noted. Find the following probabilities. </p>
+<p>Selecting two red marbles in a row. </p>
+<solution> <p> Since the marbles are replaced we are looking at independent events, so the probability stays the same after each draw. <m> P(\text{red and red}) = 3/10 \times 3/10  = 9/100 = 0.09 </m> or 9%</p> </solution>
+<p> Selecting a blue marble and then a green marble. </p> 
+<solution> <p> Since the marbles are replaced we are looking at independent events, so the probability of each color stays the same after each draw.<m> P(\text{blue and green}) = 2/10 \times 5/10  = 10/100 = 0.10  </m> or 10% </p> </solution>
+</exercise>
+
 
 <p> Other times the events are not equally likely. We can still use a tree diagram to find the outcomes, but we multiply the probability of each event along the tree to find the new probability outcomes. </p>
 <p> During the 2022-23 NBA season, Jamal Murray of the Denver Nuggets had a free throw shooting percentage of 0.833. Assume that the probability Jamal Murray makes any given free throw is fixed at 0.833, and that free throws are independent of each other. Construct a tree diagram to help determine the probability of each event. </p>
@@ -82,6 +102,17 @@
 <solution> <p> There are 13 spades in the deck, so the first draw has 13/52 chance, the second draw ahs 12/51 chance, and the third draw is 11/20. Thus P(SSS) =13/52 x 12/51 x 11/50 = 1716/132600 =.0129   </p> </solution>
 </example>
 
+<p> Practice Problems </p> 
+<exercise>
+<p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities. </p>
+<p> Selecting two red marbles in a row. </p>
+<solution> <p> Since the marbles are not replaced in the bag we are looking at dependent events, so the probability change after each draw. <m> P(\text{red and red}) = 3/10 \times 2/9  = 6/90 = .067 </m> </p> </solution>
+</exercise>
+<exercise>
+<p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities. </p>
+<p> Selecting a blue marble and then a green marble. </p>
+<solution> <p> We will assume all the marbles are in the bag to begin with.  Since the marbles are not replaced to the bag, we are looking at dependent events, so the probability will change after each draw. <m> P(\text{blue and green}) = 2/10 \times 5/9  = 10/90 = 0.111 or 11.1% </m> </p></solution>
+</exercise>
 
 
   </subsection>
@@ -94,6 +125,10 @@
 <p> The probability that Sam parks in a no-parking zone and gets a parking ticket is 6%, The probability that Sam cannot find a legal parking space thus parks in the no-parking zone is 20%. What’s the probability Sam will get a ticket given that he parks in a no-parking zone? </p> 
 <p> Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is <me> P(\text{ticket|no-park zone})=\frac{P(TandNo)}{P(no)}=\frac{0.06}{0.20}=0.30</me> </p> 
 
+<exercise>
+<p> A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40,  find the probability of selecting a yellow tennis ball  on the second draw given that the first ball was yellow. </p>
+<solution> <p> This is conditional probability. We are told that P(white and yellow) = .30 and P(white)=0.40. We need to find P(yellow|white) = P(white and yellow) divide by P(white) = 0.30/0.40 = 0.75 or 75%. </p> </solution>
+</exercise>
 
 
   </subsection>

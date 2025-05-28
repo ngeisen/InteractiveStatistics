@@ -7,13 +7,29 @@
           <p> At the end of this section you will able to:   </p>
             <ol>
            <li> <p> Determine the conditions of a binomial event.   </p> </li>
-            <li> <p> Calcuate the probabilty for binomial event  </p> </li>
+            <li> <p> Calcuate the probability for binomial event  </p> </li>
             <li> <p> Calculate the mean and standard deviaton for binomial events    </p> </li>  
             
           </ol>
         </introduction>
     </objectives>  
 
+<subsection xml:id="subsec-BinomialBasics">
+  <title>Understanding the Basics</title>
+  </subsection>
+
+
+<subsection xml:id="subsec-BinomialStatistics">
+  <title>Summary Statistics</title>
+  </subsection>
+
+<subsection xml:id="subsec-BinomialCalc">
+  <title>Using Technology</title>
+  </subsection>
+
+<subsection xml:id="subsec-BinomialPractice">
+  <title>Practice Problems</title>
+  </subsection>
 
 
     </section>
