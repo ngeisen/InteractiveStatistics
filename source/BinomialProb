@@ -85,7 +85,7 @@ Next, we need to determine the probability of getting exactly two right. </p>
 <solution> <p>
 Generalizing the pattern, we can determine the probability of each event with the number of ways to get exactly X correct answers from the sample space. There is 1 way to get 0 right, 3 ways with 1 right, 3 ways with 2 right, and 1 way with 3 right answers.  Since the probability of the right answer is ¼ that is raised to the number of correct answers in the three questions and the ¾ is raised to the number of wrong answers. </p> 
 <figure> 
-           <image source="Binomial1.png" width="75%">
+           <image source="Binomial1.png" width="50%">
                 <shortdescription> summary of values </shortdescription>
             </image>
         </figure>
@@ -93,6 +93,19 @@ Generalizing the pattern, we can determine the probability of each event with th
 </solution>
 </example> 
 
+<example> 
+<title>  Distribution </title> 
+<statement> <p>  Calculate the probabilities to create the distribution table. </p>
+</statement>  
+<solution>  <p>Probability distribution of the number of correct responses in three test questions creates a binomial distribution as shown in the table. </p>
+
+<figure> <caption> Distribution of correct answers </caption>
+           <image source="Binomial2.png" width="75%">
+                <shortdescription> probabilities of.42, .42, .14, .02 </shortdescription>
+            </image>
+        </figure>
+</solution>
+</example> 
 
   
  <p> The outcomes of a binomial experiment and the corresponding probabilities of these outcomes is called a <term> binomial distribution. </term> </p> 
@@ -102,27 +115,154 @@ Generalizing the pattern, we can determine the probability of each event with th
 <p> The <term> Binomial Probability Formula </term>  for exactly X successes in n trials is <me> P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X} </me> </p>         </statement>
         </definition>
 
+ <note> <p> See how the first part of the binomial formula for the number of ways the event occurs is the same as the combination formula for nCr .  Also note that the sum of the exponents equals <m> n</m> for the total number of trials. </p> </note> 
+   
+ <p> <term> Application </term> </p> 
+<p>During the first week of class, we investigated the eye colors of students. About 2% of the world population has green eyes and about 9% of the US population has green eyes. Consider a group of 20 people who were randomly selected from the US. </p>
+<p>Let x = number of people with green eyes</p> 
+<example> 
+<title>  Binomial experiment </title> 
+<statement> <p>  Check if this is a binomial experiment. </p>
+</statement>  
+<solution> 
+<p> 1. There are 20 people, and each person is a trial, so there are a fixed number of trials. In this case, n = 20. </p>
+<p> 2. If you assume that each person in the group is chosen at random the eye color of one person doesn't affect the eye color of the next person, thus the trials are independent. </p>
+<p> 3. Either a person has green eyes or they do not have green eyes, so there are only two outcomes. In this case, success is a person who has green eyes. </p>
+<p> 4. The probability of a person having green eyes is 0.09 in the US. This is the same for every trial since each person has the same chance of having green eyes. <m>p = 0.09</m> and <m>q = 1− 0.09 = 0.91</m> </p>
+</solution>
+</example> 
+
+<example> 
+<title>  None green </title> 
+<statement> <p>  Find the probability that none in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> To find the number of ways 0 people have green eyes in a group of 20 people is <m> _{20} C_0 = 1</m>. Thus <m>P(x=0) = 1(.09)^0 (.91)^{20} = 0.1516 </m> </p>
+</solution>
+</example> 
+
+<example> 
+<title>  One green </title> 
+<statement> <p>  Find the probability that exactly one person in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> To find the number of ways 1 person has green eyes in a group of 20 people is <m> _{20} C_1 = 20</m> ways. Thus <m>P(x=1) = 20(.09)^1 (.91)^{19} = 0.3000 </m> </p>
+</solution>
+</example> 
+
+<example> 
+<title>  Two green </title> 
+<statement> <p>  Find the probability that exactly two people in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> To find the number of ways 2 people have green eyes in a group of 20 people is <m> _{20} C_2 = 190</m> ways. Thus <m>P(x=2) = 190(.09)^2 (.91)^{18} = 0.2818 </m> </p>
+</solution>
+</example> 
+
+<example> 
+<title>  Three green </title> 
+<statement> <p>  Find the probability that exactly three people in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> To find the number of ways 3 people have green eyes in a group of 20 people is <m> _{20} C_3 = 1140</m> ways. Thus <m>P(x=3) = 1140(.09)^3 (.91)^{17} = 0.1672 </m> </p>
+</solution>
+</example> 
+
+<p> We can also find the probability of multiple events by finding the binomial probability of each event and adding them together. </p> 
+<example> 
+<title>  One or Two </title> 
+<statement> <p>  Find the probability that exactly one or two people in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> Previously we found <m>P(x=1)= 0.3000 </m> and <m>P(x=2)= 0.2818</m>,  therefore P(1 or 2)<m>=0.3000+0.2818 =0.5818</m> </p>
+</solution>
+</example> 
+
+<example> 
+<title>  Less than three </title> 
+<statement> <p>  Find the probability that less than 3 people in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> Since we want less than three we write it as <m>P(x \lt 3) = P(0)+P(1)+P(2)</m>. We do not count when <m>x=3</m>. Previously we found <m>P(x=0)= 0.1516 </m> and <m>P(x=1)= 0.3000</m>  and<m> P(x=2)= 0.2818</m>,  therefore P(0 or 1 or 2) <m>= 0.1516 +0.3000+0.2818 =0.7334 </m></p>
+</solution>
+</example> 
+
+<p>Sometimes using the complement helps us find the total probability.</p>
+<example> 
+<title>  More than two </title> 
+<statement> <p>  Find the probability that more than 2 people in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> Since we want more than 2 we can write it as <m>P(x \gt 2) = P(3)+P(4)+…+(19)+P(20)</m>. We would need to find the probability of each event. Way too much work. So instead, use the complement which becomes <m>P(x \gt 2) = 1- (P(0)+P(1)+P(2))</m>. Previously we found <m>P(x \lt 2)= 0.1516 +0.3000+0.2818 =0.7334</m>, therefore <m>1-0.7334 = 0.2666</m>. Which is much easier. </p>
+</solution>
+</example> 
+
+<example> 
+<title>  At most 18 </title> 
+<statement> <p>  Find the probability that at most18 people in the group will have green eyes. </p>
+</statement>  
+<solution> 
+<p> Since we want at most 18 we can write it as <m>P(x \le 18) = P(0)+P(1)+…+(16)+P(17)+P(18)</m>. At most includes P(18). Using the complement, the expression becomes <m> 1-(P(19)+P(20))</m>. <m>P(19)= 20(.09)^{19} (.90)^1 = 2.46 \times 10^{-19}</m> and <m>P(20)= 1(.09)^{20} (.90)^0 = 1.22 \times 10^{-21} </m>, note these are in scientific notation and basically 0. Therefore<m> P(x \le18)=  1-0.0000 = 1</m>. Therefore it’s very likely that at most 18 will have green eyes. </p>
+</solution>
+</example> 
+
          
   </subsection>
 
   
 <subsection xml:id="subsec-BinomialStatistics">
   <title>Summary Statistics</title>
-
+<p>As with probability distributions, we want to be able to compute the summary statistics for the binomial distribution. Here is the summary of the formulas where <m>n</m> represents the number of trials or sample size, <m>p</m> is the probability of the event success while <m>q</m> is the complement which is the probability of failure. </p> 
 <p> Mean is <m> \mu = np</m> </p>  
-<p> Variance is <m> \sigma^2 = np(1-p) </m> </p> 
-<p> Standard deviation is <m> \sigma=\sqrt{np(1-p)} </m> </p>
+<p> Variance is <m> \sigma^2 = npq </m> </p> 
+<p> Standard deviation is <m> \sigma=\sqrt{npq} </m> </p>
+ 
+<p> <term>Application: </term> During the first week of class, we investigated the eye colors of students. About 2% of the world population has green eyes. Consider a group of 500 people who were randomly selected from the world. Find the mean number of people who will have green eyes. Also find the variance and standard deviation. </p>
+<p> We know that <m> p=0.02</m> thus <m>q=1-.02=.98 </m> and <m> n=500</m> </p>
+<p> Mean is <m> \mu = np=.02 \times 500 = 10 </m> </p> 
+<p> Variance is <m> \sigma^2 = npq=.02(500)(.98)=9.8 </m> </p>
+ <p> Standard deviation is <m> \sigma=\sqrt{9.8}=3.13 </m> </p>
+<p> The mean is 10 people with green eyes, this may vary by 9.8, with a spread of 3 people from the mean to represent what is typical.</p>
+<p>      </p>
+<example> 
+<title>  statistics </title> 
+<statement> <p>  During the first week of class, we investigated the eye colors of students. About 9% of the US population has green eyes. Consider a group of 500 people who were randomly selected from the US. Find the mean number of people who will have green eyes. Also find the variance and standard deviation.  </p>
+</statement>  
+<solution>
+<p> We know that <m> p=.09</m> thus <m>q=1-.09=.91</m> and <m>n=500</m></p>
+<p> Mean is <m> \mu = np =0.09 \times 500 = 45</m> </p> 
+<p> Variance is <m> \sigma^2 = npq=(500)(0.09)(.91)=40.95 </m> </p>
+ <p> Standard deviation is <m> \sigma=\sqrt{40.95}=6.4 </m> </p>
+<p> Estimate a mean of 45 people with green eyes in a sample of 500 people. The variance is 40.95 with a standard deviation of 6.4 which measures the spread from the mean. </p>
+</solution>
+</example> 
 
+<example> 
+<title>  autism </title> 
+<statement> <p>  
+According to the Centers for Disease Control and Prevention (CDC), the estimated prevalence of autism spectrum disorder (ASD) in the United States for children aged 8 years in 2020 was 1 in 36. In a sample of 200 children find the mean, variance and standard deviation. </p> 
+</statement>  
+<solution>
+<p> We know p=1/36=.028 thus q=1-.028=.972 and n=020</p>
+<p> Mean is <m> \mu = np =0.028 \times 200 = 5.6</m> </p> 
+<p> Variance is <m> \sigma^2 = npq=(200)(0.028)(0.972)=5.44 </m> </p>
+ <p> Standard deviation is <m> \sigma=\sqrt{5.44}=2.33 </m> </p>
+</solution>
+</example> 
 
 
   </subsection>
 
 <subsection xml:id="subsec-BinomialCalc">
   <title>Using Technology</title>
+
+
   </subsection>
 
 <subsection xml:id="subsec-BinomialPractice">
   <title>Practice Problems</title>
+
+  
   </subsection>
 
 
