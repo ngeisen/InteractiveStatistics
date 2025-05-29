@@ -673,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Case Studies",
-  "body": " Case Studies  This section introduces you to several case study scenarios. Throughout the semester we will refer to one of these studies. Several are based on class surveys from prior semesters and are the foundation for the examples throughout the text. We will learn different ways to analyze data through these case studies.   The full data sets are listed in the Data Sets Chapter. We will often use just a subset of the whole data file as we are learning the concepts.    Case Study - Class Survey 1  In the spring semester, a section of UNC students taking an introductory statistics course completed a survey on the first day of class identifying their eye color, current weight, shoe size, height, and the number of siblings they have. The survey was completed through Canvas, so responses were anonymous. Below is a screenshot of the first seven rows. Identify the following using the first day class survey.   image of cases and variable for survey 1    Cases   What are the cases in the survey?    Each student that responded is a case (the rows in the table).     Variables   How many variables are in the survey?    There are 5 variables, these are the columns for eye color, siblings, weights, height, and shoe size.     Qualitative Variables   Which variables are qualitative in the survey?    Eye color is the only categorial variable in the survey     Discrete Quantitative Variables   Identify the discrete quantitative variable(s) in the survey.    The number of siblings are counts thus discrete.     Continuous Quantitative Variables   Identify the continuous quantitative variable(s) in the survey.    The weights and heights are continuous measurements. Shoe sizes are unique since they occur in jumps of 1\/2 size.     Study Type   What type of study was conducted?    This is an observational study since no variable was manipulated.     Sample Size   How big is the sample based on the screenshot?    The screenshot shows 7 students for the sample. The data file shows 42 students who participated in the survey.     Population   Who is the population?    We can generalize the population to all UNC students.     Sampling Method   Which sampling method best describes how the data was collected?    Cluster sampling since one intact group was surveyed.      Case Study – Class Survey 2  In the Spring semester of 2025, UNC students proposed some questions for the class survey identifying their favorite season (spring, summer, fall, winter), how they preferred the steak being cooked (as rare, medium, medium well, well done), movie genre preference, and favorite vacation location (as coastal, mountain, theme park, city\/cultural exploration, or a staycation). Students also identified how many tattoos they have, the number of credit hours they were taking this semester, the number of pets they currently have, and how many hours they typically sleep per night. Use the screen shot of the first seven rows to answer the following questions.   image of cases and variable for survey 2    Cases 2   What are the cases in the survey?    Each student that responded is a case. (rows in table)     Variables 2   How many variables are in the survey?    There are 8 variables, these are the columns.     Qualitative Variables 2   Which variables are qualitative in the survey?    Favorite season, steak cooked, movie preference, and vacation location are all categorial variables in this survey     Discrete Quantitative Variables 2   Identify the discrete quantitative variable(s) in the survey.    The number of tattoos, credits hours, and pets are the discrete variables.     Continuous Quantitative Variables 2   Identify the continuous quantitative variable(s) in the survey.    Sleep is a continuous measurement.     Study Type 2   What type of study was conducted?    This is an observational study since no variable was manipulated.     Sample   How big is the sample based on the screenshot?    The screenshot shows 7 students for the sample. The data file shows 43 students who participated in the survey.     Population   Who is the population?    We can generalize the population to all UNC students.     Sampling Method   Which sampling method best describes how the data was collected?    Cluster sampling since one intact group was surveyed.      Case Study – Florida Bass  Largemouth bass were studied in 53 different Florida lakes to examine the factors that influence the level of mercury contamination. Water samples were collected from the surface of the middle of each lake in August 1990 and then again in March 1991. The pH level, the amount of chlorophyll, calcium, and alkalinity were measured in each sample. Use the screenshot of the first six rows to answer the following questions.  Original data source: Florida Bass.    image of variables for Florida lakes    Variables   How many variables are in the screenshot?    There are 8 variables with measurements. The ID and Lake name are identifiers only.     Qualitative Variables   Which variables are qualitative?    None     Discrete Quantitative Variables   Identify the discrete quantitative variable(s).    Number of samples collected from the lake.     Continuous Quantitative Variables   Identify the continuous quantitative variable(s).    Alkalinity, pH, Calcium, Chlorophyll, Mercury .     Study Type   What type of study was conducted?    This is an observational study since no variable was manipulated. They recorded the measurements as present in the lakes.     Sample   How big is the sample based on the description?    The description states 53 lakes were sampled.     Population   What is the population?    All Florida lakes.      Case Study – Vocal Mimicry of Parrots  Parrots are one of the rare animal taxa with life-long vocal learning. Parrot vocal repertoires are difficult to study in the wild, but companion parrots offer a valuable data source. The authors surveyed the public about mimicry repertoires in companion parrots to determine whether vocal learning varied by (1) species, (2) sex, (3) age, and (4) social interaction with other parrots. Species differed significantly in mimicry ability, with grey parrots having the largest mimicry repertoires. Analyses of all birds (n = 877) found no overarching effects of sex, age, or parrot-parrot social interactions on mimicry repertoires. Authors: Lauryn Benedict, Alexandra Charles , Amirah Brockington and Christine R Dahlin.  A survey of vocal mimicry in companion parrots: Article.   Full data set: Parrots Data.    image of variable for parrot data    Variables   How many variables are in the screenshot?    There are 9 variables with measurements. The Ref ID is an identifier only.     Qualitative Variables   Which variables are qualitative?    Genus, Species, sex, social with other parrots, and social with conspecifics     Discrete Quantitative Variables   Identify the discrete quantitative variable(s).    Age, mimicry sounds counts, phrase counts, and word counts.     Continuous Quantitative Variables   Identify the continuous quantitative variable(s).    none in this data set shown     Study Type   What type of study was conducted?    This is an observational study since no variable was manipulated. They gathered data from a questionnaire.     Sample   How big is the sample based on the description?    The description states 877 birds were in the study.       use for less than and for greater than symbols for R coding  "
+  "body": " Case Studies  This section introduces you to several case study scenarios. Throughout the semester we will refer to one of these studies. Several are based on class surveys from prior semesters and are the foundation for the examples throughout the text. We will learn different ways to analyze data through these case studies.   The full data sets are listed in the Data Sets Chapter. We will often use just a subset of the whole data file as we are learning the concepts.    Case Study - Class Survey 1  In the spring semester, a section of UNC students taking an introductory statistics course completed a survey on the first day of class identifying their eye color, current weight, shoe size, height, and the number of siblings they have. The survey was completed through Canvas, so responses were anonymous. Below is a screenshot of the first seven rows. Identify the following using the first day class survey.  Data: ClassSurvey1    image of cases and variable for survey 1    Cases   What are the cases in the survey?    Each student that responded is a case (the rows in the table).     Variables   How many variables are in the survey?    There are 5 variables, these are the columns for eye color, siblings, weights, height, and shoe size.     Qualitative Variables   Which variables are qualitative in the survey?    Eye color is the only categorial variable in the survey     Discrete Quantitative Variables   Identify the discrete quantitative variable(s) in the survey.    The number of siblings are counts thus discrete.     Continuous Quantitative Variables   Identify the continuous quantitative variable(s) in the survey.    The weights and heights are continuous measurements. Shoe sizes are unique since they occur in jumps of 1\/2 size.     Study Type   What type of study was conducted?    This is an observational study since no variable was manipulated.     Sample Size   How big is the sample based on the screenshot?    The screenshot shows 7 students for the sample. The data file shows 42 students who participated in the survey.     Population   Who is the population?    We can generalize the population to all UNC students.     Sampling Method   Which sampling method best describes how the data was collected?    Cluster sampling since one intact group was surveyed.      Case Study – Class Survey 2  In the Spring semester of 2025, UNC students proposed some questions for the class survey identifying their favorite season (spring, summer, fall, winter), how they preferred the steak being cooked (as rare, medium, medium well, well done), movie genre preference, and favorite vacation location (as coastal, mountain, theme park, city\/cultural exploration, or a staycation). Students also identified how many tattoos they have, the number of credit hours they were taking this semester, the number of pets they currently have, and how many hours they typically sleep per night. Use the screen shot of the first seven rows to answer the following questions.  Data: ClassSurvey2    image of cases and variable for survey 2    Cases 2   What are the cases in the survey?    Each student that responded is a case. (rows in table)     Variables 2   How many variables are in the survey?    There are 8 variables, these are the columns.     Qualitative Variables 2   Which variables are qualitative in the survey?    Favorite season, steak cooked, movie preference, and vacation location are all categorial variables in this survey     Discrete Quantitative Variables 2   Identify the discrete quantitative variable(s) in the survey.    The number of tattoos, credits hours, and pets are the discrete variables.     Continuous Quantitative Variables 2   Identify the continuous quantitative variable(s) in the survey.    Sleep is a continuous measurement.     Study Type 2   What type of study was conducted?    This is an observational study since no variable was manipulated.     Sample   How big is the sample based on the screenshot?    The screenshot shows 7 students for the sample. The data file shows 43 students who participated in the survey.     Population   Who is the population?    We can generalize the population to all UNC students.     Sampling Method   Which sampling method best describes how the data was collected?    Cluster sampling since one intact group was surveyed.      Case Study – Florida Bass  Largemouth bass were studied in 53 different Florida lakes to examine the factors that influence the level of mercury contamination. Water samples were collected from the surface of the middle of each lake in August 1990 and then again in March 1991. The pH level, the amount of chlorophyll, calcium, and alkalinity were measured in each sample. Use the screenshot of the first six rows to answer the following questions.  Original data source: Florida Bass.    image of variables for Florida lakes    Variables   How many variables are in the screenshot?    There are 8 variables with measurements. The ID and Lake name are identifiers only.     Qualitative Variables   Which variables are qualitative?    None     Discrete Quantitative Variables   Identify the discrete quantitative variable(s).    Number of samples collected from the lake.     Continuous Quantitative Variables   Identify the continuous quantitative variable(s).    Alkalinity, pH, Calcium, Chlorophyll, Mercury .     Study Type   What type of study was conducted?    This is an observational study since no variable was manipulated. They recorded the measurements as present in the lakes.     Sample   How big is the sample based on the description?    The description states 53 lakes were sampled.     Population   What is the population?    All Florida lakes.      Case Study – Vocal Mimicry of Parrots  Parrots are one of the rare animal taxa with life-long vocal learning. Parrot vocal repertoires are difficult to study in the wild, but companion parrots offer a valuable data source. The authors surveyed the public about mimicry repertoires in companion parrots to determine whether vocal learning varied by (1) species, (2) sex, (3) age, and (4) social interaction with other parrots. Species differed significantly in mimicry ability, with grey parrots having the largest mimicry repertoires. Analyses of all birds (n = 877) found no overarching effects of sex, age, or parrot-parrot social interactions on mimicry repertoires. Authors: Lauryn Benedict, Alexandra Charles , Amirah Brockington and Christine R Dahlin.  A survey of vocal mimicry in companion parrots: Article.   Full data set: Parrots Data.    image of variable for parrot data    Variables   How many variables are in the screenshot?    There are 9 variables with measurements. The Ref ID is an identifier only.     Qualitative Variables   Which variables are qualitative?    Genus, Species, sex, social with other parrots, and social with conspecifics     Discrete Quantitative Variables   Identify the discrete quantitative variable(s).    Age, mimicry sounds counts, phrase counts, and word counts.     Continuous Quantitative Variables   Identify the continuous quantitative variable(s).    none in this data set shown     Study Type   What type of study was conducted?    This is an observational study since no variable was manipulated. They gathered data from a questionnaire.     Sample   How big is the sample based on the description?    The description states 877 birds were in the study.       use for less than and for greater than symbols for R coding  "
 },
 {
   "id": "sec-section-name-3",
@@ -685,162 +685,162 @@ var ptx_lunr_docs = [
   "body": " The full data sets are listed in the Data Sets Chapter. We will often use just a subset of the whole data file as we are learning the concepts.  "
 },
 {
-  "id": "subsec-Survey1-4",
+  "id": "subsec-Survey1-5",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-4",
+  "url": "sec-section-name.html#subsec-Survey1-5",
   "type": "Example",
   "number": "1.4.2",
   "title": "Cases.",
   "body": " Cases   What are the cases in the survey?    Each student that responded is a case (the rows in the table).   "
 },
 {
-  "id": "subsec-Survey1-5",
+  "id": "subsec-Survey1-6",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-5",
+  "url": "sec-section-name.html#subsec-Survey1-6",
   "type": "Example",
   "number": "1.4.3",
   "title": "Variables.",
   "body": " Variables   How many variables are in the survey?    There are 5 variables, these are the columns for eye color, siblings, weights, height, and shoe size.   "
 },
 {
-  "id": "subsec-Survey1-6",
+  "id": "subsec-Survey1-7",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-6",
+  "url": "sec-section-name.html#subsec-Survey1-7",
   "type": "Example",
   "number": "1.4.4",
   "title": "Qualitative Variables.",
   "body": " Qualitative Variables   Which variables are qualitative in the survey?    Eye color is the only categorial variable in the survey   "
 },
 {
-  "id": "subsec-Survey1-7",
+  "id": "subsec-Survey1-8",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-7",
+  "url": "sec-section-name.html#subsec-Survey1-8",
   "type": "Example",
   "number": "1.4.5",
   "title": "Discrete Quantitative Variables.",
   "body": " Discrete Quantitative Variables   Identify the discrete quantitative variable(s) in the survey.    The number of siblings are counts thus discrete.   "
 },
 {
-  "id": "subsec-Survey1-8",
+  "id": "subsec-Survey1-9",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-8",
+  "url": "sec-section-name.html#subsec-Survey1-9",
   "type": "Example",
   "number": "1.4.6",
   "title": "Continuous Quantitative Variables.",
   "body": " Continuous Quantitative Variables   Identify the continuous quantitative variable(s) in the survey.    The weights and heights are continuous measurements. Shoe sizes are unique since they occur in jumps of 1\/2 size.   "
 },
 {
-  "id": "subsec-Survey1-9",
+  "id": "subsec-Survey1-10",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-9",
+  "url": "sec-section-name.html#subsec-Survey1-10",
   "type": "Example",
   "number": "1.4.7",
   "title": "Study Type.",
   "body": " Study Type   What type of study was conducted?    This is an observational study since no variable was manipulated.   "
 },
 {
-  "id": "subsec-Survey1-10",
+  "id": "subsec-Survey1-11",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-10",
+  "url": "sec-section-name.html#subsec-Survey1-11",
   "type": "Example",
   "number": "1.4.8",
   "title": "Sample Size.",
   "body": " Sample Size   How big is the sample based on the screenshot?    The screenshot shows 7 students for the sample. The data file shows 42 students who participated in the survey.   "
 },
 {
-  "id": "subsec-Survey1-11",
+  "id": "subsec-Survey1-12",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-11",
+  "url": "sec-section-name.html#subsec-Survey1-12",
   "type": "Example",
   "number": "1.4.9",
   "title": "Population.",
   "body": " Population   Who is the population?    We can generalize the population to all UNC students.   "
 },
 {
-  "id": "subsec-Survey1-12",
+  "id": "subsec-Survey1-13",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey1-12",
+  "url": "sec-section-name.html#subsec-Survey1-13",
   "type": "Example",
   "number": "1.4.10",
   "title": "Sampling Method.",
   "body": " Sampling Method   Which sampling method best describes how the data was collected?    Cluster sampling since one intact group was surveyed.   "
 },
 {
-  "id": "subsec-Survey2-4",
+  "id": "subsec-Survey2-5",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-4",
+  "url": "sec-section-name.html#subsec-Survey2-5",
   "type": "Example",
   "number": "1.4.11",
   "title": "Cases 2.",
   "body": " Cases 2   What are the cases in the survey?    Each student that responded is a case. (rows in table)   "
 },
 {
-  "id": "subsec-Survey2-5",
+  "id": "subsec-Survey2-6",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-5",
+  "url": "sec-section-name.html#subsec-Survey2-6",
   "type": "Example",
   "number": "1.4.12",
   "title": "Variables 2.",
   "body": " Variables 2   How many variables are in the survey?    There are 8 variables, these are the columns.   "
 },
 {
-  "id": "subsec-Survey2-6",
+  "id": "subsec-Survey2-7",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-6",
+  "url": "sec-section-name.html#subsec-Survey2-7",
   "type": "Example",
   "number": "1.4.13",
   "title": "Qualitative Variables 2.",
   "body": " Qualitative Variables 2   Which variables are qualitative in the survey?    Favorite season, steak cooked, movie preference, and vacation location are all categorial variables in this survey   "
 },
 {
-  "id": "subsec-Survey2-7",
+  "id": "subsec-Survey2-8",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-7",
+  "url": "sec-section-name.html#subsec-Survey2-8",
   "type": "Example",
   "number": "1.4.14",
   "title": "Discrete Quantitative Variables 2.",
   "body": " Discrete Quantitative Variables 2   Identify the discrete quantitative variable(s) in the survey.    The number of tattoos, credits hours, and pets are the discrete variables.   "
 },
 {
-  "id": "subsec-Survey2-8",
+  "id": "subsec-Survey2-9",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-8",
+  "url": "sec-section-name.html#subsec-Survey2-9",
   "type": "Example",
   "number": "1.4.15",
   "title": "Continuous Quantitative Variables 2.",
   "body": " Continuous Quantitative Variables 2   Identify the continuous quantitative variable(s) in the survey.    Sleep is a continuous measurement.   "
 },
 {
-  "id": "subsec-Survey2-9",
+  "id": "subsec-Survey2-10",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-9",
+  "url": "sec-section-name.html#subsec-Survey2-10",
   "type": "Example",
   "number": "1.4.16",
   "title": "Study Type 2.",
   "body": " Study Type 2   What type of study was conducted?    This is an observational study since no variable was manipulated.   "
 },
 {
-  "id": "subsec-Survey2-10",
+  "id": "subsec-Survey2-11",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-10",
+  "url": "sec-section-name.html#subsec-Survey2-11",
   "type": "Example",
   "number": "1.4.17",
   "title": "Sample.",
   "body": " Sample   How big is the sample based on the screenshot?    The screenshot shows 7 students for the sample. The data file shows 43 students who participated in the survey.   "
 },
 {
-  "id": "subsec-Survey2-11",
+  "id": "subsec-Survey2-12",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-11",
+  "url": "sec-section-name.html#subsec-Survey2-12",
   "type": "Example",
   "number": "1.4.18",
   "title": "Population.",
   "body": " Population   Who is the population?    We can generalize the population to all UNC students.   "
 },
 {
-  "id": "subsec-Survey2-12",
+  "id": "subsec-Survey2-13",
   "level": "2",
-  "url": "sec-section-name.html#subsec-Survey2-12",
+  "url": "sec-section-name.html#subsec-Survey2-13",
   "type": "Example",
   "number": "1.4.19",
   "title": "Sampling Method.",
@@ -1419,8 +1419,8 @@ var ptx_lunr_docs = [
   "url": "sec-QuantStats.html",
   "type": "Section",
   "number": "2.3",
-  "title": "Descriptive Statistics for Quantitative Variables",
-  "body": " Descriptive Statistics for Quantitative Variables   In this chapter we will investigate multiple ways to describe the data with graphs and numerical statistics.     At the end of this section you will be able to:     Describe the center of the data with mean, median, mode.    Describe the spread of a data with range of values.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Sample: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .  The range of a data set is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are.   Sample: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 apps per phone. The range is 72 - 25 = 47 apps, which represents the spread in the number of apps on these phones.  Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5   Find the mean     Find the measures of center   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72    bimodal with modes 36 and 72, median = 42 and mean = 48.167    This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.    "
+  "title": "Summary Statistics",
+  "body": " Summary Statistics   In this section we will investigate some ways to summarize the data with graphs and numerical statistics.     At the end of this section you will be able to:     Describe the center of the data with mean, median, mode.    Describe the spread of a data with range of values.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Sample: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .  The range of a data set is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are.   Sample: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 apps per phone. The range is 72 - 25 = 47 apps, which represents the spread in the number of apps on these phones.  Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5   Find the mean     Find the measures of center   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72    bimodal with modes 36 and 72, median = 42 and mean = 48.167    This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.    "
 },
 {
   "id": "sec-QuantStats-3",
@@ -2671,7 +2671,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Probability Rules",
-  "body": " Probability Rules    At the end of this section you will able to:    Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given\"    Use a tree diagram to determine the probability of multiple events      It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment. In this section we will focus on probability rules based on the theoretical probabilities .  There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are equally likely to occur. This means that every outcome has the same chance of happening.  Equally Likely  Which of the following experiments have equally likely outcomes?     Tossing a fair coin.      Rolling loaded dice.    Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.      Pull a ball out of a bag containing 5 red balls and 6 green balls.    Assuming the balls are the same size, then each ball has the same chance of being chosen. The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .     First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.    Hearts If one card is randomly drawn from a deck, what is the probability of drawing a heart?  There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .   Queen If one card is randomly drawn from a deck, what is the probability of drawing a Queen?  P(Queen) = 4\/52 = 1\/13 = 0.077   Queen of Hearts If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?  P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.   not Queen of Hearts If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?  P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.   Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card.  Two events are mutually exclusive if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5.  Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together. We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  When two events A and B are mutually exclusive, the probability that either A or B will occur is   When two events A and B are mutually exclusive, the probability that A and B will occur together is since they cannot occur at the same time.   For example, find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) =   Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus  Queen or King If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?  P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538   Face Card If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?  P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308   So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. For example, what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card.  P(Spade or Ace) 13\/52 + 4\/52 - 1\/52 = 16\/52 = 0.3077.  If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event.  When two events A and B are not mutually exclusive, the probability that either A or B will occur is     Five or Diamond If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?  P(5 or diamond) = 4\/52 +13\/52 – 1\/52 = 16\/52 = 0.3077   Five or Six or Diamond If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?  P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups     "
+  "body": " Probability Rules    At the end of this section you will able to:    Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given\"    Use a tree diagram to determine the probability of multiple events      It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment. In this section we will focus on probability rules based on the theoretical probabilities .  There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are equally likely to occur. This means that every outcome has the same chance of happening.  Equally Likely  Which of the following experiments have equally likely outcomes?     Tossing a fair coin.      Rolling loaded dice.    Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.      Pull a ball out of a bag containing 5 red balls and 6 green balls.    Assuming the balls are the same size, then each ball has the same chance of being chosen. The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .     First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.    Hearts If one card is randomly drawn from a deck, what is the probability of drawing a heart?  There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .   Queen If one card is randomly drawn from a deck, what is the probability of drawing a Queen?  P(Queen) = 4\/52 = 1\/13 = 0.077   Queen of Hearts If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?  P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.   not Queen of Hearts If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?  P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.   Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card.  Two events are mutually exclusive if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5.  Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together. We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  When two events A and B are mutually exclusive, the probability that either A or B will occur is   When two events A and B are mutually exclusive, the probability that A and B will occur together is since they cannot occur at the same time.   For example, find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) =   Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus  Queen or King If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?  P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538   Face Card If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?  P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308   So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. For example, what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card.  P(Spade or Ace) 13\/52 + 4\/52 - 1\/52 = 16\/52 = 0.3077.  If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event.  When two events A and B are not mutually exclusive, the probability that either A or B will occur is     Five or Diamond If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?  P(5 or diamond) = 4\/52 +13\/52 – 1\/52 = 16\/52 = 0.3077   Five or Six or Diamond If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?  P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups     When two events are mutually exclusive, this is also known as being disjoint . In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.   Disjoint Venn Diagram   non touching circles .    When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula.   Non Disjoint Venn Diagram   overlapping circles .    We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV.   Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .     Examples: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.  a. A foreign car is sold.  Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90\/300 = 0.30 or 30%  b. The car is foreign and compact.  Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50\/300 = 0.1667 or 16.7%  c. The car is foreign or compact.  Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90\/300 + 150\/300 – 50\/300 = 190\/300 = 0.633 or 63.3%  Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total.   Checkpoints: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.  Compact The car is compact.  P(compact) = 150\/300 = 0.5 or 50%   domestic or sedan The car is domestic or a sedan.  P(domestic or a sedan) = 210\/300+ 65\/300 – 45\/300 = 230\/300 = 0.767 or 76.7%%   Domestic SUV The car is domestic and SUV.  P(compact) = 65\/300 = 0.217 or 21.7%   given   Practice Problems   Hockey Hall of Fame: From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com   Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table.  Defense What is the probability that an inductee chosen at random is a defenseman?  P(defenseman) = 89\/298 = .2987 or 29.9%   Canadian What is the probability that an inductee chosen at random is not Canadian?  P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%   Canadian goalie What is the probability that a player chosen at random is a goalie born in Canada  P(goalie and Canadian) = 36\/298 = .1208 or 12.1%   Canada or Defense What is the probability that a player chosen at random is either born in Canada or a defenseman?  P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926   Defense or Goalie What is the probability that the player chosen at random either plays defense or is a goalie  P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.   Canada plays Defense What is the probability that a Canadian inductee plays defense?  P(defense | Canada) = 74\/251 = .2948   Defense is Canadian What is the probability that an inductee who plays defense is Canadian?  P(Canda | defense) = 74\/89 = .8315    Blood Typing: Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative. The table below presents the results of a representative sample of 360 adults in the U.S.   Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table.  negative What is the probability that a person in the sample chosen at random has a negative Rh factor?  P(negative) 58\/360 = .161 have negative blood   not AB What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?  use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958   B+ What is the probability that a person in the sample chosen at random has type B and positive Rh factor?  intersection P(B and pos) = 32\/360 = .089   A or negative What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?  P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive   A or B What is the probability that a person in the sample chosen at random has blood type A or blood type B?  P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive   Blood What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?  P(O | neg) = 25\/58 = .431   Blood What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?  P(neg | O) = 25\/162 = .154   "
 },
 {
   "id": "ProbRules-2",
@@ -2782,13 +2782,265 @@ var ptx_lunr_docs = [
   "body": "Five or Six or Diamond If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?  P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups  "
 },
 {
+  "id": "ProbRules-29",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-29",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "disjoint "
+},
+{
+  "id": "VennDisjoint",
+  "level": "2",
+  "url": "ProbRules.html#VennDisjoint",
+  "type": "Figure",
+  "number": "4.2.11",
+  "title": "",
+  "body": " Disjoint Venn Diagram   non touching circles .   "
+},
+{
+  "id": "VennNotDisjoint",
+  "level": "2",
+  "url": "ProbRules.html#VennNotDisjoint",
+  "type": "Figure",
+  "number": "4.2.12",
+  "title": "",
+  "body": " Non Disjoint Venn Diagram   overlapping circles .   "
+},
+{
+  "id": "AutoSalesTable",
+  "level": "2",
+  "url": "ProbRules.html#AutoSalesTable",
+  "type": "Figure",
+  "number": "4.2.13",
+  "title": "",
+  "body": " Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .   "
+},
+{
+  "id": "ProbRules-35",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-35",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Examples: "
+},
+{
+  "id": "ProbRules-43",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-43",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Checkpoints: "
+},
+{
+  "id": "ProbRules-44",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-44",
+  "type": "Checkpoint",
+  "number": "4.2.14",
+  "title": "Compact.",
+  "body": "Compact The car is compact.  P(compact) = 150\/300 = 0.5 or 50%  "
+},
+{
+  "id": "ProbRules-45",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-45",
+  "type": "Checkpoint",
+  "number": "4.2.15",
+  "title": "domestic or sedan.",
+  "body": "domestic or sedan The car is domestic or a sedan.  P(domestic or a sedan) = 210\/300+ 65\/300 – 45\/300 = 230\/300 = 0.767 or 76.7%%  "
+},
+{
+  "id": "ProbRules-46",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-46",
+  "type": "Checkpoint",
+  "number": "4.2.16",
+  "title": "Domestic SUV.",
+  "body": "Domestic SUV The car is domestic and SUV.  P(compact) = 65\/300 = 0.217 or 21.7%  "
+},
+{
+  "id": "ProbRules-48",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-48",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Practice Problems "
+},
+{
+  "id": "ProbRules-49",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-49",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Hockey Hall of Fame: "
+},
+{
+  "id": "HockeyFame",
+  "level": "2",
+  "url": "ProbRules.html#HockeyFame",
+  "type": "Figure",
+  "number": "4.2.17",
+  "title": "",
+  "body": " Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .   "
+},
+{
+  "id": "ProbRules-52",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-52",
+  "type": "Checkpoint",
+  "number": "4.2.18",
+  "title": "Defense.",
+  "body": "Defense What is the probability that an inductee chosen at random is a defenseman?  P(defenseman) = 89\/298 = .2987 or 29.9%  "
+},
+{
+  "id": "ProbRules-53",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-53",
+  "type": "Checkpoint",
+  "number": "4.2.19",
+  "title": "Canadian.",
+  "body": "Canadian What is the probability that an inductee chosen at random is not Canadian?  P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%  "
+},
+{
+  "id": "ProbRules-54",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-54",
+  "type": "Checkpoint",
+  "number": "4.2.20",
+  "title": "Canadian goalie.",
+  "body": "Canadian goalie What is the probability that a player chosen at random is a goalie born in Canada  P(goalie and Canadian) = 36\/298 = .1208 or 12.1%  "
+},
+{
+  "id": "ProbRules-55",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-55",
+  "type": "Checkpoint",
+  "number": "4.2.21",
+  "title": "Canada or Defense.",
+  "body": "Canada or Defense What is the probability that a player chosen at random is either born in Canada or a defenseman?  P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926  "
+},
+{
+  "id": "ProbRules-56",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-56",
+  "type": "Checkpoint",
+  "number": "4.2.22",
+  "title": "Defense or Goalie.",
+  "body": "Defense or Goalie What is the probability that the player chosen at random either plays defense or is a goalie  P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.  "
+},
+{
+  "id": "ProbRules-57",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-57",
+  "type": "Checkpoint",
+  "number": "4.2.23",
+  "title": "Canada plays Defense.",
+  "body": "Canada plays Defense What is the probability that a Canadian inductee plays defense?  P(defense | Canada) = 74\/251 = .2948  "
+},
+{
+  "id": "ProbRules-58",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-58",
+  "type": "Checkpoint",
+  "number": "4.2.24",
+  "title": "Defense is Canadian.",
+  "body": "Defense is Canadian What is the probability that an inductee who plays defense is Canadian?  P(Canda | defense) = 74\/89 = .8315  "
+},
+{
+  "id": "ProbRules-59",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-59",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Blood Typing: "
+},
+{
+  "id": "BloodTypes",
+  "level": "2",
+  "url": "ProbRules.html#BloodTypes",
+  "type": "Figure",
+  "number": "4.2.25",
+  "title": "",
+  "body": " Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.   "
+},
+{
+  "id": "ProbRules-62",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-62",
+  "type": "Checkpoint",
+  "number": "4.2.26",
+  "title": "negative.",
+  "body": "negative What is the probability that a person in the sample chosen at random has a negative Rh factor?  P(negative) 58\/360 = .161 have negative blood  "
+},
+{
+  "id": "ProbRules-63",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-63",
+  "type": "Checkpoint",
+  "number": "4.2.27",
+  "title": "not AB.",
+  "body": "not AB What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?  use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958  "
+},
+{
+  "id": "ProbRules-64",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-64",
+  "type": "Checkpoint",
+  "number": "4.2.28",
+  "title": "B+.",
+  "body": "B+ What is the probability that a person in the sample chosen at random has type B and positive Rh factor?  intersection P(B and pos) = 32\/360 = .089  "
+},
+{
+  "id": "ProbRules-65",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-65",
+  "type": "Checkpoint",
+  "number": "4.2.29",
+  "title": "A or negative.",
+  "body": "A or negative What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?  P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive  "
+},
+{
+  "id": "ProbRules-66",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-66",
+  "type": "Checkpoint",
+  "number": "4.2.30",
+  "title": "A or B.",
+  "body": "A or B What is the probability that a person in the sample chosen at random has blood type A or blood type B?  P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive  "
+},
+{
+  "id": "ProbRules-67",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-67",
+  "type": "Checkpoint",
+  "number": "4.2.31",
+  "title": "Blood.",
+  "body": "Blood What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?  P(O | neg) = 25\/58 = .431  "
+},
+{
+  "id": "ProbRules-68",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-68",
+  "type": "Checkpoint",
+  "number": "4.2.32",
+  "title": "Blood.",
+  "body": "Blood What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?  P(neg | O) = 25\/162 = .154  "
+},
+{
   "id": "CondProb",
   "level": "1",
   "url": "CondProb.html",
   "type": "Section",
   "number": "4.3",
   "title": "Conditional Probability",
-  "body": " Conditional Probability    At the end of this section you will able to:    Determine if events are independent or dependent.    Determine the probability using \"given\" statements    Distinguish between permutations and combinations      There are times when the sample space or event space are very large, that it is not feasible to write it out. In that case, it helps to have mathematical tools for counting the size of the sample space and event space. These tools are known as counting techniques.   Counting Principle: If Task 1 can be performed in m ways, and Task 2 can be performed in n ways no matter how task 1 turns out, then the sequence task 1 and task 2 can be performed in m·n ways together (as a product).  Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options. How many different meals consisting of one salad, one main dish, and one dessert are possible?   Solution: There are three tasks to this meal, picking a salad, a main dish, and a dessert. The salad has 2 choices, the main dish has 6 choices, and the dessert has 3 options. Therefore there are different meals.  If we did this with a tree diagram, we would have 2 lines to represent the two salads, then each salad would have the 6 main dishes branched from it, then each of those branches would have the 3 desserts. If you list each unique outcome, there are 36 different meals.  Password How many three letter passwords can be made from the letters a, b, and c , if the letters can be reused?  3x3x3 = 27 passwords   Kentucky Derby Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?  We just need to fill three positions, thus ways for the first three positions.  Fun fact: The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom.   How many three letter passwords can be made from the letters a, b, and c if no letters can be repeated?   Solution: There are three tasks that must be done in this case. The tasks are to pick the first letter, then the second letter, and then the third letter. There are 3 options for the first letter, once it is chosen there are two remaining options for the second letter. Once one is chosen there is just one letter option for the last position. Therefore there are 3×2×1=6 unique passwords where the letters do not repeat.  We can also look at this in a tree diagram:  Many counting problems involve multiplying a list of decreasing numbers, such as the non-repeating letters in the password. The product of 3×2×1=3! is called a factorial . There is a special symbol ! for this and a special button on your calculator.   Factorial     As an example  There are a few special values: 0 factorial is defined to be 0! = 1 and 1 factorial is 1! = 1.  To find the factorial button on the TI83Plus, press the [MATH] button and click on the arrow to the right three times until it highlights PRB across the top, and then select option 4: ! and hit [enter].  To calculate 5! input the value 5 first, then [math] PRB select option 4: ! [enter] [enter] = 120   Factorial button on the calculator   Math to PRB to option 4.    Sometimes we are trying to select r objects from n total objects. The number of ways to do this depends on whether the order you choose the r objects matters or not. As an example, if you are trying to call a person on the phone, you have to have their number in the right order. Otherwise, you call someone you did not mean to call. In this case, the order of the numbers matters.  However, you were picking random numbers for the lottery, it does not matter which number you pick first or last. As long as you have the same correct numbers that the lottery people pick, you win. In this case the order does not matter.  A permutation is an arrangement of items with a specific order. You use permutations to count items when the order matters, such as passwords or phone numbers. When the order does not matter you use a combination since the order arrangement of items is not important. When you do a counting problem, the first thing you should ask yourself is “does order matter?”   Permutation Formula  Picking object from total object when order matters:    Example: Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?  Since the order matters we will use a permutation where total horses and positions.  Thus ways to finish the race.  To enter this in the calculator:  input the value 8 [math] PRB select option 4: ! [enter], hit the divide button, paratheses ( 8-3 ) [math] PRB select option 4: ! [enter] [enter]   Factorial calculation on the calculator   Math to PRB to option 4.    Alternatively, you can use the permutation function in the probability menu. Enter the value 8 first, [MATH] button and three arrows to the right for PRB across the top, then select option 2: nPr, hit [enter] and type the value 3, then [enter] again.   Permutation on the calculator   Math to PRB to option 2.     Combination Formula  Picking object from total object when order does not matters:    Example: In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is and we are selecting . Therefore, nCr = 30C5  Thus combinations for a group of 5 people.  To enter this in the calculator:  input 30 [math] PRB select option 4: ! [enter] divide button, paratheses ( 5 [math] PRB select option 4: ! [enter], the multiply button, then paratheses ( 30-5 ) [math] PRB select option 4: ! [enter], close paratheses ) , and finally [enter] to calculate it.   Combination calculation on the calculator   Math to PRB to option 4.    Alternatively, you can use the combination function in the probability menu. Enter the value 30 first, [MATH] button and three arrows to the right for PRB across the top, then select option 3: nCr, hit [enter] and type the value 5, then [enter] again.   Combination on the calculator   Math to PRB to option 3.     Practice Problems   Biology Club In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary\/treasurer be chosen?  This is a permutation since the order matters when choosing officers. 15P3 = 2730 ways to shoe officers   Chemistry Club In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen?  This is looking as a group where the order does not matter, thus a combination. 15C3 = 455 combinations for the committee.   license plates A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?  Use the counting principles since the letters can be repeated. There are 26 letters in the alphabet and 10 possible digits (0 through 9). 26x26x26x10x10x10 = 17,576,000 possible plates.   "
+  "body": " Conditional Probability    At the end of this section you will able to:    Determine if events are independent or dependent.    Determine the probability using \"given\" statements.    Distinguish between permutations and combinations.       Independent Events  Previously we found probabilities for compound events when one event was chosen. Now we will expand these concepts for when multiple events take place. We can still use a tree diagram to find all possible outcomes, but using some of the probability rules will simplify the process.  Two events A and B are independent events if the fact that A occurs does not affect the probability of B occurring. When flipping two coins, what happens on the first coin toss does not impact what happens on the second coin toss. Same with rolling multiple dice. Each dice roll is independent of the others.  When two events are independent, the probability of both occurring is   For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is   If we used a tree diagram, we would list the four outcomes for the die and add two branches to each die value to represent heads or tails. Since each outcome is equally likely on the dice and the coin, the probability for each event is 1\/8.  Practice Problems  A card is drawn from a standard deck of 52 cards and is replaced, then a second card is drawn. Find the probability of drawing a queen and then an king.  The probability of getting a queen is 4\/52 on the first draw, the card is replaced so the probability of drawing a king is 4\/52 on the second draw. Thus the probability P(Q and K) = 4\/52 x 4\/52 = 16\/2704 = 0.0059   A Harris poll found that 46% of Americans say they suffer great stress at least once a week. If three people are selected at random, find the probability that all three they suffer great stress at least one a week.  We will assume each person is independent so the probability is 0.46 for each person, thus    Approximately 9% of men have a type of color blindness that prevents them from distinguishing between red and green. If three men are selected at random, find the probability that all three will have this type of red-green color blindness.  We will assume each person is independent so the probability is 0.08 for each person, thus    A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random, its color is noted, and then returned to the bag. A second ball is randomly selected and its color noted. Find the following probabilities. Selecting two red marbles in a row. Selecting a blue marble and then a green marble.  Since the marbles are replaced we are looking at independent events, so the probability stays the same after each draw. or 9%   Since the marbles are replaced we are looking at independent events, so the probability of each color stays the same after each draw. or 10%   Other times the events are not equally likely. We can still use a tree diagram to find the outcomes, but we multiply the probability of each event along the tree to find the new probability outcomes.  During the 2022-23 NBA season, Jamal Murray of the Denver Nuggets had a free throw shooting percentage of 0.833. Assume that the probability Jamal Murray makes any given free throw is fixed at 0.833, and that free throws are independent of each other. Construct a tree diagram to help determine the probability of each event.  For each shot, Jamal will hit the basket to make the free throw or he will miss the shot. We will use H to represent he hit the basket and M for miss the basket. For his first shot, he either Hit or Miss, thus two branches. Off each branch he has two more lines to represent the Hit or Miss for the second shot. We still have the same four outcomes for two coin tosses, but the probabilities are not the same.  Since each Hit has a probability of 0.833, then each miss is the complement . We list this probabilities along the tree. Then we multiply along each branch for the probabilities for each outcome.   Tree diagram of two shots   lists four outcomes and probabilities.    Now use the tree diagram to answer the following questions about the outcomes when Jamal Murray shoots two free throws.  Example: What is the probability that he will make both shots?  Solution: we want Hit and Hit, thus P(HH) = 0.833 x 0.833 = 0.694    What is the probability that he will miss both shots?    We want Miss and Miss, thus P(MM) = 0.167 x 0.167 = 0.028      What is the probability that he will make exactly one free throw?    we want any outcome that has only one hit, so we will add each Hit outcome. Thus, P(HM) + P(MH) =0.139 + 0.139 = 0.278      What is the probability that he will make at least one free throw?    we want any outcome that is a hit, so we will add each outcome with a hit together. Thus, P(HH) +P(HM) + P(MH) = 0.694 + 0.139 + 0.139 = 0.972  Alternatively, we can use the complement of missing both shots. Thus 1-P(MM) = 1- 0.028 = 0.972      Dependent Events  Not all probabilistic events are independent. Sometimes the subsequent events depend on what has happened previously. If you think of a bag full of colored marbles. If you pull a marble out and do not replace it, the probability of drawing the same color on the next draw depends on what was removed. The probability of every event has now changed based on what has already happened.  A dependent event is when the outcome of the second event is dependent upon the outcome of the first event. The probability of what will occur on the second event is based off what occurs on the first event.  When two events are dependent, the probability of both occurring is   The formula reads as the product of the probability of event A times the probability of B occurring, given that A has already happened. This makes better sense with an example.  Three cards are drawn from a deck of 52 cards and not replaced. Find each probability of each event.  Example: Getting three Aces in a row.  Solutions: On the first draw there is 4\/52 chance of getting an Ace. You have an ace in your hand thus the probability that the next card is an Ace is 3\/51 since only 3 aces remain and 51 cards left in the deck. Now you have two aces in your hand, so the probability that the next is also is an ace is 2\/50 since two aces remain and 50 cards are left in the deck. Now we multiply these event together.       Drawing three Aces in a row.    On the first draw there is 4\/52 chance of getting an Ace. You have an ace in your hand thus the probability that the next card is an Ace is 3\/51 since only 3 aces remain and 51 cards left in the deck. Now you have two aces in your hand, so the probability that the next is also is an ace is 2\/50 since two aces remain and 50 cards are left in the deck. Now we multiply these event together.         Drawing a Jack, Queen, then King?    The chances that the first draw is a Jack is 4\/52, you have a Jack in your hand so the chances that the next card drawn is a Queen is 4\/51 cards that remain, then the chance the next card is a king is 4\/50. Thus       Drawing three spades in a row?    There are 13 spades in the deck, so the first draw has 13\/52 chance, the second draw ahs 12\/51 chance, and the third draw is 11\/20. Thus P(SSS) =13\/52 x 12\/51 x 11\/50 = 1716\/132600 =.0129    Practice Problems  A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize. Find the following probabilities. Selecting two red marbles in a row.  Since the marbles are not replaced in the bag we are looking at dependent events, so the probability change after each draw.    A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize. Find the following probabilities. Selecting a blue marble and then a green marble.  We will assume all the marbles are in the bag to begin with. Since the marbles are not replaced to the bag, we are looking at dependent events, so the probability will change after each draw.     Conditional Events   Conditional probability of an event B in relationship to an event A is defined as the probability that event B occurs after event A has already occurred. It’s the quotient of the events. P(B|A) = P(A and B) ÷ P(A)  The probability that Sam parks in a no-parking zone and gets a parking ticket is 6%, The probability that Sam cannot find a legal parking space thus parks in the no-parking zone is 20%. What’s the probability Sam will get a ticket given that he parks in a no-parking zone?  Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is   A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40, find the probability of selecting a yellow tennis ball on the second draw given that the first ball was yellow.  This is conditional probability. We are told that P(white and yellow) = .30 and P(white)=0.40. We need to find P(yellow|white) = P(white and yellow) divide by P(white) = 0.30\/0.40 = 0.75 or 75%.     Permutations and Combinations   There are times when the sample space or event space are very large, that it is not feasible to write it out. In that case, it helps to have mathematical tools for counting the size of the sample space and event space. These tools are known as counting techniques.   Counting Principle: If Task 1 can be performed in m ways, and Task 2 can be performed in n ways no matter how task 1 turns out, then the sequence task 1 and task 2 can be performed in m·n ways together (as a product).  Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options. How many different meals consisting of one salad, one main dish, and one dessert are possible?   Solution: There are three tasks to this meal, picking a salad, a main dish, and a dessert. The salad has 2 choices, the main dish has 6 choices, and the dessert has 3 options. Therefore there are different meals.  If we did this with a tree diagram, we would have 2 lines to represent the two salads, then each salad would have the 6 main dishes branched from it, then each of those branches would have the 3 desserts. If you list each unique outcome, there are 36 different meals.  Password How many three letter passwords can be made from the letters a, b, and c , if the letters can be reused?  3x3x3 = 27 passwords   Kentucky Derby Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?  We just need to fill three positions, thus ways for the first three positions.  Fun fact: The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom.   How many three letter passwords can be made from the letters a, b, and c if no letters can be repeated?   Solution: There are three tasks that must be done in this case. The tasks are to pick the first letter, then the second letter, and then the third letter. There are 3 options for the first letter, once it is chosen there are two remaining options for the second letter. Once one is chosen there is just one letter option for the last position. Therefore there are 3×2×1=6 unique passwords where the letters do not repeat.  We can also look at this in a tree diagram:  Many counting problems involve multiplying a list of decreasing numbers, such as the non-repeating letters in the password. The product of 3×2×1=3! is called a factorial . There is a special symbol ! for this and a special button on your calculator.   Factorial     As an example  There are a few special values: 0 factorial is defined to be 0! = 1 and 1 factorial is 1! = 1.  To find the factorial button on the TI83Plus, press the [MATH] button and click on the arrow to the right three times until it highlights PRB across the top, and then select option 4: ! and hit [enter].  To calculate 5! input the value 5 first, then [math] PRB select option 4: ! [enter] [enter] = 120   Factorial button on the calculator   Math to PRB to option 4.    Sometimes we are trying to select r objects from n total objects. The number of ways to do this depends on whether the order you choose the r objects matters or not. As an example, if you are trying to call a person on the phone, you have to have their number in the right order. Otherwise, you call someone you did not mean to call. In this case, the order of the numbers matters.  However, you were picking random numbers for the lottery, it does not matter which number you pick first or last. As long as you have the same correct numbers that the lottery people pick, you win. In this case the order does not matter.  A permutation is an arrangement of items with a specific order. You use permutations to count items when the order matters, such as passwords or phone numbers. When the order does not matter you use a combination since the order arrangement of items is not important. When you do a counting problem, the first thing you should ask yourself is “does order matter?”   Permutation Formula  Picking object from total object when order matters:    Example: Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?  Since the order matters we will use a permutation where total horses and positions.  Thus ways to finish the race.  To enter this in the calculator:  input the value 8 [math] PRB select option 4: ! [enter], hit the divide button, paratheses ( 8-3 ) [math] PRB select option 4: ! [enter] [enter]   Factorial calculation on the calculator   Math to PRB to option 4.    Alternatively, you can use the permutation function in the probability menu. Enter the value 8 first, [MATH] button and three arrows to the right for PRB across the top, then select option 2: nPr, hit [enter] and type the value 3, then [enter] again.   Permutation on the calculator   Math to PRB to option 2.     Combination Formula  Picking object from total object when order does not matters:    Example: In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is and we are selecting . Therefore, nCr = 30C5  Thus combinations for a group of 5 people.  To enter this in the calculator:  input 30 [math] PRB select option 4: ! [enter] divide button, paratheses ( 5 [math] PRB select option 4: ! [enter], the multiply button, then paratheses ( 30-5 ) [math] PRB select option 4: ! [enter], close paratheses ) , and finally [enter] to calculate it.   Combination calculation on the calculator   Math to PRB to option 4.    Alternatively, you can use the combination function in the probability menu. Enter the value 30 first, [MATH] button and three arrows to the right for PRB across the top, then select option 3: nCr, hit [enter] and type the value 5, then [enter] again.   Combination on the calculator   Math to PRB to option 3.     Practice Problems   Biology Club In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary\/treasurer be chosen?  This is a permutation since the order matters when choosing officers. 15P3 = 2730 ways to shoe officers   Chemistry Club In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen?  This is looking as a group where the order does not matter, thus a combination. 15C3 = 455 combinations for the committee.   license plates A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?  Use the counting principles since the letters can be repeated. There are 26 letters in the alphabet and 10 possible digits (0 through 9). 26x26x26x10x10x10 = 17,576,000 possible plates.   "
 },
 {
   "id": "CondProb-2",
@@ -2797,48 +3049,210 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.3",
   "title": "",
-  "body": "  At the end of this section you will able to:    Determine if events are independent or dependent.    Determine the probability using \"given\" statements    Distinguish between permutations and combinations     "
+  "body": "  At the end of this section you will able to:    Determine if events are independent or dependent.    Determine the probability using \"given\" statements.    Distinguish between permutations and combinations.     "
 },
 {
-  "id": "CondProb-4",
+  "id": "subsec-Independent-3",
   "level": "2",
-  "url": "CondProb.html#CondProb-4",
+  "url": "CondProb.html#subsec-Independent-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "independent events "
+},
+{
+  "id": "subsec-Independent-8",
+  "level": "2",
+  "url": "CondProb.html#subsec-Independent-8",
+  "type": "Checkpoint",
+  "number": "4.3.1",
+  "title": "",
+  "body": "A card is drawn from a standard deck of 52 cards and is replaced, then a second card is drawn. Find the probability of drawing a queen and then an king.  The probability of getting a queen is 4\/52 on the first draw, the card is replaced so the probability of drawing a king is 4\/52 on the second draw. Thus the probability P(Q and K) = 4\/52 x 4\/52 = 16\/2704 = 0.0059  "
+},
+{
+  "id": "subsec-Independent-9",
+  "level": "2",
+  "url": "CondProb.html#subsec-Independent-9",
+  "type": "Checkpoint",
+  "number": "4.3.2",
+  "title": "",
+  "body": "A Harris poll found that 46% of Americans say they suffer great stress at least once a week. If three people are selected at random, find the probability that all three they suffer great stress at least one a week.  We will assume each person is independent so the probability is 0.46 for each person, thus   "
+},
+{
+  "id": "subsec-Independent-10",
+  "level": "2",
+  "url": "CondProb.html#subsec-Independent-10",
+  "type": "Checkpoint",
+  "number": "4.3.3",
+  "title": "",
+  "body": "Approximately 9% of men have a type of color blindness that prevents them from distinguishing between red and green. If three men are selected at random, find the probability that all three will have this type of red-green color blindness.  We will assume each person is independent so the probability is 0.08 for each person, thus   "
+},
+{
+  "id": "subsec-Independent-11",
+  "level": "2",
+  "url": "CondProb.html#subsec-Independent-11",
+  "type": "Checkpoint",
+  "number": "4.3.4",
+  "title": "",
+  "body": "A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random, its color is noted, and then returned to the bag. A second ball is randomly selected and its color noted. Find the following probabilities. Selecting two red marbles in a row. Selecting a blue marble and then a green marble.  Since the marbles are replaced we are looking at independent events, so the probability stays the same after each draw. or 9%   Since the marbles are replaced we are looking at independent events, so the probability of each color stays the same after each draw. or 10%  "
+},
+{
+  "id": "MurrayTwoShots",
+  "level": "2",
+  "url": "CondProb.html#MurrayTwoShots",
+  "type": "Figure",
+  "number": "4.3.5",
+  "title": "",
+  "body": " Tree diagram of two shots   lists four outcomes and probabilities.   "
+},
+{
+  "id": "subsec-Independent-20",
+  "level": "2",
+  "url": "CondProb.html#subsec-Independent-20",
+  "type": "Example",
+  "number": "4.3.6",
+  "title": "",
+  "body": "  What is the probability that he will miss both shots?    We want Miss and Miss, thus P(MM) = 0.167 x 0.167 = 0.028   "
+},
+{
+  "id": "subsec-Independent-21",
+  "level": "2",
+  "url": "CondProb.html#subsec-Independent-21",
+  "type": "Example",
+  "number": "4.3.7",
+  "title": "",
+  "body": "  What is the probability that he will make exactly one free throw?    we want any outcome that has only one hit, so we will add each Hit outcome. Thus, P(HM) + P(MH) =0.139 + 0.139 = 0.278   "
+},
+{
+  "id": "subsec-Independent-22",
+  "level": "2",
+  "url": "CondProb.html#subsec-Independent-22",
+  "type": "Example",
+  "number": "4.3.8",
+  "title": "",
+  "body": "  What is the probability that he will make at least one free throw?    we want any outcome that is a hit, so we will add each outcome with a hit together. Thus, P(HH) +P(HM) + P(MH) = 0.694 + 0.139 + 0.139 = 0.972  Alternatively, we can use the complement of missing both shots. Thus 1-P(MM) = 1- 0.028 = 0.972   "
+},
+{
+  "id": "subsec-Dependent-3",
+  "level": "2",
+  "url": "CondProb.html#subsec-Dependent-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dependent event "
+},
+{
+  "id": "subsec-Dependent-6",
+  "level": "2",
+  "url": "CondProb.html#subsec-Dependent-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "not replaced. "
+},
+{
+  "id": "subsec-Dependent-10",
+  "level": "2",
+  "url": "CondProb.html#subsec-Dependent-10",
+  "type": "Example",
+  "number": "4.3.9",
+  "title": "",
+  "body": "  Drawing three Aces in a row.    On the first draw there is 4\/52 chance of getting an Ace. You have an ace in your hand thus the probability that the next card is an Ace is 3\/51 since only 3 aces remain and 51 cards left in the deck. Now you have two aces in your hand, so the probability that the next is also is an ace is 2\/50 since two aces remain and 50 cards are left in the deck. Now we multiply these event together.      "
+},
+{
+  "id": "subsec-Dependent-11",
+  "level": "2",
+  "url": "CondProb.html#subsec-Dependent-11",
+  "type": "Example",
+  "number": "4.3.10",
+  "title": "",
+  "body": "  Drawing a Jack, Queen, then King?    The chances that the first draw is a Jack is 4\/52, you have a Jack in your hand so the chances that the next card drawn is a Queen is 4\/51 cards that remain, then the chance the next card is a king is 4\/50. Thus    "
+},
+{
+  "id": "subsec-Dependent-12",
+  "level": "2",
+  "url": "CondProb.html#subsec-Dependent-12",
+  "type": "Example",
+  "number": "4.3.11",
+  "title": "",
+  "body": "  Drawing three spades in a row?    There are 13 spades in the deck, so the first draw has 13\/52 chance, the second draw ahs 12\/51 chance, and the third draw is 11\/20. Thus P(SSS) =13\/52 x 12\/51 x 11\/50 = 1716\/132600 =.0129   "
+},
+{
+  "id": "subsec-Dependent-14",
+  "level": "2",
+  "url": "CondProb.html#subsec-Dependent-14",
+  "type": "Checkpoint",
+  "number": "4.3.12",
+  "title": "",
+  "body": "A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize. Find the following probabilities. Selecting two red marbles in a row.  Since the marbles are not replaced in the bag we are looking at dependent events, so the probability change after each draw.   "
+},
+{
+  "id": "subsec-Dependent-15",
+  "level": "2",
+  "url": "CondProb.html#subsec-Dependent-15",
+  "type": "Checkpoint",
+  "number": "4.3.13",
+  "title": "",
+  "body": "A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize. Find the following probabilities. Selecting a blue marble and then a green marble.  We will assume all the marbles are in the bag to begin with. Since the marbles are not replaced to the bag, we are looking at dependent events, so the probability will change after each draw.  "
+},
+{
+  "id": "subsec-Conditional-2",
+  "level": "2",
+  "url": "CondProb.html#subsec-Conditional-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Conditional probability "
+},
+{
+  "id": "subsec-Conditional-5",
+  "level": "2",
+  "url": "CondProb.html#subsec-Conditional-5",
+  "type": "Checkpoint",
+  "number": "4.3.14",
+  "title": "",
+  "body": "A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40, find the probability of selecting a yellow tennis ball on the second draw given that the first ball was yellow.  This is conditional probability. We are told that P(white and yellow) = .30 and P(white)=0.40. We need to find P(yellow|white) = P(white and yellow) divide by P(white) = 0.30\/0.40 = 0.75 or 75%.  "
+},
+{
+  "id": "CondProb-8",
+  "level": "2",
+  "url": "CondProb.html#CondProb-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Counting Principle: "
 },
 {
-  "id": "CondProb-8",
+  "id": "CondProb-12",
   "level": "2",
-  "url": "CondProb.html#CondProb-8",
+  "url": "CondProb.html#CondProb-12",
   "type": "Checkpoint",
-  "number": "4.3.1",
+  "number": "4.3.15",
   "title": "Password.",
   "body": "Password How many three letter passwords can be made from the letters a, b, and c , if the letters can be reused?  3x3x3 = 27 passwords  "
-},
-{
-  "id": "CondProb-9",
-  "level": "2",
-  "url": "CondProb.html#CondProb-9",
-  "type": "Checkpoint",
-  "number": "4.3.2",
-  "title": "Kentucky Derby.",
-  "body": "Kentucky Derby Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?  We just need to fill three positions, thus ways for the first three positions.  Fun fact: The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom.  "
 },
 {
   "id": "CondProb-13",
   "level": "2",
   "url": "CondProb.html#CondProb-13",
+  "type": "Checkpoint",
+  "number": "4.3.16",
+  "title": "Kentucky Derby.",
+  "body": "Kentucky Derby Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?  We just need to fill three positions, thus ways for the first three positions.  Fun fact: The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom.  "
+},
+{
+  "id": "CondProb-17",
+  "level": "2",
+  "url": "CondProb.html#CondProb-17",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "factorial "
 },
 {
-  "id": "CondProb-14",
+  "id": "CondProb-18",
   "level": "2",
-  "url": "CondProb.html#CondProb-14",
+  "url": "CondProb.html#CondProb-18",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2849,23 +3263,23 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CondProb.html#FactorialButton",
   "type": "Figure",
-  "number": "4.3.3",
+  "number": "4.3.17",
   "title": "",
   "body": " Factorial button on the calculator   Math to PRB to option 4.   "
 },
 {
-  "id": "CondProb-23",
+  "id": "CondProb-27",
   "level": "2",
-  "url": "CondProb.html#CondProb-23",
+  "url": "CondProb.html#CondProb-27",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "permutation combination "
 },
 {
-  "id": "CondProb-24",
+  "id": "CondProb-28",
   "level": "2",
-  "url": "CondProb.html#CondProb-24",
+  "url": "CondProb.html#CondProb-28",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2876,7 +3290,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CondProb.html#FactorialCalc",
   "type": "Figure",
-  "number": "4.3.4",
+  "number": "4.3.18",
   "title": "",
   "body": " Factorial calculation on the calculator   Math to PRB to option 4.   "
 },
@@ -2885,14 +3299,14 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CondProb.html#PermuationCalc",
   "type": "Figure",
-  "number": "4.3.5",
+  "number": "4.3.19",
   "title": "",
   "body": " Permutation on the calculator   Math to PRB to option 2.   "
 },
 {
-  "id": "CondProb-34",
+  "id": "CondProb-38",
   "level": "2",
-  "url": "CondProb.html#CondProb-34",
+  "url": "CondProb.html#CondProb-38",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2903,7 +3317,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CondProb.html#FactorialCombo",
   "type": "Figure",
-  "number": "4.3.6",
+  "number": "4.3.20",
   "title": "",
   "body": " Combination calculation on the calculator   Math to PRB to option 4.   "
 },
@@ -2912,43 +3326,43 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CondProb.html#CombinationCalc",
   "type": "Figure",
-  "number": "4.3.7",
+  "number": "4.3.21",
   "title": "",
   "body": " Combination on the calculator   Math to PRB to option 3.   "
 },
 {
-  "id": "CondProb-43",
+  "id": "CondProb-47",
   "level": "2",
-  "url": "CondProb.html#CondProb-43",
+  "url": "CondProb.html#CondProb-47",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Practice Problems "
 },
 {
-  "id": "CondProb-44",
+  "id": "CondProb-48",
   "level": "2",
-  "url": "CondProb.html#CondProb-44",
+  "url": "CondProb.html#CondProb-48",
   "type": "Checkpoint",
-  "number": "4.3.8",
+  "number": "4.3.22",
   "title": "Biology Club.",
   "body": "Biology Club In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary\/treasurer be chosen?  This is a permutation since the order matters when choosing officers. 15P3 = 2730 ways to shoe officers  "
 },
 {
-  "id": "CondProb-45",
+  "id": "CondProb-49",
   "level": "2",
-  "url": "CondProb.html#CondProb-45",
+  "url": "CondProb.html#CondProb-49",
   "type": "Checkpoint",
-  "number": "4.3.9",
+  "number": "4.3.23",
   "title": "Chemistry Club.",
   "body": "Chemistry Club In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen?  This is looking as a group where the order does not matter, thus a combination. 15C3 = 455 combinations for the committee.  "
 },
 {
-  "id": "CondProb-46",
+  "id": "CondProb-50",
   "level": "2",
-  "url": "CondProb.html#CondProb-46",
+  "url": "CondProb.html#CondProb-50",
   "type": "Checkpoint",
-  "number": "4.3.10",
+  "number": "4.3.24",
   "title": "license plates.",
   "body": "license plates A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?  Use the counting principles since the letters can be repeated. There are 26 letters in the alphabet and 10 possible digits (0 through 9). 26x26x26x10x10x10 = 17,576,000 possible plates.  "
 },
@@ -2959,7 +3373,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Probability Distribution",
-  "body": " Probability Distribution    At the end of this section you will able to:    Create a probability distrubtion.    Calculate the events from a probability distribution.    Calculate the mean and standard deviaton for probabilty distributions      "
+  "body": " Probability Distribution    At the end of this section you will able to:    Create a probability distribution.    Calculate the events from a probability distribution.    Calculate the mean and standard deviaton for probability distributions      Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.  We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values.   Pre-Class Activity: Dice Data   Each person will roll a die 50 times and keep track of the number that lands face up each time. It’s handy using a tally for each dice value. Then find the total frequency for each dice value and then its corresponding probability. There is a link for some virtual dice below.  Online Dice: Virtual Dice   Below is my data for 50 dice rolls.   Sample of dice data table   lists dice number and probabilities.    Next, we want to graph the frequency or the probabilities to see the shape of the distribution. Using a graphing calculator, enter the dice number in and the frequency in . Use the [STAT] button and select option 1: Edit [enter] to enter the data.   Entering dice data into calculator   Entering dice data into calculator.    Create a histogram on the calculator. Use [2nd] [y =] button for the [Stat Plot] and select the first option and [enter]. Make sure ON is highlight or hit [enter] to turn on the graph. Arrow down once to TYPE and scroll over to the histogram which is the third image and hit [enter], then identify where the data is located, Xlist: and Freq: . Make sure to adjust the [Window] to scale for x = [0,7] and y = [0, largest frequency] and then [graph]. (If you do not have a graphing calculator you can construct a bar graph by hand. For StatKey you will have to list all 50 dice rolls individually.)   Graph of dice frequencies   Histogram of dice frequencies is approximately uniform.    How would you describe the shape of your distribution? What does that tell you about the probability of each event? We will compare your distribution in class.   Understanding the Basics  Let us review some vocabulary that we will be using in this section. Recall from Chapter 1 that a variable was defined as a characteristic that can assume different values. Since we are focusing on probability we will use random variables.  A random variable is a variable whose values are determined by chance. The value of your dice roll was random. Each student in class will likely have differing results.   Discrete variables have values that can be counted (whole numbers). The number of sixes that was rolled is discrete. The number of tables in each classroom is also discrete. While continuous variables can assume any real number value. The temperature outside does not jump from 75 to 76, it can be any temperature in between these endpoints such as 75.6 to 75.83.  When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically.    A discrete probability distribution consists of the values a random variable can assume and the corresponding probabilities of those values.    If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth.  Discrete Variables  Which of the following variables are discrete? Select all statements that apply.     The number of energy drinks you purchased each day.    Yes, counting the number of drinks is discrete.      Time to complete the Bolder Boulder 10K run..    Time is continuous. The 2025 winning time was 28:21 minutes.      Speed of swimmers in 100 m breaststroke.    Speed is a continuous rate.      Number of clients an insurance agent has.    Yes, counting the number of clients is discrete.     Continuous Variables  Which of the following variables are continuous? Select all statements that apply.     The weight of players on the football team.    Yes, weight is continuous.      The number of credit hours students are taking this semester.    Credit hours will be discrete.      The number of pets students have.    The number of pets is discrete.      Speed of swimmers in 100 m breaststroke.    Speed of swimmers will be continuous.     Probability Distribution Determine whether the following table is an appropriate probability distribution. Explain why or why not.   probabilities of -.05, 0.18, 0.28, 1.22.    No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1.   Probability Distribution Is the following table an appropriate probability distribution? Explain why or why not.   probabilities of .35, 0.25, 0.15, .25.    Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1.     Summary Statistics  The next step in our adventure with probability distributions is to find the summary statistics – the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time.  So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move – on average, for the game?  If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data.  How can we do this theoretically? First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21\/6 = 3.5 spaces on average. Now let’s look at the college version. We create the theoretical probability distribution table – we list the dice numbers and their probabilities. We are going to multiply each event by it’s probability and then add them all together.   Theoretical dice distribution   lists dice number and theoretical values of 1\/6.    The mean is       The mean of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability. where each X is one of the outcomes and each P(X) is the corresponding probability.    Now let's find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together.    dice probabilities of .20, .18, .16, .14, .12, .20    Mean is   Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.    To find the variance , subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products. where each represents the outcome, is the mean, and is the corresponding probability.    Find the variance for 50 dice rolls.       The standard deviation is the square root of the variance. It measures how spread out the values are from the mean.     Find the standard deviation for 50 dice rolls.     From the center of 3.4 most values are within 1.8 of it.    Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 credit cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is    Variance is    Standard deviation is      Expected Value  Another concept related to the mean for a probability distribution is that of the expected value or expectations over time. Expected values can be used in various types of games of chance and insurance. Note that the expected value formula is the same as the theoretical mean formula.    The expected value of a discrete probability distribution is the theoretical average of the variable. It is the net gain of each outcome multiplied by its probability.     The Greeley Fire Department wishes to raise $5000 to purchase some new equipment. They decide to conduct a raffle. A cash prize of $5000 is to be awarded. If 2500 tickets are sold at $5 each find the expected gain per ticket. Are they selling enough tickets to reach their goal?  The first step is creating the probability distribution table. We want the net gain and the probability for each event. We have two main events: the person wins the raffle or loses. Since each person must pay $5 for the ticket we take the prize of 5000-5=4995 as the net profit outcome for a win. If the person loses, they are out the 5 thus -5 is the outcome. Since there is just one winner, the probability is 1\/2500 since 2500 tickets are sold. There are 2499 losing tickets thus the probability of losing is 2499\/2500.    win 1\/2500 and lose 2499\/2500.    The expected value is which means if a person buys a raffle ticket, they lose on average $3 per ticket.  This means the fire department gains $3 per ticket. Therefore, the Greeley Fire department gains 3(2500) = $7500 profit from the raffle.  Another way to look at it is $5(2500 tickets) - $5000 prize = $7500 profit for the fire department. So either way they will reach their goal.    Expected Value If one thousand tickets are sold at $1 each in a raffle for a TV valued at $350, what is the expected value if you purchase one ticket?  The net win is $349 with a probability of 1\/1000. If you lose, the outcome is -1 with a probability of 999\/1000. Therefore, the expected value . You lose about $.65 for each ticket.     Using Technology  Lucky for us, we can use technology to help us find the summary statistics for a probability distribution. Let’s revisit the 50 dice rolls.    dice probabilities of .20, .18, .16, .14, .12, .20    To enter the data use [STAT] button and under EDIT select option 1: Edit [enter] to input the values. Enter the dice number in L1 and the probability in L2.    input values into calculator    To find the summary statistics begin with the [STAT] button, use the arrow to the right once to highlight CALC across the top and select option 1: 1-var Stats and [enter]. Identify where the data is located as [2nd] 1 [,] [2nd] 2 [enter] on the TI83. On the TI84 the Xlist is L1 and Freq is L2 and then Calculate.   Summary statistics on calculator   summary values on calculator    This gives the mean 3.4 and population standard deviation 1.8 (this is the only time we will use σx). To get the variance you will need to square the standard deviation, thus     Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is and the standard deviation is and the variance is          Practice Problems   "
 },
 {
   "id": "ProbDist-2",
@@ -2968,7 +3382,223 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.4",
   "title": "",
-  "body": "  At the end of this section you will able to:    Create a probability distrubtion.    Calculate the events from a probability distribution.    Calculate the mean and standard deviaton for probabilty distributions     "
+  "body": "  At the end of this section you will able to:    Create a probability distribution.    Calculate the events from a probability distribution.    Calculate the mean and standard deviaton for probability distributions     "
+},
+{
+  "id": "ProbDist-5",
+  "level": "2",
+  "url": "ProbDist.html#ProbDist-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Pre-Class Activity: Dice Data "
+},
+{
+  "id": "DiceDataTable",
+  "level": "2",
+  "url": "ProbDist.html#DiceDataTable",
+  "type": "Figure",
+  "number": "4.4.1",
+  "title": "",
+  "body": " Sample of dice data table   lists dice number and probabilities.   "
+},
+{
+  "id": "DiceDataInput",
+  "level": "2",
+  "url": "ProbDist.html#DiceDataInput",
+  "type": "Figure",
+  "number": "4.4.2",
+  "title": "",
+  "body": " Entering dice data into calculator   Entering dice data into calculator.   "
+},
+{
+  "id": "DiceDataGraph",
+  "level": "2",
+  "url": "ProbDist.html#DiceDataGraph",
+  "type": "Figure",
+  "number": "4.4.3",
+  "title": "",
+  "body": " Graph of dice frequencies   Histogram of dice frequencies is approximately uniform.   "
+},
+{
+  "id": "subsec-ProbDistBasics-3",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistBasics-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "random variable "
+},
+{
+  "id": "subsec-ProbDistBasics-4",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistBasics-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Discrete variables continuous variables "
+},
+{
+  "id": "def-ProbabilityDistribution",
+  "level": "2",
+  "url": "ProbDist.html#def-ProbabilityDistribution",
+  "type": "Definition",
+  "number": "4.4.4",
+  "title": "",
+  "body": "  A discrete probability distribution consists of the values a random variable can assume and the corresponding probabilities of those values.   "
+},
+{
+  "id": "ProbDiscrete-matching",
+  "level": "2",
+  "url": "ProbDist.html#ProbDiscrete-matching",
+  "type": "Checkpoint",
+  "number": "4.4.5",
+  "title": "Discrete Variables.",
+  "body": "Discrete Variables  Which of the following variables are discrete? Select all statements that apply.     The number of energy drinks you purchased each day.    Yes, counting the number of drinks is discrete.      Time to complete the Bolder Boulder 10K run..    Time is continuous. The 2025 winning time was 28:21 minutes.      Speed of swimmers in 100 m breaststroke.    Speed is a continuous rate.      Number of clients an insurance agent has.    Yes, counting the number of clients is discrete.    "
+},
+{
+  "id": "ProbContin-matching",
+  "level": "2",
+  "url": "ProbDist.html#ProbContin-matching",
+  "type": "Checkpoint",
+  "number": "4.4.6",
+  "title": "Continuous Variables.",
+  "body": "Continuous Variables  Which of the following variables are continuous? Select all statements that apply.     The weight of players on the football team.    Yes, weight is continuous.      The number of credit hours students are taking this semester.    Credit hours will be discrete.      The number of pets students have.    The number of pets is discrete.      Speed of swimmers in 100 m breaststroke.    Speed of swimmers will be continuous.    "
+},
+{
+  "id": "subsec-ProbDistBasics-10",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistBasics-10",
+  "type": "Checkpoint",
+  "number": "4.4.7",
+  "title": "Probability Distribution.",
+  "body": "Probability Distribution Determine whether the following table is an appropriate probability distribution. Explain why or why not.   probabilities of -.05, 0.18, 0.28, 1.22.    No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1.  "
+},
+{
+  "id": "subsec-ProbDistBasics-11",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistBasics-11",
+  "type": "Checkpoint",
+  "number": "4.4.9",
+  "title": "Probability Distribution.",
+  "body": "Probability Distribution Is the following table an appropriate probability distribution? Explain why or why not.   probabilities of .35, 0.25, 0.15, .25.    Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1.  "
+},
+{
+  "id": "DiceDataTable2",
+  "level": "2",
+  "url": "ProbDist.html#DiceDataTable2",
+  "type": "Figure",
+  "number": "4.4.11",
+  "title": "",
+  "body": " Theoretical dice distribution   lists dice number and theoretical values of 1\/6.   "
+},
+{
+  "id": "def-ProbDistMean",
+  "level": "2",
+  "url": "ProbDist.html#def-ProbDistMean",
+  "type": "Definition",
+  "number": "4.4.12",
+  "title": "",
+  "body": "  The mean of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability. where each X is one of the outcomes and each P(X) is the corresponding probability.   "
+},
+{
+  "id": "subsec-ProbDistStatistics-11",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistStatistics-11",
+  "type": "Figure",
+  "number": "4.4.13",
+  "title": "",
+  "body": "  dice probabilities of .20, .18, .16, .14, .12, .20   "
+},
+{
+  "id": "def-ProbDistVariance",
+  "level": "2",
+  "url": "ProbDist.html#def-ProbDistVariance",
+  "type": "Definition",
+  "number": "4.4.14",
+  "title": "",
+  "body": "  To find the variance , subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products. where each represents the outcome, is the mean, and is the corresponding probability.   "
+},
+{
+  "id": "def-ProbDistStandardDeviation",
+  "level": "2",
+  "url": "ProbDist.html#def-ProbDistStandardDeviation",
+  "type": "Definition",
+  "number": "4.4.15",
+  "title": "",
+  "body": "  The standard deviation is the square root of the variance. It measures how spread out the values are from the mean.    "
+},
+{
+  "id": "subsec-ProbDistStatistics-22",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistStatistics-22",
+  "type": "Checkpoint",
+  "number": "4.4.16",
+  "title": "Statistics.",
+  "body": "Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 credit cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is    Variance is    Standard deviation is   "
+},
+{
+  "id": "def-ExpectedValue",
+  "level": "2",
+  "url": "ProbDist.html#def-ExpectedValue",
+  "type": "Definition",
+  "number": "4.4.18",
+  "title": "",
+  "body": "  The expected value of a discrete probability distribution is the theoretical average of the variable. It is the net gain of each outcome multiplied by its probability.    "
+},
+{
+  "id": "subsec-ExpectedValue-6",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ExpectedValue-6",
+  "type": "Figure",
+  "number": "4.4.19",
+  "title": "",
+  "body": "  win 1\/2500 and lose 2499\/2500.   "
+},
+{
+  "id": "subsec-ExpectedValue-11",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ExpectedValue-11",
+  "type": "Checkpoint",
+  "number": "4.4.20",
+  "title": "Expected Value.",
+  "body": "Expected Value If one thousand tickets are sold at $1 each in a raffle for a TV valued at $350, what is the expected value if you purchase one ticket?  The net win is $349 with a probability of 1\/1000. If you lose, the outcome is -1 with a probability of 999\/1000. Therefore, the expected value . You lose about $.65 for each ticket.  "
+},
+{
+  "id": "subsec-ProbDistCalc-3",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistCalc-3",
+  "type": "Figure",
+  "number": "4.4.21",
+  "title": "",
+  "body": "  dice probabilities of .20, .18, .16, .14, .12, .20   "
+},
+{
+  "id": "subsec-ProbDistCalc-5",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistCalc-5",
+  "type": "Figure",
+  "number": "4.4.22",
+  "title": "",
+  "body": "  input values into calculator   "
+},
+{
+  "id": "subsec-ProbDistCalc-7",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistCalc-7",
+  "type": "Figure",
+  "number": "4.4.23",
+  "title": "",
+  "body": " Summary statistics on calculator   summary values on calculator   "
+},
+{
+  "id": "subsec-ProbDistCalc-10",
+  "level": "2",
+  "url": "ProbDist.html#subsec-ProbDistCalc-10",
+  "type": "Checkpoint",
+  "number": "4.4.24",
+  "title": "Statistics.",
+  "body": "Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is and the standard deviation is and the variance is       "
 },
 {
   "id": "BinomialProb",
@@ -2977,7 +3607,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.5",
   "title": "Binomial Distribution",
-  "body": " Binomial Distribution    At the end of this section you will able to:    Determine the conditions of a binomial event.    Calcuate the probabilty for binomial event    Calculate the mean and standard deviaton for binomial events      "
+  "body": " Binomial Distribution    At the end of this section you will able to:    Determine the conditions of a binomial event.    Calcuate the probability for binomial event    Calculate the mean and standard deviaton for binomial events       Understanding the Basics  Another type of probability distribution that is created when there are just two events is the binomial probability distribution.  A binomial event contains two outcomes: such as male or female, you either win or lose a game, a test question is either true or false.  A binomial experiment is a probability experiment that satisfies the following four requirements:    There must be a fixed number of trials. This means that the experiment is repeated a specific number of times.    Each trial has only two outcomes (or can be reduced to the two outcomes of success and failure).    The outcomes of each trial must be independent of each other. what happens on one trial does not influence the outcomes of other trials.    The probability of success must remain the same for each trial.    Some notations we will be using for the binomial experiments:   is probability for success   is probability of failure  The numerical probability of success is   The numerical probability of failure is    is the number of trials in the experiment   is the number of successes in trials   Deriving the Binomial Probability Formula   Suppose you are given a 3-question multiple-choice test. Each question has 4 responses and only one is correct. Suppose you want to find the probability that you can just guess at the answers and get 2 questions right. To help with the idea that you are going to guess, suppose the test is in Martian writing.  Let = number of correct answers   Check binomial experiment     There must be a fixed number of trials.    Each trial has only two outcomes.    The outcomes independent of each other.    The probability of success must remain the same for each trial.      There are 3 questions, and each question is a trial, so there are a fixed number of trials. In this case, n = 3.    Getting the first question right has no affect on getting the second or third question right, thus the trials are independent.    Either you get the question right or you get it wrong, so there are only two outcomes. In this case, the success is getting the question right.    The probability of getting a question right is one out of four. This is the same for every trial since each question has 4 responses. In this case, and   This is a binomial experiment, since all of the properties are met.     Getting exactly two correct   First we need to find the sample space to determine how many ways to get exactly two correct answers out of three choices. Then we can find the probability of getting 2 correct answers.    Let's start with finding the sample space. We are going to let R represent the right answer was chosen and W represents the wrong answer was chosen. Using a tree diagram we can find the sample space  Sample space = {RRR, RRW, RWR, WRR, WWR, WRW, RWW, WWW}, where RRW means you get the first question right, the second question right, and the third question wrong. The same is similar for the other outcomes.  There are three ways to get 2 right answers which are {RRW, RWR, WRR}.     Probability exactly two correct   Find the probability of getting 2 correct answers in three questions.    Next, we need to determine the probability of getting exactly two right.  Look at just P(RRW) for the moment. Again, that means P(RRW) = P(R on 1st, R on 2nd, and W on 3rd). Since the trials are independent, P(RRW)= P(R on 1st) * P(R on 2nd) * P(W on 3rd) thus we just multiply p * p * q  P(RRW) = (1\/4)(1\/4)(3\/4) which is the same as   The same is true for P(RWR) and P(WRR).  To find the probability of the 3 ways to get 2 correct answers, just add these three probabilities together. You get      Generalize   Generalizing the pattern we can determine the probability of each event and the number of ways to get exactly X correct    Generalizing the pattern, we can determine the probability of each event with the number of ways to get exactly X correct answers from the sample space. There is 1 way to get 0 right, 3 ways with 1 right, 3 ways with 2 right, and 1 way with 3 right answers. Since the probability of the right answer is ¼ that is raised to the number of correct answers in the three questions and the ¾ is raised to the number of wrong answers.    summary of values       Distribution   Calculate the probabilities to create the distribution table.    Probability distribution of the number of correct responses in three test questions creates a binomial distribution as shown in the table.   Distribution of correct answers   probabilities of.42, .42, .14, .02      The outcomes of a binomial experiment and the corresponding probabilities of these outcomes is called a binomial distribution.     The Binomial Probability Formula for exactly X successes in n trials is      See how the first part of the binomial formula for the number of ways the event occurs is the same as the combination formula for nCr . Also note that the sum of the exponents equals for the total number of trials.    Application   During the first week of class, we investigated the eye colors of students. About 2% of the world population has green eyes and about 9% of the US population has green eyes. Consider a group of 20 people who were randomly selected from the US.  Let x = number of people with green eyes   Binomial experiment   Check if this is a binomial experiment.    1. There are 20 people, and each person is a trial, so there are a fixed number of trials. In this case, n = 20.  2. If you assume that each person in the group is chosen at random the eye color of one person doesn't affect the eye color of the next person, thus the trials are independent.  3. Either a person has green eyes or they do not have green eyes, so there are only two outcomes. In this case, success is a person who has green eyes.  4. The probability of a person having green eyes is 0.09 in the US. This is the same for every trial since each person has the same chance of having green eyes. and      None green   Find the probability that none in the group will have green eyes.    To find the number of ways 0 people have green eyes in a group of 20 people is . Thus      One green   Find the probability that exactly one person in the group will have green eyes.    To find the number of ways 1 person has green eyes in a group of 20 people is ways. Thus      Two green   Find the probability that exactly two people in the group will have green eyes.    To find the number of ways 2 people have green eyes in a group of 20 people is ways. Thus      Three green   Find the probability that exactly three people in the group will have green eyes.    To find the number of ways 3 people have green eyes in a group of 20 people is ways. Thus     We can also find the probability of multiple events by finding the binomial probability of each event and adding them together.   One or Two   Find the probability that exactly one or two people in the group will have green eyes.    Previously we found and , therefore P(1 or 2)      Less than three   Find the probability that less than 3 people in the group will have green eyes.    Since we want less than three we write it as . We do not count when . Previously we found and and , therefore P(0 or 1 or 2)    Sometimes using the complement helps us find the total probability.   More than two   Find the probability that more than 2 people in the group will have green eyes.    Since we want more than 2 we can write it as . We would need to find the probability of each event. Way too much work. So instead, use the complement which becomes . Previously we found , therefore . Which is much easier.     At most 18   Find the probability that at most18 people in the group will have green eyes.    Since we want at most 18 we can write it as . At most includes P(18). Using the complement, the expression becomes . and , note these are in scientific notation and basically 0. Therefore . Therefore it’s very likely that at most 18 will have green eyes.      Summary Statistics  As with probability distributions, we want to be able to compute the summary statistics for the binomial distribution. Here is the summary of the formulas where represents the number of trials or sample size, is the probability of the event success while is the complement which is the probability of failure.  Mean is   Variance is   Standard deviation is    Application: During the first week of class, we investigated the eye colors of students. About 2% of the world population has green eyes. Consider a group of 500 people who were randomly selected from the world. Find the mean number of people who will have green eyes. Also find the variance and standard deviation.  We know that thus and   Mean is   Variance is   Standard deviation is   The mean is 10 people with green eyes, this may vary by 9.8, with a spread of 3 people from the mean to represent what is typical.     statistics   During the first week of class, we investigated the eye colors of students. About 9% of the US population has green eyes. Consider a group of 500 people who were randomly selected from the US. Find the mean number of people who will have green eyes. Also find the variance and standard deviation.    We know that thus and  Mean is   Variance is   Standard deviation is   Estimate a mean of 45 people with green eyes in a sample of 500 people. The variance is 40.95 with a standard deviation of 6.4 which measures the spread from the mean.     autism   According to the Centers for Disease Control and Prevention (CDC), the estimated prevalence of autism spectrum disorder (ASD) in the United States for children aged 8 years in 2020 was 1 in 36. In a sample of 200 children find the mean, variance and standard deviation.    We know p=1\/36=.028 thus q=1-.028=.972 and n=020  Mean is   Variance is   Standard deviation is       Using Technology    Practice Problems   "
 },
 {
   "id": "BinomialProb-2",
@@ -2986,7 +3616,223 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.5",
   "title": "",
-  "body": "  At the end of this section you will able to:    Determine the conditions of a binomial event.    Calcuate the probabilty for binomial event    Calculate the mean and standard deviaton for binomial events     "
+  "body": "  At the end of this section you will able to:    Determine the conditions of a binomial event.    Calcuate the probability for binomial event    Calculate the mean and standard deviaton for binomial events     "
+},
+{
+  "id": "subsec-BinomialBasics-3",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "binomial event "
+},
+{
+  "id": "subsec-BinomialBasics-4",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "binomial experiment "
+},
+{
+  "id": "subsec-BinomialBasics-13",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Deriving the Binomial Probability Formula "
+},
+{
+  "id": "subsec-BinomialBasics-16",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-16",
+  "type": "Example",
+  "number": "4.5.1",
+  "title": "Check binomial experiment.",
+  "body": " Check binomial experiment     There must be a fixed number of trials.    Each trial has only two outcomes.    The outcomes independent of each other.    The probability of success must remain the same for each trial.      There are 3 questions, and each question is a trial, so there are a fixed number of trials. In this case, n = 3.    Getting the first question right has no affect on getting the second or third question right, thus the trials are independent.    Either you get the question right or you get it wrong, so there are only two outcomes. In this case, the success is getting the question right.    The probability of getting a question right is one out of four. This is the same for every trial since each question has 4 responses. In this case, and   This is a binomial experiment, since all of the properties are met.   "
+},
+{
+  "id": "subsec-BinomialBasics-17",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-17",
+  "type": "Example",
+  "number": "4.5.2",
+  "title": "Getting exactly two correct.",
+  "body": " Getting exactly two correct   First we need to find the sample space to determine how many ways to get exactly two correct answers out of three choices. Then we can find the probability of getting 2 correct answers.    Let's start with finding the sample space. We are going to let R represent the right answer was chosen and W represents the wrong answer was chosen. Using a tree diagram we can find the sample space  Sample space = {RRR, RRW, RWR, WRR, WWR, WRW, RWW, WWW}, where RRW means you get the first question right, the second question right, and the third question wrong. The same is similar for the other outcomes.  There are three ways to get 2 right answers which are {RRW, RWR, WRR}.   "
+},
+{
+  "id": "subsec-BinomialBasics-18",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-18",
+  "type": "Example",
+  "number": "4.5.3",
+  "title": "Probability exactly two correct.",
+  "body": " Probability exactly two correct   Find the probability of getting 2 correct answers in three questions.    Next, we need to determine the probability of getting exactly two right.  Look at just P(RRW) for the moment. Again, that means P(RRW) = P(R on 1st, R on 2nd, and W on 3rd). Since the trials are independent, P(RRW)= P(R on 1st) * P(R on 2nd) * P(W on 3rd) thus we just multiply p * p * q  P(RRW) = (1\/4)(1\/4)(3\/4) which is the same as   The same is true for P(RWR) and P(WRR).  To find the probability of the 3 ways to get 2 correct answers, just add these three probabilities together. You get    "
+},
+{
+  "id": "subsec-BinomialBasics-19",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-19",
+  "type": "Example",
+  "number": "4.5.4",
+  "title": "Generalize.",
+  "body": " Generalize   Generalizing the pattern we can determine the probability of each event and the number of ways to get exactly X correct    Generalizing the pattern, we can determine the probability of each event with the number of ways to get exactly X correct answers from the sample space. There is 1 way to get 0 right, 3 ways with 1 right, 3 ways with 2 right, and 1 way with 3 right answers. Since the probability of the right answer is ¼ that is raised to the number of correct answers in the three questions and the ¾ is raised to the number of wrong answers.    summary of values     "
+},
+{
+  "id": "subsec-BinomialBasics-20",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-20",
+  "type": "Example",
+  "number": "4.5.6",
+  "title": "Distribution.",
+  "body": " Distribution   Calculate the probabilities to create the distribution table.    Probability distribution of the number of correct responses in three test questions creates a binomial distribution as shown in the table.   Distribution of correct answers   probabilities of.42, .42, .14, .02     "
+},
+{
+  "id": "subsec-BinomialBasics-21",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "binomial distribution. "
+},
+{
+  "id": "def-BinomialFormula",
+  "level": "2",
+  "url": "BinomialProb.html#def-BinomialFormula",
+  "type": "Definition",
+  "number": "4.5.8",
+  "title": "",
+  "body": "  The Binomial Probability Formula for exactly X successes in n trials is    "
+},
+{
+  "id": "subsec-BinomialBasics-23",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-23",
+  "type": "Note",
+  "number": "4.5.9",
+  "title": "",
+  "body": " See how the first part of the binomial formula for the number of ways the event occurs is the same as the combination formula for nCr . Also note that the sum of the exponents equals for the total number of trials.  "
+},
+{
+  "id": "subsec-BinomialBasics-24",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Application "
+},
+{
+  "id": "subsec-BinomialBasics-27",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-27",
+  "type": "Example",
+  "number": "4.5.10",
+  "title": "Binomial experiment.",
+  "body": " Binomial experiment   Check if this is a binomial experiment.    1. There are 20 people, and each person is a trial, so there are a fixed number of trials. In this case, n = 20.  2. If you assume that each person in the group is chosen at random the eye color of one person doesn't affect the eye color of the next person, thus the trials are independent.  3. Either a person has green eyes or they do not have green eyes, so there are only two outcomes. In this case, success is a person who has green eyes.  4. The probability of a person having green eyes is 0.09 in the US. This is the same for every trial since each person has the same chance of having green eyes. and    "
+},
+{
+  "id": "subsec-BinomialBasics-28",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-28",
+  "type": "Example",
+  "number": "4.5.11",
+  "title": "None green.",
+  "body": " None green   Find the probability that none in the group will have green eyes.    To find the number of ways 0 people have green eyes in a group of 20 people is . Thus    "
+},
+{
+  "id": "subsec-BinomialBasics-29",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-29",
+  "type": "Example",
+  "number": "4.5.12",
+  "title": "One green.",
+  "body": " One green   Find the probability that exactly one person in the group will have green eyes.    To find the number of ways 1 person has green eyes in a group of 20 people is ways. Thus    "
+},
+{
+  "id": "subsec-BinomialBasics-30",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-30",
+  "type": "Example",
+  "number": "4.5.13",
+  "title": "Two green.",
+  "body": " Two green   Find the probability that exactly two people in the group will have green eyes.    To find the number of ways 2 people have green eyes in a group of 20 people is ways. Thus    "
+},
+{
+  "id": "subsec-BinomialBasics-31",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-31",
+  "type": "Example",
+  "number": "4.5.14",
+  "title": "Three green.",
+  "body": " Three green   Find the probability that exactly three people in the group will have green eyes.    To find the number of ways 3 people have green eyes in a group of 20 people is ways. Thus    "
+},
+{
+  "id": "subsec-BinomialBasics-33",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-33",
+  "type": "Example",
+  "number": "4.5.15",
+  "title": "One or Two.",
+  "body": " One or Two   Find the probability that exactly one or two people in the group will have green eyes.    Previously we found and , therefore P(1 or 2)    "
+},
+{
+  "id": "subsec-BinomialBasics-34",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-34",
+  "type": "Example",
+  "number": "4.5.16",
+  "title": "Less than three.",
+  "body": " Less than three   Find the probability that less than 3 people in the group will have green eyes.    Since we want less than three we write it as . We do not count when . Previously we found and and , therefore P(0 or 1 or 2)   "
+},
+{
+  "id": "subsec-BinomialBasics-36",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-36",
+  "type": "Example",
+  "number": "4.5.17",
+  "title": "More than two.",
+  "body": " More than two   Find the probability that more than 2 people in the group will have green eyes.    Since we want more than 2 we can write it as . We would need to find the probability of each event. Way too much work. So instead, use the complement which becomes . Previously we found , therefore . Which is much easier.   "
+},
+{
+  "id": "subsec-BinomialBasics-37",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialBasics-37",
+  "type": "Example",
+  "number": "4.5.18",
+  "title": "At most 18.",
+  "body": " At most 18   Find the probability that at most18 people in the group will have green eyes.    Since we want at most 18 we can write it as . At most includes P(18). Using the complement, the expression becomes . and , note these are in scientific notation and basically 0. Therefore . Therefore it’s very likely that at most 18 will have green eyes.   "
+},
+{
+  "id": "subsec-BinomialStatistics-6",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialStatistics-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Application: "
+},
+{
+  "id": "subsec-BinomialStatistics-13",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialStatistics-13",
+  "type": "Example",
+  "number": "4.5.19",
+  "title": "statistics.",
+  "body": " statistics   During the first week of class, we investigated the eye colors of students. About 9% of the US population has green eyes. Consider a group of 500 people who were randomly selected from the US. Find the mean number of people who will have green eyes. Also find the variance and standard deviation.    We know that thus and  Mean is   Variance is   Standard deviation is   Estimate a mean of 45 people with green eyes in a sample of 500 people. The variance is 40.95 with a standard deviation of 6.4 which measures the spread from the mean.   "
+},
+{
+  "id": "subsec-BinomialStatistics-14",
+  "level": "2",
+  "url": "BinomialProb.html#subsec-BinomialStatistics-14",
+  "type": "Example",
+  "number": "4.5.20",
+  "title": "autism.",
+  "body": " autism   According to the Centers for Disease Control and Prevention (CDC), the estimated prevalence of autism spectrum disorder (ASD) in the United States for children aged 8 years in 2020 was 1 in 36. In a sample of 200 children find the mean, variance and standard deviation.    We know p=1\/36=.028 thus q=1-.028=.972 and n=020  Mean is   Variance is   Standard deviation is    "
 },
 {
   "id": "ChapDistributions",
@@ -3508,7 +4354,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Graphing with R",
-  "body": " Graphing with R  In this section we will learn how to do serveral common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners.    At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.     First, add the Lesson 1 Graphing text file to your Using R Files folder and the Cereal.csv dataset.  You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should now see the Lesson 1 file and the Cereal data in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it in the bottom left panel.  Next, you will need to import the data file by clicking on the file and select Import Dataset , a new window will open to give you a preview of the spreadsheet and then click on the Import button at the bottom right. Once it is loaded into R Studio, in the bottom left panel type attach(Cereal) so you can call up the variable names.  Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors.   Boxplots  Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot. The graphs will show up in the bottom right panel of R Studio.   boxplot(Calories)    Image of Vertical Boxplot   Boxplot with values from 80 to 214.     Interpreting the Boxplot: The boxplot shows the smallest value at 80 and the largest is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The interquartile range = Q3-Q1 =160-113.2 = 46.8. The thick line in the middle is the median = 118 . To calculate the actual values use the summary command with the variable name.   summary(Calories)    Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.    Now let's add a label along the x-axis and make the boxplot horizontal.   boxplot(Calories,horizontal = TRUE,xlab = \"Calories per Serving\")  With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values.   Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.    Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol ~ followed by the categorical variable.   boxplot(Calories~Company)    Image of comparing boxplots   Boxplot for each company.     Comparing Boxplots: With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed.  Next we will add some color to the graph for fun and give the graph a main title. But investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right.   boxplot(Fat,horizontal = TRUE, col='blue', border='red',main=\"Fat Content\")    Image of Fat Content Boxplot   Boxplot with colors.           Histograms  Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.   hist(Sugars)    Image of histogram   Histogram of sugar content.    The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution.  Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of breaks we want. Suppose we want 10 bars instead of the default of four.   hist(Sugars,breaks=10)    Image of histogram   Histogram of sugar content with 10 bars.    This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.  Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title.   hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content')    Image of histogram for sodium   Histogram of sodium content.    This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms.    Categorical Graphs     Frequency Table   To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company.   table(Company)   Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.   Brand   c('General Mills', 'Kelloggs', 'Quacker')    Totals   c(13,11,6)       Pie Graph   Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the labels = Brand names were created.   pie(Totals, labels=Brand)   Next let us add some brighter colors to the graph and give it a main title.   pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies')    Bar Graph   Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created.   barplot(Totals, names.arg=Brand)   Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis.   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies')     Scatterplots   Scatterplots   Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the plot command and identify the x-variable first and then the y-variable.   plot(Fat,Carbs)   To add at title to the graph we add the main= to the command with the title in quotes.   plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates')   To find the linear correlation coefficient we use the cor command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative.   cor(Fat,Carbs)     Quantile Plots   We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the qqnorm command for the quantile plot. We can add the qqline command afterwards to draw a line through the data to see if it appears linear.   qqnorm(Calories)    qqline(Calories)   "
+  "body": " Graphing with R  In this section we will learn how to do serveral common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners.    At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.     First, add the Lesson 1 Graphing text file to your Using R Files folder and the Cereal.csv dataset.  You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should now see the Lesson 1 file and the Cereal datafile in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it directly in the bottom left panel.  Next, you will need to import the data file by clicking on the file and select Import Dataset , a new window will open to give you a preview of the spreadsheet and then click on the Import button at the bottom right. Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type attach(Cereal) so you can call up the variable names.  Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors.   Boxplots  Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot. The graphs will show up in the bottom right panel of R Studio.   boxplot(Calories)    Image of Vertical Boxplot   Boxplot with values from 80 to 214.     Interpreting the Boxplot: The boxplot shows the smallest value at 80 and the largest is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The interquartile range = Q3-Q1 =160-113.2 = 46.8. The thick line in the middle is the median = 118 . To calculate the actual values use the summary command with the variable name.   summary(Calories)    Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.    Now let's add a label along the x-axis and make the boxplot horizontal.   boxplot(Calories,horizontal = TRUE,xlab = \"Calories per Serving\")  With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values.   Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.    Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol ~ followed by the categorical variable.   boxplot(Calories~Company)    Image of comparing boxplots   Boxplot for each company.     Comparing Boxplots: With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed.  Next we will add some color to the graph for fun and give the graph a main title. But investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right.   boxplot(Fat,horizontal = TRUE, col='blue', border='red',main=\"Fat Content\")    Image of Fat Content Boxplot   Boxplot with colors.           Histograms  Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.   hist(Sugars)    Image of histogram   Histogram of sugar content.    The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution.  Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of breaks we want. Suppose we want 10 bars instead of the default of four.   hist(Sugars,breaks=10)    Image of histogram   Histogram of sugar content with 10 bars.    This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.  Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title.   hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content')    Image of histogram for sodium   Histogram of sodium content.    This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms.    Categorical Graphs     Frequency Table   To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company.   table(Company)   Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.   Brand   c('General Mills', 'Kelloggs', 'Quacker')    Totals   c(13,11,6)       Pie Graph   Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the labels = Brand names were created.   pie(Totals, labels=Brand)   Next let us add some brighter colors to the graph and give it a main title.   pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies')    Bar Graph   Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created.   barplot(Totals, names.arg=Brand)   Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis.   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies')     Scatterplots   Scatterplots   Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the plot command and identify the x-variable first and then the y-variable.   plot(Fat,Carbs)   To add at title to the graph we add the main= to the command with the title in quotes.   plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates')   To find the linear correlation coefficient we use the cor command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative.   cor(Fat,Carbs)     Quantile Plots   We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the qqnorm command for the quantile plot. We can add the qqline command afterwards to draw a line through the data to see if it appears linear.   qqnorm(Calories)    qqline(Calories)   "
 },
 {
   "id": "sec-GraphR-3",
@@ -3526,7 +4372,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Lesson 1 Graphing Cereal.csv "
+  "body": "Lesson 1 Graphing "
 },
 {
   "id": "sec-GraphR-5",
@@ -3841,7 +4687,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.1",
   "title": "UNC Data Sets",
-  "body": " UNC Data Sets  This section includes the data sets from UNC sports and research conducted by UNC faculty.  Bird Vocalization  Gettysburg Data   Vocal Mimicry of Parrots  A survey of vocal mimicry in companion parrots: Article.   Full data set: Parrots Data.   Survey 1  Survey 2  UNC Men Basketball  UNC Women Basketball  UNC Women Volleyball  Link to StatKey   "
+  "body": " UNC Data Sets  This section includes the data sets from UNC sports and research conducted by UNC faculty.  Bird Vocalization  Gettysburg Data   Vocal Mimicry of Parrots  A survey of vocal mimicry in companion parrots: Article.   Full data set: Parrots Data.    Cereal.csv    ClassSurvey1.csv    ClassSurvey2.csv   UNC Men Basketball  UNC Women Basketball  UNC Women Volleyball  Link to StatKey   "
 },
 {
   "id": "sec-UNCdata-5",
@@ -3859,7 +4705,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.2",
   "title": "Climate Data Sets",
-  "body": " Climate Data Sets  This section includes data sets to analyze climate change as well as the websites where the data was gathered for more current data.   Earthquakes   California Earthquakes:    Hurricanes       Severe Weather   Billion Dollar Weather Events:    Temperatures   Greeley:    Tornadoes   US Tornado Mapping:   "
+  "body": " Climate Data Sets  This section includes data sets to analyze climate change as well as the websites where the data was gathered for more current data.   Earthquakes   California Earthquakes:    Earthquakes April 2025    Hurricanes       Severe Weather   Billion Dollar Weather Events:    Temperatures   Greeley:    Tornadoes   US Tornado Mapping:   "
 },
 {
   "id": "sec-ClimateData-3",
@@ -3871,36 +4717,36 @@ var ptx_lunr_docs = [
   "body": "Earthquakes "
 },
 {
-  "id": "sec-ClimateData-5",
+  "id": "sec-ClimateData-6",
   "level": "2",
-  "url": "sec-ClimateData.html#sec-ClimateData-5",
+  "url": "sec-ClimateData.html#sec-ClimateData-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Hurricanes "
 },
 {
-  "id": "sec-ClimateData-7",
+  "id": "sec-ClimateData-8",
   "level": "2",
-  "url": "sec-ClimateData.html#sec-ClimateData-7",
+  "url": "sec-ClimateData.html#sec-ClimateData-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Severe Weather "
 },
 {
-  "id": "sec-ClimateData-9",
+  "id": "sec-ClimateData-10",
   "level": "2",
-  "url": "sec-ClimateData.html#sec-ClimateData-9",
+  "url": "sec-ClimateData.html#sec-ClimateData-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Temperatures "
 },
 {
-  "id": "sec-ClimateData-11",
+  "id": "sec-ClimateData-12",
   "level": "2",
-  "url": "sec-ClimateData.html#sec-ClimateData-11",
+  "url": "sec-ClimateData.html#sec-ClimateData-12",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
