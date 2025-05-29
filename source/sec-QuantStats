@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-QuantStats" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Descriptive Statistics for Quantitative Variables </title>
+    <title>Summary Statistics  </title>
 
     <introduction>
-        <p> In this chapter we will investigate multiple ways to describe the data with graphs and numerical statistics. </p>
+        <p> In this section we will investigate some ways to summarize the data with graphs and numerical statistics. </p>
       </introduction> 
 
       <objectives>
