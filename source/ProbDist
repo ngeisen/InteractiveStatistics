@@ -162,6 +162,7 @@
 <title>Probability Distribution</title> 
 <p> Is the following table an appropriate probability distribution? Explain why or why not.
  </p> 
+ 
 <figure> 
            <image source="ProbDist2.png" width="75%">
                 <shortdescription> probabilities of .35, 0.25, 0.15, .25.</shortdescription>
@@ -312,11 +313,51 @@ E(X)=\mu=\sum\left(X\cdot P(X)\right) </me> </p>
 <exercise>
 <title> Statistics </title> 
 <p> A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found. </p>
-<figure> 
-           <image source="Creditcards.png" width="75%">
-                <shortdescription> there are 0 to 4 cards with probabilities of ..08, .18, .27, .44, .03.</shortdescription>
-            </image>
-        </figure>
+<table>
+  <tabular top="medium">
+    <row bottom="medium">
+      <cell left="medium" right="medium">
+        Credit cards
+      </cell>
+      <cell right="medium">
+        0
+      </cell>
+      <cell right="medium">
+        1
+      </cell>
+      <cell right="medium">
+        2
+      </cell>
+      <cell right="medium">
+        3
+      </cell>
+      <cell right="medium">
+        4
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell left="medium" right="medium">
+        P(X)
+      </cell>
+      <cell right="medium">
+        0.08
+      </cell>
+      <cell right="medium">
+        0.18
+      </cell>
+      <cell right="medium">
+        0.27
+      </cell>
+      <cell right="medium">
+        0.44
+      </cell>
+      <cell right="medium">
+        0.03
+      </cell>
+    </row>
+  </tabular>
+</table>
+
 
 <p>Find the mean, variance, and standard deviation for the probability distribution. </p>
 
