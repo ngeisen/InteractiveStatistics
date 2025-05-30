@@ -20,8 +20,9 @@
 </ol>
 </objectives>
 
-
-
-
+<xi:include href="sec-SamplingDist.ptx" />
+<xi:include href="sec-BootstrapDist.ptx" />
+<xi:include href="sec-AssessNormality.ptx" />
+<xi:include href="sec-NormalDist.ptx" />
 
   </chapter>

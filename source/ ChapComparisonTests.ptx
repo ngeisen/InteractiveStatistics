@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ChapComparisonTests" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Testing</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <objectives>
+  <introduction>
+    <p> By the end of this chapter you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write appropriate hypotheses for a scenario </p>    </li>
+ <li> <p> Perform hypothesis tests for the mean, proportions, variance, and standard deviation </p>    </li>
+   <li> <p> Correctly interpret p-values to form a conclusion</p>    </li>
+  </ol>
+</objectives>
+
+  </chapter>

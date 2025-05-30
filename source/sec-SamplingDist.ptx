@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-SamplingDist" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sampling Distribution</title>
+  <p> Text of section. </p>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Construct and interpret a sampling distribution for the mean</p>    </li>
+    <li> <p> Construct and interpret a sampling distribution for proportions</p> </li>
+        
+</ol>
+</objectives>
+
+
+</section>

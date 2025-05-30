@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-AssessNormality" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Assessing Normality</title>
+  <p> Text of section. </p>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Determine if a variable is normally distributed </p>    </li>
+    <li> <p> Assessing normality with histogram, boxplot, and quantile plot.</p> </li>
+        </ol>
+</objectives>
+
+<p> Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed?  One way is to take a sample and look at the sample to determine if it appears normally distributed.  If the sample looks normal, then most likely the population is also.  Here are some guidelines that are used to help make that determination.</p>
+<ol> 
+<li> <p> <term>Histogram:</term>  Make a histogram.  For a normal distribution, the histogram should be roughly bell-shaped and symmetric.  For small samples, this is not very accurate, and another method may be needed.  A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.</p> </li>
+<li> <p> <term>Outliers:</term> For a normal distribution, there should not be more than one outlier.  One way to check for outliers is to use a box plot.  Outliers are values that are shown as dots or stars outside of the rest of the values when using technology. </p> </li>
+
+<li> <p> <term>Normal quantile plot: </term> This plot is provided through statistical software on a computer or graphing calculator. It plots the data values on one axis and its z-score on the other. If the points lie close to a line, the data comes from a distribution that is approximately normal.  If the points do not lie close to a line or they show a pattern that is curved, the data are likely to come from a distribution that is not normally distributed. </p> </li>
+</ol> 
+
+<p> If you are creating boxplots by hand, we check for outliers mathematically. Outliers are data values that are:</p>
+<ul>
+<li> <p> Greater than Quartile 3 plus 1.5 times the interquartile range (IQR) </p> </li>
+<li> <p> Below than Quartile 3 minus 1.5 times the interquartile range (IQR) </p> </li>
+<li> <p> Recall the IQR = Q3 – Q1 </p> </li>
+<li> <p> Note: if there is an outlier, that outlier could have a dramatic effect on the results especially if it is an extreme outlier.  However, there are times when a distribution has more than one outlier, but it is still normally distributed.  The guideline of only one outlier is just a guideline. </p> </li>
+</ul>
+
+
+
+
+
+
+
+
+</section>
