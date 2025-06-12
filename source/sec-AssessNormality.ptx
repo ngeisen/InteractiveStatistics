@@ -29,10 +29,91 @@
 <li> <p> Note: if there is an outlier, that outlier could have a dramatic effect on the results especially if it is an extreme outlier.  However, there are times when a distribution has more than one outlier, but it is still normally distributed.  The guideline of only one outlier is just a guideline. </p> </li>
 </ul>
 
+<p> We will look at a couple of examples to determine if the data comes from a population that is normally distributed. </p> 
+<p>  In Kiama, Australia, there is the world's largest blowhole.  The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 30 meters (98.4 feet). </p>
+        <figure xml:id="KiamaImage">
+            <caption>Image of Kiama Blowhole Eruption</caption>
+            <image source="KiamaBlowholeImage.png" width="50%">
+                <shortdescription>image of blowhole eruption.</shortdescription>
+            </image>
+        </figure>
+<p> The data table shows the times in seconds between the Kiama blowhole eruptions from a random day.  Do the data come from a population that is normally distributed? Explain why or why not. </p> 
+<figure xml:id="KiamaTimes">
+            <caption>Table of time between Kiama eruptions</caption>
+            <image source="KiamaTimes.png" width="75%">
+                <shortdescription>time in seconds between eruptions.</shortdescription>
+            </image>
+        </figure>
+<p> We will be using technology to determine the normality of this variable. </p> 
 
+<example> <title> Histogram </title> 
+<p> <term>Create a histogram on TI83/84:</term> </p>
+<p> Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1. </p> 
+<figure xml:id="EnterKiamaTimes">
+                        <image source="EnterKiamaTimes.png" width="50%">
+                <shortdescription>enter values in list 1.</shortdescription>
+            </image>
+        </figure>
+<p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1.  Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1.  Use [2nd] [1] to identify L1.  Freq: should be a 1 since each value is listed individually. </p> 
+<p> You will need to adjust the [WINDOW] based on the data values.  The Xmin should be the smallest data value while Xmax is the largest data value.  We will select Xmin = 0 and Xmax = 200 with Xscl =20.  Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be.  You can always change this if you need to.  Yscl is just how often you would like to see a tick mark on the y-axis. </p> 
+<figure xml:id="KiamaHistogram">
+                        <image source="KiamaHisto.png" >
+                <shortdescription>histogram shows smaller times occur more often than larger times between eruptions.</shortdescription>
+            </image>
+        </figure>
 
+<p> Now press [GRAPH] button to see the histogram.</p>
+<solution> 
+<p>The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions. </p> 
+</solution> 
+</example> 
 
+<example>  <title> Boxplot </title> 
+<p> <term>Create a boxplot on the TI-83/84 to check for outliers </term> </p> 
+<p> Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again.  Press [enter].</p>
+<p> Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist:  L1 and Freq is 1. We can keep the same Window.</p> <p>  Hit the [GRAPH] button.  </p>
+<figure xml:id="KiamaBoxplot">
+                        <image source="KiamaBoxplot.png" >
+                <shortdescription>boxplot has outliers on right side at larger values.</shortdescription>
+            </image>
+        </figure>
+<solution>  <p> The boxplot shows the data is right skewed with two upper outliers. </p> 
+ </solution> 
+</example> 
 
+<example> <title> Quantile Plot </title>
+<p> <term> Create a normal quantile plot on the TI-83/84</term> </p> 
+<p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter]. </p>
+<p> Under Type: select the sixth image which looks like a line. </p>
+<p> Set Data List to L1 and set Data Axis to Y.  You can select the Mark you want.</p>   
+<p> Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values. </p> 
+<p> Set the y-values to the data set values thus Ymin = 0 and Ymax = 200. </p> 
+<p> Now press the [GRAPH] button to get the normal quantile plot.  </p>
+<figure xml:id="KiamaQuantilePlot">
+                        <image source="KiamaQuantile.png" >
+                <shortdescription>the quantile plot is curved.</shortdescription>
+            </image>
+        </figure>
+
+<solution> <p> Notice that the quantile plot forms a curve rather than straight line. </p>
+</solution> 
+</example>
+
+<example> <title> Conclusion </title>
+<p> Can we conclude the variable is normally distributed? </p>
+<solution> 
+<p> Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is <term>not </term> from a population that is normally distributed. </p>
+</solution>
+</example> 
+
+<p> One way to measure intelligence is with an IQ score.  A common test is the Wechsler Intelligence Scale. Scores around 100 are considered average while scores above 140 are considered gifted. The table below contains 50 IQ scores.  Determine if the sample comes from a population that is normally distributed. </p> 
+
+<example> <title> Histogram </title>
+<p> enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2. </p>
+<p> Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1.  Press [enter]. Under Type: elect the third image for histogram and adjust the [window] with Xmin=50 and Xmax=150 with Xcale=10. Set Ymin=0 and Ymax=20 for the frequency. Then press the [GRAPH] button. </p>
+
+<solution> <p>This histogram is relatively symmetric and bell-shaped </p> </solution> 
+</example> 
 
 
 
