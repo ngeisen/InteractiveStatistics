@@ -3373,7 +3373,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Probability Distribution",
-  "body": " Probability Distribution    At the end of this section you will able to:    Create a probability distribution.    Calculate the events from a probability distribution.    Calculate the mean and standard deviaton for probability distributions      Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.  We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values.   Pre-Class Activity: Dice Data   Each person will roll a die 50 times and keep track of the number that lands face up each time. It’s handy using a tally for each dice value. Then find the total frequency for each dice value and then its corresponding probability. There is a link for some virtual dice below.  Online Dice: Virtual Dice   Below is my data for 50 dice rolls.   Sample of dice data table   lists dice number and probabilities.    Next, we want to graph the frequency or the probabilities to see the shape of the distribution. Using a graphing calculator, enter the dice number in and the frequency in . Use the [STAT] button and select option 1: Edit [enter] to enter the data.   Entering dice data into calculator   Entering dice data into calculator.    Create a histogram on the calculator. Use [2nd] [y =] button for the [Stat Plot] and select the first option and [enter]. Make sure ON is highlight or hit [enter] to turn on the graph. Arrow down once to TYPE and scroll over to the histogram which is the third image and hit [enter], then identify where the data is located, Xlist: and Freq: . Make sure to adjust the [Window] to scale for x = [0,7] and y = [0, largest frequency] and then [graph]. (If you do not have a graphing calculator you can construct a bar graph by hand. For StatKey you will have to list all 50 dice rolls individually.)   Graph of dice frequencies   Histogram of dice frequencies is approximately uniform.    How would you describe the shape of your distribution? What does that tell you about the probability of each event? We will compare your distribution in class.   Understanding the Basics  Let us review some vocabulary that we will be using in this section. Recall from Chapter 1 that a variable was defined as a characteristic that can assume different values. Since we are focusing on probability we will use random variables.  A random variable is a variable whose values are determined by chance. The value of your dice roll was random. Each student in class will likely have differing results.   Discrete variables have values that can be counted (whole numbers). The number of sixes that was rolled is discrete. The number of tables in each classroom is also discrete. While continuous variables can assume any real number value. The temperature outside does not jump from 75 to 76, it can be any temperature in between these endpoints such as 75.6 to 75.83.  When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically.    A discrete probability distribution consists of the values a random variable can assume and the corresponding probabilities of those values.    If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth.  Discrete Variables  Which of the following variables are discrete? Select all statements that apply.     The number of energy drinks you purchased each day.    Yes, counting the number of drinks is discrete.      Time to complete the Bolder Boulder 10K run..    Time is continuous. The 2025 winning time was 28:21 minutes.      Speed of swimmers in 100 m breaststroke.    Speed is a continuous rate.      Number of clients an insurance agent has.    Yes, counting the number of clients is discrete.     Continuous Variables  Which of the following variables are continuous? Select all statements that apply.     The weight of players on the football team.    Yes, weight is continuous.      The number of credit hours students are taking this semester.    Credit hours will be discrete.      The number of pets students have.    The number of pets is discrete.      Speed of swimmers in 100 m breaststroke.    Speed of swimmers will be continuous.     Probability Distribution Determine whether the following table is an appropriate probability distribution. Explain why or why not.   probabilities of -.05, 0.18, 0.28, 1.22.    No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1.   Probability Distribution Is the following table an appropriate probability distribution? Explain why or why not.   probabilities of .35, 0.25, 0.15, .25.    Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1.     Summary Statistics  The next step in our adventure with probability distributions is to find the summary statistics – the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time.  So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move – on average, for the game?  If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data.  How can we do this theoretically? First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21\/6 = 3.5 spaces on average. Now let’s look at the college version. We create the theoretical probability distribution table – we list the dice numbers and their probabilities. We are going to multiply each event by it’s probability and then add them all together.   Theoretical dice distribution   lists dice number and theoretical values of 1\/6.    The mean is       The mean of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability. where each X is one of the outcomes and each P(X) is the corresponding probability.    Now let's find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together.    dice probabilities of .20, .18, .16, .14, .12, .20    Mean is   Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.    To find the variance , subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products. where each represents the outcome, is the mean, and is the corresponding probability.    Find the variance for 50 dice rolls.       The standard deviation is the square root of the variance. It measures how spread out the values are from the mean.     Find the standard deviation for 50 dice rolls.     From the center of 3.4 most values are within 1.8 of it.    Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 credit cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is    Variance is    Standard deviation is      Expected Value  Another concept related to the mean for a probability distribution is that of the expected value or expectations over time. Expected values can be used in various types of games of chance and insurance. Note that the expected value formula is the same as the theoretical mean formula.    The expected value of a discrete probability distribution is the theoretical average of the variable. It is the net gain of each outcome multiplied by its probability.     The Greeley Fire Department wishes to raise $5000 to purchase some new equipment. They decide to conduct a raffle. A cash prize of $5000 is to be awarded. If 2500 tickets are sold at $5 each find the expected gain per ticket. Are they selling enough tickets to reach their goal?  The first step is creating the probability distribution table. We want the net gain and the probability for each event. We have two main events: the person wins the raffle or loses. Since each person must pay $5 for the ticket we take the prize of 5000-5=4995 as the net profit outcome for a win. If the person loses, they are out the 5 thus -5 is the outcome. Since there is just one winner, the probability is 1\/2500 since 2500 tickets are sold. There are 2499 losing tickets thus the probability of losing is 2499\/2500.    win 1\/2500 and lose 2499\/2500.    The expected value is which means if a person buys a raffle ticket, they lose on average $3 per ticket.  This means the fire department gains $3 per ticket. Therefore, the Greeley Fire department gains 3(2500) = $7500 profit from the raffle.  Another way to look at it is $5(2500 tickets) - $5000 prize = $7500 profit for the fire department. So either way they will reach their goal.    Expected Value If one thousand tickets are sold at $1 each in a raffle for a TV valued at $350, what is the expected value if you purchase one ticket?  The net win is $349 with a probability of 1\/1000. If you lose, the outcome is -1 with a probability of 999\/1000. Therefore, the expected value . You lose about $.65 for each ticket.     Using Technology  Lucky for us, we can use technology to help us find the summary statistics for a probability distribution. Let’s revisit the 50 dice rolls.    dice probabilities of .20, .18, .16, .14, .12, .20    To enter the data use [STAT] button and under EDIT select option 1: Edit [enter] to input the values. Enter the dice number in L1 and the probability in L2.    input values into calculator    To find the summary statistics begin with the [STAT] button, use the arrow to the right once to highlight CALC across the top and select option 1: 1-var Stats and [enter]. Identify where the data is located as [2nd] 1 [,] [2nd] 2 [enter] on the TI83. On the TI84 the Xlist is L1 and Freq is L2 and then Calculate.   Summary statistics on calculator   summary values on calculator    This gives the mean 3.4 and population standard deviation 1.8 (this is the only time we will use σx). To get the variance you will need to square the standard deviation, thus     Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is and the standard deviation is and the variance is          Practice Problems   "
+  "body": " Probability Distribution    At the end of this section you will able to:    Create a probability distribution.    Calculate the events from a probability distribution.    Calculate the mean and standard deviaton for probability distributions      Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.  We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values.   Pre-Class Activity: Dice Data   Each person will roll a die 50 times and keep track of the number that lands face up each time. It’s handy using a tally for each dice value. Then find the total frequency for each dice value and then its corresponding probability. There is a link for some virtual dice below.  Online Dice: Virtual Dice   Below is my data for 50 dice rolls.   Sample of dice data table   lists dice number and probabilities.    Next, we want to graph the frequency or the probabilities to see the shape of the distribution. Using a graphing calculator, enter the dice number in and the frequency in . Use the [STAT] button and select option 1: Edit [enter] to enter the data.   Entering dice data into calculator   Entering dice data into calculator.    Create a histogram on the calculator. Use [2nd] [y =] button for the [Stat Plot] and select the first option and [enter]. Make sure ON is highlight or hit [enter] to turn on the graph. Arrow down once to TYPE and scroll over to the histogram which is the third image and hit [enter], then identify where the data is located, Xlist: and Freq: . Make sure to adjust the [Window] to scale for x = [0,7] and y = [0, largest frequency] and then [graph]. (If you do not have a graphing calculator you can construct a bar graph by hand. For StatKey you will have to list all 50 dice rolls individually.)   Graph of dice frequencies   Histogram of dice frequencies is approximately uniform.    How would you describe the shape of your distribution? What does that tell you about the probability of each event? We will compare your distribution in class.   Understanding the Basics  Let us review some vocabulary that we will be using in this section. Recall from Chapter 1 that a variable was defined as a characteristic that can assume different values. Since we are focusing on probability we will use random variables.  A random variable is a variable whose values are determined by chance. The value of your dice roll was random. Each student in class will likely have differing results.   Discrete variables have values that can be counted (whole numbers). The number of sixes that was rolled is discrete. The number of tables in each classroom is also discrete. While continuous variables can assume any real number value. The temperature outside does not jump from 75 to 76, it can be any temperature in between these endpoints such as 75.6 to 75.83.  When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically.    A discrete probability distribution consists of the values a random variable can assume and the corresponding probabilities of those values.    If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth.  Discrete Variables  Which of the following variables are discrete? Select all statements that apply.     The number of energy drinks you purchased each day.    Yes, counting the number of drinks is discrete.      Time to complete the Bolder Boulder 10K run..    Time is continuous. The 2025 winning time was 28:21 minutes.      Speed of swimmers in 100 m breaststroke.    Speed is a continuous rate.      Number of clients an insurance agent has.    Yes, counting the number of clients is discrete.     Continuous Variables  Which of the following variables are continuous? Select all statements that apply.     The weight of players on the football team.    Yes, weight is continuous.      The number of credit hours students are taking this semester.    Credit hours will be discrete.      The number of pets students have.    The number of pets is discrete.      Speed of swimmers in 100 m breaststroke.    Speed of swimmers will be continuous.     Probability Distribution Determine whether the following table is an appropriate probability distribution. Explain why or why not.   probabilities of -.05, 0.18, 0.28, 1.22.    No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1.   Probability Distribution Is the following table an appropriate probability distribution? Explain why or why not.   probabilities of .35, 0.25, 0.15, .25.    Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1.     Summary Statistics  The next step in our adventure with probability distributions is to find the summary statistics – the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time.  So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move – on average, for the game?  If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data.  How can we do this theoretically? First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21\/6 = 3.5 spaces on average. Now let’s look at the college version. We create the theoretical probability distribution table – we list the dice numbers and their probabilities. We are going to multiply each event by it’s probability and then add them all together.   Theoretical dice distribution   lists dice number and theoretical values of 1\/6.    The mean is       The mean of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability. where each X is one of the outcomes and each P(X) is the corresponding probability.    Now let's find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together.    dice probabilities of .20, .18, .16, .14, .12, .20    Mean is   Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.    To find the variance , subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products. where each represents the outcome, is the mean, and is the corresponding probability.    Find the variance for 50 dice rolls.       The standard deviation is the square root of the variance. It measures how spread out the values are from the mean.     Find the standard deviation for 50 dice rolls.     From the center of 3.4 most values are within 1.8 of it.    Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 credit cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is    Variance is    Standard deviation is      Expected Value  Another concept related to the mean for a probability distribution is that of the expected value or expectations over time. Expected values can be used in various types of games of chance and insurance. Note that the expected value formula is the same as the theoretical mean formula.    The expected value of a discrete probability distribution is the theoretical average of the variable. It is the net gain of each outcome multiplied by its probability.     The Greeley Fire Department wishes to raise $5000 to purchase some new equipment. They decide to conduct a raffle. A cash prize of $5000 is to be awarded. If 2500 tickets are sold at $5 each find the expected gain per ticket. Are they selling enough tickets to reach their goal?  The first step is creating the probability distribution table. We want the net gain and the probability for each event. We have two main events: the person wins the raffle or loses. Since each person must pay $5 for the ticket we take the prize of 5000-5=4995 as the net profit outcome for a win. If the person loses, they are out the 5 thus -5 is the outcome. Since there is just one winner, the probability is 1\/2500 since 2500 tickets are sold. There are 2499 losing tickets thus the probability of losing is 2499\/2500.    win 1\/2500 and lose 2499\/2500.    The expected value is which means if a person buys a raffle ticket, they lose on average $3 per ticket.  This means the fire department gains $3 per ticket. Therefore, the Greeley Fire department gains 3(2500) = $7500 profit from the raffle.  Another way to look at it is $5(2500 tickets) - $5000 prize = $7500 profit for the fire department. So either way they will reach their goal.    Expected Value If one thousand tickets are sold at $1 each in a raffle for a TV valued at $350, what is the expected value if you purchase one ticket?  The net win is $349 with a probability of 1\/1000. If you lose, the outcome is -1 with a probability of 999\/1000. Therefore, the expected value . You lose about $.65 for each ticket.     Using Technology  Lucky for us, we can use technology to help us find the summary statistics for a probability distribution. Let’s revisit the 50 dice rolls.    dice probabilities of .20, .18, .16, .14, .12, .20    To enter the data use [STAT] button and under EDIT select option 1: Edit [enter] to input the values. Enter the dice number in L1 and the probability in L2.    input values into calculator    To find the summary statistics begin with the [STAT] button, use the arrow to the right once to highlight CALC across the top and select option 1: 1-var Stats and [enter]. Identify where the data is located as [2nd] 1 [,] [2nd] 2 [enter] on the TI83. On the TI84 the Xlist is L1 and Freq is L2 and then Calculate.   Summary statistics on calculator   summary values on calculator    This gives the mean 3.4 and population standard deviation 1.8 (this is the only time we will use σx). To get the variance you will need to square the standard deviation, thus     Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.    Credit cards  0  1  2  3  4    P(X)  0.08  0.18  0.27  0.44  0.03    Find the mean, variance, and standard deviation for the probability distribution.  Mean is and the standard deviation is and the variance is          Practice Problems   "
 },
 {
   "id": "ProbDist-2",
@@ -3598,7 +3598,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.4.24",
   "title": "Statistics.",
-  "body": "Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.   there are 0 to 4 cards with probabilities of ..08, .18, .27, .44, .03.   Find the mean, variance, and standard deviation for the probability distribution.  Mean is and the standard deviation is and the variance is       "
+  "body": "Statistics A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.    Credit cards  0  1  2  3  4    P(X)  0.08  0.18  0.27  0.44  0.03    Find the mean, variance, and standard deviation for the probability distribution.  Mean is and the standard deviation is and the variance is       "
 },
 {
   "id": "BinomialProb",
@@ -3835,22 +3835,166 @@ var ptx_lunr_docs = [
   "body": " autism   According to the Centers for Disease Control and Prevention (CDC), the estimated prevalence of autism spectrum disorder (ASD) in the United States for children aged 8 years in 2020 was 1 in 36. In a sample of 200 children find the mean, variance and standard deviation.    We know p=1\/36=.028 thus q=1-.028=.972 and n=020  Mean is   Variance is   Standard deviation is    "
 },
 {
-  "id": "ChapDistributions",
+  "id": "sec-SamplingDist",
   "level": "1",
-  "url": "ChapDistributions.html",
-  "type": "Chapter",
-  "number": "5",
-  "title": "Distributions",
-  "body": " Distributions   Text before the first section.     At the end of this chapter you will be able to:     Construct and interpret a sampling distribution    Construct and interpret a bootstrap distribution    Construct confidence intervals from a bootstrap distribution    Determine if a distribution is approximately normal    Applications involving the normal distribution     "
+  "url": "sec-SamplingDist.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "Sampling Distribution",
+  "body": " Sampling Distribution  Text of section.    At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions     "
 },
 {
-  "id": "ChapDistributions-3",
+  "id": "sec-SamplingDist-3",
   "level": "2",
-  "url": "ChapDistributions.html#ChapDistributions-3",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-3",
   "type": "Objectives",
-  "number": "5",
+  "number": "5.1",
   "title": "",
-  "body": "  At the end of this chapter you will be able to:     Construct and interpret a sampling distribution    Construct and interpret a bootstrap distribution    Construct confidence intervals from a bootstrap distribution    Determine if a distribution is approximately normal    Applications involving the normal distribution    "
+  "body": "  At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions    "
+},
+{
+  "id": "sec-BootstrapDist",
+  "level": "1",
+  "url": "sec-BootstrapDist.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Bootstrap Distributions",
+  "body": " Bootstrap Distributions  Text of section.    At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean    Construct and interpret a bootstrap distribution for proportions     "
+},
+{
+  "id": "sec-BootstrapDist-3",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#sec-BootstrapDist-3",
+  "type": "Objectives",
+  "number": "5.2",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean    Construct and interpret a bootstrap distribution for proportions    "
+},
+{
+  "id": "sec-AssessNormality",
+  "level": "1",
+  "url": "sec-AssessNormality.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "Assessing Normality",
+  "body": " Assessing Normality  Text of section.    At the end of this section you will be able to:     Determine if a variable is normally distributed    Assessing normality with histogram, boxplot, and quantile plot.     Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed? One way is to take a sample and look at the sample to determine if it appears normally distributed. If the sample looks normal, then most likely the population is also. Here are some guidelines that are used to help make that determination.     Histogram: Make a histogram. For a normal distribution, the histogram should be roughly bell-shaped and symmetric. For small samples, this is not very accurate, and another method may be needed. A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.     Outliers: For a normal distribution, there should not be more than one outlier. One way to check for outliers is to use a box plot. Outliers are values that are shown as dots or stars outside of the rest of the values when using technology.     Normal quantile plot: This plot is provided through statistical software on a computer or graphing calculator. It plots the data values on one axis and its z-score on the other. If the points lie close to a line, the data comes from a distribution that is approximately normal. If the points do not lie close to a line or they show a pattern that is curved, the data are likely to come from a distribution that is not normally distributed.    If you are creating boxplots by hand, we check for outliers mathematically. Outliers are data values that are:    Greater than Quartile 3 plus 1.5 times the interquartile range (IQR)    Below than Quartile 3 minus 1.5 times the interquartile range (IQR)    Recall the IQR = Q3 – Q1    Note: if there is an outlier, that outlier could have a dramatic effect on the results especially if it is an extreme outlier. However, there are times when a distribution has more than one outlier, but it is still normally distributed. The guideline of only one outlier is just a guideline.    We will look at a couple of examples to determine if the data comes from a population that is normally distributed.  In Kiama, Australia, there is the world's largest blowhole. The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 30 meters (98.4 feet).   Image of Kiama Blowhole Eruption   image of blowhole eruption.    The data table shows the times in seconds between the Kiama blowhole eruptions from a random day. Do the data come from a population that is normally distributed? Explain why or why not.   Table of time between Kiama eruptions   time in seconds between eruptions.    We will be using technology to determine the normality of this variable.   Histogram   Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.    enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.    histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.   The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.     Boxplot   Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.    boxplot has outliers on right side at larger values.     The boxplot shows the data is right skewed with two upper outliers.     Quantile Plot   Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot is curved.     Notice that the quantile plot forms a curve rather than straight line.     Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.    One way to measure intelligence is with an IQ score. A common test is the Wechsler Intelligence Scale. Scores around 100 are considered average while scores above 140 are considered gifted. The table below contains 50 IQ scores. Determine if the sample comes from a population that is normally distributed.   Histogram  enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: elect the third image for histogram and adjust the [window] with Xmin=50 and Xmax=150 with Xcale=10. Set Ymin=0 and Ymax=20 for the frequency. Then press the [GRAPH] button.   This histogram is relatively symmetric and bell-shaped    "
+},
+{
+  "id": "sec-AssessNormality-3",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-3",
+  "type": "Objectives",
+  "number": "5.3",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Determine if a variable is normally distributed    Assessing normality with histogram, boxplot, and quantile plot.    "
+},
+{
+  "id": "sec-AssessNormality-5-1-1",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-5-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Histogram: "
+},
+{
+  "id": "sec-AssessNormality-5-2-1",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-5-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Outliers: "
+},
+{
+  "id": "sec-AssessNormality-5-3-1",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-5-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Normal quantile plot: "
+},
+{
+  "id": "KiamaImage",
+  "level": "2",
+  "url": "sec-AssessNormality.html#KiamaImage",
+  "type": "Figure",
+  "number": "5.3.1",
+  "title": "",
+  "body": " Image of Kiama Blowhole Eruption   image of blowhole eruption.   "
+},
+{
+  "id": "KiamaTimes",
+  "level": "2",
+  "url": "sec-AssessNormality.html#KiamaTimes",
+  "type": "Figure",
+  "number": "5.3.2",
+  "title": "",
+  "body": " Table of time between Kiama eruptions   time in seconds between eruptions.   "
+},
+{
+  "id": "sec-AssessNormality-14",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-14",
+  "type": "Example",
+  "number": "5.3.3",
+  "title": "Histogram.",
+  "body": " Histogram   Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.    enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.    histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.   The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.   "
+},
+{
+  "id": "sec-AssessNormality-15",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-15",
+  "type": "Example",
+  "number": "5.3.6",
+  "title": "Boxplot.",
+  "body": " Boxplot   Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.    boxplot has outliers on right side at larger values.     The boxplot shows the data is right skewed with two upper outliers.   "
+},
+{
+  "id": "sec-AssessNormality-16",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-16",
+  "type": "Example",
+  "number": "5.3.8",
+  "title": "Quantile Plot.",
+  "body": " Quantile Plot   Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot is curved.     Notice that the quantile plot forms a curve rather than straight line.   "
+},
+{
+  "id": "sec-AssessNormality-17",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-17",
+  "type": "Example",
+  "number": "5.3.10",
+  "title": "Conclusion.",
+  "body": " Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.   "
+},
+{
+  "id": "sec-AssessNormality-19",
+  "level": "2",
+  "url": "sec-AssessNormality.html#sec-AssessNormality-19",
+  "type": "Example",
+  "number": "5.3.11",
+  "title": "Histogram.",
+  "body": " Histogram  enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: elect the third image for histogram and adjust the [window] with Xmin=50 and Xmax=150 with Xcale=10. Set Ymin=0 and Ymax=20 for the frequency. Then press the [GRAPH] button.   This histogram is relatively symmetric and bell-shaped   "
+},
+{
+  "id": "sec-NormalDist",
+  "level": "1",
+  "url": "sec-NormalDist.html",
+  "type": "Section",
+  "number": "5.4",
+  "title": "Normal Distribution",
+  "body": " Normal Distribution  Text of section.    At the end of this section you will be able to:     Find the area under the normal curve    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.     "
+},
+{
+  "id": "sec-NormalDist-3",
+  "level": "2",
+  "url": "sec-NormalDist.html#sec-NormalDist-3",
+  "type": "Objectives",
+  "number": "5.4",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Find the area under the normal curve    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.    "
 },
 {
   "id": "ConfIntervals",
@@ -4312,11 +4456,47 @@ var ptx_lunr_docs = [
   "body": "Conclusion Based on the climatologist's results, what decision and what conclusion would the climatologist make for their investigation assuming α=0.05? Explain your answer.  It is very unlikely that we would get a mean difference of 2.783 by chance if the actual difference was 0. It is much less than the confidence level α=0.05. So, we would reject the assumption that there is no difference between the high temperatures at the Denver and Centennial stations. There is evidence that there is a statistical difference between the high temperatures at the urban and suburban stations, and the average high temperature at the urban station was greater than the average high temperature at the suburban station.  "
 },
 {
+  "id": "sec-CompIndpMeans",
+  "level": "1",
+  "url": "sec-CompIndpMeans.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "t-test for Two Independent Means",
+  "body": " t-test for Two Independent Means  Text of section.  "
+},
+{
+  "id": "sec-CompPairedmeans",
+  "level": "1",
+  "url": "sec-CompPairedmeans.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "t-test for Paired Means",
+  "body": " t-test for Paired Means  Text of section.  "
+},
+{
+  "id": "sec-CompProp",
+  "level": "1",
+  "url": "sec-CompProp.html",
+  "type": "Section",
+  "number": "8.3",
+  "title": "z-test for Two Proportions",
+  "body": " z-test for Two Proportions  Text of section.  "
+},
+{
+  "id": "sec-CompVariance",
+  "level": "1",
+  "url": "sec-CompVariance.html",
+  "type": "Section",
+  "number": "8.4",
+  "title": "F-test for Variance",
+  "body": " F-test for Variance  Text of section.  "
+},
+{
   "id": "sec-DownloadR",
   "level": "1",
   "url": "sec-DownloadR.html",
   "type": "Section",
-  "number": "8.1",
+  "number": "9.1",
   "title": "Downloading R and R Studio",
   "body": " Downloading R and R Studio  This section gives you the directions for download R for the first time. R is a free, open-source programming language for statistical computing.   Download R   How to download R visit   Download R Studio   How to download R Studio visit  For UNC students only: if you cannot download R and R Studio, you can still access the programs through UNC’s Apporto link. Log in with your UNC credentials. Details can be found in Canvas.  Note: For my classes we will be using R Studio since it has a friendlier interface. R Studio will split the screen into 4 panels, each panel has a different purpose. The top left is where you will see the files that are currently open in R Studio. The bottom left panel is where you will type in the commands and see the computational outputs. The top right panel summarizes the variables. The bottom right panel is where you can access the folders, and this is where the graphical output will show. The R commands are the same for both programs.   Getting ready to use R     Set up a folder for the Using R Files    Save the data and lesson files in this folder    Launch R or R Studio    Set up the working directory    You are ready to begin.    "
 },
@@ -4352,7 +4532,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-GraphR.html",
   "type": "Section",
-  "number": "8.2",
+  "number": "9.2",
   "title": "Graphing with R",
   "body": " Graphing with R  In this section we will learn how to do serveral common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners.    At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.     First, add the Lesson 1 Graphing text file to your Using R Files folder and the Cereal.csv dataset.  You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should now see the Lesson 1 file and the Cereal datafile in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it directly in the bottom left panel.  Next, you will need to import the data file by clicking on the file and select Import Dataset , a new window will open to give you a preview of the spreadsheet and then click on the Import button at the bottom right. Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type attach(Cereal) so you can call up the variable names.  Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors.   Boxplots  Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot. The graphs will show up in the bottom right panel of R Studio.   boxplot(Calories)    Image of Vertical Boxplot   Boxplot with values from 80 to 214.     Interpreting the Boxplot: The boxplot shows the smallest value at 80 and the largest is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The interquartile range = Q3-Q1 =160-113.2 = 46.8. The thick line in the middle is the median = 118 . To calculate the actual values use the summary command with the variable name.   summary(Calories)    Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.    Now let's add a label along the x-axis and make the boxplot horizontal.   boxplot(Calories,horizontal = TRUE,xlab = \"Calories per Serving\")  With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values.   Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.    Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol ~ followed by the categorical variable.   boxplot(Calories~Company)    Image of comparing boxplots   Boxplot for each company.     Comparing Boxplots: With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed.  Next we will add some color to the graph for fun and give the graph a main title. But investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right.   boxplot(Fat,horizontal = TRUE, col='blue', border='red',main=\"Fat Content\")    Image of Fat Content Boxplot   Boxplot with colors.           Histograms  Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.   hist(Sugars)    Image of histogram   Histogram of sugar content.    The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution.  Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of breaks we want. Suppose we want 10 bars instead of the default of four.   hist(Sugars,breaks=10)    Image of histogram   Histogram of sugar content with 10 bars.    This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.  Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title.   hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content')    Image of histogram for sodium   Histogram of sodium content.    This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms.    Categorical Graphs     Frequency Table   To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company.   table(Company)   Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.   Brand   c('General Mills', 'Kelloggs', 'Quacker')    Totals   c(13,11,6)       Pie Graph   Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the labels = Brand names were created.   pie(Totals, labels=Brand)   Next let us add some brighter colors to the graph and give it a main title.   pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies')    Bar Graph   Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created.   barplot(Totals, names.arg=Brand)   Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis.   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies')     Scatterplots   Scatterplots   Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the plot command and identify the x-variable first and then the y-variable.   plot(Fat,Carbs)   To add at title to the graph we add the main= to the command with the title in quotes.   plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates')   To find the linear correlation coefficient we use the cor command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative.   cor(Fat,Carbs)     Quantile Plots   We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the qqnorm command for the quantile plot. We can add the qqline command afterwards to draw a line through the data to see if it appears linear.   qqnorm(Calories)    qqline(Calories)   "
 },
@@ -4361,7 +4541,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#sec-GraphR-3",
   "type": "Objectives",
-  "number": "8.2",
+  "number": "9.2",
   "title": "",
   "body": "  At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.    "
 },
@@ -4397,7 +4577,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxCalorie",
   "type": "Figure",
-  "number": "8.2.1",
+  "number": "9.2.1",
   "title": "",
   "body": " Image of Vertical Boxplot   Boxplot with values from 80 to 214.   "
 },
@@ -4406,7 +4586,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#SummaryCalorie",
   "type": "Figure",
-  "number": "8.2.2",
+  "number": "9.2.2",
   "title": "",
   "body": " Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.   "
 },
@@ -4415,7 +4595,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxHorzCalorie",
   "type": "Figure",
-  "number": "8.2.3",
+  "number": "9.2.3",
   "title": "",
   "body": " Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.   "
 },
@@ -4424,7 +4604,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxplotbyCompany",
   "type": "Figure",
-  "number": "8.2.4",
+  "number": "9.2.4",
   "title": "",
   "body": " Image of comparing boxplots   Boxplot for each company.   "
 },
@@ -4433,7 +4613,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxplotColor",
   "type": "Figure",
-  "number": "8.2.5",
+  "number": "9.2.5",
   "title": "",
   "body": " Image of Fat Content Boxplot   Boxplot with colors.   "
 },
@@ -4442,7 +4622,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSugar",
   "type": "Figure",
-  "number": "8.2.6",
+  "number": "9.2.6",
   "title": "",
   "body": " Image of histogram   Histogram of sugar content.   "
 },
@@ -4451,7 +4631,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSugar2",
   "type": "Figure",
-  "number": "8.2.7",
+  "number": "9.2.7",
   "title": "",
   "body": " Image of histogram   Histogram of sugar content with 10 bars.   "
 },
@@ -4460,7 +4640,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSodium",
   "type": "Figure",
-  "number": "8.2.8",
+  "number": "9.2.8",
   "title": "",
   "body": " Image of histogram for sodium   Histogram of sodium content.   "
 },
@@ -4514,7 +4694,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rstats.html",
   "type": "Section",
-  "number": "8.3",
+  "number": "9.3",
   "title": "Statistics with R",
   "body": " Statistics with R  In this section we will learn to calculate the summary statistics using R studio. We will find the mean and median to measure the center, the variance and standard deviation to measure the spread of values, and find the five-number summary.    At the end of this section you will be able to     Import data into R Studio for analysis.    Calculate the summary statistics.      Finding Summary Statistics with R Studio   We are going to complete Lesson 2 for finding the summary statistics with R Studio. Add the Lesson 2 Statistic text file to your Using R Files folder. We are going to use the same Cereal data set as for graphing data.  You may need to update your working directory , to do this go to the bottom right panel and under the Files tab click on the triple dots on the far right to relocate your file and click Open . You should now see the Lesson 2 file. Click on this and it opens in the top left panel so you can copy the code or you can type it in the bottom left panel.  Next, we will need to import the data file by clicking on file and selecting Import Dataset then click on the Import button at the bottom right. Once the data is loaded into R Studio make sure to use the attach command with the data set name Cereal so you can call up the variable names.   attach(Cereal)   Recall that the commands in R or R studio are all lower case. I tend to use a capital for the first letter of the variables names to help distinguish them.  We will start by looking at some of the summary statistical values for number of calories per serving for a variety of cereal brands.  The most common measures for the center of the distribution are the mean and median. Use the following commands:   mean(Calories)    median(Calories)   To find the measures of spread we look at variance (var) and standard deviation (sd). Use the following commands:   var(Calories)    sd(Calories)  To find the maximum (largest) and minimum (smallest) values use the following commands:   max(Calories)    min(Calories)    Summary of the output: The number of calories per serving has a mean of 133.83 and median of 118. The variance is x.The standard deviation of 34.81 tells us that most values are within 34.81 calories of the mean. The number of calories is between 80 (minimum) and 214 (maximum) per serving. This gives a range of 214 - 80 = 134 calories.  A handy command is a six number summary which contains the typical five-number summary from boxplots and the mean.   summary(Calories)  Sometimes you want the summary for all the variables for the data set. In this case we use summary with the name for the data file which is Cereal    summary(Cereal)   Now repeat the process with one of the other variables. What do these summary statistics tell you about the cereal data set?  "
 },
@@ -4523,7 +4703,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rstats.html#sec-Rstats-3",
   "type": "Objectives",
-  "number": "8.3",
+  "number": "9.3",
   "title": "",
   "body": "  At the end of this section you will be able to     Import data into R Studio for analysis.    Calculate the summary statistics.    "
 },
@@ -4550,7 +4730,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rtests.html",
   "type": "Section",
-  "number": "8.4",
+  "number": "9.4",
   "title": "Testing with R",
   "body": " Testing with R  In this section we will perform hypothesis testing and find confidence intervals for a single sample.    At the end of this section you will be able to     Conduct a single t-test for the mean    Interpret the confidence interval for the mean    Conduct a single proportion test using chi square    Interpret the confidence interval for a proportion      Import Cereal Data instructions   Once the data has been imported into R, use the command attach so you can call the data by the variable name.   attach(Cereal)   A handy command is summary of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition.   summary(Cereal)    Single Mean   Single t-test for the mean   Lets begin our investigation with a one-sample t-test for the mean. The R command is t.test . We will need to identify the variable, set the null hypothesis to mu= null value, and identify the alternative hypothesis using greater, less or two.sided in quotes. The default is 95% confidence level for the intervals.  We are going to test if the mean of the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving.   mean(Calories)  Can we determine if the mean calories is significantly more than 100 calories per serving? The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command.  t.test(Calories,mu=100,alternative=\"greater\")   Let us determine what the mean fiber is per serving.   mean(Fiber)   Next, test if the mean fiber is less than 2 grams per serving.   t.test(Fiber,mu=2,alternative=\"less\")   What is the mean amount of fat per serving?   mean(Fat)   Test if fat is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use two.sided as the alternative hypothesis and add the command conf.level = to specify we want 90% precision.   t.test(Fat,mu=1,alternative=\"two.sided\", conf.level = 0.90)     Single Proportion Test  We are going to conduct several proportion tests using the cereal data set. Rather than using the standard z-test for proportions, R Studio does a chi-square test which can be generalized to multiple proportions. The format of prop.test (count x, sample size,p=null value, alternative= ) with a default of 95% confidence for a two-tailed test.  First, find the proportions of each brand of cereal using the table command with the variable name.   table(Company)   The first test is to determine if the proportion of Kellogg cereals is different than 50%. Use the prop.test command with the count of 11 out of the sample of 30 cereals. The null hypothesis is p=.50 and we will use the two-tailed test default.   prop.test(11,30,p=.5)   Next, determine if the proportion of Quaker cereals is less than 50%. Here we need to identify the alternative hypothesis as less with a count of 6 out of 30 cereals.   prop.test(6,30,p=.5, alternative=\"less\")   Now determine if the proportion of General Mills cereal is greater than 1\/3 of the cereals at the 90% confidence level. The alternative hypothesis as greater with a count of 13 out of the 30 cereals. We also need to add the condition conf.level = 0.90 to the command.   prop.test(13,30,p=.333, alternative=\"greater\", conf.level = 0.90)    "
 },
@@ -4559,7 +4739,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rtests.html#sec-Rtests-3",
   "type": "Objectives",
-  "number": "8.4",
+  "number": "9.4",
   "title": "",
   "body": "  At the end of this section you will be able to     Conduct a single t-test for the mean    Interpret the confidence interval for the mean    Conduct a single proportion test using chi square    Interpret the confidence interval for a proportion    "
 },
@@ -4586,7 +4766,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rcompare.html",
   "type": "Section",
-  "number": "8.5",
+  "number": "9.5",
   "title": "Comparison Tests with R",
   "body": " Comparison Tests with R  We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group.    At the end of this section you will be able to     Compare two independent means using the t-test    Interpret the confidence interval for the difference in means    Conduct a t-test for paired means    Compare two proportions using chi-square test    Interpret the confidence interval for the difference in proportions    Compare two variances with the F-tst      Comparing Two Independent Means  The standard format for a t.test for the mean is identifying the two variables names separated by commas, the alternative hypothesis as alternative = , and the confidence level using conf.level = with the default being 95%.R Studio finds the difference is u1 - u2 so list them in the order you are calculating them.  For our first example, we are comparing the mean time for completing a maze. Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX  We are going to perform a simple t-test for the difference in mean times. Thus the alternative hypothesis is that the means are not equal. We will using the default settings at 95% level. Import the data set and attach the variable names. We will be using the variables WhiteMice and BrownMice. There are no spaces in the name of variables when using R.   t.test(WhiteMice,BrownMice)   Suppose we claim the average mean time is greater for the white mice using alpha = 0.10 level. We can use White mice is greater than Brown mice or brown mice is less than white mice as shown below, and we need to add conf.level = .90 to both commands.   t.test(WhiteMice,BrownMice,alternative = 'greater',conf.level = .90)    t.test(BrownMice,WhiteMice,alternative = 'less',conf.level = .90)   compare the R outputs    Paired Means  When the data is paired in some way we only look at the difference between those paired values. This is also known as a dependent t-test.  The format I use for the paired t-test is t.test(PostValues, PreValues , paired=TRUE, alternative=, conf.level= ) . The difference is u1 - u2 by default, so list the Post values first so it aligns with the claim better.  A physical education director claims that by taking special vitamins a weight lifter can increase his or her strength. Eight athletes are selected and given a test of strength using the standard bench press. Test the effectiveness of the vitamin regimen at alpha = 0.05. Each value represents the maximum number of pounds the athlete can bench press.  Use the data XX and the variables are WeightAfter and the WeightBefore. Since we are comparing the bench press weights before and after the vitamin regiment, it is a paired or dependent t-test. Enter the following R command to compare the change in weights lifted.   t.test(WeightAfter,WeightBefore, paired=TRUE, alternative='greater', conf.level=.95)     Comparing Two Proportions    Comparing Two Variances  Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX. Only this time we want to compare the variance of time between the white and brown mice. So we are checking if the variance is equal or not equal. We will use the R command var.test and we identify our two variables.   var.test(WhiteMice,BrownMice)   Sometimes when we use a data set, not all values are included. In that case we want to ignore any cells without data. We do this by using na.rm=TRUE. Find the standard deviation for the times for both mice groups.   sd(WhiteMice, na.rm=TRUE)    sd(BrownMice, na.rm=TRUE)    "
 },
@@ -4595,7 +4775,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rcompare.html#sec-Rcompare-3",
   "type": "Objectives",
-  "number": "8.5",
+  "number": "9.5",
   "title": "",
   "body": "  At the end of this section you will be able to     Compare two independent means using the t-test    Interpret the confidence interval for the difference in means    Conduct a t-test for paired means    Compare two proportions using chi-square test    Interpret the confidence interval for the difference in proportions    Compare two variances with the F-tst    "
 },
@@ -4604,7 +4784,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rcorr.html",
   "type": "Section",
-  "number": "8.6",
+  "number": "9.6",
   "title": "Correlation Tests with R",
   "body": " Correlation Tests with R  In this section we will perform the correlation and linear regression analysis with R Studio. We will graph the scatterplot to determine the nature of the relationship, calculate the correlation coefficient to determine its strength. We will conduct a correlation test to determine if it is statistically significant and if so, find the regression equation.    At the end of this section you will be able to     Graph a scatterplot.    Calculate the correlation coefficient.    Determine if the correlation is significant.    Determine the regression equation.    Interpret the coefficient of determination.      Correlation Between Quantitative Variables   Hurricanes   Climate change is a long-term change in the average weather patterns that have come to define Earth's local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature. One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes.  The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant.  First, construct a scatterplot to describe the nature of the relationship. Use the plot command and identify the independent x -variable, Years, and the dependent y -variable, Hurricanes. It is also helpful to include a main title.   plot(Year, Hurricanes, main='Hurricanes over the Years')    Interpret: We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes.  Second, calculate the correlation coefficient to describe the strength of the relationship. We will use the cor command with the x-variable and y-variable.   cor(Year, Hurricanes)    Interpret: r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a correlation test . The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant.   cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95)   Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the regression equation so we can make predictions. We will use the command lm for a linear model and we identify the y-variable, Hurricanes, first with the tilda symbol ~ then the x-variable, Year.   lm(Hurricanes~Year)    Interpret: The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation where x represents the year and y represents the predicted number of hurricanes for that year.  We can create a Simple Linear Regression Model (naming it SLRmodelHurr for Hurricanes) and then summarize the results for some additional information.   SLRmodelHurr=lm(Hurricanes~Year)    summary(SLRmodelHurr)    Interpret: This shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination is which indicates that 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables.    Association Between Categorical Variables   "
 },
@@ -4613,7 +4793,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rcorr.html#sec-Rcorr-3",
   "type": "Objectives",
-  "number": "8.6",
+  "number": "9.6",
   "title": "",
   "body": "  At the end of this section you will be able to     Graph a scatterplot.    Calculate the correlation coefficient.    Determine if the correlation is significant.    Determine the regression equation.    Interpret the coefficient of determination.    "
 },
@@ -4667,7 +4847,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rassoc.html",
   "type": "Section",
-  "number": "8.7",
+  "number": "9.7",
   "title": "Associations with R",
   "body": " Associations with R  Chi Square tests for Association.  "
 },
@@ -4676,7 +4856,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Ranova.html",
   "type": "Section",
-  "number": "8.8",
+  "number": "9.8",
   "title": "ANOVA with R",
   "body": " ANOVA with R  ANOVA with R.  "
 },
@@ -4685,7 +4865,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-UNCdata.html",
   "type": "Section",
-  "number": "9.1",
+  "number": "10.1",
   "title": "UNC Data Sets",
   "body": " UNC Data Sets  This section includes the data sets from UNC sports and research conducted by UNC faculty.  Bird Vocalization  Gettysburg Data   Vocal Mimicry of Parrots  A survey of vocal mimicry in companion parrots: Article.   Full data set: Parrots Data.    Cereal.csv    ClassSurvey1.csv    ClassSurvey2.csv   UNC Men Basketball  UNC Women Basketball  UNC Women Volleyball  Link to StatKey   "
 },
@@ -4703,7 +4883,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-ClimateData.html",
   "type": "Section",
-  "number": "9.2",
+  "number": "10.2",
   "title": "Climate Data Sets",
   "body": " Climate Data Sets  This section includes data sets to analyze climate change as well as the websites where the data was gathered for more current data.   Earthquakes   California Earthquakes:    Earthquakes April 2025    Hurricanes       Severe Weather   Billion Dollar Weather Events:    Temperatures   Greeley:    Tornadoes   US Tornado Mapping:   "
 },
@@ -4757,7 +4937,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-StudyData.html",
   "type": "Section",
-  "number": "9.3",
+  "number": "10.3",
   "title": "Studies Data Sets",
   "body": " Studies Data Sets  This section includes the data sets for the studies mentioned.   Florida Lakes Bass   Original data source: Florida Bass.   Mammals  Old Faithful  "
 },
