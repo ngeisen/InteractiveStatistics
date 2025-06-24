@@ -9,7 +9,7 @@
   </introduction>
   <ol>
     <li> <p> Determine if a variable is normally distributed </p>    </li>
-    <li> <p> Assessing normality with histogram, boxplot, and quantile plot.</p> </li>
+    <li> <p> Assess normality with histogram, boxplot, and quantile plot.</p> </li>
         </ol>
 </objectives>
 
@@ -30,6 +30,10 @@
 </ul>
 
 <p> We will look at a couple of examples to determine if the data comes from a population that is normally distributed. </p> 
+<subsection xml:id="subsec-Kiama">
+  <title>Example: Kiama Blowhole Eruptions</title>
+ 
+
 <p>  In Kiama, Australia, there is the world's largest blowhole.  The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 30 meters (98.4 feet). </p>
         <figure xml:id="KiamaImage">
             <caption>Image of Kiama Blowhole Eruption</caption>
@@ -40,7 +44,7 @@
 <p> The data table shows the times in seconds between the Kiama blowhole eruptions from a random day.  Do the data come from a population that is normally distributed? Explain why or why not. </p> 
 <figure xml:id="KiamaTimes">
             <caption>Table of time between Kiama eruptions</caption>
-            <image source="KiamaTimes.png" width="75%">
+            <image source="KiamaTimes.png" width="60%">
                 <shortdescription>time in seconds between eruptions.</shortdescription>
             </image>
         </figure>
@@ -50,7 +54,7 @@
 <p> <term>Create a histogram on TI83/84:</term> </p>
 <p> Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1. </p> 
 <figure xml:id="EnterKiamaTimes">
-                        <image source="EnterKiamaTimes.png" width="50%">
+                        <image source="EnterKiamaTimes.png" width="75%">
                 <shortdescription>enter values in list 1.</shortdescription>
             </image>
         </figure>
@@ -73,7 +77,7 @@
 <p> Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again.  Press [enter].</p>
 <p> Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist:  L1 and Freq is 1. We can keep the same Window.</p> <p>  Hit the [GRAPH] button.  </p>
 <figure xml:id="KiamaBoxplot">
-                        <image source="KiamaBoxplot.png" >
+                        <image source="KiamaBoxplot.png" width="75%">
                 <shortdescription>boxplot has outliers on right side at larger values.</shortdescription>
             </image>
         </figure>
@@ -105,16 +109,80 @@
 <p> Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is <term>not </term> from a population that is normally distributed. </p>
 </solution>
 </example> 
+ </subsection>
+
+ <subsection xml:id="subsec-IQscores">
+  <title>Example: IQ Scores</title>
+ 
 
 <p> One way to measure intelligence is with an IQ score.  A common test is the Wechsler Intelligence Scale. Scores around 100 are considered average while scores above 140 are considered gifted. The table below contains 50 IQ scores.  Determine if the sample comes from a population that is normally distributed. </p> 
+<figure xml:id="IQscoresData">
+            <caption>Table of IQ scores</caption>
+            <image source="IQdata.png" width="85%">
+                <shortdescription>sample of 50 IQ scores.</shortdescription>
+            </image>
+        </figure>
 
 <example> <title> Histogram </title>
-<p> enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2. </p>
-<p> Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1.  Press [enter]. Under Type: elect the third image for histogram and adjust the [window] with Xmin=50 and Xmax=150 with Xcale=10. Set Ymin=0 and Ymax=20 for the frequency. Then press the [GRAPH] button. </p>
+<p> Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2. </p>
+<p> Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1.  Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button. </p>
+<figure xml:id="IQHistogram">
+                        <image source="IQhisto.png" >
+                <shortdescription>histogram shows higher frequencies in the middle and lower frequencies at the small and large values.</shortdescription>
+            </image>
+        </figure>
+
 
 <solution> <p>This histogram is relatively symmetric and bell-shaped </p> </solution> 
 </example> 
 
+<example> <title> Boxplot </title> 
+<p> <term>Create boxplot to check the IQ scores for outliers </term></p> 
+<p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].</p>
+<p> Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.  </p>
+   
+<figure xml:id="IQBoxplot">
+                        <image source="IQboxplot.png" width="75%">
+                <shortdescription> boxplot appears symmetric without outliers.</shortdescription>
+            </image>
+        </figure>
+
+<solution> <p> Boxplot appears symmetric without outliers. </p>
+</solution>
+</example> 
+
+<example> <title> Quantile Plot </title>
+<p> <term> Create a normal quantile plot of the IQ scores</term> </p> 
+<p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter]. </p>
+<p> Under Type: select the sixth image which looks like a line. </p>
+<p> Set Data List to L2 and set Data Axis to Y.  You can select the Mark you want.</p>   
+<p> Next, adjust the [Window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values. </p> 
+<p> Set the y-values to the data set values thus Ymin = 50 and Ymax = 150. </p> 
+<p>Now press the [GRAPH] button to get the normal quantile plot.  </p>
+<figure xml:id="IQquantilePlot">
+                        <image source="IQquantile.png" >
+                <shortdescription>the quantile plot forms a line.</shortdescription>
+            </image>
+        </figure>
+
+<solution> <p> Notice that the quantile plot forms a straight line. </p>
+</solution> 
+</example>
+
+<example> <title> Conclusion </title>
+<p> Can we conclude the variable is normally distributed? </p>
+<solution> 
+<p> Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample <term> is</term> from a population that is normally distributed. </p>
+</solution>
+</example> 
+
+
+ </subsection>
+
+
+ <subsection xml:id="subsec-NormalityPractice">
+  <title>Practice Problems</title>
+  </subsection>
 
 
 </section>
