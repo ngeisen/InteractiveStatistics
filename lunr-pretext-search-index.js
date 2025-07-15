@@ -3841,7 +3841,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Sampling Distribution",
-  "body": " Sampling Distribution  Text of section.    At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions     "
+  "body": " Sampling Distribution  > Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know what is true about the population.    At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions        Statistical inference is a process of drawing conclusions about the population based on the information from a sample.    First let us review some vocabulary and notations. When we refer to a parameter , we are referring to a number that describes some aspects of the population, such as the mean, standard deviation, and proportions. While a statistics is a number that describes that same aspect about the sample.  Here is a summary of the notations we will be using the rest of the semester.       Statistics  Parameter    Mean          Standard deviation          Proportion           When we want to describe an aspect of the population, we use the sample statistic as our best estimate of the parameter.  As we have seen from class data, it can vary from semester to semester depending on the class makeup. So if we want to predict the parameter from the sample statistic, we need to know how much it may vary from sample to sample.  Recall from the first week of class how we estimated the average word length of Gettysburg Address? Each person collected a sample of 10 words and found the average number of letters per word. Now, we are going to look at the distribution of this data. We are plotting each person's average value on a dot plot so see how much variation we have within the samples. If we have more samples, we can get a better estimate of what the population value is likely to be.  Below is a sampling distribution of the average word length from ten circle words from a class of 34 students, thus 34 dots in the distribution with average values ranging from 3.0 to 9.4. The distribution is bimodal for 5.5 and 6.0. We can see the variation in the average values from the sample of ten words.   Dotplot of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 6.    The histogram of the same data for 34 students is a bit more bell shaped when grouped into intervals with most values landing between 5 and 8.   Histogram of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 8 .    Below is a sampling distribution of the average word length from the ten random words selected from Gettysburg Address in a class of 34 students. This distribution has average values ranging from 3.0 to 6.3. The distribution is multimodal for 4.0 and 4.4 and 5.0 with a smaller range of values. The random sample is a better predictor of the actual mean.   Dotplot of Average Random Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 4 and 5.    The histogram is more bell shaped centered between 4.0 to 4.7, which is a better predictor of the true population mean for the average word length of Gettysburg Address.  What do you think will happen if we have a larger number of students finding the average word length? Would the distribution be more uniform or more bell-shaped? Would our prediction be better or worse? Think about it for a minute or two and then we will continue our investigation.  Below is a sampling distribution of the average word length from ten random words from Gettysburg Address using several classes. The total number of students is 267, thus 267 dots in the distribution. The values range from 2.0 to 6.6 with a mean of 4.47 and median 4.4 letters per word. The mode is 4.0 letters per word. This distribution is more bell shaped centered around 4.4 letters per word. Having more student samples helps us make a better prediction of what we think the population mean is.   Dotplot of Average Word Length from 267 Samples   Shows average word length prediction for 267 students clustered between 4 and 5.    With a larger sample of 267 students the distribution is more bell shaped and clustered around the parameter in the center. Here we would predict the population mean to be around 4.4 to 4.5 letters per word.  Here is a case where we can compare our prediction to the actual population parameter to see how close our estimate is. The actual average is 4.29 letters per word in Gettysburg Address.   Discussion   The dotplots show different values for each sample mean, but the distribution is fairly symmetric (even though the original sample is right skewed) and centered around the population mean of 4.29 letters per word. The distribution of sample statistics from many samples is called a sampling distribution.    A sampling distribution is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.    Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be.  We use the standard error to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter.  Let us investigate how the sampling distribution will change if we alter how big each sample of words is for each student. But this time, we will use technology to help simulate this process so we can have larger samples.   Using Technology   Since it is often difficult to create a sampling distribution, such as having 1000 students gather a sample of 10 words to predict the average, we can use technology to simulate a sampling distribution. We are going to upload the Gettysburg Address into StatKey and choose a variety of sample sizes to see how close we can get to predicting the actual average number of letters per word.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Mean .   StatKey Sampling Distribution Menu   Mean is the first option under Sampling Distribution.    Click on Upload File and locate where the data file is saved on your computer and select the variable Actual Words .   StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixthi is to Change Coulmns.    The default is choosing a sample of size n=10.  Once the data is uploaded you will see a similar image to this one.   StatKey for one sample   Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution.     Interpreting StatKey: The top right graph shows the original data with 268 words with an average of 4.287. We can see the original data is right skewed. If we click on the Generate 1 Sample button we see the number of letters for each of the 10 randomly selected words from the population in the dot plot on the bottom right side. This sample has a mean of 4.2 and this mean value is graphed in the main graphic as a single dot. We can generate another sample of ten words by clicking Generate 1 Sample .   StatKey for two samples   image of second sample of ten words.    This new sample of 10 random words has a mean of 4.6 and is also plotted on the main graph. The average of the two sample means is 4.4.  Our goal is to see what the typical values are when we have more samples. Now let’s generate 100 samples to represent 100 students completing this task. (Note: when you complete this on your own, your values may be slightly different but once the number of samples is larger enough the distribution will be similar.)   StatKey with 100 sample means   100 samples of ten words.    Now we have 100 students represented by the 100 dots, and the mean of these average values is 4.377 which is at the center of the distribution. This distribution is still slightly right skewed. So let us add more samples to the distribution.   StatKey with 100 sample means   1002 samples of ten words.    We can see we have a bell-shaped distribution that is symmetric and centered at mean 4.268 which is close to the know population parameter of 4.287. We now have 1002 total samples of ten words, and the standard error is 0.653 to describe how much variation we have between the samples.  We can see that most average values for the ten words is between 3.5 and 5.0 from the distribution, which relates to the mean of the distribution plus\/minus the standard error, thus which gives 3.615 to 4.921 as the typical values.  Using the 95% rule from earlier in the semester we have the mean plus\/minus two times time standard error (which is the standard deviation of the sampling distribution) the mean gives 2.962 to 5.574 which relates to where most of the values occur. So the center of our sampling distribution (mean 4.268) is a good estimate for the population parameter (4.287).   Practice Problems   Now it is your turn to experiment with sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey.  What happens to the shape of the sampling distribution when more samples are included? With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.   What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.   What happens to the center of the sampling distribution when more samples are included? With more samples, the center of the distribution is closer to population parameter value.   What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the center of the distribution is population parameter.   What happens to the standard error of the sampling distribution when each sample size is larger? When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.    Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.     This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.    "
 },
 {
   "id": "sec-SamplingDist-3",
@@ -3851,6 +3851,222 @@ var ptx_lunr_docs = [
   "number": "5.1",
   "title": "",
   "body": "  At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions    "
+},
+{
+  "id": "def-statisticalinference",
+  "level": "2",
+  "url": "sec-SamplingDist.html#def-statisticalinference",
+  "type": "Definition",
+  "number": "5.1.1",
+  "title": "",
+  "body": "   Statistical inference is a process of drawing conclusions about the population based on the information from a sample.   "
+},
+{
+  "id": "sec-SamplingDist-7",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-7",
+  "type": "Table",
+  "number": "5.1.2",
+  "title": "",
+  "body": "     Statistics  Parameter    Mean          Standard deviation          Proportion          "
+},
+{
+  "id": "GettysCircled",
+  "level": "2",
+  "url": "sec-SamplingDist.html#GettysCircled",
+  "type": "Figure",
+  "number": "5.1.3",
+  "title": "",
+  "body": " Dotplot of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 6.   "
+},
+{
+  "id": "GettysCircledBar",
+  "level": "2",
+  "url": "sec-SamplingDist.html#GettysCircledBar",
+  "type": "Figure",
+  "number": "5.1.4",
+  "title": "",
+  "body": " Histogram of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 8 .   "
+},
+{
+  "id": "GettysRandom",
+  "level": "2",
+  "url": "sec-SamplingDist.html#GettysRandom",
+  "type": "Figure",
+  "number": "5.1.5",
+  "title": "",
+  "body": " Dotplot of Average Random Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 4 and 5.   "
+},
+{
+  "id": "GettysRanDist",
+  "level": "2",
+  "url": "sec-SamplingDist.html#GettysRanDist",
+  "type": "Figure",
+  "number": "5.1.6",
+  "title": "",
+  "body": " Dotplot of Average Word Length from 267 Samples   Shows average word length prediction for 267 students clustered between 4 and 5.   "
+},
+{
+  "id": "sec-SamplingDist-23",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Discussion "
+},
+{
+  "id": "def-SamplingDistribution",
+  "level": "2",
+  "url": "sec-SamplingDist.html#def-SamplingDistribution",
+  "type": "Definition",
+  "number": "5.1.7",
+  "title": "",
+  "body": "  A sampling distribution is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.   "
+},
+{
+  "id": "sec-SamplingDist-27",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-27",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "standard error "
+},
+{
+  "id": "sec-SamplingDist-29",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-29",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Using Technology "
+},
+{
+  "id": "sec-SamplingDist-31",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-31",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "StatKey "
+},
+{
+  "id": " StatkeySamplingMenu",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySamplingMenu",
+  "type": "Figure",
+  "number": "5.1.8",
+  "title": "",
+  "body": " StatKey Sampling Distribution Menu   Mean is the first option under Sampling Distribution.   "
+},
+{
+  "id": " StatkeySamplingMeanMenu",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySamplingMeanMenu",
+  "type": "Figure",
+  "number": "5.1.9",
+  "title": "",
+  "body": " StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixthi is to Change Coulmns.   "
+},
+{
+  "id": " StatkeySampling1",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySampling1",
+  "type": "Figure",
+  "number": "5.1.10",
+  "title": "",
+  "body": " StatKey for one sample   Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution.   "
+},
+{
+  "id": " StatkeySampling2",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySampling2",
+  "type": "Figure",
+  "number": "5.1.11",
+  "title": "",
+  "body": " StatKey for two samples   image of second sample of ten words.   "
+},
+{
+  "id": " StatkeySampling3",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySampling3",
+  "type": "Figure",
+  "number": "5.1.12",
+  "title": "",
+  "body": " StatKey with 100 sample means   100 samples of ten words.   "
+},
+{
+  "id": " StatkeySampling4",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySampling4",
+  "type": "Figure",
+  "number": "5.1.13",
+  "title": "",
+  "body": " StatKey with 100 sample means   1002 samples of ten words.   "
+},
+{
+  "id": "sec-SamplingDist-48",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-48",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Practice Problems "
+},
+{
+  "id": "sec-SamplingDist-50",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-50",
+  "type": "Checkpoint",
+  "number": "5.1.14",
+  "title": "",
+  "body": "What happens to the shape of the sampling distribution when more samples are included? With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.  "
+},
+{
+  "id": "sec-SamplingDist-51",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-51",
+  "type": "Checkpoint",
+  "number": "5.1.15",
+  "title": "",
+  "body": "What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.  "
+},
+{
+  "id": "sec-SamplingDist-52",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-52",
+  "type": "Checkpoint",
+  "number": "5.1.16",
+  "title": "",
+  "body": "What happens to the center of the sampling distribution when more samples are included? With more samples, the center of the distribution is closer to population parameter value.  "
+},
+{
+  "id": "sec-SamplingDist-53",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-53",
+  "type": "Checkpoint",
+  "number": "5.1.17",
+  "title": "",
+  "body": "What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the center of the distribution is population parameter.  "
+},
+{
+  "id": "sec-SamplingDist-54",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-54",
+  "type": "Checkpoint",
+  "number": "5.1.18",
+  "title": "",
+  "body": "What happens to the standard error of the sampling distribution when each sample size is larger? When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.  "
+},
+{
+  "id": "sec-SamplingDist-55",
+  "level": "2",
+  "url": "sec-SamplingDist.html#sec-SamplingDist-55",
+  "type": "Example",
+  "number": "5.1.19",
+  "title": "",
+  "body": " Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.     This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.   "
 },
 {
   "id": "sec-BootstrapDist",
@@ -3877,7 +4093,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Assessing Normality",
-  "body": " Assessing Normality  Text of section.    At the end of this section you will be able to:     Determine if a variable is normally distributed    Assessing normality with histogram, boxplot, and quantile plot.     Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed? One way is to take a sample and look at the sample to determine if it appears normally distributed. If the sample looks normal, then most likely the population is also. Here are some guidelines that are used to help make that determination.     Histogram: Make a histogram. For a normal distribution, the histogram should be roughly bell-shaped and symmetric. For small samples, this is not very accurate, and another method may be needed. A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.     Outliers: For a normal distribution, there should not be more than one outlier. One way to check for outliers is to use a box plot. Outliers are values that are shown as dots or stars outside of the rest of the values when using technology.     Normal quantile plot: This plot is provided through statistical software on a computer or graphing calculator. It plots the data values on one axis and its z-score on the other. If the points lie close to a line, the data comes from a distribution that is approximately normal. If the points do not lie close to a line or they show a pattern that is curved, the data are likely to come from a distribution that is not normally distributed.    If you are creating boxplots by hand, we check for outliers mathematically. Outliers are data values that are:    Greater than Quartile 3 plus 1.5 times the interquartile range (IQR)    Below than Quartile 3 minus 1.5 times the interquartile range (IQR)    Recall the IQR = Q3 – Q1    Note: if there is an outlier, that outlier could have a dramatic effect on the results especially if it is an extreme outlier. However, there are times when a distribution has more than one outlier, but it is still normally distributed. The guideline of only one outlier is just a guideline.    We will look at a couple of examples to determine if the data comes from a population that is normally distributed.  In Kiama, Australia, there is the world's largest blowhole. The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 30 meters (98.4 feet).   Image of Kiama Blowhole Eruption   image of blowhole eruption.    The data table shows the times in seconds between the Kiama blowhole eruptions from a random day. Do the data come from a population that is normally distributed? Explain why or why not.   Table of time between Kiama eruptions   time in seconds between eruptions.    We will be using technology to determine the normality of this variable.   Histogram   Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.    enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.    histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.   The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.     Boxplot   Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.    boxplot has outliers on right side at larger values.     The boxplot shows the data is right skewed with two upper outliers.     Quantile Plot   Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot is curved.     Notice that the quantile plot forms a curve rather than straight line.     Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.    One way to measure intelligence is with an IQ score. A common test is the Wechsler Intelligence Scale. Scores around 100 are considered average while scores above 140 are considered gifted. The table below contains 50 IQ scores. Determine if the sample comes from a population that is normally distributed.   Histogram  enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: elect the third image for histogram and adjust the [window] with Xmin=50 and Xmax=150 with Xcale=10. Set Ymin=0 and Ymax=20 for the frequency. Then press the [GRAPH] button.   This histogram is relatively symmetric and bell-shaped    "
+  "body": " Assessing Normality  Text of section.    At the end of this section you will be able to:     Determine if a variable is normally distributed    Assess normality with histogram, boxplot, and quantile plot.     Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed? One way is to take a sample and look at the sample to determine if it appears normally distributed. If the sample looks normal, then most likely the population is also. Here are some guidelines that are used to help make that determination.     Histogram: Make a histogram. For a normal distribution, the histogram should be roughly bell-shaped and symmetric. For small samples, this is not very accurate, and another method may be needed. A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.     Outliers: For a normal distribution, there should not be more than one outlier. One way to check for outliers is to use a box plot. Outliers are values that are shown as dots or stars outside of the rest of the values when using technology.     Normal quantile plot: This plot is provided through statistical software on a computer or graphing calculator. It plots the data values on one axis and its z-score on the other. If the points lie close to a line, the data comes from a distribution that is approximately normal. If the points do not lie close to a line or they show a pattern that is curved, the data are likely to come from a distribution that is not normally distributed.    If you are creating boxplots by hand, we check for outliers mathematically. Outliers are data values that are:    Greater than Quartile 3 plus 1.5 times the interquartile range (IQR)    Below than Quartile 3 minus 1.5 times the interquartile range (IQR)    Recall the IQR = Q3 – Q1    Note: if there is an outlier, that outlier could have a dramatic effect on the results especially if it is an extreme outlier. However, there are times when a distribution has more than one outlier, but it is still normally distributed. The guideline of only one outlier is just a guideline.    We will look at a couple of examples to determine if the data comes from a population that is normally distributed.   Example: Kiama Blowhole Eruptions  In Kiama, Australia, there is the world's largest blowhole. The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 30 meters (98.4 feet).   Image of Kiama Blowhole Eruption   image of blowhole eruption.    The data table shows the times in seconds between the Kiama blowhole eruptions from a random day. Do the data come from a population that is normally distributed? Explain why or why not.   Table of time between Kiama eruptions   time in seconds between eruptions.    We will be using technology to determine the normality of this variable.   Histogram   Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.    enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.    histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.   The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.     Boxplot   Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.    boxplot has outliers on right side at larger values.     The boxplot shows the data is right skewed with two upper outliers.     Quantile Plot   Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot is curved.     Notice that the quantile plot forms a curve rather than straight line.     Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.      Example: IQ Scores  One way to measure intelligence is with an IQ score. A common test is the Wechsler Intelligence Scale. Scores around 100 are considered average while scores above 140 are considered gifted. The table below contains 50 IQ scores. Determine if the sample comes from a population that is normally distributed.   Table of IQ scores   sample of 50 IQ scores.     Histogram  Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button.    histogram shows higher frequencies in the middle and lower frequencies at the small and large values.     This histogram is relatively symmetric and bell-shaped     Boxplot   Create boxplot to check the IQ scores for outliers  Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.    boxplot appears symmetric without outliers.     Boxplot appears symmetric without outliers.     Quantile Plot   Create a normal quantile plot of the IQ scores   Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L2 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [Window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 50 and Ymax = 150.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot forms a line.     Notice that the quantile plot forms a straight line.     Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample is from a population that is normally distributed.      Practice Problems   "
 },
 {
   "id": "sec-AssessNormality-3",
@@ -3886,7 +4102,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.3",
   "title": "",
-  "body": "  At the end of this section you will be able to:     Determine if a variable is normally distributed    Assessing normality with histogram, boxplot, and quantile plot.    "
+  "body": "  At the end of this section you will be able to:     Determine if a variable is normally distributed    Assess normality with histogram, boxplot, and quantile plot.    "
 },
 {
   "id": "sec-AssessNormality-5-1-1",
@@ -3934,49 +4150,85 @@ var ptx_lunr_docs = [
   "body": " Table of time between Kiama eruptions   time in seconds between eruptions.   "
 },
 {
-  "id": "sec-AssessNormality-14",
+  "id": "subsec-Kiama-7",
   "level": "2",
-  "url": "sec-AssessNormality.html#sec-AssessNormality-14",
+  "url": "sec-AssessNormality.html#subsec-Kiama-7",
   "type": "Example",
   "number": "5.3.3",
   "title": "Histogram.",
   "body": " Histogram   Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.    enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.    histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.   The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.   "
 },
 {
-  "id": "sec-AssessNormality-15",
+  "id": "subsec-Kiama-8",
   "level": "2",
-  "url": "sec-AssessNormality.html#sec-AssessNormality-15",
+  "url": "sec-AssessNormality.html#subsec-Kiama-8",
   "type": "Example",
   "number": "5.3.6",
   "title": "Boxplot.",
   "body": " Boxplot   Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.    boxplot has outliers on right side at larger values.     The boxplot shows the data is right skewed with two upper outliers.   "
 },
 {
-  "id": "sec-AssessNormality-16",
+  "id": "subsec-Kiama-9",
   "level": "2",
-  "url": "sec-AssessNormality.html#sec-AssessNormality-16",
+  "url": "sec-AssessNormality.html#subsec-Kiama-9",
   "type": "Example",
   "number": "5.3.8",
   "title": "Quantile Plot.",
   "body": " Quantile Plot   Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot is curved.     Notice that the quantile plot forms a curve rather than straight line.   "
 },
 {
-  "id": "sec-AssessNormality-17",
+  "id": "subsec-Kiama-10",
   "level": "2",
-  "url": "sec-AssessNormality.html#sec-AssessNormality-17",
+  "url": "sec-AssessNormality.html#subsec-Kiama-10",
   "type": "Example",
   "number": "5.3.10",
   "title": "Conclusion.",
   "body": " Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.   "
 },
 {
-  "id": "sec-AssessNormality-19",
+  "id": "IQscoresData",
   "level": "2",
-  "url": "sec-AssessNormality.html#sec-AssessNormality-19",
-  "type": "Example",
+  "url": "sec-AssessNormality.html#IQscoresData",
+  "type": "Figure",
   "number": "5.3.11",
+  "title": "",
+  "body": " Table of IQ scores   sample of 50 IQ scores.   "
+},
+{
+  "id": "subsec-IQscores-4",
+  "level": "2",
+  "url": "sec-AssessNormality.html#subsec-IQscores-4",
+  "type": "Example",
+  "number": "5.3.12",
   "title": "Histogram.",
-  "body": " Histogram  enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: elect the third image for histogram and adjust the [window] with Xmin=50 and Xmax=150 with Xcale=10. Set Ymin=0 and Ymax=20 for the frequency. Then press the [GRAPH] button.   This histogram is relatively symmetric and bell-shaped   "
+  "body": " Histogram  Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button.    histogram shows higher frequencies in the middle and lower frequencies at the small and large values.     This histogram is relatively symmetric and bell-shaped   "
+},
+{
+  "id": "subsec-IQscores-5",
+  "level": "2",
+  "url": "sec-AssessNormality.html#subsec-IQscores-5",
+  "type": "Example",
+  "number": "5.3.14",
+  "title": "Boxplot.",
+  "body": " Boxplot   Create boxplot to check the IQ scores for outliers  Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.    boxplot appears symmetric without outliers.     Boxplot appears symmetric without outliers.   "
+},
+{
+  "id": "subsec-IQscores-6",
+  "level": "2",
+  "url": "sec-AssessNormality.html#subsec-IQscores-6",
+  "type": "Example",
+  "number": "5.3.16",
+  "title": "Quantile Plot.",
+  "body": " Quantile Plot   Create a normal quantile plot of the IQ scores   Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L2 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [Window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 50 and Ymax = 150.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot forms a line.     Notice that the quantile plot forms a straight line.   "
+},
+{
+  "id": "subsec-IQscores-7",
+  "level": "2",
+  "url": "sec-AssessNormality.html#subsec-IQscores-7",
+  "type": "Example",
+  "number": "5.3.18",
+  "title": "Conclusion.",
+  "body": " Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample is from a population that is normally distributed.   "
 },
 {
   "id": "sec-NormalDist",
