@@ -4,14 +4,19 @@
   <p> This section includes data sets to analyze climate change as well as the websites where the data was gathered for more current data. </p>
 
   <p> <term> Earthquakes </term> </p>
+  <p> SCEDC (2013): Southern California Earthquake Center.
+Caltech.Dataset. doi:10.7909/C3WD3xH1 </p> 
   <p> California Earthquakes: <url href="https://scedc.caltech.edu/index.html
     " /> </p>
    <p>  <url href="external/sheets/EarthquakesApril.csv"> Earthquakes April 2025</url> </p>
  
+<p> California Institute of Technology (Caltech) (1926): Southern California Seismic Network. International Federation of Digital Seismograph Networks. Other/Seismic Network. doi:10.7914/SN/CI </p> 
+
  <p> <term> Hurricanes </term> </p>
 <p> <url href="https://www.nhc.noaa.gov/  " /> </p>
 
 <p> <term> Severe Weather </term> </p>
+<p> NOAA National Centers for Environmental Information (NCEI) U.S. Billion-Dollar Weather and Climate Disasters (2025). https://www.ncei.noaa.gov/access/billions/, DOI: 10.25921/stkw-7w73 </p> 
 <p> Billion Dollar Weather Events: <url href="https://www.ncei.noaa.gov/access/billions/time-series/US/cost " /> </p>
 
 <p> <term> Temperatures </term> </p>

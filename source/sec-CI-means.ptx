@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-CI-means" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Intervals for Means</title>
+  <p> Text of section. </p>
+
+<subsection xml:id="subsec-CImean">
+  <title>Understanding the Basics</title>
+  </subsection>
+<subsection xml:id="subsec-CImeanCalc">
+  <title>Using Technology</title>
+  </subsection>
+
+<subsection xml:id="subsec-CImeanPractice">
+  <title>Practice Problems</title>
+<p> The data in <em>Hurricanes</em> contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. <em> Early Years </em> consists of the number of hurricanes from 1914 to 1933 and <em>Later Years </em> consists of the number of hurricanes from 2003 to 2022.</p>
+<p> In StatKey under <term>One Quantitative Variable</term>, <c>Upload </c>the data file and select each variable to find the summary statistics to complete the table below. Click on <c>Change Column</c> to change variable names. </p>
+<exercise>
+<p>Find the sample size, mean, and standard deviation for <em> Hurricanes</em>, <em>Early Years</em> and <em> Later Years.</em> Round to two decimal places. </p> 
+<solution> <p> summary </p>
+</solution>
+</exercise> 
+
+<exercise>
+<p>Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years. </p>
+<solution> <p> mean 4.3 +/- 2.093(2.77/sqrt20) gives 3.00 to 5.6 </p>
+<p> 95% confident that the mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year. </p>
+</solution>
+</exercise> 
+
+<exercise>
+<p>Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years. </p>
+<solution> <p> mean 7.75 +/- 1.729(3.34/sqrt20) gives 6.46 to 9.04 </p>
+<p> 90% confident that confident that the mean number of hurricanes in the Early Years is between 6.5 and 9.4 per year. </p>
+</solution>
+</exercise> 
+
+<exercise>
+<p>Did the mean of all hurricanes land in each of those intervals? Explain why or why not. </p>
+<solution> <p> The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes then. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring. </p>
+</solution>
+</exercise> 
+
+
+  </subsection>
+
+
+
+
+
+
+</section>

@@ -2,4 +2,83 @@
 <section xml:id="sec-SingleMean.ptx" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>t-test for the Mean</title>
   <p> Text of section. </p>
+
+  <subsection xml:id="subsec-Singlemean">
+  <title>Understanding the Basics</title>
+  </subsection>
+
+<subsection xml:id="subsec-SinglemeanCalc">
+  <title>Using Technology</title>
+  </subsection>
+
+<subsection xml:id="subsec-SinglemeanPractice">
+  <title>Practice Problems</title>
+<p> The data in <em>Hurricanes</em> contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. <em> Early Years </em> consists of the number of hurricanes from 1914 to 1933 and <em>Later Years </em> consists of the number of hurricanes from 2003 to 2022.</p>
+<p> In StatKey under <term>One Quantitative Variable</term>, <c>Upload </c>the data file and select each variable to find the summary statistics. Click on <c>Change Column</c> to change variable names. </p>
+
+<exercise> <title> summary statistics </title>
+<p>Find the sample size, mean, and standard deviation for <em> Hurricanes</em>, <em>Early Years</em> and <em> Later Years.</em> Round to two decimal places. </p> 
+<solution> <p> summary </p>
+</solution>
+</exercise> 
+<p> We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.</p>
+
+
+<exercise> <title> hypotheses </title> 
+<p> We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses? </p>
+<solution> <p> <m> Ho: \mu =5.8</m> and <m>Ha: \mu \lt 5.8 </m> </p> 
+</solution>
+</exercise> 
+<exercise> <title> test value </title> 
+<p> What is the statistical test value? </p>
+<solution> <p> <me> T= \frac{4.3-5.8} {\frac{2.77} {\sqrt{20}}}= -2.42</me> </p> 
+</solution>
+</exercise> 
+<exercise> <title> p-value </title> 
+<p> Find the p-value for the  statistical test value </p>
+<solution> <p> p-value=0.013 with 19 df for left tail test </p>
+</solution>
+</exercise> 
+<exercise> <title> decision </title> 
+<p> Based the p-value, should your reject or not reject the null hypothesis?</p>
+<solution> <p> since p-value 0.013 is less than alpha (.05), we should reject Ho </p>
+</solution>
+</exercise> 
+<exercise> <title> conclusion </title> 
+<p> What is the conclusion?  </p>
+<solution> <p> Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.</p>
+</solution>
+</exercise> 
+
+<p> We are going to investigate if the mean number of hurricanes in the Later Years is significantly more than the mean of 5.8 hurricanes per year. </p> 
+<exercise> <title> hypotheses </title> 
+<p> We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses? </p>
+<solution> <p> <m> Ho: \mu =5.8</m> and <m>Ha: \mu \gt 5.8 </m> </p> 
+</solution>
+</exercise> 
+<exercise> <title> test value </title> 
+<p> What is the statistical test value? </p>
+<solution> <p> <m> T= \frac{7.75-5.8} {\frac{3.34} {\sqrt{20}}}= 2.61
+</m> </p> 
+</solution>
+</exercise> 
+<exercise> <title> p-value </title> 
+<p> Find the p-value for the  statistical test value </p>
+<solution> <p> p-value=0.0086 with 19 df  for a right tail test </p>
+</solution>
+</exercise> 
+<exercise> <title> decision </title> 
+<p> Based the p-value, should your reject or not reject the null hypothesis?</p>
+<solution> <p> since p-value 0.0086 is less than alpha (.05), we should reject Ho </p>
+</solution>
+</exercise> 
+<exercise> <title> conclusion </title> 
+<p> What is the conclusion?  </p>
+<solution> <p> Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.</p>
+</solution>
+</exercise> 
+
+
+  </subsection>
+
 </section>

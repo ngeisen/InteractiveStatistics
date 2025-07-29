@@ -18,8 +18,8 @@
   </ol>
 </objectives>
 
-
-
-
+<xi:include href="sec-CI-means.ptx" />
+<xi:include href="sec-CI-proportions.ptx" />
+<xi:include href="sec-CI-variance.ptx" />
 
   </chapter>

@@ -4,5 +4,26 @@
   <p> Text of section. </p>
 
 
+<subsection xml:id="subsec-Indpmean">
+  <title>Understanding the Basics</title>
+  </subsection>
+
+<subsection xml:id="subsec-IndpmeanCalc">
+  <title>Using Technology</title>
+  </subsection>
+
+<subsection xml:id="subsec-IndpmeanPractice">
+  <title>Practice Problems</title>
+
+  <p> The data in <em>Hurricanes</em> contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in testing whether the number of hurricanes is increasing over time. <em> Early Years </em> consists of the number of hurricanes from 1914 to 1933 and <em>Later Years </em> consists of the number of hurricanes from 2003 to 2022. Test for evidence that the mean number of hurricanes in the Later Years is greater than the mean number of hurricanes in the Early Years. </p> 
+
+<p> Use <term>StatKey </term> to compare the shape of the distribution of the two groups.  Under <term>Descriptive Statistics and Graphs</term>, select <term>One Quantitative and One Categorical Variable </term>, click on the <c>Upload</c> the data file and select the variables <em>Compared (quantitative)</em> and <em>Group (categorical)</em>. Compare the dotplots, histograms, and boxplots. What do the graphs indicate? Also find the summary statistics for both groups. </p> 
+
+  </subsection>
+
+
+
+
+
 
 </section>
