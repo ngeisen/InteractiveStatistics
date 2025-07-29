@@ -1537,7 +1537,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Multivariable Graphs",
-  "body": " Multivariable Graphs   There are many other types of graphs that you can use to summarize data, depending on what the data is intended to display. We are not limited to graphing with just one or two variables. We are going to explore a few online resources that have interactive graphs.     At the end of this section you will be able to:     Recognize data can be visualized in a variety of ways    Interpret a variety of graphs     There are many other types of graphs that you can use to display data. Pictographs use pictures to represent objects. You may see time series plots to show how quantities change over time. Sometimes quantities are displayed in a density map where the higher concentrations are darker in color. These are but a few examples involving climate data that we will explore.  The National Centers for Environmental Information (NCEI) tracks severe weather and climate events from a historical perspective and their economic and societal impacts.  The U.S. has sustained 403 weather and climate disasters since 1980 where overall damages\/costs reached or exceeded $1 billion (including CPI adjustment to 2025). The total cost of these 403 events exceeds $2.945 trillion.  Back in the 1980s the average was 9 severe events per year, yet in the most recent 5 years the average is 23 events per year. The increase in the number of climate disasters is costly.  The pictograph below denotes the location of 27 separate billion-dollar weather and climate disasters that impacted the United States in 2024.   US Map showing Weather Disasters   US Map showing location of weather disasters that exceeded 1 billion dollars in costs.    graph source:    Graph interpretation: The graph depicts the location of the severe weather disaster as well as their type with a pictograph. The graph also indicates the dates of these disasters in 2024. The tropical cyclones and hurricanes occur along the coasts while the tornadoes occur in the central states. There was only one case of flooding that exceeded the $1 billion mark.  The graph below is a segmented bar graph where each color represents a different type of severe weather event. On the left-side axis, it depicts the number of events for the year listed on the x-axis. We can see that the total number of events is increasing over time. This is an example of a time series plot.   Number of Weather Disasters since 1980   Summarized number of weather disasters by category that exceeded 1 billion dollars in costs.    graph source:    Graph interpretation: We can see in more recent years on the right side of the graph that severe storms (green bars) and tropical cyclones (yellow bars) are occurring more frequently.  If you go to the website, you can click on a specific year to find the totals for each category as well as the 5-year average cost and the 95% confidence interval of the cost. The right-side axis gives the total cost in billions for those events. We can see that the total number of events is increasing over time, as well as the total cost for these events. The graph below summarizes the data for 2024.   Costs of Weather Disasters since 1980   Summarized costs of weather disasters by category in US.    Graph interpretation: In 2024, there were 27 confirmed U.S. billion-dollar weather and climate disaster events. These events include: 17 severe storm events (tornado outbreaks, high wind, hailstorms), 5 tropical cyclones, one wildfire, one drought\/heat wave, one flooding, and two winter storm events. The total cost of these 27 events was $184.8 billion. The red line for the Combined Disaster Cost is another example of a time-series plot. We can see that in 2005 and 2017 the total cost jumped dramatically.   Exercises   The segmented graph below summarizes the total number of billion-dollar disasters throughout the year since 1980 according to the month they occurred.   Monthly Weather Disasters since 1980   Summarized number of weather disasters by category that exceeded 1 billion dollars in costs.    graph source:   Using the United States Billion Dollar Disaster Type Counts by Month graph above, answer the following questions.  The Southern California Earthquake Data Center (SCEDC) is the archive of the Caltech\/USGS Southern California Seismic network (SCSN). They track the location and size of seismic activities in California. This graph illustrates the location of recent earthquakes in southern California. The dots are color coded for when the earthquake occurred, red for within the last hour, blue for within the last week, and yellow for within the last 30 days. The size of the dots indicates the magnitude (or strength) of the earthquake. If you go to the website, you can click on a specific dot to identify the date, time, and magnitude of the earthquake.   Earthquakes in southern California around May 1, 2025   Shows location and size of earthquakes in California.    graph source:    Graph interpretation We can see there is a red dot near Carson City, Nevada which had a magnitude of 0.9 on May 1. The yellow dot near San Diego, California had a magnitude of 2.45 on April 29, 2025.  The National Centers for Environmental Information has an interactive mapping tool to help visualize the location and cost for billion-dollar climate events. This mapping of the United States shows which states had the most extensive cost for wildfires from 2000 through April of 2025.   Wildfire costs by state   Shows accumulated cost of wildfires by state.    The density map above summarizes the 19 wildfire events with losses exceeding $1-billion dollars each. The darker the color the more loss for that state. California has between $50-$100 billion in loss while Colorado and Oregon have $5-$10 billion in wildfire loss. The states in white had no billion-dollar level wildfires. The total is between $100-$200 billion for this time period of 2000-2025.  This density map of the United States (below) shows which states had the most extensive cost for tropical cyclones and hurricanes for 2000-2024. There were 48 tropical cyclone events with losses exceeding $1 billion each. Florida has experienced over $360 billion in loss. Texas and Louisiana had $200-300 billion in damage. The total for the 25 years displayed is $1.3 trillion dollars.   Tropical cyclone costs by state   Shows accumulated cost of cyclones by state.    Using the link below, explore other weather disasters and the accumulated costs or frequency per state. You can adjust to the years of interest since 1980.  Interactive website:   The Storm Prediction Center (SPC) is part of the National Weather Service (NWS) and provide timely forecasts and watches for severe thunderstorms and tornadoes over the contiguous United States.  Interactive website:   Below is a severe weather map for the Month of April in 2025. Each red triangle depicts the location of a tornado, blue squares represent severe wind, and green circles represent severe hail. The larger the symbol, the stronger the tornado, wind speed, or hail stone size.   Severe Weather events in April 2025   US map showing location of severe weather.     Interpretation: From the legend, we can see there were 341 tornadoes in the US with 35 rating of EF2 or greater in the month of April 2025. There were 1781 severe wind storms with 44 of them exceeding 75 mile per hour gusts. There were 1031 severe hailstorms with 444 storms with hail stones of at least 1 inch and 177storms with hailstones more than 2 inches in diameter.  We can compare this to the severe weather map from April in 2000. Does there appear to be more severe with storms across the United States now or then?   Severe Weather events in April 2000   US map showing location of severe weather.    In April 2000, there were 136 tornadoes, 737 severe windstorms, and 679 storms with severe hail. It does appear there were more severe weather storms in 2025 than in 2000.  "
+  "body": " Multivariable Graphs   There are many other types of graphs that you can use to summarize data, depending on what the data is intended to display. We are not limited to graphing with just one or two variables. We are going to explore a few online resources that have interactive graphs.     At the end of this section you will be able to:     Recognize data can be visualized in a variety of ways    Interpret a variety of graphs     There are many other types of graphs that you can use to display data. Pictographs use pictures to represent objects. You may see time series plots to show how quantities change over time. Sometimes quantities are displayed in a density map where the higher concentrations are darker in color. These are but a few examples involving climate data that we will explore.  The National Centers for Environmental Information (NCEI) tracks severe weather and climate events from a historical perspective and their economic and societal impacts.  The U.S. has sustained 403 weather and climate disasters since 1980 where overall damages\/costs reached or exceeded $1 billion (including CPI adjustment to 2025). The total cost of these 403 events exceeds $2.945 trillion.  Back in the 1980s the average was 9 severe events per year, yet in the most recent 5 years the average is 23 events per year. The increase in the number of climate disasters is costly.  The pictograph below denotes the location of 27 separate billion-dollar weather and climate disasters that impacted the United States in 2024.   US Map showing Weather Disasters   US Map showing location of weather disasters that exceeded 1 billion dollars in costs.    graph source:    Graph interpretation: The graph depicts the location of the severe weather disaster as well as their type with a pictograph. The graph also indicates the dates of these disasters in 2024. The tropical cyclones and hurricanes occur along the coasts while the tornadoes occur in the central states. There was only one case of flooding that exceeded the $1 billion mark.  The graph below is a segmented bar graph where each color represents a different type of severe weather event. On the left-side axis, it depicts the number of events for the year listed on the x-axis. We can see that the total number of events is increasing over time. This is an example of a time series plot.   Number of Weather Disasters since 1980   Summarized number of weather disasters by category that exceeded 1 billion dollars in costs.    graph source:    Graph interpretation: We can see in more recent years on the right side of the graph that severe storms (green bars) and tropical cyclones (yellow bars) are occurring more frequently.  If you go to the website, you can click on a specific year to find the totals for each category as well as the 5-year average cost and the 95% confidence interval of the cost. The right-side axis gives the total cost in billions for those events. We can see that the total number of events is increasing over time, as well as the total cost for these events. The graph below summarizes the data for 2024.   Costs of Weather Disasters since 1980   Summarized costs of weather disasters by category in US.    Graph interpretation: In 2024, there were 27 confirmed U.S. billion-dollar weather and climate disaster events. These events include: 17 severe storm events (tornado outbreaks, high wind, hailstorms), 5 tropical cyclones, one wildfire, one drought\/heat wave, one flooding, and two winter storm events. The total cost of these 27 events was $184.8 billion. The red line for the Combined Disaster Cost is another example of a time-series plot. We can see that in 2005 and 2017 the total cost jumped dramatically.   Exercises   The segmented graph below summarizes the total number of billion-dollar disasters throughout the year since 1980 according to the month they occurred.   Monthly Weather Disasters since 1980   Summarized number of weather disasters by category that exceeded 1 billion dollars in costs.    graph source:   Using the United States Billion Dollar Disaster Type Counts by Month graph above, answer the following questions.  The Southern California Earthquake Data Center (SCEDC) is the archive of the Caltech\/USGS Southern California Seismic network (SCSN). They track the location and size of seismic activities in California. This graph illustrates the location of recent earthquakes in southern California. The dots are color coded for when the earthquake occurred, red for within the last hour, blue for within the last week, and yellow for within the last 30 days. The size of the dots indicates the magnitude (or strength) of the earthquake. If you go to the website, you can click on a specific dot to identify the date, time, and magnitude of the earthquake.   Earthquakes in southern California around May 1, 2025   Shows location and size of earthquakes in California.    graph source:    Graph interpretation We can see there is a red dot near Carson City, Nevada which had a magnitude of 0.9 on May 1. The yellow dot near San Diego, California had a magnitude of 2.45 on April 29, 2025.  The National Centers for Environmental Information has an interactive mapping tool to help visualize the location and cost for billion-dollar climate events. This mapping of the United States shows which states had the most extensive cost for wildfires from 2000 through April of 2025.   Wildfire costs by state   Shows accumulated cost of wildfires by state.    The density map above summarizes the 19 wildfire events with losses exceeding $1-billion dollars each. The darker the color the more loss for that state. California has between $50-$100 billion in loss while Colorado and Oregon have $5-$10 billion in wildfire loss. The states in white had no billion-dollar level wildfires. The total is between $100-$200 billion for this time period of 2000-2025.  This density map of the United States (below) shows which states had the most extensive cost for tropical cyclones and hurricanes for 2000-2024. There were 48 tropical cyclone events with losses exceeding $1 billion each. Florida has experienced over $360 billion in loss. Texas and Louisiana had $200-300 billion in damage. The total for the 25 years displayed is $1.3 trillion dollars.   Tropical cyclone costs by state   Shows accumulated cost of cyclones by state.    Using the link below, explore other weather disasters and the accumulated costs or frequency per state. You can adjust to the years of interest since 1980.  Interactive website:   The Storm Prediction Center (SPC) is part of the National Weather Service (NWS) and provide timely forecasts and watches for severe thunderstorms and tornadoes over the contiguous United States.  Interactive website:   Below is a severe weather map for the Month of April in 2025. Each red triangle depicts the location of a tornado, blue squares represent severe wind, and green circles represent severe hail. The larger the symbol, the stronger the tornado, wind speed, or hail stone size.   Severe Weather events in April 2025   US map showing location of severe weather.     Interpretation: From the legend, we can see there were 341 tornadoes in the US with 35 rating of EF2 or greater in the month of April 2025. There were 1781 severe wind storms with 44 of them exceeding 75 mile per hour gusts. There were 1031 severe hailstorms with 444 storms with hail stones of at least 1 inch and 177storms with hailstones more than 2 inches in diameter.  We can compare this to the severe weather map from April in 2000. Does there appear to be more severe with storms across the United States now or then?   Severe Weather events in April 2000   US map showing location of severe weather.    In April 2000, there were 136 tornadoes, 737 severe windstorms, and 679 storms with severe hail. It does appear there were more severe weather storms in 2025 than in 2000.   Graph Exploration   Now it is your turn to explore some of the variables from the different websites. Clearly identify which years and variables you are analyzing.  "
 },
 {
   "id": "sec-MultiGraphs-3",
@@ -1655,6 +1655,15 @@ var ptx_lunr_docs = [
   "number": "2.4.9",
   "title": "",
   "body": " Severe Weather events in April 2000   US map showing location of severe weather.   "
+},
+{
+  "id": "sec-MultiGraphs-43",
+  "level": "2",
+  "url": "sec-MultiGraphs.html#sec-MultiGraphs-43",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Graph Exploration "
 },
 {
   "id": "sec-GraphStatky",
@@ -3840,8 +3849,8 @@ var ptx_lunr_docs = [
   "url": "sec-SamplingDist.html",
   "type": "Section",
   "number": "5.1",
-  "title": "Sampling Distribution",
-  "body": " Sampling Distribution  > Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know what is true about the population.    At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions        Statistical inference is a process of drawing conclusions about the population based on the information from a sample.    First let us review some vocabulary and notations. When we refer to a parameter , we are referring to a number that describes some aspects of the population, such as the mean, standard deviation, and proportions. While a statistics is a number that describes that same aspect about the sample.  Here is a summary of the notations we will be using the rest of the semester.       Statistics  Parameter    Mean          Standard deviation          Proportion           When we want to describe an aspect of the population, we use the sample statistic as our best estimate of the parameter.  As we have seen from class data, it can vary from semester to semester depending on the class makeup. So if we want to predict the parameter from the sample statistic, we need to know how much it may vary from sample to sample.  Recall from the first week of class how we estimated the average word length of Gettysburg Address? Each person collected a sample of 10 words and found the average number of letters per word. Now, we are going to look at the distribution of this data. We are plotting each person's average value on a dot plot so see how much variation we have within the samples. If we have more samples, we can get a better estimate of what the population value is likely to be.  Below is a sampling distribution of the average word length from ten circle words from a class of 34 students, thus 34 dots in the distribution with average values ranging from 3.0 to 9.4. The distribution is bimodal for 5.5 and 6.0. We can see the variation in the average values from the sample of ten words.   Dotplot of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 6.    The histogram of the same data for 34 students is a bit more bell shaped when grouped into intervals with most values landing between 5 and 8.   Histogram of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 8 .    Below is a sampling distribution of the average word length from the ten random words selected from Gettysburg Address in a class of 34 students. This distribution has average values ranging from 3.0 to 6.3. The distribution is multimodal for 4.0 and 4.4 and 5.0 with a smaller range of values. The random sample is a better predictor of the actual mean.   Dotplot of Average Random Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 4 and 5.    The histogram is more bell shaped centered between 4.0 to 4.7, which is a better predictor of the true population mean for the average word length of Gettysburg Address.  What do you think will happen if we have a larger number of students finding the average word length? Would the distribution be more uniform or more bell-shaped? Would our prediction be better or worse? Think about it for a minute or two and then we will continue our investigation.  Below is a sampling distribution of the average word length from ten random words from Gettysburg Address using several classes. The total number of students is 267, thus 267 dots in the distribution. The values range from 2.0 to 6.6 with a mean of 4.47 and median 4.4 letters per word. The mode is 4.0 letters per word. This distribution is more bell shaped centered around 4.4 letters per word. Having more student samples helps us make a better prediction of what we think the population mean is.   Dotplot of Average Word Length from 267 Samples   Shows average word length prediction for 267 students clustered between 4 and 5.    With a larger sample of 267 students the distribution is more bell shaped and clustered around the parameter in the center. Here we would predict the population mean to be around 4.4 to 4.5 letters per word.  Here is a case where we can compare our prediction to the actual population parameter to see how close our estimate is. The actual average is 4.29 letters per word in Gettysburg Address.   Discussion   The dotplots show different values for each sample mean, but the distribution is fairly symmetric (even though the original sample is right skewed) and centered around the population mean of 4.29 letters per word. The distribution of sample statistics from many samples is called a sampling distribution.    A sampling distribution is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.    Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be.  We use the standard error to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter.  Let us investigate how the sampling distribution will change if we alter how big each sample of words is for each student. But this time, we will use technology to help simulate this process so we can have larger samples.   Using Technology   Since it is often difficult to create a sampling distribution, such as having 1000 students gather a sample of 10 words to predict the average, we can use technology to simulate a sampling distribution. We are going to upload the Gettysburg Address into StatKey and choose a variety of sample sizes to see how close we can get to predicting the actual average number of letters per word.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Mean .   StatKey Sampling Distribution Menu   Mean is the first option under Sampling Distribution.    Click on Upload File and locate where the data file is saved on your computer and select the variable Actual Words .   StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixthi is to Change Coulmns.    The default is choosing a sample of size n=10.  Once the data is uploaded you will see a similar image to this one.   StatKey for one sample   Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution.     Interpreting StatKey: The top right graph shows the original data with 268 words with an average of 4.287. We can see the original data is right skewed. If we click on the Generate 1 Sample button we see the number of letters for each of the 10 randomly selected words from the population in the dot plot on the bottom right side. This sample has a mean of 4.2 and this mean value is graphed in the main graphic as a single dot. We can generate another sample of ten words by clicking Generate 1 Sample .   StatKey for two samples   image of second sample of ten words.    This new sample of 10 random words has a mean of 4.6 and is also plotted on the main graph. The average of the two sample means is 4.4.  Our goal is to see what the typical values are when we have more samples. Now let’s generate 100 samples to represent 100 students completing this task. (Note: when you complete this on your own, your values may be slightly different but once the number of samples is larger enough the distribution will be similar.)   StatKey with 100 sample means   100 samples of ten words.    Now we have 100 students represented by the 100 dots, and the mean of these average values is 4.377 which is at the center of the distribution. This distribution is still slightly right skewed. So let us add more samples to the distribution.   StatKey with 100 sample means   1002 samples of ten words.    We can see we have a bell-shaped distribution that is symmetric and centered at mean 4.268 which is close to the know population parameter of 4.287. We now have 1002 total samples of ten words, and the standard error is 0.653 to describe how much variation we have between the samples.  We can see that most average values for the ten words is between 3.5 and 5.0 from the distribution, which relates to the mean of the distribution plus\/minus the standard error, thus which gives 3.615 to 4.921 as the typical values.  Using the 95% rule from earlier in the semester we have the mean plus\/minus two times time standard error (which is the standard deviation of the sampling distribution) the mean gives 2.962 to 5.574 which relates to where most of the values occur. So the center of our sampling distribution (mean 4.268) is a good estimate for the population parameter (4.287).   Practice Problems   Now it is your turn to experiment with sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey.  What happens to the shape of the sampling distribution when more samples are included? With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.   What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.   What happens to the center of the sampling distribution when more samples are included? With more samples, the center of the distribution is closer to population parameter value.   What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the center of the distribution is population parameter.   What happens to the standard error of the sampling distribution when each sample size is larger? When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.    Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.     This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.    "
+  "title": "Sampling Distributions",
+  "body": " Sampling Distributions  > Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know what is true about the population.    At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions        Statistical inference is a process of drawing conclusions about the population based on the information from a sample.    First let us review some vocabulary and notations. When we refer to a parameter , we are referring to a number that describes some aspects of the population, such as the mean, standard deviation, and proportions. While a statistics is a number that describes that same aspect about the sample.  Here is a summary of the notations we will be using the rest of the semester.       Statistics  Parameter    Mean          Standard deviation          Proportion           When we want to describe an aspect of the population, we use the sample statistic as our best estimate of the parameter.  As we have seen from class data, it can vary from semester to semester depending on the class makeup. So if we want to predict the parameter from the sample statistic, we need to know how much it may vary from sample to sample.   Sampling Distributions for Means  Recall from the first week of class how we estimated the average word length of Gettysburg Address? Each person collected a sample of 10 words and found the average number of letters per word. Now, we are going to look at the distribution of this data. We are plotting each person's average value on a dot plot so see how much variation we have within the samples. If we have more samples, we can get a better estimate of what the population value is likely to be.  Below is a sampling distribution of the average word length from ten circle words from a class of 34 students, thus 34 dots in the distribution with average values ranging from 3.0 to 9.4. The distribution is bimodal for 5.5 and 6.0. We can see the variation in the average values from the sample of ten words.   Dotplot of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 6.    The histogram of the same data for 34 students is a bit more bell shaped when grouped into intervals with most values landing between 5 and 8.   Histogram of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 8 .    Below is a sampling distribution of the average word length from the ten random words selected from Gettysburg Address in a class of 34 students. This distribution has average values ranging from 3.0 to 6.3. The distribution is multimodal for 4.0 and 4.4 and 5.0 with a smaller range of values. The random sample is a better predictor of the actual mean.   Dotplot of Average Random Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 4 and 5.    The histogram is more bell shaped centered between 4.0 to 4.7, which is a better predictor of the true population mean for the average word length of Gettysburg Address.  What do you think will happen if we have a larger number of students finding the average word length? Would the distribution be more uniform or more bell-shaped? Would our prediction be better or worse? Think about it for a minute or two and then we will continue our investigation.  Below is a sampling distribution of the average word length from ten random words from Gettysburg Address using several classes. The total number of students is 267, thus 267 dots in the distribution. The values range from 2.0 to 6.6 with a mean of 4.47 and median 4.4 letters per word. The mode is 4.0 letters per word. This distribution is more bell shaped centered around 4.4 letters per word. Having more student samples helps us make a better prediction of what we think the population mean is.   Dotplot of Average Word Length from 267 Samples   Shows average word length prediction for 267 students clustered between 4 and 5.    With a larger sample of 267 students the distribution is more bell shaped and clustered around the parameter in the center. Here we would predict the population mean to be around 4.4 to 4.5 letters per word.  Here is a case where we can compare our prediction to the actual population parameter to see how close our estimate is. The actual average is 4.29 letters per word in Gettysburg Address.   Understanding the Basics   The dotplots show different values for each sample mean, but the distribution is fairly symmetric (even though the original sample is right skewed) and centered around the population mean of 4.29 letters per word. The distribution of sample statistics from many samples is called a sampling distribution.    A sampling distribution is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.    Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be.  We use the standard error to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter.  Let us investigate how the sampling distribution will change if we alter how big each sample of words is for each student. But this time, we will use technology to help simulate this process so we can have larger samples.   Using Technology   Since it is often difficult to create a sampling distribution, such as having 1000 students gather a sample of 10 words to predict the average, we can use technology to simulate a sampling distribution. We are going to upload the Gettysburg Address into StatKey and choose a variety of sample sizes to see how close we can get to predicting the actual average number of letters per word.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Mean .   StatKey Sampling Distribution Menu   Mean is the first option under Sampling Distribution.    Click on Upload File and locate where the data file is saved on your computer and select the variable Actual Words .   StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixthi is to Change Coulmns.    The default is choosing a sample of size n=10.  Once the data is uploaded you will see a similar image to this one.   StatKey for one sample   Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution.     Interpreting StatKey: The top right graph shows the original data with 268 words with an average of 4.287. We can see the original data is right skewed. If we click on the Generate 1 Sample button we see the number of letters for each of the 10 randomly selected words from the population in the dot plot on the bottom right side. This sample has a mean of 4.2 and this mean value is graphed in the main graphic as a single dot. We can generate another sample of ten words by clicking Generate 1 Sample .   StatKey for two samples   image of second sample of ten words.    This new sample of 10 random words has a mean of 4.6 and is also plotted on the main graph. The average of the two sample means is 4.4.  Our goal is to see what the typical values are when we have more samples. Now let’s generate 100 samples to represent 100 students completing this task. (Note: when you complete this on your own, your values may be slightly different but once the number of samples is larger enough the distribution will be similar.)   StatKey with 100 sample means   100 samples of ten words.    Now we have 100 students represented by the 100 dots, and the mean of these average values is 4.377 which is at the center of the distribution. This distribution is still slightly right skewed. So let us add more samples to the distribution.   StatKey with 100 sample means   1002 samples of ten words.    We can see we have a bell-shaped distribution that is symmetric and centered at mean 4.268 which is close to the know population parameter of 4.287. We now have 1002 total samples of ten words, and the standard error is 0.653 to describe how much variation we have between the samples.  We can see that most average values for the ten words is between 3.5 and 5.0 from the distribution, which relates to the mean of the distribution plus\/minus the standard error, thus which gives 3.615 to 4.921 as the typical values.  Using the 95% rule from earlier in the semester we have the mean plus\/minus two times time standard error (which is the standard deviation of the sampling distribution) the mean gives 2.962 to 5.574 which relates to where most of the values occur. So the center of our sampling distribution (mean 4.268) is a good estimate for the population parameter (4.287).   Exploration   Now it is your turn to explore sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey.  What happens to the shape of the sampling distribution when more samples are included? With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.   What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.   What happens to the center of the sampling distribution when more samples are included? With more samples, the center of the distribution is closer to population parameter value.   What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the center of the distribution is population parameter.   What happens to the standard error of the sampling distribution when each sample size is larger? When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.    Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.     This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.      Sampling Distributions for Proportions  Recall at the beginning of our probability unit, where each person tossed a coin 25 times and kept track of the number of heads and tails. If we find the proportion of heads for each person, then plot those values on a dotplot, we can create a sampling distribution for proportions. Where do you think the center of the distribution will be?  The dotplot below shows the proportion of heads for each of 62 students for 25 coin tosses. Students had between 32% and 68% heads with the mean at 51.5% and median 52%. This sampling distribution appears to be left skewed. What do you think will happen if we combine more student data?   Proportion of heads in 25 coin tosses   slightly left skewed centered at 52%.    This sampling distribution of 250 students for 25 coin tosses is more bell shaped and centered closer to the theoretical population parameter of 50% heads. Proportions ranged form 28% to 76% heads.   Proportion of heads in 25 coin tosses for 200 students   bell shape centered at 50% heads.     Using Technology   Since it is often difficult to create large sampling distribution, such as having 1000 students toss 25 coins to find the proportion of heads, StatKey can do the work for us. Technology allows us to simulate the coin tosses by choosing a variety of sample sizes to see how close we can get to predicting the actual proportion.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Proportions .   StatKey Sampling Distribution Menu   Proportion is the second option under Sampling Distribution.    Under the Edit Proportion button change the proportion to .50 and click OK and change the Choose sample size of n =  50 to represent 50 coin tosses in each sample.   StatKey Sampling Proportion Menu   second option allows you to edit the proportion and the fourth allows you to change the sample size.    If you click on the Generate 1 Sample button then in the bottom right screen identifies how many heads in the sample of 50 coin tosses. This sample had 22 heads thus the proportion is 0.440 which is plotted on the distribution graph.   One Sampling Proportion   count of 22 heads from 50 coin tosses.    You can keep generating one sample at a time or you can jump to the Generate 100 Samples to generate 200 samples of 50-coin tosses. We can see the distribution is approximately bell shaped and centered at 49%. The proportions range from 0.32 to 0.66 heads from the image below. Your distribution should look similar where the parameter is centered around 50% heads.   Sampling Distribution of 200 Proportions   proportion of heads from 200 students tossing 50 coins.     Exploration   Now it is your turn to explore sampling distributions using StatKey for proportions. You can continue using the coin tosses or choose one of the pre-loaded data sets in StatKey.  What happens to the shape of the sampling distribution when more samples are included? With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion.   What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample. When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter.   What happens to the standard error when each sample size increases? Explore with multiple sample sizes. When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution.     Practice Problems   "
 },
 {
   "id": "sec-SamplingDist-3",
@@ -3907,13 +3916,13 @@ var ptx_lunr_docs = [
   "body": " Dotplot of Average Word Length from 267 Samples   Shows average word length prediction for 267 students clustered between 4 and 5.   "
 },
 {
-  "id": "sec-SamplingDist-23",
+  "id": "subsec-SamplingMeans-15",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-23",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-15",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Discussion "
+  "body": "Understanding the Basics "
 },
 {
   "id": "def-SamplingDistribution",
@@ -3925,27 +3934,27 @@ var ptx_lunr_docs = [
   "body": "  A sampling distribution is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.   "
 },
 {
-  "id": "sec-SamplingDist-27",
+  "id": "subsec-SamplingMeans-19",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-27",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-19",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "standard error "
 },
 {
-  "id": "sec-SamplingDist-29",
+  "id": "subsec-SamplingMeans-21",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-29",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-21",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Using Technology "
 },
 {
-  "id": "sec-SamplingDist-31",
+  "id": "subsec-SamplingMeans-23",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-31",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-23",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4006,67 +4015,175 @@ var ptx_lunr_docs = [
   "body": " StatKey with 100 sample means   1002 samples of ten words.   "
 },
 {
-  "id": "sec-SamplingDist-48",
+  "id": "subsec-SamplingMeans-40",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-48",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-40",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Practice Problems "
+  "body": "Exploration "
 },
 {
-  "id": "sec-SamplingDist-50",
+  "id": "subsec-SamplingMeans-42",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-50",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-42",
   "type": "Checkpoint",
   "number": "5.1.14",
   "title": "",
   "body": "What happens to the shape of the sampling distribution when more samples are included? With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.  "
 },
 {
-  "id": "sec-SamplingDist-51",
+  "id": "subsec-SamplingMeans-43",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-51",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-43",
   "type": "Checkpoint",
   "number": "5.1.15",
   "title": "",
   "body": "What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.  "
 },
 {
-  "id": "sec-SamplingDist-52",
+  "id": "subsec-SamplingMeans-44",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-52",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-44",
   "type": "Checkpoint",
   "number": "5.1.16",
   "title": "",
   "body": "What happens to the center of the sampling distribution when more samples are included? With more samples, the center of the distribution is closer to population parameter value.  "
 },
 {
-  "id": "sec-SamplingDist-53",
+  "id": "subsec-SamplingMeans-45",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-53",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-45",
   "type": "Checkpoint",
   "number": "5.1.17",
   "title": "",
   "body": "What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. When each sample size is larger, the center of the distribution is population parameter.  "
 },
 {
-  "id": "sec-SamplingDist-54",
+  "id": "subsec-SamplingMeans-46",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-54",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-46",
   "type": "Checkpoint",
   "number": "5.1.18",
   "title": "",
   "body": "What happens to the standard error of the sampling distribution when each sample size is larger? When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.  "
 },
 {
-  "id": "sec-SamplingDist-55",
+  "id": "subsec-SamplingMeans-47",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-55",
+  "url": "sec-SamplingDist.html#subsec-SamplingMeans-47",
   "type": "Example",
   "number": "5.1.19",
   "title": "",
   "body": " Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.     This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.   "
+},
+{
+  "id": " StatkeyCoinToss",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeyCoinToss",
+  "type": "Figure",
+  "number": "5.1.21",
+  "title": "",
+  "body": " Proportion of heads in 25 coin tosses   slightly left skewed centered at 52%.   "
+},
+{
+  "id": " StatkeyCoinToss2",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeyCoinToss2",
+  "type": "Figure",
+  "number": "5.1.22",
+  "title": "",
+  "body": " Proportion of heads in 25 coin tosses for 200 students   bell shape centered at 50% heads.   "
+},
+{
+  "id": "subsec-SamplingProportions-7",
+  "level": "2",
+  "url": "sec-SamplingDist.html#subsec-SamplingProportions-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Using Technology "
+},
+{
+  "id": "subsec-SamplingProportions-9",
+  "level": "2",
+  "url": "sec-SamplingDist.html#subsec-SamplingProportions-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "StatKey "
+},
+{
+  "id": " StatkeySamplingProportion",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySamplingProportion",
+  "type": "Figure",
+  "number": "5.1.23",
+  "title": "",
+  "body": " StatKey Sampling Distribution Menu   Proportion is the second option under Sampling Distribution.   "
+},
+{
+  "id": " StatkeySamplingProportionMenu",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySamplingProportionMenu",
+  "type": "Figure",
+  "number": "5.1.24",
+  "title": "",
+  "body": " StatKey Sampling Proportion Menu   second option allows you to edit the proportion and the fourth allows you to change the sample size.   "
+},
+{
+  "id": " StatkeySamplingProportion",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySamplingProportion",
+  "type": "Figure",
+  "number": "5.1.25",
+  "title": "",
+  "body": " One Sampling Proportion   count of 22 heads from 50 coin tosses.   "
+},
+{
+  "id": " StatkeySamplingProportion3",
+  "level": "2",
+  "url": "sec-SamplingDist.html# StatkeySamplingProportion3",
+  "type": "Figure",
+  "number": "5.1.26",
+  "title": "",
+  "body": " Sampling Distribution of 200 Proportions   proportion of heads from 200 students tossing 50 coins.   "
+},
+{
+  "id": "subsec-SamplingProportions-17",
+  "level": "2",
+  "url": "sec-SamplingDist.html#subsec-SamplingProportions-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Exploration "
+},
+{
+  "id": "subsec-SamplingProportions-19",
+  "level": "2",
+  "url": "sec-SamplingDist.html#subsec-SamplingProportions-19",
+  "type": "Checkpoint",
+  "number": "5.1.27",
+  "title": "",
+  "body": "What happens to the shape of the sampling distribution when more samples are included? With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion.  "
+},
+{
+  "id": "subsec-SamplingProportions-20",
+  "level": "2",
+  "url": "sec-SamplingDist.html#subsec-SamplingProportions-20",
+  "type": "Checkpoint",
+  "number": "5.1.28",
+  "title": "",
+  "body": "What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample. When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter.  "
+},
+{
+  "id": "subsec-SamplingProportions-21",
+  "level": "2",
+  "url": "sec-SamplingDist.html#subsec-SamplingProportions-21",
+  "type": "Checkpoint",
+  "number": "5.1.29",
+  "title": "",
+  "body": "What happens to the standard error when each sample size increases? Explore with multiple sample sizes. When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution.  "
 },
 {
   "id": "sec-BootstrapDist",
@@ -4075,7 +4192,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Bootstrap Distributions",
-  "body": " Bootstrap Distributions  Text of section.    At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean    Construct and interpret a bootstrap distribution for proportions     "
+  "body": " Bootstrap Distributions  Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.    At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean    Construct and interpret a bootstrap distribution for proportions     Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.  In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample – by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.   Bootstrap Distributions for Means  Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.  Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.  What is the typical MPGe of newer models of EVs?  To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:    Tesla Model X Plaid – 91 MPGe    Jaguar I-Pace EV400 – 85 MPGe    Polestar 2 Single Motor – 107 MPGe    Lucid Air Pure AWD – 140 MPGe    Lordstown Endurance – 48 MPGe    We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.  To generate a bootstrap distribution, we:    Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.    Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.    Collect the statistics for many bootstrap samples to create a bootstrap distribution.    To illustrate this process: List each car on a notecard with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.  The purpose of replacing the card is to give us some variable in the samples we select. If we use the same 5 cars each time, there is no variation.  Give example  To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.   Using Technology  Open StatKey and in the middle column under Bootstrap Confidence Intervals we are going to select CI for Single Mean .   Bootstrap Menu   first option in second column is bootstrap for the mean.    Click on the Upload File button and identify the data file: EV2023-Sample5 and select the variable CombMPGe .   Bootstrap for Mean   fourth option is to upload the file.    Interpreting StatKey: On the top right side you will see the Original Sample information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.  If we click on the Genrate 1 Sample button, then on the bottom right side we will see the five randomly selected cars with replacement under the Bootstrap Sample . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.   Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.    Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.   Exploration   Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.  As you generate more samples, what happens to the shape of the distribution?  Notice how the distribution becomes more bell shaped and symmetric with more samples.   Where is the center of the distribution?  The center of the bootstrap distribution is approximately the same as the original sample mean.   Compare the standard deviation of the original sample to the standard error of the distribution.  The standard error is smaller since there is less variation with the distribution than a single sample.   Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.  When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using statistics  where SE denotes the standard error of the statistic estimated from the bootstrap distribution.  Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives             We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.  If we click on Two Tail we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.   Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.    If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.   Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.     Exploration   Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.  Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval  Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.   Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.  As the middle percentage increases, the interval becomes wider since it includes more values in the interval.   Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.  As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.   What happens to the standard error as you increase the number of samples.  The standard error does not change much by adding generating additional samples.     Bootstrap Distributions for Proportions    Practice Problems   "
 },
 {
   "id": "sec-BootstrapDist-3",
@@ -4085,6 +4202,177 @@ var ptx_lunr_docs = [
   "number": "5.2",
   "title": "",
   "body": "  At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean    Construct and interpret a bootstrap distribution for proportions    "
+},
+{
+  "id": "subsec-BootstrapMeans-14",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Using Technology "
+},
+{
+  "id": "subsec-BootstrapMeans-15",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "StatKey Bootstrap Confidence Intervals CI for Single Mean "
+},
+{
+  "id": "BootstrapMenu",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapMenu",
+  "type": "Figure",
+  "number": "5.2.1",
+  "title": "",
+  "body": " Bootstrap Menu   first option in second column is bootstrap for the mean.   "
+},
+{
+  "id": "BootstrapMenuOptions",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapMenuOptions",
+  "type": "Figure",
+  "number": "5.2.2",
+  "title": "",
+  "body": " Bootstrap for Mean   fourth option is to upload the file.   "
+},
+{
+  "id": "subsec-BootstrapMeans-19",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Original Sample "
+},
+{
+  "id": "subsec-BootstrapMeans-20",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Bootstrap Sample "
+},
+{
+  "id": "BootstrapMPGe",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapMPGe",
+  "type": "Figure",
+  "number": "5.2.3",
+  "title": "",
+  "body": " Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.   "
+},
+{
+  "id": "subsec-BootstrapMeans-23",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Exploration "
+},
+{
+  "id": "subsec-BootstrapMeans-25",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-25",
+  "type": "Checkpoint",
+  "number": "5.2.4",
+  "title": "",
+  "body": "As you generate more samples, what happens to the shape of the distribution?  Notice how the distribution becomes more bell shaped and symmetric with more samples.  "
+},
+{
+  "id": "subsec-BootstrapMeans-26",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-26",
+  "type": "Checkpoint",
+  "number": "5.2.5",
+  "title": "",
+  "body": "Where is the center of the distribution?  The center of the bootstrap distribution is approximately the same as the original sample mean.  "
+},
+{
+  "id": "subsec-BootstrapMeans-27",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-27",
+  "type": "Checkpoint",
+  "number": "5.2.6",
+  "title": "",
+  "body": "Compare the standard deviation of the original sample to the standard error of the distribution.  The standard error is smaller since there is less variation with the distribution than a single sample.  "
+},
+{
+  "id": "subsec-BootstrapMeans-29",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-29",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "statistics "
+},
+{
+  "id": "BootstrapCIMPGe",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapCIMPGe",
+  "type": "Figure",
+  "number": "5.2.7",
+  "title": "",
+  "body": " Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.   "
+},
+{
+  "id": "BootstrapCIMPGe",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapCIMPGe",
+  "type": "Figure",
+  "number": "5.2.8",
+  "title": "",
+  "body": " Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.   "
+},
+{
+  "id": "subsec-BootstrapMeans-40",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-40",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Exploration "
+},
+{
+  "id": "subsec-BootstrapMeans-42",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-42",
+  "type": "Checkpoint",
+  "number": "5.2.9",
+  "title": "",
+  "body": "Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval  Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.  "
+},
+{
+  "id": "subsec-BootstrapMeans-43",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-43",
+  "type": "Checkpoint",
+  "number": "5.2.10",
+  "title": "",
+  "body": "Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.  As the middle percentage increases, the interval becomes wider since it includes more values in the interval.  "
+},
+{
+  "id": "subsec-BootstrapMeans-44",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-44",
+  "type": "Checkpoint",
+  "number": "5.2.11",
+  "title": "",
+  "body": "Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.  As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.  "
+},
+{
+  "id": "subsec-BootstrapMeans-45",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-45",
+  "type": "Checkpoint",
+  "number": "5.2.12",
+  "title": "",
+  "body": "What happens to the standard error as you increase the number of samples.  The standard error does not change much by adding generating additional samples.  "
 },
 {
   "id": "sec-AssessNormality",
@@ -4249,22 +4537,76 @@ var ptx_lunr_docs = [
   "body": "  At the end of this section you will be able to:     Find the area under the normal curve    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.    "
 },
 {
-  "id": "ConfIntervals",
+  "id": "sec-CI-means",
   "level": "1",
-  "url": "ConfIntervals.html",
-  "type": "Chapter",
-  "number": "6",
-  "title": "Confidence Intervals",
-  "body": " Confidence Intervals   Text before the first section.     At the end of this chapter you will be able to:     Construct and interpret confidence intervals for the mean    Construct and interpret confidence intervals for proportions    Construct and interpret confidence intervals for variance and standard deviation     "
+  "url": "sec-CI-means.html",
+  "type": "Section",
+  "number": "6.1",
+  "title": "Intervals for Means",
+  "body": " Intervals for Means  Text of section.   Understanding the Basics    Using Technology    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics to complete the table below. Click on Change Column to change variable names.  Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.  summary   Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.  mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.   Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.  mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the mean number of hurricanes in the Early Years is between 6.5 and 9.4 per year.   Did the mean of all hurricanes land in each of those intervals? Explain why or why not.  The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes then. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring.    "
 },
 {
-  "id": "ConfIntervals-3",
+  "id": "subsec-CImeanPractice-3",
   "level": "2",
-  "url": "ConfIntervals.html#ConfIntervals-3",
-  "type": "Objectives",
-  "number": "6",
+  "url": "sec-CI-means.html#subsec-CImeanPractice-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
   "title": "",
-  "body": "  At the end of this chapter you will be able to:     Construct and interpret confidence intervals for the mean    Construct and interpret confidence intervals for proportions    Construct and interpret confidence intervals for variance and standard deviation    "
+  "body": "One Quantitative Variable "
+},
+{
+  "id": "subsec-CImeanPractice-4",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanPractice-4",
+  "type": "Checkpoint",
+  "number": "6.1.1",
+  "title": "",
+  "body": "Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.  summary  "
+},
+{
+  "id": "subsec-CImeanPractice-5",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanPractice-5",
+  "type": "Checkpoint",
+  "number": "6.1.2",
+  "title": "",
+  "body": "Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.  mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.  "
+},
+{
+  "id": "subsec-CImeanPractice-6",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanPractice-6",
+  "type": "Checkpoint",
+  "number": "6.1.3",
+  "title": "",
+  "body": "Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.  mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the mean number of hurricanes in the Early Years is between 6.5 and 9.4 per year.  "
+},
+{
+  "id": "subsec-CImeanPractice-7",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanPractice-7",
+  "type": "Checkpoint",
+  "number": "6.1.4",
+  "title": "",
+  "body": "Did the mean of all hurricanes land in each of those intervals? Explain why or why not.  The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes then. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring.  "
+},
+{
+  "id": "sec-CI-proportions",
+  "level": "1",
+  "url": "sec-CI-proportions.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "Intervals for Proportions",
+  "body": " Intervals for Proportions  Text of section.  "
+},
+{
+  "id": "sec-CI-variance",
+  "level": "1",
+  "url": "sec-CI-variance.html",
+  "type": "Section",
+  "number": "6.3",
+  "title": "Intervals for Variance",
+  "body": " Intervals for Variance  Text of section.  "
 },
 {
   "id": "sec-SingleMean.ptx",
@@ -4273,7 +4615,115 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "t-test for the Mean",
-  "body": " t-test for the Mean  Text of section.  "
+  "body": " t-test for the Mean  Text of section.   Understanding the Basics    Using Technology    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics. Click on Change Column to change variable names.  summary statistics Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.  summary   We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.  hypotheses We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?   and    test value What is the statistical test value?      p-value Find the p-value for the statistical test value  p-value=0.013 with 19 df for left tail test   decision Based the p-value, should your reject or not reject the null hypothesis?  since p-value 0.013 is less than alpha (.05), we should reject Ho   conclusion What is the conclusion?  Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.   We are going to investigate if the mean number of hurricanes in the Later Years is significantly more than the mean of 5.8 hurricanes per year.  hypotheses We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?   and    test value What is the statistical test value?      p-value Find the p-value for the statistical test value  p-value=0.0086 with 19 df for a right tail test   decision Based the p-value, should your reject or not reject the null hypothesis?  since p-value 0.0086 is less than alpha (.05), we should reject Ho   conclusion What is the conclusion?  Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.    "
+},
+{
+  "id": "subsec-SinglemeanPractice-3",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "One Quantitative Variable "
+},
+{
+  "id": "subsec-SinglemeanPractice-4",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-4",
+  "type": "Checkpoint",
+  "number": "7.1.1",
+  "title": "summary statistics.",
+  "body": "summary statistics Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.  summary  "
+},
+{
+  "id": "subsec-SinglemeanPractice-6",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-6",
+  "type": "Checkpoint",
+  "number": "7.1.2",
+  "title": "hypotheses.",
+  "body": "hypotheses We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?   and   "
+},
+{
+  "id": "subsec-SinglemeanPractice-7",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-7",
+  "type": "Checkpoint",
+  "number": "7.1.3",
+  "title": "test value.",
+  "body": "test value What is the statistical test value?     "
+},
+{
+  "id": "subsec-SinglemeanPractice-8",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-8",
+  "type": "Checkpoint",
+  "number": "7.1.4",
+  "title": "p-value.",
+  "body": "p-value Find the p-value for the statistical test value  p-value=0.013 with 19 df for left tail test  "
+},
+{
+  "id": "subsec-SinglemeanPractice-9",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-9",
+  "type": "Checkpoint",
+  "number": "7.1.5",
+  "title": "decision.",
+  "body": "decision Based the p-value, should your reject or not reject the null hypothesis?  since p-value 0.013 is less than alpha (.05), we should reject Ho  "
+},
+{
+  "id": "subsec-SinglemeanPractice-10",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-10",
+  "type": "Checkpoint",
+  "number": "7.1.6",
+  "title": "conclusion.",
+  "body": "conclusion What is the conclusion?  Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.  "
+},
+{
+  "id": "subsec-SinglemeanPractice-12",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-12",
+  "type": "Checkpoint",
+  "number": "7.1.7",
+  "title": "hypotheses.",
+  "body": "hypotheses We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?   and   "
+},
+{
+  "id": "subsec-SinglemeanPractice-13",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-13",
+  "type": "Checkpoint",
+  "number": "7.1.8",
+  "title": "test value.",
+  "body": "test value What is the statistical test value?     "
+},
+{
+  "id": "subsec-SinglemeanPractice-14",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-14",
+  "type": "Checkpoint",
+  "number": "7.1.9",
+  "title": "p-value.",
+  "body": "p-value Find the p-value for the statistical test value  p-value=0.0086 with 19 df for a right tail test  "
+},
+{
+  "id": "subsec-SinglemeanPractice-15",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-15",
+  "type": "Checkpoint",
+  "number": "7.1.10",
+  "title": "decision.",
+  "body": "decision Based the p-value, should your reject or not reject the null hypothesis?  since p-value 0.0086 is less than alpha (.05), we should reject Ho  "
+},
+{
+  "id": "subsec-SinglemeanPractice-16",
+  "level": "2",
+  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-16",
+  "type": "Checkpoint",
+  "number": "7.1.11",
+  "title": "conclusion.",
+  "body": "conclusion What is the conclusion?  Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.  "
 },
 {
   "id": "sec-SingleProportion.ptx",
@@ -4714,7 +5164,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "t-test for Two Independent Means",
-  "body": " t-test for Two Independent Means  Text of section.  "
+  "body": " t-test for Two Independent Means  Text of section.   Understanding the Basics    Using Technology    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in testing whether the number of hurricanes is increasing over time. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022. Test for evidence that the mean number of hurricanes in the Later Years is greater than the mean number of hurricanes in the Early Years.  Use StatKey to compare the shape of the distribution of the two groups. Under Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variable , click on the Upload the data file and select the variables Compared (quantitative) and Group (categorical) . Compare the dotplots, histograms, and boxplots. What do the graphs indicate? Also find the summary statistics for both groups.   "
+},
+{
+  "id": "subsec-IndpmeanPractice-3",
+  "level": "2",
+  "url": "sec-CompIndpMeans.html#subsec-IndpmeanPractice-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "StatKey Descriptive Statistics and Graphs One Quantitative and One Categorical Variable "
 },
 {
   "id": "sec-CompPairedmeans",
@@ -5137,7 +5596,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.2",
   "title": "Climate Data Sets",
-  "body": " Climate Data Sets  This section includes data sets to analyze climate change as well as the websites where the data was gathered for more current data.   Earthquakes   California Earthquakes:    Earthquakes April 2025    Hurricanes       Severe Weather   Billion Dollar Weather Events:    Temperatures   Greeley:    Tornadoes   US Tornado Mapping:   "
+  "body": " Climate Data Sets  This section includes data sets to analyze climate change as well as the websites where the data was gathered for more current data.   Earthquakes   SCEDC (2013): Southern California Earthquake Center. Caltech.Dataset. doi:10.7909\/C3WD3xH1  California Earthquakes:    Earthquakes April 2025   California Institute of Technology (Caltech) (1926): Southern California Seismic Network. International Federation of Digital Seismograph Networks. Other\/Seismic Network. doi:10.7914\/SN\/CI   Hurricanes       Severe Weather   NOAA National Centers for Environmental Information (NCEI) U.S. Billion-Dollar Weather and Climate Disasters (2025). https:\/\/www.ncei.noaa.gov\/access\/billions\/, DOI: 10.25921\/stkw-7w73  Billion Dollar Weather Events:    Temperatures   Greeley:    Tornadoes   US Tornado Mapping:   "
 },
 {
   "id": "sec-ClimateData-3",
@@ -5149,22 +5608,13 @@ var ptx_lunr_docs = [
   "body": "Earthquakes "
 },
 {
-  "id": "sec-ClimateData-6",
-  "level": "2",
-  "url": "sec-ClimateData.html#sec-ClimateData-6",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Hurricanes "
-},
-{
   "id": "sec-ClimateData-8",
   "level": "2",
   "url": "sec-ClimateData.html#sec-ClimateData-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Severe Weather "
+  "body": "Hurricanes "
 },
 {
   "id": "sec-ClimateData-10",
@@ -5173,12 +5623,21 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "Severe Weather "
+},
+{
+  "id": "sec-ClimateData-13",
+  "level": "2",
+  "url": "sec-ClimateData.html#sec-ClimateData-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "Temperatures "
 },
 {
-  "id": "sec-ClimateData-12",
+  "id": "sec-ClimateData-15",
   "level": "2",
-  "url": "sec-ClimateData.html#sec-ClimateData-12",
+  "url": "sec-ClimateData.html#sec-ClimateData-15",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
