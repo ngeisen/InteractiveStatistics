@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-DayOne" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title> Introduction </title>
+    <title> Types of Data </title>
 <introduction>
     <p> A review of terminology to understand statistics. We will begin our adventure with who and what the study is about. </p>
   </introduction>
@@ -143,7 +143,31 @@ If we asked the students (each student is a case) in class, there will be lots o
    </choices>
 </exercise>
 
-
+<p>     </p> 
+<exercise label="Sample-matching">
+    <title> Identify the sample </title>
+    <statement>
+    <p> What is the sample in this scenario?  </p>
+    </statement>
+    <choices randomize="yes">
+    <choice >
+        <statement>
+        <p> Every animal at the Denver Zoo. </p>
+        </statement>
+        <feedback>
+        <p>  No, every animal makes the population.  </p>
+        </feedback>
+    </choice>
+    <choice correct="yes" >
+        <statement>
+        <p> The 20 female animals.  </p>
+        </statement>
+        <feedback>
+        <p> Yes, the 20 female animals is the sample.  </p>
+        </feedback>
+    </choice>
+   </choices>
+</exercise>
 
 <p>There are two main branches of statistics that we are interested in. </p>
 <p>In <term>descriptive statistics </term> the statistician tries to describe a situation.  It consists of collecting, organizing, summarizing and presenting the data. </p>
@@ -667,7 +691,7 @@ Each U.S. adult that responded
         <p> Nominal. </p>
         </statement>
         <feedback>
-        <p> ratio since number of yards is numeric. </p>
+        <p> Ratio since number of yards is numeric. </p>
         </feedback>
 </choice>
     </choices>

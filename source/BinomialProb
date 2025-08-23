@@ -255,7 +255,53 @@ According to the Centers for Disease Control and Prevention (CDC), the estimated
 
 <subsection xml:id="subsec-BinomialCalc">
   <title>Using Technology</title>
+<p> <term>Factorial Button </term> </p>
+<p> <m> 5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 </m> </p>
+<p> Use the <c>MATH</c> button then use the arrow three times to the right to PRB across the top and then select option <c> 4: !</c> </p>
+<p> Test it:  5! = 5 <c> math</c> <m> \gt \gt \gt </m> PRB <c> 4:! </c> <c>Enter </c> = 120  </p>
+<figure xml:id="FactorialButton2">
+            <caption>Factorial button on the calculator </caption>
+            <image source="FactorialButton.png" >
+                <shortdescription>Math to PRB to option 4.</shortdescription>
+            </image>
+        </figure>
 
+<p> <term> Combinations </term> </p>
+<p> Find the number of ways 2 people will have green eyes in a sample of 5 people. </p>
+<p> Find nCr = 5 nCr 2 on the calculator. </p>
+<p> Use the <c>MATH</c> button and use the arrow three times to the right to PRB across the top and then select option <c>3:nCr </c> </p>
+<p> Try: [5] [math] <m> \gt \gt \gt </m> PRB [3:nCr] [Enter]  [2] [Enter] = 10 </p> 
+<figure xml:id="BinomialCombo">
+            <caption>Combination shortcut </caption>
+            <image source="Binomial3.png" width="80%">
+                <shortdescription>5 choose 2 combination.</shortdescription>
+            </image>
+        </figure>
+
+<p> <term>  Binomial Formula Shortcut</term> </p>
+  <p> Find the <c>VARS</c> button on the calculator and above that is the [DISTR] function. 
+So we will use the <c>2nd </c> button  <c>VARS</c> to select [DISTR] and then select option [0] for binomPdf on the TI83. For the TI84 enter [A] for binomPdf.  The format for the function is binompdf(n,p,X) where <m>n </m> is the sample size, <m>p </m> is the probability of the event, and <m>X </m> represents how many events. </p>
+ <p> Suppose a survey found that one out of five Americans say he or she has visited a doctor in any given month.  If 10 people are selected at random, find the probability that exactly 3 will have visited a doctor in the last month.</p>
+<p>In binomial terms: n = 10 people, p = 1/5 = .2, X = 3 </p>
+<p>[2nd ] [VARS] for DISTR and then [0]  for binompdf(  [Enter] </p>       
+<p> Input 10 [,] .2 [,] 3 [)] [Enter] to get the probability of 0.201</p> 
+  <figure xml:id="BinomialFormula4">
+            <caption>Binomial shortcut </caption>
+            <image source="Binomial4.png" >
+                <shortdescription>three out of ten.</shortdescription>
+            </image>
+        </figure>
+<p>About 9% of the US population has green eyes. Consider a group of 20 people who were randomly selected from the US. Find the probability that exactly three people in the group will have green eyes.</p>
+<p>In binomial terms: n = 20 people, p = 0.09, X = 3 </p>
+<p>[2nd ] [VARS] for DISTR and then [0]  for binompdf(  [enter] </p>       
+<p> Input 20 [,] 0.09 [,] 3 [)] [enter] to get the probability of 0.1672</p> 
+ <figure xml:id="BinomialFormula5">
+            <caption>Binomial for three green eyes </caption>
+            <image source="Binomial5.png" width="80%">
+                <shortdescription>three out of twenty.</shortdescription>
+            </image>
+        </figure>
+ 
 
   </subsection>
 

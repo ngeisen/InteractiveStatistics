@@ -46,7 +46,7 @@ data set. There are three measures of the <term> center </term> of the data. The
     <p> <term> Solution: </term> This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)/2=42,  thus the median is 42. The mean is the sum of the values divided by 6, thus 289/6 = 48.167 apps per phone. The range is 72 - 25 = 47 apps, which represents the spread in the number of apps on these phones. </p> 
         
 <exercise>
-        <title>Find the measures of center</title>
+        <title>measures of center</title>
         <statement><p>Find the mode, median, and mean for the data set 4, 5, 6?</p></statement>
         <hint><p> Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values.</p></hint>
         <answer><p> No mode, median = 5, mean = 5 </p> </answer>

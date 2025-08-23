@@ -20,8 +20,13 @@
 
 <p> Many times, you are asked what to expect <q>on average </q> or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center that we will focus on: the mean, median, and mode. </p>
 <p> The <term> mode </term> is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs and then determine which data value occurs most often. This is easily seen with a dot plot or a list of values. </p>
+
 <p> <em> Example: </em>  A sample of five students are taking the number of credits this semester: 12, 15, 15,16,18. The mode is 15 credits since it occurs more often than the other values. </p>  
-<p> <em> Example: </em>  A sample of six students are taking the number of credits this semester: 12, 15, 15,16,18, 18. This example is <term> bimodal </term> since there are two modes: 15 credits and 18 credits since they occur more often than the other values. </p>  
+<p>     </p> 
+<example> 
+<statement> <p> A sample of six students are taking the number of credits this semester: 12, 15, 15,16,18, 18. What is the mode? </p>  </statement>
+<solution> <p> This example is <term> bimodal </term> since there are two modes: 15 credits and 18 credits since they occur more often than the other values. </p>  </solution>
+</example>
 
 <p> The <term> median </term> is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to largest and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actual data value. When there is an even number of values you will need to average the middle two values. </p>
 <p> <em> Example: </em>  A sample of five students are taking the number of credits this semester: 18, 12, 15,16, 14. </p>
@@ -45,15 +50,14 @@
 <p> Another measure of the center is the <term> midrange </term> which is the average of the smallest and largest value of the data set. The midrange is the middle of the range of values in the data. </p> 
 <p> <term> Example: </term>  A sample of five students are taking the number of credits this semester: 12, 14, 15,16, 18. The average of the smallest  and largest is (12+18)/2 = 15 credits. </p>
 
-<exercise>
-<statement><p>  A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.</p> </statement>
-<answer> <p> The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus <m>217/5 = 43.4 </m> apps per student. This is higher than the median because it is skewed to the right by the large value of 72. The midrange<m> = (25+72)/2 = 48.5 </m> which is also shifted to the right. </p> 
-</answer>
-</exercise>
+<p>     </p>
 
 <example>
 <statement><p>  A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.</p> </statement>
-<solution> <p> The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus <m>217/5 = 43.4 </m> apps per student. This is higher than the median because it is skewed to the right by the large value of 72. The midrange<m> = (25+72)/2 = 48.5 </m> which is also shifted to the right. </p> 
+<solution> <p> The mode is 36 since it occurs most often. </p> 
+  <p> Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72 when arranged in order, thus the median is 36. </p> 
+  <p> The mean is the sum of the values divided by 5, thus <m> \bar{x} =217/5 = 43.4 </m> apps per student. This is higher than the median because it is skewed to the right by the large value of 72. </p> 
+  <p>The midrange<m> = (25+72)/2 = 48.5 </m> which is also shifted to the right. </p> 
 </solution>
 </example>
 

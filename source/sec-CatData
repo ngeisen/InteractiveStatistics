@@ -19,6 +19,10 @@
 
 
 <p> Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the <term> frequency </term> represents the number of times a particular category occurs from the raw data. This is organized in a <term> frequency table </term> summarizing each category with its frequency. This works best with nominal and ordinal level data. </p>
+<subsection xml:id="subsec-GraphOneCat">
+  <title>Graphing One Categorical Variable</title>
+ 
+
 <p> On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data. </p>
 
 <figure xml:id="EyeRaw">
@@ -60,7 +64,17 @@
 <p> Brown eyes occurred 10 times out of the sample of 20 students thus <m> \hat p =\frac{10}{20}=.5 </m> which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus <m> \hat p = \frac{4}{20}=0.20 </m> which is 20% of the students. </p>
 <p> The proportion for a sample is denoted <m> \hat p </m> and read "p-hat." </p>
 <p> The proportion for a population is denoted <em> p </em>. </p>
-<p> Categorical data can also be graphed as <term>pie graph </term> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample. </p>
+<p>        </p>
+<exercise> <p> What proportion of students had green eyes? </p>
+<solution> <p> Green eyes occurred 4 times out of the sample of 20 students thus <m> \hat p = \frac{4}{20}=0.20 </m> which is 20% of the students.</p>
+</solution>
+</exercise>
+<exercise> <p> What proportion of students had hazel eyes? </p>
+<solution> <p> Hazel eyes occurred 2 times out of the sample of 20 students thus <m> \hat p = \frac{2}{20}=0.10 </m> which is 10% of the students.</p>
+</solution>
+</exercise>
+
+<p> Categorical data can also be graphed as <term>pie graph </term> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample. While hazel eyes occred the least at 10%.</p>
 <figure xml:id="EyeCircle">
             <caption>Circle Graph of Eye Color</caption>
             <image source="EyeCircle.png" width="50%">
@@ -75,9 +89,12 @@
             </image>
 <p>      </p>
    <p> See the section for <term>Graphing with StatKey </term> for graphing one categorical variable with technology. </p> 
+ </subsection>
 
-<p>      </p>
-<objective> <term> Two Categorical Variables </term> </objective>
+
+ <subsection xml:id="subsec-GraphTwoCat">
+  <title> Graphing Two Categorical Variables </title>
+ 
 <p> When working with two categorical variables, we often look for possible relationships between the two variables using a <term> two-way table </term>.  The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.</p> 
 <p> We are going to investigate the possible relationship using the UNC Women's basketball data set. The dataset <term> 22-23 UNCWBB </term> gives the results of the UNC Women's Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were <em>Win Loss </em> variable which stated if the UNC team won or lost the game and the <em>HomeAway </em> variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set
 . </p>
@@ -96,18 +113,30 @@
             </image>
         </figure> 
  
-
 <p> From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games. </p>
+<p>     </p>
+<exercise> 
 <p> As a review, is the study an experiment or an observational study? </p>
-<p> <em> Solution: </em> This is an observational study since we are looking at recorded data, there was no manipulation of variables. </p>
+<solution> <p> This is an observational study since we are looking at recorded data, there was no manipulation of variables. </p> </solution>
+</exercise>
+
+
 <p> What proportion of games did the UNC Women's Basketball team win during the 2022-2023 season? </p>
-<p> <em> Solution:</em> p(win) = 13/31 = 0.419 so 42% of the games. </p>
+<p> <em> Solution:</em> The team won 13 of the 31 games played, thus p(win) = 13/31 = 0.419 so 41.9% of the games. </p>
+<p>      </p>
+<exercise>
 <p> What proportion of games did the UNC Women's Basketball team play at <em> Away</em> during the 2022-2023 season? </p>
-<p><em> Solution:</em> p(away) = 16/31 = .516 so 51.6% of the games. </p>
-<p> Does the UNC Women’s Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games? </p>
-<p> <em> Solution:</em> P (win at home) = 8/15 = .533 = 53.3% </p>
-<p> <em> Solution:</em> P (win at away) = 5/16 = 0.3125 = 31.3% </p>
+<solution> <p> p(away) = 16/31 = .516 so 51.6% of the games. </p> </solution> 
+</exercise>
+
+<exercise>
+<p> Does the UNC Women's Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games? </p>
+<solution> <p> P (win at home) = 8/15 = .533 = 53.3% </p> 
+<p> P (win at away) = 5/16 = 0.3125 = 31.3% </p>
 <p> So it does appear they win more at home. </p>
+</solution>
+</exercise> 
+
 <p>      </p>
 <p> <term>Side by side bar graph </term> compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table. </p>
 <p> <term>Segmented bar graph </term> is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories. </p>
@@ -131,6 +160,6 @@
 
 <p> See the section <term>Graphing with StatKey</term> for more information on graphing two categorical variables with technology. </p> 
 
-
+ </subsection>
 
 </section> 

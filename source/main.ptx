@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>STAT 250 Statistical Analysis </title>
-    <subtitle>Interactive Statistics</subtitle>
+    <title>STAT 250 Interactive Statistics </title>
+    <subtitle>An Interactive Approach to Learning Introductory Statistics</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />

@@ -140,6 +140,13 @@
   <title> Bootstrap Distributions for Proportions</title>
   </subsection>
 
+<p>Suppose you want to find what proportion of Skittles  are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plot them on a graph to create a distribution. </p>
+<p> Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy. </p> 
+
+
+
+
+
 <subsection xml:id="subsec-BootstrapPractice">
   <title>Practice Problems</title>
   </subsection>
