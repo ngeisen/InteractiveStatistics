@@ -12,7 +12,7 @@
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="STAT 250 Statistical Analysis">
+<meta property="book:title" content="STAT 250 Interactive Statistics">
 <meta property="book:author" content="Nancy Geisendorfer ">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
@@ -101,19 +101,19 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.5';
+eBookConfig.runestone_version = '7.9.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/prefix-runtime.b215b0da62d655bd.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">STAT 250 Statistical Analysis:</span> <span class="subtitle">Interactive Statistics</span></a></h1>
+<h1 class="heading"><a href="my-great-book.html"><span class="title">STAT 250 Interactive Statistics:</span> <span class="subtitle">An Interactive Approach to Learning Introductory Statistics</span></a></h1>
 <p class="byline">Nancy Geisendorfer</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -148,7 +148,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Statistics</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Types of Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayTwo.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Collecting Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayThree.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Study Types</span></a></div></li>
 <li class="toc-item toc-section contains-active">
@@ -165,7 +165,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapDescriptStats.html" class="internal"><span class="codenumber">2</span> <span class="title">Graphing Data</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CatData.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graphing Categorical Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CatData.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graphing Categorical Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CatData.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CatData.html#subsec-GraphTwoCat" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-QuantData.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Quantitative Data</span></a></div>
 <ul class="structural toc-item-list">
@@ -256,17 +262,59 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapDistributions.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SamplingDist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Sampling Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-BootstrapDist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Bootstrap Distributions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-AssessNormality.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assessing Normality</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SamplingDist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SamplingDist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SamplingDist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SamplingDist.html#subsec-SamplingPractice" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-BootstrapDist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BootstrapDist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BootstrapDist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BootstrapDist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AssessNormality.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assessing Normality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-Kiama" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Example: Kiama Blowhole Eruptions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-IQscores" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Example: IQ Scores</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-NormalityPractice" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-NormalDist.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Normal Distribution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ConfIntervals.html" class="internal"><span class="codenumber">6</span> <span class="title">Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ConfIntervals.html" class="internal"><span class="codenumber">6</span> <span class="title">Confidence Intervals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CI-means.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Intervals for Means</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImean" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanCalc" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanPractice" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CI-proportions.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Intervals for Proportions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CI-variance.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Intervals for Variance</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapHypothesis.html" class="internal"><span class="codenumber">7</span> <span class="title">Hypothesis Testing</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html" class="internal"><span class="codenumber">7.1</span> <span class="title">t-test for the Mean</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SingleMean.ptx.html" class="internal"><span class="codenumber">7.1</span> <span class="title">t-test for the Mean</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html#subsec-Singlemean" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html#subsec-SinglemeanCalc" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html#subsec-SinglemeanPractice" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SingleProportion.ptx.html" class="internal"><span class="codenumber">7.2</span> <span class="title">z-test for Proportions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SingleVariance.ptx.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Chi-Square test for Variance</span></a></div></li>
 <li class="toc-item toc-section">
@@ -285,7 +333,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapComparisonTests.html" class="internal"><span class="codenumber">8</span> <span class="title">Comparison Tests</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompIndpMeans.html" class="internal"><span class="codenumber">8.1</span> <span class="title">t-test for Two Independent Means</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CompIndpMeans.html" class="internal"><span class="codenumber">8.1</span> <span class="title">t-test for Two Independent Means</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-Indpmean" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndpmeanCalc" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndpmeanPractice" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompPairedmeans.html" class="internal"><span class="codenumber">8.2</span> <span class="title">t-test for Paired Means</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompProp.html" class="internal"><span class="codenumber">8.3</span> <span class="title">z-test for Two Proportions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompVariance.html" class="internal"><span class="codenumber">8.4</span> <span class="title">F-test for Variance</span></a></div></li>

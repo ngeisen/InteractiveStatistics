@@ -8,11 +8,11 @@
 <html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Introduction</title>
+<title>Types of Data</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="STAT 250 Statistical Analysis">
+<meta property="book:title" content="STAT 250 Interactive Statistics">
 <meta property="book:author" content="Nancy Geisendorfer ">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
@@ -101,19 +101,19 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.5';
+eBookConfig.runestone_version = '7.9.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/prefix-runtime.b215b0da62d655bd.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">STAT 250 Statistical Analysis:</span> <span class="subtitle">Interactive Statistics</span></a></h1>
+<h1 class="heading"><a href="my-great-book.html"><span class="title">STAT 250 Interactive Statistics:</span> <span class="subtitle">An Interactive Approach to Learning Introductory Statistics</span></a></h1>
 <p class="byline">Nancy Geisendorfer</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -148,7 +148,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Statistics</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Types of Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayTwo.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Collecting Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayThree.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Study Types</span></a></div></li>
 <li class="toc-item toc-section">
@@ -165,7 +165,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapDescriptStats.html" class="internal"><span class="codenumber">2</span> <span class="title">Graphing Data</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CatData.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graphing Categorical Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CatData.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graphing Categorical Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CatData.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CatData.html#subsec-GraphTwoCat" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-QuantData.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Quantitative Data</span></a></div>
 <ul class="structural toc-item-list">
@@ -256,17 +262,59 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapDistributions.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SamplingDist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Sampling Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-BootstrapDist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Bootstrap Distributions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-AssessNormality.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assessing Normality</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SamplingDist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SamplingDist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SamplingDist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SamplingDist.html#subsec-SamplingPractice" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-BootstrapDist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BootstrapDist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BootstrapDist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BootstrapDist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AssessNormality.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assessing Normality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-Kiama" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Example: Kiama Blowhole Eruptions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-IQscores" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Example: IQ Scores</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-NormalityPractice" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-NormalDist.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Normal Distribution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ConfIntervals.html" class="internal"><span class="codenumber">6</span> <span class="title">Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ConfIntervals.html" class="internal"><span class="codenumber">6</span> <span class="title">Confidence Intervals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CI-means.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Intervals for Means</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImean" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanCalc" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanPractice" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CI-proportions.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Intervals for Proportions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CI-variance.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Intervals for Variance</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapHypothesis.html" class="internal"><span class="codenumber">7</span> <span class="title">Hypothesis Testing</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html" class="internal"><span class="codenumber">7.1</span> <span class="title">t-test for the Mean</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SingleMean.ptx.html" class="internal"><span class="codenumber">7.1</span> <span class="title">t-test for the Mean</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html#subsec-Singlemean" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html#subsec-SinglemeanCalc" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.ptx.html#subsec-SinglemeanPractice" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SingleProportion.ptx.html" class="internal"><span class="codenumber">7.2</span> <span class="title">z-test for Proportions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SingleVariance.ptx.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Chi-Square test for Variance</span></a></div></li>
 <li class="toc-item toc-section">
@@ -285,7 +333,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapComparisonTests.html" class="internal"><span class="codenumber">8</span> <span class="title">Comparison Tests</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompIndpMeans.html" class="internal"><span class="codenumber">8.1</span> <span class="title">t-test for Two Independent Means</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CompIndpMeans.html" class="internal"><span class="codenumber">8.1</span> <span class="title">t-test for Two Independent Means</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-Indpmean" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndpmeanCalc" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndpmeanPractice" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompPairedmeans.html" class="internal"><span class="codenumber">8.2</span> <span class="title">t-test for Paired Means</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompProp.html" class="internal"><span class="codenumber">8.3</span> <span class="title">z-test for Two Proportions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CompVariance.html" class="internal"><span class="codenumber">8.4</span> <span class="title">F-test for Variance</span></a></div></li>
@@ -343,7 +398,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-DayOne"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Introduction</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Types of Data</span>
 </h2>
 <section class="introduction" id="sec-DayOne-2"><div class="para" id="sec-DayOne-2-1">A review of terminology to understand statistics. We will begin our adventure with who and what the study is about.</div></section><article class="objectives goal-like" id="sec-DayOne-3"><h3 class="heading"><span class="type">Objectives</span></h3>
 <div class="introduction" id="sec-DayOne-3-1">
@@ -399,19 +454,28 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="feedback" id="rs-Pop-matching_opt_a"><div class="para" id="Pop-matching-3-1-2-1">Yes, every animal makes the population.</div></li>
 <li data-component="answer" id="rs-Pop-matching_opt_b"><div class="para" id="Pop-matching-3-2-1-1">The 20 female animals.</div></li>
 <li data-component="feedback" id="rs-Pop-matching_opt_b"><div class="para" id="Pop-matching-3-2-2-1">No, the 20 female animals is the sample.</div></li>
-</ul></div></div></article></details><div class="para" id="sec-DayOne-25">There are two main branches of statistics that we are interested in.</div>
-<div class="para" id="sec-DayOne-26">In <dfn class="terminology">descriptive statistics</dfn> the statistician tries to describe a situation.  It consists of collecting, organizing, summarizing and presenting the data.</div>
-<div class="para" id="sec-DayOne-27">While with <dfn class="terminology">inferential statistics</dfn> the statisticians make inferences from samples to make predictions about the population.  It consists of generalizing data from samples, performing estimations and hypothesis testing, determining relationships among variables, and making predictions.</div>
-<div class="para" id="sec-DayOne-28">We will begin with descriptive statistics since we will summarize the data to make the inferences.</div>
-<div class="para" id="sec-DayOne-29">
+</ul></div></div></article></details><div class="para" id="sec-DayOne-25"></div>
+<details id="Sample-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the sample.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Sample-matching" data-multipleanswers="false" data-random="">
+<div class="para" id="Sample-matching-2-1">What is the sample in this scenario?</div>
+<li data-component="answer" id="rs-Sample-matching_opt_a"><div class="para" id="Sample-matching-3-1-1-1">Every animal at the Denver Zoo.</div></li>
+<li data-component="feedback" id="rs-Sample-matching_opt_a"><div class="para" id="Sample-matching-3-1-2-1">No, every animal makes the population.</div></li>
+<li data-component="answer" id="rs-Sample-matching_opt_b" data-correct=""><div class="para" id="Sample-matching-3-2-1-1">The 20 female animals.</div></li>
+<li data-component="feedback" id="rs-Sample-matching_opt_b"><div class="para" id="Sample-matching-3-2-2-1">Yes, the 20 female animals is the sample.</div></li>
+</ul></div></div></article></details><div class="para" id="sec-DayOne-27">There are two main branches of statistics that we are interested in.</div>
+<div class="para" id="sec-DayOne-28">In <dfn class="terminology">descriptive statistics</dfn> the statistician tries to describe a situation.  It consists of collecting, organizing, summarizing and presenting the data.</div>
+<div class="para" id="sec-DayOne-29">While with <dfn class="terminology">inferential statistics</dfn> the statisticians make inferences from samples to make predictions about the population.  It consists of generalizing data from samples, performing estimations and hypothesis testing, determining relationships among variables, and making predictions.</div>
+<div class="para" id="sec-DayOne-30">We will begin with descriptive statistics since we will summarize the data to make the inferences.</div>
+<div class="para" id="sec-DayOne-31">
 <em class="emphasis">Example:</em> According to the Center for Disease Control and Prevention (CDC) for the week January 9, 2021, there were 25,974 deaths in the United States attributed to COVID. This is descriptive since it is stating the total deaths.</div>
-<div class="para" id="sec-DayOne-30">
+<div class="para" id="sec-DayOne-32">
 <em class="emphasis">Example:</em> According to a 2023 Pew Research Center study, approximately 32% of Americans have at least one tattoo. This is inferential since the since they are assuming what is true for the population from a sample study. It is unlikey they asked the entire populuation how many tatoos they have.</div>
-<div class="para" id="sec-DayOne-31"></div>
-<div class="para" id="sec-DayOne-32">Identify if each situation is descriptive or inferential statistics:</div>
 <div class="para" id="sec-DayOne-33"></div>
+<div class="para" id="sec-DayOne-34">Identify if each situation is descriptive or inferential statistics:</div>
+<div class="para" id="sec-DayOne-35"></div>
 <details id="Infer-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Identify if descriptive or inferential statistic.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Identify if descriptive or inferential statistic.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Infer-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="Infer-matching-2-1">It is estimated that about 9% of the people in the United States have green eyes.</div>
 <li data-component="answer" id="rs-Infer-matching_opt_a" data-correct=""><div class="para" id="Infer-matching-3-1-1-1">inferential statistic.</div></li>
@@ -419,7 +483,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-Infer-matching_opt_b"><div class="para" id="Infer-matching-3-2-1-1">descriptive statistic.</div></li>
 <li data-component="feedback" id="rs-Infer-matching_opt_b"><div class="para" id="Infer-matching-3-2-2-1">Since they are estimating, its inferential. It is unlikey they asked every US citizen their eye color.</div></li>
 </ul></div></div></article></details><details id="Desc2-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Identify if descriptive or inferential statistic.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Identify if descriptive or inferential statistic.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Desc2-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="Desc2-matching-2-1">There are 125 women in the US House of Representatives in 2025.</div>
 <li data-component="answer" id="rs-Desc2-matching_opt_a" data-correct=""><div class="para" id="Desc2-matching-3-1-1-1">descriptive statistic.</div></li>
@@ -427,21 +491,21 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-Desc2-matching_opt_b"><div class="para" id="Desc2-matching-3-2-1-1">inferential statistics.</div></li>
 <li data-component="feedback" id="rs-Desc2-matching_opt_b"><div class="para" id="Desc2-matching-3-2-2-1">This is descriptive since it is summarizing the actual count.</div></li>
 </ul></div></div></article></details><details id="Desc-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Identify if descriptive or inferential statistic.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Identify if descriptive or inferential statistic.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Desc-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="Desc-matching-2-1">In 2025, 26% of the United States Senators are women.</div>
 <li data-component="answer" id="rs-Desc-matching_opt_a" data-correct=""><div class="para" id="Desc-matching-3-1-1-1">descriptive statistic.</div></li>
 <li data-component="feedback" id="rs-Desc-matching_opt_a"><div class="para" id="Desc-matching-3-1-2-1">Yes, since 26 of the 100 senators are women, its descriptive.</div></li>
 <li data-component="answer" id="rs-Desc-matching_opt_b"><div class="para" id="Desc-matching-3-2-1-1">inferential statistics.</div></li>
 <li data-component="feedback" id="rs-Desc-matching_opt_b"><div class="para" id="Desc-matching-3-2-2-1">Since 26 of the 100 senators are women, its descriptive.</div></li>
-</ul></div></div></article></details><div class="para" id="sec-DayOne-37">There are two main types of data we will be working with:</div>
-<div class="para" id="sec-DayOne-38">
+</ul></div></div></article></details><div class="para" id="sec-DayOne-39">There are two main types of data we will be working with:</div>
+<div class="para" id="sec-DayOne-40">
 <dfn class="terminology">Qualitative variables</dfn>  are when the data are placed into distinct categories. Such as the color of cars found in a parking lot. The car colors can be classified as white, red, blue, black and other colors.</div>
-<div class="para" id="sec-DayOne-39">
+<div class="para" id="sec-DayOne-41">
 <dfn class="terminology">Quantitative variables</dfn> are numerical and can be ordered. There are two types of quantitative variables. <dfn class="terminology">Discrete variables</dfn> can be counted, such as the number of cars in the different parking lots across campus. The values are whole numbers. Other numerical variables are <dfn class="terminology">continuous variables</dfn> , meaning any value (decimal or fraction) can occur. These are often obtained by measuring something. A continuous variable could be the length of the cars in the parking lot or the time it takes a car to stop when traveling 20 miles per hour. The numerical value can be something besides a whole number.</div>
-<div class="para" id="sec-DayOne-40"></div>
+<div class="para" id="sec-DayOne-42"></div>
 <details id="Qual-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the type of variable.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the type of variable.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Qual-matching" data-multipleanswers="true" data-random="">
 <div class="para" id="Qual-matching-2-1">Identify which variables are qualitative (categorical). Check all that apply.</div>
 <li data-component="answer" id="rs-Qual-matching_opt_a" data-correct=""><div class="para" id="Qual-matching-3-1-1-1">The size of drinks at a fast-food restaurant as small, medium, or large.</div></li>
@@ -451,7 +515,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-Qual-matching_opt_c"><div class="para" id="Qual-matching-3-3-1-1">The weight of the students in class.</div></li>
 <li data-component="feedback" id="rs-Qual-matching_opt_c"><div class="para" id="Qual-matching-3-3-2-1">Weight will be a number like 150 pounds.</div></li>
 </ul></div></div></article></details><details id="Quant-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the type of variable.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the type of variable.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Quant-matching" data-multipleanswers="true" data-random="">
 <div class="para" id="Quant-matching-2-1">Identify which variables are quantitative (numerical)</div>
 <li data-component="answer" id="rs-Quant-matching_opt_a" data-correct=""><div class="para" id="Quant-matching-3-1-1-1">The height of players on the UNC basketball team.</div></li>
@@ -460,9 +524,9 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="feedback" id="rs-Quant-matching_opt_b"><div class="para" id="Quant-matching-3-2-2-1">yes, number of free-throws is quantitative.</div></li>
 <li data-component="answer" id="rs-Quant-matching_opt_c"><div class="para" id="Quant-matching-3-3-1-1">The type of candy in the vending machine.</div></li>
 <li data-component="feedback" id="rs-Quant-matching_opt_c"><div class="para" id="Quant-matching-3-3-2-1">Type of candy is categorical.</div></li>
-</ul></div></div></article></details><div class="para" id="sec-DayOne-43"></div>
+</ul></div></div></article></details><div class="para" id="sec-DayOne-45"></div>
 <details id="Discrete-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Classify the quantitative variable.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">Classify the quantitative variable.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Discrete-matching" data-multipleanswers="true" data-random="">
 <div class="para" id="Discrete-matching-2-1">Identify which quantitative variables are discrete.</div>
 <li data-component="answer" id="rs-Discrete-matching_opt_a" data-correct=""><div class="para" id="Discrete-matching-3-1-1-1">Number of muffins purchased each day at a local bakery.</div></li>
@@ -472,7 +536,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-Discrete-matching_opt_c"><div class="para" id="Discrete-matching-3-3-1-1">The weight of the students in class.</div></li>
 <li data-component="feedback" id="rs-Discrete-matching_opt_c"><div class="para" id="Discrete-matching-3-3-2-1">Weight is continuous since someone can weigh 150.3 pounds.</div></li>
 </ul></div></div></article></details><details id="ContQN-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">Classify the quantitative variable.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span><span class="space"> </span><span class="title">Classify the quantitative variable.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-ContQN-matching" data-multipleanswers="true" data-random="">
 <div class="para" id="ContQN-matching-2-1">Identify which quantitative variables are continuous.</div>
 <li data-component="answer" id="rs-ContQN-matching_opt_a" data-correct=""><div class="para" id="ContQN-matching-3-1-1-1">The height of the basketball players.</div></li>
@@ -481,10 +545,10 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="feedback" id="rs-ContQN-matching_opt_b"><div class="para" id="ContQN-matching-3-2-2-1">Time is continuous.</div></li>
 <li data-component="answer" id="rs-ContQN-matching_opt_c" data-correct=""><div class="para" id="ContQN-matching-3-3-1-1">The weights of newborn infants at local hospital.</div></li>
 <li data-component="feedback" id="rs-ContQN-matching_opt_c"><div class="para" id="ContQN-matching-3-3-2-1">Weight is continuous.</div></li>
-</ul></div></div></article></details><div class="para" id="sec-DayOne-46">
+</ul></div></div></article></details><div class="para" id="sec-DayOne-48">
 <em class="emphasis">Exercise:</em> In 2010, the Pew Research Center questioned 1500 adults in the U.S. to estimate the proportion of the population favoring marijuana use for medical purposes. It was found that 73% are in favor of using marijuana for medical purposes. Identify the case, variable, type of data collected, population, and sample from this scenario.</div>
 <details id="Marijuana-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span><span class="space"> </span><span class="title">Vocabulary Identification.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span><span class="space"> </span><span class="title">Vocabulary Identification.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone matching_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-Marijuana-matching">
 <span data-subcomponent="question"><div class="para" id="Marijuana-matching-2-1">Drag the case, variable, population, and sample to the description from the marijuana scenario.</div></span><li data-subcomponent="draggable" id="rs-Marijuana-matching_drag1" data-category="1">Cases</li>
 <li data-subcomponent="dropzone" for="rs-Marijuana-matching_drag1" data-category="1">Each U.S. adult that responded</li>
@@ -494,20 +558,20 @@ eBookConfig.enable_chatcodes =  false;
 <li data-subcomponent="dropzone" for="rs-Marijuana-matching_drag3" data-category="3">The set of all adults in the U.S</li>
 <li data-subcomponent="draggable" id="rs-Marijuana-matching_drag4" data-category="4">Sample</li>
 <li data-subcomponent="dropzone" for="rs-Marijuana-matching_drag4" data-category="4">The 1500 U.S. adults that responded</li>
-</ul></div></div></article></details><div class="para" id="sec-DayOne-48"><dfn class="terminology">Measurement Scales</dfn></div>
-<div class="para" id="sec-DayOne-49">There are four measurement scales for the different types of data that can be collected. Qualitative variables can be organized as nominal or ordinal data while quantitative variables are either interval or ratio data.</div>
-<div class="para" id="sec-DayOne-50">
-<dfn class="terminology">Nominal data</dfn> is organized by its name into mutually exclusive categories.  There is no order to the data and one group is not considered better than the others.  Examples are gender (classified as male or female), marital status (single, married, widowed, or divorced), and ethnicity are but a few.</div>
-<div class="para" id="sec-DayOne-51">
-<dfn class="terminology">Ordinal</dfn> data is nominal that can be ordered or ranked.   Examples are letter grades (A, B, C, D, F) since an A is better than an F, or the winning order in a 100 meter race (1st, 2nd, 3rd place) since they are ranked by the order they cross the finish line (but not the time difference between runners).</div>
+</ul></div></div></article></details><div class="para" id="sec-DayOne-50"><dfn class="terminology">Measurement Scales</dfn></div>
+<div class="para" id="sec-DayOne-51">There are four measurement scales for the different types of data that can be collected. Qualitative variables can be organized as nominal or ordinal data while quantitative variables are either interval or ratio data.</div>
 <div class="para" id="sec-DayOne-52">
-<dfn class="terminology">Interval</dfn> data is numerical where you can add/subtract one value from another but precise differences between units do not exist. Examples are temperature and IQ scores. A true 0 does not exist with interval data. The temperature outside may be 72 degrees Fahrenheit, but 0 degrees does not mean there is no temperature. We also have negative temperature values. IQ scores are an interval measurement since you can miss every question on the assessment yet not score a 0. Thus, a true zero does not exist.</div>
+<dfn class="terminology">Nominal data</dfn> is organized by its name into mutually exclusive categories.  There is no order to the data and one group is not considered better than the others.  Examples are gender (classified as male or female), marital status (single, married, widowed, or divorced), and ethnicity are but a few.</div>
 <div class="para" id="sec-DayOne-53">
-<dfn class="terminology">Ratio</dfn> data is numerical that can be ordered, there exists a true 0 value, and has consistent units. Most measurements will be ratio. Examples of this are height, weight, distance, and time. For ratio data, a value of 0 can mean there is no measurement.</div>
+<dfn class="terminology">Ordinal</dfn> data is nominal that can be ordered or ranked.   Examples are letter grades (A, B, C, D, F) since an A is better than an F, or the winning order in a 100 meter race (1st, 2nd, 3rd place) since they are ranked by the order they cross the finish line (but not the time difference between runners).</div>
 <div class="para" id="sec-DayOne-54">
+<dfn class="terminology">Interval</dfn> data is numerical where you can add/subtract one value from another but precise differences between units do not exist. Examples are temperature and IQ scores. A true 0 does not exist with interval data. The temperature outside may be 72 degrees Fahrenheit, but 0 degrees does not mean there is no temperature. We also have negative temperature values. IQ scores are an interval measurement since you can miss every question on the assessment yet not score a 0. Thus, a true zero does not exist.</div>
+<div class="para" id="sec-DayOne-55">
+<dfn class="terminology">Ratio</dfn> data is numerical that can be ordered, there exists a true 0 value, and has consistent units. Most measurements will be ratio. Examples of this are height, weight, distance, and time. For ratio data, a value of 0 can mean there is no measurement.</div>
+<div class="para" id="sec-DayOne-56">
 <em class="emphasis">Checkpoint:</em> Classify the type of measurement scale for each variable.</div>
 <details id="NominalScales-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.13</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-NominalScales-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="NominalScales-matching-2-1">Identify the type of measurement scale for student eye colors.</div>
 <li data-component="answer" id="rs-NominalScales-matching_opt_a" data-correct=""><div class="para" id="NominalScales-matching-3-1-1-1">Nominal.</div></li>
@@ -519,7 +583,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-NominalScales-matching_opt_d"><div class="para" id="NominalScales-matching-3-4-1-1">Ratio.</div></li>
 <li data-component="feedback" id="rs-NominalScales-matching_opt_d"><div class="para" id="NominalScales-matching-3-4-2-1">Eye color is not a number.</div></li>
 </ul></div></div></article></details><details id="RatioScales-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.13</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-RatioScales-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="RatioScales-matching-2-1">Identify the type of measurement scale for the time to complete a 5 kilometer race.</div>
 <li data-component="answer" id="rs-RatioScales-matching_opt_a" data-correct=""><div class="para" id="RatioScales-matching-3-1-1-1">Ratio.</div></li>
@@ -531,7 +595,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-RatioScales-matching_opt_d"><div class="para" id="RatioScales-matching-3-4-1-1">Nominal.</div></li>
 <li data-component="feedback" id="rs-RatioScales-matching_opt_d"><div class="para" id="RatioScales-matching-3-4-2-1">Time is numerical with a true zero, thus ratio.</div></li>
 </ul></div></div></article></details><details id="OrdinalScales-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-OrdinalScales-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="OrdinalScales-matching-2-1">Identify the type of measurement scale for the size of pizzas sold at the local pizzeria as small, medium, and large.</div>
 <li data-component="answer" id="rs-OrdinalScales-matching_opt_a" data-correct=""><div class="para" id="OrdinalScales-matching-3-1-1-1">Ordinal.</div></li>
@@ -543,7 +607,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-OrdinalScales-matching_opt_d"><div class="para" id="OrdinalScales-matching-3-4-1-1">Nominal.</div></li>
 <li data-component="feedback" id="rs-OrdinalScales-matching_opt_d"><div class="para" id="OrdinalScales-matching-3-4-2-1">Ordinal since pizza size is categorical.</div></li>
 </ul></div></div></article></details><details id="OrdinalScales2-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-OrdinalScales2-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="OrdinalScales2-matching-2-1">Identify the type of measurement scale for ranking of teams for the volleyball championship.</div>
 <li data-component="answer" id="rs-OrdinalScales2-matching_opt_a" data-correct=""><div class="para" id="OrdinalScales2-matching-3-1-1-1">Ordinal.</div></li>
@@ -555,7 +619,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-OrdinalScales2-matching_opt_d"><div class="para" id="OrdinalScales2-matching-3-4-1-1">Nominal.</div></li>
 <li data-component="feedback" id="rs-OrdinalScales2-matching_opt_d"><div class="para" id="OrdinalScales2-matching-3-4-2-1">Ordinal since first place is better.</div></li>
 </ul></div></div></article></details><details id="IntervalScale-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.17</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-IntervalScale-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="IntervalScale-matching-2-1">Identify the type of measurement scale for the temperature of the oven to bake a Thanksgiving turkey.</div>
 <li data-component="answer" id="rs-IntervalScale-matching_opt_a" data-correct=""><div class="para" id="IntervalScale-matching-3-1-1-1">Interval.</div></li>
@@ -567,7 +631,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-IntervalScale-matching_opt_d"><div class="para" id="IntervalScale-matching-3-4-1-1">Nominal.</div></li>
 <li data-component="feedback" id="rs-IntervalScale-matching_opt_d"><div class="para" id="IntervalScale-matching-3-4-2-1">temperature is numeric.</div></li>
 </ul></div></div></article></details><details id="Ratio2Scale-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.17</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.18</span><span class="period">.</span><span class="space"> </span><span class="title">Measurement Scales.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-Ratio2Scale-matching" data-multipleanswers="false" data-random="">
 <div class="para" id="Ratio2Scale-matching-2-1">Identify the type of measurement scale for the total passing yards during a football game.</div>
 <li data-component="answer" id="rs-Ratio2Scale-matching_opt_a" data-correct=""><div class="para" id="Ratio2Scale-matching-3-1-1-1">Ratio.</div></li>
@@ -577,7 +641,7 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="answer" id="rs-Ratio2Scale-matching_opt_c"><div class="para" id="Ratio2Scale-matching-3-3-1-1">Ordinal.</div></li>
 <li data-component="feedback" id="rs-Ratio2Scale-matching_opt_c"><div class="para" id="Ratio2Scale-matching-3-3-2-1">Ratio since true zero.</div></li>
 <li data-component="answer" id="rs-Ratio2Scale-matching_opt_d"><div class="para" id="Ratio2Scale-matching-3-4-1-1">Nominal.</div></li>
-<li data-component="feedback" id="rs-Ratio2Scale-matching_opt_d"><div class="para" id="Ratio2Scale-matching-3-4-2-1">ratio since number of yards is numeric.</div></li>
+<li data-component="feedback" id="rs-Ratio2Scale-matching_opt_d"><div class="para" id="Ratio2Scale-matching-3-4-2-1">Ratio since number of yards is numeric.</div></li>
 </ul></div></div></article></details></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-chapter-title.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-DayTwo.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
