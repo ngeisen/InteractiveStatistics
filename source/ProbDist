@@ -372,8 +372,94 @@ E(X)=\mu=\sum\left(X\cdot P(X)\right) </me> </p>
   </subsection>
 
 
-<subsection xml:id="subsec-ProbDistPractice">
-  <title>Practice Problems</title>
+<subsection xml:id="subsec-ProbDistPhones">
+  <title>Random Phones Investigation </title>
+<p>Four students drop off their smartphones at a testing center. One day, as a cruel joke, the testing center staff member decides to return the phones to their owners completely at random.
+How many phones were returned to the correct student? </p>
+<p>Take a moment to think how can you create a way to simulate a random assignment of four phones to four students. </p>
+<p>Break into groups of four or five people. Give each person a notecard to represent the phone. Have each student write their name on the card.  Have the students flip the cards so you cannot see the names, mix them up, and randomly pass them out to the group of four. The fifth person can act as an evil staff member. Record how many people got the correct card/phone back. Repeat 5 times for the simulation. </p>
+<p>Perform a total of five random assignments, recording the information on a table like below. </p>
+<figure xml:id="PhoneTrials">
+                        <image source="Phone1.png">
+                <shortdescription>table listing 5 trials and number of correct matches.</shortdescription>
+            </image>
+        </figure>    
+
+<p>Here is a sample of five simulations from a group of students. </p>
+<figure xml:id="PhoneTrialSample">
+                        <image source="Phone2.png">
+                <shortdescription> listing 1, 2, 0, 0, 0, 4 as number of correct matches.</shortdescription>
+            </image>
+        </figure>    
+
+<p>Next will combine the class data for the empirical estimate. </p>
+<p>The discrete random variable can be called X where X represents the number of correct phones returned. For example, if X=2 that means two phones were correctly returned to the owners (and 2 phones were not correctly returned). </p>
+
+<p>Here is an example of the results of the random assignments from a class. </p>
+<figure xml:id="PhoneTotals">
+  <caption> Combined totals</caption>
+                          <image source="Phone3.png">
+                <shortdescription> totals for 0 correct match as 14, 4 for 1 match, 6 has 2 matches, none for three, and 1 had four matches out of 25 trials.</shortdescription>
+            </image>
+        </figure>    
+<p>What is the empirical estimate of the probability of all four students getting the correct phone? </p>
+<p>Based on this sample of 5 groups of students with five trials each, the probability of all four students getting the correct phone back was 1/25 = 4%. Does this seem likely to you? </p>
+<p>Now let us analyze this theoretically. How many ways can we pass out the four phones? Take a minute to think about how to do this. </p>
+
+<p>We are looking at a permutation of four items where the order matters. Thus, there are <m> 4 \times 3 \times 2 \times 1 = 24 </m> unique ways to pass out the four phones. </p>
+<p>Below is a theoretical sample space for the random variable X for number of correct matches when four phones are randomly returned to students. We can present these outcomes in a list where each item is a different ordering of the numbers 1 through 4 which represents the order with which the phones are returned to the students. </p>
+<p>We can see there are 24 possible ways to randomly assign the four phones to students. How many received the correct phones with these permutations? </p>
+<figure xml:id="PhoneOutcomes">
+<caption> List of outcomes </caption>
+                        <image source="Phone4.png">
+                <shortdescription> lists the 24 permutations. </shortdescription>
+            </image>
+        </figure>    
+
+<p>Identify the number of correct phones returned: 1234 means all four returned correctly; 1243 means 1 and 2 correct but 3 and 4 were switched thus 2 correct. The item 1324 means 1 and 4 were returned correctly but 2 and 3 were switched, thus 2 correct. </p>
+<p>Determine how many were returned correctly in the list above and make a list of the number of correctly returned phones for the 24 possible outcomes. </p>
+<p>The theoretical sample space for the random variable X for number of correct matches when four phones are randomly returned to the students is given below: </p>
+<figure xml:id="PhoneMatches">
+<caption> List of correct matches </caption>
+                        <image source="Phone5.png">
+                <shortdescription> lists correct number of matches for the 24 permutations. </shortdescription>
+            </image>
+        </figure>    
+
+<p>We can summarize the information into a frequency table where <m> X</m> represents the correct number of phones returned: </p>
+<figure xml:id="PhoneMatches2">
+<caption> Frequency of correct matches </caption>
+                        <image source="Phone6.png">
+                <shortdescription> lists correct number of matches for the 24 permutations. </shortdescription>
+            </image>
+        </figure>    
+<p> Which can be converted to a probability distribution table for the random variable X for the number of correct matches when the phones are randomly returned out of the sample space of 24 outcomes. </p> 
+<figure xml:id="PhoneMatchTable">
+<caption> Probability of correct matches </caption>
+                        <image source="Phone8.png">
+                <shortdescription> lists probability of correct number of matches for the 24 permutations. </shortdescription>
+            </image>
+        </figure>    
+<p>Now we can calculate the mean and standard deviation for the number of correct matches using the theoretical probability distribution. </p> 
+<p> Recall that for a random variable X with probability function P(X), the mean is <m> \mu = \sum {X \cdot P(X)}  </m> thus, </p> 
+<p> <m> \mu =0\left(\frac{9}{24}\right)+1\left(\frac{8}{24}\right)+2\left(\frac{6}{24}\right)+3\left(0\right)+4\left(\frac{1}{24}\right)=1 </m> </p> 
+
+<p> For a random variable X with probability function p(x), and mean μ, the variance is  </p> 
+<p>  <m> \sigma^2=\sum{\left(x-\mu\right)^2\cdot p(x)} </m> </p> 
+<p> Therefore the standard deviation is </p> 
+<p> <m>
+\sigma=\sqrt{\frac{9}{24}\left(0-1\right)^2+{\frac{8}{24}\left(1-1\right)}^2+\frac{6}{24}\left(2-1\right)^2+\frac{0}{24}\left(3-1\right)^2+{\frac{1}{24}\left(4-1\right)}^2}=1 </m> </p> 
+
+<p> Thus the mean is 1 correct match with a standard deviation of 1. </p>
+<p> Using technology, enter the number of correct matches in L1 and the corresponding probability in L2. Using the <c>STAT</c> button use the arrow once to the right to  <c> CALC</c>  and select <c>1: 1VarStat </c> and input the data location as <c>L1</c> <c> , </c> <c>L2</c> for the TI83 Plus. </p>
+<figure xml:id="PhoneCalculator">
+<caption> Calculator images </caption>
+                        <image source="Phone9.png">
+                <shortdescription> calculator images. </shortdescription>
+            </image>
+        </figure>    
+
+
   </subsection>
 
 
