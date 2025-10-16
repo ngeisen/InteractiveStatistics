@@ -194,7 +194,7 @@
             </image>
         </figure>
 <p> The mean is </p>
-<p> <m> \mu = 1(1/6)+2(1/6)+3(1/6)+4(1/6)+5(1/6)+6(186)=21/6=3.5 </m> </p>
+<p> <m> \mu = 1(1/6)+2(1/6)+3(1/6)+4(1/6)+5(1/6)+6(1/6)=21/6=3.5 </m> </p>
 
 <definition xml:id="def-ProbDistMean">
             <statement>    
