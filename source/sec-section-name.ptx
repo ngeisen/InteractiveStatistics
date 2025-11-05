@@ -233,12 +233,52 @@
   </example>
   
   
+  </subsection>
+
+
+<subsection xml:id="subsec-BillionWeather">
+  <title> Case Study – Billion Dollar Weather Events</title>
+<p> The National Centers for Environmental Information (NCEI) track severe weather and climate events from a historical perspective and their economic and societal impacts. The U.S. has sustained 403 weather and climate disasters since 1980 where overall damages/costs reached or exceeded $1 billion (including CPI adjustment to 2025). The total cost of these 403 events exceeds $2.945 trillion. Use the screen shot of the first six rows of the data file to answer the following questions.  </p> 
+ <p> Data: <url href="external/sheets/BillionWeather-state-cost-data.csv"> BillionWeather</url> </p>
+<image source="BillWeatherdata.png">
+                <shortdescription> data image of weather variables by state exceeding billion dollars in damage</shortdescription>
+            </image>
+
+
 
 
 
 
 
   </subsection>
+
+<example>
+<title> Cases </title> 
+<statement> <p> What are the cases in the Billion Dollar Weather events? </p> </statement>
+<solution> <p> Each state is a case (the rows in the table).  </p> </solution>
+</example> 
+<example>
+<title> Variables </title> 
+<statement> <p> How many variables are in the survey? </p> </statement>
+<solution> <p> There are 7 variables, these are the columns for drought, flooding, freeze, severe storm, tropical cyclone, wildfire, and winter storm.</p> </solution>
+</example> 
+<example>
+<title> Discrete Quantitative Variables </title> 
+<statement> <p> Identify the discrete quantitative variable(s) in the data. </p> </statement>
+<solution> <p> None of the variables are discrete.</p> </solution>
+</example>
+<example>
+<title> Continuous Quantitative Variables </title> 
+<statement> <p> Identify the continuous quantitative variable(s) in the data. </p> </statement>
+<solution> <p> All the variables are continuous measured in the billions of dollars: drought, flooding, freeze, severe storm, tropical cyclone, wildfire, and winter storm are continuous measurements. </p> </solution>
+</example>
+<example>
+<title> Study Type </title> 
+<statement> <p> What type of study was conducted?  </p> </statement>
+<solution> <p> This is an observational study since no variable was manipulated. The data shows the actual cost due to these weather incidents as they occurred. </p> </solution>
+</example>
+
+
 
 
 
@@ -247,9 +287,6 @@
 <!--this leaves me a note --> 
 
 <!-- use \lt for less than and \gt for greater than symbols within the math-->
-<p>
-  use <m> \lt </m>  for less than and <m> \gt </m> for greater than symbols for R coding
-</p>
 
 
 

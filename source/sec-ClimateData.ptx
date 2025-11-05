@@ -12,12 +12,17 @@ Caltech.Dataset. doi:10.7909/C3WD3xH1 </p>
  
 <p> California Institute of Technology (Caltech) (1926): Southern California Seismic Network. International Federation of Digital Seismograph Networks. Other/Seismic Network. doi:10.7914/SN/CI </p> 
 
+
+
  <p> <term> Hurricanes </term> </p>
-<p> <url href="https://www.nhc.noaa.gov/  " /> </p>
+<p> National Hurricane Center <url href="https://www.nhc.noaa.gov/  " /> </p>
+<p> <url href="external/sheets/Hurricanes2022.csv"> Hurricanes</url> </p>
+
 
 <p> <term> Severe Weather </term> </p>
 <p> NOAA National Centers for Environmental Information (NCEI) U.S. Billion-Dollar Weather and Climate Disasters (2025). https://www.ncei.noaa.gov/access/billions/, DOI: 10.25921/stkw-7w73 </p> 
 <p> Billion Dollar Weather Events: <url href="https://www.ncei.noaa.gov/access/billions/time-series/US/cost " /> </p>
+<p> <url href="external/sheets/BillionWeather-state-cost-data.csv"> BillionWeather</url> </p>
 
 <p> <term> Temperatures </term> </p>
  <p> Greeley: <url href="https://scacis.rcc-acis.org/" /> </p>
@@ -25,6 +30,6 @@ Caltech.Dataset. doi:10.7909/C3WD3xH1 </p>
 <p> <term>Tornadoes </term> </p> 
 <p> US Tornado Mapping: <url href="https://www.spc.noaa.gov/climo/summary/
   " /> </p>
- 
+<p> <url href="external/sheets/Tornados2024.csv"> Tornados2024</url> </p> 
 
 </section>

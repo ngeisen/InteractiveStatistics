@@ -30,7 +30,7 @@
 <exercise>
 <p>Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years. </p>
 <solution> <p> mean 7.75 +/- 1.729(3.34/sqrt20) gives 6.46 to 9.04 </p>
-<p> 90% confident that confident that the mean number of hurricanes in the Early Years is between 6.5 and 9.4 per year. </p>
+<p> 90% confident that confident that the mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year. </p>
 </solution>
 </exercise> 
 
