@@ -30,8 +30,9 @@
 <subsection xml:id="subsec-Boxplots">
     <title>Boxplots </title>
    
-<p> Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot.  The graphs will show up in the bottom right panel of R Studio. </p>
+<p> Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner in R Studio. This will construct a vertical boxplot.  The graphs will show up in the bottom right panel of R Studio. </p>
 <p> <c> boxplot(Calories) </c>	</p>
+<p> In the code block below click on Evaluate (R) to run R within the textbook. The graph will appear below it. </p> 
 
   <sage language="r">
  <input>
@@ -61,7 +62,8 @@ summary(Calories)
 
 <p> Now let's add a label along the x-axis and make the boxplot horizontal.	</p>			
 <p> <c> boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving") </c></p>
-
+<p> In the code block below click on Evaluate (R) to run R within the textbook. The graph will appear below it. Note: you need to make sure to run the code box above with the data first or you will receive an error. </p>
+ 
   <sage language="r">
  <input>
 boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")

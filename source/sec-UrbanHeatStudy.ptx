@@ -109,7 +109,7 @@
 
   <figure>
   <caption> StatKey Applet <c>iframe</c></caption>
-  <interactive xml:id="testing-statkey" iframe="https://www.lock5stat.com/StatKey/descriptive_1_quant/descriptive_1_quant.html" width="100%" aspect="16:9"/>
+  <interactive xml:id="testing-statkey" iframe="https://www.lock5stat.com/StatKey/descriptive_1_quant/descriptive_1_quant.html" width="200%" aspect="16:9"/>
 </figure>
 
 
