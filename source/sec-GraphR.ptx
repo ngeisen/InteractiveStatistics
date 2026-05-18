@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-GraphR" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Graphing with R</title>
-  <p> In this section we will learn how to do several common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners. </p>
-<objectives>
   <introduction>
-    <p> At the end of this section you will able to:  </p>
-  </introduction>
-  <ol>
+        <p> In this section we will learn how to construct several common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners. 
+        </p>   
+  
+  
+  <objectives>
+    <introduction>
+        <p>
+          At the end of this section you will able to:    
+        </p>
+    </introduction>
+    
+ <ol>
     <li> <p> Use R Studio to graph boxplots and histograms. </p>  </li>
     <li> <p> Use R Studio to construct bar graphs and circle graphs. </p> </li>
     <li> <p> Use R Studio to construct scatterplots. </p> </li>
@@ -18,6 +25,7 @@
 <p> You may need to link your <term> Using R Files</term> folder with the working directory, to do this go to the bottom right panel and under the <c>Files</c> tab click on the triple dots <c> … </c> on the far right to locate your folder and click <c>Open</c>. You should now see the Lesson 1 file and the Cereal datafile in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it directly in the bottom left panel. </p>
 <p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset</c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
 <p> Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors. </p>
+ </introduction>
 
 <subsection xml:id="subsec-Boxplots">
     <title>Boxplots </title>
@@ -27,7 +35,7 @@
 
   <sage language="r">
  <input>
-Calories=c(117,118,144,169,130,100,117,101,120,113,120,118,175,120,214,192,87,160,114,108,100,195,171,94,160,182,117,129,107)
+Calories=c(117,118,144,169,130,117,117,101,120,113,120,118,175,120,214,192,80,160,114,108,100,195,171,94,160,182,117,129,107)
 boxplot(Calories)
 summary(Calories)
  </input>
@@ -42,7 +50,7 @@ summary(Calories)
                 <shortdescription>Boxplot with values from 80 to 214.</shortdescription>
             </image>
         </figure> 
-<p> <em> Interpreting the Boxplot:</em> The boxplot shows the smallest value at 80 and the largest is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The interquartile range = Q3-Q1 =160-113.2 =  46.8. The thick line in the middle is the median = 118 .  To calculate the actual values use the <em> summary </em> command with the variable name. </p>
+<p> <em> Interpreting the Boxplot:</em> The boxplot shows the smallest value at 80 and the largest value is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The inter-quartile range = Q3-Q1 =160-113.2 =  46.8. The thick line in the middle is the median = 118 .  To calculate the actual values use the <em> summary </em> command with the variable name. </p>
 <p> <c> summary(Calories) </c> </p> 
 <figure xml:id="SummaryCalorie">
             <caption>Image of summary output</caption>

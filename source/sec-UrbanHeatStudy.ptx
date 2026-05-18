@@ -14,10 +14,10 @@
       <video xml:id="UrbanHeat" youtube="lnBO4vX82Fs" width="70%"/>
 </figure>
 
-
+<figure> 
       <caption>CBS Bews: Cities on Fire: The Urban Heat Island Effect </caption>
       <video xml:id="CitiesOnFire" youtube=" ZNYGtdGbQDA" width="70%"/>
-
+</figure>
 
 
   <p><term>Available Data</term> </p>
@@ -65,8 +65,8 @@
 
 <subsection xml:id="subsec-UrbanHeatDatatable">
 <title>Data Organization</title>
-<p>The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available (<code>MetroDenver_Climatological-Data.csv</code>).</p>
-   
+<p>The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available: </p>
+  <p>  <url href="external/MetroDenverData.csv"> MetroDenver.csv </url> </p>
 <figure xml:id="UrbanHeat">
             <caption>Urban Heat Data</caption>
             <image source="UrbanHeatTable.png" >
@@ -106,6 +106,12 @@
 <title>Data Display</title>
    
 <p> How would a climatologist characterize the high temperatures of Denver, Colorado, in summer 2024? </p>
+
+  <figure>
+  <caption> StatKey Applet <c>iframe</c></caption>
+  <interactive xml:id="testing-statkey" iframe="https://www.lock5stat.com/StatKey/descriptive_1_quant/descriptive_1_quant.html" width="100%" aspect="16:9"/>
+</figure>
+
 
     <p> The following histogram presents that high temperatures from June 1 to August 31, 2024, at the Denver Water Department near downtown Denver.</p>
 <figure xml:id="UrbanHeatHisto">

@@ -70,7 +70,7 @@
 
 
 <subsection xml:id="subsec-Survey2">
-  <title> Case Study – Class Survey 2</title>
+  <title> Case Study - Class Survey 2</title>
 <p> In the Spring semester of 2025,  UNC students proposed some questions for the class survey identifying their favorite season (spring, summer, fall, winter), how they preferred the steak being cooked (as rare, medium, medium well, well done), movie genre preference, and favorite vacation location (as coastal, mountain, theme park, city/cultural exploration, or a staycation). Students also identified how many tattoos they have, the number of credit hours they were taking this semester, the number of pets they currently have, and how many hours they typically sleep per night. Use the screen shot of the first seven rows to answer the following questions.  </p> 
  <p> Data: <url href="external/sheets/ClassSurvey2.csv"> ClassSurvey2</url> </p>
 <image source="Survey2image.png">
