@@ -15,4 +15,22 @@
 <p> Mammals </p>
 <p> Old Faithful </p>
 
+  <figure>
+  <caption>Embedding R Shiny app that is on a website ~ Batting <c>iframe</c></caption>
+  <interactive xml:id="testing-Rshiny2" iframe="https://cameronoldweiler.shinyapps.io/Project-3/" width="100%" aspect="16:9"/>
+</figure>
+
+<p>    </p>
+<p>     </p> 
+
+<figure>
+  <caption>Embedding R Shiny app that is on a website ~ Chess <c>iframe</c></caption>
+  <interactive xml:id="testing-Rshiny3" iframe="https://danielgarza0.shinyapps.io/Project3/" width="100%" aspect="16:9"/>
+</figure>
+
+
+
+
+
+
 </section>

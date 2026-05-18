@@ -3,7 +3,7 @@
 <section xml:id="BasicProb" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Basic Probability </title>
  <objectives>
-        <introduction>
+       
           <p> At the end of this section you will able to:   </p>
             <ol>
            <li> <p> Determine the probability of a single event.   </p> </li>
@@ -11,7 +11,7 @@
             <li> <p> Determine if outcomes are equally likely.   </p> </li>  
             <li> <p> Compare experimental probability with theoretical probability.   </p> </li>
           </ol>
-        </introduction>
+        
     </objectives>  
 
 <p> In this chapter we will learn a little about probability. Many people are familiar with probability from playing games of chance, such as flipping coins, rolling dice and playing cards. We will use several of these examples to help explain the rules of probability. </p>
@@ -23,9 +23,14 @@
 <p> The <term> sample space</term>  is the collection of all possible outcomes of the experiment.  For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. A tree diagrams helps us see all these outcomes.</p>
   
 <exercise> <title> Outcomes </title>
-<p>  Suppose that the experiment is rolling a single die. List the outcomes and sample space. </p>
+    <statement>
+        <p>
+            Suppose that the experiment is rolling a single die. List the outcomes and sample space.
+        </p>
+    </statement>
 <solution> <p>  The outcomes are the die number 1, 2, 3, 4, 5, 6. The sample space is the set {1, 2, 3, 4, 5, 6}.  </p> </solution> 
 </exercise> 
+
 
 
 <p> To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4/10 = 2/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513/100 = 51.3% of the time. This is an example of <term> experimental probability </term> since the value was found by actually doing the experiment. </p> 

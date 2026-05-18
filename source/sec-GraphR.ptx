@@ -24,6 +24,18 @@
    
 <p> Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner. This will construct a vertical boxplot.  The graphs will show up in the bottom right panel of R Studio. </p>
 <p> <c> boxplot(Calories) </c>	</p>
+
+  <sage language="r">
+ <input>
+Calories=c(117,118,144,169,130,100,117,101,120,113,120,118,175,120,214,192,87,160,114,108,100,195,171,94,160,182,117,129,107)
+boxplot(Calories)
+summary(Calories)
+ </input>
+ </sage>
+
+
+
+
 <figure xml:id="BoxCalorie">
             <caption>Image of Vertical Boxplot</caption>
             <image source="Rgraph1.png" width="80%">
@@ -41,6 +53,14 @@
 
 <p> Now let's add a label along the x-axis and make the boxplot horizontal.	</p>			
 <p> <c> boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving") </c></p>
+
+  <sage language="r">
+ <input>
+boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
+ summary(Calories)
+ </input>
+ </sage>
+
 <p> With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values. </p>
  <figure xml:id="BoxHorzCalorie">
             <caption>Image of horizontal boxplot</caption>
