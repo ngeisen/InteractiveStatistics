@@ -209,7 +209,7 @@
 <p> <em> Example: </em> In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is <m>n=30</m> and we are selecting <m> r=5</m>. Therefore, nCr = 30C5 </p>
 <p> Thus <m> _n C_r =30 C_5 =\frac{30!}{5!(30-5)!} = 142,506 </m> combinations for a group of 5 people. </p>
 <p> To enter this in the calculator: </p> 
-<p> input 30 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] divide button, paratheses <c>( </c> 5 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], the multiply button, then paratheses <c>( </c> 30-5 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter],  close paratheses <c>)</c> , and finally [enter]  to calculate it. </p>
+<p> input 30 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] divide button, parentheses <c>( </c> 5 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], the multiply button, then paratheses <c>( </c> 30-5 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter],  close paratheses <c>)</c> , and finally [enter]  to calculate it. </p>
 <figure xml:id="FactorialCombo">
             <caption>Combination calculation on the calculator </caption>
             <image source="ComboFactorial.png" width="50%">

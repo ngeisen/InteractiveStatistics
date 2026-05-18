@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-GraphR" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Graphing with R</title>
-  <p> In this section we will learn how to do serveral common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners. </p>
+  <p> In this section we will learn how to do several common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners. </p>
 <objectives>
   <introduction>
     <p> At the end of this section you will able to:  </p>

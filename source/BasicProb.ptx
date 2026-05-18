@@ -6,10 +6,10 @@
         <introduction>
           <p> At the end of this section you will able to:   </p>
             <ol>
-           <li> <p> Determine the probabilty of a single event.   </p> </li>
+           <li> <p> Determine the probability of a single event.   </p> </li>
             <li> <p> Identify the sample space of an event.   </p> </li>
             <li> <p> Determine if outcomes are equally likely.   </p> </li>  
-            <li> <p> Compare experimental probabilty with theoretical probabilty.   </p> </li>
+            <li> <p> Compare experimental probability with theoretical probability.   </p> </li>
           </ol>
         </introduction>
     </objectives>  
@@ -37,7 +37,7 @@
 <figure xml:id="ProbSpinner1">
             <caption>Spinner with equal outcomes</caption>
             <image source="Spinner1.png" >
-                <shortdescription>circlular spinner split into four equal parts.</shortdescription>
+                <shortdescription>circular spinner split into four equal parts.</shortdescription>
             </image>
         </figure>
 <p> Since each color represents the same fraction of the circle, we refer to them being <term> equally likely </term> to occur since the probability is the same. Just as rolling any number on a fair die is also equally likely at 1/6 since there are six sides. </p>  
@@ -45,7 +45,7 @@
 <figure xml:id="ProbSpinner2">
             <caption>Spinner with unequal outcomes</caption>
             <image source="Spinner2.png" >
-                <shortdescription>circlular spinner split into four equal of different size.</shortdescription>
+                <shortdescription>circular spinner split into four equal of different size.</shortdescription>
             </image>
         </figure>
 <exercise> <title> Spinner Probabilities </title>
