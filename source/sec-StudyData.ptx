@@ -15,9 +15,9 @@
 <p> Mammals </p>
 <p> Old Faithful </p>
 
-  <figure>
+<figure>
   <caption>Embedding R Shiny app that is on a website ~ Batting <c>iframe</c></caption>
-  <interactive xml:id="testing-Rshiny2" iframe="https://cameronoldweiler.shinyapps.io/Project-3/" width="100%" aspect="16:9"/>
+  <interactive xml:id="testing-Rshiny2" iframe="https://cameronoldweiler.shinyapps.io/Project-3/" width="200%" aspect="16:9"/>
 </figure>
 
 <p>    </p>
