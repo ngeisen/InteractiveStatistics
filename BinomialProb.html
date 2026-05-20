@@ -102,7 +102,16 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Statistics</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Types of Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-DataIntro" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-Population" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Population vs Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-TypeStatistics" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Type of Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-Variables" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-MeasScales" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Measurement Scales</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayTwo.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Collecting Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayThree.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Study Types</span></a></div></li>
 <li class="toc-item toc-section">
@@ -312,6 +321,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Histograms" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Histograms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Categorical" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Categorical Graphs</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Scatterplots" class="internal"><span class="codenumber">9.2.4</span> <span class="title">Scatterplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Quantiles" class="internal"><span class="codenumber">9.2.5</span> <span class="title">Quantile Plots</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rstats.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Statistics with R</span></a></div></li>
@@ -357,29 +367,32 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Binomial Distribution</span>
 </h2>
-<article class="objectives goal-like" id="BinomialProb-2"><h3 class="heading"><span class="type">Objectives</span></h3>
-<div class="introduction" id="BinomialProb-2-1">
-<div class="para" id="BinomialProb-2-1-1">At the end of this section you will able to:<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="BinomialProb-2">
+<div class="para" id="BinomialProb-2-1">Many types of probability problems have only two outcomes or can be reduced to two outcomes. For example, when a coin is tossed it can land heads or tails up. When a child is born, it is male or female. In other situation we reduce it to two outcomes of success or failure. On a multiple choice test question there may be four options, but the answer is either correct or not. Many categorical variables can be reduced to two outcomes - such as you either have blue eyes or not.<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="BinomialProb-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="BinomialProb-3-1">
+<div class="para" id="BinomialProb-3-1-1">At the end of this section you will able to:<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ol class="decimal" id="BinomialProb-2-1-2">
-<li id="BinomialProb-2-1-2-1">
-<div class="para" id="BinomialProb-2-1-2-1-1">Determine the conditions of a binomial event.<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="BinomialProb-3-1-2">
+<li id="BinomialProb-3-1-2-1">
+<div class="para" id="BinomialProb-3-1-2-1-1">Determine the conditions of a binomial event.<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#BinomialProb-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#BinomialProb-3-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="BinomialProb-2-1-2-2">
-<div class="para" id="BinomialProb-2-1-2-2-1">Calculate the probability for binomial event<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="BinomialProb-3-1-2-2">
+<div class="para" id="BinomialProb-3-1-2-2-1">Calculate the probability for binomial event.<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#BinomialProb-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#BinomialProb-3-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
-<li id="BinomialProb-2-1-2-3">
-<div class="para" id="BinomialProb-2-1-2-3-1">Calculate the mean and standard deviation for binomial events<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="BinomialProb-3-1-2-3">
+<div class="para" id="BinomialProb-3-1-2-3-1">Calculate the mean and standard deviation for binomial events.<div class="autopermalink" data-description="Paragraph"><a href="#BinomialProb-3-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#BinomialProb-2-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#BinomialProb-3-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
 </div>
-<div class="autopermalink" data-description="Objectives 4.5"><a href="#BinomialProb-2" title="Copy heading and permalink for Objectives 4.5" aria-label="Copy heading and permalink for Objectives 4.5">🔗</a></div>
+<div class="autopermalink" data-description="Objectives 4.5"><a href="#BinomialProb-3" title="Copy heading and permalink for Objectives 4.5" aria-label="Copy heading and permalink for Objectives 4.5">🔗</a></div>
 </article>
 <section class="subsection" id="subsec-BinomialBasics">
 <h3 class="heading hide-type">

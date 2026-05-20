@@ -102,7 +102,16 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Statistics</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DayOne.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Types of Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-DataIntro" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-Population" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Population vs Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-TypeStatistics" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Type of Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-Variables" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DayOne.html#subsec-MeasScales" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Measurement Scales</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayTwo.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Collecting Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DayThree.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Study Types</span></a></div></li>
 <li class="toc-item toc-section">
@@ -312,6 +321,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Histograms" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Histograms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Categorical" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Categorical Graphs</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Scatterplots" class="internal"><span class="codenumber">9.2.4</span> <span class="title">Scatterplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GraphR.html#subsec-Quantiles" class="internal"><span class="codenumber">9.2.5</span> <span class="title">Quantile Plots</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rstats.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Statistics with R</span></a></div></li>
@@ -357,29 +367,32 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conditional Probability</span>
 </h2>
-<article class="objectives goal-like" id="CondProb-2"><h3 class="heading"><span class="type">Objectives</span></h3>
-<div class="introduction" id="CondProb-2-1">
-<div class="para" id="CondProb-2-1-1">At the end of this section you will able to:<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="CondProb-2">
+<div class="para" id="CondProb-2-1">When evaluating the probability for a single event we often used the additional rule to add the outcomes. Next we will investigate multiple events taking place together, so we will use the multiplication rule.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="CondProb-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="CondProb-3-1">
+<div class="para" id="CondProb-3-1-1">At the end of this section you will able to:<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ol class="decimal" id="CondProb-2-1-2">
-<li id="CondProb-2-1-2-1">
-<div class="para" id="CondProb-2-1-2-1-1">Determine if events are independent or dependent.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#CondProb-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<ol class="decimal" id="CondProb-3-2">
+<li id="CondProb-3-2-1">
+<div class="para" id="CondProb-3-2-1-1">Determine if events are independent or dependent.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 4.3.1"><a href="#CondProb-3-2-1" title="Copy heading and permalink for Objective 4.3.1" aria-label="Copy heading and permalink for Objective 4.3.1">🔗</a></div>
 </li>
-<li id="CondProb-2-1-2-2">
-<div class="para" id="CondProb-2-1-2-2-1">Determine the probability using "given" statements.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="CondProb-3-2-2">
+<div class="para" id="CondProb-3-2-2-1">Determine the probability using "given" statements.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#CondProb-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Objective 4.3.2"><a href="#CondProb-3-2-2" title="Copy heading and permalink for Objective 4.3.2" aria-label="Copy heading and permalink for Objective 4.3.2">🔗</a></div>
 </li>
-<li id="CondProb-2-1-2-3">
-<div class="para" id="CondProb-2-1-2-3-1">Distinguish between permutations and combinations.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="CondProb-3-2-3">
+<div class="para" id="CondProb-3-2-3-1">Distinguish between permutations and combinations.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#CondProb-2-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Objective 4.3.3"><a href="#CondProb-3-2-3" title="Copy heading and permalink for Objective 4.3.3" aria-label="Copy heading and permalink for Objective 4.3.3">🔗</a></div>
 </li>
 </ol>
-</div>
-<div class="autopermalink" data-description="Objectives 4.3"><a href="#CondProb-2" title="Copy heading and permalink for Objectives 4.3" aria-label="Copy heading and permalink for Objectives 4.3">🔗</a></div>
+<div class="autopermalink" data-description="Objectives 4.3"><a href="#CondProb-3" title="Copy heading and permalink for Objectives 4.3" aria-label="Copy heading and permalink for Objectives 4.3">🔗</a></div>
 </article>
 <section class="subsection" id="subsec-Independent">
 <h3 class="heading hide-type">
@@ -398,73 +411,93 @@ P(\text{A and B}) = P(A) \times P(B)
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Independent-5">For example, if a four-sided die is rolled and then a quarter is flipped. What’s the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is <span class="process-math">\(P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="subsec-Independent-5">
+<div class="para">For example, if a four-sided die is rolled and then a quarter is flipped. What’s the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is</div>
+<div class="displaymath process-math" id="subsec-Independent-5-1">
+\begin{equation*}
+P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-Independent-6">If we used a tree diagram, we would list the four outcomes for the die and add two branches to each die value to represent heads or tails. Since each outcome is equally likely on the dice and the coin, the probability for each event is 1/8.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Independent-7">Practice Problems<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Independent-7">
+<dfn class="terminology">Practice Problems</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="subsec-Independent-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-Independent-8-1">A card is drawn from a standard deck of 52 cards and is replaced, then a second card is drawn. Find the probability of drawing a queen and then an king.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Independent-8-1-1">A card is drawn from a standard deck of 52 cards and is replaced, then a second card is drawn. Find the probability of drawing a queen and then an king.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-Independent-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-Independent-8-2-1">The probability of getting a queen is 4/52 on the first draw, the card is replaced so the probability of drawing a king is 4/52 on the second draw. Thus the probability P(Q and K) = 4/52 x 4/52 = 16/2704 = 0.0059<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 4.3.1.1"><a href="#subsec-Independent-8-2" title="Copy heading and permalink for Solution 4.3.1.1" aria-label="Copy heading and permalink for Solution 4.3.1.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.1"><a href="#subsec-Independent-8" title="Copy heading and permalink for Checkpoint 4.3.1" aria-label="Copy heading and permalink for Checkpoint 4.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.1"><a href="#subsec-Independent-8" title="Copy heading and permalink for Checkpoint 4.3.1" aria-label="Copy heading and permalink for Checkpoint 4.3.1">🔗</a></div>
 </article></details>
 <details id="subsec-Independent-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-Independent-9-1">A Harris poll found that 46% of Americans say they suffer great stress at least once a week. If three people are selected at random, find the probability that all three they suffer great stress at least one a week.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Independent-9-1-1">A Harris poll found that 46% of Americans say they suffer great stress at least once a week. If three people are selected at random, find the probability that all three they suffer great stress at least one a week.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-Independent-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-Independent-9-2-1">We will assume each person is independent so the probability is 0.46 for each person, thus <span class="process-math">\(P(SSS)= 0.46 \times  0.46 \times 0.46 = 0.0097 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 4.3.2.1"><a href="#subsec-Independent-9-2" title="Copy heading and permalink for Solution 4.3.2.1" aria-label="Copy heading and permalink for Solution 4.3.2.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.2"><a href="#subsec-Independent-9" title="Copy heading and permalink for Checkpoint 4.3.2" aria-label="Copy heading and permalink for Checkpoint 4.3.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.2"><a href="#subsec-Independent-9" title="Copy heading and permalink for Checkpoint 4.3.2" aria-label="Copy heading and permalink for Checkpoint 4.3.2">🔗</a></div>
 </article></details>
 <details id="subsec-Independent-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-Independent-10-1">Approximately 9% of men have a type of color blindness that prevents them from distinguishing between red and green. If three men are selected at random, find the probability that all three will have this type of red-green color blindness.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Independent-10-1-1">Approximately 9% of men have a type of color blindness that prevents them from distinguishing between red and green. If three men are selected at random, find the probability that all three will have this type of red-green color blindness.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-Independent-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-Independent-10-2-1">We will assume each person is independent so the probability is 0.08 for each person, thus <span class="process-math">\(P(SSS)= 0.08  \times \ 0.08 \times 0.08  = .000512 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 4.3.3.1"><a href="#subsec-Independent-10-2" title="Copy heading and permalink for Solution 4.3.3.1" aria-label="Copy heading and permalink for Solution 4.3.3.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.3"><a href="#subsec-Independent-10" title="Copy heading and permalink for Checkpoint 4.3.3" aria-label="Copy heading and permalink for Checkpoint 4.3.3">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.3"><a href="#subsec-Independent-10" title="Copy heading and permalink for Checkpoint 4.3.3" aria-label="Copy heading and permalink for Checkpoint 4.3.3">🔗</a></div>
 </article></details>
 <details id="subsec-Independent-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-Independent-11-1">A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random, its color is noted, and then returned to the bag. A second ball is randomly selected and its color noted. Find the following probabilities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Independent-11-1-1">A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random, its color is noted, and then returned to the bag. A second ball is randomly selected and its color noted. Find the following probabilities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-Independent-11-1-2">a) Selecting two red marbles in a row.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-Independent-11-1-3">b) Selecting a blue marble and then a green marble.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Independent-11-2">Selecting two red marbles in a row.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="subsec-Independent-11-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Independent-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-Independent-11-3-1">Since the marbles are replaced we are looking at independent events, so the probability stays the same after each draw. <span class="process-math">\(P(\text{red and red}) = 3/10 \times 3/10  = 9/100 = 0.09 \)</span> or 9%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Independent-11-2-1">Since the marbles are replaced we are looking at independent events, so the probability stays the same after each draw. <span class="process-math">\(P(\text{red and red}) = 3/10 \times 3/10  = 9/100 = 0.09 \)</span> or 9%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.4.1"><a href="#subsec-Independent-11-3" title="Copy heading and permalink for Solution 4.3.4.1" aria-label="Copy heading and permalink for Solution 4.3.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.4.1"><a href="#subsec-Independent-11-2" title="Copy heading and permalink for Solution 4.3.4.1" aria-label="Copy heading and permalink for Solution 4.3.4.1">🔗</a></div>
 </div></details>
-<div class="para" id="subsec-Independent-11-4">Selecting a blue marble and then a green marble.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="subsec-Independent-11-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-Independent-11-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-Independent-11-5-1">Since the marbles are replaced we are looking at independent events, so the probability of each color stays the same after each draw.<span class="process-math">\(P(\text{blue and green}) = 2/10 \times 5/10  = 10/100 = 0.10  \)</span> or 10%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Independent-11-3-1">Since the marbles are replaced we are looking at independent events, so the probability of each color stays the same after each draw.<span class="process-math">\(P(\text{blue and green}) = 2/10 \times 5/10  = 10/100 = 0.10  \)</span> or 10%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-11-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.4.2"><a href="#subsec-Independent-11-5" title="Copy heading and permalink for Solution 4.3.4.2" aria-label="Copy heading and permalink for Solution 4.3.4.2">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.4"><a href="#subsec-Independent-11" title="Copy heading and permalink for Checkpoint 4.3.4" aria-label="Copy heading and permalink for Checkpoint 4.3.4">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.4.2"><a href="#subsec-Independent-11-3" title="Copy heading and permalink for Solution 4.3.4.2" aria-label="Copy heading and permalink for Solution 4.3.4.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.4"><a href="#subsec-Independent-11" title="Copy heading and permalink for Checkpoint 4.3.4" aria-label="Copy heading and permalink for Checkpoint 4.3.4">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-Independent-12">Other times the events are not equally likely. We can still use a tree diagram to find the outcomes, but we multiply the probability of each event along the tree to find the new probability outcomes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Independent-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -613,37 +646,44 @@ P(\text{A and B}) = P(A) \times P(B|A)
 </div>
 <div class="autopermalink" data-description="Example 4.3.11"><a href="#subsec-Dependent-12" title="Copy heading and permalink for Example 4.3.11" aria-label="Copy heading and permalink for Example 4.3.11">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-Dependent-13">Practice Problems<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Dependent-13">
+<dfn class="terminology">Practice Problems</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="subsec-Dependent-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-Dependent-14-1">A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Dependent-14-1-1">A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-Dependent-14-1-2">Selecting two red marbles in a row.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-14-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Dependent-14-2">Selecting two red marbles in a row.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="subsec-Dependent-14-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Dependent-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-Dependent-14-3-1">Since the marbles are not replaced in the bag we are looking at dependent events, so the probability change after each draw. <span class="process-math">\(P(\text{red and red}) = 3/10 \times 2/9  = 6/90 = .067 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-14-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Dependent-14-2-1">Since the marbles are not replaced in the bag we are looking at dependent events, so the probability change after each draw. <span class="process-math">\(P(\text{red and red}) = 3/10 \times 2/9  = 6/90 = .067 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.12.1"><a href="#subsec-Dependent-14-3" title="Copy heading and permalink for Solution 4.3.12.1" aria-label="Copy heading and permalink for Solution 4.3.12.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.12"><a href="#subsec-Dependent-14" title="Copy heading and permalink for Checkpoint 4.3.12" aria-label="Copy heading and permalink for Checkpoint 4.3.12">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.12.1"><a href="#subsec-Dependent-14-2" title="Copy heading and permalink for Solution 4.3.12.1" aria-label="Copy heading and permalink for Solution 4.3.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.12"><a href="#subsec-Dependent-14" title="Copy heading and permalink for Checkpoint 4.3.12" aria-label="Copy heading and permalink for Checkpoint 4.3.12">🔗</a></div>
 </article></details>
 <details id="subsec-Dependent-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-Dependent-15-1">A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-15-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Dependent-15-1-1">A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-Dependent-15-1-2">Selecting a blue marble and then a green marble.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-15-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Dependent-15-2">Selecting a blue marble and then a green marble.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-15-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="subsec-Dependent-15-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Dependent-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-Dependent-15-3-1">We will assume all the marbles are in the bag to begin with.  Since the marbles are not replaced to the bag, we are looking at dependent events, so the probability will change after each draw. <span class="process-math">\(P(\text{blue and green}) = 2/10 \times 5/9  = 10/90 = 0.111 or 11.1% \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-15-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Dependent-15-2-1">We will assume all the marbles are in the bag to begin with.  Since the marbles are not replaced to the bag, we are looking at dependent events, so the probability will change after each draw. <span class="process-math">\(P(\text{blue and green}) = 2/10 \times 5/9  = 10/90 = 0.111 or 11.1% \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Dependent-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.13.1"><a href="#subsec-Dependent-15-3" title="Copy heading and permalink for Solution 4.3.13.1" aria-label="Copy heading and permalink for Solution 4.3.13.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.13"><a href="#subsec-Dependent-15" title="Copy heading and permalink for Checkpoint 4.3.13" aria-label="Copy heading and permalink for Checkpoint 4.3.13">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.13.1"><a href="#subsec-Dependent-15-2" title="Copy heading and permalink for Solution 4.3.13.1" aria-label="Copy heading and permalink for Solution 4.3.13.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.13"><a href="#subsec-Dependent-15" title="Copy heading and permalink for Checkpoint 4.3.13" aria-label="Copy heading and permalink for Checkpoint 4.3.13">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Subsection 4.3.2: Dependent Events"><a href="#subsec-Dependent" title="Copy heading and permalink for Subsection 4.3.2: Dependent Events" aria-label="Copy heading and permalink for Subsection 4.3.2: Dependent Events">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-Conditional">
@@ -659,7 +699,7 @@ P(\text{A and B}) = P(A) \times P(B|A)
 <div class="para">Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is</div>
 <div class="displaymath process-math" id="subsec-Conditional-4-1">
 \begin{equation*}
-P(\text{ticket|no-park zone})=\frac{P(TandNo)}{P(no)}=\frac{0.06}{0.20}=0.30
+P(\text{ticket|no-park zone})=\frac{P(T and No)}{P(no)}=\frac{0.06}{0.20}=0.30
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-Conditional-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -668,196 +708,213 @@ P(\text{ticket|no-park zone})=\frac{P(TandNo)}{P(no)}=\frac{0.06}{0.20}=0.30
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-Conditional-5-1">A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40,  find the probability of selecting a yellow tennis ball  on the second draw given that the first ball was yellow.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Conditional-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Conditional-5-1-1">A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40,  find the probability of selecting a yellow tennis ball  on the second draw given that the first ball was yellow.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Conditional-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-Conditional-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-Conditional-5-2-1">This is conditional probability. We are told that P(white and yellow) = .30 and P(white)=0.40. We need to find P(yellow|white) = P(white and yellow) divide by P(white) = 0.30/0.40 = 0.75 or 75%.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Conditional-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 4.3.14.1"><a href="#subsec-Conditional-5-2" title="Copy heading and permalink for Solution 4.3.14.1" aria-label="Copy heading and permalink for Solution 4.3.14.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.14"><a href="#subsec-Conditional-5" title="Copy heading and permalink for Checkpoint 4.3.14" aria-label="Copy heading and permalink for Checkpoint 4.3.14">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.14"><a href="#subsec-Conditional-5" title="Copy heading and permalink for Checkpoint 4.3.14" aria-label="Copy heading and permalink for Checkpoint 4.3.14">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Subsection 4.3.3: Conditional Events"><a href="#subsec-Conditional" title="Copy heading and permalink for Subsection 4.3.3: Conditional Events" aria-label="Copy heading and permalink for Subsection 4.3.3: Conditional Events">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-Permutations">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Permutations and Combinations</span>
 </h3>
-<div class="autopermalink" data-description="Subsection 4.3.4: Permutations and Combinations"><a href="#subsec-Permutations" title="Copy heading and permalink for Subsection 4.3.4: Permutations and Combinations" aria-label="Copy heading and permalink for Subsection 4.3.4: Permutations and Combinations">🔗</a></div>
-</section>
-<div class="para" id="CondProb-7">There are times when the sample space or event space are very large, that it is not feasible to write it out.  In that case, it helps to have mathematical tools for counting the size of the sample space and event space.  These tools are known as counting techniques.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-2">There are times when the sample space or event space are very large, that it is not feasible to write it out.  In that case, it helps to have mathematical tools for counting the size of the sample space and event space.  These tools are known as counting techniques.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-8">
-<dfn class="terminology">Counting Principle:</dfn>  If Task 1 can be performed in m ways,  and Task 2 can be performed in n ways no matter how task 1 turns out,  then the sequence task 1 and task 2 can be performed in m·n ways together (as a product).<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-3">
+<dfn class="terminology">Counting Principle:</dfn>  If Task 1 can be performed in m ways,  and Task 2 can be performed in n ways no matter how task 1 turns out,  then the sequence task 1 and task 2 can be performed in m·n ways together (as a product).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-9">Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options.  How many different meals consisting of one salad, one main dish, and one dessert are possible?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-4">Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options.  How many different meals consisting of one salad, one main dish, and one dessert are possible?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-10">
-<em class="emphasis">Solution:</em>There are three tasks to this meal, picking a salad, a main dish, and a dessert.  The salad has 2 choices, the main dish has 6 choices, and the dessert has 3 options.  Therefore there are <span class="process-math">\(2×6×3=36\)</span> different meals.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-5">
+<em class="emphasis">Solution:</em>There are three tasks to this meal, picking a salad, a main dish, and a dessert.  The salad has 2 choices, the main dish has 6 choices, and the dessert has 3 options.  Therefore there are <span class="process-math">\(2×6×3=36\)</span> different meals.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-11">If we did this with a tree diagram, we would have 2 lines to represent the two salads, then each salad would have the 6 main dishes branched from it, then each of those branches would have the 3 desserts. If you list each unique outcome, there are 36 different meals.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-6">If we did this with a tree diagram, we would have 2 lines to represent the two salads, then each salad would have the 6 main dishes branched from it, then each of those branches would have the 3 desserts. If you list each unique outcome, there are 36 different meals.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="CondProb-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<details id="subsec-Permutations-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Password.</span>
-</h3></summary>
+</h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="CondProb-12-2">How many three letter passwords can be made from the letters a, b, and c , if the letters can be reused?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-7-2-1">How many three letter passwords can be made from the letters a, b, and c , if the letters can be reused?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="CondProb-12-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Permutations-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="CondProb-12-3-1">3x3x3 = 27 passwords<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-12-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-7-3-1">3x3x3 = 27 passwords<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.15.1"><a href="#CondProb-12-3" title="Copy heading and permalink for Solution 4.3.15.1" aria-label="Copy heading and permalink for Solution 4.3.15.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.15: Password"><a href="#CondProb-12" title="Copy heading and permalink for Checkpoint 4.3.15: Password" aria-label="Copy heading and permalink for Checkpoint 4.3.15: Password">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.15.1"><a href="#subsec-Permutations-7-3" title="Copy heading and permalink for Solution 4.3.15.1" aria-label="Copy heading and permalink for Solution 4.3.15.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.15: Password"><a href="#subsec-Permutations-7" title="Copy heading and permalink for Checkpoint 4.3.15: Password" aria-label="Copy heading and permalink for Checkpoint 4.3.15: Password">🔗</a></div>
 </article></details>
-<details id="CondProb-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<details id="subsec-Permutations-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Kentucky Derby.</span>
-</h3></summary>
+</h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="CondProb-13-2">Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-8-2-1">Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="CondProb-13-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Permutations-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="CondProb-13-3-1">We just need to fill three positions, thus <span class="process-math">\(8\times7\times6=336\)</span> ways for the first three positions.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-13-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-8-3-1">We just need to fill three positions, thus <span class="process-math">\(8\times7\times6=336\)</span> ways for the first three positions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-13-3-2">Fun fact:  The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-13-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-8-3-2">Fun fact:  The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-8-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.16.1"><a href="#CondProb-13-3" title="Copy heading and permalink for Solution 4.3.16.1" aria-label="Copy heading and permalink for Solution 4.3.16.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.16: Kentucky Derby"><a href="#CondProb-13" title="Copy heading and permalink for Checkpoint 4.3.16: Kentucky Derby" aria-label="Copy heading and permalink for Checkpoint 4.3.16: Kentucky Derby">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.16.1"><a href="#subsec-Permutations-8-3" title="Copy heading and permalink for Solution 4.3.16.1" aria-label="Copy heading and permalink for Solution 4.3.16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.16: Kentucky Derby"><a href="#subsec-Permutations-8" title="Copy heading and permalink for Checkpoint 4.3.16: Kentucky Derby" aria-label="Copy heading and permalink for Checkpoint 4.3.16: Kentucky Derby">🔗</a></div>
 </article></details>
-<div class="para" id="CondProb-14">How many three letter passwords can be made from the letters a, b, and c if  no letters can be repeated?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-9">How many three letter passwords can be made from the letters a, b, and c if  no letters can be repeated?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-15">
-<em class="emphasis">Solution:</em> There are three tasks that must be done in this case.  The tasks are to pick the first letter, then the second letter, and then the third letter.  There are 3 options for the first letter, once it is chosen there are two remaining options for the second letter. Once one is chosen there is just one letter option for the last position. Therefore there are 3×2×1=6 unique passwords where the letters do not repeat.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-10">
+<em class="emphasis">Solution:</em> There are three tasks that must be done in this case.  The tasks are to pick the first letter, then the second letter, and then the third letter.  There are 3 options for the first letter, once it is chosen there are two remaining options for the second letter. Once one is chosen there is just one letter option for the last position. Therefore there are 3×2×1=6 unique passwords where the letters do not repeat.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-16">We can also look at this in a tree diagram:<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-11">We can also look at this in a tree diagram:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-17">Many counting problems involve multiplying a list of decreasing numbers, such as the non-repeating letters in the password. The product of   3×2×1=3!  is called a <dfn class="terminology">factorial</dfn>.  There is a special symbol <code class="code-inline tex2jax_ignore"> ! </code> for this and a special button on your calculator.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-12">Many counting problems involve multiplying a list of decreasing numbers, such as the non-repeating letters in the password. The product of   3×2×1=3!  is called a <dfn class="terminology">factorial</dfn>.  There is a special symbol <code class="code-inline tex2jax_ignore"> ! </code> for this and a special button on your calculator.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-18">
-<dfn class="terminology">Factorial</dfn><div class="autopermalink" data-description="Paragraph"><a href="#CondProb-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-13">
+<dfn class="terminology">Factorial</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-19">
-<span class="process-math">\(n!=n(n-1)(n-2)…(3)(2)(1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#CondProb-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-14">
+<span class="process-math">\(n!=n(n-1)(n-2)…(3)(2)(1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-20">As an example <span class="process-math">\(: 5!=5\times4\times3\times2\times1=120 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#CondProb-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-15">As an example <span class="process-math">\(: 5!=5\times4\times3\times2\times1=120 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-21">There are a few special values: 0 factorial is defined to be 0! = 1 and 1 factorial is 1! = 1.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-16">There are a few special values: 0 factorial is defined to be 0! = 1 and 1 factorial is 1! = 1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-22">To find the factorial button on the TI83Plus, press the [MATH] button and click on the arrow to the right three times until it highlights PRB across the top, and then select option 4: ! and hit [enter].<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-17">To find the factorial button on the TI83Plus, press the [MATH] button and click on the arrow to the right three times until it highlights PRB across the top, and then select option 4: ! and hit [enter].<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-23">To calculate 5! input the value 5 first, then [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter] [enter] = 120<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-18">To calculate 5! input the value 5 first, then [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter] [enter] = 120<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="FactorialButton"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/FactorialButton.png" class="contained" alt="Math to PRB to option 4."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Factorial button on the calculator<div class="autopermalink" data-description="Figure 4.3.17"><a href="#FactorialButton" title="Copy heading and permalink for Figure 4.3.17" aria-label="Copy heading and permalink for Figure 4.3.17">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="CondProb-25">Sometimes we are trying to select <em class="emphasis">r</em> objects from <em class="emphasis">n</em> total objects.  The number of ways to do this depends on whether the order you choose the <em class="emphasis">r</em> objects matters or not.  As an example, if you are trying to call a person on the phone, you have to have their number in the right order.  Otherwise, you call someone you did not mean to call.  In this case, the order of the numbers matters.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-20">Sometimes we are trying to select <em class="emphasis">r</em> objects from <em class="emphasis">n</em> total objects.  The number of ways to do this depends on whether the order you choose the <em class="emphasis">r</em> objects matters or not.  As an example, if you are trying to call a person on the phone, you have to have their number in the right order.  Otherwise, you call someone you did not mean to call.  In this case, the order of the numbers matters.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-26">However, you were picking random numbers for the lottery, it does not matter which number you pick first or last.  As long as you have the same correct numbers that the lottery people pick, you win.  In this case the order does not matter.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-21">However, you were picking random numbers for the lottery, it does not matter which number you pick first or last.  As long as you have the same correct numbers that the lottery people pick, you win.  In this case the order does not matter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-27">A <dfn class="terminology">permutation</dfn> is an arrangement of items with a specific order.  You use permutations to count items when the order matters, such as passwords or phone numbers.  When the order does not matter you use a <dfn class="terminology">combination</dfn> since the order arrangement of items is not important.  When you do a counting problem, the first thing you should ask yourself is “does order matter?”<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-22">A <dfn class="terminology">permutation</dfn> is an arrangement of items with a specific order.  You use permutations to count items when the order matters, such as passwords or phone numbers.  When the order does not matter you use a <dfn class="terminology">combination</dfn> since the order arrangement of items is not important.  When you do a counting problem, the first thing you should ask yourself is “does order matter?”<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-28">
-<dfn class="terminology">Permutation Formula</dfn><div class="autopermalink" data-description="Paragraph"><a href="#CondProb-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-23">
+<dfn class="terminology">Permutation Formula</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="CondProb-29">
+<div class="para logical" id="subsec-Permutations-24">
 <div class="para">Picking <span class="process-math">\(r\)</span> object from <span class="process-math">\(n\)</span> total object when order matters:</div>
-<div class="displaymath process-math" id="CondProb-29-3">
+<div class="displaymath process-math" id="subsec-Permutations-24-3">
 \begin{equation*}
 nPr=\frac{n!}{(n-r)!}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-30">
-<em class="emphasis">Example:</em> Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-25">
+<em class="emphasis">Example:</em> Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-31">Since the order matters we will use a permutation where <span class="process-math">\(n=8 \)</span> total horses and <span class="process-math">\(r=3\)</span> positions.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-26">Since the order matters we will use a permutation where <span class="process-math">\(n=8 \)</span> total horses and <span class="process-math">\(r=3\)</span> positions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-32">Thus <span class="process-math">\(_n P_r = _8 P_3 =\frac{8!}{(8-3)!} = 336\)</span> ways to finish the race.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-27">Thus <span class="process-math">\(_n P_r = _8 P_3 =\frac{8!}{(8-3)!} = 336\)</span> ways to finish the race.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-33">To enter this in the calculator:<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-28">To enter this in the calculator:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-34">input the value 8 [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter], hit the divide button, paratheses <code class="code-inline tex2jax_ignore">( </code> 8-3 <code class="code-inline tex2jax_ignore">)</code> [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter] [enter]<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-29">input the value 8 [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter], hit the divide button, parentheses <code class="code-inline tex2jax_ignore">( </code> 8-3 <code class="code-inline tex2jax_ignore">)</code> [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter] [enter]<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="FactorialCalc"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/FactorialHorse.png" class="contained" alt="Math to PRB to option 4."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Factorial calculation on the calculator<div class="autopermalink" data-description="Figure 4.3.18"><a href="#FactorialCalc" title="Copy heading and permalink for Figure 4.3.18" aria-label="Copy heading and permalink for Figure 4.3.18">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="CondProb-36">Alternatively, you can use the permutation function in the probability menu. Enter the value 8 first, [MATH] button and three arrows to the right for PRB across the top, then select option 2: nPr, hit [enter] and type the value 3, then [enter] again.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-31">Alternatively, you can use the permutation function in the probability menu. Enter the value 8 first, [MATH] button and three arrows to the right for PRB across the top, then select option 2: nPr, hit [enter] and type the value 3, then [enter] again.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="PermuationCalc"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HorsePerm.png" class="contained" alt="Math to PRB to option 2."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Permutation on the calculator<div class="autopermalink" data-description="Figure 4.3.19"><a href="#PermuationCalc" title="Copy heading and permalink for Figure 4.3.19" aria-label="Copy heading and permalink for Figure 4.3.19">🔗</a></div></figcaption>
+<figure class="figure figure-like" id="PermutationCalc"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HorsePerm.png" class="contained" alt="Math to PRB to option 2."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Permutation on the calculator<div class="autopermalink" data-description="Figure 4.3.19"><a href="#PermutationCalc" title="Copy heading and permalink for Figure 4.3.19" aria-label="Copy heading and permalink for Figure 4.3.19">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="CondProb-38">
-<dfn class="terminology">Combination Formula</dfn><div class="autopermalink" data-description="Paragraph"><a href="#CondProb-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-33">
+<dfn class="terminology">Combination Formula</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="CondProb-39">
+<div class="para logical" id="subsec-Permutations-34">
 <div class="para">Picking <span class="process-math">\(r\)</span> object from <span class="process-math">\(n\)</span> total object when order does not matters:</div>
-<div class="displaymath process-math" id="CondProb-39-3">
+<div class="displaymath process-math" id="subsec-Permutations-34-3">
 \begin{equation*}
 nCr=\frac{n!}{r!(n-r)!}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-40">
-<em class="emphasis">Example:</em> In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is <span class="process-math">\(n=30\)</span> and we are selecting <span class="process-math">\(r=5\text{.}\)</span> Therefore, nCr = 30C5<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-40" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-35">
+<em class="emphasis">Example:</em> In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is <span class="process-math">\(n=30\)</span> and we are selecting <span class="process-math">\(r=5\text{.}\)</span> Therefore, nCr = 30C5<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-41">Thus <span class="process-math">\(_n C_r =30 C_5 =\frac{30!}{5!(30-5)!} = 142,506 \)</span> combinations for a group of 5 people.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-41" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-36">Thus <span class="process-math">\(_n C_r =30 C_5 =\frac{30!}{5!(30-5)!} = 142,506 \)</span> combinations for a group of 5 people.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-42">To enter this in the calculator:<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-42" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-37">To enter this in the calculator:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="CondProb-43">input 30 [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter] divide button, parentheses <code class="code-inline tex2jax_ignore">( </code> 5 [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter], the multiply button, then paratheses <code class="code-inline tex2jax_ignore">( </code> 30-5 <code class="code-inline tex2jax_ignore">)</code> [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter],  close paratheses <code class="code-inline tex2jax_ignore">)</code> , and finally [enter]  to calculate it.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-43" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-38">input 30 [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter] divide button, parentheses <code class="code-inline tex2jax_ignore">( </code> 5 [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter], the multiply button, then parentheses <code class="code-inline tex2jax_ignore">( </code> 30-5 <code class="code-inline tex2jax_ignore">)</code> [math] <span class="process-math">\(\gt\gt\gt \)</span> PRB select option 4: ! [enter],  close parentheses <code class="code-inline tex2jax_ignore">)</code> , and finally [enter]  to calculate it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="FactorialCombo"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/ComboFactorial.png" class="contained" alt="Math to PRB to option 4."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Combination calculation on the calculator<div class="autopermalink" data-description="Figure 4.3.20"><a href="#FactorialCombo" title="Copy heading and permalink for Figure 4.3.20" aria-label="Copy heading and permalink for Figure 4.3.20">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="CondProb-45">Alternatively, you can use the combination function in the probability menu. Enter the value 30 first, [MATH] button and three arrows to the right for PRB across the top, then select option 3: nCr, hit [enter] and type the value 5, then [enter] again.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-40">Alternatively, you can use the combination function in the probability menu. Enter the value 30 first, [MATH] button and three arrows to the right for PRB across the top, then select option 3: nCr, hit [enter] and type the value 5, then [enter] again.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-40" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="CombinationCalc"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ComboButton.png" class="contained" alt="Math to PRB to option 3."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Combination on the calculator<div class="autopermalink" data-description="Figure 4.3.21"><a href="#CombinationCalc" title="Copy heading and permalink for Figure 4.3.21" aria-label="Copy heading and permalink for Figure 4.3.21">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="CondProb-47">
-<dfn class="terminology">Practice Problems</dfn><div class="autopermalink" data-description="Paragraph"><a href="#CondProb-47" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-42">
+<dfn class="terminology">Practice Problems</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-42" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="CondProb-48" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<details id="subsec-Permutations-43" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Biology Club.</span>
-</h3></summary>
+</h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="CondProb-48-2">In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary/treasurer be chosen?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-48-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-43-2-1">In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary/treasurer be chosen?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-43-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="CondProb-48-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Permutations-43-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="CondProb-48-3-1">This is a permutation since the order matters when choosing officers. 15P3 = 2730 ways to shoe officers<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-48-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-43-3-1">This is a permutation since the order matters when choosing officers. 15P3 = 2730 ways to shoe officers<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-43-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.22.1"><a href="#CondProb-48-3" title="Copy heading and permalink for Solution 4.3.22.1" aria-label="Copy heading and permalink for Solution 4.3.22.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.22: Biology Club"><a href="#CondProb-48" title="Copy heading and permalink for Checkpoint 4.3.22: Biology Club" aria-label="Copy heading and permalink for Checkpoint 4.3.22: Biology Club">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.22.1"><a href="#subsec-Permutations-43-3" title="Copy heading and permalink for Solution 4.3.22.1" aria-label="Copy heading and permalink for Solution 4.3.22.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.22: Biology Club"><a href="#subsec-Permutations-43" title="Copy heading and permalink for Checkpoint 4.3.22: Biology Club" aria-label="Copy heading and permalink for Checkpoint 4.3.22: Biology Club">🔗</a></div>
 </article></details>
-<details id="CondProb-49" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<details id="subsec-Permutations-44" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chemistry Club.</span>
-</h3></summary>
+</h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="CondProb-49-2">In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-49-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-44-2-1">In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-44-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="CondProb-49-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Permutations-44-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="CondProb-49-3-1">This is looking as a group where the order does not matter, thus a combination. 15C3 = 455 combinations for the committee.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-49-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-44-3-1">This is looking as a group where the order does not matter, thus a combination. 15C3 = 455 combinations for the committee.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-44-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.23.1"><a href="#CondProb-49-3" title="Copy heading and permalink for Solution 4.3.23.1" aria-label="Copy heading and permalink for Solution 4.3.23.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.23: Chemistry Club"><a href="#CondProb-49" title="Copy heading and permalink for Checkpoint 4.3.23: Chemistry Club" aria-label="Copy heading and permalink for Checkpoint 4.3.23: Chemistry Club">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.23.1"><a href="#subsec-Permutations-44-3" title="Copy heading and permalink for Solution 4.3.23.1" aria-label="Copy heading and permalink for Solution 4.3.23.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.23: Chemistry Club"><a href="#subsec-Permutations-44" title="Copy heading and permalink for Checkpoint 4.3.23: Chemistry Club" aria-label="Copy heading and permalink for Checkpoint 4.3.23: Chemistry Club">🔗</a></div>
 </article></details>
-<details id="CondProb-50" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<details id="subsec-Permutations-45" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">license plates.</span>
-</h3></summary>
+</h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="CondProb-50-2">A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-50-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-45-2-1">A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-45-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="CondProb-50-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-Permutations-45-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="CondProb-50-3-1">Use the counting principles since the letters can be repeated. There are 26 letters in the alphabet and 10 possible digits (0 through 9). 26x26x26x10x10x10 = 17,576,000 possible plates.<div class="autopermalink" data-description="Paragraph"><a href="#CondProb-50-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Permutations-45-3-1">Use the counting principles since the letters can be repeated. There are 26 letters in the alphabet and 10 possible digits (0 through 9). 26x26x26x10x10x10 = 17,576,000 possible plates.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Permutations-45-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.24.1"><a href="#CondProb-50-3" title="Copy heading and permalink for Solution 4.3.24.1" aria-label="Copy heading and permalink for Solution 4.3.24.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 4.3.24: license plates"><a href="#CondProb-50" title="Copy heading and permalink for Checkpoint 4.3.24: license plates" aria-label="Copy heading and permalink for Checkpoint 4.3.24: license plates">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Section 4.3: Conditional Probability"><a href="#CondProb" title="Copy heading and permalink for Section 4.3: Conditional Probability" aria-label="Copy heading and permalink for Section 4.3: Conditional Probability">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.24.1"><a href="#subsec-Permutations-45-3" title="Copy heading and permalink for Solution 4.3.24.1" aria-label="Copy heading and permalink for Solution 4.3.24.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.3.24: license plates"><a href="#subsec-Permutations-45" title="Copy heading and permalink for Checkpoint 4.3.24: license plates" aria-label="Copy heading and permalink for Checkpoint 4.3.24: license plates">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 4.3.4: Permutations and Combinations"><a href="#subsec-Permutations" title="Copy heading and permalink for Subsection 4.3.4: Permutations and Combinations" aria-label="Copy heading and permalink for Subsection 4.3.4: Permutations and Combinations">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 4.3: Conditional Probability"><a href="#CondProb" title="Copy heading and permalink for Section 4.3: Conditional Probability" aria-label="Copy heading and permalink for Section 4.3: Conditional Probability">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
