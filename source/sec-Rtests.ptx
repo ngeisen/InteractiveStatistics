@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Rtests" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Testing with R</title>
-  <p> In this section we will perform hypothesis testing and find confidence intervals for a single sample. </p>
+  <introduction>
+    <p>
+       <p> In this section we will perform hypothesis testing and find confidence intervals for a single sample. </p>
+    </p>
+  </introduction>
+ 
 
 <objectives>
   <introduction>
@@ -20,6 +25,7 @@
 <p> <c> attach(Cereal) </c> </p>
 <p> A handy command is <em> summary </em> of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition. </p> 
 <p> <c> summary(Cereal) </c> </p>
+
  <subsection xml:id="subsec-SingleMean">
   <title>Single Mean</title>
   

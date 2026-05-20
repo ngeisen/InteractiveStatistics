@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Rcompare" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Comparison Tests with R</title>
-  <p> We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group. </p>
-<objectives>
+  <introduction>
+    <p>
+      <p> We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group. </p>
+    </p>
+  </introduction>
+  
+
+  <objectives>
   <introduction>
     <p> At the end of this section you will be able to   </p>
   </introduction>
@@ -47,7 +53,7 @@
 
 <subsection xml:id="subsec-CompareProportions">
   <title>Comparing Two Proportions</title>
-  
+  <p> next </p> 
 </subsection>
 
 

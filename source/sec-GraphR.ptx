@@ -17,13 +17,22 @@
     <li> <p> Use R Studio to graph boxplots and histograms. </p>  </li>
     <li> <p> Use R Studio to construct bar graphs and circle graphs. </p> </li>
     <li> <p> Use R Studio to construct scatterplots. </p> </li>
+    <li> <p> Use R Studio to construct quantile plots. </p> </li>
   </ol>
 </objectives>
 
-
-<p> First, add the <term>Lesson 1 Graphing </term> text file to your <c>Using R Files </c> folder and the <url href="external/sheets/Cereal.csv"> Cereal.csv </url>  dataset. </p>
+<p> <em> Getting Started </em> </p> 
+<p> First, add the <term>Lesson 1 Graphing </term> text file to your <c>Using R Files </c> folder and the <url href="external/Cereal.csv"> Cereal.csv </url>  dataset. </p>
 <p> You may need to link your <term> Using R Files</term> folder with the working directory, to do this go to the bottom right panel and under the <c>Files</c> tab click on the triple dots <c> … </c> on the far right to locate your folder and click <c>Open</c>. You should now see the Lesson 1 file and the Cereal datafile in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it directly in the bottom left panel. </p>
-<p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset</c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
+<p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset</c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. </p>
+<figure xml:id="Rimport">
+            <caption>Import Dataset </caption>
+            <image source="RgraphC9.png" width="50%">
+                <shortdescription>Click on data file then import dataset.</shortdescription>
+            </image>
+        </figure>
+
+<p> Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
 <p> Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors. </p>
  </introduction>
 
@@ -32,11 +41,11 @@
    
 <p> Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner in R Studio. This will construct a vertical boxplot.  The graphs will show up in the bottom right panel of R Studio. </p>
 <p> <c> boxplot(Calories) </c>	</p>
-<p> In the code block below click on Evaluate (R) to run R within the textbook. The graph will appear below it. </p> 
+<p> Alternatively, you can use the imbedded code blocks to run the R program. You will need to name a variable and enter all the data values, then the R command as shown below. In the code block below click on Evaluate (R) to run R within the textbook. The boxplot graph will appear below it. </p> 
 
-  <sage language="r">
+<sage language="r">
  <input>
-Calories=c(117,118,144,169,130,117,117,101,120,113,120,118,175,120,214,192,80,160,114,108,100,195,171,94,160,182,117,129,107)
+Calories=c(117,118,144,169,130,117,117,101,117, 113, 120,118,175,149,214,192,80,87,160,114,108,100,195,171,94,160,182,117,129,107)
 boxplot(Calories)
 summary(Calories)
  </input>
@@ -79,7 +88,7 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
             </image>
         </figure> 
  
-<p> Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilda symbol <c> ~ </c> followed by the categorical variable. </p>		
+<p> Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilde symbol <c> ~ </c> followed by the categorical variable. </p>		
 <p> <c> boxplot(Calories~Company) </c>	</p>	
 <figure xml:id="BoxplotbyCompany">
             <caption>Image of comparing boxplots</caption>
@@ -89,7 +98,7 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
         </figure> 
 <p> <em> Comparing Boxplots: </em> With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed. </p> 
 
-<p> Next we will add some color to the graph for fun and give the graph a main title. But investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right. </p>
+<p> Next we will add some color to the graph for fun and give the graph a main title. But we are going to investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right. </p>
 <p> <c> boxplot(Fat,horizontal = TRUE, col='blue', border='red',main="Fat Content") </c> </p>
 <figure xml:id="BoxplotColor">
             <caption>Image of Fat Content Boxplot</caption>
@@ -105,7 +114,7 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
 <subsection xml:id="subsec-Histograms">
     <title>Histograms </title>
    
-<p> Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram. </p>
+<p> Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.  The R command is <c>hist</c> followed by the variable name in parentheses. </p>
 <p>  <c> hist(Sugars) </c> </p>
 <figure xml:id="HistoSugar">
             <caption>Image of histogram</caption>
@@ -118,7 +127,7 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
 <p> Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of <em> breaks </em> we want. Suppose we want 10 bars instead of the default of four. </p>
 <p>  <c> hist(Sugars,breaks=10) </c>	</p>
 <figure xml:id="HistoSugar2">
-            <caption>Image of histogram</caption>
+            <caption>Image of histogram with 10 breaks</caption>
             <image source="Rgraph7.png" width="80%">
                 <shortdescription> Histogram of sugar content with 10 bars.</shortdescription>
             </image>
@@ -126,7 +135,7 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
 <p> This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.</p> 
 
 <p> Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title. </p>			
-<p>  <c> hist(Sodium,breaks=7,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content') </c> </p>
+<p>  <c> hist(Sodium,breaks=9,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content') </c> </p>
 <figure xml:id="HistoSodium">
             <caption>Image of histogram for sodium</caption>
             <image source="Rgraph8.png" width="80%">
@@ -144,7 +153,16 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
 <p> <term> Frequency Table </term> </p>
 <p> To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the <em> table </em> command for the variable Company. </p>
 <p>  <c> table(Company) </c> </p>
-<p> Notice that the categories are G, K and Q. Next we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.  </p>
+
+<figure xml:id="CompanyTable">
+            <caption>Company Table Output</caption>
+            <image source="RgraphC1.png" width="50%">
+                <shortdescription>G=13 and K=11 and G=6.</shortdescription>
+            </image>
+        </figure> 
+<p> The table will appear just under the R code. </p>
+
+<p> Notice that the categories are G, K and Q. Next, we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.  </p>
 <p> <c>  Brand </c> <m>\lt-</m> <c> c('General Mills', 'Kelloggs',  'Quacker') </c> </p>
 <p>  <c> Totals</c> <m>\lt-</m> <c> c(13,11,6) </c> </p>
 <p>        </p> 
@@ -153,34 +171,94 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
 <p> <term> Pie Graph </term> </p>
 <p> Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the <em>labels </em> = Brand names were created. </p>
 <p>  <c> pie(Totals, labels=Brand) </c> </p>
+
+<figure xml:id="CompanyPie">
+            <caption>Pie Graph of Cereal Company </caption>
+            <image source="RgraphC2.jpg" width="60%">
+                <shortdescription>Circle graph showing Kelloggs count of 11, Quaker at 6, and General Mills at 13.</shortdescription>
+            </image>
+        </figure> 
+
 <p> Next let us add some brighter colors to the graph and give it a main title. </p>
 <p>  <c>  pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies') </c> </p>
+
+<figure xml:id="CompanyCircle">
+            <caption>Colorful Circle Graph of Cereal Company </caption>
+            <image source="RgraphC3.png" width="60%">
+                <shortdescription>Colorful circle graph showing company categories.</shortdescription>
+            </image>
+        </figure> 
+
 
 <p> <term> Bar Graph </term> </p>
 <p> Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the <em>names.arg </em> = Brand names were created. </p>
 <p>  <c>   barplot(Totals, names.arg=Brand) </c> </p>
-<p> Next let us add some brighter colors to the graph and give the graph a main title and label the x-axis. </p>
+
+<figure xml:id="CompanyBar">
+            <caption>Bar Graph of Cereal Company </caption>
+            <image source="RgraphC4.png" width="60%">
+                <shortdescription>Bar graph showing company frequencies of 13, 11, 6.</shortdescription>
+            </image>
+        </figure> 
+
+
+<p> Next let us add some brighter colors to the graph and give the bar graph a main title and label the x-axis. </p>
 <p>  <c>   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies') </c> </p>
+<figure xml:id="ColorfulBar">
+            <caption>Colorful Bar Graph of Cereal Company </caption>
+            <image source="RgraphC5.png" width="80%">
+                <shortdescription>Colorful bar graph showing company frequencies of 13, 11, 6.</shortdescription>
+            </image>
+        </figure> 
+
+
 </subsection>
 
 <subsection xml:id="subsec-Scatterplots">
     <title>Scatterplots</title>
     
-<p> <term> Scatterplots </term> </p>
 <p> Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the <em> plot </em> command and identify the x-variable first and then the y-variable. </p>
 <p> <c> plot(Fat,Carbs) </c> </p>	
+
+<figure xml:id="ScatterFatCarbs">
+            <caption>Scatterplot of Fat and Carbohydrates </caption>
+            <image source="RgraphC6.png" width="80%">
+                <shortdescription>Scatterplot showing fat content on x-axis and carbohydrates on y-axis. The values are clustered with low fat content of les than 2 and low carbs between 20-30. A few cereals have fat of 4 with low carbs near 30, and some with 2 fats with 45 carbs.</shortdescription>
+            </image>
+        </figure> 
+
 <p> To add at title to the graph we add the <em> main=</em> to the command with the title in quotes. </p>			
 <p> <c> plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates') </c> </p>	
-<p>  To find the linear correlation coefficient we use the <em> cor </em> command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative. </p>			 
-<p> <c> cor(Fat,Carbs)   </c> </p>                               
+
+<figure xml:id="ScatterFatCarbs2">
+            <caption>Scatterplot of Fat and Carbohydrates </caption>
+            <image source="RgraphC7.png" width="80%">
+                <shortdescription>Scatterplot showing fat content on x-axis and carbohydrates on y-axis.</shortdescription>
+            </image>
+        </figure> 
+<p> The scatterplot shows a positive relationship between the Fat content and Carbohydrates in these cereals. As the fat content increases, so does the amount of carbohydrates. Since the dots are spread apart it is likely weak to moderately strong correlation. </p> 
+
+<p>  To find the linear correlation coefficient we use the <em> cor </em> command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative. The tighter the points are together, the larger the value in the correlation. </p>			 
+<p> <c> cor(Fat,Carbs)   </c> </p>    
+  <p> The correlation coefficient value is <m> 0.4563773</m> which appears just below the R code. This tells us we have a moderate positive relationship between the Fat content and Carbohydrates in these cereals. </p>                          
 </subsection>
 
+<subsection xml:id="subsec-Quantiles">
+  <title>Quantile Plots </title>
 
-<p> <term> Quantile Plots </term> </p>
 <p> We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the <em> qqnorm </em> command for the quantile plot. We can add the <em> qqline </em> command afterwards to draw a line through the data to see if it appears linear. </p>
 <p> <c> qqnorm(Calories) </c> </p>
 <p> <c> qqline(Calories) </c> </p>
 
+<figure xml:id="NormQuantileCalories">
+            <caption>Quantile Plot for Calories </caption>
+            <image source="RgraphC8.png" width="80%">
+                <shortdescription>Normal quantile plot to test normality of variable. The dots do not form a straight line through the data, thus not normally distributed.</shortdescription>
+            </image>
+        </figure>
+<p> Since the z-score values do not form a straight line when paired with the data values, this variable is not normally distributed. </p>
+
+</subsection>
 
 
 </section>
