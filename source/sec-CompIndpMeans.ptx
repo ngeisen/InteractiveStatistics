@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-CompIndpMeans" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>t-test for Two Independent Means</title>
-  <p> Text of section. </p>
+
+  <introduction>
+    <p>
+    Text of section. 
+    </p>
+  </introduction>
+ 
 
 
 <subsection xml:id="subsec-Indpmean">
   <title>Understanding the Basics</title>
+  <p> the </p> 
   </subsection>
 
 <subsection xml:id="subsec-IndpmeanCalc">
   <title>Using Technology</title>
+  <p> short cuts </p>
   </subsection>
 
 <subsection xml:id="subsec-IndpmeanPractice">

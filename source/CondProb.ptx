@@ -2,45 +2,66 @@
 
 <section xml:id="CondProb" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Conditional Probability </title>
+ <introduction>
+  <p>
+    When evaluating the probability for a single event we often used the additional rule to add the outcomes. Next we will investigate multiple events taking place together, so we will use the multiplication rule.
+  </p>
+ </introduction>   
+
  <objectives>
         <introduction>
-          <p> At the end of this section you will able to:   </p>
-            <ol>
+        <p> At the end of this section you will able to:   </p>
+        </introduction>
+        <ol>
            <li> <p> Determine if events are independent or dependent.   </p> </li>
             <li> <p> Determine the probability using "given" statements.   </p> </li>
             <li> <p> Distinguish between permutations and combinations.    </p> </li>  
             
-          </ol>
-        </introduction>
-    </objectives>  
+        </ol>
+        </objectives>  
 
 <subsection xml:id="subsec-Independent">
   <title>Independent Events</title>
 <p> Previously we found probabilities for compound events when one event was chosen. Now we will expand these concepts for when multiple events take place. We can still use a tree diagram to find all possible outcomes, but using some of the probability rules will simplify the process. </p>
 <p> Two events A and B are <term>independent events </term> if the fact that A occurs does not affect the probability of B occurring. When flipping two coins, what happens on the first coin toss does not impact what happens on the second coin toss. Same with rolling multiple dice. Each dice roll is independent of the others. </p> 
 <p> When two events are independent, the probability of both occurring is <me> P(\text{A and B}) = P(A) \times P(B) </me> </p> 
-<p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is <m> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </m> </p> 
+<p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is  <me> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </me> </p> 
 <p> If we used a tree diagram, we would list the four outcomes for the die and add two branches to each die value to represent heads or tails. Since each outcome is equally likely on the dice and the coin, the probability for each event is 1/8. </p>
 
-<p> Practice Problems </p> 
+<p> <term>Practice Problems</term> </p> 
 <exercise>
-<p> A card is drawn from a standard deck of 52 cards and is replaced, then a second card is drawn. Find the probability of drawing a queen and then an king. </p> 
+  <statement>
+    <p>
+      A card is drawn from a standard deck of 52 cards and is replaced, then a second card is drawn. Find the probability of drawing a queen and then an king. 
+    </p>
+  </statement>
 <solution> <p> The probability of getting a queen is 4/52 on the first draw, the card is replaced so the probability of drawing a king is 4/52 on the second draw. Thus the probability P(Q and K) = 4/52 x 4/52 = 16/2704 = 0.0059 </p> </solution>
 </exercise>
+
 <exercise>
-<p> A Harris poll found that 46% of Americans say they suffer great stress at least once a week. If three people are selected at random, find the probability that all three they suffer great stress at least one a week. </p>
+  <statement>
+    <p> A Harris poll found that 46% of Americans say they suffer great stress at least once a week. If three people are selected at random, find the probability that all three they suffer great stress at least one a week.    
+    </p>
+  </statement>
 <solution> <p>We will assume each person is independent so the probability is 0.46 for each person, thus <m> P(SSS)= 0.46 \times  0.46 \times 0.46 = 0.0097 </m> </p> </solution>
 </exercise>
+
 <exercise>
-<p> Approximately 9% of men have a type of color blindness that prevents them from distinguishing between red and green. If three men are selected at random, find the probability that all three will have this type of red-green color blindness. </p>
+  <statement>
+    <p> Approximately 9% of men have a type of color blindness that prevents them from distinguishing between red and green. If three men are selected at random, find the probability that all three will have this type of red-green color blindness. </p>
+  </statement>
 <solution> <p> We will assume each person is independent so the probability is 0.08 for each person, thus <m> P(SSS)= 0.08  \times \ 0.08 \times 0.08  = .000512 </m> </p> </solution>
 </exercise>
+
 <exercise>
-<p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random, its color is noted, and then returned to the bag. A second ball is randomly selected and its color noted. Find the following probabilities. </p>
-<p>Selecting two red marbles in a row. </p>
+  <statement>
+      <p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random, its color is noted, and then returned to the bag. A second ball is randomly selected and its color noted. Find the following probabilities. </p>
+      <p> a) Selecting two red marbles in a row. </p>
+      <p> b) Selecting a blue marble and then a green marble. </p> 
+     </statement>
 <solution> <p> Since the marbles are replaced we are looking at independent events, so the probability stays the same after each draw. <m> P(\text{red and red}) = 3/10 \times 3/10  = 9/100 = 0.09 </m> or 9%</p> </solution>
-<p> Selecting a blue marble and then a green marble. </p> 
-<solution> <p> Since the marbles are replaced we are looking at independent events, so the probability of each color stays the same after each draw.<m> P(\text{blue and green}) = 2/10 \times 5/10  = 10/100 = 0.10  </m> or 10% </p> </solution>
+<solution> <p> Since the marbles are replaced we are looking at independent events, so the probability of each color stays the same after each draw.<m> P(\text{blue and green}) = 2/10 \times 5/10  = 10/100 = 0.10  </m> or 10% </p> 
+</solution>
 </exercise>
 
 
@@ -102,16 +123,23 @@
 <solution> <p> There are 13 spades in the deck, so the first draw has 13/52 chance, the second draw ahs 12/51 chance, and the third draw is 11/20. Thus P(SSS) =13/52 x 12/51 x 11/50 = 1716/132600 =.0129   </p> </solution>
 </example>
 
-<p> Practice Problems </p> 
+<p> <term>Practice Problems</term> </p> 
 <exercise>
-<p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities. </p>
-<p> Selecting two red marbles in a row. </p>
-<solution> <p> Since the marbles are not replaced in the bag we are looking at dependent events, so the probability change after each draw. <m> P(\text{red and red}) = 3/10 \times 2/9  = 6/90 = .067 </m> </p> </solution>
+  <statement>
+ <p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities. </p>
+ <p> Selecting two red marbles in a row. </p>
+  </statement>
+<solution> <p> Since the marbles are not replaced in the bag we are looking at dependent events, so the probability change after each draw. <m> P(\text{red and red}) = 3/10 \times 2/9  = 6/90 = .067 </m> </p> 
+</solution>
 </exercise>
+
 <exercise>
-<p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities. </p>
+  <statement>
+  <p> A bag contains 3 red marbles, 2 blue marbles, and 5 green marbles. A marble is selected at random and given away as a prize. Then a second ball is randomly selected to be given away as a prize.  Find the following probabilities. </p>
 <p> Selecting a blue marble and then a green marble. </p>
-<solution> <p> We will assume all the marbles are in the bag to begin with.  Since the marbles are not replaced to the bag, we are looking at dependent events, so the probability will change after each draw. <m> P(\text{blue and green}) = 2/10 \times 5/9  = 10/90 = 0.111 or 11.1% </m> </p></solution>
+  </statement>
+<solution> <p> We will assume all the marbles are in the bag to begin with.  Since the marbles are not replaced to the bag, we are looking at dependent events, so the probability will change after each draw. <m> P(\text{blue and green}) = 2/10 \times 5/9  = 10/90 = 0.111 or 11.1% </m> </p>
+</solution>
 </exercise>
 
 
@@ -121,13 +149,16 @@
 <subsection xml:id="subsec-Conditional">
   <title> Conditional Events</title>
 
-<p> <term>Conditional probability </term>  of an event B in relationship to an event A is defined as the probability that event B occurs after event A has already occurred. It’s the quotient of the events.  P(B|A) = P(A and B) ÷ P(A) </p> 
-<p> The probability that Sam parks in a no-parking zone and gets a parking ticket is 6%, The probability that Sam cannot find a legal parking space thus parks in the no-parking zone is 20%. What’s the probability Sam will get a ticket given that he parks in a no-parking zone? </p> 
-<p> Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is <me> P(\text{ticket|no-park zone})=\frac{P(TandNo)}{P(no)}=\frac{0.06}{0.20}=0.30</me> </p> 
+<p> <term>Conditional probability </term>  of an event B in relationship to an event A is defined as the probability that event B occurs after event A has already occurred. It's the quotient of the events.  P(B|A) = P(A and B) ÷ P(A) </p> 
+<p> The probability that Sam parks in a no-parking zone and gets a parking ticket is 6%, The probability that Sam cannot find a legal parking space thus parks in the no-parking zone is 20%. What's the probability Sam will get a ticket given that he parks in a no-parking zone? </p> 
+<p> Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is <me> P(\text{ticket|no-park zone})=\frac{P(T and No)}{P(no)}=\frac{0.06}{0.20}=0.30</me> </p> 
 
 <exercise>
-<p> A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40,  find the probability of selecting a yellow tennis ball  on the second draw given that the first ball was yellow. </p>
-<solution> <p> This is conditional probability. We are told that P(white and yellow) = .30 and P(white)=0.40. We need to find P(yellow|white) = P(white and yellow) divide by P(white) = 0.30/0.40 = 0.75 or 75%. </p> </solution>
+  <statement>
+  <p> A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40,  find the probability of selecting a yellow tennis ball  on the second draw given that the first ball was yellow. </p>
+  </statement>
+<solution> <p> This is conditional probability. We are told that P(white and yellow) = .30 and P(white)=0.40. We need to find P(yellow|white) = P(white and yellow) divide by P(white) = 0.30/0.40 = 0.75 or 75%. </p> 
+</solution>
 </exercise>
 
 
@@ -139,20 +170,26 @@
 
  <subsection xml:id="subsec-Permutations">
   <title> Permutations and Combinations</title>
-  </subsection>
+ 
    
 <p> There are times when the sample space or event space are very large, that it is not feasible to write it out.  In that case, it helps to have mathematical tools for counting the size of the sample space and event space.  These tools are known as counting techniques. </p> 
 <p> <term>Counting Principle:</term>  If Task 1 can be performed in m ways,  and Task 2 can be performed in n ways no matter how task 1 turns out,  then the sequence task 1 and task 2 can be performed in m·n ways together (as a product). </p>
 <p> Suppose a menu offers a choice from 2 salads, 6 main dishes, and 3 desserts options.  How many different meals consisting of one salad, one main dish, and one dessert are possible? </p>
 <p> <em> Solution:</em>There are three tasks to this meal, picking a salad, a main dish, and a dessert.  The salad has 2 choices, the main dish has 6 choices, and the dessert has 3 options.  Therefore there are <m> 2×6×3=36</m> different meals. </p> 
 <p>If we did this with a tree diagram, we would have 2 lines to represent the two salads, then each salad would have the 6 main dishes branched from it, then each of those branches would have the 3 desserts. If you list each unique outcome, there are 36 different meals.</p>
+
 <exercise> <title> Password </title>
+  <statement>
 <p>  How many three letter passwords can be made from the letters a, b, and c , if the letters can be reused?</p>
+  </statement>
 <solution> <p>  3x3x3 = 27 passwords 
 </p>  </solution> 
 </exercise>
+
 <exercise> <title> Kentucky Derby </title>
-<p>  Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?</p>
+  <statement>
+  <p>  Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?</p>
+  </statement>
 <solution> <p>  We just need to fill three positions, thus <m> 8\times7\times6=336</m> ways for the first three positions.</p>
 <p>Fun fact:  The winner was Mystik Dan, then Sierra Leone, Forever Young, and Catching Freedom. </p> 
  </solution> 
@@ -183,11 +220,12 @@
 <p>Picking <m>r</m> object from <m>n</m> total object when order matters: <me> nPr=\frac{n!}{(n-r)!}</me> </p> 
 
 
+
 <p>  <em> Example: </em> Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?</p>
 <p>  Since the order matters we will use a permutation where <m>n=8 </m> total horses and <m>r=3</m> positions. </p> 
 <p> Thus <m> _n P_r = _8 P_3 =\frac{8!}{(8-3)!} = 336</m> ways to finish the race. </p>
 <p> To enter this in the calculator: </p> 
-<p> input the value 8 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], hit the divide button, paratheses <c>( </c> 8-3 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] [enter]  </p>
+<p> input the value 8 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], hit the divide button, parentheses <c>( </c> 8-3 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] [enter]  </p>
 <figure xml:id="FactorialCalc">
             <caption>Factorial calculation on the calculator </caption>
             <image source="FactorialHorse.png" width="50%">
@@ -196,7 +234,7 @@
         </figure>
 
 <p> Alternatively, you can use the permutation function in the probability menu. Enter the value 8 first, [MATH] button and three arrows to the right for PRB across the top, then select option 2: nPr, hit [enter] and type the value 3, then [enter] again. </p> 
-<figure xml:id="PermuationCalc">
+<figure xml:id="PermutationCalc">
             <caption>Permutation on the calculator </caption>
             <image source="HorsePerm.png" >
                 <shortdescription>Math to PRB to option 2.</shortdescription>
@@ -209,7 +247,7 @@
 <p> <em> Example: </em> In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is <m>n=30</m> and we are selecting <m> r=5</m>. Therefore, nCr = 30C5 </p>
 <p> Thus <m> _n C_r =30 C_5 =\frac{30!}{5!(30-5)!} = 142,506 </m> combinations for a group of 5 people. </p>
 <p> To enter this in the calculator: </p> 
-<p> input 30 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] divide button, parentheses <c>( </c> 5 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], the multiply button, then paratheses <c>( </c> 30-5 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter],  close paratheses <c>)</c> , and finally [enter]  to calculate it. </p>
+<p> input 30 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter] divide button, parentheses <c>( </c> 5 [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter], the multiply button, then parentheses <c>( </c> 30-5 <c>)</c> [math] <m> \gt\gt\gt </m> PRB select option 4: ! [enter],  close parentheses <c>)</c> , and finally [enter]  to calculate it. </p>
 <figure xml:id="FactorialCombo">
             <caption>Combination calculation on the calculator </caption>
             <image source="ComboFactorial.png" width="50%">
@@ -226,20 +264,28 @@
 
 <p> <term> Practice Problems </term> </p>  
 <exercise> <title> Biology Club </title>
-<p>  In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary/treasurer be chosen? </p>
+  <statement>
+  <p>  In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary/treasurer be chosen? </p>
+  </statement>
 <solution> <p>  This is a permutation since the order matters when choosing officers. 
 15P3 = 2730 ways to shoe officers </p> 
  </solution> 
 </exercise>
+
 <exercise> <title> Chemistry Club </title>
-<p>  In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen? </p>
+  <statement>
+   <p>  In a chemistry club with 15 members, how many ways can a committee of 3 members be chosen? </p>
+  </statement>
 <solution> <p>  This is looking as a group where the order does not matter, thus a combination.
 15C3 = 455 combinations for the committee.  </p> 
  </solution> 
 </exercise>
+
 <exercise> <title> license plates </title>
-<p>  A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?
+  <statement>
+    <p>  A Colorado license plate is created by using 3 letters from the alphabet followed by a 3-digit number. How many license plates are possible if the number and letters can be repeated?
 </p>
+  </statement>
 <solution> <p>  Use the counting principles since the letters can be repeated. There are 26 letters in the alphabet and 10 possible digits (0 through 9). 26x26x26x10x10x10 = 17,576,000 possible plates.  </p> 
  </solution> 
 </exercise>
@@ -247,9 +293,9 @@
 
 
 
+ </subsection>
 
 
 
 
-
-    </section> 
+</section> 

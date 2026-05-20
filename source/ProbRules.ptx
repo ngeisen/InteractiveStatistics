@@ -2,20 +2,26 @@
 
 <section xml:id="ProbRules" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Probability Rules </title>
+    <introduction>
+     <p> It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.  </p>
+    </introduction>
+
  <objectives>
         <introduction>
           <p> At the end of this section you will able to:   </p>
+         </introduction>
             <ol>
            <li> <p> Determine if events are mutually exclusive.   </p> </li>
             <li> <p> Determine the probability using the rules for “or”, “and”, and “given"   </p> </li>
             <li> <p> Use a tree diagram to determine the probability of multiple events   </p> </li>  
             
           </ol>
-        </introduction>
+      
     </objectives>  
 <p> It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.  In this section we will focus on probability rules based on the <em>theoretical probabilities</em>. </p>
 
 <p>There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are <em> equally likely</em> to occur.  This means that every outcome has the same chance of happening.  </p>
+
 <exercise label="EquallyLikely-matching">
     <title> Equally Likely </title>
     <statement>  <p> Which of the following experiments have equally likely outcomes?

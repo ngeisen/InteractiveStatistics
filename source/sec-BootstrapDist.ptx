@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-BootstrapDist" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Bootstrap Distributions</title>
-  <p> Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population. </p>
-
+  <introduction>
+    <p> Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population. </p>
+  </introduction>
+ 
 <objectives>
   <introduction>
     <p> At the end of this section you will be able to:   </p>
@@ -39,7 +41,7 @@
 <li> <p> Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples. </p> </li>
 <li> <p> Collect the statistics for many bootstrap samples to create a bootstrap distribution. </p> </li>
 </ul> 
-<p> To illustrate this process: List each car on a notecard with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.</p> 
+<p> To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.</p> 
 <p> The purpose of replacing the card is to give us some variable in the samples we select. If we use the same 5 cars each time, there is no variation. </p> 
 
 <p> Give example </p> 
@@ -61,7 +63,7 @@
             </image>
         </figure>
 <p> Interpreting StatKey: On the top right side you will see the <term>Original Sample</term> information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507. </p>
-<p> If we click on the <c> Genrate 1 Sample </c> button, then on the bottom right side we will see the five randomly selected cars with replacement under the <term> Bootstrap Sample </term> . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples. </p> 
+<p> If we click on the <c> Generate 1 Sample </c> button, then on the bottom right side we will see the five randomly selected cars with replacement under the <term> Bootstrap Sample </term> . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples. </p> 
 <figure xml:id="BootstrapMPGe">
             <caption> Bootstrap MPGe for 501 Samples </caption>
             <image source="Boot3.png" >

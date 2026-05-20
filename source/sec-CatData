@@ -74,14 +74,14 @@
 </solution>
 </exercise>
 
-<p> Categorical data can also be graphed as <term>pie graph </term> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occured most often at 50% for this sample. While hazel eyes occred the least at 10%.</p>
+<p> Categorical data can also be graphed as <term>pie graph </term> or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occurred most often at 50% for this sample. While hazel eyes occurred the least at 10%.</p>
 <figure xml:id="EyeCircle">
             <caption>Circle Graph of Eye Color</caption>
             <image source="EyeCircle.png" width="50%">
                 <shortdescription>Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.</shortdescription>
             </image>
         </figure>
-<p> A third type of qualitative data graph is a <term>Pareto chart</term>, which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantace is you can visually see the more popular responses to the least popular.  </p>
+<p> A third type of qualitative data graph is a <term>Pareto chart</term>, which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantage is you can visually see the more popular responses to the least popular.  </p>
 <p>      </p>
 <caption>Image of Pareto Chart</caption>
 <image source="EyeBar.jpg" width="60%">

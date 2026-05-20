@@ -2,13 +2,17 @@
 
 <section xml:id="BinomialProb" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Binomial Distribution </title>
+  <introduction> 
+    <p> Many types of probability problems have only two outcomes or can be reduced to two outcomes. For example, when a coin is tossed it can land heads or tails up. When a child is born, it is male or female. In other situation we reduce it to two outcomes of success or failure. On a multiple choice test question there may be four options, but the answer is either correct or not. Many categorical variables can be reduced to two outcomes - such as you either have blue eyes or not. </p>
+  </introduction>
+
  <objectives>
         <introduction>
           <p> At the end of this section you will able to:   </p>
             <ol>
            <li> <p> Determine the conditions of a binomial event.   </p> </li>
-            <li> <p> Calculate the probability for binomial event  </p> </li>
-            <li> <p> Calculate the mean and standard deviation for binomial events    </p> </li>  
+            <li> <p> Calculate the probability for binomial event.  </p> </li>
+            <li> <p> Calculate the mean and standard deviation for binomial events. </p> </li>  
             
           </ol>
         </introduction>
