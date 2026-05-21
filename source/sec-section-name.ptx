@@ -2,17 +2,19 @@
 
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Case Studies</title>
-
-  <p> This section introduces you to several case study scenarios. Throughout the semester we will refer to one of these studies. Several are based on class surveys from prior semesters and are the foundation for the examples throughout the text. We will learn different ways to analyze data through these case studies.  </p>
+<introduction>
+ <p> This section introduces you to several case study scenarios. Throughout the semester we will refer to one of these studies. Several are based on class surveys from prior semesters and are the foundation for the examples throughout the text. We will learn different ways to analyze data through these case studies.  </p>
+ 
 
 
 <note> <p> The full data sets are listed in the Data Sets Chapter. We will often use just a subset of the whole data file as we are learning the concepts.  </p> </note> 
+</introduction>
 
 <subsection xml:id="subsec-Survey1">
   <title> Case Study - Class Survey 1</title>
   <p> In the spring semester, a section of UNC students taking an introductory statistics course completed a survey on the first day of class identifying their eye color, current weight, shoe size, height, and the number of siblings they have. The survey was completed through Canvas, so responses were anonymous. Below is a screenshot of the first seven rows. Identify the following using the first day class survey. </p> 
 
-<p> Data: <url href="external/sheets/ClassSurvey1.csv"> ClassSurvey1</url> </p>
+<p> Data: <url href="external/ClassSurvey1.csv"> ClassSurvey1</url> </p>
   <image source="Survey1image.png">
                 <shortdescription> image of cases and variable for survey 1</shortdescription>
             </image>
@@ -30,7 +32,7 @@
 <example>
 <title> Qualitative Variables </title> 
 <statement> <p> Which variables are qualitative in the survey? </p> </statement>
-<solution> <p> Eye color is the only categorial variable in the survey</p> </solution>
+<solution> <p> Eye color is the only categorical variable in the survey</p> </solution>
 </example> 
 <example>
 <title> Discrete Quantitative Variables </title> 
@@ -72,7 +74,7 @@
 <subsection xml:id="subsec-Survey2">
   <title> Case Study - Class Survey 2</title>
 <p> In the Spring semester of 2025,  UNC students proposed some questions for the class survey identifying their favorite season (spring, summer, fall, winter), how they preferred the steak being cooked (as rare, medium, medium well, well done), movie genre preference, and favorite vacation location (as coastal, mountain, theme park, city/cultural exploration, or a staycation). Students also identified how many tattoos they have, the number of credit hours they were taking this semester, the number of pets they currently have, and how many hours they typically sleep per night. Use the screen shot of the first seven rows to answer the following questions.  </p> 
- <p> Data: <url href="external/sheets/ClassSurvey2.csv"> ClassSurvey2</url> </p>
+ <p> Data: <url href="external/ClassSurvey2.csv"> ClassSurvey2</url> </p>
 <image source="Survey2image.png">
                 <shortdescription> image of cases and variable for survey 2</shortdescription>
             </image>
@@ -92,7 +94,7 @@
 <example>
 <title> Qualitative Variables 2</title> 
 <statement> <p> Which variables are qualitative in the survey? </p> </statement>
-<solution> <p> Favorite season, steak cooked, movie preference, and vacation location are all categorial variables in this survey</p> </solution>
+<solution> <p> Favorite season, steak cooked, movie preference, and vacation location are all categorical variables in this survey</p> </solution>
 </example> 
 <example>
 <title> Discrete Quantitative Variables 2</title> 
@@ -130,7 +132,7 @@
 
 
 <subsection xml:id="subsec-Florida">
-  <title> Case Study – Florida Bass</title>
+  <title> Case Study - Florida Bass</title>
   <p> Largemouth bass were studied in 53 different Florida lakes to examine the factors that influence the level of mercury contamination. Water samples were collected from the surface of the middle of each lake in August 1990 and then again in March 1991. The pH level, the amount of chlorophyll, calcium, and alkalinity were measured in each sample. Use the screenshot of the first six rows to answer the following questions. </p> 
   <p>
     Original data source:   
@@ -185,8 +187,8 @@
 
 
 <subsection xml:id="subsec-BirdVocals">
-  <title> Case Study – Vocal Mimicry of Parrots  </title>
-  <p> Parrots are one of the rare animal taxa with life-long vocal learning. Parrot vocal repertoires are difficult to study in the wild, but companion parrots offer a valuable data source. The authors surveyed the public about mimicry repertoires in companion parrots to determine whether vocal learning varied by (1) species, (2) sex, (3) age, and (4) social interaction with other parrots. Species differed significantly in mimicry ability, with grey parrots having the largest mimicry repertoires. Analyses of all birds (n = 877) found no overarching effects of sex, age, or parrot-parrot social interactions on mimicry repertoires. Authors: Lauryn Benedict, Alexandra Charles , Amirah Brockington and Christine R Dahlin. </p> 
+  <title> Case Study - Vocal Mimicry of Parrots  </title>
+  <p> Parrots are one of the rare animal taxa with life-long vocal learning. Parrot vocal repertoires are difficult to study in the wild, but companion parrots offer a valuable data source. The authors surveyed the public about mimicry repertoires in companion parrots to determine whether vocal learning varied by (1) species, (2) sex, (3) age, and (4) social interaction with other parrots. Species differed significantly in mimicry ability, with grey parrots having the largest mimicry repertoires. Analyses of all birds (n=877) found no overarching effects of sex, age, or parrot-parrot social interactions on mimicry repertoires. Authors: Lauryn Benedict, Alexandra Charles , Amirah Brockington and Christine R Dahlin. </p> 
   <p>       A survey of vocal mimicry in companion parrots:   
     <url href="https://www.nature.com/articles/s41598-022-24335-x"> Article.
     </url>
@@ -239,18 +241,12 @@
 <subsection xml:id="subsec-BillionWeather">
   <title> Case Study – Billion Dollar Weather Events</title>
 <p> The National Centers for Environmental Information (NCEI) track severe weather and climate events from a historical perspective and their economic and societal impacts. The U.S. has sustained 403 weather and climate disasters since 1980 where overall damages/costs reached or exceeded $1 billion (including CPI adjustment to 2025). The total cost of these 403 events exceeds $2.945 trillion. Use the screen shot of the first six rows of the data file to answer the following questions.  </p> 
- <p> Data: <url href="external/sheets/BillionWeather-state-cost-data.csv"> BillionWeather</url> </p>
+ <p> Data: <url href="external/BillionWeather-state-cost-data.csv"> BillionWeather</url> </p>
 <image source="BillWeatherdata.png">
                 <shortdescription> data image of weather variables by state exceeding billion dollars in damage</shortdescription>
             </image>
 
 
-
-
-
-
-
-  </subsection>
 
 <example>
 <title> Cases </title> 
@@ -280,6 +276,7 @@
 
 
 
+  </subsection>
 
 
 

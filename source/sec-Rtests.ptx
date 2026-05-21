@@ -3,7 +3,7 @@
   <title>Testing with R</title>
   <introduction>
     <p>
-       <p> In this section we will perform hypothesis testing and find confidence intervals for a single sample. </p>
+       In this section we will perform hypothesis testing and find confidence intervals for a single sample. 
     </p>
   </introduction>
  
@@ -13,39 +13,89 @@
     <p> At the end of this section you will be able to   </p>
   </introduction>
   <ol>
-  <li> <p> Conduct a single t-test for the mean </p> </li>
-  <li> <p> Interpret the confidence interval for the mean </p>    </li>
-<li> <p> Conduct a single proportion test using chi square </p> </li>
-<li> <p> Interpret the confidence interval for a proportion </p>    </li>
+  <li> <p> Conduct a single t-test for the mean. </p> </li>
+  <li> <p> Interpret the confidence interval for the mean. </p>    </li>
+<li> <p> Conduct a single proportion test using chi square. </p> </li>
+<li> <p> Interpret the confidence interval for a proportion. </p>    </li>
   </ol>
 </objectives>
 
-<p> <term> Import Cereal Data instructions </term> </p> 
+<subsection xml:id="subsec-ImportDataTests">
+  <title> Import the Data</title>
+  
+<p> <term> Import the Cereal Data </term> </p> 
+<p> You may need to link your <term> Using R Files </term> folder with the working directory, to do this go to the bottom right panel and under the <c>Files </c> tab click on the triple dots <c> … </c> on the far right to locate your folder and click <c>Open</c>. You should the Cereal data in the bottom right panel.  </p>
+<p> Next, you will need to import the data file by clicking on file and <c>Import Dataset</c>, the file will give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. </p>
 <p> Once the data has been imported into R, use the command <em> attach</em> so you can call the data by the variable name. </p>
 <p> <c> attach(Cereal) </c> </p>
 <p> A handy command is <em> summary </em> of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition. </p> 
 <p> <c> summary(Cereal) </c> </p>
+</subsection>
+
+
 
  <subsection xml:id="subsec-SingleMean">
-  <title>Single Mean</title>
+  <title>Single Mean Test</title>
   
-
 <p> <term> Single t-test for the mean </term> </p> 
-<p> Lets begin our investigation with a one-sample t-test for the mean. The R command is <em> t.test </em>.   We will need to identify the variable, set the null hypothesis to <em> mu= </em> null value, and identify the alternative hypothesis using greater,  less or two.sided in quotes. The default is 95% confidence level for the intervals.  </p>
-<p> We are going to test if the mean of the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving. </p>
+<p> Lets begin our investigation with a one-sample t-test for the mean. The R command is <em> t.test </em>.   We will need to identify the variable, set the null hypothesis to <em> mu= </em> null value, and identify the alternative hypothesis using <q>greater</q>,  <q>less </q> or <q>two.sided</q> in quotes. The default is 95% confidence level for the intervals.  </p>
+<p> We are going to test if the mean for the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving. </p>
 <p> <c> mean(Calories) </c> </p>
-Can we determine if the mean calories is significantly more than 100 calories per serving?  The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command.
+<p> Can we determine if the mean calories is significantly more than 100 calories per serving?  The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command. </p>
 <p> <c> t.test(Calories,mu=100,alternative="greater") </c> </p>
 
+<p> Alternatively, you can use the R code block below by clicking on the Evaluate (R) button. </p> 
+<sage language="r">
+ <input>
+Calories=c(117,118,144,169,130,117,117,101,117, 113, 120,118,175,149,214,192,80,87,160,114,108,100,195,171,94,160,182,117,129,107)
+ t.test(Calories,mu=100,alternative="greater")
+ </input>
+ </sage>
+
+<p> <term> Interpretation: </term> The output states you completed the one sample t-test for the mean. You chose the variable Calories. The test value is <m> t=5.3228 </m> with degrees of freedom of <m> df=29 </m> and p-value <m> p=0.000005172 </m> which is statistically significant since it is so small, written in scientific notation. The null hypothesis is the mean equals 100 calories while the alternative hypothesis is the mean is greater than 100 calories for a right tailed test. The 95% confidence interval says the true mean calories is between 123.03 to positive infinity, with the sample mean of 133.833. Since the p-value is less than 0.05 we reject the null hypothesis and conclude that the mean number of calories is greater than 100. </p> 
+<p> Hypotheses are often written as: <m> Ho: \mu =100</m> and <m>Ha: \mu \gt 100 </m>. Since this is a right tailed test, the confidence interval goes to positive infinity. Since the hypothesized value is not contained within the interval, we reject the null hypotheses and conclude the mean calories is greater than 100. </p> 
+
+<p> <term> Mean Fiber Test </term> </p>
 <p> Let us determine what the mean fiber is per serving. </p>
 <p> <c>mean(Fiber) </c> </p>
 <p> Next, test if the mean fiber is less than 2 grams per serving. </p>
 <p> <c> t.test(Fiber,mu=2,alternative="less") </c> </p>
 
-<p> What is the mean amount of fat per serving? </p> 
+<example>
+<statement> <p> Test if the mean fiber is less than 2 grams.  </p> 
+<figure xml:id="FiberTest">
+            <caption>Fiber t-test output</caption>
+            <image source="RtestFiber.png" width="90%">
+                <shortdescription>mean test value t=-0.59248 with df=29 and p value=0.2791 . The sample mean is 1.7967 </shortdescription>
+            </image>
+        </figure> 
+
+</statement>
+<solution>
+<p> <term> Interpretation: </term> The output states you completed the one sample t-test for the mean using the Fiber data. The test value is value t=-0.59248 with df=29 and p-value=0.2791 which is not statistically. The null hypothesis is the mean equals 2 while the alternative is mean is less than 2 for a left tailed test. The 95% confidence interval says the true mean is between negative infinity to 2.3798, with the sample mean of 1.7967. Since the confidence interval contains the hypothesized value of 2 it is not significant. Since p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude that the mean fiber is less than 2 grams. </p> 
+</solution> 
+</example>
+
+<p> <term> Mean Fat Test </term> </p>
+<p> What is the mean amount of fat per serving in these cereals? </p> 
 <p> <c> mean(Fat) </c> </p>
-<p> Test if fat is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use <em> two.sided </em>  as the alternative hypothesis and add the command <em> conf.level = </em> to specify we want 90% precision. </p>
+<p> Test if mean fat content is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use <em> two.sided </em>  as the alternative hypothesis and add the command <em> conf.level = </em> to specify we want 90% precision. </p>
 <p> <c>  t.test(Fat,mu=1,alternative="two.sided", conf.level = 0.90) </c> </p>
+
+<example>
+<statement> <p> Test if the mean fat content is different than 1 gram with 90% confidence.  </p> 
+<figure xml:id="FatTest">
+            <caption>Fat t-test output</caption>
+            <image source="RtestFat.png" width="90%">
+                <shortdescription>mean fat test value t=1.415 with df=29 and pvalue=0.1677 . The sample mean is 1.2833 </shortdescription>
+            </image>
+        </figure> 
+
+</statement>
+<solution><p> <term> Interpretation: </term> The output states that you completed one sample t-test for the mean using the Fat data. The test value is value t=1.415 with df=29 and p-value=0. 6771 which is not statistically. The null hypothesis is the mean fat equals 1 while the alternative is mean fat does not equal 1 which is a two tailed test. The 90% confidence interval says the true mean fat is between 0.94 grams and 1.623 grams, with the same mean of 1.2833. Since the confidence interval contains the hypothesize value of 1, it is not significant. Since p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude that the mean fat differs from 1 gram. </p> 
+</solution> 
+</example>
+
 </subsection>
 
 
@@ -53,19 +103,104 @@ Can we determine if the mean calories is significantly more than 100 calories pe
   <title>Single Proportion Test</title>
  
 <p> We are going to conduct several proportion tests using the cereal data set. Rather than using the standard z-test for proportions, R Studio does a chi-square test which can be generalized to multiple proportions. The format of <em> prop.test </em>(count x, sample size,p=null value, alternative=  ) with a default of 95% confidence for a two-tailed test. </p>
-<p> First, find the proportions of each brand of cereal using the <em> table </em> command with the variable name. </p> 
+<p> First, find the proportions of each brand of cereal using the <em> table </em> command with the variable name of Company. </p> 
 <p> <c> table(Company) </c> </p>
+<p>The table states G=13, K=11, and Q=6. Thus, 13 cereals were General Mills, 11 were Kellogg's, and 6 were Quaker cereals. </p>
 
 <p> The first test is to determine if the proportion of Kellogg cereals is different than 50%. Use the <em> prop.test </em> command with the count of 11 out of the sample of 30 cereals. The null hypothesis is p=.50 and we will use the two-tailed test default. </p>
 <p> <c>prop.test(11,30,p=.5) </c> </p>
+<p> Alternatively, you can use the R code block below. Click on the Evaluate (R) button for the proportion test results. </p> 
+<sage language="r">
+ <input>
+prop.test(11,30,p=.5)
+ </input>
+ </sage>
 
+<p> <term> Interpretation </term> The output indicated you completed a 1 sample proportion test using the proportion of 11 Kellogg out of sample of 30 cereals. The null hypothesis is the proportion equal 0.50 or 50%. The test value is chi squared = 1.633 with 1 degree of freedom with a p-value of 0.2012. The alternative hypothesis is that the true proportion is not equal to 0.50. The 95% confidence interval says the true proportion of cereals that are Kellogg's is between 0.205 and 0.560 or 20.5% to 56.0%. The sample proportion is 11/30 = 0.36667. Since the p-value is greater than 0.05 we will not reject the null hypothesis and cannot conclude the proportion differs from 50%. The confidence interval contains the null value of 0.50, thus the proportion does not different from 50%. </p> 
+
+<p> <term> Quaker Proportion Test </term> </p>
 <p> Next, determine if the proportion of Quaker cereals is less than 50%.  Here we need to identify the alternative hypothesis as <em> less </em>  with a count of 6 out of 30 cereals. </p>
 <p> <c>prop.test(6,30,p=.5, alternative="less") </c> </p>
 
+<sage language="r">
+ <input>
+prop.test(6,30,p=.5, alternative="less")
+ </input>
+ </sage>
+
+ <example>
+<statement> <p> Test if the proportion of Quaker cereals is less than 50%.  </p> 
+<figure xml:id="QuakerTest">
+            <caption>Proportion Quaker Test</caption>
+            <image source="RtestQuaker.png" width="100%">
+                <shortdescription>proportion test value chi=9.633 with df=1and pvalue=0.0009554 </shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> <term> Interpretation </term> The output indicated you completed a 1 sample proportion test using the proportion of 6 Quaker out of sample of 30 cereals. The null hypothesis is the proportion equal 0.50 or 50%. The test value is chi squared = 9.633 with 1 degree of freedom with a p-value of 0.0009554. The alternative hypothesis is that the true proportion is less than 50%. The 95% confidence interval says the true proportion of cereals that are Quaker is between 0.000 and 0.3609. The sample proportion is 6/30 = 0.20. Since the p-value is less than 0.05 we reject the null hypothesis and conclude the proportion of Quaker cereals is less than 50%. The confidence interval does not contain the null value of 0.50, thus the proportion is less than 50%. </p> 
+</solution> 
+</example>
+
+<p> <term> General Mills Proportion Test </term> </p>
 <p> Now determine if the proportion of General Mills cereal is greater than 1/3 of the cereals at the 90% confidence level. The alternative hypothesis as <em> greater </em>  with a count of 13 out of the 30 cereals. We also need to add the condition <em> conf.level = 0.90 </em> to the command. </p>
 <p> <c>prop.test(13,30,p=.333, alternative="greater", conf.level = 0.90) </c> </p>
 
+<sage language="r">
+ <input>
+prop.test(13,30, p=.333, alternative="greater", conf.level = 0.90)
+ </input>
+ </sage>
+ 
+<example>
+<statement> <p> Test if the proportion of General Mills cereal is grater than 1/3 or 33.3%.  </p> 
+<figure xml:id="GeneralMillsTest">
+            <caption>Proportion General Mills Test</caption>
+            <image source="RtestGM.png" width="100%">
+                <shortdescription>proportion test value chi=0.9455 with df=1and pvalue=0.1654 </shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> <term> Interpretation </term> The output indicated you completed a 1 sample proportion test using the proportion of 13 General Mills out of sample of 30 cereals. The null hypothesis is the proportion equal 0.333 The test value is chi squared = 0.945 with 1 degree of freedom with a p-value of 0.1654. The alternative hypothesis is that the true proportion is greater than 33.3%. The 95% confidence interval says the true proportion of cereals that are General Mills is between 0 0.3086 and 1.00. The sample proportion is 13/30 = 0.4333. Since the p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude the proportion of General Mills cereal is greater than 1/3 or 33.3%. The confidence interval does contain the null value of 0.333, thus the proportion is not greater than 33.3%. </p> 
+</solution> 
+</example>
+
+
  </subsection>
+
+ <subsection xml:id="subsec-TestExplore">
+  <title>Data Exploration</title>
+<p> Now it is your chance to explore hypothesis testing using the data from the Case Studies from Chapter 1. Choose which data set you wish to investigate using R Studio and conduct at least three hypothesis tests from that data set. Below are some possible suggestions: </p>
+<p> <term> Class Survey 1 </term> </p>
+<p> Is the proportion of brown eyes greater than 40%?</p>
+<p> Is the proportion of green eyes different than 8%?</p>
+<p> Is the mean number of siblings less than two? </p>
+<p> Is the mean weight of students greater than 150 pounds? </p>
+<p> Is the mean height of students different than 68 inches? </p> 
+<p> <term> Class Survey 2 </term> </p>
+<p> Is the proportion of students who prefer summer greater than 40%?</p>
+<p> Is the proportion of students who prefer winter less than 25%? </p>
+<p> Is the proportion of students who medium rare steaks greater than 33%? </p>
+<p> Is the proportion of students who do not eat steaks less than 10%? </p>
+<p> Is the mean number of tattoos students have greater than two? </p>
+
+<p> <term> Florida Bass </term> </p>
+<p> Is the mean alkalinity in Florida lakes greater than 25 mg/l? </p>
+<p> Is the mean calcium levels in Florida lakes less than 25 mg/l? </p>
+<p> Is the mean of the average mercury levels in Florida lakes greater than 0.5 parts per million to be deemed unsafe to eat? </p>
+
+<p> <term> Parrots </term> </p>
+<p> Is the average age of parrots less than 10 years? </p>
+<p> Is the proportion of parrots that are social with other parrots greater than 30%? </p>
+<p> Is the average number of mimicry sounds greater than 10? </p> 
+<p> Is the mean word count of parrots greater than 20 words? </p> 
+
+
+
+
+
+  </subsection>
 
 
 </section>

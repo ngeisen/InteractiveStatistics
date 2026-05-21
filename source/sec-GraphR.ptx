@@ -4,7 +4,7 @@
   <introduction>
         <p> In this section we will learn how to construct several common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners. 
         </p>   
-  
+   </introduction>
   
   <objectives>
     <introduction>
@@ -21,7 +21,9 @@
   </ol>
 </objectives>
 
-<p> <em> Getting Started </em> </p> 
+<subsection xml:id="subsec-StartGraphR">
+  <title>Getting Started with R Studio</title>
+ 
 <p> First, add the <term>Lesson 1 Graphing </term> text file to your <c>Using R Files </c> folder and the <url href="external/Cereal.csv"> Cereal.csv </url>  dataset. </p>
 <p> You may need to link your <term> Using R Files</term> folder with the working directory, to do this go to the bottom right panel and under the <c>Files</c> tab click on the triple dots <c> … </c> on the far right to locate your folder and click <c>Open</c>. You should now see the Lesson 1 file and the Cereal datafile in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it directly in the bottom left panel. </p>
 <p> Next, you will need to import the data file by clicking on the file and select <c>Import Dataset</c>, a new window will open to give you a preview of the spreadsheet and then click on the <c>Import</c> button at the bottom right. </p>
@@ -34,7 +36,7 @@
 
 <p> Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type <term> attach(Cereal) </term> so  you can call up the variable names. </p>
 <p> Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors. </p>
- </introduction>
+</subsection>
 
 <subsection xml:id="subsec-Boxplots">
     <title>Boxplots </title>
@@ -123,6 +125,15 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
             </image>
         </figure> 
 <p> The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution. </p> 
+
+<p> The R code block has sugar content for the cereals. Change the R command for the appropriate graph for the variable sugar. Click on Evaluate (R) to see the graph.</p>
+<sage language="r">
+ <input>
+Sugar=c(15,14,16,13.3,16.14,13,3,15,3,8,12,10,14.7,17,13,4,2.3,8,13,6,4,20,16,1.6,12,14,4,6.7,4)
+hist(Sugar)
+summary(Sugar)
+ </input>
+ </sage>
 
 <p> Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of <em> breaks </em> we want. Suppose we want 10 bars instead of the default of four. </p>
 <p>  <c> hist(Sugars,breaks=10) </c>	</p>
