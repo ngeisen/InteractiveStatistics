@@ -4093,7 +4093,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Sampling Distributions",
-  "body": " Sampling Distributions  > Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know what is true about the population.    At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions        Statistical inference is a process of drawing conclusions about the population based on the information from a sample.    First let us review some vocabulary and notations. When we refer to a parameter , we are referring to a number that describes some aspects of the population, such as the mean, standard deviation, and proportions. While a statistics is a number that describes that same aspect about the sample.  Here is a summary of the notations we will be using the rest of the semester.       Statistics  Parameter    Mean          Standard deviation          Proportion           When we want to describe an aspect of the population, we use the sample statistic as our best estimate of the parameter.  As we have seen from class data, it can vary from semester to semester depending on the class makeup. So if we want to predict the parameter from the sample statistic, we need to know how much it may vary from sample to sample.   Sampling Distributions for Means  Recall from the first week of class how we estimated the average word length of Gettysburg Address? Each person collected a sample of 10 words and found the average number of letters per word. Now, we are going to look at the distribution of this data. We are plotting each person's average value on a dot plot so see how much variation we have within the samples. If we have more samples, we can get a better estimate of what the population value is likely to be.  Below is a sampling distribution of the average word length from ten circle words from a class of 34 students, thus 34 dots in the distribution with average values ranging from 3.0 to 9.4. The distribution is bimodal for 5.5 and 6.0. We can see the variation in the average values from the sample of ten words.   Dotplot of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 6.    The histogram of the same data for 34 students is a bit more bell shaped when grouped into intervals with most values landing between 5 and 8.   Histogram of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 8 .    Below is a sampling distribution of the average word length from the ten random words selected from Gettysburg Address in a class of 34 students. This distribution has average values ranging from 3.0 to 6.3. The distribution is multimodal for 4.0 and 4.4 and 5.0 with a smaller range of values. The random sample is a better predictor of the actual mean.   Dotplot of Average Random Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 4 and 5.    The histogram is more bell shaped centered between 4.0 to 4.7, which is a better predictor of the true population mean for the average word length of Gettysburg Address.  What do you think will happen if we have a larger number of students finding the average word length? Would the distribution be more uniform or more bell-shaped? Would our prediction be better or worse? Think about it for a minute or two and then we will continue our investigation.  Below is a sampling distribution of the average word length from ten random words from Gettysburg Address using several classes. The total number of students is 267, thus 267 dots in the distribution. The values range from 2.0 to 6.6 with a mean of 4.47 and median 4.4 letters per word. The mode is 4.0 letters per word. This distribution is more bell shaped centered around 4.4 letters per word. Having more student samples helps us make a better prediction of what we think the population mean is.   Dotplot of Average Word Length from 267 Samples   Shows average word length prediction for 267 students clustered between 4 and 5.    With a larger sample of 267 students the distribution is more bell shaped and clustered around the parameter in the center. Here we would predict the population mean to be around 4.4 to 4.5 letters per word.  Here is a case where we can compare our prediction to the actual population parameter to see how close our estimate is. The actual average is 4.29 letters per word in Gettysburg Address.   Understanding the Basics   The dotplots show different values for each sample mean, but the distribution is fairly symmetric (even though the original sample is right skewed) and centered around the population mean of 4.29 letters per word. The distribution of sample statistics from many samples is called a sampling distribution.    A sampling distribution is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.    Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be.  We use the standard error to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter.  Let us investigate how the sampling distribution will change if we alter how big each sample of words is for each student. But this time, we will use technology to help simulate this process so we can have larger samples.   Using Technology   Since it is often difficult to create a sampling distribution, such as having 1000 students gather a sample of 10 words to predict the average, we can use technology to simulate a sampling distribution. We are going to upload the Gettysburg Address into StatKey and choose a variety of sample sizes to see how close we can get to predicting the actual average number of letters per word.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Mean .   StatKey Sampling Distribution Menu   Mean is the first option under Sampling Distribution.    Click on Upload File and locate where the data file is saved on your computer and select the variable Actual Words .   StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixthi is to Change Coulmns.    The default is choosing a sample of size n=10.  Once the data is uploaded you will see a similar image to this one.   StatKey for one sample   Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution.     Interpreting StatKey: The top right graph shows the original data with 268 words with an average of 4.287. We can see the original data is right skewed. If we click on the Generate 1 Sample button we see the number of letters for each of the 10 randomly selected words from the population in the dot plot on the bottom right side. This sample has a mean of 4.2 and this mean value is graphed in the main graphic as a single dot. We can generate another sample of ten words by clicking Generate 1 Sample .   StatKey for two samples   image of second sample of ten words.    This new sample of 10 random words has a mean of 4.6 and is also plotted on the main graph. The average of the two sample means is 4.4.  Our goal is to see what the typical values are when we have more samples. Now let’s generate 100 samples to represent 100 students completing this task. (Note: when you complete this on your own, your values may be slightly different but once the number of samples is larger enough the distribution will be similar.)   StatKey with 100 sample means   100 samples of ten words.    Now we have 100 students represented by the 100 dots, and the mean of these average values is 4.377 which is at the center of the distribution. This distribution is still slightly right skewed. So let us add more samples to the distribution.   StatKey with 100 sample means   1002 samples of ten words.    We can see we have a bell-shaped distribution that is symmetric and centered at mean 4.268 which is close to the know population parameter of 4.287. We now have 1002 total samples of ten words, and the standard error is 0.653 to describe how much variation we have between the samples.  We can see that most average values for the ten words is between 3.5 and 5.0 from the distribution, which relates to the mean of the distribution plus\/minus the standard error, thus which gives 3.615 to 4.921 as the typical values.  Using the 95% rule from earlier in the semester we have the mean plus\/minus two times time standard error (which is the standard deviation of the sampling distribution) the mean gives 2.962 to 5.574 which relates to where most of the values occur. So the center of our sampling distribution (mean 4.268) is a good estimate for the population parameter (4.287).   Exploration   Now it is your turn to explore sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey.   What happens to the shape of the sampling distribution when more samples are included?  With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.     What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.  When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.     What happens to the center of the sampling distribution when more samples are included?  With more samples, the center of the distribution is closer to population parameter value.     What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.  When each sample size is larger, the center of the distribution is population parameter.     What happens to the standard error of the sampling distribution when each sample size is larger?  When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.     Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.     This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.      Sampling Distributions for Proportions  Recall at the beginning of our probability unit, where each person tossed a coin 25 times and kept track of the number of heads and tails. If we find the proportion of heads for each person, then plot those values on a dotplot, we can create a sampling distribution for proportions. Where do you think the center of the distribution will be?  The dotplot below shows the proportion of heads for each of 62 students for 25 coin tosses. Students had between 32% and 68% heads with the mean at 51.5% and median 52%. This sampling distribution appears to be left skewed. What do you think will happen if we combine more student data?   Proportion of heads in 25 coin tosses   slightly left skewed centered at 52%.    This sampling distribution of 250 students for 25 coin tosses is more bell shaped and centered closer to the theoretical population parameter of 50% heads. Proportions ranged form 28% to 76% heads.   Proportion of heads in 25 coin tosses for 200 students   bell shape centered at 50% heads.     Using Technology   Since it is often difficult to create large sampling distribution, such as having 1000 students toss 25 coins to find the proportion of heads, StatKey can do the work for us. Technology allows us to simulate the coin tosses by choosing a variety of sample sizes to see how close we can get to predicting the actual proportion.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Proportions .   StatKey Sampling Distribution Menu   Proportion is the second option under Sampling Distribution.    Under the Edit Proportion button change the proportion to .50 and click OK and change the Choose sample size of n =  50 to represent 50 coin tosses in each sample.   StatKey Sampling Proportion Menu   second option allows you to edit the proportion and the fourth allows you to change the sample size.    If you click on the Generate 1 Sample button then in the bottom right screen identifies how many heads in the sample of 50 coin tosses. This sample had 22 heads thus the proportion is 0.440 which is plotted on the distribution graph.   One Sampling Proportion   count of 22 heads from 50 coin tosses.    You can keep generating one sample at a time or you can jump to the Generate 100 Samples to generate 200 samples of 50-coin tosses. We can see the distribution is approximately bell shaped and centered at 49%. The proportions range from 0.32 to 0.66 heads from the image below. Your distribution should look similar where the parameter is centered around 50% heads.   Sampling Distribution of 200 Proportions   proportion of heads from 200 students tossing 50 coins.     Exploration   Now it is your turn to explore sampling distributions using StatKey for proportions. You can continue using the coin tosses or choose one of the pre-loaded data sets in StatKey.   What happens to the shape of the sampling distribution when more samples are included?  With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion.     What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample.  When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter.     What happens to the standard error when each sample size increases? Explore with multiple sample sizes.  When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution.      Practice Problems   "
+  "body": " Sampling Distributions   Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know everything about the population.     At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean.    Construct and interpret a sampling distribution for proportions.      A Quick Review  The rest of the semester we will focus on statistical inference.     Statistical inference is a process of drawing conclusions about the population based on the information from a sample.    First let us review some vocabulary and notations. When we refer to a parameter , we are referring to a number that describes some aspects of the population, such as the mean, standard deviation, and proportions. While a statistics is a number that describes that same aspect about the sample.  Here is a summary of the notations we will be using the rest of the semester.   Statistical Symbols      Statistics  Parameter    Mean          Standard deviation          Proportion           When we want to describe an aspect of the population, we use the sample statistic as our best estimate of the parameter.  As we have seen from class data, it can vary from semester to semester depending on the class makeup. So if we want to predict the parameter from the sample statistic, we need to know how much it may vary from sample to sample.    Sampling Distributions for Means  Recall from the first week of class how we estimated the average word length of Gettysburg Address? Each person collected a sample of 10 words and found the average number of letters per word. Now, we are going to look at the distribution of this data. We are plotting each person's average value on a dot plot so see how much variation we have within the samples. If we have more samples, we can get a better estimate of what the population value is likely to be.  Below is a sampling distribution of the average word length from ten circle words from a class of 34 students, thus 34 dots in the distribution with average values ranging from 3.0 to 9.4. The distribution is bimodal for 5.5 and 6.0. We can see the variation in the average values from the sample of ten words.   Dotplot of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 6.    The histogram of the same data for 34 students is a bit more bell shaped when grouped into intervals with most values landing between 5 and 8.   Histogram of Average Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 5 and 8 .    Below is a sampling distribution of the average word length from the ten random words selected from Gettysburg Address in a class of 34 students. This distribution has average values ranging from 3.0 to 6.3. The distribution is multimodal for 4.0 and 4.4 and 5.0 with a smaller range of values. The random sample is a better predictor of the actual mean.   Dotplot of Average Random Word Length from Gettysburg Address   Shows average word length prediction for 34 students clustered between 4 and 5.    The histogram is more bell shaped centered between 4.0 to 4.7, which is a better predictor of the true population mean for the average word length of Gettysburg Address.  What do you think will happen if we have a larger number of students finding the average word length? Would the distribution be more uniform or more bell-shaped? Would our prediction be better or worse? Think about it for a minute or two and then we will continue our investigation.  Below is a sampling distribution of the average word length from ten random words from Gettysburg Address using several classes. The total number of students is 267, thus 267 dots in the distribution. The values range from 2.0 to 6.6 with a mean of 4.47 and median 4.4 letters per word. The mode is 4.0 letters per word. This distribution is more bell shaped centered around 4.4 letters per word. Having more student samples helps us make a better prediction of what we think the population mean is.   Dotplot of Average Word Length from 267 Samples   Shows average word length prediction for 267 students clustered between 4 and 5.    With a larger sample of 267 students the distribution is more bell shaped and clustered around the parameter in the center. Here we would predict the population mean to be around 4.4 to 4.5 letters per word.  Here is a case where we can compare our prediction to the actual population parameter to see how close our estimate is. The actual average is 4.29 letters per word in Gettysburg Address.   Understanding the Basics   The dotplots show different values for each sample mean, but the distribution is fairly symmetric (even though the original sample is right skewed) and centered around the population mean of 4.29 letters per word. The distribution of sample statistics from many samples is called a sampling distribution.    A sampling distribution is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.    Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be.  We use the standard error to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter.  Let us investigate how the sampling distribution will change if we alter how big each sample of words is for each student. But this time, we will use technology to help simulate this process so we can have larger samples.    Using Technology: Mean  Since it is often difficult to create a sampling distribution, such as having 1000 students gather a sample of 10 words to predict the average, we can use technology to simulate a sampling distribution. We are going to upload the Gettysburg Address into StatKey and choose a variety of sample sizes to see how close we can get to predicting the actual average number of letters per word.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Mean .   StatKey Sampling Distribution Menu   Mean is the first option under Sampling Distribution.    Click on Upload File and locate where the data file is saved on your computer and select the variable Actual Words .   StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixth is to Change Columns.    The default is choosing a sample of size n=10.  Once the data is uploaded you will see a similar image to this one.   StatKey for one sample   Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution.     Interpreting StatKey: The top right graph shows the original data with 268 words with an average of 4.287. We can see the original data is right skewed. If we click on the Generate 1 Sample button we see the number of letters for each of the 10 randomly selected words from the population in the dot plot on the bottom right side. This sample has a mean of 4.2 and this mean value is graphed in the main graphic as a single dot. We can generate another sample of ten words by clicking Generate 1 Sample .   StatKey for two samples   image of second sample of ten words.    This new sample of 10 random words has a mean of 4.6 and is also plotted on the main graph. The average of the two sample means is 4.4.  Our goal is to see what the typical values are when we have more samples. Now let’s generate 100 samples to represent 100 students completing this task. (Note: when you complete this on your own, your values may be slightly different but once the number of samples is larger enough the distribution will be similar.)   StatKey with 100 sample means   100 samples of ten words.    Now we have 100 students represented by the 100 dots, and the mean of these average values is 4.377 which is at the center of the distribution. This distribution is still slightly right skewed. So let us add more samples to the distribution.   StatKey with 100 sample means   1002 samples of ten words.    We can see we have a bell-shaped distribution that is symmetric and centered at mean 4.268 which is close to the know population parameter of 4.287. We now have 1002 total samples of ten words, and the standard error is 0.653 to describe how much variation we have between the samples.  We can see that most average values for the ten words is between 3.5 and 5.0 from the distribution, which relates to the mean of the distribution plus\/minus the standard error, thus which gives 3.615 to 4.921 as the typical values.  Using the 95% rule from earlier in the semester we have the mean plus\/minus two times time standard error (which is the standard deviation of the sampling distribution) the mean gives 2.962 to 5.574 which relates to where most of the values occur. So the center of our sampling distribution (mean 4.268) is a good estimate for the population parameter (4.287).   Exploration   Now it is your turn to explore sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey. As you explore sampling distributions, answer the following questions.    What happens to the shape of the sampling distribution when more samples are included?   With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.      What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.   When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.      What happens to the center of the sampling distribution when more samples are included?   With more samples, the center of the distribution is closer to population parameter value.      What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.   When each sample size is larger, the center of the distribution is population parameter.      What happens to the standard error of the sampling distribution when each sample size is larger?   When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.      Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.      This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.      Sampling Distributions for Proportions  Recall at the beginning of our probability unit, where each person tossed a coin 25 times and kept track of the number of heads and tails. If we find the proportion of heads for each person, then plot those values on a dotplot, we can create a sampling distribution for proportions. Where do you think the center of the distribution will be?  The dotplot below shows the proportion of heads for each of 62 students for 25 coin tosses. Students had between 32% and 68% heads with the mean at 51.5% and median 52%. This sampling distribution appears to be left skewed. What do you think will happen if we combine more student data?   Proportion of heads in 25 coin tosses   slightly left skewed centered at 52%.    This sampling distribution of 250 students for 25 coin tosses is more bell shaped and centered closer to the theoretical population parameter of 50% heads. Proportions ranged form 28% to 76% heads.   Proportion of heads in 25 coin tosses for 200 students   bell shape centered at 50% heads.      Using Technology: Proportions  Since it is often difficult to create large sampling distribution, such as having 1000 students toss 25 coins to find the proportion of heads, StatKey can do the work for us. Technology allows us to simulate the coin tosses by choosing a variety of sample sizes to see how close we can get to predicting the actual proportion.  Open StatKey and in the middle of the page we want Sampling Distribution and click on Proportions .   StatKey Sampling Distribution Menu   Proportion is the second option under Sampling Distribution.    Under the Edit Proportion button change the proportion to .50 and click OK and change the Choose sample size of n =  50 to represent 50 coin tosses in each sample.   StatKey Sampling Proportion Menu   second option allows you to edit the proportion and the fourth allows you to change the sample size.    If you click on the Generate 1 Sample button then in the bottom right screen identifies how many heads in the sample of 50 coin tosses. This sample had 22 heads thus the proportion is 0.440 which is plotted on the distribution graph.   One Sampling Proportion   count of 22 heads from 50 coin tosses.    You can keep generating one sample at a time or you can jump to the Generate 100 Samples to generate 200 samples of 50-coin tosses. We can see the distribution is approximately bell shaped and centered at 49%. The proportions range from 0.32 to 0.66 heads from the image below. Your distribution should look similar where the parameter is centered around 50% heads.   Sampling Distribution of 200 Proportions   proportion of heads from 200 students tossing 50 coins.     Exploration   Now it is your turn to explore sampling distributions using StatKey for proportions. You can continue using the coin tosses or choose one of the pre-loaded data sets in StatKey.    What happens to the shape of the sampling distribution when more samples are included?   With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion.      What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample.   When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter.      What happens to the standard error when each sample size increases? Explore with multiple sample sizes.   When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution.      Practice Problems  the   "
 },
 {
   "id": "sec-SamplingDist-3",
@@ -4102,7 +4102,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.1",
   "title": "",
-  "body": "  At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean    Construct and interpret a sampling distribution for proportions    "
+  "body": "  At the end of this section you will be able to:     Construct and interpret a sampling distribution for the mean.    Construct and interpret a sampling distribution for proportions.    "
 },
 {
   "id": "def-statisticalinference",
@@ -4114,13 +4114,13 @@ var ptx_lunr_docs = [
   "body": "   Statistical inference is a process of drawing conclusions about the population based on the information from a sample.   "
 },
 {
-  "id": "sec-SamplingDist-7",
+  "id": "subsec-DistReview-6",
   "level": "2",
-  "url": "sec-SamplingDist.html#sec-SamplingDist-7",
+  "url": "sec-SamplingDist.html#subsec-DistReview-6",
   "type": "Table",
   "number": "5.1.2",
-  "title": "",
-  "body": "     Statistics  Parameter    Mean          Standard deviation          Proportion          "
+  "title": "Statistical Symbols",
+  "body": " Statistical Symbols      Statistics  Parameter    Mean          Standard deviation          Proportion          "
 },
 {
   "id": "GettysCircled",
@@ -4186,247 +4186,229 @@ var ptx_lunr_docs = [
   "body": "standard error "
 },
 {
-  "id": "subsec-SamplingMeans-21",
+  "id": "subsec-DistTechnologyMean-3",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-21",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Using Technology "
-},
-{
-  "id": "subsec-SamplingMeans-23",
-  "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-23",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "StatKey "
 },
 {
-  "id": " StatkeySamplingMenu",
+  "id": "StatkeySamplingMenu",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySamplingMenu",
+  "url": "sec-SamplingDist.html#StatkeySamplingMenu",
   "type": "Figure",
   "number": "5.1.8",
   "title": "",
   "body": " StatKey Sampling Distribution Menu   Mean is the first option under Sampling Distribution.   "
 },
 {
-  "id": " StatkeySamplingMeanMenu",
+  "id": "StatkeySamplingMeanMenu",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySamplingMeanMenu",
+  "url": "sec-SamplingDist.html#StatkeySamplingMeanMenu",
   "type": "Figure",
   "number": "5.1.9",
   "title": "",
-  "body": " StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixthi is to Change Coulmns.   "
+  "body": " StatKey Sampling Distribution for Mean Menu   The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixth is to Change Columns.   "
 },
 {
-  "id": " StatkeySampling1",
+  "id": "StatkeySampling1",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySampling1",
+  "url": "sec-SamplingDist.html#StatkeySampling1",
   "type": "Figure",
   "number": "5.1.10",
   "title": "",
   "body": " StatKey for one sample   Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution.   "
 },
 {
-  "id": " StatkeySampling2",
+  "id": "StatkeySampling2",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySampling2",
+  "url": "sec-SamplingDist.html#StatkeySampling2",
   "type": "Figure",
   "number": "5.1.11",
   "title": "",
   "body": " StatKey for two samples   image of second sample of ten words.   "
 },
 {
-  "id": " StatkeySampling3",
+  "id": "StatkeySampling3",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySampling3",
+  "url": "sec-SamplingDist.html#StatkeySampling3",
   "type": "Figure",
   "number": "5.1.12",
   "title": "",
   "body": " StatKey with 100 sample means   100 samples of ten words.   "
 },
 {
-  "id": " StatkeySampling4",
+  "id": "StatkeySampling4",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySampling4",
+  "url": "sec-SamplingDist.html#StatkeySampling4",
   "type": "Figure",
   "number": "5.1.13",
   "title": "",
   "body": " StatKey with 100 sample means   1002 samples of ten words.   "
 },
 {
-  "id": "subsec-SamplingMeans-40",
+  "id": "subsec-DistTechnologyMean-20",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-40",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-20",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Exploration "
 },
 {
-  "id": "subsec-SamplingMeans-42",
+  "id": "subsec-DistTechnologyMean-22",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-42",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-22",
   "type": "Checkpoint",
   "number": "5.1.14",
   "title": "",
-  "body": " What happens to the shape of the sampling distribution when more samples are included?  With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.   "
+  "body": "  What happens to the shape of the sampling distribution when more samples are included?   With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion.   "
 },
 {
-  "id": "subsec-SamplingMeans-43",
+  "id": "subsec-DistTechnologyMean-23",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-43",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-23",
   "type": "Checkpoint",
   "number": "5.1.15",
   "title": "",
-  "body": " What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.  When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.   "
+  "body": "  What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.   When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion.   "
 },
 {
-  "id": "subsec-SamplingMeans-44",
+  "id": "subsec-DistTechnologyMean-24",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-44",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-24",
   "type": "Checkpoint",
   "number": "5.1.16",
   "title": "",
-  "body": " What happens to the center of the sampling distribution when more samples are included?  With more samples, the center of the distribution is closer to population parameter value.   "
+  "body": "  What happens to the center of the sampling distribution when more samples are included?   With more samples, the center of the distribution is closer to population parameter value.   "
 },
 {
-  "id": "subsec-SamplingMeans-45",
+  "id": "subsec-DistTechnologyMean-25",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-45",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-25",
   "type": "Checkpoint",
   "number": "5.1.17",
   "title": "",
-  "body": " What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.  When each sample size is larger, the center of the distribution is population parameter.   "
+  "body": "  What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.   When each sample size is larger, the center of the distribution is population parameter.   "
 },
 {
-  "id": "subsec-SamplingMeans-46",
+  "id": "subsec-DistTechnologyMean-26",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-46",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-26",
   "type": "Checkpoint",
   "number": "5.1.18",
   "title": "",
-  "body": " What happens to the standard error of the sampling distribution when each sample size is larger?  When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.   "
+  "body": "  What happens to the standard error of the sampling distribution when each sample size is larger?   When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.   "
 },
 {
-  "id": "subsec-SamplingMeans-47",
+  "id": "subsec-DistTechnologyMean-27",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingMeans-47",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyMean-27",
   "type": "Example",
   "number": "5.1.19",
   "title": "",
-  "body": " Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.     This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.   "
+  "body": "  Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on Reset Plot and change the choose samples of size n =  25 . Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.   StatKey with 1000 samples of 25 words   Bell shaped with most values ranging from 3.5 to 5.3.      This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.   "
 },
 {
-  "id": " StatkeyCoinToss",
+  "id": "StatkeyCoinToss",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeyCoinToss",
+  "url": "sec-SamplingDist.html#StatkeyCoinToss",
   "type": "Figure",
   "number": "5.1.21",
   "title": "",
   "body": " Proportion of heads in 25 coin tosses   slightly left skewed centered at 52%.   "
 },
 {
-  "id": " StatkeyCoinToss2",
+  "id": "StatkeyCoinToss2",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeyCoinToss2",
+  "url": "sec-SamplingDist.html#StatkeyCoinToss2",
   "type": "Figure",
   "number": "5.1.22",
   "title": "",
   "body": " Proportion of heads in 25 coin tosses for 200 students   bell shape centered at 50% heads.   "
 },
 {
-  "id": "subsec-SamplingProportions-7",
+  "id": "subsec-DistTechnologyProp-3",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingProportions-7",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Using Technology "
-},
-{
-  "id": "subsec-SamplingProportions-9",
-  "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingProportions-9",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyProp-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "StatKey "
 },
 {
-  "id": " StatkeySamplingProportion",
+  "id": "StatkeySamplingProportion",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySamplingProportion",
+  "url": "sec-SamplingDist.html#StatkeySamplingProportion",
   "type": "Figure",
   "number": "5.1.23",
   "title": "",
   "body": " StatKey Sampling Distribution Menu   Proportion is the second option under Sampling Distribution.   "
 },
 {
-  "id": " StatkeySamplingProportionMenu",
+  "id": "StatkeySamplingProportionMenu",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySamplingProportionMenu",
+  "url": "sec-SamplingDist.html#StatkeySamplingProportionMenu",
   "type": "Figure",
   "number": "5.1.24",
   "title": "",
   "body": " StatKey Sampling Proportion Menu   second option allows you to edit the proportion and the fourth allows you to change the sample size.   "
 },
 {
-  "id": " StatkeySamplingProportion",
+  "id": "StatkeySamplingProportion",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySamplingProportion",
+  "url": "sec-SamplingDist.html#StatkeySamplingProportion",
   "type": "Figure",
   "number": "5.1.25",
   "title": "",
   "body": " One Sampling Proportion   count of 22 heads from 50 coin tosses.   "
 },
 {
-  "id": " StatkeySamplingProportion3",
+  "id": "StatkeySamplingProportion3",
   "level": "2",
-  "url": "sec-SamplingDist.html# StatkeySamplingProportion3",
+  "url": "sec-SamplingDist.html#StatkeySamplingProportion3",
   "type": "Figure",
   "number": "5.1.26",
   "title": "",
   "body": " Sampling Distribution of 200 Proportions   proportion of heads from 200 students tossing 50 coins.   "
 },
 {
-  "id": "subsec-SamplingProportions-17",
+  "id": "subsec-DistTechnologyProp-11",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingProportions-17",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyProp-11",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Exploration "
 },
 {
-  "id": "subsec-SamplingProportions-19",
+  "id": "subsec-DistTechnologyProp-13",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingProportions-19",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyProp-13",
   "type": "Checkpoint",
   "number": "5.1.27",
   "title": "",
-  "body": " What happens to the shape of the sampling distribution when more samples are included?  With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion.   "
+  "body": "  What happens to the shape of the sampling distribution when more samples are included?   With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion.   "
 },
 {
-  "id": "subsec-SamplingProportions-20",
+  "id": "subsec-DistTechnologyProp-14",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingProportions-20",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyProp-14",
   "type": "Checkpoint",
   "number": "5.1.28",
   "title": "",
-  "body": " What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample.  When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter.   "
+  "body": "  What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample.   When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter.   "
 },
 {
-  "id": "subsec-SamplingProportions-21",
+  "id": "subsec-DistTechnologyProp-15",
   "level": "2",
-  "url": "sec-SamplingDist.html#subsec-SamplingProportions-21",
+  "url": "sec-SamplingDist.html#subsec-DistTechnologyProp-15",
   "type": "Checkpoint",
   "number": "5.1.29",
   "title": "",
-  "body": " What happens to the standard error when each sample size increases? Explore with multiple sample sizes.  When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution.   "
+  "body": "  What happens to the standard error when each sample size increases? Explore with multiple sample sizes.   When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution.   "
 },
 {
   "id": "sec-BootstrapDist",
@@ -4435,7 +4417,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Bootstrap Distributions",
-  "body": " Bootstrap Distributions   Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.     At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean    Construct and interpret a bootstrap distribution for proportions     Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.  In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample – by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.   Bootstrap Distributions for Means  Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.  Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.  What is the typical MPGe of newer models of EVs?  To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:    Tesla Model X Plaid – 91 MPGe    Jaguar I-Pace EV400 – 85 MPGe    Polestar 2 Single Motor – 107 MPGe    Lucid Air Pure AWD – 140 MPGe    Lordstown Endurance – 48 MPGe    We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.  To generate a bootstrap distribution, we:    Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.    Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.    Collect the statistics for many bootstrap samples to create a bootstrap distribution.    To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.  The purpose of replacing the card is to give us some variable in the samples we select. If we use the same 5 cars each time, there is no variation.  Give example  To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.   Using Technology  Open StatKey and in the middle column under Bootstrap Confidence Intervals we are going to select CI for Single Mean .   Bootstrap Menu   first option in second column is bootstrap for the mean.    Click on the Upload File button and identify the data file: EV2023-Sample5 and select the variable CombMPGe .   Bootstrap for Mean   fourth option is to upload the file.    Interpreting StatKey: On the top right side you will see the Original Sample information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.  If we click on the Generate 1 Sample button, then on the bottom right side we will see the five randomly selected cars with replacement under the Bootstrap Sample . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.   Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.    Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.   Exploration   Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.   As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.     Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.     Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.    Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.  When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using statistics  where SE denotes the standard error of the statistic estimated from the bootstrap distribution.  Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives             We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.  If we click on Two Tail we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.   Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.    If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.   Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.     Exploration   Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.   Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.   As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.     What happens to the standard error as you increase the number of samples.   The standard error does not change much by adding generating additional samples.      Bootstrap Distributions for Proportions   Suppose you want to find what proportion of Skittles are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plot them on a graph to create a distribution.  Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy.   Practice Problems   "
+  "body": " Bootstrap Distributions   Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.     At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean.    Construct and interpret a bootstrap distribution for proportions.     Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.  In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample – by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.   Bootstrap Distributions for Means  Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.  Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.  What is the typical MPGe of newer models of EVs?  To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:    Tesla Model X Plaid – 91 MPGe    Jaguar I-Pace EV400 – 85 MPGe    Polestar 2 Single Motor – 107 MPGe    Lucid Air Pure AWD – 140 MPGe    Lordstown Endurance – 48 MPGe    We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.  To generate a bootstrap distribution, we:    Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.    Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.    Collect the statistics for many bootstrap samples to create a bootstrap distribution.    To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.  The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.  Give example  To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.    Using Technology: Mean  Open StatKey and in the middle column under Bootstrap Confidence Intervals we are going to select CI for Single Mean .   Bootstrap Menu   first option in second column is bootstrap for the mean.    Click on the Upload File button and identify the data file: EV2023-Sample5 and select the variable CombMPGe .   Bootstrap for Mean   fourth option is to upload the file.    Interpreting StatKey: On the top right side you will see the Original Sample information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.  If we click on the Generate 1 Sample button, then on the bottom right side we will see the five randomly selected cars with replacement under the Bootstrap Sample . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.   Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.    Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.   Exploration   Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.   As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.     Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.     Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.    Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.  When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using statistics  where SE denotes the standard error of the statistic estimated from the bootstrap distribution.  Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives             We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.  If we click on Two Tail we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.   Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.    If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.   Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.     Exploration   Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.   Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.   As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.     What happens to the standard error as you increase the number of samples.   The standard error does not change much by adding generating additional samples.      Bootstrap Distributions for Proportions  Suppose you want to find what proportion of Skittles are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution.  Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape.   Bootstrap For 10 Bags   proportions between 12.5% and 25% grape .    This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%.   Bootstrap For 250 Bags   proportions between 8% and 32% grape with higher frequencies at the center near 0.183.    This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%.    Using Technology: Proportions  Using StatKey to construct bootstrap distributions from a single proportion.  Launch StatKey , and from the center column under Bootstrap Confidence Intervals , select the second option CI for Single Proportion .   StatKey Menu   select the second option under Bootstrap Confidence Intervals .    Click on Edit Data and enter the count of 12 grape from a sample size of 65 candies and then click OK    Edit Proportion   use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .    Click on Generate 1 Sample . On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends.   Generate Bootstrap Sample   one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .    Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4\/65=0.062 to 23\/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047.   Generate Bootstrap Distribution   500 dots representing the proportion of grapes for each bag .    If you click on Two-Tail it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution.   Bootstrap Confidence Interval   Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .      Practice Problems  samples   "
 },
 {
   "id": "sec-BootstrapDist-3",
@@ -4444,21 +4426,12 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.2",
   "title": "",
-  "body": "  At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean    Construct and interpret a bootstrap distribution for proportions    "
+  "body": "  At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean.    Construct and interpret a bootstrap distribution for proportions.    "
 },
 {
-  "id": "subsec-BootstrapMeans-14",
+  "id": "subsec-BootTechnologyMean-2",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-14",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Using Technology "
-},
-{
-  "id": "subsec-BootstrapMeans-15",
-  "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-15",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4483,18 +4456,18 @@ var ptx_lunr_docs = [
   "body": " Bootstrap for Mean   fourth option is to upload the file.   "
 },
 {
-  "id": "subsec-BootstrapMeans-19",
+  "id": "subsec-BootTechnologyMean-6",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-19",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Original Sample "
 },
 {
-  "id": "subsec-BootstrapMeans-20",
+  "id": "subsec-BootTechnologyMean-7",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-20",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4510,45 +4483,45 @@ var ptx_lunr_docs = [
   "body": " Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.   "
 },
 {
-  "id": "subsec-BootstrapMeans-23",
+  "id": "subsec-BootTechnologyMean-10",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-23",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Exploration "
 },
 {
-  "id": "subsec-BootstrapMeans-25",
+  "id": "subsec-BootTechnologyMean-12",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-25",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-12",
   "type": "Checkpoint",
   "number": "5.2.4",
   "title": "",
   "body": " As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.   "
 },
 {
-  "id": "subsec-BootstrapMeans-26",
+  "id": "subsec-BootTechnologyMean-13",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-26",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-13",
   "type": "Checkpoint",
   "number": "5.2.5",
   "title": "",
   "body": " Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.   "
 },
 {
-  "id": "subsec-BootstrapMeans-27",
+  "id": "subsec-BootTechnologyMean-14",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-27",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-14",
   "type": "Checkpoint",
   "number": "5.2.6",
   "title": "",
   "body": " Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.   "
 },
 {
-  "id": "subsec-BootstrapMeans-29",
+  "id": "subsec-BootTechnologyMean-16",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-29",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4573,49 +4546,121 @@ var ptx_lunr_docs = [
   "body": " Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.   "
 },
 {
-  "id": "subsec-BootstrapMeans-40",
+  "id": "subsec-BootTechnologyMean-27",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-40",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-27",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Exploration "
 },
 {
-  "id": "subsec-BootstrapMeans-42",
+  "id": "subsec-BootTechnologyMean-29",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-42",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-29",
   "type": "Checkpoint",
   "number": "5.2.9",
   "title": "",
   "body": " Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.   "
 },
 {
-  "id": "subsec-BootstrapMeans-43",
+  "id": "subsec-BootTechnologyMean-30",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-43",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-30",
   "type": "Checkpoint",
   "number": "5.2.10",
   "title": "",
   "body": " Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.   "
 },
 {
-  "id": "subsec-BootstrapMeans-44",
+  "id": "subsec-BootTechnologyMean-31",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-44",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-31",
   "type": "Checkpoint",
   "number": "5.2.11",
   "title": "",
   "body": " Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.   As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.   "
 },
 {
-  "id": "subsec-BootstrapMeans-45",
+  "id": "subsec-BootTechnologyMean-32",
   "level": "2",
-  "url": "sec-BootstrapDist.html#subsec-BootstrapMeans-45",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyMean-32",
   "type": "Checkpoint",
   "number": "5.2.12",
   "title": "",
   "body": " What happens to the standard error as you increase the number of samples.   The standard error does not change much by adding generating additional samples.   "
+},
+{
+  "id": "BootstrapSkittle1",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapSkittle1",
+  "type": "Figure",
+  "number": "5.2.13",
+  "title": "",
+  "body": " Bootstrap For 10 Bags   proportions between 12.5% and 25% grape .   "
+},
+{
+  "id": "BootstrapSkittle2",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapSkittle2",
+  "type": "Figure",
+  "number": "5.2.14",
+  "title": "",
+  "body": " Bootstrap For 250 Bags   proportions between 8% and 32% grape with higher frequencies at the center near 0.183.   "
+},
+{
+  "id": "subsec-BootTechnologyProp-3",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#subsec-BootTechnologyProp-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "StatKey Bootstrap Confidence Intervals CI for Single Proportion "
+},
+{
+  "id": "BootstrapSkittle3",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapSkittle3",
+  "type": "Figure",
+  "number": "5.2.15",
+  "title": "",
+  "body": " StatKey Menu   select the second option under Bootstrap Confidence Intervals .   "
+},
+{
+  "id": "BootstrapSkittle4",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapSkittle4",
+  "type": "Figure",
+  "number": "5.2.16",
+  "title": "",
+  "body": " Edit Proportion   use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .   "
+},
+{
+  "id": "BootstrapSkittle5",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapSkittle5",
+  "type": "Figure",
+  "number": "5.2.17",
+  "title": "",
+  "body": " Generate Bootstrap Sample   one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .   "
+},
+{
+  "id": "BootstrapSkittle6",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapSkittle6",
+  "type": "Figure",
+  "number": "5.2.18",
+  "title": "",
+  "body": " Generate Bootstrap Distribution   500 dots representing the proportion of grapes for each bag .   "
+},
+{
+  "id": "BootstrapSkittle7",
+  "level": "2",
+  "url": "sec-BootstrapDist.html#BootstrapSkittle7",
+  "type": "Figure",
+  "number": "5.2.19",
+  "title": "",
+  "body": " Bootstrap Confidence Interval   Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .   "
 },
 {
   "id": "sec-AssessNormality",
