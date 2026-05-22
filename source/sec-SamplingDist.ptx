@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-SamplingDist" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Sampling Distributions</title>
-  <p> > Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know what is true about the population. </p>
-
+  <introduction>
+   <p>  Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know everything about the population. </p>
+  </introduction>
+  
 <objectives>
   <introduction>
     <p> At the end of this section you will be able to:   </p>
   </introduction>
   <ol>
-    <li> <p> Construct and interpret a sampling distribution for the mean</p>    </li>
-    <li> <p> Construct and interpret a sampling distribution for proportions</p> </li>
+    <li> <p> Construct and interpret a sampling distribution for the mean.</p>    </li>
+    <li> <p> Construct and interpret a sampling distribution for proportions.</p> </li>
         
 </ol>
 </objectives>
+
+<subsection xml:id="subsec-DistReview">
+  <title>A Quick Review</title>
+ <p> The rest of the semester we will focus on statistical inference. </p>
 
 <definition xml:id="def-statisticalinference">
   <statement>
@@ -24,6 +30,7 @@
 <p> First let us review some vocabulary and notations. When we refer to a <em> parameter </em>, we are referring to a number that describes some aspects of the population,  such as the mean, standard deviation, and proportions. While a <em>statistics </em> is a number that describes that same aspect about the sample. </p>
 <p> Here is a summary of the notations we will be using the rest of the semester. </p> 
 <table>
+  <title>Statistical Symbols</title>
   <tabular top="medium">
 <row bottom="medium">
       <cell left="medium" right="medium">
@@ -58,11 +65,11 @@
 
 <p> When we want to describe an aspect of the population, we use the sample statistic as our best estimate of the parameter. </p>
 <p> As we have seen from class data, it can vary from semester to semester depending on the class makeup. So if we want to predict the parameter from the sample statistic, we need to know how much it may vary from sample to sample. </p>
+ </subsection>
 
 <subsection xml:id="subsec-SamplingMeans">
   <title>Sampling Distributions for Means</title>
  
-
 <p> Recall from the first week of class how we estimated the average word length of Gettysburg Address? Each person collected a sample of 10 words and found the average number of letters per word. Now, we are going to look at the distribution of this data. We are plotting each person's average value on a dot plot so see how much variation we have within the samples. If we have more samples, we can get a better estimate of what the population value is likely to be. </p>
 <p> Below is a sampling distribution of the average word length from ten circle words from a class of 34 students, thus 34 dots in the distribution with average values ranging from 3.0 to 9.4.  The distribution is bimodal for 5.5 and 6.0. We can see the variation in the average values from the sample of ten words.</p> 
         <figure xml:id="GettysCircled">
@@ -111,11 +118,14 @@
 <p> Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be. </p>
 <p> We use the <term> standard error </term>  to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter. </p>
 <p>Let us investigate how the sampling distribution will change if we alter how big each sample of words is for each student. But this time, we will use technology to help simulate this process so we can have larger samples.  </p>
+ </subsection>
 
-<p> <term> Using Technology </term> </p>
+<subsection xml:id="subsec-DistTechnologyMean">
+  <title>Using Technology: Mean</title>
+
 <p> Since it is often difficult to create a sampling distribution, such as having 1000 students gather a sample of 10 words to predict the average, we can use technology to simulate a sampling distribution. We are going to upload the Gettysburg Address into StatKey and choose a variety of sample sizes to see how close we can get to predicting the actual average number of letters per word. </p>
 <p> Open <term>StatKey</term> and in the middle of the page we want <c>Sampling Distribution</c> and click on <c>Mean</c>.</p>
-<figure xml:id=" StatkeySamplingMenu">
+<figure xml:id="StatkeySamplingMenu">
             <caption> StatKey Sampling Distribution Menu</caption>
             <image source="StatkeySamplingMenu.png" >
                 <shortdescription> Mean is the first option under Sampling Distribution. </shortdescription>
@@ -123,15 +133,15 @@
         </figure> 
 
 <p> Click on <c>Upload File</c> and locate where the data file is saved on your computer and select the variable <em> Actual Words </em>. </p>
-<figure xml:id=" StatkeySamplingMeanMenu">
+<figure xml:id="StatkeySamplingMeanMenu">
             <caption> StatKey Sampling Distribution for Mean Menu</caption>
             <image source="StatkeySamplingMeanMenu.png" >
-                <shortdescription> The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixthi is to Change Coulmns. </shortdescription>
+                <shortdescription> The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixth is to Change Columns. </shortdescription>
             </image>
         </figure>
 <p> The default is choosing a sample of size n=10. </p> 
 <p> Once the data is uploaded you will see a similar image to this one. </p>
-<figure xml:id=" StatkeySampling1">
+<figure xml:id="StatkeySampling1">
             <caption> StatKey for one sample</caption>
             <image source="Sampling1.png" >
                 <shortdescription> Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution. </shortdescription>
@@ -139,7 +149,7 @@
         </figure>
 <p> <em> Interpreting StatKey: </em> 
 The top right graph shows the original data with 268 words with an average of 4.287. We can see the original data is right skewed. If we click on the <c> Generate 1 Sample </c> button we see the number of letters for each of the 10 randomly selected words from the population in the dot plot on the bottom right side. This sample has a mean of 4.2 and this mean value is graphed in the main graphic as a single dot. We can generate another sample of ten words by clicking <c> Generate 1 Sample </c>. </p> 
-<figure xml:id=" StatkeySampling2">
+<figure xml:id="StatkeySampling2">
             <caption> StatKey for two samples</caption>
             <image source="Sampling2.png" >
                 <shortdescription> image of second sample of ten words. </shortdescription>
@@ -147,14 +157,14 @@ The top right graph shows the original data with 268 words with an average of 4.
         </figure>
 <p> This new sample of 10 random words has a mean of 4.6 and is also plotted on the main graph. The average of the two sample means is 4.4. </p>
 <p> Our goal is to see what the typical values are when we have more samples. Now let’s generate 100 samples to represent 100 students completing this task. (Note: when you complete this on your own, your values may be slightly different but once the number of samples is larger enough the distribution will be similar.) </p> 
-<figure xml:id=" StatkeySampling3">
+<figure xml:id="StatkeySampling3">
             <caption> StatKey with 100 sample means</caption>
             <image source="Sampling3.png" >
                 <shortdescription> 100 samples of ten words. </shortdescription>
             </image>
         </figure>
 <p> Now we have 100 students represented by the 100 dots, and the mean of these average values is 4.377 which is at the center of the distribution. This distribution is still slightly right skewed.  So let us add more samples to the distribution.</p>
-<figure xml:id=" StatkeySampling4">
+<figure xml:id="StatkeySampling4">
             <caption> StatKey with 100 sample means</caption>
             <image source="Sampling4.png" >
                 <shortdescription> 1002 samples of ten words. </shortdescription>
@@ -165,43 +175,55 @@ The top right graph shows the original data with 268 words with an average of 4.
 <p> Using the 95% rule from earlier in the semester we have the mean plus/minus two times time standard error (which is the standard deviation of the sampling distribution) the mean <m>4.268 +/- 2(0.653)</m> gives 2.962 to 5.574 which relates to where most of the values occur.  So the center of our sampling distribution (mean 4.268) is a good estimate for the population parameter (4.287). </p>
 
 <p> <term> Exploration</term> </p> 
-<p> Now it is your turn to explore sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey.  </p> 
+<p> Now it is your turn to explore sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey. As you explore sampling distributions, answer the following questions. </p> 
 
 <exercise> 
-<p> What happens to the shape of the sampling distribution when more samples are included?
-</p> 
+  <statement>
+    <p> What happens to the shape of the sampling distribution when more samples are included? </p> 
+  </statement>
 <solution><p> With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population mean or population proportion. </p> </solution> 
 </exercise>
+
 <exercise> 
-<p> What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. 
-</p> 
-<solution><p> When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion. </p> </solution> 
+  <statement>
+    <p> What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. </p>
+  </statement>
+ <solution><p> When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. The center of the distribution is the population mean or population proportion. </p> </solution> 
 </exercise>
+
 <exercise> 
-<p> What happens to the center of the sampling distribution when more samples are included?
-</p> 
+  <statement>
+   <p> What happens to the center of the sampling distribution when more samples are included? </p> 
+  </statement>
 <solution><p> With more samples, the center of the distribution is closer to population parameter value. </p> </solution> 
 </exercise>
+
 <exercise> 
-<p> What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. 
-</p> 
-<solution><p> When each sample size is larger, the center of the distribution is population parameter. </p> </solution> 
+  <statement>
+    <p> What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample. </p>
+  </statement>
+ <solution><p> When each sample size is larger, the center of the distribution is population parameter. </p> </solution> 
 </exercise>
+
 <exercise> 
-<p> What happens to the standard error of the sampling distribution when each sample size is larger? 
-</p> 
-<solution><p> When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.  </p> </solution> 
+  <statement>
+  <p> What happens to the standard error of the sampling distribution when each sample size is larger? </p>
+  </statement>
+ <solution><p> When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.  </p> </solution> 
 </exercise>
 
 <example>
-  <p> Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on <c> Reset Plot</c> and change the <term> choose samples of size n =</term> <c> 25 </c>. Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task. </p> 
-<figure xml:id=" StatkeySampling5">
+  <statement>
+    <p> Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on <c> Reset Plot</c> and change the <term> choose samples of size n =</term> <c> 25 </c>. Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task. </p> 
+<figure xml:id="StatkeySampling5">
             <caption> StatKey with 1000 samples of 25 words</caption>
             <image source="Sampling5.png" >
                 <shortdescription> Bell shaped with most values ranging from 3.5 to 5.3. </shortdescription>
             </image>
         </figure>
-<solution> <p> This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.  </p> </solution>
+  </statement>
+<solution> <p> This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.  </p> 
+</solution>
 </example>
 
  </subsection>
@@ -211,45 +233,49 @@ The top right graph shows the original data with 268 words with an average of 4.
   <title>Sampling Distributions for Proportions</title>
   <p> Recall at the beginning of our probability unit, where each person tossed a coin 25 times and kept track of the number of heads and tails. If we find the proportion of heads for each person, then plot those values on a dotplot, we can create a sampling distribution for proportions.  Where do you think the center of the distribution will be? </p> 
 <p>The dotplot below shows the proportion of heads for each of 62 students for 25 coin tosses. Students had between 32% and 68% heads with the mean at 51.5% and median 52%. This sampling distribution appears to be left skewed. What do you think will happen if we combine more student data? </p>
-<figure xml:id=" StatkeyCoinToss">
+<figure xml:id="StatkeyCoinToss">
             <caption> Proportion of heads in 25 coin tosses</caption>
             <image source="CoinToss1.png" >
                 <shortdescription> slightly left skewed centered at 52%. </shortdescription>
             </image>
         </figure>
 <p> This sampling distribution of 250 students for 25 coin tosses is more bell shaped and centered closer to the theoretical population parameter of 50% heads. Proportions ranged form 28% to 76% heads. </p> 
-<figure xml:id=" StatkeyCoinToss2">
+<figure xml:id="StatkeyCoinToss2">
             <caption> Proportion of heads in 25 coin tosses for 200 students</caption>
             <image source="CoinToss2.png" >
                 <shortdescription> bell shape centered at 50% heads. </shortdescription>
             </image>
         </figure>
 
-<p> <term> Using Technology </term> </p>
+  </subsection>
+
+<subsection xml:id="subsec-DistTechnologyProp">
+  <title>Using Technology: Proportions</title>
+
 <p> Since it is often difficult to create large sampling distribution, such as having 1000 students toss 25 coins to find the proportion of heads, StatKey can do the work for us. Technology allows us to simulate the coin tosses by choosing a variety of sample sizes to see how close we can get to predicting the actual proportion. </p>
 <p> Open <term>StatKey</term> and in the middle of the page we want <c>Sampling Distribution</c> and click on <c>Proportions</c>.</p>
-<figure xml:id=" StatkeySamplingProportion">
+<figure xml:id="StatkeySamplingProportion">
             <caption> StatKey Sampling Distribution Menu</caption>
             <image source="StatkeySampProp1.png" >
                 <shortdescription> Proportion is the second option under Sampling Distribution. </shortdescription>
             </image>
         </figure> 
 <p>Under the <c> Edit Proportion</c> button change the proportion to .50 and click <c> OK </c> and change the <em> Choose sample size of n = </em> <c> 50 </c> to represent 50 coin tosses in each sample. </p>
-<figure xml:id=" StatkeySamplingProportionMenu">
+<figure xml:id="StatkeySamplingProportionMenu">
             <caption> StatKey Sampling Proportion Menu</caption>
             <image source="SampProp1.png" >
                 <shortdescription> second option allows you to edit the proportion and the fourth allows you to change the sample size. </shortdescription>
             </image>
         </figure>
 <p> If you click on the <c> Generate 1 Sample </c> button then in the bottom right screen identifies how many heads in the sample of 50 coin tosses. This sample had 22 heads thus the proportion is 0.440 which is plotted on the distribution graph. </p> 
-<figure xml:id=" StatkeySamplingProportion">
+<figure xml:id="StatkeySamplingProportion">
             <caption> One Sampling Proportion </caption>
             <image source="SampProp2.png" >
                 <shortdescription> count of 22 heads from 50 coin tosses. </shortdescription>
             </image>
         </figure>
 <p> You can keep generating one sample at a time or you can jump to the <c> Generate 100 Samples </c> to generate 200 samples of 50-coin tosses.  We can see the distribution is approximately bell shaped and centered at 49%. The proportions range from 0.32 to 0.66 heads from the image below. Your distribution should look similar where the parameter is centered around 50% heads. </p> 
-<figure xml:id=" StatkeySamplingProportion3">
+<figure xml:id="StatkeySamplingProportion3">
             <caption> Sampling Distribution of 200 Proportions </caption>
             <image source="SampProp3.png" >
                 <shortdescription> proportion of heads from 200 students  tossing 50 coins. </shortdescription>
@@ -257,18 +283,28 @@ The top right graph shows the original data with 268 words with an average of 4.
         </figure>
 <p> <term> Exploration</term> </p> 
 <p> Now it is your turn to explore sampling distributions using StatKey for proportions. You can continue using the coin tosses or choose one of the pre-loaded data sets in StatKey.  </p> 
+
 <exercise> 
-<p> What happens to the shape of the sampling distribution when more samples are included?
-</p> 
+  <statement>
+    <p> What happens to the shape of the sampling distribution when more samples are included? </p> 
+  </statement>
 <solution><p> With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion. </p> </solution> 
 </exercise>
+
 <exercise> 
-<p> What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample. </p> 
-<solution><p> When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter. </p> </solution> 
+  <statement>
+    <p> What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample. </p> 
+  </statement>
+<solution><p> When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter. </p>
+</solution> 
 </exercise>
+
 <exercise> 
-<p> What happens to the standard error when each sample size increases? Explore with multiple sample sizes.  </p> 
-<solution><p> When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution. </p> </solution> 
+  <statement>
+    <p> What happens to the standard error when each sample size increases? Explore with multiple sample sizes.  </p> 
+  </statement>
+<solution><p> When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution. </p> 
+</solution> 
 </exercise>
 
 
@@ -278,6 +314,9 @@ The top right graph shows the original data with 268 words with an average of 4.
 
 <subsection xml:id="subsec-SamplingPractice">
   <title>Practice Problems</title>
+  <p> the </p> 
+
+
   </subsection>
 
 

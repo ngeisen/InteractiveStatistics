@@ -10,8 +10,8 @@
     <p> At the end of this section you will be able to:   </p>
   </introduction>
   <ol>
-    <li> <p> Construct and interpret a bootstrap distribution for the mean</p>    </li>
-    <li> <p> Construct and interpret a bootstrap distribution for proportions</p> </li>
+    <li> <p> Construct and interpret a bootstrap distribution for the mean.</p>    </li>
+    <li> <p> Construct and interpret a bootstrap distribution for proportions.</p> </li>
         
 </ol>
 </objectives>
@@ -36,18 +36,21 @@
 
 <p> We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution. </p>
 <p> To generate a bootstrap distribution, we: </p>
-<ul>
+<ol>
 <li> <p> Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size. </p> </li>
 <li> <p> Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples. </p> </li>
 <li> <p> Collect the statistics for many bootstrap samples to create a bootstrap distribution. </p> </li>
-</ul> 
+</ol> 
 <p> To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.</p> 
-<p> The purpose of replacing the card is to give us some variable in the samples we select. If we use the same 5 cars each time, there is no variation. </p> 
+<p> The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation. </p> 
 
 <p> Give example </p> 
 <p> To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology. </p> 
 
-<p> <term> Using Technology </term></p>
+</subsection>
+<subsection xml:id="subsec-BootTechnologyMean">
+  <title>Using Technology: Mean</title>
+
 <p> Open <term> StatKey </term> and in the middle column under <term> Bootstrap Confidence Intervals </term> we are going to select  <term> CI for Single Mean </term>. </p> 
 <figure xml:id="BootstrapMenu">
             <caption> Bootstrap Menu </caption>
@@ -140,17 +143,78 @@
 
 <subsection xml:id="subsec-BootstrapProportions">
   <title> Bootstrap Distributions for Proportions</title>
+
+<p>Suppose you want to find what proportion of Skittles  are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution. </p>
+<p> Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape. </p> 
+
+<figure xml:id="BootstrapSkittle1">
+            <caption> Bootstrap For 10 Bags </caption>
+            <image source="BootSkittle1.png" >
+                <shortdescription>proportions between 12.5% and 25% grape .</shortdescription>
+            </image>
+        </figure>
+<p> This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%. </p> 
+
+<figure xml:id="BootstrapSkittle2">
+            <caption> Bootstrap For 250 Bags </caption>
+            <image source="BootSkittle2.png" >
+                <shortdescription>proportions between 8% and 32% grape with higher frequencies at the center near 0.183.</shortdescription>
+            </image>
+        </figure>
+
+<p> This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%. </p> 
+
   </subsection>
 
-<p>Suppose you want to find what proportion of Skittles  are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plot them on a graph to create a distribution. </p>
-<p> Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy. </p> 
+<subsection xml:id="subsec-BootTechnologyProp">
+  <title>Using Technology: Proportions</title>
+  <p> Using StatKey to construct bootstrap distributions from a single proportion. </p> 
+<p> Launch <term>StatKey</term>, and from the center column under <term>Bootstrap Confidence Intervals</term>, select the second option <term>CI for Single Proportion</term>. </p> 
+<figure xml:id="BootstrapSkittle3">
+            <caption> StatKey Menu </caption>
+            <image source="BootSkittle3.png" >
+                <shortdescription>select the second option under Bootstrap Confidence Intervals .</shortdescription>
+            </image>
+        </figure>
+<p> Click on <c>Edit Data</c> and enter the count of 12 grape from a sample size of 65 candies and then click <c>OK</c> </p>
+<figure xml:id="BootstrapSkittle4">
+            <caption> Edit Proportion </caption>
+            <image source="BootSkittle4.png" >
+                <shortdescription>use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .</shortdescription>
+            </image>
+        </figure>
+<p> Click on <c> Generate 1 Sample</c>. On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends. </p>
+
+<figure xml:id="BootstrapSkittle5">
+            <caption> Generate Bootstrap Sample </caption>
+            <image source="BootSkittle5.png" >
+                <shortdescription>one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .</shortdescription>
+            </image>
+        </figure>
+<p> Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4/65=0.062 to 23/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047. </p> 
+
+<figure xml:id="BootstrapSkittle6">
+            <caption> Generate Bootstrap Distribution </caption>
+            <image source="BootSkittle6.png" >
+                <shortdescription>500 dots representing the proportion of grapes for each bag .</shortdescription>
+            </image>
+        </figure>
+
+<p> If you click on <c>Two-Tail</c> it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution. </p> 
+<figure xml:id="BootstrapSkittle7">
+            <caption> Bootstrap Confidence Interval</caption>
+            <image source="BootSkittle7.png" >
+                <shortdescription>Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .</shortdescription>
+            </image>
+        </figure>
 
 
-
+  </subsection>
 
 
 <subsection xml:id="subsec-BootstrapPractice">
   <title>Practice Problems</title>
+  <p> samples </p> 
   </subsection>
 
 
