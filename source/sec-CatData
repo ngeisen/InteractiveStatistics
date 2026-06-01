@@ -159,6 +159,14 @@
 </figure> 
 
 <p> See the section <term>Graphing with StatKey</term> for more information on graphing two categorical variables with technology. </p> 
+  </subsection>
+
+<subsection xml:id="subsec-CatDataExplore">
+  <title> Categorical Data Exploration </title>
+
+<p> <term> Case Study Exploration </term> </p>
+<p> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the categorical variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data from the sample. </p>
+<p> In your summary include the variable and the categories. Include the size of the sample. Summarize each category with either the count or percentage. Which categories occur most often or least frequently? Include any other observations or comparisons based on the data. What can you infer about the population? </p>
 
  </subsection>
 

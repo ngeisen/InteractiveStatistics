@@ -44,7 +44,10 @@
 <p> Another graph you may occasional see is the <term> ogive</term>, also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero. </p>
 </subsection> 
 
-<p> <term> Shapes of Distributions </term></p>
+<subsection xml:id="subsec-QNshapes">
+  <title>Shapes of Distributions</title>
+
+
 <p> When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a <term> uniform </term> distribution. The center of the distribution is around the center of the middle intervals. </p>
 <image source="ShapeUniform.png" width="60%">
                 <shortdescription> uniform with equal heights</shortdescription>
@@ -76,6 +79,8 @@
 
 <p> See the section for <em>Graphing with StatKey </em> for uploading one quantitative variable into StatKey to graph the data. </p>  
 <p>         </p>
+
+  </subsection>
 
 <subsection xml:id="subsec-Scatterplots">
   <title> Graphing Two Quantitative Variables </title>
@@ -167,10 +172,24 @@
   </subsection>
 
 
-<p>      </p>
 
+<subsection xml:id="subsec-QNexplore">
+  <title> Quantitative Data Exploration </title>
 
+<p>  <term> A. </term> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graphs and summary statistics table into a word document and summarize the data. </p>
+<p> Your summary should include at least two graphs (dotplot and boxplot if discrete, or histogram and boxplot if continuous) and the summary statistics table. Your summary of the data should report the shape of the distribution and what values appear typical. Describe any other relevant information such as outliers. </p>
+<p>  <term>B.</term> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate the relationship between <em>two</em> quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data. </p>
+<p> In the summary describe the nature of the relationship from the scatterplot and support ir with the correlation coefficient. Give the regression equation and interpret the slope. </p>
+
+<p>     </p>
 <P> <term> Other Graphs</term></P>
+
+
+
+
+  </subsection>
+
+
 
 
 
