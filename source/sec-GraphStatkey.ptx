@@ -274,14 +274,67 @@
 
   </subsection>
 
-<subsection xml:id="subsec-TwoCatStatkey">
+<subsection xml:id="subsec-TwoCategoryStatkey">
   <title> Graphing Two Categorical Variables </title>
-<p>In this section we will explore the relationship between two categorical variables. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated? </p>
+<p>In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated? </p>
 
 <p>In StatKey in the first column <em>Descriptive Statistics and Graphs</em>, select <term>Two Categorical Variables</term>, and then click the <c> Upload File </c>  button and select the two variables, I selected <em>Favorite Season</em> first and then <em>Vacation Location</em> and click on the <c> OK</c> button at the bottom right. </p>
-
+<figure xml:id="TwoCatStatkey">
+            <caption>StatKey Menu for Two Categorical Variables.</caption>
+            <image source="ChooseTwoCat.png" width="90%">
+                <shortdescription> Select the fourth option for Two categorical variables then select the two variables.</shortdescription>
+            </image>
+        </figure>  
 
 <p> Once the graph shows, check on the <c>Show Legend</c> button to show the color-coded categories for the seasons. </p>
+<figure xml:id="TwoCatVacationBar">
+            <caption>Segmented Bar graph of Vacation location and Favorite season</caption>
+            <image source="Vacation1.png" width="90%">
+                <shortdescription> Most preferred beach since tallest at 23, then mountains at 11,  theme parks at 4, staycation at 3, then cultural at 2 .</shortdescription>
+            </image>
+        </figure>  
+
+<p> <em> Graph Interpretation</em> The graph shows the segmented bar graph with the Vacation Location along the x-axis with the colors indicating which season is preferred. Brown is for Fall which occurs more often for those who prefer beach/coastal areas, for 8 out of the 43 students. Blue is for summer which also occurred 8 times in the beach/coastal area. Spring is green which occurred 4 times in the mountains and winter is red which did not occur in the Theme Parks or Staycation categories. The beach/coastal occurred most with 23 students while the city/cultural exploration only occurred twice. The Counts Table gives the frequency for each category. </p>
+
+<figure xml:id="TwoCatVacationTable">
+            <caption>Table of Frequencies for Vacation location and Favorite seasons</caption>
+            <image source="Vacation2.png" width="80%">
+                <shortdescription> Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .</shortdescription>
+            </image>
+        </figure>  
+
+<p>Click on the <c> Switch Variables </c> button to change the x-axis to the Favorite Season with the type of Vacation on the y-axis for the height of the segmented bars. </p>
+<figure xml:id="TwoCatSwitchVar">
+    <caption> Switch Variable Button</caption>
+                        <image source="Vacation3.png" width="50%">
+                <shortdescription> image of switch variable button.</shortdescription>
+            </image>
+        </figure>  
+
+<figure xml:id="TwoCatSeasonBar">
+            <caption>Segmented Bar graph of favorite seasons with vacation location</caption>
+            <image source="Vacation4.png" width="80%">
+                <shortdescription> Fall occurred 15 times, summer 11, spring 11, winter 6.</shortdescription>
+            </image>
+        </figure>  
+<p> <em>Graph Interpretation: </em> We can see the fall season occurred most often at 15 with Winter occurring least often with 6 students. Check the <c> Show Legend</c> button for the color coding of the vacation locations. Brown is the beach/coastal location which occurred 8 times in Fall and Summer. The blue Mountains occurred 4 times in Spring. The green Theme Parks did not occur in the Winter category. </p>
+<p>To find the proportion for each location by the Favorite Seasons click on the <c> Column </c> button next to Proportions. </p>
+<figure xml:id="TwoCatColumns">
+    <caption> Select Column</caption>
+                        <image source="Vacation5.png" width="50%">
+                <shortdescription> image of columns tab by proportions .</shortdescription>
+            </image>
+        </figure>  
+<figure xml:id="TwoCatSeasonTable">
+            <caption> Table of Frequencies and Proportions of favorite seasons with vacation location.</caption>
+            <image source="Vacation6.png" width="90%">
+                <shortdescription> lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.</shortdescription>
+            </image>
+        </figure>  
+<p> <em>Proportions Interpretation: </em> Looking at the proportion across each season, we can see the proportion of beach/coastal vary across the seasons which lets us know there is a possible association between the variables. The table lets us know that 53.3% of those who prefer Fall also like the beach/coastal while 72.7% of those who prefer Summer also like beach/coastal locations. The beach/coastal combined represents 53.5% of the students (which is 23 out of 43 students). About 26.7% of the students who prefer Fall also like the mountains while only 9.1% who prefer summer also prefer the mountains. </p>
+
+<p> <term> Data Exploration </term> </p>
+<p>Click on the <c> Change Column(s)</c> button near the top to change the variables. Make sure to select two categorical variables. You are going to investigate if there is an association between them. Recall you are comparing if the proportions are about the same across the second variable or if they are noticeable different. </p>
 
 
   </subsection>
@@ -316,7 +369,7 @@
 </figure>
 <p> If you click on the box <c> Show Regression Line </c>, the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line. </p> 
 
-
+<p> <term> Data Exploration </term> </p>
 
 
 </subsection>
