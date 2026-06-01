@@ -1024,7 +1024,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Graphing Categorical Data",
-  "body": " Graphing Categorical Data    At the end of this section you will able to     Organize categorical data into a frequency table.    Graph categorical data with bar graph or pie graph.    Accurately describe the data with proportions.     Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the frequency represents the number of times a particular category occurs from the raw data. This is organized in a frequency table summarizing each category with its frequency. This works best with nominal and ordinal level data.   Graphing One Categorical Variable  On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data.   Image of Raw Eye Color Data   Lists 20 eye colors.    The data is organized into 4 distinct categories. With this smaller data set we can count how many have brown eyes, how many have blue eyes, then green and hazel. With a larger data set we will use technology to help us find the frequency. From this sample there are 10 with brown eyes, 4 have blue eyes, 4 have green eyes, and 2 have hazel eyes. If we add the counts together, we get our sample of 20 students.   Image of Eye Frequency   Frequency of 10 brown, 4 blue, 4 green, and 2 hazel.    Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category.   Image of Eye Bar Graph   Bar graph showing of 10 brown, 4blue, 4 green, and 2 hazel.    The bar graph allows us to quickly see that brown occurs most often and hazel eyes occurred least often in this sample.  A relative frequency table also shows the proportion or percentage of cases that fall in each category, as shown below.   Image of Eye Relative Frequency Table   Relative frequency table showing of 50% brown, 20% blue, 20% green, and 10% hazel.    The proportion of some category is found by     Brown eyes occurred 10 times out of the sample of 20 students thus which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus which is 20% of the students.  The proportion for a sample is denoted and read \"p-hat.\"  The proportion for a population is denoted p .     What proportion of students had green eyes?   Green eyes occurred 4 times out of the sample of 20 students thus which is 20% of the students.     What proportion of students had hazel eyes?   Hazel eyes occurred 2 times out of the sample of 20 students thus which is 10% of the students.    Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occurred most often at 50% for this sample. While hazel eyes occurred the least at 10%.   Circle Graph of Eye Color   Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.    A third type of qualitative data graph is a Pareto chart , which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantage is you can visually see the more popular responses to the least popular.    Image of Pareto Chart   Pareto Chart showing of 10 brown, 4 blue, 4 green, and 2 hazel.     See the section for Graphing with StatKey for graphing one categorical variable with technology.    Graphing Two Categorical Variables  When working with two categorical variables, we often look for possible relationships between the two variables using a two-way table . The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.  We are going to investigate the possible relationship using the UNC Women's basketball data set. The dataset 22-23 UNCWBB gives the results of the UNC Women's Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were Win Loss variable which stated if the UNC team won or lost the game and the HomeAway variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set .   Image of partial data set   Lists 9 games as home\/awa and win\/loss.    The results for these variables are shown in the two-way table below. To create the table, in StatKey choose Two Categorical Variables along the left menu and select the variable WinLoss and HomeAway for the table.   Image of WB two-way table   Summarizes value for 31 games.    From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games.     As a review, is the study an experiment or an observational study?   This is an observational study since we are looking at recorded data, there was no manipulation of variables.    What proportion of games did the UNC Women's Basketball team win during the 2022-2023 season?   Solution: The team won 13 of the 31 games played, thus p(win) = 13\/31 = 0.419 so 41.9% of the games.     What proportion of games did the UNC Women's Basketball team play at Away during the 2022-2023 season?   p(away) = 16\/31 = .516 so 51.6% of the games.     Does the UNC Women's Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games?   P (win at home) = 8\/15 = .533 = 53.3%  P (win at away) = 5\/16 = 0.3125 = 31.3%  So it does appear they win more at home.       Side by side bar graph compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table.   Segmented bar graph is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories.  The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games.   Image of WB home and away   Segment bar graph comparing home and away wins.    If we switch the variables on the axes, we have the segmented bar graph below. It is easy to see there were more losses for the season.   Image of WB wins and losses   Segment bar graph comparing wins and losses.    See the section Graphing with StatKey for more information on graphing two categorical variables with technology.   "
+  "body": " Graphing Categorical Data    At the end of this section you will able to     Organize categorical data into a frequency table.    Graph categorical data with bar graph or pie graph.    Accurately describe the data with proportions.     Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the frequency represents the number of times a particular category occurs from the raw data. This is organized in a frequency table summarizing each category with its frequency. This works best with nominal and ordinal level data.   Graphing One Categorical Variable  On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data.   Image of Raw Eye Color Data   Lists 20 eye colors.    The data is organized into 4 distinct categories. With this smaller data set we can count how many have brown eyes, how many have blue eyes, then green and hazel. With a larger data set we will use technology to help us find the frequency. From this sample there are 10 with brown eyes, 4 have blue eyes, 4 have green eyes, and 2 have hazel eyes. If we add the counts together, we get our sample of 20 students.   Image of Eye Frequency   Frequency of 10 brown, 4 blue, 4 green, and 2 hazel.    Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category.   Image of Eye Bar Graph   Bar graph showing of 10 brown, 4blue, 4 green, and 2 hazel.    The bar graph allows us to quickly see that brown occurs most often and hazel eyes occurred least often in this sample.  A relative frequency table also shows the proportion or percentage of cases that fall in each category, as shown below.   Image of Eye Relative Frequency Table   Relative frequency table showing of 50% brown, 20% blue, 20% green, and 10% hazel.    The proportion of some category is found by     Brown eyes occurred 10 times out of the sample of 20 students thus which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus which is 20% of the students.  The proportion for a sample is denoted and read \"p-hat.\"  The proportion for a population is denoted p .     What proportion of students had green eyes?   Green eyes occurred 4 times out of the sample of 20 students thus which is 20% of the students.     What proportion of students had hazel eyes?   Hazel eyes occurred 2 times out of the sample of 20 students thus which is 10% of the students.    Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories. Pie graphs are useful for comparing the size of the categories. We can see that brown eyes occurred most often at 50% for this sample. While hazel eyes occurred the least at 10%.   Circle Graph of Eye Color   Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.    A third type of qualitative data graph is a Pareto chart , which is just a bar chart with the bars sorted with the highest frequencies on the left and the smallest frequencies on the right. The advantage is you can visually see the more popular responses to the least popular.    Image of Pareto Chart   Pareto Chart showing of 10 brown, 4 blue, 4 green, and 2 hazel.     See the section for Graphing with StatKey for graphing one categorical variable with technology.    Graphing Two Categorical Variables  When working with two categorical variables, we often look for possible relationships between the two variables using a two-way table . The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.  We are going to investigate the possible relationship using the UNC Women's basketball data set. The dataset 22-23 UNCWBB gives the results of the UNC Women's Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were Win Loss variable which stated if the UNC team won or lost the game and the HomeAway variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set .   Image of partial data set   Lists 9 games as home\/awa and win\/loss.    The results for these variables are shown in the two-way table below. To create the table, in StatKey choose Two Categorical Variables along the left menu and select the variable WinLoss and HomeAway for the table.   Image of WB two-way table   Summarizes value for 31 games.    From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games.     As a review, is the study an experiment or an observational study?   This is an observational study since we are looking at recorded data, there was no manipulation of variables.    What proportion of games did the UNC Women's Basketball team win during the 2022-2023 season?   Solution: The team won 13 of the 31 games played, thus p(win) = 13\/31 = 0.419 so 41.9% of the games.     What proportion of games did the UNC Women's Basketball team play at Away during the 2022-2023 season?   p(away) = 16\/31 = .516 so 51.6% of the games.     Does the UNC Women's Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games?   P (win at home) = 8\/15 = .533 = 53.3%  P (win at away) = 5\/16 = 0.3125 = 31.3%  So it does appear they win more at home.       Side by side bar graph compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table.   Segmented bar graph is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories.  The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games.   Image of WB home and away   Segment bar graph comparing home and away wins.    If we switch the variables on the axes, we have the segmented bar graph below. It is easy to see there were more losses for the season.   Image of WB wins and losses   Segment bar graph comparing wins and losses.    See the section Graphing with StatKey for more information on graphing two categorical variables with technology.    Categorical Data Exploration   Case Study Exploration   Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the categorical variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data from the sample.  In your summary include the variable and the categories. Include the size of the sample. Summarize each category with either the count or percentage. Which categories occur most often or least frequently? Include any other observations or comparisons based on the data. What can you infer about the population?   "
 },
 {
   "id": "sec-CatData-2",
@@ -1270,13 +1270,22 @@ var ptx_lunr_docs = [
   "body": "Graphing with StatKey "
 },
 {
+  "id": "subsec-CatDataExplore-2",
+  "level": "2",
+  "url": "sec-CatData.html#subsec-CatDataExplore-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Case Study Exploration "
+},
+{
   "id": "sec-QuantData",
   "level": "1",
   "url": "sec-QuantData.html",
   "type": "Section",
   "number": "2.2",
   "title": "Graphing Quantitative Data",
-  "body": " Graphing Quantitative Data    At the end of this section you will able to     Graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data.    Describe the relationship from scatterplots.    Interpret graphs.     In this course we will use technology to graph quantitative data. So our focus will be on interpreting the information from the graph. The three graphs we will use the most are dotplots, boxplots, and histograms.   Graphing One Quantitative Variable  A dotplot is a graph where the values are listed along the x-axis and each dot represents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos for each student from a sample of 43 students.   image of number of tattoos    Interpret Dotplot: From the dotplot we can see there are 43 dots for the sample of 43 students. Clearly 0 tattoos occur most often (26 students). There are 7 students with 1 tattoo, one student with 2 tattoos, one student with 3 tattoos, four students with 4 tattoos, two students with 5 tattoos. There is one student with 10 and one student with 12 tattoos. The data is from Survey 2  A histogram is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution.   histogram of student weights    Interpret Histogram: The histogram created by StatKey shows the weights, in pounds, from a sample of 42 students. The lightest student weight is 115 pounds while the largest weight is 303 pounds. Most students are between 125 and 225 pounds. The width of each interval is 25 pounds creating 9 subdivisions. There are 12 students whose weights are between 150 and 175 pounds. The mean weight is 171.1 pounds. Data found in Survey1.  A boxplot splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots because the box represents the middle 50% of the data and there is a whisker to the smallest value and a whisker to the largest value.   boxplot of student weights    Interpret Boxplot: The boxplot created by StatKey shows the weights, in pounds, from a sample of 42 students. The minimum student weight is 115 pounds while the maximum weight is 303 pounds. Most students are between 140 and 200 pounds, represented by the box for the middle 50% of the student weights. The middle line represents the median of 163.5 pounds. Data found in Survey 1.  An outlier is a data value that is much larger or smaller than the rest of the data. This may indicate an unusual value. The student weight of 303 is an outlier as indicated by the star in the boxplot.  Another graph you may occasional see is the ogive , also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero.    Shapes of Distributions  When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is refered to as normally distributed. Symmeteric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the rigt side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps     See the section for Graphing with StatKey for uploading one quantitative variable into StatKey to graph the data.     Graphing Two Quantitative Variables  There are times when we want to determine whether a relationship exists between two quantitative variables. This can visually be seen with a scatterplot where the data are plotted as points. The independent variable, also known as the explanatory variable, is scaled along the x-axis and the dependent variable, also known as the response variable, is scaled along the y-axis. Once the data is plotted as paired points (x,y) we can describe the pattern between the two variables.   Correlation is a statistical method used to determine whether a relationship between two quantitative variables exists.  For now, we will focus on simple linear relationships. If the pattern shows that the y-values are increasing as the x-values increase, then we have a positive correlation . If the points form an approximate line, then it’s a positive linear relationship. A negative correlation exists when one variable increase while the other variable decreases. If the points form a line, then it’s a negative linear relationship. If the points appear more random and there is no pattern, then there is typically a weak or no correlation thus no relationship exists between the two variables.  We use the correlation coefficient to describe the strength of the linear relationship as well as its direction (as positive or negative). The sample correlation coefficient value is designated as r and the population value as ρ (rho). The range of values is from -1 to +1. If there is a strong positive linear relationship, the value of r is closer to +1. If there is a strong negative linear relationship, the value of r is closer to -1. If there is no linear relationship or if there is a weak relationship, the value of r is close to 0. When the correlation values are close to +0.5 or -0.5 we will call that a moderate relationship.  First, let's use some intuitive reasoning to determine if a relationship may exist. For the following situations, do you think there is a positive relationship, negative relationship or no relationship?  We are going to investigate if there is a relationship between a person’s height and his\/her shoe size using the first day survey. If we know a person’s height, are we able to predict his\/her shoe size? Or if we know a person’s shoe size, can we predict his\/her height? Let’s find out. We will use technology to help us create the scatterplot and find the correlation value.  Link to StatKey.   Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    Interpreting graph: From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.  If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    A few words of warning: just because a correlation between variables exists it does not indicate one variable causes the other to occur. It is possible a third variable, known as a lurking variable, may account for the correlation. Just because a student is tall, does not cause their shoe size to be large. Just as having a larger shoe size does not cause a student to be taller. When working with observational studies, we cannot assume causation even if there is a strong correlation between variables.   Practice   Now let's investigate the type of relationship between a person's weight and height. Do you think this will be positive, negative, or no relationship? Click on the Change Columns to change the variables and describe the nature of the relationship from the scatterplot and the correlation coefficient.   Image of Scatterplot for Weight and Height   Scatterplot with weight on x-axis and height on y.     Correlation Coefficient   Compute the correlation coefficient between weight and height.    Correlation Coefficient r = 0.623.     Type of Relationship   Identify the type of relationship between weight and height.    There's a moderate positive linear relationship.     Describe the Relationship   Describe the relationship between weight and height.    As student's weights increase, their heights also increase.     Slope   Identify the slope when x= weight and y=height.    Slope = 0.077 is positive.     Y-intercept   Identify the y-intercept when x=weight and y=height.    The y-intercept = 54.692 inches.     Regression Equation   Identify the regression equation where x= weight and y=height.    Height = 0.077(weight)+54.692 or .        Other Graphs  "
+  "body": " Graphing Quantitative Data    At the end of this section you will able to     Graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data.    Describe the relationship from scatterplots.    Interpret graphs.     In this course we will use technology to graph quantitative data. So our focus will be on interpreting the information from the graph. The three graphs we will use the most are dotplots, boxplots, and histograms.   Graphing One Quantitative Variable  A dotplot is a graph where the values are listed along the x-axis and each dot represents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos for each student from a sample of 43 students.   image of number of tattoos    Interpret Dotplot: From the dotplot we can see there are 43 dots for the sample of 43 students. Clearly 0 tattoos occur most often (26 students). There are 7 students with 1 tattoo, one student with 2 tattoos, one student with 3 tattoos, four students with 4 tattoos, two students with 5 tattoos. There is one student with 10 and one student with 12 tattoos. The data is from Survey 2  A histogram is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution.   histogram of student weights    Interpret Histogram: The histogram created by StatKey shows the weights, in pounds, from a sample of 42 students. The lightest student weight is 115 pounds while the largest weight is 303 pounds. Most students are between 125 and 225 pounds. The width of each interval is 25 pounds creating 9 subdivisions. There are 12 students whose weights are between 150 and 175 pounds. The mean weight is 171.1 pounds. Data found in Survey1.  A boxplot splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots because the box represents the middle 50% of the data and there is a whisker to the smallest value and a whisker to the largest value.   boxplot of student weights    Interpret Boxplot: The boxplot created by StatKey shows the weights, in pounds, from a sample of 42 students. The minimum student weight is 115 pounds while the maximum weight is 303 pounds. Most students are between 140 and 200 pounds, represented by the box for the middle 50% of the student weights. The middle line represents the median of 163.5 pounds. Data found in Survey 1.  An outlier is a data value that is much larger or smaller than the rest of the data. This may indicate an unusual value. The student weight of 303 is an outlier as indicated by the star in the boxplot.  Another graph you may occasional see is the ogive , also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero.    Shapes of Distributions  When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is refered to as normally distributed. Symmeteric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the rigt side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps     See the section for Graphing with StatKey for uploading one quantitative variable into StatKey to graph the data.      Graphing Two Quantitative Variables  There are times when we want to determine whether a relationship exists between two quantitative variables. This can visually be seen with a scatterplot where the data are plotted as points. The independent variable, also known as the explanatory variable, is scaled along the x-axis and the dependent variable, also known as the response variable, is scaled along the y-axis. Once the data is plotted as paired points (x,y) we can describe the pattern between the two variables.   Correlation is a statistical method used to determine whether a relationship between two quantitative variables exists.  For now, we will focus on simple linear relationships. If the pattern shows that the y-values are increasing as the x-values increase, then we have a positive correlation . If the points form an approximate line, then it’s a positive linear relationship. A negative correlation exists when one variable increase while the other variable decreases. If the points form a line, then it’s a negative linear relationship. If the points appear more random and there is no pattern, then there is typically a weak or no correlation thus no relationship exists between the two variables.  We use the correlation coefficient to describe the strength of the linear relationship as well as its direction (as positive or negative). The sample correlation coefficient value is designated as r and the population value as ρ (rho). The range of values is from -1 to +1. If there is a strong positive linear relationship, the value of r is closer to +1. If there is a strong negative linear relationship, the value of r is closer to -1. If there is no linear relationship or if there is a weak relationship, the value of r is close to 0. When the correlation values are close to +0.5 or -0.5 we will call that a moderate relationship.  First, let's use some intuitive reasoning to determine if a relationship may exist. For the following situations, do you think there is a positive relationship, negative relationship or no relationship?  We are going to investigate if there is a relationship between a person’s height and his\/her shoe size using the first day survey. If we know a person’s height, are we able to predict his\/her shoe size? Or if we know a person’s shoe size, can we predict his\/her height? Let’s find out. We will use technology to help us create the scatterplot and find the correlation value.  Link to StatKey.   Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    Interpreting graph: From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.  If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    A few words of warning: just because a correlation between variables exists it does not indicate one variable causes the other to occur. It is possible a third variable, known as a lurking variable, may account for the correlation. Just because a student is tall, does not cause their shoe size to be large. Just as having a larger shoe size does not cause a student to be taller. When working with observational studies, we cannot assume causation even if there is a strong correlation between variables.   Practice   Now let's investigate the type of relationship between a person's weight and height. Do you think this will be positive, negative, or no relationship? Click on the Change Columns to change the variables and describe the nature of the relationship from the scatterplot and the correlation coefficient.   Image of Scatterplot for Weight and Height   Scatterplot with weight on x-axis and height on y.     Correlation Coefficient   Compute the correlation coefficient between weight and height.    Correlation Coefficient r = 0.623.     Type of Relationship   Identify the type of relationship between weight and height.    There's a moderate positive linear relationship.     Describe the Relationship   Describe the relationship between weight and height.    As student's weights increase, their heights also increase.     Slope   Identify the slope when x= weight and y=height.    Slope = 0.077 is positive.     Y-intercept   Identify the y-intercept when x=weight and y=height.    The y-intercept = 54.692 inches.     Regression Equation   Identify the regression equation where x= weight and y=height.    Height = 0.077(weight)+54.692 or .      Quantitative Data Exploration   A. Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graphs and summary statistics table into a word document and summarize the data.  Your summary should include at least two graphs (dotplot and boxplot if discrete, or histogram and boxplot if continuous) and the summary statistics table. Your summary of the data should report the shape of the distribution and what values appear typical. Describe any other relevant information such as outliers.   B. Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate the relationship between two quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data.  In the summary describe the nature of the relationship from the scatterplot and support ir with the correlation coefficient. Give the regression equation and interpret the slope.     Other Graphs   "
 },
 {
   "id": "sec-QuantData-2",
@@ -1333,54 +1342,45 @@ var ptx_lunr_docs = [
   "body": "ogive "
 },
 {
-  "id": "sec-QuantData-5",
+  "id": "subsec-QNshapes-2",
   "level": "2",
-  "url": "sec-QuantData.html#sec-QuantData-5",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Shapes of Distributions "
-},
-{
-  "id": "sec-QuantData-6",
-  "level": "2",
-  "url": "sec-QuantData.html#sec-QuantData-6",
+  "url": "sec-QuantData.html#subsec-QNshapes-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "uniform "
 },
 {
-  "id": "sec-QuantData-9",
+  "id": "subsec-QNshapes-5",
   "level": "2",
-  "url": "sec-QuantData.html#sec-QuantData-9",
+  "url": "sec-QuantData.html#subsec-QNshapes-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "normally "
 },
 {
-  "id": "sec-QuantData-12",
+  "id": "subsec-QNshapes-8",
   "level": "2",
-  "url": "sec-QuantData.html#sec-QuantData-12",
+  "url": "sec-QuantData.html#subsec-QNshapes-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "left skewed "
 },
 {
-  "id": "sec-QuantData-15",
+  "id": "subsec-QNshapes-11",
   "level": "2",
-  "url": "sec-QuantData.html#sec-QuantData-15",
+  "url": "sec-QuantData.html#subsec-QNshapes-11",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "right skewed "
 },
 {
-  "id": "sec-QuantData-18",
+  "id": "subsec-QNshapes-14",
   "level": "2",
-  "url": "sec-QuantData.html#sec-QuantData-18",
+  "url": "sec-QuantData.html#subsec-QNshapes-14",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1513,13 +1513,31 @@ var ptx_lunr_docs = [
   "body": " Regression Equation   Identify the regression equation where x= weight and y=height.    Height = 0.077(weight)+54.692 or .   "
 },
 {
+  "id": "subsec-QNexplore-2",
+  "level": "2",
+  "url": "sec-QuantData.html#subsec-QNexplore-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "A. "
+},
+{
+  "id": "subsec-QNexplore-4",
+  "level": "2",
+  "url": "sec-QuantData.html#subsec-QNexplore-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "B. "
+},
+{
   "id": "sec-QuantStats",
   "level": "1",
   "url": "sec-QuantStats.html",
   "type": "Section",
   "number": "2.3",
   "title": "Summary Statistics",
-  "body": " Summary Statistics   In this section we will investigate some ways to summarize the data with graphs and numerical statistics.     At the end of this section you will be able to:     Describe the center of the data with mean, median, mode.    Describe the spread of a data with range of values.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Sample: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .  The range of a data set is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are.   Sample: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 apps per phone. The range is 72 - 25 = 47 apps, which represents the spread in the number of apps on these phones.   measures of center  Find the mode, median, and mean for the data set 4, 5, 6?  Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values.  No mode, median = 5, mean = 5    Find the mean      Find the measures of center   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72    bimodal with modes 36 and 72, median = 42 and mean = 48.167    This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.    "
+  "body": " Summary Statistics   In this section we will investigate some ways to summarize the data with graphs and numerical statistics.     At the end of this section you will be able to:     Describe the center of the data with mean, median, mode.    Describe the spread of a data with range of values.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Example: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often (twice). Since there are five values, the middle value is 25, 36, 36 , 48, 72, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .  The range of a data set is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are.   Example: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 apps per phone. The range is 72 - 25 = 47 apps, which represents the spread in the number of apps on these phones.   measures of center  Find the mode, median, and mean for the data set 4, 5, 6?  Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values.  No mode, median = 5, mean = 5    No mode since each value occurs just once.  The middle value is 4, 5 , 6 thus median is 5.  Find the mean      Find the measures of center   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72    bimodal with modes 36 and 72, median = 42 and mean = 48.167    This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.     Data Exploration   Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste a graph and the summary statistics table into a word document and summarize the statistics from the sample. For the variable identified state the mean, median, mode, and range. Relate these values to one of the graphs.  "
 },
 {
   "id": "sec-QuantStats-3",
@@ -1573,7 +1591,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Sample: "
+  "body": "Example: "
 },
 {
   "id": "sec-QuantStats-9",
@@ -1600,7 +1618,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Sample: "
+  "body": "Example: "
 },
 {
   "id": "sec-QuantStats-13",
@@ -1618,7 +1636,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "2.3.1",
   "title": "measures of center.",
-  "body": " measures of center  Find the mode, median, and mean for the data set 4, 5, 6?  Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values.  No mode, median = 5, mean = 5    Find the mean    "
+  "body": " measures of center  Find the mode, median, and mean for the data set 4, 5, 6?  Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values.  No mode, median = 5, mean = 5    No mode since each value occurs just once.  The middle value is 4, 5 , 6 thus median is 5.  Find the mean    "
 },
 {
   "id": "sec-QuantStats-15",
@@ -1628,6 +1646,15 @@ var ptx_lunr_docs = [
   "number": "2.3.2",
   "title": "Find the measures of center.",
   "body": " Find the measures of center   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72    bimodal with modes 36 and 72, median = 42 and mean = 48.167    This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.   "
+},
+{
+  "id": "sec-QuantStats-16",
+  "level": "2",
+  "url": "sec-QuantStats.html#sec-QuantStats-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data Exploration "
 },
 {
   "id": "sec-MultiGraphs",
@@ -1765,18 +1792,18 @@ var ptx_lunr_docs = [
   "body": "Graph Exploration "
 },
 {
-  "id": "sec-GraphStatky",
+  "id": "sec-GraphStatkey",
   "level": "1",
-  "url": "sec-GraphStatky.html",
+  "url": "sec-GraphStatkey.html",
   "type": "Section",
   "number": "2.5",
   "title": "Graphing with StatKey",
-  "body": " Graphing with StatKey  In this section we will focus on how to graph data with technology. We will be using StatKey which is an online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet.  We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data.     Graphing One Categorical Variable  First, we will explore student eye color which is a categorical variable. StatKey will construct a bar graph and frequency table for the eye colors.  Click on the following link to take you to StatKey   Download the csv file ClassSurvey1.csv posted in Canvas and save to your computer where it is easily accessible. We are going to upload the data file to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer and click open . Identify which variable you will analyze (Eye Color) and click OK near the bottom of the window.   image to click on eye color label.   The program constructs a bar graph and frequency table. The output image is below.   Sample image of StatKey output.   Bar graph and frequency table of the students eye color from StatKey.       Interpreting the Bar Graph   From the bar graph we can see that most students have brown eyes (28 students which represents 66.67% of the class) and hazel eyes occur the least often with just 3 students. From the frequency table we see the sample consisting of 42 UNC students. There are 6 students with blue eyes and 5 students with green eyes.   Checkpoint Using the eye color graph above, which of the following statements are correct? Select all that apply.   Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    Brown eyes is represented by the tallest bar.      Blue eyes occurred 14.3%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table for 42 total.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.        Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the Change Column button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the Show Data Table button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape.      Graphing One Quantitative Variable  In this section we will explore the number of siblings for these UNC students. This is a discrete quantitative variable (although one student claimed 1.5 siblings). StatKey will construct a dotplot, histogram, and boxplot for the data. StatKey will also create a Summary Statistics table identifying the sample size, mean, median, standard deviation, and the five-number summary.  Click on the following link to take you to StatKey   Download the csv file ClassSurvey1.csv posted in the Data Set Chapter and save to your computer where it is easily accessible. We are going to analyze the numerical data.  Under the Descriptive Statistics and Graph column on the left, choose the One Quantitative Variable .   Image of StatKey menu   The first option under descriptive statistics menu is the one quantitative variable.    Click on the Upload File button and locate the data file on your computer and click open . Identify which numerical variable you will analyze (Siblings) and click the OK button at the bottom right of the window.   select sibling variable.   The program will construct all three graphs and the summary table.   StatKey Output of Sibling Dotplot   Dotplot showing 0 to 7 siblings with most at 2 siblings.     Interpreting the Dotplot: We can see there are three students with 0 siblings (minimum) and one student with 7 siblings (maximum). Most students have 1-3 siblings, with 2 siblings occurring most for 15 students. Recall each dot represents the number of siblings for that student, thus there are 42 dots to represent the sample size of 42 students. You can hover over a dot to display the value. The summary statistics table is on the right identifying the mean, median, and standard deviation.  If we click on the Histogram button we can see the histogram graph and the summary statistics table.   StatKey Output of Histogram   Histogram showing bars for siblings.     Interpreting the Histogram: We can see the data is grouped into 10 bars (although we see just 7 since some intervals are empty). On the right side we can use the slider to change the number of bars for the histogram. Shift the slider left so you have 8 buckets. This is a better histogram. We can see that the histograms are right skewed since most values are on the left side with a few far to the right. A few larger values pull the mean to the right, thus right skewed.  Next, click on the Boxplot button to see the boxplot graph, also known as a box-and-whisker plot.   StatKey Output of Boxplot   Boxplot showing box around 1-3 siblings.     Interpreting the Boxplot: The boxplot displays the five-number summary. The box represents the quartiles Q1 = 1 sibling and Q3 = 3 siblings, with the middle line representing the median of 2 siblings. The whisker goes left to the smallest value of 0 and the right whisker to the largest value of 7 siblings. In this case, 7 siblings is an outlier as indicated by the star or asterisk. The summary statistics table identifies the values for the five-number summary.  Click on the Change Columns button to change variables. Weights and Heights are continuous quantitative variables. Investigate the shape of the graphs, where the center is represented, and how spread out the values are. Use the boxplot to check for outliers.    One Categorical and One Quantitative Variable    Graphing Two Categorical Variables    Graphing Two Quantitative Variables   We are going to investigate if there is a relationship between a person’s height and his\/her shoe size using the first day survey.  Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    If you click on the box Show Regression Line , the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line.  "
+  "body": " Graphing with StatKey   In this section we will focus on how to graph data with technology. We will be using StatKey which is a free online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet.  We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data.  Save the following data file on your computer where it is easily accessible:   ClassSurvey1.csv     Graphing One Categorical Variable  First, we will explore student eye color which is a categorical variable. StatKey will construct a bar graph and frequency table for the eye colors.  Click on the following link to take you to StatKey   Download the csv file ClassSurvey1.csv posted in Canvas and save to your computer where it is easily accessible. We are going to upload the data file to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer and click open . Identify which variable you will analyze (Eye Color) and click OK near the bottom of the window.   image to click on eye color label.   The program constructs a bar graph and frequency table. The output image is below.   Bar Graph from StatKey Output.   Bar graph and frequency table of the students eye color from StatKey.       Interpreting the Bar Graph   From the bar graph we can see that most students have brown eyes (28 students which represents 66.67% of the class) and hazel eyes occur the least often with just 3 students. From the frequency table we see the sample consisting of 42 UNC students. There are 6 students with blue eyes and 5 students with green eyes.   Checkpoint Using the eye color graph above, which of the following statements are correct? Select all that apply.   Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    Brown eyes is represented by the tallest bar.      Blue eyes occurred 14.3%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table for 42 total.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.        Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the Change Column button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the Show Data Table button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape.      Graphing One Quantitative Variable  In this section we will explore the number of siblings for these UNC students. This is a discrete quantitative variable (although one student claimed 1.5 siblings). StatKey will construct a dotplot, histogram, and boxplot for the data. StatKey will also create a Summary Statistics table identifying the sample size, mean, median, standard deviation, and the five-number summary.  Click on the following link to take you to StatKey   Download the csv file ClassSurvey1.csv posted in the Data Set Chapter and save to your computer where it is easily accessible. We are going to analyze the numerical data.  Under the Descriptive Statistics and Graph column on the left, choose the One Quantitative Variable .   Image of StatKey menu   The first option under descriptive statistics menu is the one quantitative variable.    Click on the Upload File button and locate the data file on your computer and click open . Identify which numerical variable you will analyze (Siblings) and click the OK button at the bottom right of the window.   select sibling variable.   The program will construct all three graphs and the summary table.   StatKey Output of Sibling Dotplot   Dotplot showing 0 to 7 siblings with most at 2 siblings.     Interpreting the Dotplot: We can see there are three students with 0 siblings (minimum) and one student with 7 siblings (maximum). Most students have 1-3 siblings, with 2 siblings occurring most for 15 students. Recall each dot represents the number of siblings for that student, thus there are 42 dots to represent the sample size of 42 students. You can hover over a dot to display the value. The summary statistics table is on the right identifying the mean, median, and standard deviation.  If we click on the Histogram button we can see the histogram graph and the summary statistics table.   StatKey Output of Histogram   Histogram showing bars for siblings.     Interpreting the Histogram: We can see the data is grouped into 10 bars (although we see just 7 since some intervals are empty). On the right side we can use the slider to change the number of bars for the histogram. Shift the slider left so you have 8 buckets. This is a better histogram. We can see that the histograms are right skewed since most values are on the left side with a few far to the right. A few larger values pull the mean to the right, thus right skewed.  Next, click on the Boxplot button to see the boxplot graph, also known as a box-and-whisker plot.   StatKey Output of Boxplot   Boxplot showing box around 1-3 siblings.     Interpreting the Boxplot: The boxplot displays the five-number summary. The box represents the quartiles Q1 = 1 sibling and Q3 = 3 siblings, with the middle line representing the median of 2 siblings. The whisker goes left to the smallest value of 0 and the right whisker to the largest value of 7 siblings. In this case, 7 siblings is an outlier as indicated by the star or asterisk. The summary statistics table identifies the values for the five-number summary.  Click on the Change Columns button to change variables. Weights and Heights are continuous quantitative variables. Investigate the shape of the graphs, where the center is represented, and how spread out the values are. Use the boxplot to check for outliers.   Dotplot of Weights   Use the dotplot to answer the questions about student weights, measured in pounds.   Dotplot of Student Weights   dots representing weights of students between 115 and 303 pounds. Most students are between 150 and 200 pounds.    A. Which weight occurs most often for this class?  B. What is the largest weight of a student?  C. What is the mean weight of students?    A. If you hover over the dots, you will see 200 pounds occurred most often.    B. 303 pounds is the maximum weight.    C. The mean weight is 171.1 pounds with median of 163.5 pounds.     Histogram of Weights   Use the histogram to answer the questions about student weights, measured in pounds.   Histogram of Student Weights   Histogram representing weights of students between 115 and 303 pounds with more students below 200 pounds.    A. Describe the shape of the weight distribution?  B. Which is larger, the mean or median?    A. The distribution is right skewed.    B. The mean = 171.1 pounds is larger since right skewed with median =163.5 pounds.     Boxplot of Weights   Use the boxplot to answer the questions about student weights, measured in pounds.   Boxplot of Student Weights   Boxplot represents weights of students between 115 and 303 pounds with box bounded at 140 and 200 pounds.    A. Are there any outliers?  B. What does the box in the graph represent?    A. Yes, the value of 303 pounds is an outlier and marked as an asterisk.    B. The box represents the middle 50% of the values which are between 140 pounds and 200 pounds with the median of 163.5 pounds as the vertical line.      One Categorical and One Quantitative Variable  In this section we will explore a quantitative variable which is grouped by a categorical variable. From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.  In StatKey in the first column Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variables , and then click the Upload File button and select the two variables.   StatKey Menu   In first column select third option of one quantitative and one categorical variable.    Make sure to select the quantitative variables first: Tattoos and then the categorical variable of Dominant hand . Then click the OK button at the bottom right.   Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.    The program will create three dotplots, one for each category.   Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.     Graph Interpretation Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos.   Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.    The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values.  You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot.   Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.     Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.      Graphing Two Categorical Variables  In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated?  In StatKey in the first column Descriptive Statistics and Graphs , select Two Categorical Variables , and then click the Upload File button and select the two variables, I selected Favorite Season first and then Vacation Location and click on the OK button at the bottom right.   StatKey Menu for Two Categorical Variables.   Select the fourth option for Two categorical variables then select the two variables.    Once the graph shows, check on the Show Legend button to show the color-coded categories for the seasons.   Segmented Bar graph of Vacation location and Favorite season   Most preferred beach since tallest at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .     Graph Interpretation The graph shows the segmented bar graph with the Vacation Location along the x-axis with the colors indicating which season is preferred. Brown is for Fall which occurs more often for those who prefer beach\/coastal areas, for 8 out of the 43 students. Blue is for summer which also occurred 8 times in the beach\/coastal area. Spring is green which occurred 4 times in the mountains and winter is red which did not occur in the Theme Parks or Staycation categories. The beach\/coastal occurred most with 23 students while the city\/cultural exploration only occurred twice. The Counts Table gives the frequency for each category.   Table of Frequencies for Vacation location and Favorite seasons   Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .    Click on the Switch Variables button to change the x-axis to the Favorite Season with the type of Vacation on the y-axis for the height of the segmented bars.   Switch Variable Button   image of switch variable button.     Segmented Bar graph of favorite seasons with vacation location   Fall occurred 15 times, summer 11, spring 11, winter 6.     Graph Interpretation: We can see the fall season occurred most often at 15 with Winter occurring least often with 6 students. Check the Show Legend button for the color coding of the vacation locations. Brown is the beach\/coastal location which occurred 8 times in Fall and Summer. The blue Mountains occurred 4 times in Spring. The green Theme Parks did not occur in the Winter category.  To find the proportion for each location by the Favorite Seasons click on the Column button next to Proportions.   Select Column   image of columns tab by proportions .     Table of Frequencies and Proportions of favorite seasons with vacation location.   lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.     Proportions Interpretation: Looking at the proportion across each season, we can see the proportion of beach\/coastal vary across the seasons which lets us know there is a possible association between the variables. The table lets us know that 53.3% of those who prefer Fall also like the beach\/coastal while 72.7% of those who prefer Summer also like beach\/coastal locations. The beach\/coastal combined represents 53.5% of the students (which is 23 out of 43 students). About 26.7% of the students who prefer Fall also like the mountains while only 9.1% who prefer summer also prefer the mountains.   Data Exploration   Click on the Change Column(s) button near the top to change the variables. Make sure to select two categorical variables. You are going to investigate if there is an association between them. Recall you are comparing if the proportions are about the same across the second variable or if they are noticeable different.    Graphing Two Quantitative Variables  We are going to investigate if there is a relationship between a person's height and his\/her shoe size using the first day survey.  Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    If you click on the box Show Regression Line , the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line.   Data Exploration    "
 },
 {
-  "id": "sec-GraphStatky-2",
+  "id": "sec-GraphStatkey-2-1",
   "level": "2",
-  "url": "sec-GraphStatky.html#sec-GraphStatky-2",
+  "url": "sec-GraphStatkey.html#sec-GraphStatkey-2-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1785,7 +1812,7 @@ var ptx_lunr_docs = [
 {
   "id": "OneCatStatKey",
   "level": "2",
-  "url": "sec-GraphStatky.html#OneCatStatKey",
+  "url": "sec-GraphStatkey.html#OneCatStatKey",
   "type": "Figure",
   "number": "2.5.1",
   "title": "",
@@ -1794,16 +1821,25 @@ var ptx_lunr_docs = [
 {
   "id": "StatKeyEyeColor",
   "level": "2",
-  "url": "sec-GraphStatky.html#StatKeyEyeColor",
+  "url": "sec-GraphStatkey.html#StatKeyEyeColor",
   "type": "Figure",
   "number": "2.5.2",
   "title": "",
-  "body": " Sample image of StatKey output.   Bar graph and frequency table of the students eye color from StatKey.   "
+  "body": " Bar Graph from StatKey Output.   Bar graph and frequency table of the students eye color from StatKey.   "
+},
+{
+  "id": "subsec-OneCatStatkey-12",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-OneCatStatkey-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Interpreting the Bar Graph "
 },
 {
   "id": "subsec-OneCatStatkey-14",
   "level": "2",
-  "url": "sec-GraphStatky.html#subsec-OneCatStatkey-14",
+  "url": "sec-GraphStatkey.html#subsec-OneCatStatkey-14",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1812,7 +1848,7 @@ var ptx_lunr_docs = [
 {
   "id": "EyeColor-matching",
   "level": "2",
-  "url": "sec-GraphStatky.html#EyeColor-matching",
+  "url": "sec-GraphStatkey.html#EyeColor-matching",
   "type": "Checkpoint",
   "number": "2.5.3",
   "title": "Interpreting information from a graph.",
@@ -1821,7 +1857,7 @@ var ptx_lunr_docs = [
 {
   "id": "OneQuantStatKey",
   "level": "2",
-  "url": "sec-GraphStatky.html#OneQuantStatKey",
+  "url": "sec-GraphStatkey.html#OneQuantStatKey",
   "type": "Figure",
   "number": "2.5.4",
   "title": "",
@@ -1830,7 +1866,7 @@ var ptx_lunr_docs = [
 {
   "id": "SiblingDotsStatKey",
   "level": "2",
-  "url": "sec-GraphStatky.html#SiblingDotsStatKey",
+  "url": "sec-GraphStatkey.html#SiblingDotsStatKey",
   "type": "Figure",
   "number": "2.5.5",
   "title": "",
@@ -1839,7 +1875,7 @@ var ptx_lunr_docs = [
 {
   "id": "SiblingHistogramStatKey",
   "level": "2",
-  "url": "sec-GraphStatky.html#SiblingHistogramStatKey",
+  "url": "sec-GraphStatkey.html#SiblingHistogramStatKey",
   "type": "Figure",
   "number": "2.5.6",
   "title": "",
@@ -1848,29 +1884,209 @@ var ptx_lunr_docs = [
 {
   "id": "SiblingBoxplotStatKey",
   "level": "2",
-  "url": "sec-GraphStatky.html#SiblingBoxplotStatKey",
+  "url": "sec-GraphStatkey.html#SiblingBoxplotStatKey",
   "type": "Figure",
   "number": "2.5.7",
   "title": "",
   "body": " StatKey Output of Boxplot   Boxplot showing box around 1-3 siblings.   "
 },
 {
+  "id": "subsec-OneQuantStatkey-19",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-OneQuantStatkey-19",
+  "type": "Checkpoint",
+  "number": "2.5.8",
+  "title": "Dotplot of Weights.",
+  "body": " Dotplot of Weights   Use the dotplot to answer the questions about student weights, measured in pounds.   Dotplot of Student Weights   dots representing weights of students between 115 and 303 pounds. Most students are between 150 and 200 pounds.    A. Which weight occurs most often for this class?  B. What is the largest weight of a student?  C. What is the mean weight of students?    A. If you hover over the dots, you will see 200 pounds occurred most often.    B. 303 pounds is the maximum weight.    C. The mean weight is 171.1 pounds with median of 163.5 pounds.   "
+},
+{
+  "id": "subsec-OneQuantStatkey-20",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-OneQuantStatkey-20",
+  "type": "Checkpoint",
+  "number": "2.5.10",
+  "title": "Histogram of Weights.",
+  "body": " Histogram of Weights   Use the histogram to answer the questions about student weights, measured in pounds.   Histogram of Student Weights   Histogram representing weights of students between 115 and 303 pounds with more students below 200 pounds.    A. Describe the shape of the weight distribution?  B. Which is larger, the mean or median?    A. The distribution is right skewed.    B. The mean = 171.1 pounds is larger since right skewed with median =163.5 pounds.   "
+},
+{
+  "id": "subsec-OneQuantStatkey-21",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-OneQuantStatkey-21",
+  "type": "Checkpoint",
+  "number": "2.5.12",
+  "title": "Boxplot of Weights.",
+  "body": " Boxplot of Weights   Use the boxplot to answer the questions about student weights, measured in pounds.   Boxplot of Student Weights   Boxplot represents weights of students between 115 and 303 pounds with box bounded at 140 and 200 pounds.    A. Are there any outliers?  B. What does the box in the graph represent?    A. Yes, the value of 303 pounds is an outlier and marked as an asterisk.    B. The box represents the middle 50% of the values which are between 140 pounds and 200 pounds with the median of 163.5 pounds as the vertical line.   "
+},
+{
+  "id": "subsec-CatQuantStatkey-3",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-CatQuantStatkey-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "One Quantitative and One Categorical Variables "
+},
+{
+  "id": "OneQuantOneCat1",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#OneQuantOneCat1",
+  "type": "Figure",
+  "number": "2.5.14",
+  "title": "",
+  "body": " StatKey Menu   In first column select third option of one quantitative and one categorical variable.   "
+},
+{
+  "id": "OneQuantOneCat2",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#OneQuantOneCat2",
+  "type": "Figure",
+  "number": "2.5.15",
+  "title": "",
+  "body": " Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.   "
+},
+{
+  "id": "OneQuantOneCatDotplot",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#OneQuantOneCatDotplot",
+  "type": "Figure",
+  "number": "2.5.16",
+  "title": "",
+  "body": " Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.   "
+},
+{
+  "id": "OneQuantOneCatTable",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#OneQuantOneCatTable",
+  "type": "Figure",
+  "number": "2.5.17",
+  "title": "",
+  "body": " Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.   "
+},
+{
+  "id": "subsec-CatQuantStatkey-13",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-CatQuantStatkey-13",
+  "type": "Checkpoint",
+  "number": "2.5.18",
+  "title": "Compare Histograms.",
+  "body": " Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.   "
+},
+{
+  "id": "subsec-CatQuantStatkey-14",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-CatQuantStatkey-14",
+  "type": "Checkpoint",
+  "number": "2.5.20",
+  "title": "Compare Boxplots.",
+  "body": " Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.   "
+},
+{
+  "id": "subsec-TwoCategoryStatkey-3",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-TwoCategoryStatkey-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Two Categorical Variables "
+},
+{
+  "id": "TwoCatStatkey",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#TwoCatStatkey",
+  "type": "Figure",
+  "number": "2.5.22",
+  "title": "",
+  "body": " StatKey Menu for Two Categorical Variables.   Select the fourth option for Two categorical variables then select the two variables.   "
+},
+{
+  "id": "TwoCatVacationBar",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#TwoCatVacationBar",
+  "type": "Figure",
+  "number": "2.5.23",
+  "title": "",
+  "body": " Segmented Bar graph of Vacation location and Favorite season   Most preferred beach since tallest at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .   "
+},
+{
+  "id": "TwoCatVacationTable",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#TwoCatVacationTable",
+  "type": "Figure",
+  "number": "2.5.24",
+  "title": "",
+  "body": " Table of Frequencies for Vacation location and Favorite seasons   Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .   "
+},
+{
+  "id": "TwoCatSwitchVar",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#TwoCatSwitchVar",
+  "type": "Figure",
+  "number": "2.5.25",
+  "title": "",
+  "body": " Switch Variable Button   image of switch variable button.   "
+},
+{
+  "id": "TwoCatSeasonBar",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#TwoCatSeasonBar",
+  "type": "Figure",
+  "number": "2.5.26",
+  "title": "",
+  "body": " Segmented Bar graph of favorite seasons with vacation location   Fall occurred 15 times, summer 11, spring 11, winter 6.   "
+},
+{
+  "id": "TwoCatColumns",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#TwoCatColumns",
+  "type": "Figure",
+  "number": "2.5.27",
+  "title": "",
+  "body": " Select Column   image of columns tab by proportions .   "
+},
+{
+  "id": "TwoCatSeasonTable",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#TwoCatSeasonTable",
+  "type": "Figure",
+  "number": "2.5.28",
+  "title": "",
+  "body": " Table of Frequencies and Proportions of favorite seasons with vacation location.   lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.   "
+},
+{
+  "id": "subsec-TwoCategoryStatkey-17",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-TwoCategoryStatkey-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data Exploration "
+},
+{
   "id": "ShoeHeightScatterplot",
   "level": "2",
-  "url": "sec-GraphStatky.html#ShoeHeightScatterplot",
+  "url": "sec-GraphStatkey.html#ShoeHeightScatterplot",
   "type": "Figure",
-  "number": "2.5.8",
+  "number": "2.5.29",
   "title": "",
   "body": " Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.   "
 },
 {
   "id": "HeightvsShoeScatterplot",
   "level": "2",
-  "url": "sec-GraphStatky.html#HeightvsShoeScatterplot",
+  "url": "sec-GraphStatkey.html#HeightvsShoeScatterplot",
   "type": "Figure",
-  "number": "2.5.9",
+  "number": "2.5.30",
   "title": "",
   "body": " Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.   "
+},
+{
+  "id": "subsec-TwoQNstatkey-12",
+  "level": "2",
+  "url": "sec-GraphStatkey.html#subsec-TwoQNstatkey-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data Exploration "
 },
 {
   "id": "sec-DesStat-Centers",
