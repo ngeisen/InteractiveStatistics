@@ -36,8 +36,8 @@
 <p>
   image
 </p>
-<p>The probability is the area under the curve.  Before technology, we needed to convert every x value to a standardized number, called the <term>z-score</term> or <term>z-value</term>.  The z-score is a measure of how many standard deviations that <m>x </m>value is from the mean.  To convert from a normally distributed x value to a z-score, we use the following formula. </p>
-<p><me> z= \frac{x- \mu}{\sigma}</me> </p>
+<p>The probability is the area under the curve.  Before technology, we needed to convert every x value to a standardized number, called the <term>z-score</term> or <term>z-value</term>.  The z-score is a measure of how many standard deviations that <m>x </m>value is from the mean.  To convert from a normally distributed x value to a z-score, we use the following formula: </p>
+<p> <me> z= \frac{x- \mu}{\sigma}</me> </p>
 <p>where <m> \mu =</m>  mean of the population and  <m> \sigma =</m> standard deviation for the population for the variable. </p>
 <p>The z-score is normally distributed, with a mean of 0 and a standard deviation of 1.  It is known as the <term>standard normal curve</term>.  If the z-score is positive, the data value is above the mean. If the z-score is negative, the data value is below the mean. The farther the z-value is from 0, the farther the data value is from the mean. Once you have the z-score, you can look up the area in the standard normal distribution table.</p>
 
