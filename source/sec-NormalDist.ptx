@@ -1,19 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-NormalDist" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Normal Distribution </title>
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+     Many real-life situations use measurement to find quantitative data which produces a histogram that is symmetric, unimodal, and bell-shaped.  For example: height, weight, blood pressure, and cholesterol level form continuous probability distribution.  In this section we will work with a distribution known as the normal distribution. However, not every bell-shaped curve is considered normal. The shape of the distribution is influenced by the mean (center of the distribution) and the standard deviation (how spread out the values are). 
+     
+    </p>
+  </introduction>
+  
 
   <objectives>
   <introduction>
     <p> At the end of this section you will be able to:   </p>
   </introduction>
   <ol>
-    <li> <p> Find the area under the normal curve </p>    </li>
+    <li> <p> Find the area under the normal distribution curve. </p>    </li>
     <li> <p> Determine cut-scores for a specific region.</p> </li>
    <li> <p> Apply the normal distribution to application problems.</p> </li>
 
         </ol>
 </objectives>
+
+
+<subsection xml:id="subsec-StandardNormal">
+  <title>Standard Normal Distribution</title>
+<p>We will begin our adventure with the standard normal distribution, which is centered at mean <m> \mu = 0 </m> and standard deviation <m> \sigma = 1</m>.  </p>
+<p>Just as in a discrete probability distribution, the object is to find the probability of an event occurring.  However, unlike in a discrete probability distribution where the event can be a single value, in a continuous probability distribution the event is a range.  You are interested in finding the probability of <m>x </m> occurring in the range between <m>a</m> and <m>b</m>, or <m> P(a \leq x \leq b) </m> . Calculus tells us to find the area under the curve on the interval from <m>a</m> to <m>b</m>.</p>
+
+<p>Before looking at the process for finding the probabilities under the normal curve, it is somewhat useful to look at the <term> Empirical Rule</term> that gives approximate values for these areas.  This gives you an idea of what the size of the probabilities is for different shadings.  A more precise method for finding probabilities for the normal curve will be demonstrated later in this section.   </p>
+<p> The <term>Empirical Rule</term> for any normal distribution:</p>
+<p> Approximately 68% of the data falls within <em>one</em> standard deviation of the mean. </p>
+<p> Approximately 95% of the data falls within <em>two</em> standard deviations of the mean. </p>
+<p> Approximately 9% of the data falls within <em>three</em> standard deviations of the mean. </p>
+
+<p>
+  image
+</p>
+<p>The probability is the area under the curve.  Before technology, we needed to convert every x value to a standardized number, called the <term>z-score</term> or <term>z-value</term>.  The z-score is a measure of how many standard deviations that <m>x </m>value is from the mean.  To convert from a normally distributed x value to a z-score, we use the following formula. </p>
+<p><me> z= \frac{x- \mu}{\sigma}</me> </p>
+<p>where <m> \mu =</m>  mean of the population and  <m> \sigma =</m> standard deviation for the population for the variable. </p>
+<p>The z-score is normally distributed, with a mean of 0 and a standard deviation of 1.  It is known as the <term>standard normal curve</term>.  If the z-score is positive, the data value is above the mean. If the z-score is negative, the data value is below the mean. The farther the z-value is from 0, the farther the data value is from the mean. Once you have the z-score, you can look up the area in the standard normal distribution table.</p>
+
+<p>Luckily, technology can find probabilities and area for us.  There are many programs available that will calculate the probability for a normal curve including StatKey, R Studio and TI83 Plus or TI-84 calculators.  </p>
+
+
+
+  </subsection>
+
+<subsection xml:id="subsec-StandardNormalStatKey">
+  <title>Standard Normal Distribution with StatKey</title>
+<p>The first step is to identify your values, draw the normal curve centered at 0, and then shade the appropriate region based on the scenario. I recommend drawing the image on paper first, this will help you to set up StatKey correctly. </p>
+<p> Go to <term>StatKey</term>, near the bottom next to <term>Theoretical Distributions</term>, click on <c> Normal</c>. It will show you the standard normal distribution centered at 0.0.</p>
+
+<figure xml:id="StatKeyMenuNormal">
+            <caption>StatKey Menu for Normal Distribution</caption>
+            <image source="Normal1.png" width="75%">
+                <shortdescription>Third tab down to theoretical distributions and one step right for Normal.</shortdescription>
+            </image>
+        </figure> 
+
+<figure xml:id="StatKeyNormalCurve1">
+            <caption>Standard Normal Distribution</caption>
+            <image source="Normal2.png" width="75%">
+                <shortdescription>Normal curve centered at 0 with tails at -4 and 4.</shortdescription>
+            </image>
+        </figure>
+
+<p><em> Example: </em> Find the area right of <m>z=1.75</m> on the standard normal distribution. </p>
+  <p> In StatKey click on <c>Right Tail </c> and enter the value 1.75 along the bottom. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area. </p>
+<figure xml:id="Normalright1.75">
+            <caption> Normal Distribution right of z = 1.75</caption>
+            <image source="Normal3.png" width="75%">
+                <shortdescription>shaded right of 1.75 with small area shaded.</shortdescription>
+            </image>
+        </figure>
+
+
+<example>
+<statement> <p>Find the area right of <m>z=-1.81</m>. </p> </statement> 
+<solution> <p> In StatKey, click on <c>Right Tail </c> and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965. </p>
+<figure xml:id="Normalright1.81">
+            <caption> Normal Distribution right of z = -1.81</caption>
+            <image source="Normal4.png" width="75%">
+                <shortdescription>shaded right of -1.81 with large area shaded of 0.965.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+<example>
+<statement> <p>Find the area right of <m>z=0.94</m>. </p> </statement> 
+<solution> <p> In StatKey, click on <c>Right Tail </c> and change the value along the bottom to 0.94. Note how less than half the curve is shaded giving an area of 0.174. </p>
+  <figure xml:id="Normalright.94">
+            <caption> Normal Distribution right of z = 0.94</caption>
+            <image source="Normal12.png" width="75%">
+                <shortdescription>shaded right of 0.94with small area shaded.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+<p> <em> Example: </em> Find the area left of <m>z=-1.81</m>. </p> 
+  <p> Click on <c>Reset Plot</c> then click on <c>Left Tail</c> and enter the value -1.81 along the bottom. The small left area is 0.035. Note that the curve is symmetric and the total area is always 1=100%, thus <m>1.00-0.035=0.965</m>.</p>
+<figure xml:id="Normalneg1.81">
+            <caption> Normal Distribution left of z =-1.81</caption>
+            <image source="Normal5.png" width="75%">
+                <shortdescription>shaded left of -1.81 with small area shaded of 0.035.</shortdescription>
+            </image>
+        </figure>
+
+<example>
+<statement>
+<p> Find the area left of <m>z = -2.85</m>. </p> </statement>
+<solution> <p> Change the bottom to -2.85. The new area is 0.0022. The larger the z-value, the smaller the area in the tail of the curve.</p>
+<figure xml:id="Normalnegneg2.85">
+            <caption> Normal Distribution left of -2.85</caption>
+            <image source="Normal6.png" width="75%">
+                <shortdescription>shaded left of -2.85 with smaller area shaded of 0.0022.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+<example>
+<statement>
+<p> Find the area left of <m>z = 1.45</m>. </p> </statement>
+<solution> <p> Change the bottom to 1.45. The new area is 0.926. Since over half the curve is shaded to the left, there is a larger area.</p>
+<figure xml:id="Normalleft1.45">
+            <caption> Normal Distribution left of z = 1.45</caption>
+            <image source="Normal13.png" width="75%">
+                <shortdescription>shaded left of 1.45 with large area shaded of 0.926.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+<p> <em> Example: </em> Find the area between <m>z=1.25</m> and <m>z=-1.36</m>. </p> 
+<p>On paper you will draw the curve centered at 0. Mark where z = 1.25 and z = -1.36,  then shade the area between the two values. In StatKey, <c>Reset Plot</c> and click on the <c>Left Tail</c> and enter the value -1.36 at the bottom on the left side, it will shade it to the left. Then click on <c>Right Tail</c> and enter the value 1.25 along the bottom on the right side, it will shade to the right. We want the white area between the two values, which is 0.807. StatKey will always shade in the tails. </p>
+
+<figure xml:id="NormalBetween">
+            <caption> Distribution between z = -1.36 and z = 1.25</caption>
+            <image source="Normal7.png" width="75%">
+                <shortdescription>between shading area of 0.807.</shortdescription>
+            </image>
+        </figure>
+
+<p> <em> Example:</em> Suppose we want to find the area to the right of <m>z=1.25</m> and the area to the left of <m>z=-1.36</m>. We just need to add the area of those two regions shaded in red. The area is <m>0.087+0.106=0.193 </m>. </p>
+
+<p> Sometimes when working with the normal distribution, we want to find which z-score correlates with a certain percentage of the curve. </p>
+<p> <em> Example:</em> Suppose we want to know the z-scored for the middle 80% of the values of the normal distribution. </p>
+<p>Click on <c>Reset Plot</c> and click on the <c>Two Tail</c>. Change the middle white region from the default of 0.95 (which have the z-values of -1.960 and +1.960) to 0.80 to change the z-values to -1.282 and +1.282 along the bottom of the graph. The larger the middle percentage, the larger the z-scores will be. Since the normal curve is symmetric, the values are the same just one positive and one negative. </p> 
+
+<figure xml:id="Normalmiddle80">
+            <caption> Normal Distribution for middle 80%</caption>
+            <image source="Normal8.png" width="75%">
+                <shortdescription>middle area is 80% giving the cut scores of -1.282 and 1.282.</shortdescription>
+            </image>
+        </figure>
+
+<p> <em> Example:</em> If we want to know the z-score cut off for the top 10% of the curve, click on <c>Right Tail</c> and change the area value to 0.100 to get the z-score of 1.282. </p> 
+<figure xml:id="NormalTop10">
+            <caption> Top 10% on Normal Distribution </caption>
+            <image source="Normal9.png" width="75%">
+                <shortdescription>top 10% shaded on right side for z=1.282.</shortdescription>
+            </image>
+        </figure>
+
+<p> <em> Example:</em> If we want the cut off score for the bottom 20% of the values on the normal distribution, click on the <c>Left Tail</c> and change the area value to 0.200 to get <m>z=-.842</m>. Anything below the mean will be negative, anything greater than the mean will be positive. </p>
+<figure xml:id="NormalBottom20">
+            <caption> Bottom 20% on Normal Distribution </caption>
+            <image source="Normal10.png" width="75%">
+                <shortdescription>bottom 20% shaded on left side for z=-.842.</shortdescription>
+            </image>
+        </figure>
+
+
+
+  </subsection>
+
+<subsection xml:id="subsec-NormalCurveStatKey">
+  <title> Apply Normal Distribution with StatKey</title>
+<p> Now that we can find the area under the normal distribution, we can apply the same process to any normally distributed variable. We still draw the normal curve, but it is now centered at the mean for the situation. There are two ways to solve it: 1) find the z-score for the scenario and solve like we did for the standard normal distribution. 2) Enter the cut-score in StatKey or other technology to find the appropriate area. </p> 
+<p>The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting more than 280 days. </p>
+
+
+
+
+
+
+
+  </subsection>
+
+<subsection xml:id="subsec-NormalwithR">
+  <title> Normal Distribution with R Studio</title>
+<p> Let us look at how we can use R Studio to find the area shaded or the cut-off scores. </p> 
+<p>The command in R Studio to find the area to the left of the x-value, <m>P(x \lt value)</m> is:</p>
+<p>pnorm(value, mean, standard deviation, lower.tail=TRUE) </p>
+<p>The command in R Studio to find the area to the right,  <m>P(x \gt value)</m> is </p>
+<p>pnorm(value, mean, standard deviation, lower.tail=FALSE) </p>
+
+<p> <em> Example: </em> The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9.  Find the probability of a pregnancy lasting more than 280 days. </p>
+<p>The probability of a pregnancy lasting longer than 280 days is looking for the right area, thus <m>P(x \gt 280)</m>. Click on the <c>Evaluate (R)</c> button below the R code block. </p> 
+<sage language="r">
+ <input>
+pnorm(280, 272, 9, lower.tail=FALSE)
+ </input>
+ </sage>
+<p>Thus, <m>P(x \gt 280) = 0.1870314</m>. Thus 18.7% of all pregnancies last more than 280 days. This is not considered unusual since the probability is greater than 5%. </p>
+
+<p> <em> Example: </em> The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9.  Find the probability of a pregnancy lasting less than 250 days. </p> 
+
+<p>We want <m> P(x \lt 250)</m> which is the left area. Click on the <c>Evaluate (R)</c> button below the R code block.</p>
+<sage language="r">
+ <input>
+pnorm(250, 272, 9, lower.tail=TRUE)
+ </input>
+ </sage>
+<p>The probability of a pregnancy lasting longer than 250 days is <m> P(x \lt 250) = 0.0073</m> . Thus 0.73% of all pregnancies last less than 250 days. This is unusual since the probability is less than 5%. </p>
+
+<p> <em>Example: </em> Find the probability of a pregnancy lasting between 265 days and 280 days. </p>
+<p> We need to find the area between two values on the normal distribution. First, find the area to the left of both values and then subtract the areas to find the amount between.</p>
+
+<sage language="r">
+ <input>
+pnorm(280, 272, 9, lower.tail=TRUE)-pnorm(265, 272, 9, lower.tail=TRUE)
+ </input>
+ </sage>
+<p>The area left of 280 days is 0.8129686 and the area to the left of 265 days is 0.2185, thus <m>0.8129686-0.2185=0.5946186</m>. Thus 59.5% of all pregnancies last between 265 and 280 days. </p>
+
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-NormalPractice">
+  <title>Practice Problems</title>
+<p> Your choice which form of technology you use to compete the following problems.  </p>
+
+
+  </subsection>
 
 
 

@@ -277,6 +277,8 @@
 <subsection xml:id="subsec-TwoCategoryStatkey">
   <title> Graphing Two Categorical Variables </title>
 <p>In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated? </p>
+<p> Save the following data file on your computer where it is easily accessible: </p> 
+<p> <url href="external/ClassSurvey2.csv"> ClassSurvey2.csv</url> </p>
 
 <p>In StatKey in the first column <em>Descriptive Statistics and Graphs</em>, select <term>Two Categorical Variables</term>, and then click the <c> Upload File </c>  button and select the two variables, I selected <em>Favorite Season</em> first and then <em>Vacation Location</em> and click on the <c> OK</c> button at the bottom right. </p>
 <figure xml:id="TwoCatStatkey">
@@ -286,7 +288,7 @@
             </image>
         </figure>  
 
-<p> Once the graph shows, check on the <c>Show Legend</c> button to show the color-coded categories for the seasons. </p>
+<p> Once the graph shows, check on the <c>Show Legend</c> button on the top left to show the color-coded categories for the seasons. </p>
 <figure xml:id="TwoCatVacationBar">
             <caption>Segmented Bar graph of Vacation location and Favorite season</caption>
             <image source="Vacation1.png" width="90%">
@@ -310,7 +312,7 @@
                 <shortdescription> image of switch variable button.</shortdescription>
             </image>
         </figure>  
-
+<p> The segmented bar graph will be updated withe Favorite Seasons along the x-axis. Click on Show Legend for the color coding of the vacation locations.</p>
 <figure xml:id="TwoCatSeasonBar">
             <caption>Segmented Bar graph of favorite seasons with vacation location</caption>
             <image source="Vacation4.png" width="80%">
@@ -361,7 +363,7 @@
     </image>
 </figure>
 <p> If you click on the <c>Switch Variables</c> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well. </p>
-<figure xml:id="HeightvsShoeScatterplot">
+<figure xml:id="HeightvsShoeScatterplot2">
     <caption>Image of Scatterplot for Height and shoe size </caption>
     <image source="HeightShoesScatterplot.png" >
         <shortdescription> Scatterplot with height on x-axis.</shortdescription>
