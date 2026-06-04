@@ -195,7 +195,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="BasicProb.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Basic Probability</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="CondProb.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Conditional Probability</span></a></div>
 <ul class="structural toc-item-list">
@@ -415,77 +418,77 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Objectives 5.2"><a href="#sec-BootstrapDist-3" title="Copy heading and permalink for Objectives 5.2" aria-label="Copy heading and permalink for Objectives 5.2">🔗</a></div>
 </article>
-<div class="para" id="sec-BootstrapDist-4">Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BootstrapDist-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-BootstrapDist-5">In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample – by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BootstrapDist-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
 <section class="subsection" id="subsec-BootstrapMeans">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bootstrap Distributions for Means</span>
 </h3>
-<div class="para" id="subsec-BootstrapMeans-2">Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-2">Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BootstrapMeans-3">Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-3">In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample - by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BootstrapMeans-4">What is the typical MPGe of newer models of EVs?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-4">Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BootstrapMeans-5">To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-5">Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ul class="disc" id="subsec-BootstrapMeans-6">
-<li id="subsec-BootstrapMeans-6-1">
-<div class="para" id="subsec-BootstrapMeans-6-1-1">Tesla Model X Plaid – 91 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-6">What is the typical MPGe of newer models of EVs?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-7">To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="subsec-BootstrapMeans-8">
+<li id="subsec-BootstrapMeans-8-1">
+<div class="para" id="subsec-BootstrapMeans-8-1-1">Tesla Model X Plaid - 91 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-BootstrapMeans-6-2">
-<div class="para" id="subsec-BootstrapMeans-6-2-1">Jaguar I-Pace EV400 – 85 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-BootstrapMeans-8-2">
+<div class="para" id="subsec-BootstrapMeans-8-2-1">Jaguar I-Pace EV400 - 85 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-BootstrapMeans-6-3">
-<div class="para" id="subsec-BootstrapMeans-6-3-1">Polestar 2 Single Motor – 107 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-BootstrapMeans-8-3">
+<div class="para" id="subsec-BootstrapMeans-8-3-1">Polestar 2 Single Motor - 107 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-BootstrapMeans-6-4">
-<div class="para" id="subsec-BootstrapMeans-6-4-1">Lucid Air Pure AWD – 140 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-BootstrapMeans-8-4">
+<div class="para" id="subsec-BootstrapMeans-8-4-1">Lucid Air Pure AWD - 140 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-6-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-BootstrapMeans-6-5">
-<div class="para" id="subsec-BootstrapMeans-6-5-1">Lordstown Endurance – 48 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-6-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-BootstrapMeans-8-5">
+<div class="para" id="subsec-BootstrapMeans-8-5-1">Lordstown Endurance - 48 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-6-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para" id="subsec-BootstrapMeans-7">We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-9">We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BootstrapMeans-8">To generate a bootstrap distribution, we:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-10">To generate a bootstrap distribution, we:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ol class="decimal" id="subsec-BootstrapMeans-9">
-<li id="subsec-BootstrapMeans-9-1">
-<div class="para" id="subsec-BootstrapMeans-9-1-1">Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="subsec-BootstrapMeans-11">
+<li id="subsec-BootstrapMeans-11-1">
+<div class="para" id="subsec-BootstrapMeans-11-1-1">Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-BootstrapMeans-9-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-BootstrapMeans-11-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="subsec-BootstrapMeans-9-2">
-<div class="para" id="subsec-BootstrapMeans-9-2-1">Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-BootstrapMeans-11-2">
+<div class="para" id="subsec-BootstrapMeans-11-2-1">Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-BootstrapMeans-9-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-BootstrapMeans-11-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
-<li id="subsec-BootstrapMeans-9-3">
-<div class="para" id="subsec-BootstrapMeans-9-3-1">Collect the statistics for many bootstrap samples to create a bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-BootstrapMeans-11-3">
+<div class="para" id="subsec-BootstrapMeans-11-3-1">Collect the statistics for many bootstrap samples to create a bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-11-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#subsec-BootstrapMeans-9-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-BootstrapMeans-11-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
-<div class="para" id="subsec-BootstrapMeans-10">To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-12">To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BootstrapMeans-11">The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-13">The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BootstrapMeans-12">Give example<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-14">Give example<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BootstrapMeans-13">To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootstrapMeans-15">To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 5.2.1: Bootstrap Distributions for Means"><a href="#subsec-BootstrapMeans" title="Copy heading and permalink for Subsection 5.2.1: Bootstrap Distributions for Means" aria-label="Copy heading and permalink for Subsection 5.2.1: Bootstrap Distributions for Means">🔗</a></div>
 </section>
@@ -521,40 +524,49 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-BootTechnologyMean-12-1">As you generate more samples, what happens to the shape of the distribution?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootTechnologyMean-12-1-1">As you generate more samples, what happens to the shape of the distribution?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-BootTechnologyMean-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-BootTechnologyMean-12-2-1">Notice how the distribution becomes more bell shaped and symmetric with more samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 5.2.4.1"><a href="#subsec-BootTechnologyMean-12-2" title="Copy heading and permalink for Solution 5.2.4.1" aria-label="Copy heading and permalink for Solution 5.2.4.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 5.2.4"><a href="#subsec-BootTechnologyMean-12" title="Copy heading and permalink for Checkpoint 5.2.4" aria-label="Copy heading and permalink for Checkpoint 5.2.4">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.4"><a href="#subsec-BootTechnologyMean-12" title="Copy heading and permalink for Checkpoint 5.2.4" aria-label="Copy heading and permalink for Checkpoint 5.2.4">🔗</a></div>
 </article></details>
 <details id="subsec-BootTechnologyMean-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-BootTechnologyMean-13-1">Where is the center of the distribution?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootTechnologyMean-13-1-1">Where is the center of the distribution?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-BootTechnologyMean-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-BootTechnologyMean-13-2-1">The center of the bootstrap distribution is approximately the same as the original sample mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 5.2.5.1"><a href="#subsec-BootTechnologyMean-13-2" title="Copy heading and permalink for Solution 5.2.5.1" aria-label="Copy heading and permalink for Solution 5.2.5.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 5.2.5"><a href="#subsec-BootTechnologyMean-13" title="Copy heading and permalink for Checkpoint 5.2.5" aria-label="Copy heading and permalink for Checkpoint 5.2.5">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.5"><a href="#subsec-BootTechnologyMean-13" title="Copy heading and permalink for Checkpoint 5.2.5" aria-label="Copy heading and permalink for Checkpoint 5.2.5">🔗</a></div>
 </article></details>
 <details id="subsec-BootTechnologyMean-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-BootTechnologyMean-14-1">Compare the standard deviation of the original sample to the standard error of the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootTechnologyMean-14-1-1">Compare the standard deviation of the original sample to the standard error of the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-BootTechnologyMean-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-BootTechnologyMean-14-2-1">The standard error is smaller since there is less variation with the distribution than a single sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 5.2.6.1"><a href="#subsec-BootTechnologyMean-14-2" title="Copy heading and permalink for Solution 5.2.6.1" aria-label="Copy heading and permalink for Solution 5.2.6.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 5.2.6"><a href="#subsec-BootTechnologyMean-14" title="Copy heading and permalink for Checkpoint 5.2.6" aria-label="Copy heading and permalink for Checkpoint 5.2.6">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.6"><a href="#subsec-BootTechnologyMean-14" title="Copy heading and permalink for Checkpoint 5.2.6" aria-label="Copy heading and permalink for Checkpoint 5.2.6">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-BootTechnologyMean-15">Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -598,13 +610,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-BootTechnologyMean-23">If we click on <code class="code-inline tex2jax_ignore">Two Tail </code> we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="BootstrapCIMPGe"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot4.png" class="contained" alt="Middle 95% of dots between 67.2 and 117 MPGe."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Interval for MPGe<div class="autopermalink" data-description="Figure 5.2.7"><a href="#BootstrapCIMPGe" title="Copy heading and permalink for Figure 5.2.7" aria-label="Copy heading and permalink for Figure 5.2.7">🔗</a></div></figcaption>
+<figure class="figure figure-like" id="BootstrapCIMPGe1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot4.png" class="contained" alt="Middle 95% of dots between 67.2 and 117 MPGe."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Interval for MPGe<div class="autopermalink" data-description="Figure 5.2.7"><a href="#BootstrapCIMPGe1" title="Copy heading and permalink for Figure 5.2.7" aria-label="Copy heading and permalink for Figure 5.2.7">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-BootTechnologyMean-25">If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="BootstrapCIMPGe"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot5.png" class="contained" alt="Middle 90% of dots between 71.6 and 113.14 MPGe."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Interval for MPGe<div class="autopermalink" data-description="Figure 5.2.8"><a href="#BootstrapCIMPGe" title="Copy heading and permalink for Figure 5.2.8" aria-label="Copy heading and permalink for Figure 5.2.8">🔗</a></div></figcaption>
+<figure class="figure figure-like" id="BootstrapCIMPGe2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot5.png" class="contained" alt="Middle 90% of dots between 71.6 and 113.14 MPGe."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Interval for MPGe<div class="autopermalink" data-description="Figure 5.2.8"><a href="#BootstrapCIMPGe2" title="Copy heading and permalink for Figure 5.2.8" aria-label="Copy heading and permalink for Figure 5.2.8">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-BootTechnologyMean-27">
 <dfn class="terminology">Exploration</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -615,27 +627,33 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-BootTechnologyMean-29-1">Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-29-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootTechnologyMean-29-1-1">Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-29-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-BootTechnologyMean-29-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-BootTechnologyMean-29-2-1">Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-29-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 5.2.9.1"><a href="#subsec-BootTechnologyMean-29-2" title="Copy heading and permalink for Solution 5.2.9.1" aria-label="Copy heading and permalink for Solution 5.2.9.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 5.2.9"><a href="#subsec-BootTechnologyMean-29" title="Copy heading and permalink for Checkpoint 5.2.9" aria-label="Copy heading and permalink for Checkpoint 5.2.9">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.9"><a href="#subsec-BootTechnologyMean-29" title="Copy heading and permalink for Checkpoint 5.2.9" aria-label="Copy heading and permalink for Checkpoint 5.2.9">🔗</a></div>
 </article></details>
 <details id="subsec-BootTechnologyMean-30" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-BootTechnologyMean-30-1">Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-30-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BootTechnologyMean-30-1-1">Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-30-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
 <details id="subsec-BootTechnologyMean-30-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-BootTechnologyMean-30-2-1">As the middle percentage increases, the interval becomes wider since it includes more values in the interval.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-30-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 5.2.10.1"><a href="#subsec-BootTechnologyMean-30-2" title="Copy heading and permalink for Solution 5.2.10.1" aria-label="Copy heading and permalink for Solution 5.2.10.1">🔗</a></div>
-</div></details><div class="autopermalink" data-description="Checkpoint 5.2.10"><a href="#subsec-BootTechnologyMean-30" title="Copy heading and permalink for Checkpoint 5.2.10" aria-label="Copy heading and permalink for Checkpoint 5.2.10">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.10"><a href="#subsec-BootTechnologyMean-30" title="Copy heading and permalink for Checkpoint 5.2.10" aria-label="Copy heading and permalink for Checkpoint 5.2.10">🔗</a></div>
 </article></details>
 <details id="subsec-BootTechnologyMean-31" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>

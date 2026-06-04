@@ -2899,9 +2899,9 @@ var ptx_lunr_docs = [
   "body": " Probabilities from tree diagram  Find the following probabilities using your tree diagram for three coins.  a. getting three heads  b. getting at least two heads  c. getting exactly two tails  d. getting four tails   a. P( three heads) = 1\/8  b. P(at least two heads) = 4\/8 = ½  c. P(exactly two tails) = 3\/8  d. P(four tails) = 0 since not in sample space   "
 },
 {
-  "id": "StandardDeck",
+  "id": "StandardDeck1",
   "level": "2",
-  "url": "BasicProb.html#StandardDeck",
+  "url": "BasicProb.html#StandardDeck1",
   "type": "Figure",
   "number": "4.1.15",
   "title": "",
@@ -2986,7 +2986,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Probability Rules",
-  "body": " Probability Rules   It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.     At the end of this section you will able to:     Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given\"    Use a tree diagram to determine the probability of multiple events     It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment. In this section we will focus on probability rules based on the theoretical probabilities .  There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are equally likely to occur. This means that every outcome has the same chance of happening.   Equally Likely   Which of the following experiments have equally likely outcomes?      Tossing a fair coin.      Rolling loaded dice.    Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.      Pull a ball out of a bag containing 5 red balls and 6 green balls.    Assuming the balls are the same size, then each ball has the same chance of being chosen. The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .      First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.     Hearts  If one card is randomly drawn from a deck, what is the probability of drawing a heart?   There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .     Queen  If one card is randomly drawn from a deck, what is the probability of drawing a Queen?   P(Queen) = 4\/52 = 1\/13 = 0.077     Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.     not Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.    Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card.  Two events are mutually exclusive if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5.  Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together. We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  When two events A and B are mutually exclusive, the probability that either A or B will occur is   When two events A and B are mutually exclusive, the probability that A and B will occur together is since they cannot occur at the same time.   For example, find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) =   Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus   Queen or King  If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?   P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538     Face Card  If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?   P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308    So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. For example, what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card.  P(Spade or Ace) 13\/52 + 4\/52 - 1\/52 = 16\/52 = 0.3077.  If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event.  When two events A and B are not mutually exclusive, the probability that either A or B will occur is      Five or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?   P(5 or diamond) = 4\/52 +13\/52 – 1\/52 = 16\/52 = 0.3077     Five or Six or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?   P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups      When two events are mutually exclusive, this is also known as being disjoint . In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.   Disjoint Venn Diagram   non touching circles .    When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula.   Non Disjoint Venn Diagram   overlapping circles .    We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV.   Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .     Examples: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.  a. A foreign car is sold.  Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90\/300 = 0.30 or 30%  b. The car is foreign and compact.  Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50\/300 = 0.1667 or 16.7%  c. The car is foreign or compact.  Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90\/300 + 150\/300 – 50\/300 = 190\/300 = 0.633 or 63.3%  Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total.   Checkpoints: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.   Compact  The car is compact.   P(compact) = 150\/300 = 0.5 or 50%     domestic or sedan  The car is domestic or a sedan.   P(domestic or a sedan) = 210\/300+ 65\/300 – 45\/300 = 230\/300 = 0.767 or 76.7%%     Domestic SUV  The car is domestic and SUV.   P(compact) = 65\/300 = 0.217 or 21.7%    given   Practice Problems   Hockey Hall of Fame: From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com   Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table.   Defense  What is the probability that an inductee chosen at random is a defenseman?   P(defenseman) = 89\/298 = .2987 or 29.9%     Canadian  What is the probability that an inductee chosen at random is not Canadian?   P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%     Canadian goalie  What is the probability that a player chosen at random is a goalie born in Canada   P(goalie and Canadian) = 36\/298 = .1208 or 12.1%     Canada or Defense  What is the probability that a player chosen at random is either born in Canada or a defenseman?   P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926     Defense or Goalie  What is the probability that the player chosen at random either plays defense or is a goalie   P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.     Canada plays Defense  What is the probability that a Canadian inductee plays defense?   P(defense | Canada) = 74\/251 = .2948     Defense is Canadian  What is the probability that an inductee who plays defense is Canadian?   P(Canda | defense) = 74\/89 = .8315     Blood Typing: Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative. The table below presents the results of a representative sample of 360 adults in the U.S.   Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table.   negative  What is the probability that a person in the sample chosen at random has a negative Rh factor?   P(negative) 58\/360 = .161 have negative blood     not AB  What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?   use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958     B+  What is the probability that a person in the sample chosen at random has type B and positive Rh factor?   intersection P(B and pos) = 32\/360 = .089     A or negative  What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?   P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive     A or B  What is the probability that a person in the sample chosen at random has blood type A or blood type B?   P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive     Blood  What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?   P(O | neg) = 25\/58 = .431     Blood  What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?   P(neg | O) = 25\/162 = .154    "
+  "body": " Probability Rules   It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.     At the end of this section you will able to:     Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given\"    Use a tree diagram to determine the probability of multiple events      Basic Probability Rules Review  It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment. In this section we will focus on probability rules based on the theoretical probabilities .  There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are equally likely to occur. This means that every outcome has the same chance of happening.   Equally Likely   Which of the following experiments have equally likely outcomes?      Tossing a fair coin.      Rolling loaded dice.    Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.      Pull a ball out of a bag containing 5 red balls and 6 green balls.    Assuming the balls are the same size, then each ball has the same chance of being chosen. The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .      First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.     Hearts  If one card is randomly drawn from a deck, what is the probability of drawing a heart?   There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .     Queen  If one card is randomly drawn from a deck, what is the probability of drawing a Queen?   P(Queen) = 4\/52 = 1\/13 = 0.077     Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.     not Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.     Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card.  Two events are mutually exclusive if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5.  Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together. We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  When two events A and B are mutually exclusive, the probability that either A or B will occur is   When two events A and B are mutually exclusive, the probability that A and B will occur together is since they cannot occur at the same time.   For example, find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) =   Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus   Queen or King  If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?   P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538     Face Card  If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?   P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308    So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. For example, what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card.  P(Spade or Ace) 13\/52 + 4\/52 - 1\/52 = 16\/52 = 0.3077.  If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event.  When two events A and B are not mutually exclusive, the probability that either A or B will occur is      Five or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?   P(5 or diamond) = 4\/52 +13\/52 – 1\/52 = 16\/52 = 0.3077     Five or Six or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?   P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups      When two events are mutually exclusive, this is also known as being disjoint . In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.   Disjoint Venn Diagram   non touching circles .    When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula.   Non Disjoint Venn Diagram   overlapping circles .    We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV.   Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .     Examples: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.  a. A foreign car is sold.  Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90\/300 = 0.30 or 30%  b. The car is foreign and compact.  Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50\/300 = 0.1667 or 16.7%  c. The car is foreign or compact.  Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90\/300 + 150\/300 – 50\/300 = 190\/300 = 0.633 or 63.3%  Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total.   Checkpoints: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.   Compact  The car is compact.   P(compact) = 150\/300 = 0.5 or 50%     domestic or sedan  The car is domestic or a sedan.   P(domestic or a sedan) = 210\/300+ 65\/300 – 45\/300 = 230\/300 = 0.767 or 76.7%%     Domestic SUV  The car is domestic and SUV.   P(compact) = 65\/300 = 0.217 or 21.7%    given   Practice Problems   Hockey Hall of Fame: From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com   Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table.   Defense  What is the probability that an inductee chosen at random is a defenseman?   P(defenseman) = 89\/298 = .2987 or 29.9%     Canadian  What is the probability that an inductee chosen at random is not Canadian?   P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%     Canadian goalie  What is the probability that a player chosen at random is a goalie born in Canada   P(goalie and Canadian) = 36\/298 = .1208 or 12.1%     Canada or Defense  What is the probability that a player chosen at random is either born in Canada or a defenseman?   P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926     Defense or Goalie  What is the probability that the player chosen at random either plays defense or is a goalie   P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.     Canada plays Defense  What is the probability that a Canadian inductee plays defense?   P(defense | Canada) = 74\/251 = .2948     Defense is Canadian  What is the probability that an inductee who plays defense is Canadian?   P(Canda | defense) = 74\/89 = .8315     Blood Typing: Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative. The table below presents the results of a representative sample of 360 adults in the U.S.   Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table.   negative  What is the probability that a person in the sample chosen at random has a negative Rh factor?   P(negative) 58\/360 = .161 have negative blood     not AB  What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?   use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958     B+  What is the probability that a person in the sample chosen at random has type B and positive Rh factor?   intersection P(B and pos) = 32\/360 = .089     A or negative  What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?   P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive     A or B  What is the probability that a person in the sample chosen at random has blood type A or blood type B?   P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive     Blood  What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?   P(O | neg) = 25\/58 = .431     Blood  What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?   P(neg | O) = 25\/162 = .154    "
 },
 {
   "id": "ProbRules-3",
@@ -3007,99 +3007,99 @@ var ptx_lunr_docs = [
   "body": " Equally Likely   Which of the following experiments have equally likely outcomes?      Tossing a fair coin.      Rolling loaded dice.    Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.      Pull a ball out of a bag containing 5 red balls and 6 green balls.    Assuming the balls are the same size, then each ball has the same chance of being chosen. The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .     "
 },
 {
-  "id": "StandardDeck",
+  "id": "StandardDeck2",
   "level": "2",
-  "url": "ProbRules.html#StandardDeck",
+  "url": "ProbRules.html#StandardDeck2",
   "type": "Figure",
   "number": "4.2.2",
   "title": "",
   "body": " Standard deck of cards   four suits with 13 numbered cards in deck.   "
 },
 {
-  "id": "ProbRules-9",
+  "id": "subsec-ProbRules1-7",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-9",
+  "url": "ProbRules.html#subsec-ProbRules1-7",
   "type": "Checkpoint",
   "number": "4.2.3",
   "title": "Hearts.",
   "body": " Hearts  If one card is randomly drawn from a deck, what is the probability of drawing a heart?   There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .   "
 },
 {
-  "id": "ProbRules-10",
+  "id": "subsec-ProbRules1-8",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-10",
+  "url": "ProbRules.html#subsec-ProbRules1-8",
   "type": "Checkpoint",
   "number": "4.2.4",
   "title": "Queen.",
   "body": " Queen  If one card is randomly drawn from a deck, what is the probability of drawing a Queen?   P(Queen) = 4\/52 = 1\/13 = 0.077   "
 },
 {
-  "id": "ProbRules-11",
+  "id": "subsec-ProbRules1-9",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-11",
+  "url": "ProbRules.html#subsec-ProbRules1-9",
   "type": "Checkpoint",
   "number": "4.2.5",
   "title": "Queen of Hearts.",
   "body": " Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.   "
 },
 {
-  "id": "ProbRules-12",
+  "id": "subsec-ProbRules1-10",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-12",
+  "url": "ProbRules.html#subsec-ProbRules1-10",
   "type": "Checkpoint",
   "number": "4.2.6",
   "title": "not Queen of Hearts.",
   "body": " not Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.   "
 },
 {
-  "id": "ProbRules-14",
+  "id": "ProbRules-6",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-14",
+  "url": "ProbRules.html#ProbRules-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "mutually exclusive "
 },
 {
-  "id": "ProbRules-20",
+  "id": "ProbRules-12",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-20",
+  "url": "ProbRules.html#ProbRules-12",
   "type": "Checkpoint",
   "number": "4.2.7",
   "title": "Queen or King.",
   "body": " Queen or King  If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?   P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538   "
 },
 {
-  "id": "ProbRules-21",
+  "id": "ProbRules-13",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-21",
+  "url": "ProbRules.html#ProbRules-13",
   "type": "Checkpoint",
   "number": "4.2.8",
   "title": "Face Card.",
   "body": " Face Card  If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?   P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308   "
 },
 {
-  "id": "ProbRules-27",
+  "id": "ProbRules-19",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-27",
+  "url": "ProbRules.html#ProbRules-19",
   "type": "Checkpoint",
   "number": "4.2.9",
   "title": "Five or Diamond.",
   "body": " Five or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?   P(5 or diamond) = 4\/52 +13\/52 – 1\/52 = 16\/52 = 0.3077   "
 },
 {
-  "id": "ProbRules-28",
+  "id": "ProbRules-20",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-28",
+  "url": "ProbRules.html#ProbRules-20",
   "type": "Checkpoint",
   "number": "4.2.10",
   "title": "Five or Six or Diamond.",
   "body": " Five or Six or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?   P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups   "
 },
 {
-  "id": "ProbRules-30",
+  "id": "ProbRules-22",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-30",
+  "url": "ProbRules.html#ProbRules-22",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3133,63 +3133,63 @@ var ptx_lunr_docs = [
   "body": " Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .   "
 },
 {
-  "id": "ProbRules-36",
+  "id": "ProbRules-28",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-36",
+  "url": "ProbRules.html#ProbRules-28",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Examples: "
 },
 {
-  "id": "ProbRules-44",
+  "id": "ProbRules-36",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-44",
+  "url": "ProbRules.html#ProbRules-36",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Checkpoints: "
 },
 {
-  "id": "ProbRules-45",
+  "id": "ProbRules-37",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-45",
+  "url": "ProbRules.html#ProbRules-37",
   "type": "Checkpoint",
   "number": "4.2.14",
   "title": "Compact.",
   "body": " Compact  The car is compact.   P(compact) = 150\/300 = 0.5 or 50%   "
 },
 {
-  "id": "ProbRules-46",
+  "id": "ProbRules-38",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-46",
+  "url": "ProbRules.html#ProbRules-38",
   "type": "Checkpoint",
   "number": "4.2.15",
   "title": "domestic or sedan.",
   "body": " domestic or sedan  The car is domestic or a sedan.   P(domestic or a sedan) = 210\/300+ 65\/300 – 45\/300 = 230\/300 = 0.767 or 76.7%%   "
 },
 {
-  "id": "ProbRules-47",
+  "id": "ProbRules-39",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-47",
+  "url": "ProbRules.html#ProbRules-39",
   "type": "Checkpoint",
   "number": "4.2.16",
   "title": "Domestic SUV.",
   "body": " Domestic SUV  The car is domestic and SUV.   P(compact) = 65\/300 = 0.217 or 21.7%   "
 },
 {
-  "id": "ProbRules-49",
+  "id": "ProbRules-41",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-49",
+  "url": "ProbRules.html#ProbRules-41",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Practice Problems "
 },
 {
-  "id": "ProbRules-50",
+  "id": "ProbRules-42",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-50",
+  "url": "ProbRules.html#ProbRules-42",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3205,72 +3205,72 @@ var ptx_lunr_docs = [
   "body": " Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .   "
 },
 {
-  "id": "ProbRules-53",
+  "id": "ProbRules-45",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-53",
+  "url": "ProbRules.html#ProbRules-45",
   "type": "Checkpoint",
   "number": "4.2.18",
   "title": "Defense.",
   "body": " Defense  What is the probability that an inductee chosen at random is a defenseman?   P(defenseman) = 89\/298 = .2987 or 29.9%   "
 },
 {
-  "id": "ProbRules-54",
+  "id": "ProbRules-46",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-54",
+  "url": "ProbRules.html#ProbRules-46",
   "type": "Checkpoint",
   "number": "4.2.19",
   "title": "Canadian.",
   "body": " Canadian  What is the probability that an inductee chosen at random is not Canadian?   P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%   "
 },
 {
-  "id": "ProbRules-55",
+  "id": "ProbRules-47",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-55",
+  "url": "ProbRules.html#ProbRules-47",
   "type": "Checkpoint",
   "number": "4.2.20",
   "title": "Canadian goalie.",
   "body": " Canadian goalie  What is the probability that a player chosen at random is a goalie born in Canada   P(goalie and Canadian) = 36\/298 = .1208 or 12.1%   "
 },
 {
-  "id": "ProbRules-56",
+  "id": "ProbRules-48",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-56",
+  "url": "ProbRules.html#ProbRules-48",
   "type": "Checkpoint",
   "number": "4.2.21",
   "title": "Canada or Defense.",
   "body": " Canada or Defense  What is the probability that a player chosen at random is either born in Canada or a defenseman?   P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926   "
 },
 {
-  "id": "ProbRules-57",
+  "id": "ProbRules-49",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-57",
+  "url": "ProbRules.html#ProbRules-49",
   "type": "Checkpoint",
   "number": "4.2.22",
   "title": "Defense or Goalie.",
   "body": " Defense or Goalie  What is the probability that the player chosen at random either plays defense or is a goalie   P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.   "
 },
 {
-  "id": "ProbRules-58",
+  "id": "ProbRules-50",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-58",
+  "url": "ProbRules.html#ProbRules-50",
   "type": "Checkpoint",
   "number": "4.2.23",
   "title": "Canada plays Defense.",
   "body": " Canada plays Defense  What is the probability that a Canadian inductee plays defense?   P(defense | Canada) = 74\/251 = .2948   "
 },
 {
-  "id": "ProbRules-59",
+  "id": "ProbRules-51",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-59",
+  "url": "ProbRules.html#ProbRules-51",
   "type": "Checkpoint",
   "number": "4.2.24",
   "title": "Defense is Canadian.",
   "body": " Defense is Canadian  What is the probability that an inductee who plays defense is Canadian?   P(Canda | defense) = 74\/89 = .8315   "
 },
 {
-  "id": "ProbRules-60",
+  "id": "ProbRules-52",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-60",
+  "url": "ProbRules.html#ProbRules-52",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3286,63 +3286,63 @@ var ptx_lunr_docs = [
   "body": " Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.   "
 },
 {
-  "id": "ProbRules-63",
+  "id": "ProbRules-55",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-63",
+  "url": "ProbRules.html#ProbRules-55",
   "type": "Checkpoint",
   "number": "4.2.26",
   "title": "negative.",
   "body": " negative  What is the probability that a person in the sample chosen at random has a negative Rh factor?   P(negative) 58\/360 = .161 have negative blood   "
 },
 {
-  "id": "ProbRules-64",
+  "id": "ProbRules-56",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-64",
+  "url": "ProbRules.html#ProbRules-56",
   "type": "Checkpoint",
   "number": "4.2.27",
   "title": "not AB.",
   "body": " not AB  What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?   use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958   "
 },
 {
-  "id": "ProbRules-65",
+  "id": "ProbRules-57",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-65",
+  "url": "ProbRules.html#ProbRules-57",
   "type": "Checkpoint",
   "number": "4.2.28",
   "title": "B+.",
   "body": " B+  What is the probability that a person in the sample chosen at random has type B and positive Rh factor?   intersection P(B and pos) = 32\/360 = .089   "
 },
 {
-  "id": "ProbRules-66",
+  "id": "ProbRules-58",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-66",
+  "url": "ProbRules.html#ProbRules-58",
   "type": "Checkpoint",
   "number": "4.2.29",
   "title": "A or negative.",
   "body": " A or negative  What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?   P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive   "
 },
 {
-  "id": "ProbRules-67",
+  "id": "ProbRules-59",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-67",
+  "url": "ProbRules.html#ProbRules-59",
   "type": "Checkpoint",
   "number": "4.2.30",
   "title": "A or B.",
   "body": " A or B  What is the probability that a person in the sample chosen at random has blood type A or blood type B?   P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive   "
 },
 {
-  "id": "ProbRules-68",
+  "id": "ProbRules-60",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-68",
+  "url": "ProbRules.html#ProbRules-60",
   "type": "Checkpoint",
   "number": "4.2.31",
   "title": "Blood.",
   "body": " Blood  What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?   P(O | neg) = 25\/58 = .431   "
 },
 {
-  "id": "ProbRules-69",
+  "id": "ProbRules-61",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-69",
+  "url": "ProbRules.html#ProbRules-61",
   "type": "Checkpoint",
   "number": "4.2.32",
   "title": "Blood.",
@@ -4633,7 +4633,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Bootstrap Distributions",
-  "body": " Bootstrap Distributions   Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.     At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean.    Construct and interpret a bootstrap distribution for proportions.     Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.  In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample – by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.   Bootstrap Distributions for Means  Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.  Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.  What is the typical MPGe of newer models of EVs?  To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:    Tesla Model X Plaid – 91 MPGe    Jaguar I-Pace EV400 – 85 MPGe    Polestar 2 Single Motor – 107 MPGe    Lucid Air Pure AWD – 140 MPGe    Lordstown Endurance – 48 MPGe    We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.  To generate a bootstrap distribution, we:    Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.    Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.    Collect the statistics for many bootstrap samples to create a bootstrap distribution.    To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.  The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.  Give example  To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.    Using Technology: Mean  Open StatKey and in the middle column under Bootstrap Confidence Intervals we are going to select CI for Single Mean .   Bootstrap Menu   first option in second column is bootstrap for the mean.    Click on the Upload File button and identify the data file: EV2023-Sample5 and select the variable CombMPGe .   Bootstrap for Mean   fourth option is to upload the file.    Interpreting StatKey: On the top right side you will see the Original Sample information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.  If we click on the Generate 1 Sample button, then on the bottom right side we will see the five randomly selected cars with replacement under the Bootstrap Sample . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.   Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.    Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.   Exploration   Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.   As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.     Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.     Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.    Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.  When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using statistics  where SE denotes the standard error of the statistic estimated from the bootstrap distribution.  Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives             We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.  If we click on Two Tail we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.   Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.    If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.   Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.     Exploration   Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.   Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.   As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.     What happens to the standard error as you increase the number of samples.   The standard error does not change much by adding generating additional samples.      Bootstrap Distributions for Proportions  Suppose you want to find what proportion of Skittles are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution.  Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape.   Bootstrap For 10 Bags   proportions between 12.5% and 25% grape .    This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%.   Bootstrap For 250 Bags   proportions between 8% and 32% grape with higher frequencies at the center near 0.183.    This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%.    Using Technology: Proportions  Using StatKey to construct bootstrap distributions from a single proportion.  Launch StatKey , and from the center column under Bootstrap Confidence Intervals , select the second option CI for Single Proportion .   StatKey Menu   select the second option under Bootstrap Confidence Intervals .    Click on Edit Data and enter the count of 12 grape from a sample size of 65 candies and then click OK    Edit Proportion   use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .    Click on Generate 1 Sample . On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends.   Generate Bootstrap Sample   one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .    Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4\/65=0.062 to 23\/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047.   Generate Bootstrap Distribution   500 dots representing the proportion of grapes for each bag .    If you click on Two-Tail it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution.   Bootstrap Confidence Interval   Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .      Practice Problems  samples   "
+  "body": " Bootstrap Distributions   Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.     At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean.    Construct and interpret a bootstrap distribution for proportions.      Bootstrap Distributions for Means  Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.  In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample - by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.  Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.  Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.  What is the typical MPGe of newer models of EVs?  To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:    Tesla Model X Plaid - 91 MPGe    Jaguar I-Pace EV400 - 85 MPGe    Polestar 2 Single Motor - 107 MPGe    Lucid Air Pure AWD - 140 MPGe    Lordstown Endurance - 48 MPGe    We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.  To generate a bootstrap distribution, we:    Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.    Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.    Collect the statistics for many bootstrap samples to create a bootstrap distribution.    To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.  The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.  Give example  To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.    Using Technology: Mean  Open StatKey and in the middle column under Bootstrap Confidence Intervals we are going to select CI for Single Mean .   Bootstrap Menu   first option in second column is bootstrap for the mean.    Click on the Upload File button and identify the data file: EV2023-Sample5 and select the variable CombMPGe .   Bootstrap for Mean   fourth option is to upload the file.    Interpreting StatKey: On the top right side you will see the Original Sample information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.  If we click on the Generate 1 Sample button, then on the bottom right side we will see the five randomly selected cars with replacement under the Bootstrap Sample . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.   Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.    Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.   Exploration   Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.    As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.      Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.      Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.    Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.  When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using statistics  where SE denotes the standard error of the statistic estimated from the bootstrap distribution.  Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives             We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.  If we click on Two Tail we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.   Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.    If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.   Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.     Exploration   Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.    Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.      Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.   As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.     What happens to the standard error as you increase the number of samples.   The standard error does not change much by adding generating additional samples.      Bootstrap Distributions for Proportions  Suppose you want to find what proportion of Skittles are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution.  Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape.   Bootstrap For 10 Bags   proportions between 12.5% and 25% grape .    This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%.   Bootstrap For 250 Bags   proportions between 8% and 32% grape with higher frequencies at the center near 0.183.    This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%.    Using Technology: Proportions  Using StatKey to construct bootstrap distributions from a single proportion.  Launch StatKey , and from the center column under Bootstrap Confidence Intervals , select the second option CI for Single Proportion .   StatKey Menu   select the second option under Bootstrap Confidence Intervals .    Click on Edit Data and enter the count of 12 grape from a sample size of 65 candies and then click OK    Edit Proportion   use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .    Click on Generate 1 Sample . On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends.   Generate Bootstrap Sample   one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .    Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4\/65=0.062 to 23\/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047.   Generate Bootstrap Distribution   500 dots representing the proportion of grapes for each bag .    If you click on Two-Tail it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution.   Bootstrap Confidence Interval   Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .      Practice Problems  samples   "
 },
 {
   "id": "sec-BootstrapDist-3",
@@ -4714,7 +4714,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "5.2.4",
   "title": "",
-  "body": " As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.   "
+  "body": "  As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.   "
 },
 {
   "id": "subsec-BootTechnologyMean-13",
@@ -4723,7 +4723,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "5.2.5",
   "title": "",
-  "body": " Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.   "
+  "body": "  Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.   "
 },
 {
   "id": "subsec-BootTechnologyMean-14",
@@ -4732,7 +4732,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "5.2.6",
   "title": "",
-  "body": " Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.   "
+  "body": "  Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.   "
 },
 {
   "id": "subsec-BootTechnologyMean-16",
@@ -4744,18 +4744,18 @@ var ptx_lunr_docs = [
   "body": "statistics "
 },
 {
-  "id": "BootstrapCIMPGe",
+  "id": "BootstrapCIMPGe1",
   "level": "2",
-  "url": "sec-BootstrapDist.html#BootstrapCIMPGe",
+  "url": "sec-BootstrapDist.html#BootstrapCIMPGe1",
   "type": "Figure",
   "number": "5.2.7",
   "title": "",
   "body": " Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.   "
 },
 {
-  "id": "BootstrapCIMPGe",
+  "id": "BootstrapCIMPGe2",
   "level": "2",
-  "url": "sec-BootstrapDist.html#BootstrapCIMPGe",
+  "url": "sec-BootstrapDist.html#BootstrapCIMPGe2",
   "type": "Figure",
   "number": "5.2.8",
   "title": "",
@@ -4777,7 +4777,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "5.2.9",
   "title": "",
-  "body": " Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.   "
+  "body": "  Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.   "
 },
 {
   "id": "subsec-BootTechnologyMean-30",
@@ -4786,7 +4786,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "5.2.10",
   "title": "",
-  "body": " Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.   "
+  "body": "  Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.   "
 },
 {
   "id": "subsec-BootTechnologyMean-31",
@@ -5104,9 +5104,9 @@ var ptx_lunr_docs = [
   "body": " Standard Normal Distribution   Normal curve centered at 0 with tails at -4 and 4.   "
 },
 {
-  "id": "Normalright1.75",
+  "id": "Normalright175",
   "level": "2",
-  "url": "sec-NormalDist.html#Normalright1.75",
+  "url": "sec-NormalDist.html#Normalright175",
   "type": "Figure",
   "number": "5.4.3",
   "title": "",
@@ -5131,9 +5131,9 @@ var ptx_lunr_docs = [
   "body": "  Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to 0.94. Note how less than half the curve is shaded giving an area of 0.174.   Normal Distribution right of z = 0.94   shaded right of 0.94with small area shaded.     "
 },
 {
-  "id": "Normalneg1.81",
+  "id": "Normalneg181",
   "level": "2",
-  "url": "sec-NormalDist.html#Normalneg1.81",
+  "url": "sec-NormalDist.html#Normalneg181",
   "type": "Figure",
   "number": "5.4.8",
   "title": "",
