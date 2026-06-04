@@ -143,7 +143,7 @@
 
 
 <p> Next, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards. </p> 
-<figure xml:id="StandardDeck">
+<figure xml:id="StandardDeck1">
             <caption>Standard deck of cards</caption>
             <image source="DeckCards.png" >
                 <shortdescription>four suits with 13 numbered cards in deck.</shortdescription>

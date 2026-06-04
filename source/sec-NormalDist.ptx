@@ -37,7 +37,7 @@
   image
 </p>
 <p>The probability is the area under the curve.  Before technology, we needed to convert every x value to a standardized number, called the <term>z-score</term> or <term>z-value</term>.  The z-score is a measure of how many standard deviations that <m>x </m>value is from the mean.  To convert from a normally distributed x value to a z-score, we use the following formula: </p>
-<p> <me> z= \frac{x- \mu}{\sigma}</me> </p>
+<p> <me>z= \frac{x- \mu}{\sigma}</me> </p>
 <p>where <m> \mu =</m>  mean of the population and  <m> \sigma =</m> standard deviation for the population for the variable. </p>
 <p>The z-score is normally distributed, with a mean of 0 and a standard deviation of 1.  It is known as the <term>standard normal curve</term>.  If the z-score is positive, the data value is above the mean. If the z-score is negative, the data value is below the mean. The farther the z-value is from 0, the farther the data value is from the mean. Once you have the z-score, you can look up the area in the standard normal distribution table.</p>
 
@@ -68,7 +68,7 @@
 
 <p><em> Example: </em> Find the area right of <m>z=1.75</m> on the standard normal distribution. </p>
   <p> In StatKey click on <c>Right Tail </c> and enter the value 1.75 along the bottom. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area. </p>
-<figure xml:id="Normalright1.75">
+<figure xml:id="Normalright175">
             <caption> Normal Distribution right of z = 1.75</caption>
             <image source="Normal3.png" width="75%">
                 <shortdescription>shaded right of 1.75 with small area shaded.</shortdescription>
@@ -79,7 +79,7 @@
 <example>
 <statement> <p>Find the area right of <m>z=-1.81</m>. </p> </statement> 
 <solution> <p> In StatKey, click on <c>Right Tail </c> and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965. </p>
-<figure xml:id="Normalright1.81">
+<figure xml:id="Normalright181">
             <caption> Normal Distribution right of z = -1.81</caption>
             <image source="Normal4.png" width="75%">
                 <shortdescription>shaded right of -1.81 with large area shaded of 0.965.</shortdescription>
@@ -91,7 +91,7 @@
 <example>
 <statement> <p>Find the area right of <m>z=0.94</m>. </p> </statement> 
 <solution> <p> In StatKey, click on <c>Right Tail </c> and change the value along the bottom to 0.94. Note how less than half the curve is shaded giving an area of 0.174. </p>
-  <figure xml:id="Normalright.94">
+  <figure xml:id="Normalright94">
             <caption> Normal Distribution right of z = 0.94</caption>
             <image source="Normal12.png" width="75%">
                 <shortdescription>shaded right of 0.94with small area shaded.</shortdescription>
@@ -102,7 +102,7 @@
 
 <p> <em> Example: </em> Find the area left of <m>z=-1.81</m>. </p> 
   <p> Click on <c>Reset Plot</c> then click on <c>Left Tail</c> and enter the value -1.81 along the bottom. The small left area is 0.035. Note that the curve is symmetric and the total area is always 1=100%, thus <m>1.00-0.035=0.965</m>.</p>
-<figure xml:id="Normalneg1.81">
+<figure xml:id="Normalneg181">
             <caption> Normal Distribution left of z =-1.81</caption>
             <image source="Normal5.png" width="75%">
                 <shortdescription>shaded left of -1.81 with small area shaded of 0.035.</shortdescription>
@@ -113,7 +113,7 @@
 <statement>
 <p> Find the area left of <m>z = -2.85</m>. </p> </statement>
 <solution> <p> Change the bottom to -2.85. The new area is 0.0022. The larger the z-value, the smaller the area in the tail of the curve.</p>
-<figure xml:id="Normalnegneg2.85">
+<figure xml:id="Normalneg285">
             <caption> Normal Distribution left of -2.85</caption>
             <image source="Normal6.png" width="75%">
                 <shortdescription>shaded left of -2.85 with smaller area shaded of 0.0022.</shortdescription>
@@ -126,7 +126,7 @@
 <statement>
 <p> Find the area left of <m>z = 1.45</m>. </p> </statement>
 <solution> <p> Change the bottom to 1.45. The new area is 0.926. Since over half the curve is shaded to the left, there is a larger area.</p>
-<figure xml:id="Normalleft1.45">
+<figure xml:id="Normalleft145">
             <caption> Normal Distribution left of z = 1.45</caption>
             <image source="Normal13.png" width="75%">
                 <shortdescription>shaded left of 1.45 with large area shaded of 0.926.</shortdescription>

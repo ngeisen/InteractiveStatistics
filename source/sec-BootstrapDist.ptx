@@ -16,22 +16,22 @@
 </ol>
 </objectives>
 
-<p> Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples. </p>
-<p>In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample – by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.</p>
-
 <subsection xml:id="subsec-BootstrapMeans">
   <title>Bootstrap Distributions for Means</title>
+
+  <p> Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples. </p>
+<p>In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample - by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.</p>
 
 <p>Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars. </p>
 <p>Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy. </p>
 <p> What is the typical MPGe of newer models of EVs? </p>
 <p>To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:</p> 
 <ul>
-<li> <p> Tesla Model X Plaid – 91 MPGe </p> </li>
-<li> <p> Jaguar I-Pace EV400 – 85 MPGe </p> </li>
-<li> <p> Polestar 2 Single Motor – 107 MPGe </p> </li>
-<li> <p> Lucid Air Pure AWD – 140 MPGe </p> </li>
-<li> <p> Lordstown Endurance – 48 MPGe </p> </li>
+<li> <p> Tesla Model X Plaid - 91 MPGe </p> </li>
+<li> <p> Jaguar I-Pace EV400 - 85 MPGe </p> </li>
+<li> <p> Polestar 2 Single Motor - 107 MPGe </p> </li>
+<li> <p> Lucid Air Pure AWD - 140 MPGe </p> </li>
+<li> <p> Lordstown Endurance - 48 MPGe </p> </li>
 </ul> 
 
 <p> We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution. </p>
@@ -78,17 +78,18 @@
 <p> <term> Exploration </term> </p> 
 <p> Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets. </p> 
 <exercise>
-<p> As you generate more samples, what happens to the shape of the distribution? </p>
+    <statement> 
+<p> As you generate more samples, what happens to the shape of the distribution? </p></statement>
 <solution> <p> Notice how the distribution becomes more bell shaped and symmetric with more samples. </p> </solution>
 </exercise> 
 
-<exercise>
-<p> Where is the center of the distribution? </p>
+<exercise> <statement>
+<p> Where is the center of the distribution? </p></statement>
 <solution> <p> The center of the bootstrap distribution is approximately the same as the original sample mean.  </p> </solution> 
 </exercise> 
 
-<exercise>
-<p> Compare the standard deviation of the original sample to the standard error of the distribution. </p>
+<exercise> <statement>
+<p> Compare the standard deviation of the original sample to the standard error of the distribution. </p></statement> 
 <solution> <p> The standard error is smaller since there is less variation with the distribution than a single sample.  </p> </solution> 
 </exercise> 
 <p> Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter. </p> 
@@ -101,7 +102,7 @@
 <p> We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles. </p> 
 
 <p> If we click on <c>Two Tail </c> we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles. </p> 
-<figure xml:id="BootstrapCIMPGe">
+<figure xml:id="BootstrapCIMPGe1">
             <caption> Bootstrap Interval for MPGe </caption>
             <image source="Boot4.png" >
                 <shortdescription>Middle 95% of dots between 67.2 and 117 MPGe.</shortdescription>
@@ -109,7 +110,7 @@
         </figure>
 
 <p> If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.</p> 
-<figure xml:id="BootstrapCIMPGe">
+<figure xml:id="BootstrapCIMPGe2">
             <caption> Bootstrap Interval for MPGe </caption>
             <image source="Boot5.png" >
                 <shortdescription>Middle 90% of dots between 71.6 and 113.14 MPGe.</shortdescription>
@@ -119,11 +120,12 @@
 <p> <term> Exploration </term> </p> 
 <p> Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets. </p> 
 <exercise>
-<p> Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval </p>
+    <statement>
+<p> Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval </p></statement> 
 <solution> <p> Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.</p> </solution>
 </exercise> 
-<exercise>
-<p> Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle. </p>
+<exercise> <statement>
+<p> Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle. </p></statement> 
 <solution> <p> As the middle percentage increases, the interval becomes wider since it includes more values in the interval.  </p> </solution> 
 </exercise> 
 <exercise>
