@@ -4,7 +4,7 @@
   <title>Confidence Intervals</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p>One aspect of inferential statistics is <term>estimation</term>, which is the process of estimating the values of a parameter based on information obtained from a sample. Since the population is often very large, these values are only estimates of the true population parameter. In this chapter we will investigate the statistical procedures for estimating the population mean, proportion, variance, and standard deviation. </p>
   </introduction>
 
 <objectives>
@@ -12,9 +12,9 @@
     <p> At the end of this chapter you will be able to:   </p>
   </introduction>
   <ol>
-    <li> <p> Construct and interpret confidence intervals for the mean </p>    </li>
- <li> <p> Construct and interpret confidence intervals for proportions </p>    </li>
-   <li> <p> Construct and interpret confidence intervals for variance and standard deviation </p>    </li>
+    <li> <p> Construct and interpret confidence intervals for the mean. </p>    </li>
+ <li> <p> Construct and interpret confidence intervals for proportions. </p>    </li>
+   <li> <p> Construct and interpret confidence intervals for variance and standard deviation. </p>    </li>
   </ol>
 </objectives>
 

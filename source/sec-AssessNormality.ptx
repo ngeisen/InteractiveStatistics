@@ -13,12 +13,12 @@
     <p> At the end of this section you will be able to:   </p>
   </introduction>
   <ol>
-    <li> <p> Determine if a variable is normally distributed </p>    </li>
+    <li> <p> Determine if a variable is normally distributed. </p>    </li>
     <li> <p> Assess normality with histogram, boxplot, and quantile plot.</p> </li>
         </ol>
 </objectives>
 
-<p> Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed?  One way is to take a sample and look at the sample to determine if it appears normally distributed.  If the sample looks normal, then most likely the population is also.  Here are some guidelines that are used to help make that determination.</p>
+<p> Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed?  One way is to take a sample and look at the data to determine if it appears normally distributed.  If the sample appears normal, then most likely the population is also.  Here are some guidelines that are used to help make that determination.</p>
 <ol> 
 <li> <p> <term>Histogram:</term>  Make a histogram.  For a normal distribution, the histogram should be roughly bell-shaped and symmetric.  For small samples, this is not very accurate, and another method may be needed.  A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.</p> </li>
 <li> <p> <term>Outliers:</term> For a normal distribution, there should not be more than one outlier.  One way to check for outliers is to use a box plot.  Outliers are values that are shown as dots or stars outside of the rest of the values when using technology. </p> </li>
@@ -56,9 +56,11 @@
 <p> We will be using technology to determine the normality of this variable. </p> 
 
 <example> <title> Histogram </title> 
+<statement>
 <p> <term>Create a histogram on TI83/84:</term> </p>
 <p> Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1. </p> 
 <figure xml:id="EnterKiamaTimes">
+    <caption>Enter the Kiama Data</caption>
                         <image source="EnterKiamaTimes.png" width="75%">
                 <shortdescription>enter values in list 1.</shortdescription>
             </image>
@@ -66,31 +68,37 @@
 <p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1.  Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1.  Use [2nd] [1] to identify L1.  Freq: should be a 1 since each value is listed individually. </p> 
 <p> You will need to adjust the [WINDOW] based on the data values.  The Xmin should be the smallest data value while Xmax is the largest data value.  We will select Xmin = 0 and Xmax = 200 with Xscl =20.  Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be.  You can always change this if you need to.  Yscl is just how often you would like to see a tick mark on the y-axis. </p> 
 <figure xml:id="KiamaHistogram">
+    <caption>Kiama Histogram</caption>
                         <image source="KiamaHisto.png" >
                 <shortdescription>histogram shows smaller times occur more often than larger times between eruptions.</shortdescription>
             </image>
         </figure>
 
 <p> Now press [GRAPH] button to see the histogram.</p>
+ </statement>
 <solution> 
 <p>The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions. </p> 
 </solution> 
 </example> 
 
 <example>  <title> Boxplot </title> 
-<p> <term>Create a boxplot on the TI-83/84 to check for outliers </term> </p> 
+<statement>
+  <p> <term>Create a boxplot on the TI-83/84 to check for outliers </term> </p> 
 <p> Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again.  Press [enter].</p>
 <p> Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist:  L1 and Freq is 1. We can keep the same Window.</p> <p>  Hit the [GRAPH] button.  </p>
 <figure xml:id="KiamaBoxplot">
+    <caption>Kiama Boxplot</caption>
                         <image source="KiamaBoxplot.png" width="75%">
                 <shortdescription>boxplot has outliers on right side at larger values.</shortdescription>
             </image>
         </figure>
+</statement>
 <solution>  <p> The boxplot shows the data is right skewed with two upper outliers. </p> 
  </solution> 
 </example> 
 
 <example> <title> Quantile Plot </title>
+<statement>
 <p> <term> Create a normal quantile plot on the TI-83/84</term> </p> 
 <p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter]. </p>
 <p> Under Type: select the sixth image which looks like a line. </p>
@@ -99,17 +107,20 @@
 <p> Set the y-values to the data set values thus Ymin = 0 and Ymax = 200. </p> 
 <p> Now press the [GRAPH] button to get the normal quantile plot.  </p>
 <figure xml:id="KiamaQuantilePlot">
+    <caption>Kiama Quantile Plot</caption>
                         <image source="KiamaQuantile.png" >
                 <shortdescription>the quantile plot is curved.</shortdescription>
             </image>
         </figure>
-
+ </statement>
 <solution> <p> Notice that the quantile plot forms a curve rather than straight line. </p>
 </solution> 
 </example>
 
 <example> <title> Conclusion </title>
-<p> Can we conclude the variable is normally distributed? </p>
+    <statement>
+       <p> Can we conclude the variable is normally distributed? </p>
+    </statement>
 <solution> 
 <p> Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is <term>not </term> from a population that is normally distributed. </p>
 </solution>
@@ -129,34 +140,39 @@
         </figure>
 
 <example> <title> Histogram </title>
+    <statement> 
 <p> Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2. </p>
 <p> Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1.  Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button. </p>
 <figure xml:id="IQHistogram">
+    <caption>IQ Histogram</caption>
                         <image source="IQhisto.png" >
                 <shortdescription>histogram shows higher frequencies in the middle and lower frequencies at the small and large values.</shortdescription>
             </image>
         </figure>
 
-
+</statement>
 <solution> <p>This histogram is relatively symmetric and bell-shaped </p> </solution> 
 </example> 
 
 <example> <title> Boxplot </title> 
+    <statement>
 <p> <term>Create boxplot to check the IQ scores for outliers </term></p> 
 <p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].</p>
 <p> Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.  </p>
    
 <figure xml:id="IQBoxplot">
+    <caption>IQ Boxplot</caption>
                         <image source="IQboxplot.png" width="75%">
                 <shortdescription> boxplot appears symmetric without outliers.</shortdescription>
             </image>
         </figure>
-
+ </statement>
 <solution> <p> Boxplot appears symmetric without outliers. </p>
 </solution>
 </example> 
 
 <example> <title> Quantile Plot </title>
+  <statement>  
 <p> <term> Create a normal quantile plot of the IQ scores</term> </p> 
 <p> Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter]. </p>
 <p> Under Type: select the sixth image which looks like a line. </p>
@@ -165,17 +181,20 @@
 <p> Set the y-values to the data set values thus Ymin = 50 and Ymax = 150. </p> 
 <p>Now press the [GRAPH] button to get the normal quantile plot.  </p>
 <figure xml:id="IQquantilePlot">
+    <caption>IQ Quantile Plot</caption>
                         <image source="IQquantile.png" >
                 <shortdescription>the quantile plot forms a line.</shortdescription>
             </image>
         </figure>
-
+    </statement>
 <solution> <p> Notice that the quantile plot forms a straight line. </p>
 </solution> 
 </example>
 
 <example> <title> Conclusion </title>
+    <statement>
 <p> Can we conclude the variable is normally distributed? </p>
+    </statement>
 <solution> 
 <p> Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample <term> is</term> from a population that is normally distributed. </p>
 </solution>
@@ -184,9 +203,45 @@
 
  </subsection>
 
+ <subsection xml:id="subsec-NormalityR">
+  <title>Assessing Normality with R Studio</title>
+<p> Let us revisit the Kiama blowhole, but this time let us analyze the data using R Studio. </p>
+<p> The R Studio command for the quantile plot is <c> qqnorm(Kiama)</c> </p> 
+<p> To construct histogram use <c>hist(Kiama)</c> </p>
+<p> To construct boxplot use <c>boxplot(Kiama)</c> </p>
+<p>  In Kiama, Australia, there is the world's largest blowhole.  The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 98.4 feet. Use the R code block to determine if the variable is normally distributed. Click on the <c>Evaluate(R)</c> button to construct the graphs within the webpage. </p>
+  <sage language="r">
+ <input>
+Kiama = c(83,51,87,62,28,95,8,27,15,10,18,16,29,54,91,8,17,55,10,35,47,77,36,17,21,36,18,40,10,7,34,27,28,56,8,25,68,146,89,18,73,69,9,37,10,82,29,8,60,61,61,18,169,25,8,26,11,83,11,42,17,14,9,12)
+boxplot(Kiama, horizontal = TRUE)
+hist(Kiama)
+qqnorm(Kiama)
+summary(Kiama)
+ </input>
+ </sage>
+
+<example> <title> Kiama with R </title>
+<statement>
+<p> Can we conclude the variable is normally distributed? </p>
+</statement>
+<solution> 
+<p> Considering the histogram is skewed right, there are two outliers far to the right, and the normal quantile plot does not appear linear, then this sample is <term>not </term> from a population that is normally distributed. </p>
+</solution>
+</example> 
+
+
+  </subsection>
+
+
 
  <subsection xml:id="subsec-NormalityPractice">
   <title>Practice Problems</title>
+  <p> Determine if the following variables are normally distributed by checking the histogram, boxplot, and quantile plots. </p>
+
+<p>1. The US National Center for Health Statistics (NCHS) conducted a series of health and nutrition surveys called NHANES. One of the many variables in NHANES is pulse. Determine if pulse is a normally distributed variable. </p> 
+
+<p> 2. The size of fish is very important to commercial fishing. A study conducted in 2012 collected the lengths of Atlantic cod caught in nets in Karlskrona (Ovegard, Berndt and Lunneryd, 2012). Data based on information from the study is in table #6.2.4. Determine if the data is from a population that is normally distributed. </p>
+
   </subsection>
 
 

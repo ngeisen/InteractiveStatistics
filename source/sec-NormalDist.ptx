@@ -24,6 +24,7 @@
 
 <subsection xml:id="subsec-StandardNormal">
   <title>Standard Normal Distribution</title>
+  <p>Many continuous variables have a distribution that are bell-shaped, and these are called <em>approximately normally distributed</em>. No variable fits the normal distribution perfectly since it is a theoretical distribution. However, a normal distribution can be used to describe many variables. </p>
 <p>We will begin our adventure with the standard normal distribution, which is centered at mean <m> \mu = 0 </m> and standard deviation <m> \sigma = 1</m>.  </p>
 <p>Just as in a discrete probability distribution, the object is to find the probability of an event occurring.  However, unlike in a discrete probability distribution where the event can be a single value, in a continuous probability distribution the event is a range.  You are interested in finding the probability of <m>x </m> occurring in the range between <m>a</m> and <m>b</m>, or <m> P(a \leq x \leq b) </m> . Calculus tells us to find the area under the curve on the interval from <m>a</m> to <m>b</m>.</p>
 
@@ -50,6 +51,12 @@
 <subsection xml:id="subsec-StandardNormalStatKey">
   <title>Standard Normal Distribution with StatKey</title>
 <p>The first step is to identify your values, draw the normal curve centered at 0, and then shade the appropriate region based on the scenario. I recommend drawing the image on paper first, this will help you to set up StatKey correctly. </p>
+<p>
+      Link to:  
+      <url href="https://www.lock5stat.com/StatKey/"> StatKey.
+      </url>
+    </p>
+
 <p> Go to <term>StatKey</term>, near the bottom next to <term>Theoretical Distributions</term>, click on <c> Normal</c>. It will show you the standard normal distribution centered at 0.0.</p>
 
 <figure xml:id="StatKeyMenuNormal">

@@ -41,7 +41,7 @@
 <p> An <term> outlier </term> is a data value that is much larger or smaller than the rest of the data. This may indicate an unusual value. The student weight of 303 is an outlier as indicated by the star in the boxplot. </p>
 
 
-<p> Another graph you may occasional see is the <term> ogive</term>, also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero. </p>
+<p> Another graph you may occasional see is the <term> ogive</term>, also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing function. If you think of your accumulated credit hours for college, if you plot the total number of credits have have complete at the end of each semester you just created an ogive. The graph always starts at zero. </p>
 </subsection> 
 
 <subsection xml:id="subsec-QNshapes">
@@ -53,7 +53,7 @@
                 <shortdescription> uniform with equal heights</shortdescription>
             </image>
 <p>      </p>
-<p> A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is refered to as <term> normally </term> distributed. Symmeteric refers to imagining folding the graph in half about the middle and the two sides will align.  If one of the tails is longer than the other, we refer to it as being skewed.</p>
+<p> A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is referred to as <term> normally </term> distributed. Symmetric refers to imagining folding the graph in half about the middle and the two sides will align.  If one of the tails is longer than the other, we refer to it as being skewed.</p>
 <image source="ShapeSym.png" width="60%">
                 <shortdescription> symmetric with hump in middle</shortdescription>
             </image>
@@ -65,7 +65,7 @@
             </image>
 <p>      </p>
 
-<p> If the data tends to cluster on the left side, and we see a few values on the rigt side, this is known as <term> right skewed </term> since the tail goes to the right of the data. This indicates the mean will be right of the median.</p>
+<p> If the data tends to cluster on the left side, and we see a few values on the right side, this is known as <term> right skewed </term> since the tail goes to the right of the data. This indicates the mean will be right of the median.</p>
 <image source="ShapeRight.png" width="60%">
                 <shortdescription> right skew</shortdescription>
             </image>
@@ -107,7 +107,7 @@
     <shortdescription> select the two quantitative variables image </shortdescription>
 </image>
 <p> The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. </p>
-<figure xml:id="ShoeHeightScatterplot">
+<figure xml:id="ShoeHeightScatterplot1">
   <caption>Image of Scatterplot for Shoe Size and Height </caption>
   <image source="ShoesHeightsScatter.png" >
       <shortdescription> Shoe size and Height Scatterplot.</shortdescription>
@@ -116,7 +116,7 @@
 <p> Interpreting graph: From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. </p>
 
 <p> If you click on the <c>Switch Variables</c> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well. </p>
-<figure xml:id="HeightvsShoeScatterplot">
+<figure xml:id="HeightvsShoeScatterplot2">
   <caption>Image of Scatterplot for Height and shoe size </caption>
   <image source="HeightShoesScatterplot.png" >
       <shortdescription> Scatterplot with height on x-axis.</shortdescription>

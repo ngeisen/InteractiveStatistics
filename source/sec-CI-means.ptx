@@ -3,15 +3,136 @@
   <title>Intervals for Means</title>
   <introduction>
     <p>
-      intro
+      Medical researchers have determined normal intervals for a person's blood pressure, cholesterol and triglycerides levels. For example, the normal range of systolic blood pressure is 110 to 140 mmHg. The normal triglycerides level is between 30 to 200 milligrams per deciliter. By measuring these values, a doctor can determine if a patient's vital statistics are within the normal interval or if some type of treatment is needed to correct the condition. 
     </p>
   </introduction>
  
 
 <subsection xml:id="subsec-CImean">
   <title>Understanding the Basics</title>
-  <p> the </p> 
+  <p> Inferential statistics techniques have various <em>assumptions</em> that must be met before valid conclusion scan be drawn. One assumption is that the samples are randomly selected. Another assumption is the sample size must be greater than or equal to 30 or the population must be normally or approximately normally distributed. Recall from the last chapter that we check the histogram is approximately bell-shaped, few outliers, and the normal quantile plots appears linear.  </p> 
+<p>Recall the first week of class where we completed the class survey for students' weights and heights. From the sample of 42 students, the mean weight was 171 pounds, and the mean height was 67.9 inches. From the sample data we would infer the average weight for all UNC students to be around 171 pounds and the average height for all students to be around 67.9 inches. This type of estimate is called a <em>point estimate</em> </p>
+<p> A <term> point estimate</term> is a specific numerical values estimate of the parameter. The best point estimate for the population mean <m>\mu</m> is the sample mean <m> \bar{x}</m>. </p> 
+<p> Typically, the sample mean will be different than the population mean due to sampling error. What would happen to the class mean if we had the basketball team in our class?  So how good is a point estimate? There is no way of knowing how close a particular point estimate is to the parameter. That is why statisticians prefer an <em>interval estimate</em>. </p>
+<p> An <term>interval estimate</term> of a parameter is an interval or range of values used to estimate the parameter. </p>
+<p>This estimate may or may not contain the value of the parameter being estimated. Thus, a degree of confidence, generally written as a percentage, can be assigned to the interval estimation made. . Common values we will use are 90%, 95%, and 99% confidence. </p> 
+<p>We may be 90% confidence the true mean height of college students is between 66.6 inches and 69.2 inches, or we could be 99% confidence the true mean height of college students is between 66.0 inches and 69.8 inches which is a bit wider to contain more plausible values. </p>
+<p>The <term>confidence level </term> of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter. </p>
+<p>A <term>confidence interval</term> is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate. </p>
+<p> From the 90% confidence interval, the sample mean was 67.9 inches +/- 1.3 gives the interval 66.6 to 69.2 inches. The amount of variation is referred to as the <em> margin of error</em>. For the 99% confidence interval, the sample mean 67.9 +/- 1.9 gives 66.0 to 69.8 inches. The higher confidence level allows for more variation in the estimates. </p>
+<p>The <term> margin of error</term> is the maximum likely difference between the point estimate of a parameter and the actual value of the population parameter.</p> 
+
+
+
   </subsection>
+
+
+<subsection xml:id="subsec-tDistribution">
+<title>t Distribution</title>
+<p> Since we are estimating the population parameters, it is unlikely that we know <m> \mu</m> and <m> \sigma</m>. Thus, we are no longer able to use the normal z-distribution. Instead, we use the sample standard deviation <m>s</m> with the <em>t-distribution</em>. </p>
+<p>The <em>t</em>-distribution shares some characters of the normal distribution. It is bell shaped and symmetrical about the mean. The mean, median, and mode are equal to 0 and located at the center of the distribution. The curve does not touch the x-axis.</p>
+<p>The <em>t</em>-distribution also differs from the normal distribution in that the variance is greater than 1. The <em>t</em>-distribution is a family of curves based on the concept of degrees of freedom which is related to the sample size. As the sample size increases, it approaches the standard normal distribution.</p>
+<p> The formula for finding the degrees of freedom will vary for different statistical tests. The <term>degrees of freedom</term> are the number of values that are free to vary after a sample statistics has been computed, and they tell the researcher which specific curve to use. The degrees of freedom for finding the confidence interval for a single mean is one less than the sample size, thus <m>df=n-1</m></p>
+
+<p> <term> How to find t* with StatKey </term></p> 
+<p> Example: Suppose we want to create a 90% confidence interval for a sample of 42 students. </p>
+<p>From StatKey toward the bottom of the page next to the <term>Theoretical Distributions </term> select <c> t</c> for the t-distribution. </p>
+<figure xml:id="StatKeyMenuT">
+            <caption>StatKey Menu for t-distribution</caption>
+            <image source="StatkeyTdist1.png" width="80%">
+                <shortdescription>third heading down to theoretical then second tab right for t-distribution.</shortdescription>
+            </image>
+        </figure> 
+<p> It will request the degrees of freedom, since the sample size is 42,  <m>df=42-1=41</m>, enter 41 then click on <c>OK</c>. This will give you the appropriate curve based on the sample size. </p> 
+<figure xml:id="StatKeyCIdf">
+            <caption>Enter degrees of freedom</caption>
+            <image source="StatkeyTdist2.png" width="50%">
+                <shortdescription>enter 41 df.</shortdescription>
+            </image>
+        </figure> 
+<p> Click on <c>Two Tail</c> and enter 0.90 in the middle portion of the curve. The cut scores will be along the bottom of the curve. The t*=1.683. Notice that there are two values, one positive and one negative since it is symmetric about the mean 0.</p>
+<figure xml:id="StatKey90ci">
+            <caption>t-distribution for 90% for 41 df </caption>
+            <image source="StatkeyTdist3.png" width="80%">
+                <shortdescription>middle 90% gives t=1.683.</shortdescription>
+            </image>
+        </figure> 
+
+<exercise>
+<statement> <p> Find t* for 95% confidence for a sample of 20 people. </p> 
+</statement>
+<solution> <p>Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95 </p>
+<p> The t* = 2.093 </p>
+<figure xml:id="StatKey95ci">
+            <caption>t-distribution for 95% for 19 df </caption>
+            <image source="StatkeyTdist4.png" width="80%">
+                <shortdescription>middle 95% gives t=2.093.</shortdescription>
+            </image>
+        </figure> 
+</solution>
+</exercise> 
+
+<exercise>
+<statement> <p> Find t* for 99% confidence for a sample of 25 people. </p> 
+</statement>
+<solution> <p>Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99 </p>
+<p> The t* = 2.797 </p>
+</solution>
+</exercise> 
+
+<exercise>
+<statement> <p> Find t* for 95% confidence for a sample of 50 people. </p> 
+</statement>
+<solution> <p>Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95 </p>
+<p> The t* = 2.010 </p>
+</solution>
+</exercise> 
+
+<exercise>
+<statement> <p> Find t* for 99% confidence for a sample of 50 people. </p> 
+</statement>
+<solution> <p>Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99 </p>
+<p> The t* = 2.680 </p>
+</solution>
+</exercise> 
+
+<exercise>
+<statement> <p> What happens to t* for the same sample size if the level of confidence increases? </p> 
+</statement>
+<solution> <p> As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets <em>larger </em> because we are allowing for more margin of error in the estimate.</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement> <p> What happens to t* if the level of confidence stays the same but the sample size increases? </p> 
+</statement>
+<solution> <p> As the sample size gets larger, the t* value also gets <em>smaller</em> because there is less variation in larger samples.</p>
+</solution>
+</exercise>
+
+
+<p> Now we are ready to create the confidence interval to predict the population mean. </p> 
+<p><term>Formula for Confidence interval of the mean is</term> </p> 
+<p> <me> \overline{x} \pm t*(\frac{s}{\sqrt n})  </me></p> 
+<p> or </p>
+<p> <me> \bar{x}-t*(\frac{s}{\sqrt n})  \lt \mu \lt \bar{x}+t*(\frac{s}{\sqrt n})  </me></p>
+
+<p>where <m> \bar{x} </m> is the sample mean, <m> s</m> is the sample standard deviation, <m> n </m> is the sample size, and <m>t*</m> is from the <m>t</m>-distribution using <m>df=n-1</m> .</p>
+
+
+
+
+<p><em>Example:</em> From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students. </p>
+<p><em>Solution:</em> We are given that <m>n=42</m>, thus <m>df=42-1=41</m>, <m> \bar{x}=171.1</m>, and <m> s=39.0</m>. The <m>t*=1.683</m> . </p>
+<p> Using the mean CI formula:  <m> \overline{x} \pm t*(\frac{s}{\sqrt n})  </m></p> 
+<p> substituting in the values we get: <m> 171.1 \pm 1.683(\frac{39.0}{\sqrt 42})  </m></p> 
+<p> which gives lower bound of <m>160.97 \lt \mu \lt 181.23 </m> pounds. </p>
+<p> We are 90% confident that the true mean weight for all UNC students is between 161 and 181 pounds. </p>
+
+
+
+  </subsection>
+
 
 <subsection xml:id="subsec-CImeanCalc">
   <title>Using Technology</title>
@@ -37,7 +158,7 @@
    <p>Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years. </p>
   </statement>
 <solution> <p> mean 4.3 +/- 2.093(2.77/sqrt20) gives 3.00 to 5.6 </p>
-<p> 95% confident that the mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year. </p>
+<p> 95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year. </p>
 </solution>
 </exercise> 
 
@@ -46,7 +167,7 @@
   <p>Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years. </p>
   </statement>
 <solution> <p> mean 7.75 +/- 1.729(3.34/sqrt20) gives 6.46 to 9.04 </p>
-<p> 90% confident that confident that the mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year. </p>
+<p> 90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year. </p>
 </solution>
 </exercise> 
 
@@ -54,7 +175,7 @@
   <statement>
    <p>Did the mean of all hurricanes land in each of those intervals? Explain why or why not. </p>
   </statement>
-<solution> <p> The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes then. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring. </p>
+<solution> <p> The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period. </p>
 </solution>
 </exercise> 
 
