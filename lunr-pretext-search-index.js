@@ -1285,7 +1285,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Graphing Quantitative Data",
-  "body": " Graphing Quantitative Data    At the end of this section you will able to     Graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data.    Describe the relationship from scatterplots.    Interpret graphs.     In this course we will use technology to graph quantitative data. So our focus will be on interpreting the information from the graph. The three graphs we will use the most are dotplots, boxplots, and histograms.   Graphing One Quantitative Variable  A dotplot is a graph where the values are listed along the x-axis and each dot represents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos for each student from a sample of 43 students.   image of number of tattoos    Interpret Dotplot: From the dotplot we can see there are 43 dots for the sample of 43 students. Clearly 0 tattoos occur most often (26 students). There are 7 students with 1 tattoo, one student with 2 tattoos, one student with 3 tattoos, four students with 4 tattoos, two students with 5 tattoos. There is one student with 10 and one student with 12 tattoos. The data is from Survey 2  A histogram is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution.   histogram of student weights    Interpret Histogram: The histogram created by StatKey shows the weights, in pounds, from a sample of 42 students. The lightest student weight is 115 pounds while the largest weight is 303 pounds. Most students are between 125 and 225 pounds. The width of each interval is 25 pounds creating 9 subdivisions. There are 12 students whose weights are between 150 and 175 pounds. The mean weight is 171.1 pounds. Data found in Survey1.  A boxplot splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots because the box represents the middle 50% of the data and there is a whisker to the smallest value and a whisker to the largest value.   boxplot of student weights    Interpret Boxplot: The boxplot created by StatKey shows the weights, in pounds, from a sample of 42 students. The minimum student weight is 115 pounds while the maximum weight is 303 pounds. Most students are between 140 and 200 pounds, represented by the box for the middle 50% of the student weights. The middle line represents the median of 163.5 pounds. Data found in Survey 1.  An outlier is a data value that is much larger or smaller than the rest of the data. This may indicate an unusual value. The student weight of 303 is an outlier as indicated by the star in the boxplot.  Another graph you may occasional see is the ogive , also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing fucntion. If you think of your accumulated credit hours for college, if you plot the total number of credits have have completd at the end of each semester you just created an ogive. The graph always starts at zero.    Shapes of Distributions  When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is refered to as normally distributed. Symmeteric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the rigt side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps     See the section for Graphing with StatKey for uploading one quantitative variable into StatKey to graph the data.      Graphing Two Quantitative Variables  There are times when we want to determine whether a relationship exists between two quantitative variables. This can visually be seen with a scatterplot where the data are plotted as points. The independent variable, also known as the explanatory variable, is scaled along the x-axis and the dependent variable, also known as the response variable, is scaled along the y-axis. Once the data is plotted as paired points (x,y) we can describe the pattern between the two variables.   Correlation is a statistical method used to determine whether a relationship between two quantitative variables exists.  For now, we will focus on simple linear relationships. If the pattern shows that the y-values are increasing as the x-values increase, then we have a positive correlation . If the points form an approximate line, then it’s a positive linear relationship. A negative correlation exists when one variable increase while the other variable decreases. If the points form a line, then it’s a negative linear relationship. If the points appear more random and there is no pattern, then there is typically a weak or no correlation thus no relationship exists between the two variables.  We use the correlation coefficient to describe the strength of the linear relationship as well as its direction (as positive or negative). The sample correlation coefficient value is designated as r and the population value as ρ (rho). The range of values is from -1 to +1. If there is a strong positive linear relationship, the value of r is closer to +1. If there is a strong negative linear relationship, the value of r is closer to -1. If there is no linear relationship or if there is a weak relationship, the value of r is close to 0. When the correlation values are close to +0.5 or -0.5 we will call that a moderate relationship.  First, let's use some intuitive reasoning to determine if a relationship may exist. For the following situations, do you think there is a positive relationship, negative relationship or no relationship?  We are going to investigate if there is a relationship between a person’s height and his\/her shoe size using the first day survey. If we know a person’s height, are we able to predict his\/her shoe size? Or if we know a person’s shoe size, can we predict his\/her height? Let’s find out. We will use technology to help us create the scatterplot and find the correlation value.  Link to StatKey.   Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    Interpreting graph: From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.  If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    A few words of warning: just because a correlation between variables exists it does not indicate one variable causes the other to occur. It is possible a third variable, known as a lurking variable, may account for the correlation. Just because a student is tall, does not cause their shoe size to be large. Just as having a larger shoe size does not cause a student to be taller. When working with observational studies, we cannot assume causation even if there is a strong correlation between variables.   Practice   Now let's investigate the type of relationship between a person's weight and height. Do you think this will be positive, negative, or no relationship? Click on the Change Columns to change the variables and describe the nature of the relationship from the scatterplot and the correlation coefficient.   Image of Scatterplot for Weight and Height   Scatterplot with weight on x-axis and height on y.     Correlation Coefficient   Compute the correlation coefficient between weight and height.    Correlation Coefficient r = 0.623.     Type of Relationship   Identify the type of relationship between weight and height.    There's a moderate positive linear relationship.     Describe the Relationship   Describe the relationship between weight and height.    As student's weights increase, their heights also increase.     Slope   Identify the slope when x= weight and y=height.    Slope = 0.077 is positive.     Y-intercept   Identify the y-intercept when x=weight and y=height.    The y-intercept = 54.692 inches.     Regression Equation   Identify the regression equation where x= weight and y=height.    Height = 0.077(weight)+54.692 or .      Quantitative Data Exploration   A. Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graphs and summary statistics table into a word document and summarize the data.  Your summary should include at least two graphs (dotplot and boxplot if discrete, or histogram and boxplot if continuous) and the summary statistics table. Your summary of the data should report the shape of the distribution and what values appear typical. Describe any other relevant information such as outliers.   B. Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate the relationship between two quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data.  In the summary describe the nature of the relationship from the scatterplot and support ir with the correlation coefficient. Give the regression equation and interpret the slope.     Other Graphs   "
+  "body": " Graphing Quantitative Data    At the end of this section you will able to     Graph quantitative data with dotplots, boxplots, and histograms.    Describe the shape of a data.    Describe the relationship from scatterplots.    Interpret graphs.     In this course we will use technology to graph quantitative data. So our focus will be on interpreting the information from the graph. The three graphs we will use the most are dotplots, boxplots, and histograms.   Graphing One Quantitative Variable  A dotplot is a graph where the values are listed along the x-axis and each dot represents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos for each student from a sample of 43 students.   image of number of tattoos    Interpret Dotplot: From the dotplot we can see there are 43 dots for the sample of 43 students. Clearly 0 tattoos occur most often (26 students). There are 7 students with 1 tattoo, one student with 2 tattoos, one student with 3 tattoos, four students with 4 tattoos, two students with 5 tattoos. There is one student with 10 and one student with 12 tattoos. The data is from Survey 2  A histogram is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution.   histogram of student weights    Interpret Histogram: The histogram created by StatKey shows the weights, in pounds, from a sample of 42 students. The lightest student weight is 115 pounds while the largest weight is 303 pounds. Most students are between 125 and 225 pounds. The width of each interval is 25 pounds creating 9 subdivisions. There are 12 students whose weights are between 150 and 175 pounds. The mean weight is 171.1 pounds. Data found in Survey1.  A boxplot splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots because the box represents the middle 50% of the data and there is a whisker to the smallest value and a whisker to the largest value.   boxplot of student weights    Interpret Boxplot: The boxplot created by StatKey shows the weights, in pounds, from a sample of 42 students. The minimum student weight is 115 pounds while the maximum weight is 303 pounds. Most students are between 140 and 200 pounds, represented by the box for the middle 50% of the student weights. The middle line represents the median of 163.5 pounds. Data found in Survey 1.  An outlier is a data value that is much larger or smaller than the rest of the data. This may indicate an unusual value. The student weight of 303 is an outlier as indicated by the star in the boxplot.  Another graph you may occasional see is the ogive , also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing function. If you think of your accumulated credit hours for college, if you plot the total number of credits have have complete at the end of each semester you just created an ogive. The graph always starts at zero.    Shapes of Distributions  When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is referred to as normally distributed. Symmetric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the right side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps     See the section for Graphing with StatKey for uploading one quantitative variable into StatKey to graph the data.      Graphing Two Quantitative Variables  There are times when we want to determine whether a relationship exists between two quantitative variables. This can visually be seen with a scatterplot where the data are plotted as points. The independent variable, also known as the explanatory variable, is scaled along the x-axis and the dependent variable, also known as the response variable, is scaled along the y-axis. Once the data is plotted as paired points (x,y) we can describe the pattern between the two variables.   Correlation is a statistical method used to determine whether a relationship between two quantitative variables exists.  For now, we will focus on simple linear relationships. If the pattern shows that the y-values are increasing as the x-values increase, then we have a positive correlation . If the points form an approximate line, then it’s a positive linear relationship. A negative correlation exists when one variable increase while the other variable decreases. If the points form a line, then it’s a negative linear relationship. If the points appear more random and there is no pattern, then there is typically a weak or no correlation thus no relationship exists between the two variables.  We use the correlation coefficient to describe the strength of the linear relationship as well as its direction (as positive or negative). The sample correlation coefficient value is designated as r and the population value as ρ (rho). The range of values is from -1 to +1. If there is a strong positive linear relationship, the value of r is closer to +1. If there is a strong negative linear relationship, the value of r is closer to -1. If there is no linear relationship or if there is a weak relationship, the value of r is close to 0. When the correlation values are close to +0.5 or -0.5 we will call that a moderate relationship.  First, let's use some intuitive reasoning to determine if a relationship may exist. For the following situations, do you think there is a positive relationship, negative relationship or no relationship?  We are going to investigate if there is a relationship between a person’s height and his\/her shoe size using the first day survey. If we know a person’s height, are we able to predict his\/her shoe size? Or if we know a person’s shoe size, can we predict his\/her height? Let’s find out. We will use technology to help us create the scatterplot and find the correlation value.  Link to StatKey.   Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    Interpreting graph: From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.  If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    A few words of warning: just because a correlation between variables exists it does not indicate one variable causes the other to occur. It is possible a third variable, known as a lurking variable, may account for the correlation. Just because a student is tall, does not cause their shoe size to be large. Just as having a larger shoe size does not cause a student to be taller. When working with observational studies, we cannot assume causation even if there is a strong correlation between variables.   Practice   Now let's investigate the type of relationship between a person's weight and height. Do you think this will be positive, negative, or no relationship? Click on the Change Columns to change the variables and describe the nature of the relationship from the scatterplot and the correlation coefficient.   Image of Scatterplot for Weight and Height   Scatterplot with weight on x-axis and height on y.     Correlation Coefficient   Compute the correlation coefficient between weight and height.    Correlation Coefficient r = 0.623.     Type of Relationship   Identify the type of relationship between weight and height.    There's a moderate positive linear relationship.     Describe the Relationship   Describe the relationship between weight and height.    As student's weights increase, their heights also increase.     Slope   Identify the slope when x= weight and y=height.    Slope = 0.077 is positive.     Y-intercept   Identify the y-intercept when x=weight and y=height.    The y-intercept = 54.692 inches.     Regression Equation   Identify the regression equation where x= weight and y=height.    Height = 0.077(weight)+54.692 or .      Quantitative Data Exploration   A. Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graphs and summary statistics table into a word document and summarize the data.  Your summary should include at least two graphs (dotplot and boxplot if discrete, or histogram and boxplot if continuous) and the summary statistics table. Your summary of the data should report the shape of the distribution and what values appear typical. Describe any other relevant information such as outliers.   B. Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate the relationship between two quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data.  In the summary describe the nature of the relationship from the scatterplot and support ir with the correlation coefficient. Give the regression equation and interpret the slope.     Other Graphs   "
 },
 {
   "id": "sec-QuantData-2",
@@ -1423,18 +1423,18 @@ var ptx_lunr_docs = [
   "body": "correlation coefficient "
 },
 {
-  "id": "ShoeHeightScatterplot",
+  "id": "ShoeHeightScatterplot1",
   "level": "2",
-  "url": "sec-QuantData.html#ShoeHeightScatterplot",
+  "url": "sec-QuantData.html#ShoeHeightScatterplot1",
   "type": "Figure",
   "number": "2.2.1",
   "title": "",
   "body": " Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.   "
 },
 {
-  "id": "HeightvsShoeScatterplot",
+  "id": "HeightvsShoeScatterplot2",
   "level": "2",
-  "url": "sec-QuantData.html#HeightvsShoeScatterplot",
+  "url": "sec-QuantData.html#HeightvsShoeScatterplot2",
   "type": "Figure",
   "number": "2.2.2",
   "title": "",
@@ -2527,7 +2527,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Linear Regression",
-  "body": " Linear Regression  Previously, we used a scatterplot to visually determine whether a relationship exists between two quantitative variables. Next, we want to make predictions about the linear trend found in the scatterplot, this process of fitting a line to a set of data is called linear regression.    At the end of this section you will be able to     Describe the nature of a relationship from scatterplot.    Interpret the correlation coefficient.    Find the linear regression equation.    Predict values using the regression equation.    Find the residual.     Recall in Chapter 2, we used a scatterplot to visually determine whether a relationship exists between two quantitative variables and the correlation coefficient to describe the strength and direction of the relationship. Next, we want to make predictions about the linear trend found in the scatterplot, this is known as linear regression . We create a line that goes through the points to help us make the predictions.  Let us do a quick review. A positive relationship exists when both variables increase while a negative relationship exists when one variable increase and the other variable decreases. The correlation coefficient measures its strength on a scale from -1 to +1.    If there is a strong positive linear relationship, the correlation coefficient is closer to +1.    If there is a strong negative linear relationship, the correlation coefficient is closer to -1.    If there is a moderate linear relationship, the correlation coefficient is around 0.5 or -0.5.    If there is no relationship or if there is a weak relationship, the correlation coefficient is around 0.    The regression line is known as the line of best fit since it minimizes the vertical distance each point is from the regression line. We will focus on linear regression where , where a is the y-intercept and b is the slope of the line. The sign of the slope will match the sign of the correlation coefficient.  The regression line provides a model of a linear association between two quantitative variables to give a predicted value of the response (dependent) variable, based on a given value of in the explanatory (independent) variable.  We are going to continue our investigation of the relationship between a person's height and his\/her shoe size using the first day survey. If we know a person's height, are we able to predict his\/her shoe size? Or if we know a person’s shoe size, can we predict his\/her height? Let’s find out.  First, let's review the scatterplot and the correlation value.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    The scatterplot shows a strong positive correlation with r = 0.913. As the shoe sizes increase the student heights are also increasing. This matches the positive slope of 2.014. The slope tells us the height increases by 2 inches for each 1 change in shoe size. The scatterplot is scaled based on the data values, with shoe size ranging from 6 to 15 and heights between 59 inches and 78 inches. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. Thus, the linear regression equation to predict height is where is the student shoe size.  If you click on the box Show Regression Line in StatKey, the line goes through the middle if our points by minimizing their distances to it.   Image of regression line for Shoe Size and Height   Shoe size and Height regression line.     Making Predictions    Example: Predict a person's height if the person has a size 8 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot?  Solution: Using the linear regression equation So we predict the person's height to be 65.5 inches or 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches.   Example: Predict a person's height for shoe size 11 using the regression equation. Does this seem reasonable given the data in the scatterplot?  Solution: Using the linear regression equation So we predict the height to be 70.55 inches or 5 feet 10.6 inches tall. This does align with the scatter plot. On the x-axis we start at size 11, go up to the regression line then move to the left to find the height around 71 inches.  Suppose a person is 6 feet tall (72 inches), predict his\/her shoe size using the current regression equation. Make sure you are solving for the correct variable.  Solution: Now we use and we solve for . Subtract 48.396 from both sides of the equation and then divide by 2.014 to get shoe size.  Estimating the value from the scatterplot, we start with the y-axis where y=72 inches, we go right until we land on the regression line and drop down to x = 11.5 shoe size.  Now lets switch the axes and compare the new scatterplot. The height is now the x-axis and the shoe size is along the y-axis.   Image of regression line for Height on x-axis   Height regression line.    We have the same correlation coefficient of r = 0.913 showing a strong positive linear relationship. But the linear regression equation is now where is the height and is the shoe size. The slope tells us that the shoe size increases by .414 for each additional inch in height. Notice that for a height of 0 inches the predicted shoe size is -18.683.  Predicting the shoe size for someone 72 inches becomes which is around size 11 shoe. Notice how the two estimates are slightly different.   Example: From the data file, the person who was 72 inches tall has a shoe size of 12. The residual using the second regression equation gave us the predicted size of 11.125. Thus the residual , the actual shoe size is almost one size greater than the estimate. The first regression equation gave a predicted size of 11.7, thus the residual is which is closer to the actual value.  Warning: the prediction is only as good as our graph. The y-intercept value often does not make sense in the context, but helps us to make our estimates within the scatterplot (knows as interpolation). Making predictions beyond the bounds of the data, known as extrapolation, can be off. For example, we do not want to predict former UNC basketball player Dalton Knecht's shoe size using his height of 6 feet 6 inches (78 inches) since it goes off the graph. The prediction would not be reliable.  The difference between the actual value y and the predicted value is called a residual . This lets us know how far off our prediction is.   Example: From the data file, the person who was 72 inches tall has a shoe size of 12. The residual using the second regression equation gave us the predicted size of 11.125. Thus the residual , the actual shoe size is almost one size greater than the estimate. The first regression equation gave a predicted size of 11.7, thus the residual is which is closer to the actual value.   Practice   Now complete the correlation and regression analysis for different scenario.  Seismologists use tools like seismograms to record and analyze earthquake data, including their location, magnitude, depth, and other factors. Seismologists indicate the size of an earthquake in units of magnitude. Some methods are based on body waves (which travel deep within the structure of the earth) and surface waves. Earthquake magnitude is a logarithmic scale meaning the shaking will be 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake.  Suppose a seismologist wanted to know if there was a correlation between the magnitude of an earthquake and its depth at the epicenter (where the earthquake originates, measured in kilometers below the earth’s surface). The data file includes a list of earthquakes that were felt during a one-week period between April 19 and April 25, 2025 around the world, as recorded by the Southern California Earthquake Data Center. Generally, earthquakes with a magnitude of 2.5 can be felt. Use the variables Magnitude and Depth for these earthquakes.  insert the data file   Image of regression line for magnitude and depth of earthquakes   Earthquake regression line.     Correlation   State the correlation coefficient.    Correlation r = 0.473 is a moderate positive relationship (note: this is statistically significant which we will investigate later in the semester).     Nature of the relationship   Describe the nature of the relationship.    As the magnitude of an earthquake increases, its depth below the surface also increases     Slope   Identify the slope when x = magnitude and y = depth.    Slope = 14.78 is positive.     Y-intercept   Identify the y-intercept when x = magnitude and y = depth.    The y-intercept = -23.334 km below surface.     Regression Equation   Identify the regression equation where x = magnitude and y = depth.    Depth = 14.78(magnitude)-23.334 or .     Prediction   Predict the depth of the epicenter for an earthquake with a magnitude of 6.0.     km below surface.     Residual   Find the residual for a 4.8 earthquake with a depth of 62.7 km from El Salvador.    Predict km below surface. Residual km deeper than predicted .    "
+  "body": " Linear Regression   Previously, we used a scatterplot to visually determine whether a relationship exists between two quantitative variables. Next, we want to make predictions about the linear trend found in the scatterplot, this process of fitting a line to a set of data is called linear regression.     At the end of this section you will be able to     Describe the nature of a relationship from scatterplot.    Interpret the correlation coefficient.    Find the linear regression equation.    Predict values using the regression equation.    Find the residual.      Simple Linear Regression  Recall in Chapter 2, we used a scatterplot to visually determine whether a relationship exists between two quantitative variables and the correlation coefficient to describe the strength and direction of the relationship. Next, we want to make predictions about the linear trend found in the scatterplot, this is known as linear regression . We create a line that goes through the points to help us make the predictions.  Let us do a quick review. A positive relationship exists when both variables increase while a negative relationship exists when one variable increase and the other variable decreases. The correlation coefficient measures its strength on a scale from -1 to +1.    If there is a strong positive linear relationship, the correlation coefficient is closer to +1.    If there is a strong negative linear relationship, the correlation coefficient is closer to -1.    If there is a moderate linear relationship, the correlation coefficient is around 0.5 or -0.5.    If there is no relationship or if there is a weak relationship, the correlation coefficient is around 0.    The regression line is known as the line of best fit since it minimizes the vertical distance each point is from the regression line. We will focus on linear regression where , where a is the y-intercept and b is the slope of the line. The sign of the slope will match the sign of the correlation coefficient.  The regression line provides a model of a linear association between two quantitative variables to give a predicted value of the response (dependent) variable, based on a given value of in the explanatory (independent) variable.  We are going to continue our investigation of the relationship between a person's height and his\/her shoe size using the first day survey. If we know a person's height, are we able to predict his\/her shoe size? Or if we know a person’s shoe size, can we predict his\/her height? Let’s find out.  First, let's review the scatterplot and the correlation value.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    The scatterplot shows a strong positive correlation with r = 0.913. As the shoe sizes increase the student heights are also increasing. This matches the positive slope of 2.014. The slope tells us the height increases by 2 inches for each 1 change in shoe size. The scatterplot is scaled based on the data values, with shoe size ranging from 6 to 15 and heights between 59 inches and 78 inches. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. Thus, the linear regression equation to predict height is where is the student shoe size.  If you click on the box Show Regression Line in StatKey, the line goes through the middle if our points by minimizing their distances to it.   Image of regression line for Shoe Size and Height   Shoe size and Height regression line.     Making Predictions    Example: Predict a person's height if the person has a size 8 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot?  Solution: Using the linear regression equation So we predict the person's height to be 65.5 inches or 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches.   Example: Predict a person's height for shoe size 11 using the regression equation. Does this seem reasonable given the data in the scatterplot?  Solution: Using the linear regression equation So we predict the height to be 70.55 inches or 5 feet 10.6 inches tall. This does align with the scatter plot. On the x-axis we start at size 11, go up to the regression line then move to the left to find the height around 71 inches.  Suppose a person is 6 feet tall (72 inches), predict his\/her shoe size using the current regression equation. Make sure you are solving for the correct variable.  Solution: Now we use and we solve for . Subtract 48.396 from both sides of the equation and then divide by 2.014 to get shoe size.  Estimating the value from the scatterplot, we start with the y-axis where y=72 inches, we go right until we land on the regression line and drop down to x = 11.5 shoe size.  Now lets switch the axes and compare the new scatterplot. The height is now the x-axis and the shoe size is along the y-axis.   Image of regression line for Height on x-axis   Height regression line.    We have the same correlation coefficient of r = 0.913 showing a strong positive linear relationship. But the linear regression equation is now where is the height and is the shoe size. The slope tells us that the shoe size increases by .414 for each additional inch in height. Notice that for a height of 0 inches the predicted shoe size is -18.683.  Predicting the shoe size for someone 72 inches becomes which is around size 11 shoe. Notice how the two estimates are slightly different.   Example: From the data file, the person who was 72 inches tall has a shoe size of 12. The residual using the second regression equation gave us the predicted size of 11.125. Thus the residual , the actual shoe size is almost one size greater than the estimate. The first regression equation gave a predicted size of 11.7, thus the residual is which is closer to the actual value.  Warning: the prediction is only as good as our graph. The y-intercept value often does not make sense in the context, but helps us to make our estimates within the scatterplot (knows as interpolation). Making predictions beyond the bounds of the data, known as extrapolation, can be off. For example, we do not want to predict former UNC basketball player Dalton Knecht's shoe size using his height of 6 feet 6 inches (78 inches) since it goes off the graph. The prediction would not be reliable.  The difference between the actual value y and the predicted value is called a residual . This lets us know how far off our prediction is.   Example: From the data file, the person who was 72 inches tall has a shoe size of 12. The residual using the second regression equation gave us the predicted size of 11.125. Thus the residual , the actual shoe size is almost one size greater than the estimate. The first regression equation gave a predicted size of 11.7, thus the residual is which is closer to the actual value.    Practice   Now complete the correlation and regression analysis for different scenario.  Seismologists use tools like seismograms to record and analyze earthquake data, including their location, magnitude, depth, and other factors. Seismologists indicate the size of an earthquake in units of magnitude. Some methods are based on body waves (which travel deep within the structure of the earth) and surface waves. Earthquake magnitude is a logarithmic scale meaning the shaking will be 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake.  Suppose a seismologist wanted to know if there was a correlation between the magnitude of an earthquake and its depth at the epicenter (where the earthquake originates, measured in kilometers below the earth’s surface). The data file includes a list of earthquakes that were felt during a one-week period between April 19 and April 25, 2025 around the world, as recorded by the Southern California Earthquake Data Center. Generally, earthquakes with a magnitude of 2.5 can be felt. Use the variables Magnitude and Depth for these earthquakes.  insert the data file   Image of regression line for magnitude and depth of earthquakes   Earthquake regression line.     Correlation   State the correlation coefficient.    Correlation r = 0.473 is a moderate positive relationship (note: this is statistically significant which we will investigate later in the semester).     Nature of the relationship   Describe the nature of the relationship.    As the magnitude of an earthquake increases, its depth below the surface also increases     Slope   Identify the slope when x = magnitude and y = depth.    Slope = 14.78 is positive.     Y-intercept   Identify the y-intercept when x = magnitude and y = depth.    The y-intercept = -23.334 km below surface.     Regression Equation   Identify the regression equation where x = magnitude and y = depth.    Depth = 14.78(magnitude)-23.334 or .     Prediction   Predict the depth of the epicenter for an earthquake with a magnitude of 6.0.     km below surface.     Residual   Find the residual for a 4.8 earthquake with a depth of 62.7 km from El Salvador.    Predict km below surface. Residual km deeper than predicted .    "
 },
 {
   "id": "sec-DesStat-Regression-3",
@@ -2539,63 +2539,63 @@ var ptx_lunr_docs = [
   "body": "  At the end of this section you will be able to     Describe the nature of a relationship from scatterplot.    Interpret the correlation coefficient.    Find the linear regression equation.    Predict values using the regression equation.    Find the residual.    "
 },
 {
-  "id": "sec-DesStat-Regression-4",
+  "id": "subsec-SimpleLinear-2",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-4",
+  "url": "sec-DesStat-Regression.html#subsec-SimpleLinear-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "linear regression "
 },
 {
-  "id": "ShoeHeightScatterplot",
+  "id": "ShoeHeightScatterplot3",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#ShoeHeightScatterplot",
+  "url": "sec-DesStat-Regression.html#ShoeHeightScatterplot3",
   "type": "Figure",
   "number": "3.4.1",
   "title": "",
   "body": " Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.   "
 },
 {
-  "id": "ShoeHeightRegression",
+  "id": "ShoeHeightRegression4",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#ShoeHeightRegression",
+  "url": "sec-DesStat-Regression.html#ShoeHeightRegression4",
   "type": "Figure",
   "number": "3.4.2",
   "title": "",
   "body": " Image of regression line for Shoe Size and Height   Shoe size and Height regression line.   "
 },
 {
-  "id": "sec-DesStat-Regression-15",
+  "id": "subsec-SimpleLinear-13",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-15",
+  "url": "sec-DesStat-Regression.html#subsec-SimpleLinear-13",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Making Predictions "
 },
 {
-  "id": "HeightShoeRegression",
+  "id": "HeightShoeRegression1",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#HeightShoeRegression",
+  "url": "sec-DesStat-Regression.html#HeightShoeRegression1",
   "type": "Figure",
   "number": "3.4.3",
   "title": "",
   "body": " Image of regression line for Height on x-axis   Height regression line.   "
 },
 {
-  "id": "sec-DesStat-Regression-29",
+  "id": "subsec-SimpleLinear-27",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-29",
+  "url": "sec-DesStat-Regression.html#subsec-SimpleLinear-27",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "residual "
 },
 {
-  "id": "sec-DesStat-Regression-31",
+  "id": "sec-DesStat-Regression-5",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-31",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2611,63 +2611,63 @@ var ptx_lunr_docs = [
   "body": " Image of regression line for magnitude and depth of earthquakes   Earthquake regression line.   "
 },
 {
-  "id": "sec-DesStat-Regression-37",
+  "id": "sec-DesStat-Regression-11",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-37",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-11",
   "type": "Example",
   "number": "3.4.5",
   "title": "Correlation.",
   "body": " Correlation   State the correlation coefficient.    Correlation r = 0.473 is a moderate positive relationship (note: this is statistically significant which we will investigate later in the semester).   "
 },
 {
-  "id": "sec-DesStat-Regression-38",
+  "id": "sec-DesStat-Regression-12",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-38",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-12",
   "type": "Example",
   "number": "3.4.6",
   "title": "Nature of the relationship.",
   "body": " Nature of the relationship   Describe the nature of the relationship.    As the magnitude of an earthquake increases, its depth below the surface also increases   "
 },
 {
-  "id": "sec-DesStat-Regression-39",
+  "id": "sec-DesStat-Regression-13",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-39",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-13",
   "type": "Example",
   "number": "3.4.7",
   "title": "Slope.",
   "body": " Slope   Identify the slope when x = magnitude and y = depth.    Slope = 14.78 is positive.   "
 },
 {
-  "id": "sec-DesStat-Regression-40",
+  "id": "sec-DesStat-Regression-14",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-40",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-14",
   "type": "Example",
   "number": "3.4.8",
   "title": "Y-intercept.",
   "body": " Y-intercept   Identify the y-intercept when x = magnitude and y = depth.    The y-intercept = -23.334 km below surface.   "
 },
 {
-  "id": "sec-DesStat-Regression-41",
+  "id": "sec-DesStat-Regression-15",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-41",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-15",
   "type": "Example",
   "number": "3.4.9",
   "title": "Regression Equation.",
   "body": " Regression Equation   Identify the regression equation where x = magnitude and y = depth.    Depth = 14.78(magnitude)-23.334 or .   "
 },
 {
-  "id": "sec-DesStat-Regression-42",
+  "id": "sec-DesStat-Regression-16",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-42",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-16",
   "type": "Example",
   "number": "3.4.10",
   "title": "Prediction.",
   "body": " Prediction   Predict the depth of the epicenter for an earthquake with a magnitude of 6.0.     km below surface.   "
 },
 {
-  "id": "sec-DesStat-Regression-43",
+  "id": "sec-DesStat-Regression-17",
   "level": "2",
-  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-43",
+  "url": "sec-DesStat-Regression.html#sec-DesStat-Regression-17",
   "type": "Example",
   "number": "3.4.11",
   "title": "Residual.",
@@ -4885,7 +4885,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Assessing Normality",
-  "body": " Assessing Normality        At the end of this section you will be able to:     Determine if a variable is normally distributed    Assess normality with histogram, boxplot, and quantile plot.     Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed? One way is to take a sample and look at the sample to determine if it appears normally distributed. If the sample looks normal, then most likely the population is also. Here are some guidelines that are used to help make that determination.     Histogram: Make a histogram. For a normal distribution, the histogram should be roughly bell-shaped and symmetric. For small samples, this is not very accurate, and another method may be needed. A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.     Outliers: For a normal distribution, there should not be more than one outlier. One way to check for outliers is to use a box plot. Outliers are values that are shown as dots or stars outside of the rest of the values when using technology.     Normal quantile plot: This plot is provided through statistical software on a computer or graphing calculator. It plots the data values on one axis and its z-score on the other. If the points lie close to a line, the data comes from a distribution that is approximately normal. If the points do not lie close to a line or they show a pattern that is curved, the data are likely to come from a distribution that is not normally distributed.    If you are creating boxplots by hand, we check for outliers mathematically. Outliers are data values that are:    Greater than Quartile 3 plus 1.5 times the interquartile range (IQR)    Below than Quartile 3 minus 1.5 times the interquartile range (IQR)    Recall the IQR = Q3 – Q1    Note: if there is an outlier, that outlier could have a dramatic effect on the results especially if it is an extreme outlier. However, there are times when a distribution has more than one outlier, but it is still normally distributed. The guideline of only one outlier is just a guideline.    We will look at a couple of examples to determine if the data comes from a population that is normally distributed.   Example: Kiama Blowhole Eruptions  In Kiama, Australia, there is the world's largest blowhole. The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 30 meters (98.4 feet).   Image of Kiama Blowhole Eruption   image of blowhole eruption.    The data table shows the times in seconds between the Kiama blowhole eruptions from a random day. Do the data come from a population that is normally distributed? Explain why or why not.   Table of time between Kiama eruptions   time in seconds between eruptions.    We will be using technology to determine the normality of this variable.   Histogram   Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.    enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.    histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.   The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.     Boxplot   Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.    boxplot has outliers on right side at larger values.     The boxplot shows the data is right skewed with two upper outliers.     Quantile Plot   Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot is curved.     Notice that the quantile plot forms a curve rather than straight line.     Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.      Example: IQ Scores  One way to measure intelligence is with an IQ score. A common test is the Wechsler Intelligence Scale. Scores around 100 are considered average while scores above 140 are considered gifted. The table below contains 50 IQ scores. Determine if the sample comes from a population that is normally distributed.   Table of IQ scores   sample of 50 IQ scores.     Histogram  Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button.    histogram shows higher frequencies in the middle and lower frequencies at the small and large values.     This histogram is relatively symmetric and bell-shaped     Boxplot   Create boxplot to check the IQ scores for outliers  Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.    boxplot appears symmetric without outliers.     Boxplot appears symmetric without outliers.     Quantile Plot   Create a normal quantile plot of the IQ scores   Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L2 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [Window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 50 and Ymax = 150.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot forms a line.     Notice that the quantile plot forms a straight line.     Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample is from a population that is normally distributed.      Practice Problems   "
+  "body": " Assessing Normality        At the end of this section you will be able to:     Determine if a variable is normally distributed.    Assess normality with histogram, boxplot, and quantile plot.     Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed? One way is to take a sample and look at the data to determine if it appears normally distributed. If the sample appears normal, then most likely the population is also. Here are some guidelines that are used to help make that determination.     Histogram: Make a histogram. For a normal distribution, the histogram should be roughly bell-shaped and symmetric. For small samples, this is not very accurate, and another method may be needed. A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.     Outliers: For a normal distribution, there should not be more than one outlier. One way to check for outliers is to use a box plot. Outliers are values that are shown as dots or stars outside of the rest of the values when using technology.     Normal quantile plot: This plot is provided through statistical software on a computer or graphing calculator. It plots the data values on one axis and its z-score on the other. If the points lie close to a line, the data comes from a distribution that is approximately normal. If the points do not lie close to a line or they show a pattern that is curved, the data are likely to come from a distribution that is not normally distributed.    If you are creating boxplots by hand, we check for outliers mathematically. Outliers are data values that are:    Greater than Quartile 3 plus 1.5 times the interquartile range (IQR)    Below than Quartile 3 minus 1.5 times the interquartile range (IQR)    Recall the IQR = Q3 – Q1    Note: if there is an outlier, that outlier could have a dramatic effect on the results especially if it is an extreme outlier. However, there are times when a distribution has more than one outlier, but it is still normally distributed. The guideline of only one outlier is just a guideline.    We will look at a couple of examples to determine if the data comes from a population that is normally distributed.   Example: Kiama Blowhole Eruptions  In Kiama, Australia, there is the world's largest blowhole. The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 30 meters (98.4 feet).   Image of Kiama Blowhole Eruption   image of blowhole eruption.    The data table shows the times in seconds between the Kiama blowhole eruptions from a random day. Do the data come from a population that is normally distributed? Explain why or why not.   Table of time between Kiama eruptions   time in seconds between eruptions.    We will be using technology to determine the normality of this variable.   Histogram    Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.   Enter the Kiama Data   enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.   Kiama Histogram   histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.    The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.     Boxplot    Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.   Kiama Boxplot   boxplot has outliers on right side at larger values.      The boxplot shows the data is right skewed with two upper outliers.     Quantile Plot    Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.   Kiama Quantile Plot   the quantile plot is curved.      Notice that the quantile plot forms a curve rather than straight line.     Conclusion   Can we conclude the variable is normally distributed?    Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.      Example: IQ Scores  One way to measure intelligence is with an IQ score. A common test is the Wechsler Intelligence Scale. Scores around 100 are considered average while scores above 140 are considered gifted. The table below contains 50 IQ scores. Determine if the sample comes from a population that is normally distributed.   Table of IQ scores   sample of 50 IQ scores.     Histogram   Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button.   IQ Histogram   histogram shows higher frequencies in the middle and lower frequencies at the small and large values.      This histogram is relatively symmetric and bell-shaped     Boxplot    Create boxplot to check the IQ scores for outliers  Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.   IQ Boxplot   boxplot appears symmetric without outliers.      Boxplot appears symmetric without outliers.     Quantile Plot    Create a normal quantile plot of the IQ scores   Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L2 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [Window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 50 and Ymax = 150.  Now press the [GRAPH] button to get the normal quantile plot.   IQ Quantile Plot   the quantile plot forms a line.      Notice that the quantile plot forms a straight line.     Conclusion   Can we conclude the variable is normally distributed?    Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample is from a population that is normally distributed.      Assessing Normality with R Studio  Let us revisit the Kiama blowhole, but this time let us analyze the data using R Studio.  The R Studio command for the quantile plot is qqnorm(Kiama)   To construct histogram use hist(Kiama)   To construct boxplot use boxplot(Kiama)   In Kiama, Australia, there is the world's largest blowhole. The 2.5 meter opening in the rock face has had its plumes of water reach heights of over 98.4 feet. Use the R code block to determine if the variable is normally distributed. Click on the Evaluate(R) button to construct the graphs within the webpage.    Kiama with R   Can we conclude the variable is normally distributed?    Considering the histogram is skewed right, there are two outliers far to the right, and the normal quantile plot does not appear linear, then this sample is not from a population that is normally distributed.      Practice Problems  Determine if the following variables are normally distributed by checking the histogram, boxplot, and quantile plots.  1. The US National Center for Health Statistics (NCHS) conducted a series of health and nutrition surveys called NHANES. One of the many variables in NHANES is pulse. Determine if pulse is a normally distributed variable.  2. The size of fish is very important to commercial fishing. A study conducted in 2012 collected the lengths of Atlantic cod caught in nets in Karlskrona (Ovegard, Berndt and Lunneryd, 2012). Data based on information from the study is in table #6.2.4. Determine if the data is from a population that is normally distributed.   "
 },
 {
   "id": "sec-AssessNormality-3",
@@ -4894,7 +4894,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.3",
   "title": "",
-  "body": "  At the end of this section you will be able to:     Determine if a variable is normally distributed    Assess normality with histogram, boxplot, and quantile plot.    "
+  "body": "  At the end of this section you will be able to:     Determine if a variable is normally distributed.    Assess normality with histogram, boxplot, and quantile plot.    "
 },
 {
   "id": "sec-AssessNormality-5-1-1",
@@ -4948,7 +4948,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.3",
   "title": "Histogram.",
-  "body": " Histogram   Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.    enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.    histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.   The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.   "
+  "body": " Histogram    Create a histogram on TI83\/84:   Begin with the [STAT] button, and under EDIT select option [1:Edit] to enter the data values in L1.   Enter the Kiama Data   enter values in list 1.    Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1. Press [enter]. Make sure turn the plot ON then [enter] if needed. Use the arrow down once to Type: and arrow right to the third graph which is the histogram. Identify where the data is located so Xlist should identify L1. Use [2nd] [1] to identify L1. Freq: should be a 1 since each value is listed individually.  You will need to adjust the [WINDOW] based on the data values. The Xmin should be the smallest data value while Xmax is the largest data value. We will select Xmin = 0 and Xmax = 200 with Xscl =20. Ymin = 0 for smallest frequency and Ymax =25 should be what you think the highest frequency is going to be. You can always change this if you need to. Yscl is just how often you would like to see a tick mark on the y-axis.   Kiama Histogram   histogram shows smaller times occur more often than larger times between eruptions.    Now press [GRAPH] button to see the histogram.    The histogram shows that the data is right skewed since the smaller times occur more often than larger times between eruptions.   "
 },
 {
   "id": "subsec-Kiama-8",
@@ -4957,7 +4957,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.6",
   "title": "Boxplot.",
-  "body": " Boxplot   Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.    boxplot has outliers on right side at larger values.     The boxplot shows the data is right skewed with two upper outliers.   "
+  "body": " Boxplot    Create a boxplot on the TI-83\/84 to check for outliers   Since we already have the data entered, use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 again. Press [enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [enter]. Identify where the data is located Xlist: L1 and Freq is 1. We can keep the same Window.  Hit the [GRAPH] button.   Kiama Boxplot   boxplot has outliers on right side at larger values.      The boxplot shows the data is right skewed with two upper outliers.   "
 },
 {
   "id": "subsec-Kiama-9",
@@ -4966,7 +4966,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.8",
   "title": "Quantile Plot.",
-  "body": " Quantile Plot   Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot is curved.     Notice that the quantile plot forms a curve rather than straight line.   "
+  "body": " Quantile Plot    Create a normal quantile plot on the TI-83\/84   Use the [2nd] [Y=] button to select STAT PLOT and select option 1:Plot1 and press [enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L1 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 0 and Ymax = 200.  Now press the [GRAPH] button to get the normal quantile plot.   Kiama Quantile Plot   the quantile plot is curved.      Notice that the quantile plot forms a curve rather than straight line.   "
 },
 {
   "id": "subsec-Kiama-10",
@@ -4975,7 +4975,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.10",
   "title": "Conclusion.",
-  "body": " Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.   "
+  "body": " Conclusion   Can we conclude the variable is normally distributed?    Considering the histogram is skewed right, there are two extreme outliers, and the normal quantile plot does not look linear, then this sample is not from a population that is normally distributed.   "
 },
 {
   "id": "IQscoresData",
@@ -4993,7 +4993,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.12",
   "title": "Histogram.",
-  "body": " Histogram  Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button.    histogram shows higher frequencies in the middle and lower frequencies at the small and large values.     This histogram is relatively symmetric and bell-shaped   "
+  "body": " Histogram   Enter the IQ scores in List 2. Use [STAT] button and under EDIT select option [1:Edit] to enter the data values in L2.  Use [2nd] [Y=] for the STAT PLOT and select option 1:Plot1. Press [enter]. Under Type: select the third image for the histogram and change Xlist to L2 by pressing the [2nd] button and [2] and keep the Freq: 1. Adjust the [Window] with Xmin = 50 and Xmax = 150 with Xscl = 10. Set Ymin = 0 and Ymax = 20 for the frequency. Then press the [GRAPH] button.   IQ Histogram   histogram shows higher frequencies in the middle and lower frequencies at the small and large values.      This histogram is relatively symmetric and bell-shaped   "
 },
 {
   "id": "subsec-IQscores-5",
@@ -5002,7 +5002,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.14",
   "title": "Boxplot.",
-  "body": " Boxplot   Create boxplot to check the IQ scores for outliers  Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.    boxplot appears symmetric without outliers.     Boxplot appears symmetric without outliers.   "
+  "body": " Boxplot    Create boxplot to check the IQ scores for outliers  Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: use the right arrow to the fourth image which is the boxplot and then press [Enter]. Identify where the data is located Xlist: L2 and Freq is 1. We can keep the same [Window]. Hit the [GRAPH] button to see the boxplot.   IQ Boxplot   boxplot appears symmetric without outliers.      Boxplot appears symmetric without outliers.   "
 },
 {
   "id": "subsec-IQscores-6",
@@ -5011,7 +5011,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.16",
   "title": "Quantile Plot.",
-  "body": " Quantile Plot   Create a normal quantile plot of the IQ scores   Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L2 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [Window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 50 and Ymax = 150.  Now press the [GRAPH] button to get the normal quantile plot.    the quantile plot forms a line.     Notice that the quantile plot forms a straight line.   "
+  "body": " Quantile Plot    Create a normal quantile plot of the IQ scores   Use the [2nd] [Y=] button to select STAT PLOT and select option 1: Plot1 and press [Enter].  Under Type: select the sixth image which looks like a line.  Set Data List to L2 and set Data Axis to Y. You can select the Mark you want.  Next, adjust the [Window] by setting Xmin = -4 and Xmax = 4 since these will represent the z-scores of the data values.  Set the y-values to the data set values thus Ymin = 50 and Ymax = 150.  Now press the [GRAPH] button to get the normal quantile plot.   IQ Quantile Plot   the quantile plot forms a line.      Notice that the quantile plot forms a straight line.   "
 },
 {
   "id": "subsec-IQscores-7",
@@ -5020,7 +5020,16 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.18",
   "title": "Conclusion.",
-  "body": " Conclusion  Can we conclude the variable is normally distributed?   Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample is from a population that is normally distributed.   "
+  "body": " Conclusion   Can we conclude the variable is normally distributed?    Considering the histogram is relatively symmetric and bell shaped, there are no outliers, and the normal quantile plot looks linear, then the conclusion is that this sample is from a population that is normally distributed.   "
+},
+{
+  "id": "subsec-NormalityR-8",
+  "level": "2",
+  "url": "sec-AssessNormality.html#subsec-NormalityR-8",
+  "type": "Example",
+  "number": "5.3.19",
+  "title": "Kiama with R.",
+  "body": " Kiama with R   Can we conclude the variable is normally distributed?    Considering the histogram is skewed right, there are two outliers far to the right, and the normal quantile plot does not appear linear, then this sample is not from a population that is normally distributed.   "
 },
 {
   "id": "sec-NormalDist",
@@ -5029,7 +5038,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "Normal Distribution",
-  "body": " Normal Distribution   Many real-life situations use measurement to find quantitative data which produces a histogram that is symmetric, unimodal, and bell-shaped. For example: height, weight, blood pressure, and cholesterol level form continuous probability distribution. In this section we will work with a distribution known as the normal distribution. However, not every bell-shaped curve is considered normal. The shape of the distribution is influenced by the mean (center of the distribution) and the standard deviation (how spread out the values are).     At the end of this section you will be able to:     Find the area under the normal distribution curve.    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.      Standard Normal Distribution  We will begin our adventure with the standard normal distribution, which is centered at mean and standard deviation .  Just as in a discrete probability distribution, the object is to find the probability of an event occurring. However, unlike in a discrete probability distribution where the event can be a single value, in a continuous probability distribution the event is a range. You are interested in finding the probability of occurring in the range between and , or . Calculus tells us to find the area under the curve on the interval from to .  Before looking at the process for finding the probabilities under the normal curve, it is somewhat useful to look at the Empirical Rule that gives approximate values for these areas. This gives you an idea of what the size of the probabilities is for different shadings. A more precise method for finding probabilities for the normal curve will be demonstrated later in this section.  The Empirical Rule for any normal distribution:  Approximately 68% of the data falls within one standard deviation of the mean.  Approximately 95% of the data falls within two standard deviations of the mean.  Approximately 9% of the data falls within three standard deviations of the mean.  image  The probability is the area under the curve. Before technology, we needed to convert every x value to a standardized number, called the z-score or z-value . The z-score is a measure of how many standard deviations that value is from the mean. To convert from a normally distributed x value to a z-score, we use the following formula:     where mean of the population and standard deviation for the population for the variable.  The z-score is normally distributed, with a mean of 0 and a standard deviation of 1. It is known as the standard normal curve . If the z-score is positive, the data value is above the mean. If the z-score is negative, the data value is below the mean. The farther the z-value is from 0, the farther the data value is from the mean. Once you have the z-score, you can look up the area in the standard normal distribution table.  Luckily, technology can find probabilities and area for us. There are many programs available that will calculate the probability for a normal curve including StatKey, R Studio and TI83 Plus or TI-84 calculators.    Standard Normal Distribution with StatKey  The first step is to identify your values, draw the normal curve centered at 0, and then shade the appropriate region based on the scenario. I recommend drawing the image on paper first, this will help you to set up StatKey correctly.  Go to StatKey , near the bottom next to Theoretical Distributions , click on Normal . It will show you the standard normal distribution centered at 0.0.   StatKey Menu for Normal Distribution   Third tab down to theoretical distributions and one step right for Normal.     Standard Normal Distribution   Normal curve centered at 0 with tails at -4 and 4.    Example: Find the area right of on the standard normal distribution.  In StatKey click on Right Tail and enter the value 1.75 along the bottom. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area.   Normal Distribution right of z = 1.75   shaded right of 1.75 with small area shaded.      Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965.   Normal Distribution right of z = -1.81   shaded right of -1.81 with large area shaded of 0.965.        Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to 0.94. Note how less than half the curve is shaded giving an area of 0.174.   Normal Distribution right of z = 0.94   shaded right of 0.94with small area shaded.       Example: Find the area left of .  Click on Reset Plot then click on Left Tail and enter the value -1.81 along the bottom. The small left area is 0.035. Note that the curve is symmetric and the total area is always 1=100%, thus .   Normal Distribution left of z =-1.81   shaded left of -1.81 with small area shaded of 0.035.      Find the area left of .    Change the bottom to -2.85. The new area is 0.0022. The larger the z-value, the smaller the area in the tail of the curve.   Normal Distribution left of -2.85   shaded left of -2.85 with smaller area shaded of 0.0022.        Find the area left of .    Change the bottom to 1.45. The new area is 0.926. Since over half the curve is shaded to the left, there is a larger area.   Normal Distribution left of z = 1.45   shaded left of 1.45 with large area shaded of 0.926.       Example: Find the area between and .  On paper you will draw the curve centered at 0. Mark where z = 1.25 and z = -1.36, then shade the area between the two values. In StatKey, Reset Plot and click on the Left Tail and enter the value -1.36 at the bottom on the left side, it will shade it to the left. Then click on Right Tail and enter the value 1.25 along the bottom on the right side, it will shade to the right. We want the white area between the two values, which is 0.807. StatKey will always shade in the tails.   Distribution between z = -1.36 and z = 1.25   between shading area of 0.807.     Example: Suppose we want to find the area to the right of and the area to the left of . We just need to add the area of those two regions shaded in red. The area is .  Sometimes when working with the normal distribution, we want to find which z-score correlates with a certain percentage of the curve.   Example: Suppose we want to know the z-scored for the middle 80% of the values of the normal distribution.  Click on Reset Plot and click on the Two Tail . Change the middle white region from the default of 0.95 (which have the z-values of -1.960 and +1.960) to 0.80 to change the z-values to -1.282 and +1.282 along the bottom of the graph. The larger the middle percentage, the larger the z-scores will be. Since the normal curve is symmetric, the values are the same just one positive and one negative.   Normal Distribution for middle 80%   middle area is 80% giving the cut scores of -1.282 and 1.282.     Example: If we want to know the z-score cut off for the top 10% of the curve, click on Right Tail and change the area value to 0.100 to get the z-score of 1.282.   Top 10% on Normal Distribution   top 10% shaded on right side for z=1.282.     Example: If we want the cut off score for the bottom 20% of the values on the normal distribution, click on the Left Tail and change the area value to 0.200 to get . Anything below the mean will be negative, anything greater than the mean will be positive.   Bottom 20% on Normal Distribution   bottom 20% shaded on left side for z=-.842.      Apply Normal Distribution with StatKey  Now that we can find the area under the normal distribution, we can apply the same process to any normally distributed variable. We still draw the normal curve, but it is now centered at the mean for the situation. There are two ways to solve it: 1) find the z-score for the scenario and solve like we did for the standard normal distribution. 2) Enter the cut-score in StatKey or other technology to find the appropriate area.  The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting more than 280 days.    Normal Distribution with R Studio  Let us look at how we can use R Studio to find the area shaded or the cut-off scores.  The command in R Studio to find the area to the left of the x-value, is:  pnorm(value, mean, standard deviation, lower.tail=TRUE)  The command in R Studio to find the area to the right, is  pnorm(value, mean, standard deviation, lower.tail=FALSE)   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting more than 280 days.  The probability of a pregnancy lasting longer than 280 days is looking for the right area, thus . Click on the Evaluate (R) button below the R code block.   Thus, . Thus 18.7% of all pregnancies last more than 280 days. This is not considered unusual since the probability is greater than 5%.   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting less than 250 days.  We want which is the left area. Click on the Evaluate (R) button below the R code block.   The probability of a pregnancy lasting longer than 250 days is . Thus 0.73% of all pregnancies last less than 250 days. This is unusual since the probability is less than 5%.   Example: Find the probability of a pregnancy lasting between 265 days and 280 days.  We need to find the area between two values on the normal distribution. First, find the area to the left of both values and then subtract the areas to find the amount between.   The area left of 280 days is 0.8129686 and the area to the left of 265 days is 0.2185, thus . Thus 59.5% of all pregnancies last between 265 and 280 days.    Practice Problems  Your choice which form of technology you use to compete the following problems.   "
+  "body": " Normal Distribution   Many real-life situations use measurement to find quantitative data which produces a histogram that is symmetric, unimodal, and bell-shaped. For example: height, weight, blood pressure, and cholesterol level form continuous probability distribution. In this section we will work with a distribution known as the normal distribution. However, not every bell-shaped curve is considered normal. The shape of the distribution is influenced by the mean (center of the distribution) and the standard deviation (how spread out the values are).     At the end of this section you will be able to:     Find the area under the normal distribution curve.    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.      Standard Normal Distribution  Many continuous variables have a distribution that are bell-shaped, and these are called approximately normally distributed . No variable fits the normal distribution perfectly since it is a theoretical distribution. However, a normal distribution can be used to describe many variables.  We will begin our adventure with the standard normal distribution, which is centered at mean and standard deviation .  Just as in a discrete probability distribution, the object is to find the probability of an event occurring. However, unlike in a discrete probability distribution where the event can be a single value, in a continuous probability distribution the event is a range. You are interested in finding the probability of occurring in the range between and , or . Calculus tells us to find the area under the curve on the interval from to .  Before looking at the process for finding the probabilities under the normal curve, it is somewhat useful to look at the Empirical Rule that gives approximate values for these areas. This gives you an idea of what the size of the probabilities is for different shadings. A more precise method for finding probabilities for the normal curve will be demonstrated later in this section.  The Empirical Rule for any normal distribution:  Approximately 68% of the data falls within one standard deviation of the mean.  Approximately 95% of the data falls within two standard deviations of the mean.  Approximately 9% of the data falls within three standard deviations of the mean.  image  The probability is the area under the curve. Before technology, we needed to convert every x value to a standardized number, called the z-score or z-value . The z-score is a measure of how many standard deviations that value is from the mean. To convert from a normally distributed x value to a z-score, we use the following formula:     where mean of the population and standard deviation for the population for the variable.  The z-score is normally distributed, with a mean of 0 and a standard deviation of 1. It is known as the standard normal curve . If the z-score is positive, the data value is above the mean. If the z-score is negative, the data value is below the mean. The farther the z-value is from 0, the farther the data value is from the mean. Once you have the z-score, you can look up the area in the standard normal distribution table.  Luckily, technology can find probabilities and area for us. There are many programs available that will calculate the probability for a normal curve including StatKey, R Studio and TI83 Plus or TI-84 calculators.    Standard Normal Distribution with StatKey  The first step is to identify your values, draw the normal curve centered at 0, and then shade the appropriate region based on the scenario. I recommend drawing the image on paper first, this will help you to set up StatKey correctly.  Link to: StatKey.   Go to StatKey , near the bottom next to Theoretical Distributions , click on Normal . It will show you the standard normal distribution centered at 0.0.   StatKey Menu for Normal Distribution   Third tab down to theoretical distributions and one step right for Normal.     Standard Normal Distribution   Normal curve centered at 0 with tails at -4 and 4.    Example: Find the area right of on the standard normal distribution.  In StatKey click on Right Tail and enter the value 1.75 along the bottom. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area.   Normal Distribution right of z = 1.75   shaded right of 1.75 with small area shaded.      Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965.   Normal Distribution right of z = -1.81   shaded right of -1.81 with large area shaded of 0.965.        Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to 0.94. Note how less than half the curve is shaded giving an area of 0.174.   Normal Distribution right of z = 0.94   shaded right of 0.94with small area shaded.       Example: Find the area left of .  Click on Reset Plot then click on Left Tail and enter the value -1.81 along the bottom. The small left area is 0.035. Note that the curve is symmetric and the total area is always 1=100%, thus .   Normal Distribution left of z =-1.81   shaded left of -1.81 with small area shaded of 0.035.      Find the area left of .    Change the bottom to -2.85. The new area is 0.0022. The larger the z-value, the smaller the area in the tail of the curve.   Normal Distribution left of -2.85   shaded left of -2.85 with smaller area shaded of 0.0022.        Find the area left of .    Change the bottom to 1.45. The new area is 0.926. Since over half the curve is shaded to the left, there is a larger area.   Normal Distribution left of z = 1.45   shaded left of 1.45 with large area shaded of 0.926.       Example: Find the area between and .  On paper you will draw the curve centered at 0. Mark where z = 1.25 and z = -1.36, then shade the area between the two values. In StatKey, Reset Plot and click on the Left Tail and enter the value -1.36 at the bottom on the left side, it will shade it to the left. Then click on Right Tail and enter the value 1.25 along the bottom on the right side, it will shade to the right. We want the white area between the two values, which is 0.807. StatKey will always shade in the tails.   Distribution between z = -1.36 and z = 1.25   between shading area of 0.807.     Example: Suppose we want to find the area to the right of and the area to the left of . We just need to add the area of those two regions shaded in red. The area is .  Sometimes when working with the normal distribution, we want to find which z-score correlates with a certain percentage of the curve.   Example: Suppose we want to know the z-scored for the middle 80% of the values of the normal distribution.  Click on Reset Plot and click on the Two Tail . Change the middle white region from the default of 0.95 (which have the z-values of -1.960 and +1.960) to 0.80 to change the z-values to -1.282 and +1.282 along the bottom of the graph. The larger the middle percentage, the larger the z-scores will be. Since the normal curve is symmetric, the values are the same just one positive and one negative.   Normal Distribution for middle 80%   middle area is 80% giving the cut scores of -1.282 and 1.282.     Example: If we want to know the z-score cut off for the top 10% of the curve, click on Right Tail and change the area value to 0.100 to get the z-score of 1.282.   Top 10% on Normal Distribution   top 10% shaded on right side for z=1.282.     Example: If we want the cut off score for the bottom 20% of the values on the normal distribution, click on the Left Tail and change the area value to 0.200 to get . Anything below the mean will be negative, anything greater than the mean will be positive.   Bottom 20% on Normal Distribution   bottom 20% shaded on left side for z=-.842.      Apply Normal Distribution with StatKey  Now that we can find the area under the normal distribution, we can apply the same process to any normally distributed variable. We still draw the normal curve, but it is now centered at the mean for the situation. There are two ways to solve it: 1) find the z-score for the scenario and solve like we did for the standard normal distribution. 2) Enter the cut-score in StatKey or other technology to find the appropriate area.  The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting more than 280 days.    Normal Distribution with R Studio  Let us look at how we can use R Studio to find the area shaded or the cut-off scores.  The command in R Studio to find the area to the left of the x-value, is:  pnorm(value, mean, standard deviation, lower.tail=TRUE)  The command in R Studio to find the area to the right, is  pnorm(value, mean, standard deviation, lower.tail=FALSE)   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting more than 280 days.  The probability of a pregnancy lasting longer than 280 days is looking for the right area, thus . Click on the Evaluate (R) button below the R code block.   Thus, . Thus 18.7% of all pregnancies last more than 280 days. This is not considered unusual since the probability is greater than 5%.   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting less than 250 days.  We want which is the left area. Click on the Evaluate (R) button below the R code block.   The probability of a pregnancy lasting longer than 250 days is . Thus 0.73% of all pregnancies last less than 250 days. This is unusual since the probability is less than 5%.   Example: Find the probability of a pregnancy lasting between 265 days and 280 days.  We need to find the area between two values on the normal distribution. First, find the area to the left of both values and then subtract the areas to find the amount between.   The area left of 280 days is 0.8129686 and the area to the left of 265 days is 0.2185, thus . Thus 59.5% of all pregnancies last between 265 and 280 days.    Practice Problems  Your choice which form of technology you use to compete the following problems.   "
 },
 {
   "id": "sec-NormalDist-3",
@@ -5041,15 +5050,6 @@ var ptx_lunr_docs = [
   "body": "  At the end of this section you will be able to:     Find the area under the normal distribution curve.    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.    "
 },
 {
-  "id": "subsec-StandardNormal-4",
-  "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormal-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Empirical Rule "
-},
-{
   "id": "subsec-StandardNormal-5",
   "level": "2",
   "url": "sec-NormalDist.html#subsec-StandardNormal-5",
@@ -5059,27 +5059,36 @@ var ptx_lunr_docs = [
   "body": "Empirical Rule "
 },
 {
-  "id": "subsec-StandardNormal-10",
+  "id": "subsec-StandardNormal-6",
   "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormal-10",
+  "url": "sec-NormalDist.html#subsec-StandardNormal-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Empirical Rule "
+},
+{
+  "id": "subsec-StandardNormal-11",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-StandardNormal-11",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "z-score z-value "
 },
 {
-  "id": "subsec-StandardNormal-13",
+  "id": "subsec-StandardNormal-14",
   "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormal-13",
+  "url": "sec-NormalDist.html#subsec-StandardNormal-14",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "standard normal curve "
 },
 {
-  "id": "subsec-StandardNormalStatKey-3",
+  "id": "subsec-StandardNormalStatKey-4",
   "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-3",
+  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5113,18 +5122,18 @@ var ptx_lunr_docs = [
   "body": " Normal Distribution right of z = 1.75   shaded right of 1.75 with small area shaded.   "
 },
 {
-  "id": "subsec-StandardNormalStatKey-9",
+  "id": "subsec-StandardNormalStatKey-10",
   "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-9",
+  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-10",
   "type": "Example",
   "number": "5.4.4",
   "title": "",
   "body": "  Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965.   Normal Distribution right of z = -1.81   shaded right of -1.81 with large area shaded of 0.965.     "
 },
 {
-  "id": "subsec-StandardNormalStatKey-10",
+  "id": "subsec-StandardNormalStatKey-11",
   "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-10",
+  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-11",
   "type": "Example",
   "number": "5.4.6",
   "title": "",
@@ -5140,18 +5149,18 @@ var ptx_lunr_docs = [
   "body": " Normal Distribution left of z =-1.81   shaded left of -1.81 with small area shaded of 0.035.   "
 },
 {
-  "id": "subsec-StandardNormalStatKey-14",
+  "id": "subsec-StandardNormalStatKey-15",
   "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-14",
+  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-15",
   "type": "Example",
   "number": "5.4.9",
   "title": "",
   "body": "  Find the area left of .    Change the bottom to -2.85. The new area is 0.0022. The larger the z-value, the smaller the area in the tail of the curve.   Normal Distribution left of -2.85   shaded left of -2.85 with smaller area shaded of 0.0022.     "
 },
 {
-  "id": "subsec-StandardNormalStatKey-15",
+  "id": "subsec-StandardNormalStatKey-16",
   "level": "2",
-  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-15",
+  "url": "sec-NormalDist.html#subsec-StandardNormalStatKey-16",
   "type": "Example",
   "number": "5.4.11",
   "title": "",
@@ -5200,7 +5209,169 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Intervals for Means",
-  "body": " Intervals for Means   intro    Understanding the Basics  the    Using Technology  using TI83    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics to complete the table below. Click on Change Column to change variable names.    Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338      Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.      Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.      Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes then. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring.     "
+  "body": " Intervals for Means   Medical researchers have determined normal intervals for a person's blood pressure, cholesterol and triglycerides levels. For example, the normal range of systolic blood pressure is 110 to 140 mmHg. The normal triglycerides level is between 30 to 200 milligrams per deciliter. By measuring these values, a doctor can determine if a patient's vital statistics are within the normal interval or if some type of treatment is needed to correct the condition.    Understanding the Basics  Inferential statistics techniques have various assumptions that must be met before valid conclusion scan be drawn. One assumption is that the samples are randomly selected. Another assumption is the sample size must be greater than or equal to 30 or the population must be normally or approximately normally distributed. Recall from the last chapter that we check the histogram is approximately bell-shaped, few outliers, and the normal quantile plots appears linear.  Recall the first week of class where we completed the class survey for students' weights and heights. From the sample of 42 students, the mean weight was 171 pounds, and the mean height was 67.9 inches. From the sample data we would infer the average weight for all UNC students to be around 171 pounds and the average height for all students to be around 67.9 inches. This type of estimate is called a point estimate   A point estimate is a specific numerical values estimate of the parameter. The best point estimate for the population mean is the sample mean .  Typically, the sample mean will be different than the population mean due to sampling error. What would happen to the class mean if we had the basketball team in our class? So how good is a point estimate? There is no way of knowing how close a particular point estimate is to the parameter. That is why statisticians prefer an interval estimate .  An interval estimate of a parameter is an interval or range of values used to estimate the parameter.  This estimate may or may not contain the value of the parameter being estimated. Thus, a degree of confidence, generally written as a percentage, can be assigned to the interval estimation made. . Common values we will use are 90%, 95%, and 99% confidence.  We may be 90% confidence the true mean height of college students is between 66.6 inches and 69.2 inches, or we could be 99% confidence the true mean height of college students is between 66.0 inches and 69.8 inches which is a bit wider to contain more plausible values.  The confidence level of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter.  A confidence interval is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.  From the 90% confidence interval, the sample mean was 67.9 inches +\/- 1.3 gives the interval 66.6 to 69.2 inches. The amount of variation is referred to as the margin of error . For the 99% confidence interval, the sample mean 67.9 +\/- 1.9 gives 66.0 to 69.8 inches. The higher confidence level allows for more variation in the estimates.  The margin of error is the maximum likely difference between the point estimate of a parameter and the actual value of the population parameter.    t Distribution  Since we are estimating the population parameters, it is unlikely that we know and . Thus, we are no longer able to use the normal z-distribution. Instead, we use the sample standard deviation with the t-distribution .  The t -distribution shares some characters of the normal distribution. It is bell shaped and symmetrical about the mean. The mean, median, and mode are equal to 0 and located at the center of the distribution. The curve does not touch the x-axis.  The t -distribution also differs from the normal distribution in that the variance is greater than 1. The t -distribution is a family of curves based on the concept of degrees of freedom which is related to the sample size. As the sample size increases, it approaches the standard normal distribution.  The formula for finding the degrees of freedom will vary for different statistical tests. The degrees of freedom are the number of values that are free to vary after a sample statistics has been computed, and they tell the researcher which specific curve to use. The degrees of freedom for finding the confidence interval for a single mean is one less than the sample size, thus   How to find t* with StatKey  Example: Suppose we want to create a 90% confidence interval for a sample of 42 students.  From StatKey toward the bottom of the page next to the Theoretical Distributions select t for the t-distribution.   StatKey Menu for t-distribution   third heading down to theoretical then second tab right for t-distribution.    It will request the degrees of freedom, since the sample size is 42, , enter 41 then click on OK . This will give you the appropriate curve based on the sample size.   Enter degrees of freedom   enter 41 df.    Click on Two Tail and enter 0.90 in the middle portion of the curve. The cut scores will be along the bottom of the curve. The t*=1.683. Notice that there are two values, one positive and one negative since it is symmetric about the mean 0.   t-distribution for 90% for 41 df   middle 90% gives t=1.683.      Find t* for 95% confidence for a sample of 20 people.    Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95  The t* = 2.093   t-distribution for 95% for 19 df   middle 95% gives t=2.093.        Find t* for 99% confidence for a sample of 25 people.    Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99  The t* = 2.797      Find t* for 95% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95  The t* = 2.010      Find t* for 99% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99  The t* = 2.680      What happens to t* for the same sample size if the level of confidence increases?    As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets larger because we are allowing for more margin of error in the estimate.      What happens to t* if the level of confidence stays the same but the sample size increases?    As the sample size gets larger, the t* value also gets smaller because there is less variation in larger samples.    Now we are ready to create the confidence interval to predict the population mean.  Formula for Confidence interval of the mean is     or    where is the sample mean, is the sample standard deviation, is the sample size, and is from the -distribution using .  Example: From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.  Solution: We are given that , thus , , and . The .  Using the mean CI formula:  substituting in the values we get:  which gives lower bound of pounds.  We are 90% confident that the true mean weight for all UNC students is between 161 and 181 pounds.    Using Technology  using TI83    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics to complete the table below. Click on Change Column to change variable names.    Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338      Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.      Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.      Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.     "
+},
+{
+  "id": "subsec-CImean-4",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImean-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "point estimate "
+},
+{
+  "id": "subsec-CImean-6",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImean-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "interval estimate "
+},
+{
+  "id": "subsec-CImean-9",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImean-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "confidence level "
+},
+{
+  "id": "subsec-CImean-10",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImean-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "confidence interval "
+},
+{
+  "id": "subsec-CImean-12",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImean-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "margin of error "
+},
+{
+  "id": "subsec-tDistribution-5",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "degrees of freedom "
+},
+{
+  "id": "subsec-tDistribution-6",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "How to find t* with StatKey "
+},
+{
+  "id": "subsec-tDistribution-8",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Theoretical Distributions "
+},
+{
+  "id": "StatKeyMenuT",
+  "level": "2",
+  "url": "sec-CI-means.html#StatKeyMenuT",
+  "type": "Figure",
+  "number": "6.1.1",
+  "title": "",
+  "body": " StatKey Menu for t-distribution   third heading down to theoretical then second tab right for t-distribution.   "
+},
+{
+  "id": "StatKeyCIdf",
+  "level": "2",
+  "url": "sec-CI-means.html#StatKeyCIdf",
+  "type": "Figure",
+  "number": "6.1.2",
+  "title": "",
+  "body": " Enter degrees of freedom   enter 41 df.   "
+},
+{
+  "id": "StatKey90ci",
+  "level": "2",
+  "url": "sec-CI-means.html#StatKey90ci",
+  "type": "Figure",
+  "number": "6.1.3",
+  "title": "",
+  "body": " t-distribution for 90% for 41 df   middle 90% gives t=1.683.   "
+},
+{
+  "id": "subsec-tDistribution-14",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-14",
+  "type": "Checkpoint",
+  "number": "6.1.4",
+  "title": "",
+  "body": "  Find t* for 95% confidence for a sample of 20 people.    Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95  The t* = 2.093   t-distribution for 95% for 19 df   middle 95% gives t=2.093.     "
+},
+{
+  "id": "subsec-tDistribution-15",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-15",
+  "type": "Checkpoint",
+  "number": "6.1.6",
+  "title": "",
+  "body": "  Find t* for 99% confidence for a sample of 25 people.    Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99  The t* = 2.797   "
+},
+{
+  "id": "subsec-tDistribution-16",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-16",
+  "type": "Checkpoint",
+  "number": "6.1.7",
+  "title": "",
+  "body": "  Find t* for 95% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95  The t* = 2.010   "
+},
+{
+  "id": "subsec-tDistribution-17",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-17",
+  "type": "Checkpoint",
+  "number": "6.1.8",
+  "title": "",
+  "body": "  Find t* for 99% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99  The t* = 2.680   "
+},
+{
+  "id": "subsec-tDistribution-18",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-18",
+  "type": "Checkpoint",
+  "number": "6.1.9",
+  "title": "",
+  "body": "  What happens to t* for the same sample size if the level of confidence increases?    As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets larger because we are allowing for more margin of error in the estimate.   "
+},
+{
+  "id": "subsec-tDistribution-19",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-19",
+  "type": "Checkpoint",
+  "number": "6.1.10",
+  "title": "",
+  "body": "  What happens to t* if the level of confidence stays the same but the sample size increases?    As the sample size gets larger, the t* value also gets smaller because there is less variation in larger samples.   "
+},
+{
+  "id": "subsec-tDistribution-21",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-tDistribution-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Formula for Confidence interval of the mean is "
 },
 {
   "id": "subsec-CImeanPractice-3",
@@ -5216,7 +5387,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-4",
   "type": "Checkpoint",
-  "number": "6.1.1",
+  "number": "6.1.11",
   "title": "",
   "body": "  Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338   "
 },
@@ -5225,27 +5396,27 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-5",
   "type": "Checkpoint",
-  "number": "6.1.2",
+  "number": "6.1.12",
   "title": "",
-  "body": "  Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.   "
+  "body": "  Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.   "
 },
 {
   "id": "subsec-CImeanPractice-6",
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-6",
   "type": "Checkpoint",
-  "number": "6.1.3",
+  "number": "6.1.13",
   "title": "",
-  "body": "  Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.   "
+  "body": "  Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.   "
 },
 {
   "id": "subsec-CImeanPractice-7",
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-7",
   "type": "Checkpoint",
-  "number": "6.1.4",
+  "number": "6.1.14",
   "title": "",
-  "body": "  Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes then. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring.   "
+  "body": "  Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.   "
 },
 {
   "id": "sec-CI-proportions",

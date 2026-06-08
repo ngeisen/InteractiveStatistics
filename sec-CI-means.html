@@ -188,7 +188,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Application</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DesStat-Regression.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Linear Regression</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DesStat-Regression.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Linear Regression</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-SimpleLinear" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Simple Linear Regression</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -258,7 +261,8 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-Kiama" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Example: Kiama Blowhole Eruptions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-IQscores" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Example: IQ Scores</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-NormalityPractice" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-NormalityR" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Assessing Normality with R Studio</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssessNormality.html#subsec-NormalityPractice" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -280,8 +284,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-CI-means.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Intervals for Means</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImean" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanCalc" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Using Technology</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanPractice" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-tDistribution" class="internal"><span class="codenumber">6.1.2</span> <span class="title">t Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanCalc" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanPractice" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CI-proportions.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Intervals for Proportions</span></a></div></li>
@@ -397,34 +402,233 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intervals for Means</span>
 </h2>
 <section class="introduction" id="sec-CI-means-2">
-<div class="para" id="sec-CI-means-2-1">intro<div class="autopermalink" data-description="Paragraph"><a href="#sec-CI-means-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-CI-means-2-1">Medical researchers have determined normal intervals for a person’s blood pressure, cholesterol and triglycerides levels. For example, the normal range of systolic blood pressure is 110 to 140 mmHg. The normal triglycerides level is between 30 to 200 milligrams per deciliter. By measuring these values, a doctor can determine if a patient’s vital statistics are within the normal interval or if some type of treatment is needed to correct the condition.<div class="autopermalink" data-description="Paragraph"><a href="#sec-CI-means-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <section class="subsection" id="subsec-CImean">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
 </h3>
-<div class="para" id="subsec-CImean-2">the<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CImean-2">Inferential statistics techniques have various <em class="emphasis">assumptions</em> that must be met before valid conclusion scan be drawn. One assumption is that the samples are randomly selected. Another assumption is the sample size must be greater than or equal to 30 or the population must be normally or approximately normally distributed. Recall from the last chapter that we check the histogram is approximately bell-shaped, few outliers, and the normal quantile plots appears linear.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-3">Recall the first week of class where we completed the class survey for students’ weights and heights. From the sample of 42 students, the mean weight was 171 pounds, and the mean height was 67.9 inches. From the sample data we would infer the average weight for all UNC students to be around 171 pounds and the average height for all students to be around 67.9 inches. This type of estimate is called a <em class="emphasis">point estimate</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-4">A <dfn class="terminology">point estimate</dfn> is a specific numerical values estimate of the parameter. The best point estimate for the population mean <span class="process-math">\(\mu\)</span> is the sample mean <span class="process-math">\(\bar{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-5">Typically, the sample mean will be different than the population mean due to sampling error. What would happen to the class mean if we had the basketball team in our class?  So how good is a point estimate? There is no way of knowing how close a particular point estimate is to the parameter. That is why statisticians prefer an <em class="emphasis">interval estimate</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-6">An <dfn class="terminology">interval estimate</dfn> of a parameter is an interval or range of values used to estimate the parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-7">This estimate may or may not contain the value of the parameter being estimated. Thus, a degree of confidence, generally written as a percentage, can be assigned to the interval estimation made. . Common values we will use are 90%, 95%, and 99% confidence.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-8">We may be 90% confidence the true mean height of college students is between 66.6 inches and 69.2 inches, or we could be 99% confidence the true mean height of college students is between 66.0 inches and 69.8 inches which is a bit wider to contain more plausible values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-9">The <dfn class="terminology">confidence level</dfn> of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-10">A <dfn class="terminology">confidence interval</dfn> is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-11">From the 90% confidence interval, the sample mean was 67.9 inches +/- 1.3 gives the interval 66.6 to 69.2 inches. The amount of variation is referred to as the <em class="emphasis">margin of error</em>. For the 99% confidence interval, the sample mean 67.9 +/- 1.9 gives 66.0 to 69.8 inches. The higher confidence level allows for more variation in the estimates.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImean-12">The <dfn class="terminology">margin of error</dfn> is the maximum likely difference between the point estimate of a parameter and the actual value of the population parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImean-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 6.1.1: Understanding the Basics"><a href="#subsec-CImean" title="Copy heading and permalink for Subsection 6.1.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 6.1.1: Understanding the Basics">🔗</a></div>
 </section>
+<section class="subsection" id="subsec-tDistribution">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">t Distribution</span>
+</h3>
+<div class="para" id="subsec-tDistribution-2">Since we are estimating the population parameters, it is unlikely that we know <span class="process-math">\(\mu\)</span> and <span class="process-math">\(\sigma\text{.}\)</span> Thus, we are no longer able to use the normal z-distribution. Instead, we use the sample standard deviation <span class="process-math">\(s\)</span> with the <em class="emphasis">t-distribution</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-3">The <em class="emphasis">t</em>-distribution shares some characters of the normal distribution. It is bell shaped and symmetrical about the mean. The mean, median, and mode are equal to 0 and located at the center of the distribution. The curve does not touch the x-axis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-4">The <em class="emphasis">t</em>-distribution also differs from the normal distribution in that the variance is greater than 1. The <em class="emphasis">t</em>-distribution is a family of curves based on the concept of degrees of freedom which is related to the sample size. As the sample size increases, it approaches the standard normal distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-5">The formula for finding the degrees of freedom will vary for different statistical tests. The <dfn class="terminology">degrees of freedom</dfn> are the number of values that are free to vary after a sample statistics has been computed, and they tell the researcher which specific curve to use. The degrees of freedom for finding the confidence interval for a single mean is one less than the sample size, thus <span class="process-math">\(df=n-1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-6">
+<dfn class="terminology">How to find t* with StatKey</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-7">Example: Suppose we want to create a 90% confidence interval for a sample of 42 students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-8">From StatKey toward the bottom of the page next to the <dfn class="terminology">Theoretical Distributions</dfn> select <code class="code-inline tex2jax_ignore"> t</code> for the t-distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatKeyMenuT"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/StatkeyTdist1.png" class="contained" alt="third heading down to theoretical then second tab right for t-distribution."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey Menu for t-distribution<div class="autopermalink" data-description="Figure 6.1.1"><a href="#StatKeyMenuT" title="Copy heading and permalink for Figure 6.1.1" aria-label="Copy heading and permalink for Figure 6.1.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-tDistribution-10">It will request the degrees of freedom, since the sample size is 42,  <span class="process-math">\(df=42-1=41\text{,}\)</span> enter 41 then click on <code class="code-inline tex2jax_ignore">OK</code>. This will give you the appropriate curve based on the sample size.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatKeyCIdf"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/StatkeyTdist2.png" class="contained" alt="enter 41 df."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Enter degrees of freedom<div class="autopermalink" data-description="Figure 6.1.2"><a href="#StatKeyCIdf" title="Copy heading and permalink for Figure 6.1.2" aria-label="Copy heading and permalink for Figure 6.1.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-tDistribution-12">Click on <code class="code-inline tex2jax_ignore">Two Tail</code> and enter 0.90 in the middle portion of the curve. The cut scores will be along the bottom of the curve. The t*=1.683. Notice that there are two values, one positive and one negative since it is symmetric about the mean 0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatKey90ci"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/StatkeyTdist3.png" class="contained" alt="middle 90% gives t=1.683."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>t-distribution for 90% for 41 df<div class="autopermalink" data-description="Figure 6.1.3"><a href="#StatKey90ci" title="Copy heading and permalink for Figure 6.1.3" aria-label="Copy heading and permalink for Figure 6.1.3">🔗</a></div></figcaption>
+</figure>
+<details id="subsec-tDistribution-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-tDistribution-14-1-1">Find t* for 95% confidence for a sample of 20 people.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-tDistribution-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-tDistribution-14-2-1">Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-14-2-2">The t* = 2.093<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-14-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatKey95ci"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/StatkeyTdist4.png" class="contained" alt="middle 95% gives t=2.093."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>t-distribution for 95% for 19 df<div class="autopermalink" data-description="Figure 6.1.5"><a href="#StatKey95ci" title="Copy heading and permalink for Figure 6.1.5" aria-label="Copy heading and permalink for Figure 6.1.5">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 6.1.4.1"><a href="#subsec-tDistribution-14-2" title="Copy heading and permalink for Solution 6.1.4.1" aria-label="Copy heading and permalink for Solution 6.1.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.4"><a href="#subsec-tDistribution-14" title="Copy heading and permalink for Checkpoint 6.1.4" aria-label="Copy heading and permalink for Checkpoint 6.1.4">🔗</a></div>
+</article></details>
+<details id="subsec-tDistribution-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-tDistribution-15-1-1">Find t* for 99% confidence for a sample of 25 people.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-tDistribution-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-tDistribution-15-2-1">Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-15-2-2">The t* = 2.797<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-15-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.6.1"><a href="#subsec-tDistribution-15-2" title="Copy heading and permalink for Solution 6.1.6.1" aria-label="Copy heading and permalink for Solution 6.1.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.6"><a href="#subsec-tDistribution-15" title="Copy heading and permalink for Checkpoint 6.1.6" aria-label="Copy heading and permalink for Checkpoint 6.1.6">🔗</a></div>
+</article></details>
+<details id="subsec-tDistribution-16" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-tDistribution-16-1-1">Find t* for 95% confidence for a sample of 50 people.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-tDistribution-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-tDistribution-16-2-1">Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-16-2-2">The t* = 2.010<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-16-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.7.1"><a href="#subsec-tDistribution-16-2" title="Copy heading and permalink for Solution 6.1.7.1" aria-label="Copy heading and permalink for Solution 6.1.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.7"><a href="#subsec-tDistribution-16" title="Copy heading and permalink for Checkpoint 6.1.7" aria-label="Copy heading and permalink for Checkpoint 6.1.7">🔗</a></div>
+</article></details>
+<details id="subsec-tDistribution-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-tDistribution-17-1-1">Find t* for 99% confidence for a sample of 50 people.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-tDistribution-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-tDistribution-17-2-1">Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-17-2-2">The t* = 2.680<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-17-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.8.1"><a href="#subsec-tDistribution-17-2" title="Copy heading and permalink for Solution 6.1.8.1" aria-label="Copy heading and permalink for Solution 6.1.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.8"><a href="#subsec-tDistribution-17" title="Copy heading and permalink for Checkpoint 6.1.8" aria-label="Copy heading and permalink for Checkpoint 6.1.8">🔗</a></div>
+</article></details>
+<details id="subsec-tDistribution-18" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-tDistribution-18-1-1">What happens to t* for the same sample size if the level of confidence increases?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-tDistribution-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-tDistribution-18-2-1">As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets <em class="emphasis">larger</em> because we are allowing for more margin of error in the estimate.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.9.1"><a href="#subsec-tDistribution-18-2" title="Copy heading and permalink for Solution 6.1.9.1" aria-label="Copy heading and permalink for Solution 6.1.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.9"><a href="#subsec-tDistribution-18" title="Copy heading and permalink for Checkpoint 6.1.9" aria-label="Copy heading and permalink for Checkpoint 6.1.9">🔗</a></div>
+</article></details>
+<details id="subsec-tDistribution-19" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-tDistribution-19-1-1">What happens to t* if the level of confidence stays the same but the sample size increases?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-tDistribution-19-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-tDistribution-19-2-1">As the sample size gets larger, the t* value also gets <em class="emphasis">smaller</em> because there is less variation in larger samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.10.1"><a href="#subsec-tDistribution-19-2" title="Copy heading and permalink for Solution 6.1.10.1" aria-label="Copy heading and permalink for Solution 6.1.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.10"><a href="#subsec-tDistribution-19" title="Copy heading and permalink for Checkpoint 6.1.10" aria-label="Copy heading and permalink for Checkpoint 6.1.10">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-tDistribution-20">Now we are ready to create the confidence interval to predict the population mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-21">
+<dfn class="terminology">Formula for Confidence interval of the mean is</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-tDistribution-22">
+<div class="displaymath process-math" id="subsec-tDistribution-22-1">
+\begin{equation*}
+\overline{x} \pm t*(\frac{s}{\sqrt n})  
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-23">or<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-tDistribution-24">
+<div class="displaymath process-math" id="subsec-tDistribution-24-1">
+\begin{equation*}
+\bar{x}-t*(\frac{s}{\sqrt n})  \lt \mu \lt \bar{x}+t*(\frac{s}{\sqrt n})  
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-25">where <span class="process-math">\(\bar{x} \)</span> is the sample mean, <span class="process-math">\(s\)</span> is the sample standard deviation, <span class="process-math">\(n \)</span> is the sample size, and <span class="process-math">\(t*\)</span> is from the <span class="process-math">\(t\)</span>-distribution using <span class="process-math">\(df=n-1\)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-26">
+<em class="emphasis">Example:</em> From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-27">
+<em class="emphasis">Solution:</em> We are given that <span class="process-math">\(n=42\text{,}\)</span> thus <span class="process-math">\(df=42-1=41\text{,}\)</span> <span class="process-math">\(\bar{x}=171.1\text{,}\)</span> and <span class="process-math">\(s=39.0\text{.}\)</span> The <span class="process-math">\(t*=1.683\)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-28">Using the mean CI formula:  <span class="process-math">\(\overline{x} \pm t*(\frac{s}{\sqrt n})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-29">substituting in the values we get: <span class="process-math">\(171.1 \pm 1.683(\frac{39.0}{\sqrt 42})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-30">which gives lower bound of <span class="process-math">\(160.97 \lt \mu \lt 181.23 \)</span> pounds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-tDistribution-31">We are 90% confident that the true mean weight for all UNC students is between 161 and 181 pounds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 6.1.2: t Distribution"><a href="#subsec-tDistribution" title="Copy heading and permalink for Subsection 6.1.2: t Distribution" aria-label="Copy heading and permalink for Subsection 6.1.2: t Distribution">🔗</a></div>
+</section>
 <section class="subsection" id="subsec-CImeanCalc">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
 </h3>
 <div class="para" id="subsec-CImeanCalc-2">using TI83<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 6.1.2: Using Technology"><a href="#subsec-CImeanCalc" title="Copy heading and permalink for Subsection 6.1.2: Using Technology" aria-label="Copy heading and permalink for Subsection 6.1.2: Using Technology">🔗</a></div>
+<div class="autopermalink" data-description="Subsection 6.1.3: Using Technology"><a href="#subsec-CImeanCalc" title="Copy heading and permalink for Subsection 6.1.3: Using Technology" aria-label="Copy heading and permalink for Subsection 6.1.3: Using Technology">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-CImeanPractice">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
 </h3>
 <div class="para" id="subsec-CImeanPractice-2">The data in <em class="emphasis">Hurricanes</em> contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. <em class="emphasis">Early Years</em> consists of the number of hurricanes from 1914 to 1933 and <em class="emphasis">Later Years</em> consists of the number of hurricanes from 2003 to 2022.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-CImeanPractice-3">In StatKey under <dfn class="terminology">One Quantitative Variable</dfn>, <code class="code-inline tex2jax_ignore">Upload </code>the data file and select each variable to find the summary statistics to complete the table below. Click on <code class="code-inline tex2jax_ignore">Change Column</code> to change variable names.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="subsec-CImeanPractice-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-4-1-1">Find the sample size, mean, and standard deviation for <em class="emphasis">Hurricanes</em>, <em class="emphasis">Early Years</em> and <em class="emphasis">Later Years.</em> Round to two decimal places.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -438,13 +642,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-CImeanPractice-4-2-3">For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.1.1"><a href="#subsec-CImeanPractice-4-2" title="Copy heading and permalink for Solution 6.1.1.1" aria-label="Copy heading and permalink for Solution 6.1.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.11.1"><a href="#subsec-CImeanPractice-4-2" title="Copy heading and permalink for Solution 6.1.11.1" aria-label="Copy heading and permalink for Solution 6.1.11.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.1"><a href="#subsec-CImeanPractice-4" title="Copy heading and permalink for Checkpoint 6.1.1" aria-label="Copy heading and permalink for Checkpoint 6.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.11"><a href="#subsec-CImeanPractice-4" title="Copy heading and permalink for Checkpoint 6.1.11" aria-label="Copy heading and permalink for Checkpoint 6.1.11">🔗</a></div>
 </article></details>
 <details id="subsec-CImeanPractice-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-5-1-1">Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -454,15 +658,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-5-2-1">mean 4.3 +/- 2.093(2.77/sqrt20) gives 3.00 to 5.6<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CImeanPractice-5-2-2">95% confident that the mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CImeanPractice-5-2-2">95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.2.1"><a href="#subsec-CImeanPractice-5-2" title="Copy heading and permalink for Solution 6.1.2.1" aria-label="Copy heading and permalink for Solution 6.1.2.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.12.1"><a href="#subsec-CImeanPractice-5-2" title="Copy heading and permalink for Solution 6.1.12.1" aria-label="Copy heading and permalink for Solution 6.1.12.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.2"><a href="#subsec-CImeanPractice-5" title="Copy heading and permalink for Checkpoint 6.1.2" aria-label="Copy heading and permalink for Checkpoint 6.1.2">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.12"><a href="#subsec-CImeanPractice-5" title="Copy heading and permalink for Checkpoint 6.1.12" aria-label="Copy heading and permalink for Checkpoint 6.1.12">🔗</a></div>
 </article></details>
 <details id="subsec-CImeanPractice-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-6-1-1">Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -472,15 +676,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-6-2-1">mean 7.75 +/- 1.729(3.34/sqrt20) gives 6.46 to 9.04<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CImeanPractice-6-2-2">90% confident that confident that the mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CImeanPractice-6-2-2">90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.3.1"><a href="#subsec-CImeanPractice-6-2" title="Copy heading and permalink for Solution 6.1.3.1" aria-label="Copy heading and permalink for Solution 6.1.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.13.1"><a href="#subsec-CImeanPractice-6-2" title="Copy heading and permalink for Solution 6.1.13.1" aria-label="Copy heading and permalink for Solution 6.1.13.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.3"><a href="#subsec-CImeanPractice-6" title="Copy heading and permalink for Checkpoint 6.1.3" aria-label="Copy heading and permalink for Checkpoint 6.1.3">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.13"><a href="#subsec-CImeanPractice-6" title="Copy heading and permalink for Checkpoint 6.1.13" aria-label="Copy heading and permalink for Checkpoint 6.1.13">🔗</a></div>
 </article></details>
 <details id="subsec-CImeanPractice-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-7-1-1">Did the mean of all hurricanes land in each of those intervals? Explain why or why not.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -488,13 +692,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solutions">
 <details id="subsec-CImeanPractice-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-CImeanPractice-7-2-1">The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes then. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CImeanPractice-7-2-1">The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.4.1"><a href="#subsec-CImeanPractice-7-2" title="Copy heading and permalink for Solution 6.1.4.1" aria-label="Copy heading and permalink for Solution 6.1.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.14.1"><a href="#subsec-CImeanPractice-7-2" title="Copy heading and permalink for Solution 6.1.14.1" aria-label="Copy heading and permalink for Solution 6.1.14.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.4"><a href="#subsec-CImeanPractice-7" title="Copy heading and permalink for Checkpoint 6.1.4" aria-label="Copy heading and permalink for Checkpoint 6.1.4">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 6.1.3: Practice Problems"><a href="#subsec-CImeanPractice" title="Copy heading and permalink for Subsection 6.1.3: Practice Problems" aria-label="Copy heading and permalink for Subsection 6.1.3: Practice Problems">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.14"><a href="#subsec-CImeanPractice-7" title="Copy heading and permalink for Checkpoint 6.1.14" aria-label="Copy heading and permalink for Checkpoint 6.1.14">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.1.4: Practice Problems"><a href="#subsec-CImeanPractice" title="Copy heading and permalink for Subsection 6.1.4: Practice Problems" aria-label="Copy heading and permalink for Subsection 6.1.4: Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 6.1: Intervals for Means"><a href="#sec-CI-means" title="Copy heading and permalink for Section 6.1: Intervals for Means" aria-label="Copy heading and permalink for Section 6.1: Intervals for Means">🔗</a></div>
 </section>
 </div>
