@@ -117,9 +117,9 @@
 
 <p> Now we are ready to create the confidence interval to predict the population mean. We are assuming the population is approximately normally distributed and the population standard deviation is unknown. </p> 
 <p><term>Formula for Confidence interval of the mean is</term> </p> 
-<p> <me> \overline{x} \pm t*(\frac{s}{\sqrt n})  </me></p> 
+<p> <md> \overline{x} \pm t*(\frac{s}{\sqrt n})  </md></p> 
 <p> or </p>
-<p> <me> \bar{x}-t*(\frac{s}{\sqrt n})  \lt \mu \lt \bar{x}+t*(\frac{s}{\sqrt n})  </me></p>
+<p> <md> \bar{x}-t*(\frac{s}{\sqrt n})  \lt \mu \lt \bar{x}+t*(\frac{s}{\sqrt n})  </md></p>
 
 <p>where <m> \bar{x} </m> is the sample mean, <m> s</m> is the sample standard deviation, <m> n </m> is the sample size, and <m>t*</m> is the value from the <m>t</m>-distribution using <m>df=n-1</m> .</p>
 
