@@ -142,7 +142,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-QuantData.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Quantitative Variable</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-QuantData.html#subsec-QNshapes" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Shapes of Distributions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-QuantData.html#subsec-Scatterplots" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-QuantData.html#subsec-GraphScatterplots" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-QuantData.html#subsec-QNexplore" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Quantitative Data Exploration</span></a></div></li>
 </ul>
 </li>
@@ -285,8 +285,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImean" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-tDistribution" class="internal"><span class="codenumber">6.1.2</span> <span class="title">t Distribution</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanCalc" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Using Technology</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanPractice" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CalculateSingleMeanCI" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Calculate the Confidence Interval for the Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanCalc" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CI-means.html#subsec-CImeanPractice" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-CI-proportions.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Intervals for Proportions</span></a></div></li>
@@ -569,66 +570,162 @@ eBookConfig.enable_chatcodes =  false;
 </div></details>
 </div>
 <div class="autopermalink" data-description="Checkpoint 6.1.10"><a href="#subsec-tDistribution-19" title="Copy heading and permalink for Checkpoint 6.1.10" aria-label="Copy heading and permalink for Checkpoint 6.1.10">🔗</a></div>
-</article></details>
-<div class="para" id="subsec-tDistribution-20">Now we are ready to create the confidence interval to predict the population mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.1.2: t Distribution"><a href="#subsec-tDistribution" title="Copy heading and permalink for Subsection 6.1.2: t Distribution" aria-label="Copy heading and permalink for Subsection 6.1.2: t Distribution">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-CalculateSingleMeanCI">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculate the Confidence Interval for the Mean</span>
+</h3>
+<div class="para" id="subsec-CalculateSingleMeanCI-2">Now we are ready to create the confidence interval to predict the population mean. We are assuming the population is approximately normally distributed and the population standard deviation is unknown.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-21">
-<dfn class="terminology">Formula for Confidence interval of the mean is</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-3">
+<dfn class="terminology">Formula for Confidence interval of the mean is</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-tDistribution-22">
-<div class="displaymath process-math" id="subsec-tDistribution-22-1">
+<div class="para logical" id="subsec-CalculateSingleMeanCI-4">
+<div class="displaymath process-math" id="subsec-CalculateSingleMeanCI-4-1">
 \begin{equation*}
 \overline{x} \pm t*(\frac{s}{\sqrt n})  
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-23">or<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-5">or<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-tDistribution-24">
-<div class="displaymath process-math" id="subsec-tDistribution-24-1">
+<div class="para logical" id="subsec-CalculateSingleMeanCI-6">
+<div class="displaymath process-math" id="subsec-CalculateSingleMeanCI-6-1">
 \begin{equation*}
 \bar{x}-t*(\frac{s}{\sqrt n})  \lt \mu \lt \bar{x}+t*(\frac{s}{\sqrt n})  
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-25">where <span class="process-math">\(\bar{x} \)</span> is the sample mean, <span class="process-math">\(s\)</span> is the sample standard deviation, <span class="process-math">\(n \)</span> is the sample size, and <span class="process-math">\(t*\)</span> is from the <span class="process-math">\(t\)</span>-distribution using <span class="process-math">\(df=n-1\)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-7">where <span class="process-math">\(\bar{x} \)</span> is the sample mean, <span class="process-math">\(s\)</span> is the sample standard deviation, <span class="process-math">\(n \)</span> is the sample size, and <span class="process-math">\(t*\)</span> is the value from the <span class="process-math">\(t\)</span>-distribution using <span class="process-math">\(df=n-1\)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-26">
-<em class="emphasis">Example:</em> From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-8">
+<em class="emphasis">Example:</em> From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-27">
-<em class="emphasis">Solution:</em> We are given that <span class="process-math">\(n=42\text{,}\)</span> thus <span class="process-math">\(df=42-1=41\text{,}\)</span> <span class="process-math">\(\bar{x}=171.1\text{,}\)</span> and <span class="process-math">\(s=39.0\text{.}\)</span> The <span class="process-math">\(t*=1.683\)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-9">
+<em class="emphasis">Solution:</em> We are given that <span class="process-math">\(n=42\text{,}\)</span> thus <span class="process-math">\(df=42-1=41\text{,}\)</span> <span class="process-math">\(\bar{x}=171.1\text{,}\)</span> and <span class="process-math">\(s=39.0\text{.}\)</span> The <span class="process-math">\(t*=1.683\)</span> for 90% confidence .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-28">Using the mean CI formula:  <span class="process-math">\(\overline{x} \pm t*(\frac{s}{\sqrt n})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-10">Using the mean CI formula:  <span class="process-math">\(\overline{x} \pm t*(\frac{s}{\sqrt n})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-29">substituting in the values we get: <span class="process-math">\(171.1 \pm 1.683(\frac{39.0}{\sqrt 42})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-11">substituting in the values we get: <span class="process-math">\(171.1 \pm 1.683(\frac{39.0}{\sqrt 42})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-30">which gives lower bound of <span class="process-math">\(160.97 \lt \mu \lt 181.23 \)</span> pounds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-12">lower bound is <span class="process-math">\(171.1-10.128=160.972\)</span> and the upper bound is <span class="process-math">\(171.1+10.128=181.228\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-tDistribution-31">We are 90% confident that the true mean weight for all UNC students is between 161 and 181 pounds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-tDistribution-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-13">which gives the interval of <span class="process-math">\(160.972 \lt \mu \lt 181.228 \)</span> pounds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 6.1.2: t Distribution"><a href="#subsec-tDistribution" title="Copy heading and permalink for Subsection 6.1.2: t Distribution" aria-label="Copy heading and permalink for Subsection 6.1.2: t Distribution">🔗</a></div>
+<div class="para" id="subsec-CalculateSingleMeanCI-14">We are 90% confident that the true mean weight for all UNC students is between 161.0 and 181.2 pounds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-CalculateSingleMeanCI-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Heights.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-CalculateSingleMeanCI-15-2-1">From the class survey, 42 students gave their heights, measured in inches. The values ranged from 59 to 78 inches with the mean of 67.9 inches and standard deviation of 4.8. Find the 95% confidence interval for the true mean height for all UNC students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-CalculateSingleMeanCI-15-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-CalculateSingleMeanCI-15-3-1">We are given that <span class="process-math">\(n=42\text{,}\)</span> thus <span class="process-math">\(df=42-1=41\text{,}\)</span> <span class="process-math">\(\bar{x}=67.9\text{,}\)</span> and <span class="process-math">\(s=4.8\text{.}\)</span> The <span class="process-math">\(t*=2.020 \)</span> for 95%.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-15-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-15-3-2">
+<span class="process-math">\(\overline{x} \pm t*(\frac{s}{\sqrt n})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-15-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-15-3-3">substituting in the values we get: <span class="process-math">\(67.9 \pm 2.020 (\frac{4.8}{\sqrt 42})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-15-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-15-3-4">which gives lower bound of <span class="process-math">\(66.4 \lt \mu \lt 69.4 \)</span> inches.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-15-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-15-3-5">We are 95% confident that the true mean height for all UNC students is between 66.4 and 67.4inches.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-15-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.11.1"><a href="#subsec-CalculateSingleMeanCI-15-3" title="Copy heading and permalink for Solution 6.1.11.1" aria-label="Copy heading and permalink for Solution 6.1.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.11: Heights"><a href="#subsec-CalculateSingleMeanCI-15" title="Copy heading and permalink for Checkpoint 6.1.11: Heights" aria-label="Copy heading and permalink for Checkpoint 6.1.11: Heights">🔗</a></div>
+</article></details>
+<details id="subsec-CalculateSingleMeanCI-16" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sleep.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-CalculateSingleMeanCI-16-2-1">From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-CalculateSingleMeanCI-16-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-CalculateSingleMeanCI-16-3-1">We are given that <span class="process-math">\(n=43\text{,}\)</span> thus <span class="process-math">\(df=42\text{,}\)</span> <span class="process-math">\(\bar{x}=7.1\text{,}\)</span> and <span class="process-math">\(s=1.3\text{.}\)</span> The <span class="process-math">\(t*=2.578 \)</span> for 99%.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-16-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-16-3-2">
+<span class="process-math">\(\overline{x} \pm t*(\frac{s}{\sqrt n})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-16-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-16-3-3">substituting in the values we get: <span class="process-math">\(7.1 \pm 2.578 (\frac{41.3}{\sqrt 43})  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-16-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-16-3-4">which gives lower bound of <span class="process-math">\(6.6 \lt \mu \lt 7.6 \)</span> hours.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-16-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CalculateSingleMeanCI-16-3-5">We are 99% confident that the true mean sleep hours for all UNC students is between 6.6 and 7.6 hours<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CalculateSingleMeanCI-16-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.12.1"><a href="#subsec-CalculateSingleMeanCI-16-3" title="Copy heading and permalink for Solution 6.1.12.1" aria-label="Copy heading and permalink for Solution 6.1.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.1.12: Sleep"><a href="#subsec-CalculateSingleMeanCI-16" title="Copy heading and permalink for Checkpoint 6.1.12: Sleep" aria-label="Copy heading and permalink for Checkpoint 6.1.12: Sleep">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.1.3: Calculate the Confidence Interval for the Mean"><a href="#subsec-CalculateSingleMeanCI" title="Copy heading and permalink for Subsection 6.1.3: Calculate the Confidence Interval for the Mean" aria-label="Copy heading and permalink for Subsection 6.1.3: Calculate the Confidence Interval for the Mean">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-CImeanCalc">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
 </h3>
-<div class="para" id="subsec-CImeanCalc-2">using TI83<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CImeanCalc-2">Next, let us look at how we can use technology to find the confidence interval for us. The direction should be the same for the TI 83 Plus or TI84.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 6.1.3: Using Technology"><a href="#subsec-CImeanCalc" title="Copy heading and permalink for Subsection 6.1.3: Using Technology" aria-label="Copy heading and permalink for Subsection 6.1.3: Using Technology">🔗</a></div>
+<div class="para" id="subsec-CImeanCalc-3">
+<em class="emphasis">Example:</em>  From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImeanCalc-4">Press the <code class="code-inline tex2jax_ignore"> STAT</code> button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option <dfn class="terminology">8: T-interval</dfn> then press [ENTER].<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CImean1calc"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/CImean1calc.png" class="contained" alt="scroll to option 8."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Calculator menu to select Tinterval<div class="autopermalink" data-description="Figure 6.1.13"><a href="#CImean1calc" title="Copy heading and permalink for Figure 6.1.13" aria-label="Copy heading and permalink for Figure 6.1.13">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-CImeanCalc-6">You can choose between entering the raw data or the summary statistics. We will use the arrow once to the right to highlight <dfn class="terminology">Stats</dfn>  and then press [ENTER] to select it. Then input your summary statistics, enter the C-level of 0.99, scroll to Calculate and press [ENTER].<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImeanCalc-7">We are given that <span class="process-math">\(\bar{x}=7.1\text{,}\)</span> and <span class="process-math">\(Sx=1.3\text{,}\)</span> and  <span class="process-math">\(n=43\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CImean2calc"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/CImean2calc.png" class="contained" alt="mean=7.1, sx=1.3, n=43, level=.99."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Enter statistics into calculator<div class="autopermalink" data-description="Figure 6.1.14"><a href="#CImean2calc" title="Copy heading and permalink for Figure 6.1.14" aria-label="Copy heading and permalink for Figure 6.1.14">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="CImean3calc"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/CImean3calc.png" class="contained" alt="mean between  6.5651 and 7.6349."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>T-interval on Calculator<div class="autopermalink" data-description="Figure 6.1.15"><a href="#CImean3calc" title="Copy heading and permalink for Figure 6.1.15" aria-label="Copy heading and permalink for Figure 6.1.15">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-CImeanCalc-10">We are 99% confident that the true mean sleep hours for all UNC students is between 6.57 and 7.63 hours.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImeanCalc-11">
+<em class="emphasis">Example:</em>  Suppose we had a sample of ten students with the following heights, measured in inches: 66, 63, 67, 76, 62, 62, 68, 62, 71, 75. Find the 95% confidence interval for the true mean height for all UNC students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImeanCalc-12">Press the <code class="code-inline tex2jax_ignore"> STAT</code> button and under the EDIT menu select option <dfn class="terminology">1:Edit</dfn> then press [ENTER] and then input the ten values using [ENTER] after each.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CImean4calc"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/CImean4calc.png" class="contained" alt="enter the ten heights."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Enter raw data into Calculator<div class="autopermalink" data-description="Figure 6.1.16"><a href="#CImean4calc" title="Copy heading and permalink for Figure 6.1.16" aria-label="Copy heading and permalink for Figure 6.1.16">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-CImeanCalc-14">Press the <code class="code-inline tex2jax_ignore"> STAT</code> button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option <dfn class="terminology">8: T-interval</dfn> then press [ENTER]. Use the arrow if needed to highlight <dfn class="terminology">Data</dfn> and then press [ENTER] to select it. The data was entered into List 1 and the Frequency is 1, the confidence level is .95, scroll to Calculate and hit [ENTER].<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CImean5calc"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/CImean5calc.png" class="contained" alt="Select option 8 T-interval and Data, change level to .95 and enter."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Select T interval and Data on TI84<div class="autopermalink" data-description="Figure 6.1.17"><a href="#CImean5calc" title="Copy heading and permalink for Figure 6.1.17" aria-label="Copy heading and permalink for Figure 6.1.17">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="CImean6calc"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/CImean6calc.png" class="contained" alt="Select option 8 T- interval and Data, change level to .95 and enter."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Select T interval and Data on TI83 Plus<div class="autopermalink" data-description="Figure 6.1.18"><a href="#CImean6calc" title="Copy heading and permalink for Figure 6.1.18" aria-label="Copy heading and permalink for Figure 6.1.18">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-CImeanCalc-17">We are 95% confident that the true mean height for all UNC students is between 63.4 and 71.0 inches.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CImeanCalc-18">Note: Make sure your List matches where you input the data and the C-Level matches the confidence level in the problem.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanCalc-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 6.1.4: Using Technology"><a href="#subsec-CImeanCalc" title="Copy heading and permalink for Subsection 6.1.4: Using Technology" aria-label="Copy heading and permalink for Subsection 6.1.4: Using Technology">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-CImeanPractice">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
 </h3>
 <div class="para" id="subsec-CImeanPractice-2">The data in <em class="emphasis">Hurricanes</em> contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. <em class="emphasis">Early Years</em> consists of the number of hurricanes from 1914 to 1933 and <em class="emphasis">Later Years</em> consists of the number of hurricanes from 2003 to 2022.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-CImeanPractice-3">In StatKey under <dfn class="terminology">One Quantitative Variable</dfn>, <code class="code-inline tex2jax_ignore">Upload </code>the data file and select each variable to find the summary statistics to complete the table below. Click on <code class="code-inline tex2jax_ignore">Change Column</code> to change variable names.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="subsec-CImeanPractice-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-4-1-1">Find the sample size, mean, and standard deviation for <em class="emphasis">Hurricanes</em>, <em class="emphasis">Early Years</em> and <em class="emphasis">Later Years.</em> Round to two decimal places.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -642,13 +739,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-CImeanPractice-4-2-3">For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.11.1"><a href="#subsec-CImeanPractice-4-2" title="Copy heading and permalink for Solution 6.1.11.1" aria-label="Copy heading and permalink for Solution 6.1.11.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.19.1"><a href="#subsec-CImeanPractice-4-2" title="Copy heading and permalink for Solution 6.1.19.1" aria-label="Copy heading and permalink for Solution 6.1.19.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.11"><a href="#subsec-CImeanPractice-4" title="Copy heading and permalink for Checkpoint 6.1.11" aria-label="Copy heading and permalink for Checkpoint 6.1.11">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.19"><a href="#subsec-CImeanPractice-4" title="Copy heading and permalink for Checkpoint 6.1.19" aria-label="Copy heading and permalink for Checkpoint 6.1.19">🔗</a></div>
 </article></details>
 <details id="subsec-CImeanPractice-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-5-1-1">Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -660,13 +757,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-CImeanPractice-5-2-2">95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.12.1"><a href="#subsec-CImeanPractice-5-2" title="Copy heading and permalink for Solution 6.1.12.1" aria-label="Copy heading and permalink for Solution 6.1.12.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.20.1"><a href="#subsec-CImeanPractice-5-2" title="Copy heading and permalink for Solution 6.1.20.1" aria-label="Copy heading and permalink for Solution 6.1.20.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.12"><a href="#subsec-CImeanPractice-5" title="Copy heading and permalink for Checkpoint 6.1.12" aria-label="Copy heading and permalink for Checkpoint 6.1.12">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.20"><a href="#subsec-CImeanPractice-5" title="Copy heading and permalink for Checkpoint 6.1.20" aria-label="Copy heading and permalink for Checkpoint 6.1.20">🔗</a></div>
 </article></details>
 <details id="subsec-CImeanPractice-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-6-1-1">Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -678,13 +775,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-CImeanPractice-6-2-2">90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.13.1"><a href="#subsec-CImeanPractice-6-2" title="Copy heading and permalink for Solution 6.1.13.1" aria-label="Copy heading and permalink for Solution 6.1.13.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.21.1"><a href="#subsec-CImeanPractice-6-2" title="Copy heading and permalink for Solution 6.1.21.1" aria-label="Copy heading and permalink for Solution 6.1.21.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.13"><a href="#subsec-CImeanPractice-6" title="Copy heading and permalink for Checkpoint 6.1.13" aria-label="Copy heading and permalink for Checkpoint 6.1.13">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.21"><a href="#subsec-CImeanPractice-6" title="Copy heading and permalink for Checkpoint 6.1.21" aria-label="Copy heading and permalink for Checkpoint 6.1.21">🔗</a></div>
 </article></details>
 <details id="subsec-CImeanPractice-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-7-1-1">Did the mean of all hurricanes land in each of those intervals? Explain why or why not.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -694,11 +791,11 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="subsec-CImeanPractice-7-2-1">The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CImeanPractice-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.1.14.1"><a href="#subsec-CImeanPractice-7-2" title="Copy heading and permalink for Solution 6.1.14.1" aria-label="Copy heading and permalink for Solution 6.1.14.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1.22.1"><a href="#subsec-CImeanPractice-7-2" title="Copy heading and permalink for Solution 6.1.22.1" aria-label="Copy heading and permalink for Solution 6.1.22.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 6.1.14"><a href="#subsec-CImeanPractice-7" title="Copy heading and permalink for Checkpoint 6.1.14" aria-label="Copy heading and permalink for Checkpoint 6.1.14">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 6.1.4: Practice Problems"><a href="#subsec-CImeanPractice" title="Copy heading and permalink for Subsection 6.1.4: Practice Problems" aria-label="Copy heading and permalink for Subsection 6.1.4: Practice Problems">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 6.1.22"><a href="#subsec-CImeanPractice-7" title="Copy heading and permalink for Checkpoint 6.1.22" aria-label="Copy heading and permalink for Checkpoint 6.1.22">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.1.5: Practice Problems"><a href="#subsec-CImeanPractice" title="Copy heading and permalink for Subsection 6.1.5: Practice Problems" aria-label="Copy heading and permalink for Subsection 6.1.5: Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 6.1: Intervals for Means"><a href="#sec-CI-means" title="Copy heading and permalink for Section 6.1: Intervals for Means" aria-label="Copy heading and permalink for Section 6.1: Intervals for Means">🔗</a></div>
 </section>
 </div>

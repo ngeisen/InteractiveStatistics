@@ -478,9 +478,9 @@ var ptx_lunr_docs = [
   "body": "Convenience Sampling "
 },
 {
-  "id": "Sample-matching",
+  "id": "Sample-matching2",
   "level": "2",
-  "url": "sec-DayTwo.html#Sample-matching",
+  "url": "sec-DayTwo.html#Sample-matching2",
   "type": "Checkpoint",
   "number": "1.2.7",
   "title": "Sampling Methods Matching Problem.",
@@ -1387,36 +1387,36 @@ var ptx_lunr_docs = [
   "body": "bimodal "
 },
 {
-  "id": "subsec-Scatterplots-2",
+  "id": "subsec-GraphScatterplots-2",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-2",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "scatterplot "
 },
 {
-  "id": "subsec-Scatterplots-3",
+  "id": "subsec-GraphScatterplots-3",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-3",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Correlation "
 },
 {
-  "id": "subsec-Scatterplots-4",
+  "id": "subsec-GraphScatterplots-4",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-4",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "positive correlation negative correlation "
 },
 {
-  "id": "subsec-Scatterplots-5",
+  "id": "subsec-GraphScatterplots-5",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-5",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1441,9 +1441,9 @@ var ptx_lunr_docs = [
   "body": " Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.   "
 },
 {
-  "id": "subsec-Scatterplots-19",
+  "id": "subsec-GraphScatterplots-19",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-19",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-19",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1459,54 +1459,54 @@ var ptx_lunr_docs = [
   "body": " Image of Scatterplot for Weight and Height   Scatterplot with weight on x-axis and height on y.   "
 },
 {
-  "id": "subsec-Scatterplots-22",
+  "id": "subsec-GraphScatterplots-22",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-22",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-22",
   "type": "Example",
   "number": "2.2.4",
   "title": "Correlation Coefficient.",
   "body": " Correlation Coefficient   Compute the correlation coefficient between weight and height.    Correlation Coefficient r = 0.623.   "
 },
 {
-  "id": "subsec-Scatterplots-23",
+  "id": "subsec-GraphScatterplots-23",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-23",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-23",
   "type": "Example",
   "number": "2.2.5",
   "title": "Type of Relationship.",
   "body": " Type of Relationship   Identify the type of relationship between weight and height.    There's a moderate positive linear relationship.   "
 },
 {
-  "id": "subsec-Scatterplots-24",
+  "id": "subsec-GraphScatterplots-24",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-24",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-24",
   "type": "Example",
   "number": "2.2.6",
   "title": "Describe the Relationship.",
   "body": " Describe the Relationship   Describe the relationship between weight and height.    As student's weights increase, their heights also increase.   "
 },
 {
-  "id": "subsec-Scatterplots-25",
+  "id": "subsec-GraphScatterplots-25",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-25",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-25",
   "type": "Example",
   "number": "2.2.7",
   "title": "Slope.",
   "body": " Slope   Identify the slope when x= weight and y=height.    Slope = 0.077 is positive.   "
 },
 {
-  "id": "subsec-Scatterplots-26",
+  "id": "subsec-GraphScatterplots-26",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-26",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-26",
   "type": "Example",
   "number": "2.2.8",
   "title": "Y-intercept.",
   "body": " Y-intercept   Identify the y-intercept when x=weight and y=height.    The y-intercept = 54.692 inches.   "
 },
 {
-  "id": "subsec-Scatterplots-27",
+  "id": "subsec-GraphScatterplots-27",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-Scatterplots-27",
+  "url": "sec-QuantData.html#subsec-GraphScatterplots-27",
   "type": "Example",
   "number": "2.2.9",
   "title": "Regression Equation.",
@@ -2071,9 +2071,9 @@ var ptx_lunr_docs = [
   "body": " Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.   "
 },
 {
-  "id": "HeightvsShoeScatterplot2",
+  "id": "HeightvsShoeScatterplot4",
   "level": "2",
-  "url": "sec-GraphStatkey.html#HeightvsShoeScatterplot2",
+  "url": "sec-GraphStatkey.html#HeightvsShoeScatterplot4",
   "type": "Figure",
   "number": "2.5.30",
   "title": "",
@@ -4555,9 +4555,9 @@ var ptx_lunr_docs = [
   "body": "StatKey "
 },
 {
-  "id": "StatkeySamplingProportion",
+  "id": "StatkeySamplingProportion1",
   "level": "2",
-  "url": "sec-SamplingDist.html#StatkeySamplingProportion",
+  "url": "sec-SamplingDist.html#StatkeySamplingProportion1",
   "type": "Figure",
   "number": "5.1.23",
   "title": "",
@@ -4573,9 +4573,9 @@ var ptx_lunr_docs = [
   "body": " StatKey Sampling Proportion Menu   second option allows you to edit the proportion and the fourth allows you to change the sample size.   "
 },
 {
-  "id": "StatkeySamplingProportion",
+  "id": "StatkeySamplingProportion2",
   "level": "2",
-  "url": "sec-SamplingDist.html#StatkeySamplingProportion",
+  "url": "sec-SamplingDist.html#StatkeySamplingProportion2",
   "type": "Figure",
   "number": "5.1.25",
   "title": "",
@@ -5038,7 +5038,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "Normal Distribution",
-  "body": " Normal Distribution   Many real-life situations use measurement to find quantitative data which produces a histogram that is symmetric, unimodal, and bell-shaped. For example: height, weight, blood pressure, and cholesterol level form continuous probability distribution. In this section we will work with a distribution known as the normal distribution. However, not every bell-shaped curve is considered normal. The shape of the distribution is influenced by the mean (center of the distribution) and the standard deviation (how spread out the values are).     At the end of this section you will be able to:     Find the area under the normal distribution curve.    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.      Standard Normal Distribution  Many continuous variables have a distribution that are bell-shaped, and these are called approximately normally distributed . No variable fits the normal distribution perfectly since it is a theoretical distribution. However, a normal distribution can be used to describe many variables.  We will begin our adventure with the standard normal distribution, which is centered at mean and standard deviation .  Just as in a discrete probability distribution, the object is to find the probability of an event occurring. However, unlike in a discrete probability distribution where the event can be a single value, in a continuous probability distribution the event is a range. You are interested in finding the probability of occurring in the range between and , or . Calculus tells us to find the area under the curve on the interval from to .  Before looking at the process for finding the probabilities under the normal curve, it is somewhat useful to look at the Empirical Rule that gives approximate values for these areas. This gives you an idea of what the size of the probabilities is for different shadings. A more precise method for finding probabilities for the normal curve will be demonstrated later in this section.  The Empirical Rule for any normal distribution:  Approximately 68% of the data falls within one standard deviation of the mean.  Approximately 95% of the data falls within two standard deviations of the mean.  Approximately 9% of the data falls within three standard deviations of the mean.  image  The probability is the area under the curve. Before technology, we needed to convert every x value to a standardized number, called the z-score or z-value . The z-score is a measure of how many standard deviations that value is from the mean. To convert from a normally distributed x value to a z-score, we use the following formula:     where mean of the population and standard deviation for the population for the variable.  The z-score is normally distributed, with a mean of 0 and a standard deviation of 1. It is known as the standard normal curve . If the z-score is positive, the data value is above the mean. If the z-score is negative, the data value is below the mean. The farther the z-value is from 0, the farther the data value is from the mean. Once you have the z-score, you can look up the area in the standard normal distribution table.  Luckily, technology can find probabilities and area for us. There are many programs available that will calculate the probability for a normal curve including StatKey, R Studio and TI83 Plus or TI-84 calculators.    Standard Normal Distribution with StatKey  The first step is to identify your values, draw the normal curve centered at 0, and then shade the appropriate region based on the scenario. I recommend drawing the image on paper first, this will help you to set up StatKey correctly.  Link to: StatKey.   Go to StatKey , near the bottom next to Theoretical Distributions , click on Normal . It will show you the standard normal distribution centered at 0.0.   StatKey Menu for Normal Distribution   Third tab down to theoretical distributions and one step right for Normal.     Standard Normal Distribution   Normal curve centered at 0 with tails at -4 and 4.    Example: Find the area right of on the standard normal distribution.  In StatKey click on Right Tail and enter the value 1.75 along the bottom. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area.   Normal Distribution right of z = 1.75   shaded right of 1.75 with small area shaded.      Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965.   Normal Distribution right of z = -1.81   shaded right of -1.81 with large area shaded of 0.965.        Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to 0.94. Note how less than half the curve is shaded giving an area of 0.174.   Normal Distribution right of z = 0.94   shaded right of 0.94with small area shaded.       Example: Find the area left of .  Click on Reset Plot then click on Left Tail and enter the value -1.81 along the bottom. The small left area is 0.035. Note that the curve is symmetric and the total area is always 1=100%, thus .   Normal Distribution left of z =-1.81   shaded left of -1.81 with small area shaded of 0.035.      Find the area left of .    Change the bottom to -2.85. The new area is 0.0022. The larger the z-value, the smaller the area in the tail of the curve.   Normal Distribution left of -2.85   shaded left of -2.85 with smaller area shaded of 0.0022.        Find the area left of .    Change the bottom to 1.45. The new area is 0.926. Since over half the curve is shaded to the left, there is a larger area.   Normal Distribution left of z = 1.45   shaded left of 1.45 with large area shaded of 0.926.       Example: Find the area between and .  On paper you will draw the curve centered at 0. Mark where z = 1.25 and z = -1.36, then shade the area between the two values. In StatKey, Reset Plot and click on the Left Tail and enter the value -1.36 at the bottom on the left side, it will shade it to the left. Then click on Right Tail and enter the value 1.25 along the bottom on the right side, it will shade to the right. We want the white area between the two values, which is 0.807. StatKey will always shade in the tails.   Distribution between z = -1.36 and z = 1.25   between shading area of 0.807.     Example: Suppose we want to find the area to the right of and the area to the left of . We just need to add the area of those two regions shaded in red. The area is .  Sometimes when working with the normal distribution, we want to find which z-score correlates with a certain percentage of the curve.   Example: Suppose we want to know the z-scored for the middle 80% of the values of the normal distribution.  Click on Reset Plot and click on the Two Tail . Change the middle white region from the default of 0.95 (which have the z-values of -1.960 and +1.960) to 0.80 to change the z-values to -1.282 and +1.282 along the bottom of the graph. The larger the middle percentage, the larger the z-scores will be. Since the normal curve is symmetric, the values are the same just one positive and one negative.   Normal Distribution for middle 80%   middle area is 80% giving the cut scores of -1.282 and 1.282.     Example: If we want to know the z-score cut off for the top 10% of the curve, click on Right Tail and change the area value to 0.100 to get the z-score of 1.282.   Top 10% on Normal Distribution   top 10% shaded on right side for z=1.282.     Example: If we want the cut off score for the bottom 20% of the values on the normal distribution, click on the Left Tail and change the area value to 0.200 to get . Anything below the mean will be negative, anything greater than the mean will be positive.   Bottom 20% on Normal Distribution   bottom 20% shaded on left side for z=-.842.      Apply Normal Distribution with StatKey  Now that we can find the area under the normal distribution, we can apply the same process to any normally distributed variable. We still draw the normal curve, but it is now centered at the mean for the situation. There are two ways to solve it: 1) find the z-score for the scenario and solve like we did for the standard normal distribution. 2) Enter the cut-score in StatKey or other technology to find the appropriate area.  The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting more than 280 days.    Normal Distribution with R Studio  Let us look at how we can use R Studio to find the area shaded or the cut-off scores.  The command in R Studio to find the area to the left of the x-value, is:  pnorm(value, mean, standard deviation, lower.tail=TRUE)  The command in R Studio to find the area to the right, is  pnorm(value, mean, standard deviation, lower.tail=FALSE)   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting more than 280 days.  The probability of a pregnancy lasting longer than 280 days is looking for the right area, thus . Click on the Evaluate (R) button below the R code block.   Thus, . Thus 18.7% of all pregnancies last more than 280 days. This is not considered unusual since the probability is greater than 5%.   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting less than 250 days.  We want which is the left area. Click on the Evaluate (R) button below the R code block.   The probability of a pregnancy lasting longer than 250 days is . Thus 0.73% of all pregnancies last less than 250 days. This is unusual since the probability is less than 5%.   Example: Find the probability of a pregnancy lasting between 265 days and 280 days.  We need to find the area between two values on the normal distribution. First, find the area to the left of both values and then subtract the areas to find the amount between.   The area left of 280 days is 0.8129686 and the area to the left of 265 days is 0.2185, thus . Thus 59.5% of all pregnancies last between 265 and 280 days.    Practice Problems  Your choice which form of technology you use to compete the following problems.   "
+  "body": " Normal Distribution   Many real-life situations use measurement to find quantitative data which produces a histogram that is symmetric, unimodal, and bell-shaped. For example: height, weight, blood pressure, and cholesterol level form continuous probability distribution. In this section we will work with a distribution known as the normal distribution. However, not every bell-shaped curve is considered normal. The shape of the distribution is influenced by the mean (center of the distribution) and the standard deviation (how spread out the values are).     At the end of this section you will be able to:     Find the area under the normal distribution curve.    Determine cut-scores for a specific region.    Apply the normal distribution to application problems.      Standard Normal Distribution  Many continuous variables have a distribution that are bell-shaped, and these are called approximately normally distributed . No variable fits the normal distribution perfectly since it is a theoretical distribution. However, a normal distribution can be used to describe many variables.  We will begin our adventure with the standard normal distribution, which is centered at mean and standard deviation .  Just as in a discrete probability distribution, the object is to find the probability of an event occurring. However, unlike in a discrete probability distribution where the event can be a single value, in a continuous probability distribution the event is a range. You are interested in finding the probability of occurring in the range between and , or . Calculus tells us to find the area under the curve on the interval from to .  Before looking at the process for finding the probabilities under the normal curve, it is somewhat useful to look at the Empirical Rule that gives approximate values for these areas. This gives you an idea of what the size of the probabilities is for different shadings. A more precise method for finding probabilities for the normal curve will be demonstrated later in this section.  The Empirical Rule for any normal distribution:  Approximately 68% of the data falls within one standard deviation of the mean.  Approximately 95% of the data falls within two standard deviations of the mean.  Approximately 9% of the data falls within three standard deviations of the mean.  image  The probability is the area under the curve. Before technology, we needed to convert every x value to a standardized number, called the z-score or z-value . The z-score is a measure of how many standard deviations that value is from the mean. To convert from a normally distributed x value to a z-score, we use the following formula:     where mean of the population and standard deviation for the population for the variable.  The z-score is normally distributed, with a mean of 0 and a standard deviation of 1. It is known as the standard normal curve . If the z-score is positive, the data value is above the mean. If the z-score is negative, the data value is below the mean. The farther the z-value is from 0, the farther the data value is from the mean. Once you have the z-score, you can look up the area in the standard normal distribution table.  Luckily, technology can find probabilities and area for us. There are many programs available that will calculate the probability for a normal curve including StatKey, R Studio and TI83 Plus or TI-84 calculators.    Standard Normal Distribution with StatKey  The first step is to identify your values, draw the normal curve centered at 0, and then shade the appropriate region based on the scenario. I recommend drawing the image on paper first, this will help you to set up StatKey correctly.  Link to: StatKey.   Go to StatKey , near the bottom next to Theoretical Distributions , click on Normal . It will show you the standard normal distribution centered at 0.0.   StatKey Menu for Normal Distribution   Third tab down to theoretical distributions and one step right for Normal.     Standard Normal Distribution   Normal curve centered at 0 with tails at -4 and 4.    Example: Find the area right of on the standard normal distribution.  In StatKey click on Right Tail and enter the value 1.75 along the bottom. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area.   Normal Distribution right of z = 1.75   shaded right of 1.75 with small area shaded.      Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965.   Normal Distribution right of z = -1.81   shaded right of -1.81 with large area shaded of 0.965.        Find the area right of .    In StatKey, click on Right Tail and change the value along the bottom to 0.94. Note how less than half the curve is shaded giving an area of 0.174.   Normal Distribution right of z = 0.94   shaded right of 0.94with small area shaded.       Example: Find the area left of .  Click on Reset Plot then click on Left Tail and enter the value -1.81 along the bottom. The small left area is 0.035. Note that the curve is symmetric and the total area is always 1=100%, thus .   Normal Distribution left of z =-1.81   shaded left of -1.81 with small area shaded of 0.035.      Find the area left of .    Change the bottom to -2.85. The new area is 0.0022. The larger the z-value, the smaller the area in the tail of the curve.   Normal Distribution left of -2.85   shaded left of -2.85 with smaller area shaded of 0.0022.        Find the area left of .    Change the bottom to 1.45. The new area is 0.926. Since over half the curve is shaded to the left, there is a larger area.   Normal Distribution left of z = 1.45   shaded left of 1.45 with large area shaded of 0.926.       Example: Find the area between and .  On paper you will draw the curve centered at 0. Mark where z = 1.25 and z = -1.36, then shade the area between the two values. In StatKey, Reset Plot and click on the Left Tail and enter the value -1.36 at the bottom on the left side, it will shade it to the left. Then click on Right Tail and enter the value 1.25 along the bottom on the right side, it will shade to the right. We want the white area between the two values, which is 0.807. StatKey will always shade in the tails.   Distribution between z = -1.36 and z = 1.25   between shading area of 0.807.     Example: Suppose we want to find the area to the right of and the area to the left of . We just need to add the area of those two regions shaded in red. The area is .  Sometimes when working with the normal distribution, we want to find which z-score correlates with a certain percentage of the curve.   Example: Suppose we want to know the z-scored for the middle 80% of the values of the normal distribution.  Click on Reset Plot and click on the Two Tail . Change the middle white region from the default of 0.95 (which have the z-values of -1.960 and +1.960) to 0.80 to change the z-values to -1.282 and +1.282 along the bottom of the graph. The larger the middle percentage, the larger the z-scores will be. Since the normal curve is symmetric, the values are the same just one positive and one negative.   Normal Distribution for middle 80%   middle area is 80% giving the cut scores of -1.282 and 1.282.     Example: If we want to know the z-score cut off for the top 10% of the curve, click on Right Tail and change the area value to 0.100 to get the z-score of 1.282.   Top 10% on Normal Distribution   top 10% shaded on right side for z=1.282.     Example: If we want the cut off score for the bottom 20% of the values on the normal distribution, click on the Left Tail and change the area value to 0.200 to get . Anything below the mean will be negative, anything greater than the mean will be positive.   Bottom 20% on Normal Distribution   bottom 20% shaded on left side for z=-.842.      Apply Normal Distribution with StatKey  Now that we can find the area under the standard normal distribution, we can apply the same process to any normally distributed variable. We still draw the normal curve, but it is now centered at the mean for the situation. There are two ways to solve it: 1) find the z-score for the scenario and solve like we did for the standard normal distribution, or 2) enter the cut-score in StatKey or other technology to find the appropriate area with the given mean and standard deviation.  Click on the following link to take you to StatKey   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting more than 280 days.   Solution: In StatKey under Theoretical Distribution select Normal . On the far right click on Edit Parameters and change the mean to 272 and the standard deviation to 9 and then click on OK . The normal curve is now centered over 272.   Edit the parameters   mean=272 and sd=9 then click ok.    Since we are looking for the probability of more than 280 days, we are looking at the area of the right tail. Click on Right Tail and enter the value 280 along the bottom. It will shade the area of the tail which is 0.187. Thus 18.7% of pregnancies are likely to last more than 280 days.   Probability over 280 days   shading right of 280 days is 0.187.    Alternatively, we can find the z-score and use the standard normal distribution for the same probability. which is positive since it is greater than the mean of 272. Using the standard normal distribution with mean = 0 and standard deviation = 1, click on Right Tail and enter 0.889 along the bottom to get the same right area of 0.187.   Less than 250 days   The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting less than 250 days.    Edit Parameters for mean =272 and standard deviation = 9. Since we want the area for less than 250 days, we want Left Tail and change the value along the bottom to 250. The new area is 0.0073. Thus 0.73% of pregnancies last less than 250 days.  Alternatively, we can find the z-score and use the standard normal distribution for the same probability. which is negative since it is less than the mean of 272. Click on Left Tail and enter -2.44 along the bottom to get the same left area of 0.0073.   Probability of less than 250 days   shading left of 250 days is 0.0073.       Between Days   The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability that a pregnancy lasts between 265 and 280 days.    Edit Parameters for mean =272 and standard deviation = 9. Since we want the area between both values, click on Left Tail and enter the lower value of 265. Click on Right Tail and enter the larger value of 280. We want the area between which is 0.595. Thus 59.5% of pregnancies last between 265 and 280 days.   Probability between 265 and 280 days   shading between 265 and 280 is 0.595.       Less than 10% of pregnancies   The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the length of pregnancy that represent 10% of all pregnancies last less than that number of days.    Edit Parameters for mean =272 and standard deviation = 9. Since we want the area to represent less than 10% , click on Left Tail and enter the area value of 0.10 in the red region. The cut off score is 260.466 along the bottom. About 10% of pregnancies last less than 260.466 days.   Probability of 10% pregnancies below   area is 10% for cut score of 260.466.        Normal Distribution with R Studio  Let us look at how we can use R Studio to find the area shaded or the cut-off scores.  The command in R Studio to find the area to the left of the x-value, is:  pnorm(value, mean, standard deviation, lower.tail=TRUE)  The command in R Studio to find the area to the right, is  pnorm(value, mean, standard deviation, lower.tail=FALSE)   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting more than 280 days.  The probability of a pregnancy lasting longer than 280 days is looking for the right area, thus . Click on the Evaluate (R) button below the R code block.   Thus, . Thus 18.7% of all pregnancies last more than 280 days. This is not considered unusual since the probability is greater than 5%.   Example: The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9. Find the probability of a pregnancy lasting less than 250 days.  We want which is the left area. Click on the Evaluate (R) button below the R code block.   The probability of a pregnancy lasting longer than 250 days is . Thus 0.73% of all pregnancies last less than 250 days. This is unusual since the probability is less than 5%.   Example: Find the probability of a pregnancy lasting between 265 days and 280 days.  We need to find the area between two values on the normal distribution. First, find the area to the left of both values and then subtract the areas to find the amount between.   The area left of 280 days is 0.8129686 and the area to the left of 265 days is 0.2185, thus . Thus 59.5% of all pregnancies last between 265 and 280 days.    Practice Problems  Your choice which form of technology you use to compete the following problems.   Standard Normal   Using the standard normal distribution, find the following areas.  a. Area left of z = 1.3  b. Area right of z = 1.5  c. Area to left of z = -1.38  d. Area right of z = 2.5  e. Area between z = -1.5 and z = -.65   left area = 0.903 more than half the curve.   right area = 0.067   left area = 0.084   right area = 0.0062   area between = 0.191     Find Cutoffs   Using the standard normal distribution, find the following cut off scores for the given percentages (areas).  a. Top 25% of curve.  b. Middle 95% of curve.  c. The bottom 15%.  d. The top 30% of curve.  e. The bottom 5% of curve.  b. Middle 99% of curve.   right tail gives z =0.674   Two tail gives left = -1.96 and right = 1.96   left tail gives z = -1.036   right tail gives z =0.524   left tail gives z = -1.645 .   > Lower tail = -2.576 and upper tail = 2.576     WHO MONICA Project   According to the WHO MONICA Project the mean blood pressure for people in China is 128 mmHg with a standard deviation of 23 mmHg (Kuulasmaa, Hense and Tolonen, 1998). Assume that blood pressure is normally distributed.  a. Find the probability that a person in China has blood pressure greater than 136 mmHg.  b. Find the probability that a person in China has blood pressure less than 142 mmHg.  c. Find the probability that a person in China has blood pressure between 120 and 125 mmHg.  d. Is it unusual for a person in China to have a blood pressure of more than 125 mmHg? Why or why not?  e. What blood pressure does 90% of all people in China have less than?    right area = 0.364 thus there's 36.4% chance a person in China has blood pressure greater than 136 mmHg.    left area = 0.729 thus there's a 72.9% chance that a person in China has blood pressure less than 142 mmHg.    middle area = 0.084 thus there's an 8.4% chance that that a person in China has blood pressure between 120 and 125 mmHg.    No, about 55.2% of people in China have blood pressure greater than 125. The 125 is a bit below the mean and the area accounts for over half the curve.    90% of people in China have blood pressure below 157.475 using the left area.     Atlantic Cod   The size of fish is very important to commercial fishing. A study conducted in 2012 found the length of Atlantic cod caught in nets in Karlskrona to have a mean of 49.9 cm and a standard deviation of 3.74 cm (Ovegard, Berndt and Lunneryd, 2012). Assume the length of fish is normally distributed.  a. Find the probability that an Atlantic cod has a length less than 48 cm.  b. Find the probability that an Atlantic cod has a length of more than 64 cm.  c. Find the probability that an Atlantic cod has a length between 42 and 56 cm.   Left area = 0.306 thus there's 30.6% chance that an Atlantic cod has a length less than 48 cm.   Right area = 0.000082, there's a very small chance an Atlantic cod has a length of more than 64 cm.   The middle area = 0.931 thus there's 93.1% chance that an Atlantic cod has a length between 42 and 56 cm.     More Atlantic Cod   The size of fish is very important to commercial fishing. A study conducted in 2012 found the length of Atlantic cod caught in nets in Karlskrona to have a mean of 49.9 cm and a standard deviation of 3.74 cm (Ovegard, Berndt and Lunneryd, 2012). Assume the length of fish is normally distributed.  a. The middle 75% of all Atlantic cod are between what two lengths?  b. What is the cut off length for the longest15% of all Atlantic cod?  c. what is the cut off length for the shortest 10% of all Atlantic cod?   75% of Atlantic cod are between 45.6 cm and 54.2 cm   15% of Atlantic cod are longer than 53.776 cm.   10% of Atlantic cod are shorter than 45.107 cm.     "
 },
 {
   "id": "sec-NormalDist-3",
@@ -5203,13 +5203,112 @@ var ptx_lunr_docs = [
   "body": " Bottom 20% on Normal Distribution   bottom 20% shaded on left side for z=-.842.   "
 },
 {
+  "id": "subsec-NormalCurveStatKey-5",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalCurveStatKey-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Theoretical Distribution Normal "
+},
+{
+  "id": "NormalEditParameters",
+  "level": "2",
+  "url": "sec-NormalDist.html#NormalEditParameters",
+  "type": "Figure",
+  "number": "5.4.17",
+  "title": "",
+  "body": " Edit the parameters   mean=272 and sd=9 then click ok.   "
+},
+{
+  "id": "NormalMore280",
+  "level": "2",
+  "url": "sec-NormalDist.html#NormalMore280",
+  "type": "Figure",
+  "number": "5.4.18",
+  "title": "",
+  "body": " Probability over 280 days   shading right of 280 days is 0.187.   "
+},
+{
+  "id": "subsec-NormalCurveStatKey-10",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalCurveStatKey-10",
+  "type": "Example",
+  "number": "5.4.19",
+  "title": "Less than 250 days.",
+  "body": " Less than 250 days   The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting less than 250 days.    Edit Parameters for mean =272 and standard deviation = 9. Since we want the area for less than 250 days, we want Left Tail and change the value along the bottom to 250. The new area is 0.0073. Thus 0.73% of pregnancies last less than 250 days.  Alternatively, we can find the z-score and use the standard normal distribution for the same probability. which is negative since it is less than the mean of 272. Click on Left Tail and enter -2.44 along the bottom to get the same left area of 0.0073.   Probability of less than 250 days   shading left of 250 days is 0.0073.     "
+},
+{
+  "id": "subsec-NormalCurveStatKey-11",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalCurveStatKey-11",
+  "type": "Example",
+  "number": "5.4.21",
+  "title": "Between Days.",
+  "body": " Between Days   The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability that a pregnancy lasts between 265 and 280 days.    Edit Parameters for mean =272 and standard deviation = 9. Since we want the area between both values, click on Left Tail and enter the lower value of 265. Click on Right Tail and enter the larger value of 280. We want the area between which is 0.595. Thus 59.5% of pregnancies last between 265 and 280 days.   Probability between 265 and 280 days   shading between 265 and 280 is 0.595.     "
+},
+{
+  "id": "subsec-NormalCurveStatKey-12",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalCurveStatKey-12",
+  "type": "Example",
+  "number": "5.4.23",
+  "title": "Less than 10% of pregnancies.",
+  "body": " Less than 10% of pregnancies   The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the length of pregnancy that represent 10% of all pregnancies last less than that number of days.    Edit Parameters for mean =272 and standard deviation = 9. Since we want the area to represent less than 10% , click on Left Tail and enter the area value of 0.10 in the red region. The cut off score is 260.466 along the bottom. About 10% of pregnancies last less than 260.466 days.   Probability of 10% pregnancies below   area is 10% for cut score of 260.466.     "
+},
+{
+  "id": "subsec-NormalPractice-3",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalPractice-3",
+  "type": "Checkpoint",
+  "number": "5.4.25",
+  "title": "Standard Normal.",
+  "body": " Standard Normal   Using the standard normal distribution, find the following areas.  a. Area left of z = 1.3  b. Area right of z = 1.5  c. Area to left of z = -1.38  d. Area right of z = 2.5  e. Area between z = -1.5 and z = -.65   left area = 0.903 more than half the curve.   right area = 0.067   left area = 0.084   right area = 0.0062   area between = 0.191   "
+},
+{
+  "id": "subsec-NormalPractice-4",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalPractice-4",
+  "type": "Checkpoint",
+  "number": "5.4.26",
+  "title": "Find Cutoffs.",
+  "body": " Find Cutoffs   Using the standard normal distribution, find the following cut off scores for the given percentages (areas).  a. Top 25% of curve.  b. Middle 95% of curve.  c. The bottom 15%.  d. The top 30% of curve.  e. The bottom 5% of curve.  b. Middle 99% of curve.   right tail gives z =0.674   Two tail gives left = -1.96 and right = 1.96   left tail gives z = -1.036   right tail gives z =0.524   left tail gives z = -1.645 .   > Lower tail = -2.576 and upper tail = 2.576   "
+},
+{
+  "id": "subsec-NormalPractice-5",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalPractice-5",
+  "type": "Checkpoint",
+  "number": "5.4.27",
+  "title": "WHO MONICA Project.",
+  "body": " WHO MONICA Project   According to the WHO MONICA Project the mean blood pressure for people in China is 128 mmHg with a standard deviation of 23 mmHg (Kuulasmaa, Hense and Tolonen, 1998). Assume that blood pressure is normally distributed.  a. Find the probability that a person in China has blood pressure greater than 136 mmHg.  b. Find the probability that a person in China has blood pressure less than 142 mmHg.  c. Find the probability that a person in China has blood pressure between 120 and 125 mmHg.  d. Is it unusual for a person in China to have a blood pressure of more than 125 mmHg? Why or why not?  e. What blood pressure does 90% of all people in China have less than?    right area = 0.364 thus there's 36.4% chance a person in China has blood pressure greater than 136 mmHg.    left area = 0.729 thus there's a 72.9% chance that a person in China has blood pressure less than 142 mmHg.    middle area = 0.084 thus there's an 8.4% chance that that a person in China has blood pressure between 120 and 125 mmHg.    No, about 55.2% of people in China have blood pressure greater than 125. The 125 is a bit below the mean and the area accounts for over half the curve.    90% of people in China have blood pressure below 157.475 using the left area.   "
+},
+{
+  "id": "subsec-NormalPractice-6",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalPractice-6",
+  "type": "Checkpoint",
+  "number": "5.4.28",
+  "title": "Atlantic Cod.",
+  "body": " Atlantic Cod   The size of fish is very important to commercial fishing. A study conducted in 2012 found the length of Atlantic cod caught in nets in Karlskrona to have a mean of 49.9 cm and a standard deviation of 3.74 cm (Ovegard, Berndt and Lunneryd, 2012). Assume the length of fish is normally distributed.  a. Find the probability that an Atlantic cod has a length less than 48 cm.  b. Find the probability that an Atlantic cod has a length of more than 64 cm.  c. Find the probability that an Atlantic cod has a length between 42 and 56 cm.   Left area = 0.306 thus there's 30.6% chance that an Atlantic cod has a length less than 48 cm.   Right area = 0.000082, there's a very small chance an Atlantic cod has a length of more than 64 cm.   The middle area = 0.931 thus there's 93.1% chance that an Atlantic cod has a length between 42 and 56 cm.   "
+},
+{
+  "id": "subsec-NormalPractice-7",
+  "level": "2",
+  "url": "sec-NormalDist.html#subsec-NormalPractice-7",
+  "type": "Checkpoint",
+  "number": "5.4.29",
+  "title": "More Atlantic Cod.",
+  "body": " More Atlantic Cod   The size of fish is very important to commercial fishing. A study conducted in 2012 found the length of Atlantic cod caught in nets in Karlskrona to have a mean of 49.9 cm and a standard deviation of 3.74 cm (Ovegard, Berndt and Lunneryd, 2012). Assume the length of fish is normally distributed.  a. The middle 75% of all Atlantic cod are between what two lengths?  b. What is the cut off length for the longest15% of all Atlantic cod?  c. what is the cut off length for the shortest 10% of all Atlantic cod?   75% of Atlantic cod are between 45.6 cm and 54.2 cm   15% of Atlantic cod are longer than 53.776 cm.   10% of Atlantic cod are shorter than 45.107 cm.   "
+},
+{
   "id": "sec-CI-means",
   "level": "1",
   "url": "sec-CI-means.html",
   "type": "Section",
   "number": "6.1",
   "title": "Intervals for Means",
-  "body": " Intervals for Means   Medical researchers have determined normal intervals for a person's blood pressure, cholesterol and triglycerides levels. For example, the normal range of systolic blood pressure is 110 to 140 mmHg. The normal triglycerides level is between 30 to 200 milligrams per deciliter. By measuring these values, a doctor can determine if a patient's vital statistics are within the normal interval or if some type of treatment is needed to correct the condition.    Understanding the Basics  Inferential statistics techniques have various assumptions that must be met before valid conclusion scan be drawn. One assumption is that the samples are randomly selected. Another assumption is the sample size must be greater than or equal to 30 or the population must be normally or approximately normally distributed. Recall from the last chapter that we check the histogram is approximately bell-shaped, few outliers, and the normal quantile plots appears linear.  Recall the first week of class where we completed the class survey for students' weights and heights. From the sample of 42 students, the mean weight was 171 pounds, and the mean height was 67.9 inches. From the sample data we would infer the average weight for all UNC students to be around 171 pounds and the average height for all students to be around 67.9 inches. This type of estimate is called a point estimate   A point estimate is a specific numerical values estimate of the parameter. The best point estimate for the population mean is the sample mean .  Typically, the sample mean will be different than the population mean due to sampling error. What would happen to the class mean if we had the basketball team in our class? So how good is a point estimate? There is no way of knowing how close a particular point estimate is to the parameter. That is why statisticians prefer an interval estimate .  An interval estimate of a parameter is an interval or range of values used to estimate the parameter.  This estimate may or may not contain the value of the parameter being estimated. Thus, a degree of confidence, generally written as a percentage, can be assigned to the interval estimation made. . Common values we will use are 90%, 95%, and 99% confidence.  We may be 90% confidence the true mean height of college students is between 66.6 inches and 69.2 inches, or we could be 99% confidence the true mean height of college students is between 66.0 inches and 69.8 inches which is a bit wider to contain more plausible values.  The confidence level of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter.  A confidence interval is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.  From the 90% confidence interval, the sample mean was 67.9 inches +\/- 1.3 gives the interval 66.6 to 69.2 inches. The amount of variation is referred to as the margin of error . For the 99% confidence interval, the sample mean 67.9 +\/- 1.9 gives 66.0 to 69.8 inches. The higher confidence level allows for more variation in the estimates.  The margin of error is the maximum likely difference between the point estimate of a parameter and the actual value of the population parameter.    t Distribution  Since we are estimating the population parameters, it is unlikely that we know and . Thus, we are no longer able to use the normal z-distribution. Instead, we use the sample standard deviation with the t-distribution .  The t -distribution shares some characters of the normal distribution. It is bell shaped and symmetrical about the mean. The mean, median, and mode are equal to 0 and located at the center of the distribution. The curve does not touch the x-axis.  The t -distribution also differs from the normal distribution in that the variance is greater than 1. The t -distribution is a family of curves based on the concept of degrees of freedom which is related to the sample size. As the sample size increases, it approaches the standard normal distribution.  The formula for finding the degrees of freedom will vary for different statistical tests. The degrees of freedom are the number of values that are free to vary after a sample statistics has been computed, and they tell the researcher which specific curve to use. The degrees of freedom for finding the confidence interval for a single mean is one less than the sample size, thus   How to find t* with StatKey  Example: Suppose we want to create a 90% confidence interval for a sample of 42 students.  From StatKey toward the bottom of the page next to the Theoretical Distributions select t for the t-distribution.   StatKey Menu for t-distribution   third heading down to theoretical then second tab right for t-distribution.    It will request the degrees of freedom, since the sample size is 42, , enter 41 then click on OK . This will give you the appropriate curve based on the sample size.   Enter degrees of freedom   enter 41 df.    Click on Two Tail and enter 0.90 in the middle portion of the curve. The cut scores will be along the bottom of the curve. The t*=1.683. Notice that there are two values, one positive and one negative since it is symmetric about the mean 0.   t-distribution for 90% for 41 df   middle 90% gives t=1.683.      Find t* for 95% confidence for a sample of 20 people.    Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95  The t* = 2.093   t-distribution for 95% for 19 df   middle 95% gives t=2.093.        Find t* for 99% confidence for a sample of 25 people.    Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99  The t* = 2.797      Find t* for 95% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95  The t* = 2.010      Find t* for 99% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99  The t* = 2.680      What happens to t* for the same sample size if the level of confidence increases?    As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets larger because we are allowing for more margin of error in the estimate.      What happens to t* if the level of confidence stays the same but the sample size increases?    As the sample size gets larger, the t* value also gets smaller because there is less variation in larger samples.    Now we are ready to create the confidence interval to predict the population mean.  Formula for Confidence interval of the mean is     or    where is the sample mean, is the sample standard deviation, is the sample size, and is from the -distribution using .  Example: From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.  Solution: We are given that , thus , , and . The .  Using the mean CI formula:  substituting in the values we get:  which gives lower bound of pounds.  We are 90% confident that the true mean weight for all UNC students is between 161 and 181 pounds.    Using Technology  using TI83    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics to complete the table below. Click on Change Column to change variable names.    Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338      Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.      Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.      Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.     "
+  "body": " Intervals for Means   Medical researchers have determined normal intervals for a person's blood pressure, cholesterol and triglycerides levels. For example, the normal range of systolic blood pressure is 110 to 140 mmHg. The normal triglycerides level is between 30 to 200 milligrams per deciliter. By measuring these values, a doctor can determine if a patient's vital statistics are within the normal interval or if some type of treatment is needed to correct the condition.    Understanding the Basics  Inferential statistics techniques have various assumptions that must be met before valid conclusion scan be drawn. One assumption is that the samples are randomly selected. Another assumption is the sample size must be greater than or equal to 30 or the population must be normally or approximately normally distributed. Recall from the last chapter that we check the histogram is approximately bell-shaped, few outliers, and the normal quantile plots appears linear.  Recall the first week of class where we completed the class survey for students' weights and heights. From the sample of 42 students, the mean weight was 171 pounds, and the mean height was 67.9 inches. From the sample data we would infer the average weight for all UNC students to be around 171 pounds and the average height for all students to be around 67.9 inches. This type of estimate is called a point estimate   A point estimate is a specific numerical values estimate of the parameter. The best point estimate for the population mean is the sample mean .  Typically, the sample mean will be different than the population mean due to sampling error. What would happen to the class mean if we had the basketball team in our class? So how good is a point estimate? There is no way of knowing how close a particular point estimate is to the parameter. That is why statisticians prefer an interval estimate .  An interval estimate of a parameter is an interval or range of values used to estimate the parameter.  This estimate may or may not contain the value of the parameter being estimated. Thus, a degree of confidence, generally written as a percentage, can be assigned to the interval estimation made. . Common values we will use are 90%, 95%, and 99% confidence.  We may be 90% confidence the true mean height of college students is between 66.6 inches and 69.2 inches, or we could be 99% confidence the true mean height of college students is between 66.0 inches and 69.8 inches which is a bit wider to contain more plausible values.  The confidence level of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter.  A confidence interval is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.  From the 90% confidence interval, the sample mean was 67.9 inches +\/- 1.3 gives the interval 66.6 to 69.2 inches. The amount of variation is referred to as the margin of error . For the 99% confidence interval, the sample mean 67.9 +\/- 1.9 gives 66.0 to 69.8 inches. The higher confidence level allows for more variation in the estimates.  The margin of error is the maximum likely difference between the point estimate of a parameter and the actual value of the population parameter.    t Distribution  Since we are estimating the population parameters, it is unlikely that we know and . Thus, we are no longer able to use the normal z-distribution. Instead, we use the sample standard deviation with the t-distribution .  The t -distribution shares some characters of the normal distribution. It is bell shaped and symmetrical about the mean. The mean, median, and mode are equal to 0 and located at the center of the distribution. The curve does not touch the x-axis.  The t -distribution also differs from the normal distribution in that the variance is greater than 1. The t -distribution is a family of curves based on the concept of degrees of freedom which is related to the sample size. As the sample size increases, it approaches the standard normal distribution.  The formula for finding the degrees of freedom will vary for different statistical tests. The degrees of freedom are the number of values that are free to vary after a sample statistics has been computed, and they tell the researcher which specific curve to use. The degrees of freedom for finding the confidence interval for a single mean is one less than the sample size, thus   How to find t* with StatKey  Example: Suppose we want to create a 90% confidence interval for a sample of 42 students.  From StatKey toward the bottom of the page next to the Theoretical Distributions select t for the t-distribution.   StatKey Menu for t-distribution   third heading down to theoretical then second tab right for t-distribution.    It will request the degrees of freedom, since the sample size is 42, , enter 41 then click on OK . This will give you the appropriate curve based on the sample size.   Enter degrees of freedom   enter 41 df.    Click on Two Tail and enter 0.90 in the middle portion of the curve. The cut scores will be along the bottom of the curve. The t*=1.683. Notice that there are two values, one positive and one negative since it is symmetric about the mean 0.   t-distribution for 90% for 41 df   middle 90% gives t=1.683.      Find t* for 95% confidence for a sample of 20 people.    Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95  The t* = 2.093   t-distribution for 95% for 19 df   middle 95% gives t=2.093.        Find t* for 99% confidence for a sample of 25 people.    Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99  The t* = 2.797      Find t* for 95% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95  The t* = 2.010      Find t* for 99% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99  The t* = 2.680      What happens to t* for the same sample size if the level of confidence increases?    As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets larger because we are allowing for more margin of error in the estimate.      What happens to t* if the level of confidence stays the same but the sample size increases?    As the sample size gets larger, the t* value also gets smaller because there is less variation in larger samples.      Calculate the Confidence Interval for the Mean  Now we are ready to create the confidence interval to predict the population mean. We are assuming the population is approximately normally distributed and the population standard deviation is unknown.  Formula for Confidence interval of the mean is     or    where is the sample mean, is the sample standard deviation, is the sample size, and is the value from the -distribution using .  Example: From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.  Solution: We are given that , thus , , and . The for 90% confidence .  Using the mean CI formula:  substituting in the values we get:  lower bound is and the upper bound is .  which gives the interval of pounds.  We are 90% confident that the true mean weight for all UNC students is between 161.0 and 181.2 pounds.   Heights   From the class survey, 42 students gave their heights, measured in inches. The values ranged from 59 to 78 inches with the mean of 67.9 inches and standard deviation of 4.8. Find the 95% confidence interval for the true mean height for all UNC students.    We are given that , thus , , and . The for 95%.    substituting in the values we get:  which gives lower bound of inches.  We are 95% confident that the true mean height for all UNC students is between 66.4 and 67.4inches.     Sleep   From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.    We are given that , thus , , and . The for 99%.    substituting in the values we get:  which gives lower bound of hours.  We are 99% confident that the true mean sleep hours for all UNC students is between 6.6 and 7.6 hours      Using Technology  Next, let us look at how we can use technology to find the confidence interval for us. The direction should be the same for the TI 83 Plus or TI84.  Example: From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.  Press the STAT button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option 8: T-interval then press [ENTER].   Calculator menu to select Tinterval   scroll to option 8.    You can choose between entering the raw data or the summary statistics. We will use the arrow once to the right to highlight Stats and then press [ENTER] to select it. Then input your summary statistics, enter the C-level of 0.99, scroll to Calculate and press [ENTER].  We are given that , and , and .   Enter statistics into calculator   mean=7.1, sx=1.3, n=43, level=.99.     T-interval on Calculator   mean between 6.5651 and 7.6349.    We are 99% confident that the true mean sleep hours for all UNC students is between 6.57 and 7.63 hours.  Example: Suppose we had a sample of ten students with the following heights, measured in inches: 66, 63, 67, 76, 62, 62, 68, 62, 71, 75. Find the 95% confidence interval for the true mean height for all UNC students.  Press the STAT button and under the EDIT menu select option 1:Edit then press [ENTER] and then input the ten values using [ENTER] after each.   Enter raw data into Calculator   enter the ten heights.    Press the STAT button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option 8: T-interval then press [ENTER]. Use the arrow if needed to highlight Data and then press [ENTER] to select it. The data was entered into List 1 and the Frequency is 1, the confidence level is .95, scroll to Calculate and hit [ENTER].   Select T interval and Data on TI84   Select option 8 T-interval and Data, change level to .95 and enter.     Select T interval and Data on TI83 Plus   Select option 8 T- interval and Data, change level to .95 and enter.    We are 95% confident that the true mean height for all UNC students is between 63.4 and 71.0 inches.  Note: Make sure your List matches where you input the data and the C-Level matches the confidence level in the problem.    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics to complete the table below. Click on Change Column to change variable names.    Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338      Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.      Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.      Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.     "
 },
 {
   "id": "subsec-CImean-4",
@@ -5365,13 +5464,121 @@ var ptx_lunr_docs = [
   "body": "  What happens to t* if the level of confidence stays the same but the sample size increases?    As the sample size gets larger, the t* value also gets smaller because there is less variation in larger samples.   "
 },
 {
-  "id": "subsec-tDistribution-21",
+  "id": "subsec-CalculateSingleMeanCI-3",
   "level": "2",
-  "url": "sec-CI-means.html#subsec-tDistribution-21",
+  "url": "sec-CI-means.html#subsec-CalculateSingleMeanCI-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Formula for Confidence interval of the mean is "
+},
+{
+  "id": "subsec-CalculateSingleMeanCI-15",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CalculateSingleMeanCI-15",
+  "type": "Checkpoint",
+  "number": "6.1.11",
+  "title": "Heights.",
+  "body": " Heights   From the class survey, 42 students gave their heights, measured in inches. The values ranged from 59 to 78 inches with the mean of 67.9 inches and standard deviation of 4.8. Find the 95% confidence interval for the true mean height for all UNC students.    We are given that , thus , , and . The for 95%.    substituting in the values we get:  which gives lower bound of inches.  We are 95% confident that the true mean height for all UNC students is between 66.4 and 67.4inches.   "
+},
+{
+  "id": "subsec-CalculateSingleMeanCI-16",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CalculateSingleMeanCI-16",
+  "type": "Checkpoint",
+  "number": "6.1.12",
+  "title": "Sleep.",
+  "body": " Sleep   From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.    We are given that , thus , , and . The for 99%.    substituting in the values we get:  which gives lower bound of hours.  We are 99% confident that the true mean sleep hours for all UNC students is between 6.6 and 7.6 hours   "
+},
+{
+  "id": "subsec-CImeanCalc-4",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanCalc-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "8: T-interval "
+},
+{
+  "id": "CImean1calc",
+  "level": "2",
+  "url": "sec-CI-means.html#CImean1calc",
+  "type": "Figure",
+  "number": "6.1.13",
+  "title": "",
+  "body": " Calculator menu to select Tinterval   scroll to option 8.   "
+},
+{
+  "id": "subsec-CImeanCalc-6",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanCalc-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Stats "
+},
+{
+  "id": "CImean2calc",
+  "level": "2",
+  "url": "sec-CI-means.html#CImean2calc",
+  "type": "Figure",
+  "number": "6.1.14",
+  "title": "",
+  "body": " Enter statistics into calculator   mean=7.1, sx=1.3, n=43, level=.99.   "
+},
+{
+  "id": "CImean3calc",
+  "level": "2",
+  "url": "sec-CI-means.html#CImean3calc",
+  "type": "Figure",
+  "number": "6.1.15",
+  "title": "",
+  "body": " T-interval on Calculator   mean between 6.5651 and 7.6349.   "
+},
+{
+  "id": "subsec-CImeanCalc-12",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanCalc-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "1:Edit "
+},
+{
+  "id": "CImean4calc",
+  "level": "2",
+  "url": "sec-CI-means.html#CImean4calc",
+  "type": "Figure",
+  "number": "6.1.16",
+  "title": "",
+  "body": " Enter raw data into Calculator   enter the ten heights.   "
+},
+{
+  "id": "subsec-CImeanCalc-14",
+  "level": "2",
+  "url": "sec-CI-means.html#subsec-CImeanCalc-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "8: T-interval Data "
+},
+{
+  "id": "CImean5calc",
+  "level": "2",
+  "url": "sec-CI-means.html#CImean5calc",
+  "type": "Figure",
+  "number": "6.1.17",
+  "title": "",
+  "body": " Select T interval and Data on TI84   Select option 8 T-interval and Data, change level to .95 and enter.   "
+},
+{
+  "id": "CImean6calc",
+  "level": "2",
+  "url": "sec-CI-means.html#CImean6calc",
+  "type": "Figure",
+  "number": "6.1.18",
+  "title": "",
+  "body": " Select T interval and Data on TI83 Plus   Select option 8 T- interval and Data, change level to .95 and enter.   "
 },
 {
   "id": "subsec-CImeanPractice-3",
@@ -5387,7 +5594,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-4",
   "type": "Checkpoint",
-  "number": "6.1.11",
+  "number": "6.1.19",
   "title": "",
   "body": "  Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338   "
 },
@@ -5396,7 +5603,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-5",
   "type": "Checkpoint",
-  "number": "6.1.12",
+  "number": "6.1.20",
   "title": "",
   "body": "  Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.   "
 },
@@ -5405,7 +5612,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-6",
   "type": "Checkpoint",
-  "number": "6.1.13",
+  "number": "6.1.21",
   "title": "",
   "body": "  Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.   "
 },
@@ -5414,7 +5621,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CI-means.html#subsec-CImeanPractice-7",
   "type": "Checkpoint",
-  "number": "6.1.14",
+  "number": "6.1.22",
   "title": "",
   "body": "  Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.   "
 },
