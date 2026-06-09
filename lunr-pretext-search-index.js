@@ -5632,7 +5632,178 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Intervals for Proportions",
-  "body": " Intervals for Proportions  Text of section.  "
+  "body": " Intervals for Proportions   Previously we investigated the eye colors of students. About 2% of the world population has green eyes and about 9% of the US population has green eyes. But many times, we do know the population parameters, so we need to use a sample to estimate it.     At the end of this section you will be able to:     Identify the point estimate .    Determine the z-value from normal distribution.    Construct and interpret confidence intervals for proportions.      Understanding the Basics  A quick review on notation. The population proportion is often read as a percentage, such as 27% of the people in the United States have blue eyes, thus . The sample proportion is . From the class survey, 6 students out of 42 had blue eyes, thus . This sample statistic is less than the population parameter. We may also want to know what proportion of the sample does not have blue eyes. Here we want to find the complement of blue eyes. We often use to represent the probability it does not happen. Thus, .   Formula Summary  sample proportion  where X = number in the sample meeting the condition and n = sample size.  complement    Brown Eyes   From the class survey, 28 students had brown eyes out of 42. Find p^ and q^. About 45% of the US population has brown eyes.    Proportion of brown eyes is     Proportion not having brown eyes is or      Green Eyes   From the class survey, 5 students had green eyes out of 42. Find p^ and q^.    Proportion of green eyes is     Proportion not having green eyes is or     Creating Confidence Intervals  When we do not know the population parameter, we need to use a sample to estimate it. Our sample statistic is the point estimate for the parameter, p . Next, we need the margin of error to see how far off we allow our estimate. Since most samples involving proportions are larger, we will be using the normal distribution assuming we meet the criteria that and to ensure it is large enough. We also assume the sample is a random sample and the conditions for a binomial experiment are satisfied (reduced to two outcomes, fixed number of trials, each trial is independent of the others, see section 4.5 for more details).  Margin of Error is   Confidence Interval for a Proportion     Common z* values are as follows:  For 90% confidence use z = 1.645  For 95% confidence use z = 1.96  For 98% confidence use z = 2.327  For 99% confidence use z = 2.576   How to find z* with StatKey   Find z* for 90% confidence using the normal distribution.    These can be found using StatKey, going under Theoretical Distribution, select Normal , click on Two Tail and enter the percentage as a decimal in the middle portion of the curve. For 90% enter 0.90 in the middle white portion. The z* values are along the bottom. For 90% confidence, z* = 1.645. Refer to Section 5.4 for more examples.   Normal Distribution for 90% Confidence   Middle 90 percent gives z=-1.645 and +1.645.       Blue Eyes Interval   From the class survey, 6 students had blue eyes out of the sample of 42 UNC students. Find the 90% confidence interval for the true proportion of UNC students that have blue eyes.    First, check assumptions. We will assume we have a random sample of students who are independent of each other, and the probability will remain the same for each. We need to check that the sample is large enough, so 6 have blue and 36 do not have blue eyes so we meet the condition of at least 5 for each.  Next, find the values.  Proportion of blue eyes is   Proportion not having blue eyes is   For 90% confidence use z = 1.645  Margin of Error is      Lower bound is and upper bound is   The interval is   We are 90% confident that the true proportion of UNC students that have blue eyes is between 5.4% and 23.2%.     Brown Eyes Interval   From the class survey, 28 students had brown eyes out of 42. Find the 95% confidence interval for the true proportion of UNC students that have brown eyes.    The interval is     First, check assumptions. We will assume we have a random sample of students who are independent of each other, and the probability will remain the same for each. We need to check that the sample is large enough, so 28 have brown eyes and 14 do not have brown eyes so we meet the condition of at least 5 for each.  Next, find the values.  Proportion of brown eyes is   Proportion not having brown eyes is   For 95% confidence use z = 1.96     Lower bound is 0.667 - 0.1419 = 0.5251 and upper bound is 0.667 - 0.1419 = 0.8089  The interval is   We are 95% confident that the true proportion of UNC students that have brown eyes is between 52.5% and 80.9%.     Sample Sizes  When you are ready to conduct your own study, how do you determine how large a sample is needed? Basically, we will take the margin of error formula and solve it for the sample size, n .  Sample size   where z represents the z-value for the level of confidence, and ME is the amount of error being allowing. We will always round up to the next whole person. If is unknown we will use 0.5 which will give us the maximum sample size needed.   Thrillers   From a class survey of 43 UNC students, 3 preferred Thriller movies. This sample was too small to meet the conditions for the normal distribution. So how large of a sample is needed for 95% confidence if the researcher wishes to be accurate to within 2% of the true proportion?    We are given and , and ME = 0.02. For 95% confidence use z = 1.96  Sample size      Will need a sample of at least 626 people to be 95% confident within 2% accuracy.     Laundry   A Resident Advisor (RA) wants to estimate the proportion of students who wash their laundry weekly. He wants to be 90% confident and be accurate to within 3% of the true proportion. How large a sample size would be necessary?    Since no proportion is given, we will use and 90% confidence means z = 1.645, and ME=0.03.  Sample size   Will need a sample of at least 752 students to be 90% confident within 3% accuracy.      Using Technology  Next, let us take advantage of using technology to find the interval for us.  Brown Eyes Interval   From the class survey, 28 students had brown eyes out of 42. Find the 95% confidence interval for the true proportion of UNC students that have brown eyes.  Previously we found the interval to be when we rounded the margin of error.   Using TI-83 Plus   Click on the [STAT] button and use the arrow twice to the right to highlight TESTS across the top. Scroll down to option A: 1-PropZ-Interval and press the [ENTER] button to select it. Then enter the appropriate values.   1 Proportion Z Interval Menu on TI-83 Plus   Select A: 1-PropZ-Interval and input x=28, n=42, level=.95      X=28 brown eyes, n=42 students, C-level=0.95 for 95% confidence. Click on Calculate and the [ENTER] button.   1 Proportion Z Interval Solution   Interval of 0.524 to 0.809 for brown eyes    We are 95% confident that the true proportion of UNC students that have brown eyes is between 52.4% and 80.9%.     Using TI-84   Click on the [STAT] button and use the arrow twice to the right to highlight TESTS across the top. Scroll down to option A: 1-PropZ-Interval and press the [ENTER] button to select it. Then enter the appropriate values.   1 Proportion Z Interval Menu on TI-84   Select A: 1-PropZ-Interval and input x=28, n=42, level=.95      X=28 brown eyes, n=42 students, C-level=0.95 for 95% confidence. Click on Calculate and the [ENTER] button.   1 Proportion Z Interval Solution   Interval of 0.524 to 0.809 for brown eyes    We are 95% confident that the true proportion of UNC students that have brown eyes is between 52.4% and 80.9%.      Practice Problems  You will be creating confidence intervals using the proportion of students who completed the following survey for the categorical variables.  Data: ClassSurvey2    Favorite Seasons   From the ClassSurvey2, 43 students identify their favorite seasons as: Fall = 15, Summer = 11, Spring = 11, Winter = 6. Answer the following questions using this data.Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students whose favorite season is Fall.  b. Find the 95% confidence interval for the true proportion of UNC students whose favorite season is Summer.  c. Find the 98% confidence interval for the true proportion of UNC students whose favorite season is Spring.  d. Find the 99% confidence interval for the true proportion of UNC students whose favorite season is Winter.    a. 90% confident that the true proportion of UNC students whose favorite season is Fall is between 22.9% and 46.8%.    b. 95% confident that the true proportion of UNC students whose favorite season is Summer is between 12.5% and 38.6%.    c. 98% confident that the true proportion of UNC students whose favorite season is Spring is between 10.1% and 41.1%.    d. 99% confident that the true proportion of UNC students whose favorite season is Winter is between .34% and 27.6%.     Dominant Hand   From the ClassSurvey2, 43 students identify their dominant hand. 37 students were right handed, 4 left handed, and 2 were ambidextrous. Answer the following questions using this data. Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students who are right handed.  b. Find the 95% confidence interval for the true proportion of UNC students who are left handed.  c. Find the 95% confidence interval for the true proportion of UNC students who are ambidextrous.    a. 90% confident that the true proportion of UNC students who are right handed is between 77.4 and 94.7%    b. Since only 4 students are left handed the sample is too small to use the normal distribution, thus any estimation could be inaccurate.    c. Since only 2 students were ambidextrous, the sample is too small to use the normal distribution, thus any estimation could be inaccurate.     Movies   From the ClassSurvey2, 43 students identify their movie preferences by genre. 17 prefer comedy, 9 romance, 3 thrillers, 9 action, 1 fantasy, and 4 drama. Answer the following questions using this data. Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students who prefer comedy movies.  b. Find the 95% confidence interval for the true proportion of UNC students who prefer romance movies  c. Find the 99% confidence interval for the true proportion of UNC students who prefer action movies.    a. 90% confident that the true proportion of UNC students who prefer comedy movies is between 27.3% and 51.8%    b. 95% confident that the true proportion of UNC students who prefer romance movies is between 8.8% and 33.1%    c. 99% confident that the true proportion of UNC students who prefer action movies is between 5.0% and 36.9%     Vacations   From the ClassSurvey2, 43 students identify their favorite vacation location: 23 costal\/beach, 11 mountains, 4 theme parks, 2 city\/cultural exploration, and 3 prefer relaxing at home. Answer the following questions using this data. Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students who prefer to vacation at the beach or coastal location.  b. Find the 95% confidence interval for the true proportion of UNC students who prefer to vacation in the mountains  c. Find the 99% confidence interval for the true proportion of UNC students who prefer city and cultural exploration.    a. 90% confident that the true proportion of UNC students who prefer comedy movies is between 41.0% and 66.0%    b. 95% confident that the true proportion of UNC students who prefer romance movies is between 12.5% and 38.6%    c. Since only 2 students prefer city and cultural exploration, the sample is too small to use the normal distribution, thus any estimation could be inaccurate     "
+},
+{
+  "id": "sec-CI-proportions-3",
+  "level": "2",
+  "url": "sec-CI-proportions.html#sec-CI-proportions-3",
+  "type": "Objectives",
+  "number": "6.2",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Identify the point estimate .    Determine the z-value from normal distribution.    Construct and interpret confidence intervals for proportions.    "
+},
+{
+  "id": "subsec-SingleProportion-3",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Formula Summary "
+},
+{
+  "id": "subsec-SingleProportion-7",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-7",
+  "type": "Checkpoint",
+  "number": "6.2.1",
+  "title": "Brown Eyes.",
+  "body": " Brown Eyes   From the class survey, 28 students had brown eyes out of 42. Find p^ and q^. About 45% of the US population has brown eyes.    Proportion of brown eyes is     Proportion not having brown eyes is or    "
+},
+{
+  "id": "subsec-SingleProportion-8",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-8",
+  "type": "Checkpoint",
+  "number": "6.2.2",
+  "title": "Green Eyes.",
+  "body": " Green Eyes   From the class survey, 5 students had green eyes out of 42. Find p^ and q^.    Proportion of green eyes is     Proportion not having green eyes is or    "
+},
+{
+  "id": "subsec-SingleProportion-9",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Creating Confidence Intervals "
+},
+{
+  "id": "subsec-SingleProportion-10",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "point estimate margin of error "
+},
+{
+  "id": "subsec-SingleProportion-19",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-19",
+  "type": "Example",
+  "number": "6.2.3",
+  "title": "How to find z* with StatKey.",
+  "body": " How to find z* with StatKey   Find z* for 90% confidence using the normal distribution.    These can be found using StatKey, going under Theoretical Distribution, select Normal , click on Two Tail and enter the percentage as a decimal in the middle portion of the curve. For 90% enter 0.90 in the middle white portion. The z* values are along the bottom. For 90% confidence, z* = 1.645. Refer to Section 5.4 for more examples.   Normal Distribution for 90% Confidence   Middle 90 percent gives z=-1.645 and +1.645.     "
+},
+{
+  "id": "subsec-SingleProportion-20",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-20",
+  "type": "Example",
+  "number": "6.2.5",
+  "title": "Blue Eyes Interval.",
+  "body": " Blue Eyes Interval   From the class survey, 6 students had blue eyes out of the sample of 42 UNC students. Find the 90% confidence interval for the true proportion of UNC students that have blue eyes.    First, check assumptions. We will assume we have a random sample of students who are independent of each other, and the probability will remain the same for each. We need to check that the sample is large enough, so 6 have blue and 36 do not have blue eyes so we meet the condition of at least 5 for each.  Next, find the values.  Proportion of blue eyes is   Proportion not having blue eyes is   For 90% confidence use z = 1.645  Margin of Error is      Lower bound is and upper bound is   The interval is   We are 90% confident that the true proportion of UNC students that have blue eyes is between 5.4% and 23.2%.   "
+},
+{
+  "id": "subsec-SingleProportion-21",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-21",
+  "type": "Checkpoint",
+  "number": "6.2.6",
+  "title": "Brown Eyes Interval.",
+  "body": " Brown Eyes Interval   From the class survey, 28 students had brown eyes out of 42. Find the 95% confidence interval for the true proportion of UNC students that have brown eyes.    The interval is     First, check assumptions. We will assume we have a random sample of students who are independent of each other, and the probability will remain the same for each. We need to check that the sample is large enough, so 28 have brown eyes and 14 do not have brown eyes so we meet the condition of at least 5 for each.  Next, find the values.  Proportion of brown eyes is   Proportion not having brown eyes is   For 95% confidence use z = 1.96     Lower bound is 0.667 - 0.1419 = 0.5251 and upper bound is 0.667 - 0.1419 = 0.8089  The interval is   We are 95% confident that the true proportion of UNC students that have brown eyes is between 52.5% and 80.9%.   "
+},
+{
+  "id": "subsec-SingleProportion-22",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Sample Sizes "
+},
+{
+  "id": "subsec-SingleProportion-26",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-26",
+  "type": "Example",
+  "number": "6.2.7",
+  "title": "Thrillers.",
+  "body": " Thrillers   From a class survey of 43 UNC students, 3 preferred Thriller movies. This sample was too small to meet the conditions for the normal distribution. So how large of a sample is needed for 95% confidence if the researcher wishes to be accurate to within 2% of the true proportion?    We are given and , and ME = 0.02. For 95% confidence use z = 1.96  Sample size      Will need a sample of at least 626 people to be 95% confident within 2% accuracy.   "
+},
+{
+  "id": "subsec-SingleProportion-27",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SingleProportion-27",
+  "type": "Checkpoint",
+  "number": "6.2.8",
+  "title": "Laundry.",
+  "body": " Laundry   A Resident Advisor (RA) wants to estimate the proportion of students who wash their laundry weekly. He wants to be 90% confident and be accurate to within 3% of the true proportion. How large a sample size would be necessary?    Since no proportion is given, we will use and 90% confidence means z = 1.645, and ME=0.03.  Sample size   Will need a sample of at least 752 students to be 90% confident within 3% accuracy.   "
+},
+{
+  "id": "subsec-SinglePropCalc-3",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SinglePropCalc-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Brown Eyes Interval "
+},
+{
+  "id": "subsec-SinglePropCalc-6",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SinglePropCalc-6",
+  "type": "Example",
+  "number": "6.2.9",
+  "title": "Using TI-83 Plus.",
+  "body": " Using TI-83 Plus   Click on the [STAT] button and use the arrow twice to the right to highlight TESTS across the top. Scroll down to option A: 1-PropZ-Interval and press the [ENTER] button to select it. Then enter the appropriate values.   1 Proportion Z Interval Menu on TI-83 Plus   Select A: 1-PropZ-Interval and input x=28, n=42, level=.95      X=28 brown eyes, n=42 students, C-level=0.95 for 95% confidence. Click on Calculate and the [ENTER] button.   1 Proportion Z Interval Solution   Interval of 0.524 to 0.809 for brown eyes    We are 95% confident that the true proportion of UNC students that have brown eyes is between 52.4% and 80.9%.   "
+},
+{
+  "id": "subsec-SinglePropCalc-7",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SinglePropCalc-7",
+  "type": "Example",
+  "number": "6.2.12",
+  "title": "Using TI-84.",
+  "body": " Using TI-84   Click on the [STAT] button and use the arrow twice to the right to highlight TESTS across the top. Scroll down to option A: 1-PropZ-Interval and press the [ENTER] button to select it. Then enter the appropriate values.   1 Proportion Z Interval Menu on TI-84   Select A: 1-PropZ-Interval and input x=28, n=42, level=.95      X=28 brown eyes, n=42 students, C-level=0.95 for 95% confidence. Click on Calculate and the [ENTER] button.   1 Proportion Z Interval Solution   Interval of 0.524 to 0.809 for brown eyes    We are 95% confident that the true proportion of UNC students that have brown eyes is between 52.4% and 80.9%.   "
+},
+{
+  "id": "subsec-SinglePropPractice-4",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SinglePropPractice-4",
+  "type": "Checkpoint",
+  "number": "6.2.15",
+  "title": "Favorite Seasons.",
+  "body": " Favorite Seasons   From the ClassSurvey2, 43 students identify their favorite seasons as: Fall = 15, Summer = 11, Spring = 11, Winter = 6. Answer the following questions using this data.Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students whose favorite season is Fall.  b. Find the 95% confidence interval for the true proportion of UNC students whose favorite season is Summer.  c. Find the 98% confidence interval for the true proportion of UNC students whose favorite season is Spring.  d. Find the 99% confidence interval for the true proportion of UNC students whose favorite season is Winter.    a. 90% confident that the true proportion of UNC students whose favorite season is Fall is between 22.9% and 46.8%.    b. 95% confident that the true proportion of UNC students whose favorite season is Summer is between 12.5% and 38.6%.    c. 98% confident that the true proportion of UNC students whose favorite season is Spring is between 10.1% and 41.1%.    d. 99% confident that the true proportion of UNC students whose favorite season is Winter is between .34% and 27.6%.   "
+},
+{
+  "id": "subsec-SinglePropPractice-5",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SinglePropPractice-5",
+  "type": "Checkpoint",
+  "number": "6.2.16",
+  "title": "Dominant Hand.",
+  "body": " Dominant Hand   From the ClassSurvey2, 43 students identify their dominant hand. 37 students were right handed, 4 left handed, and 2 were ambidextrous. Answer the following questions using this data. Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students who are right handed.  b. Find the 95% confidence interval for the true proportion of UNC students who are left handed.  c. Find the 95% confidence interval for the true proportion of UNC students who are ambidextrous.    a. 90% confident that the true proportion of UNC students who are right handed is between 77.4 and 94.7%    b. Since only 4 students are left handed the sample is too small to use the normal distribution, thus any estimation could be inaccurate.    c. Since only 2 students were ambidextrous, the sample is too small to use the normal distribution, thus any estimation could be inaccurate.   "
+},
+{
+  "id": "subsec-SinglePropPractice-6",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SinglePropPractice-6",
+  "type": "Checkpoint",
+  "number": "6.2.17",
+  "title": "Movies.",
+  "body": " Movies   From the ClassSurvey2, 43 students identify their movie preferences by genre. 17 prefer comedy, 9 romance, 3 thrillers, 9 action, 1 fantasy, and 4 drama. Answer the following questions using this data. Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students who prefer comedy movies.  b. Find the 95% confidence interval for the true proportion of UNC students who prefer romance movies  c. Find the 99% confidence interval for the true proportion of UNC students who prefer action movies.    a. 90% confident that the true proportion of UNC students who prefer comedy movies is between 27.3% and 51.8%    b. 95% confident that the true proportion of UNC students who prefer romance movies is between 8.8% and 33.1%    c. 99% confident that the true proportion of UNC students who prefer action movies is between 5.0% and 36.9%   "
+},
+{
+  "id": "subsec-SinglePropPractice-7",
+  "level": "2",
+  "url": "sec-CI-proportions.html#subsec-SinglePropPractice-7",
+  "type": "Checkpoint",
+  "number": "6.2.18",
+  "title": "Vacations.",
+  "body": " Vacations   From the ClassSurvey2, 43 students identify their favorite vacation location: 23 costal\/beach, 11 mountains, 4 theme parks, 2 city\/cultural exploration, and 3 prefer relaxing at home. Answer the following questions using this data. Round calculations to 3 decimal places.  a. Find the 90% confidence interval for the true proportion of UNC students who prefer to vacation at the beach or coastal location.  b. Find the 95% confidence interval for the true proportion of UNC students who prefer to vacation in the mountains  c. Find the 99% confidence interval for the true proportion of UNC students who prefer city and cultural exploration.    a. 90% confident that the true proportion of UNC students who prefer comedy movies is between 41.0% and 66.0%    b. 95% confident that the true proportion of UNC students who prefer romance movies is between 12.5% and 38.6%    c. Since only 2 students prefer city and cultural exploration, the sample is too small to use the normal distribution, thus any estimation could be inaccurate   "
 },
 {
   "id": "sec-CI-variance",
