@@ -187,12 +187,67 @@
 
 <subsection xml:id="subsec-NormalCurveStatKey">
   <title> Apply Normal Distribution with StatKey</title>
-<p> Now that we can find the area under the normal distribution, we can apply the same process to any normally distributed variable. We still draw the normal curve, but it is now centered at the mean for the situation. There are two ways to solve it: 1) find the z-score for the scenario and solve like we did for the standard normal distribution. 2) Enter the cut-score in StatKey or other technology to find the appropriate area. </p> 
-<p>The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting more than 280 days. </p>
+<p> Now that we can find the area under the standard normal distribution, we can apply the same process to any normally distributed variable. We still draw the normal curve, but it is now centered at the mean for the situation. There are two ways to solve it: 1) find the z-score for the scenario and solve like we did for the standard normal distribution, or 2) enter the cut-score in StatKey or other technology to find the appropriate area with the given mean and standard deviation. </p> 
+<p> Click on the following link to take you to StatKey   <url href="http://www.lock5stat.com/StatKey/" /> </p>
 
+<p><em>Example:</em> The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting more than 280 days. </p>
+<p> <em>Solution:</em>  In StatKey under <term>Theoretical Distribution</term> select <term>Normal</term>. On the far right click on <c>Edit Parameters</c> and change the mean to 272 and the standard deviation to 9 and then click on <c>OK</c>. The normal curve is now centered over 272. </p>
+<figure xml:id="NormalEditParameters">
+            <caption> Edit the parameters </caption>
+            <image source="Normal15.png" width="50%">
+                <shortdescription>mean=272 and sd=9 then click ok.</shortdescription>
+            </image>
+        </figure>
 
+<p>Since we are looking for the probability of more than 280 days, we are looking at the area of the right tail. Click on <c>Right Tail</c> and enter the value 280 along the bottom. It will shade the area of the tail which is 0.187. Thus 18.7% of pregnancies are likely to last more than 280 days.</p>
+<figure xml:id="NormalMore280">
+            <caption> Probability over 280 days </caption>
+            <image source="Normal16.png" width="75%">
+                <shortdescription>shading right of 280 days is 0.187.</shortdescription>
+            </image>
+        </figure>
+<p> Alternatively, we can find the z-score and use the standard normal distribution for the same probability. <m>z= \frac{280-272}{9}=0.889</m> which is positive since it is greater than the mean of 272. Using the standard normal distribution with mean = 0 and standard deviation = 1, click on <c>Right Tail</c> and enter 0.889 along the bottom to get the same right area of 0.187. </p>
 
+<example> <title> Less than 250 days</title>
+<statement>
+<p> The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability of a pregnancy lasting less than 250 days. </p> </statement>
+<solution> <p> Edit Parameters for mean =272 and standard deviation = 9. Since we want the area for less than 250 days, we want <c>Left Tail </c>and change the value along the bottom to 250. The new area is 0.0073. Thus 0.73% of pregnancies last less than 250 days. </p>
+<p> Alternatively, we can find the z-score and use the standard normal distribution for the same probability. <m>z= \frac{250-272}{9}=-0.2.44</m> which is negative since it is less than the mean of 272. Click on <c>Left Tail</c> and enter -2.44 along the bottom to get the same left area of 0.0073. </p>
+<figure xml:id="NormalLess250">
+            <caption> Probability of less than 250 days </caption>
+            <image source="Normal17.png" width="75%">
+                <shortdescription>shading left of 250 days is 0.0073.</shortdescription>
+            </image>
+        </figure>
 
+</solution>
+</example>
+
+<example> <title> Between Days</title>
+<statement>
+<p> The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the probability that a pregnancy lasts between 265 and 280 days. </p> </statement>
+<solution> <p> Edit Parameters for mean =272 and standard deviation = 9. Since we want the area between both values, click on <c>Left Tail</c> and enter the lower value of 265. Click on <c>Right Tail </c> and enter the larger value of 280. We want the area between which is 0.595. Thus 59.5% of pregnancies last between 265 and 280 days.</p>
+<figure xml:id="NormalBetween265and280">
+            <caption> Probability between 265 and 280 days </caption>
+            <image source="Normal18.png" width="75%">
+                <shortdescription>shading between 265 and 280 is 0.595.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+<example> <title> Less than 10% of pregnancies</title>
+<statement>
+<p> The length of a human pregnancy is normally distributed with a mean of 272 days with a standard deviation of 9 days. Find the length of pregnancy that represent 10% of all pregnancies last less than that number of days. </p> </statement>
+<solution> <p> Edit Parameters for mean =272 and standard deviation = 9. Since we want the area to represent less than 10% , click on Left Tail and enter the area value of 0.10 in the red region. The cut off score is 260.466 along the bottom. About 10% of pregnancies last less than 260.466 days.</p>
+<figure xml:id="NormalPregnancy10">
+            <caption> Probability of 10% pregnancies below </caption>
+            <image source="Normal19.png" width="75%">
+                <shortdescription>area is 10% for cut score of 260.466.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
 
 
 
@@ -243,6 +298,74 @@ pnorm(280, 272, 9, lower.tail=TRUE)-pnorm(265, 272, 9, lower.tail=TRUE)
 <subsection xml:id="subsec-NormalPractice">
   <title>Practice Problems</title>
 <p> Your choice which form of technology you use to compete the following problems.  </p>
+<exercise> <title> Standard Normal</title>
+<statement> <p>Using the standard normal distribution, find the following areas. </p>
+<p> a. Area left of z = 1.3 </p>
+<p> b. Area right of z = 1.5 </p>
+<p> c. Area to left of z = -1.38 </p>
+<p> d. Area right of z = 2.5 </p>
+<p> e. Area between z = -1.5 and z = -.65 </p>
+</statement>
+<solution><p> left area =  0.903 more than half the curve. </p> </solution> 
+<solution><p>  right area = 0.067 </p> </solution> 
+<solution><p> left area =  0.084 </p> </solution> 
+<solution><p>  right area = 0.0062 </p> </solution> 
+<solution><p> area  between = 0.191 </p> </solution> 
+</exercise>
+
+<exercise> <title> Find Cutoffs</title>
+<statement> <p>Using the standard normal distribution, find the following cut off scores for the given percentages (areas). </p>
+<p> a. Top 25% of curve. </p>
+<p> b. Middle 95% of curve. </p>
+<p> c. The bottom 15%. </p>
+<p> d. The top 30% of curve. </p>
+<p> e. The bottom 5% of curve. </p>
+<p> b. Middle 99% of curve. </p>
+</statement>
+<solution><p> right tail gives z =0.674    </p> </solution> 
+<solution><p>  Two tail  gives left = -1.96 and right = 1.96  </p> </solution> 
+<solution><p> left tail gives z = -1.036  </p> </solution> 
+<solution><p>  right tail gives z =0.524 </p> </solution> 
+<solution><p> left tail gives z = -1.645 . </p> </solution> 
+<solution><p> > Lower tail = -2.576 and upper tail = 2.576 </p> </solution> 
+</exercise> 
+
+<exercise> <title> WHO MONICA Project</title>
+<statement> <p>According to the WHO MONICA Project the mean blood pressure for people in China is 128 mmHg with a standard deviation of 23 mmHg (Kuulasmaa, Hense and Tolonen, 1998). Assume that blood pressure is normally distributed. </p> 
+<p> a. Find the probability that a person in China has blood pressure greater than 136 mmHg. </p>
+<p>b. Find the probability that a person in China has blood pressure less than 142 mmHg. </p>
+<p>c. Find the probability that a person in China has blood pressure between 120 and 125 mmHg. </p>
+<p>d. Is it unusual for a person in China to have a blood pressure of more than 125 mmHg? Why or why not? </p>
+<p>e. What blood pressure does 90% of all people in China have less than? </p>
+</statement>
+<solution> <p> right area = 0.364 thus there's 36.4% chance a person in China has blood pressure greater than 136 mmHg. </p> </solution> 
+<solution> <p> left area = 0.729 thus there's a 72.9% chance that a person in China has blood pressure less than 142 mmHg. </p> </solution> 
+<solution> <p>middle area = 0.084 thus there's an 8.4% chance that that a person in China has blood pressure between 120 and 125 mmHg. </p> </solution> 
+<solution> <p> No, about 55.2% of people in China have blood pressure greater than 125. The 125 is a bit below the mean and the area accounts for over half the curve. </p> </solution> 
+<solution> <p> 90% of people in China have blood pressure below 157.475 using the left area. </p> </solution> 
+</exercise> 
+
+<exercise> <title> Atlantic Cod</title>
+<statement> <p>The size of fish is very important to commercial fishing. A study conducted in 2012 found the length of Atlantic cod caught in nets in Karlskrona to have a mean of 49.9 cm and a standard deviation of 3.74 cm (Ovegard, Berndt and Lunneryd, 2012). Assume the length of fish is normally distributed. </p>
+<p> a. Find the probability that an Atlantic cod has a length less than 48 cm. </p>
+<p> b. Find the probability that an Atlantic cod has a length of more than 64 cm. </p>
+<p> c. Find the probability that an Atlantic cod has a length between 42 and 56 cm. </p>
+</statement>
+<solution><p> Left area = 0.306 thus there's 30.6% chance that an Atlantic cod has a length less than 48 cm.   </p> </solution> 
+<solution><p> Right area = 0.000082, there's a very small chance an Atlantic cod has a length of more than 64 cm. </p> </solution> 
+<solution><p> The middle area = 0.931 thus there's 93.1% chance that an Atlantic cod has a length between 42 and 56 cm. </p> </solution> 
+</exercise>
+
+<exercise> <title> More Atlantic Cod</title>
+<statement> <p>The size of fish is very important to commercial fishing. A study conducted in 2012 found the length of Atlantic cod caught in nets in Karlskrona to have a mean of 49.9 cm and a standard deviation of 3.74 cm (Ovegard, Berndt and Lunneryd, 2012). Assume the length of fish is normally distributed. </p>
+<p> a. The middle 75% of all Atlantic cod are between what two lengths? </p>
+<p> b. What is the cut off length for the longest15% of all Atlantic cod? </p>
+<p> c. what is the cut off length for the shortest 10% of all Atlantic cod? </p>
+</statement>
+<solution><p> 75% of Atlantic cod are between 45.6 cm and 54.2 cm  </p> </solution> 
+<solution><p>  15% of Atlantic cod are longer than 53.776 cm. </p> </solution> 
+<solution><p> 10% of Atlantic cod are shorter than 45.107 cm.  </p> </solution> 
+</exercise> 
 
 
   </subsection>

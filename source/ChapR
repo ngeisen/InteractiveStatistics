@@ -3,12 +3,10 @@
   <title>Using R Studio</title>
 
   <introduction>
-    <p> This chapter introduces you to using R studio to analyze data. </p>
+    <p> This chapter introduces how to use R and R Studio to analyze data. </p>
   </introduction>
 
 
-<p> <tag>mean(Calories) </tag> </p>
-<p> <c>mean(Calories) </c> </p>
 
 <xi:include href="sec-DownloadR.ptx" />
 <xi:include href="sec-GraphR.ptx" />

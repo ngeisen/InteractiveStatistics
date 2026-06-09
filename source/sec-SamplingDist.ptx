@@ -254,7 +254,7 @@ The top right graph shows the original data with 268 words with an average of 4.
 
 <p> Since it is often difficult to create large sampling distribution, such as having 1000 students toss 25 coins to find the proportion of heads, StatKey can do the work for us. Technology allows us to simulate the coin tosses by choosing a variety of sample sizes to see how close we can get to predicting the actual proportion. </p>
 <p> Open <term>StatKey</term> and in the middle of the page we want <c>Sampling Distribution</c> and click on <c>Proportions</c>.</p>
-<figure xml:id="StatkeySamplingProportion">
+<figure xml:id="StatkeySamplingProportion1">
             <caption> StatKey Sampling Distribution Menu</caption>
             <image source="StatkeySampProp1.png" >
                 <shortdescription> Proportion is the second option under Sampling Distribution. </shortdescription>
@@ -268,7 +268,7 @@ The top right graph shows the original data with 268 words with an average of 4.
             </image>
         </figure>
 <p> If you click on the <c> Generate 1 Sample </c> button then in the bottom right screen identifies how many heads in the sample of 50 coin tosses. This sample had 22 heads thus the proportion is 0.440 which is plotted on the distribution graph. </p> 
-<figure xml:id="StatkeySamplingProportion">
+<figure xml:id="StatkeySamplingProportion2">
             <caption> One Sampling Proportion </caption>
             <image source="SampProp2.png" >
                 <shortdescription> count of 22 heads from 50 coin tosses. </shortdescription>

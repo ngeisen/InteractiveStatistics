@@ -363,7 +363,7 @@
     </image>
 </figure>
 <p> If you click on the <c>Switch Variables</c> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well. </p>
-<figure xml:id="HeightvsShoeScatterplot2">
+<figure xml:id="HeightvsShoeScatterplot4">
     <caption>Image of Scatterplot for Height and shoe size </caption>
     <image source="HeightShoesScatterplot.png" >
         <shortdescription> Scatterplot with height on x-axis.</shortdescription>

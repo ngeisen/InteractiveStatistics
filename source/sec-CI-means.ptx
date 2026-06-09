@@ -110,25 +110,51 @@
 </solution>
 </exercise>
 
+</subsection>
 
-<p> Now we are ready to create the confidence interval to predict the population mean. </p> 
+<subsection xml:id="subsec-CalculateSingleMeanCI">
+  <title>Calculate the Confidence Interval for the Mean</title>
+
+<p> Now we are ready to create the confidence interval to predict the population mean. We are assuming the population is approximately normally distributed and the population standard deviation is unknown. </p> 
 <p><term>Formula for Confidence interval of the mean is</term> </p> 
 <p> <me> \overline{x} \pm t*(\frac{s}{\sqrt n})  </me></p> 
 <p> or </p>
 <p> <me> \bar{x}-t*(\frac{s}{\sqrt n})  \lt \mu \lt \bar{x}+t*(\frac{s}{\sqrt n})  </me></p>
 
-<p>where <m> \bar{x} </m> is the sample mean, <m> s</m> is the sample standard deviation, <m> n </m> is the sample size, and <m>t*</m> is from the <m>t</m>-distribution using <m>df=n-1</m> .</p>
+<p>where <m> \bar{x} </m> is the sample mean, <m> s</m> is the sample standard deviation, <m> n </m> is the sample size, and <m>t*</m> is the value from the <m>t</m>-distribution using <m>df=n-1</m> .</p>
 
 
 
 
 <p><em>Example:</em> From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students. </p>
-<p><em>Solution:</em> We are given that <m>n=42</m>, thus <m>df=42-1=41</m>, <m> \bar{x}=171.1</m>, and <m> s=39.0</m>. The <m>t*=1.683</m> . </p>
+<p><em>Solution:</em> We are given that <m>n=42</m>, thus <m>df=42-1=41</m>, <m> \bar{x}=171.1</m>, and <m> s=39.0</m>. The <m>t*=1.683</m> for 90% confidence . </p>
 <p> Using the mean CI formula:  <m> \overline{x} \pm t*(\frac{s}{\sqrt n})  </m></p> 
 <p> substituting in the values we get: <m> 171.1 \pm 1.683(\frac{39.0}{\sqrt 42})  </m></p> 
-<p> which gives lower bound of <m>160.97 \lt \mu \lt 181.23 </m> pounds. </p>
-<p> We are 90% confident that the true mean weight for all UNC students is between 161 and 181 pounds. </p>
+<p> lower bound is <m>171.1-10.128=160.972</m> and the upper bound is <m>171.1+10.128=181.228</m>.</p> 
+<p> which gives the interval of <m>160.972 \lt \mu \lt 181.228 </m> pounds. </p>
+<p> We are 90% confident that the true mean weight for all UNC students is between 161.0 and 181.2 pounds. </p>
 
+<exercise> <title> Heights</title>
+<statement> <p>From the class survey, 42 students gave their heights, measured in inches. The values ranged from 59 to 78 inches with the mean of 67.9 inches and standard deviation of 4.8. Find the 95% confidence interval for the true mean height for all UNC students. </p> </statement>
+<solution>
+<p >We are given that <m>n=42</m>, thus <m>df=42-1=41</m>, <m> \bar{x}=67.9</m>, and <m> s=4.8</m>. The <m>t*=2.020 </m> for 95%. </p>
+<p> <m> \overline{x} \pm t*(\frac{s}{\sqrt n})  </m></p> 
+<p> substituting in the values we get: <m> 67.9 \pm 2.020 (\frac{4.8}{\sqrt 42})  </m></p> 
+<p> which gives lower bound of <m>66.4 \lt \mu \lt 69.4 </m> inches.</p>
+<p> We are 95% confident that the true mean height for all UNC students is between 66.4 and 67.4inches. </p>
+</solution>
+</exercise> 
+
+<exercise> <title> Sleep</title>
+<statement> <p>From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students. </p> </statement>
+<solution>
+<p >We are given that <m>n=43</m>, thus <m>df=42</m>, <m> \bar{x}=7.1</m>, and <m> s=1.3</m>. The <m>t*=2.578 </m> for 99%. </p>
+<p> <m> \overline{x} \pm t*(\frac{s}{\sqrt n})  </m></p> 
+<p> substituting in the values we get: <m> 7.1 \pm 2.578 (\frac{41.3}{\sqrt 43})  </m></p> 
+<p> which gives lower bound of <m>6.6 \lt \mu \lt 7.6 </m> hours. </p>
+<p> We are 99% confident that the true mean sleep hours for all UNC students is between 6.6 and 7.6 hours </p>
+</solution>
+</exercise>
 
 
   </subsection>
@@ -136,7 +162,66 @@
 
 <subsection xml:id="subsec-CImeanCalc">
   <title>Using Technology</title>
-  <p> using TI83 </p> 
+ <p>Next, let us look at how we can use technology to find the confidence interval for us. The direction should be the same for the TI 83 Plus or TI84.</p>
+ 
+ <p><em> Example:</em>  From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students. </p> 
+
+<p>Press the <c> STAT</c> button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option <term>8: T-interval</term> then press [ENTER]. </p> 
+<figure xml:id="CImean1calc">
+            <caption>Calculator menu to select Tinterval </caption>
+            <image source="CImean1calc.png" width="80%">
+                <shortdescription>scroll to option 8.</shortdescription>
+            </image>
+        </figure> 
+
+<p> You can choose between entering the raw data or the summary statistics. We will use the arrow once to the right to highlight <term> Stats</term>  and then press [ENTER] to select it. Then input your summary statistics, enter the C-level of 0.99, scroll to Calculate and press [ENTER]. </p> 
+<p >We are given that <m> \bar{x}=7.1</m>, and <m> Sx=1.3</m>, and  <m>n=43</m>. </p>
+
+<figure xml:id="CImean2calc">
+            <caption>Enter statistics into calculator </caption>
+            <image source="CImean2calc.png" width="80%">
+                <shortdescription>mean=7.1, sx=1.3, n=43, level=.99.</shortdescription>
+            </image>
+        </figure> 
+<figure xml:id="CImean3calc">
+            <caption> T-interval on Calculator </caption>
+            <image source="CImean3calc.png" width="80%">
+                <shortdescription>mean between  6.5651 and 7.6349.</shortdescription>
+            </image>
+        </figure> 
+
+<p> We are 99% confident that the true mean sleep hours for all UNC students is between 6.57 and 7.63 hours. </p>
+
+<p><em> Example:</em>  Suppose we had a sample of ten students with the following heights, measured in inches: 
+66, 63, 67, 76, 62, 62, 68, 62, 71, 75. Find the 95% confidence interval for the true mean height for all UNC students. </p>
+<p>Press the <c> STAT</c> button and under the EDIT menu select option <term>1:Edit </term> then press [ENTER] and then input the ten values using [ENTER] after each. </p> 
+<figure xml:id="CImean4calc">
+            <caption> Enter raw data into Calculator </caption>
+            <image source="CImean4calc.png" width="75%">
+                <shortdescription>enter the ten heights.</shortdescription>
+            </image>
+        </figure> 
+
+<p>Press the <c> STAT</c> button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option <term>8: T-interval</term> then press [ENTER]. Use the arrow if needed to highlight <term> Data</term> and then press [ENTER] to select it. The data was entered into List 1 and the Frequency is 1, the confidence level is .95, scroll to Calculate and hit [ENTER]. </p> 
+<figure xml:id="CImean5calc">
+            <caption> Select T interval and Data on TI84</caption>
+            <image source="CImean5calc.png" width="90%">
+                <shortdescription> Select option 8 T-interval and Data, change level to .95 and enter.</shortdescription>
+            </image>
+        </figure> 
+
+<figure xml:id="CImean6calc">
+            <caption> Select T interval and Data on TI83 Plus</caption>
+            <image source="CImean6calc.png" width="90%">
+                <shortdescription> Select option 8 T- interval and Data, change level to .95 and enter.</shortdescription>
+            </image>
+        </figure> 
+
+<p> We are 95% confident that the true mean height for all UNC students is between 63.4 and 71.0 inches. </p>
+<p>Note: Make sure your List matches where you input the data and the C-Level matches the confidence level in the problem. </p> 
+
+
+
   </subsection>
 
 <subsection xml:id="subsec-CImeanPractice">
@@ -178,6 +263,8 @@
 <solution> <p> The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period. </p>
 </solution>
 </exercise> 
+
+
 
 
   </subsection>
