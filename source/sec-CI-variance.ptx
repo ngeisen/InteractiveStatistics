@@ -1,5 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-CI-variance" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Intervals for Variance </title>
-  <p> Text of section. </p>
+  <introduction> <p> Have you ever tried fitting a nut to a bolt and discovered they do not fit? Many parts need to fit together in manufacturing. It is important to keep the variation of the diameter of the products as small as possible, or the striations on the nuts and bolts. Otherwise, they do not fit tougher properly and must be discarded. Similar with medications, the amount of variation among different pills in a bottle should have approximately the same amount of medication to ensure patients receive the appropriate dosage. In this section we will investigate confidence intervals for variance and standard deviations.  </p>
+</introduction>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Identify the point estimate <m>s</m> or <m>s^2</m>. </p>    </li>
+    <li> <p> Determine the chi-square values from the chi square distribution. </p> </li>
+   <li> <p> Construct and interpret confidence intervals for variance.</p> </li>
+   <li> <p> Construct and interpret confidence intervals for standard deviation.</p> </li>
+        </ol>
+</objectives>
+
+<subsection xml:id="subsec-CIvarianceBasics">
+  <title>Understanding the Basics</title>
+<p> To calculate confidence intervals for variance we need the <term>chi-square distribution</term>.  The chi-square distribution is similar to the t-distribution in that its distribution is a family of curves based on the degrees of freedom. The symbol for chi square is <m>\chi ^2 </m>. The chi square distribution is obtained from values of <m> \frac{(n-1) s^2}{ \sigma ^2} </m> when random samples are selected from normally distributed populations whose variance is <m> \sigma ^2</m>.</p>
+<p> The chi-squared distribution is right skewed and cannot be negative. The values begin at zero and approach infinity. The total area under the curve is 1 or 100%.</p> 
+<p> Let us review the symbolic notation we will be using. </p>
+<p> <m>s</m> = sample standard deviation</p>
+<p> <m>s^2 </m> = sample variance </p>
+<p> <m> \sigma </m> = population standard deviation </p>
+<p> <m> \sigma ^2</m> = population variance </p>
+<p> <m> n</m> = sample size </p>
+
+<p> The assumptions to use the chi-square distribution for confidence intervals the variance and standard deviation are: 1) the sample is a random sample, and 2) the population is normally distribution. </p>
+
+
+
+  </subsection>
+
+  <subsection xml:id="subsec-CIchisqDist">
+  <title>Chi-Square Distribution with StatKey</title>
+<p>We will be using StatKey to find the chi-square values, but we need <term>two</term> values since it is not symmetric like <em>t</em> or<em> z</em>. The degrees of freedom is equal to the sample size subtracted by 1, thus <m>df=n-1</m>.</p>
+<p> In StatKey, under the <term> Theoretical Distributions</term> choose the <m>\chi^2</m> symbol. </p>
+<figure xml:id="StatkeyChiMenu">
+            <caption>StatKey Menu for Chi-Squared</caption>
+            <image source="CIchi1.png" width="80%">
+                <shortdescription>third column down and third distribution across is chi squared.</shortdescription>
+            </image>
+        </figure> 
+
+  <p> The next step is to enter the degrees of freedom. Let us find the chi square values for a sample size of 10 for 90% confidence. Thus, degrees of freedom is <m>df=10-1=9</m> then click <c>OK</c>. </p>
+<figure xml:id="StatkeyChidf">
+            <caption>StatKey degrees of freedom for Chi-Squared</caption>
+            <image source="CIchi2.png" width="60%">
+                <shortdescription>enter9 df.</shortdescription>
+            </image>
+        </figure> 
+<p>Since we are working with confidence intervals, we want the middle 90%. Click on <em>Two Tail</em> and change the middle percentage to 0.90. The two chi-square values are along the bottom. The left chi = 3.325 and the right chi = 16.919.</p>
+
+<figure xml:id="StatkeyChi90">
+            <caption> Chi-Squared Distribution for 90% for sample of 10</caption>
+            <image source="CIchi3.png" width="80%">
+                <shortdescription>middle 90% is bounded by left chi=3.325 and right chi = 16.919 for a sample of 10.</shortdescription>
+            </image>
+        </figure> 
+
+<p>Practice finding the chi-squared values for different sample sizes.</p> 
+<exercise> <title> 90% for n=20</title>
+<statement> <p> Find the chi square values for a sample size of 20 for 90% confidence. </p>
+</statement>
+<solution> <p> Click on [Edit Parameter] to change the degrees of freedom to <m>df=20-1=19</m>. Click on [Two Tail] and change the middle area to 0.90. The left chi = 10.117 and right chi = 30.143. </p>
+<figure xml:id="StatkeyChi90n20">
+            <caption> Chi-Squared Distribution for 90% for sample of 20</caption>
+            <image source="CIchi4.png" width="80%">
+                <shortdescription>middle 90% is bounded by left chi=10.117 and right chi = 30.143 for a sample of 20.</shortdescription>
+            </image>
+        </figure> 
+</solution>
+</exercise> 
+
+<exercise> <title> 95% for n=15</title>
+<statement> <p> Find the chi square values for a sample size of 15 for 95% confidence. </p>
+</statement>
+<solution><p> Click on [Edit parameter] to change the degrees of freedom to <m>df=15-1=14</m>. Click on [Two Tail] and change the middle area to 0.95. The left chi = 5.629 and right chi = 26.120. </p>
+<figure xml:id="StatkeyChi95n15">
+            <caption> Chi-Squared Distribution for 95% for sample of 15</caption>
+            <image source="CIchi5.png" width="80%">
+                <shortdescription>middle 95% is bounded by left chi=5.629 and right chi = 26.120 for a sample of 15.</shortdescription>
+            </image>
+        </figure> 
+</solution>
+</exercise> 
+
+<exercise> <title> 98% for n=30</title>
+<statement> <p> Find the chi square values for a sample size of 30 for 98% confidence. </p>
+</statement>
+<solution><p> Click on [Edit parameter] to change the degrees of freedom to <m>df=30-1=29</m>. Click on [Two Tail] and change the middle area to 0.98. The left chi = 14.256 and right chi = 49.590. Notice how larger the sample size, the larger the chi-square values. Also the distribution is less skewed</p>
+<figure xml:id="StatkeyChi98nm30">
+            <caption> Chi-Squared Distribution for 98% for sample of 30</caption>
+            <image source="CIchi6.png" width="80%">
+                <shortdescription>middle 98% is bounded by left chi=14.256 and right chi = 49.590 for a sample of 20.</shortdescription>
+            </image>
+        </figure> 
+</solution>
+</exercise> 
+
+
+
+
+  </subsection>
+
+<subsection xml:id="subsec-CIvariance">
+<title>Confidence Intervals for Variance</title>
+<p> Now that we have the building blocks, now we can construct the confidence intervals for variance and standard deviation. </p>
+<p> <term> Confidence Interval for Variance Formula </term></p>
+<p><md> \frac{(n-1)s ^2}{right  \chi ^2} \lt \sigma ^2 \lt \frac{(n-1)s^2}{left  \chi ^2} </md> </p>
+
+<p> To find the confidence interval for the standard deviation, we find the square root of the variance values. </p> 
+<p> <term> Confidence Interval for Standard Deviation Formula </term></p>
+<p> <md> \sqrt{ \frac{(n-1)s^2}{right \chi ^2} }\lt \sigma ^2 \lt  \sqrt{ \frac{(n-1)s^2}{left \chi ^2} } </md> </p> 
+
+<example>
+<title> Nicotine Variance </title>
+<statement> <p> Find the 90% confidence interval for the variance of the nicotine content of cigarettes if a sample of 20 cigarettes have a variance of 2.25 milligrams. </p> </statement>
+<solution><p> First find the chi-square values for 90%. The degree of freedom = 19. Left chi squared= 10.117 and right chi squared = 30.143.</p>
+<p> We are given <m>n=20 </m> and <m>s^2=2.25</m> </p> 
+<p> Substitute values into the formula we get </p>
+<p><m> \frac{(20-1)(2.25)}{30.143} \lt \sigma ^2 \lt \frac{(20-1)(2.25)}{10.117} </m> </p>
+<p> <m> 1.418 \lt \sigma ^2 \lt 4.226 </m> </p>
+<p> We are 90% confident that the true variance of the nicotine content of cigarettes is between 1.42 mg and 4.23 mg. </p>
+<p> We are going to round to the same number of decimal places as the statistics. </p>
+</solution>
+</example>
+
+<example>
+<title> Nicotine Content </title>
+<statement> <p> Find the 90% confidence interval for the standard deviation of the nicotine content of cigarettes if a sample of 20 cigarettes has a variance of 2.25 milligrams. </p> </statement>
+<solution><p> First find the chi-square values for 90%. The degree of freedom = 19. Left chi squared= 10.117 and right chi squared = 30.143.</p>
+<p> We are given <m>n=20 </m> and <m>s^2=2.25</m> </p> 
+<p> Substitute values into the formula we get </p>
+<p><m>\sqrt{ \frac{(20-1)(2.25)}{30.143} } \lt \sigma \lt \sqrt{\frac{(20-1)(2.25)}{10.117}  }</m> </p>
+<p> <m> \sqrt{1.418} \lt \sigma  \lt  \sqrt{4.226} </m> </p>
+<p> <m> 1.1908 \lt \sigma \lt 2.0557 </m> </p> 
+<p> We are 90% confident that the true standard deviation of the nicotine content of cigarettes is between 1.19 mg and 2.06 mg. </p>
+</solution>
+</example>
+
+
+  </subsection>
+
+
+
+<subsection xml:id="subsec-CIVariancePractice">
+  <title>Practice Problems</title>
+<p> Use the chi square distribution. Pay attention if you are given the sample standard deviation or variance. The variance is already squared. You do not square the chi-squared values, use them as written. </p> 
+
+
+
+  </subsection>
+
+
 </section>

@@ -7,6 +7,17 @@
     </p>
   </introduction>
  
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Identify the point estimate <m>\bar{x}</m>. </p>    </li>
+    <li> <p> Determine the t-distribution value.</p> </li>
+   <li> <p> Construct and interpret confidence intervals for the mean.</p> </li>
+
+        </ol>
+</objectives>
 
 <subsection xml:id="subsec-CImean">
   <title>Understanding the Basics</title>
