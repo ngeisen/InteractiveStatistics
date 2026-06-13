@@ -63,7 +63,7 @@
   </li>
 </ul>
 
-<subsection xml:id="subsec-UrbanHeatDatatable">
+<subsection xml:id="subsec-UrbanHeatDataTable">
 <title>Data Organization</title>
 <p>The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available: </p>
   <p>  <url href="external/MetroDenverData.csv"> MetroDenver.csv </url> </p>

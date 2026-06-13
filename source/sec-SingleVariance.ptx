@@ -1,8 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-SingleVariance" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Chi-Square test for Variance</title>
-  <p> Text of section. </p>
+ 
+  <introduction>
+    <p>
+    In this section we will learn how to perform a chi-square test for variance and standard deviation. We will review using the chi-square distribution to test hypotheses about variance and standard deviation. We will also learn how to write the conclusion for the chi-square test in context.
+    </p>
+  </introduction>
 
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses involving variance and standard deviation </p>    </li>
+    <li> <p> Perform chi-square test for variance. </p> </li>
+<li> <p> Perform chi-square test for standard deviation. </p> </li>
+     <li> <p> Write the conclusion for chi-square test in context </p>    </li>
+        </ol>
+</objectives>
+
+<subsection xml:id="subsec-ChiTestVarianceBasics">
+  <title> Chi-Square Hypothesis Test </title>
+<p>A one-sample <m>\chi ^2</m>-test for a population variance is used to test a claim about the variability of a quantitative population when the population is normally distributed. When the <term> hypothesize claim</term> refer to standard deviation we will use <m> \sigma</m> in the hypotheses  and when the hypothesized situation refers to the variance we will use <m> \sigma ^2</m> in the hypotheses. In this test, the sample variance <m>s^2</m> is compared to a hypothesized population variance <m>\sigma ^2</m> to determine whether the observed variability is significantly different from the claimed value. </p> 
+<p> The <term> test statistic</term> is computed as <m>\chi^2=\dfrac{(n-1)s^2}{\sigma^2}</m>, where <m>n</m> is the sample size. When the population is normal, this test statistic follows a <term>chi-square distribution</term> with <m>n-1</m> degrees of freedom. We will use StatKey to calculate the p-values. The resulting <term>p-value</term> is then used to decide whether to reject the null hypothesis and conclude that the population variance differs from, is greater than, or is less than the hypothesized value. </p>
+
+<definition xml:id="def-one-sample-chi-square-test-variance">
+  <statement>
+    <p>
+      A <term>one-sample <m>\chi^2</m>-test for a population variance or standard deviation</term> is
+      a statistical method used to test a claim about the variance or standard deviation of a normally distributed population. </p> 
+      <p> The test statistic is <md>\chi^2=\dfrac{(n-1)s^2}{\sigma ^2}</md> where <m>s^2</m> is the sample variance, <m> \sigma ^2</m> is the population variance, <m>n</m> is the sample size, and with degrees of freedom <m> n-1.</m>
+    </p>
+  </statement>
+</definition>
+
+<p> When you are given the variance, the value is already squared. When you are given the standard deviation you need to remember to square the value. </p>
+
+<p> review critical and p-values on StatKey </p>
+
+
+
+
+
+
+  </subsection>
+
+  <subsection xml:id="subsec-ChiTestVarianceExamples ">
+  <title>Examples of Chi-Squared Test </title>
+    <p>
+      A machine is designed to fill bags of flour so that the variability in bag
+      weights have a population variance of <m>1.5</m> ounces squared. A quality
+      control manager wants to test whether the true variance in bag weights is
+      different from <m>1.5</m> ounces squared. A random sample of
+      <m>20</m> bags is taken, and the sample variance is found to be
+      <m>2.4</m> ounces squared. Test the claim at the
+      <m>\alpha=0.05</m> significance level.    </p>
+
+<example> <title>Flour Bags</title>
+  <statement>
+<p>
+      State the null and alternative hypotheses, verify the conditions for a
+      one-sample <m>\chi ^2</m>-test for variance, compute the test statistic,
+      find the <em>p-value</em> with StatKey, and state your conclusion in context.
+    </p>
+  </statement>
+  <solution> <title>Hypotheses</title>
+    <p>   Let <m>\sigma^2</m> be the population variance in bag weights. </p>
+<p>The hypotheses are
+    <md> H_0:\sigma^2=1.5 \qquad H_a:\sigma^2\ne 1.5.     </md> </p>
+</solution>
+<solution> <title>Test Statistic</title>
+    <p>
+      Since this is a test about a single population variance, we use a
+      one-sample <m>\chi^2</m>-test for variance. The test statistic is
+       <md> \chi^2=\frac{(n-1)s^2}{\sigma_0^2} =\frac{(20-1)(2.4)}{1.5} =\frac{45.6}{1.5} =30.4.
+    </md> </p> 
+</solution>
+<solution> <title>p-value</title>
+    <p>  The degrees of freedom are   <m>df=n-1=20-1=19</m>.   </p>
+    <p>  For a two-tailed test with <m>df=19</m>, change the middle area to 0.95 so the combined area of the tails is 0.05, thus the <term>critical values</term> are      approximately <m>\chi^2=8.907</m> and <m>\chi^2=32.852</m>. Since test value
+      <m>30.4</m> is between these two critical values, the test statistic does
+      not fall in the rejection region wo we will not reject the null hypothesis. </p>
+<p> For the p-value click on <c>Two Tail</c> and enter the test value 30.4 on the right side, combine the tail area for <m>p-value = 2(0.047)=0.094 </m>. since the p-value is greater than <m> \alpha = 0.05</m> do not reject the null hypothesis. </p> 
+    </solution>
+<solution><title> Conclusion</title>
+    <p>
+      Therefore, we fail to reject <m>H_0</m>. At the <m>0.05</m> significance
+      level, there is not enough evidence to conclude that the population
+      variance in bag weights is different from <m>1.5</m> ounces squared.
+    </p>
+  </solution>
+</example>
+
+    <p>
+      A biologist is studying the consistency of seed weights from a particular
+      plant species grown in a laboratory. Under standard growing conditions, the
+      population standard deviation of seed weights is believed to be
+      <m>0.8</m> grams. The biologist wants to test whether the true population
+      standard deviation has increased under a new nutrient treatment.
+    </p>
+    <p>
+      A random sample of <m>25</m> seeds is collected, and the sample standard
+      deviation is found to be <m>1.1</m> grams. At the <m>\alpha =0.05</m>
+      significance level, test whether the population standard deviation has increased
+      from <m>0.8</m> grams. Assume the population of seed weights is
+      approximately normally distributed.
+    </p>
+
+<example> <title> Seedlings</title>
+  <statement>
+ <p> State the null and alternative hypotheses, verify the conditions for a
+      one-sample <m>\chi ^2</m>-test for standard deviation, compute the test statistic,
+      find the <em>p-value</em> with StatKey, and state your conclusion in context.
+    </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      Let <m>\sigma</m> be the population standard deviation of seed weights.
+       <md> H_0:\sigma=0.8 \qquad H_a:\sigma\gt 0.8     </md>
+Since the chi-square procedure is based on variance, we can write the
+      hypotheses in terms of <m>\sigma^2</m>.
+      Equivalently, these may be written as
+        <md> H_0:\sigma^2=0.64 \qquad H_a:\sigma^2\gt 0.64.   </md>
+This will be a right-tailed test. </p>
+</solution>
+<solution><title>Test Statistic</title>
+    <p>
+      The sample size is <m>n=25</m>, so the degrees of freedom are
+      <m>df=n-1=24</m>. The sample standard deviation is <m>s=1.1</m>, so the
+      sample variance is  <m>s^2=(1.1)^2=1.21   </m> </p>
+    <p>  The test statistic is
+        <md> \chi^2=\frac{(n-1)s^2}{\sigma_0^2} 
+=\frac{(25-1)(1.21)}{0.64}
+=\frac{24(1.21)}{0.64}
+=\frac{29.04}{0.64}
+=45.375.     </md>     </p>
+</solution>
+<solution> <title> p-value</title>
+    <p>  For a right-tailed test with <m>df=24</m> and <m>\alpha=0.05</m>, the right <term>critical value</term> <m>\chi^2 =36.415</m>. The test value of 45.375 lands in the reject region so we will reject the null hypothesis. </p>
+<p> For the <term>p-value</term> click on Right Tail and enter the test value 45.375 along the bottom to get the area of <m>p-value=0.0053</m>. Since the p-value is less than <m>\alpha=.05</m> we will reject the null hypothesis. 
+    </p>
+</solution>
+<solution><title>Conclusion</title>
+    <p>
+      Since we rejected <m>H_0</m> at the <m>0.05</m> significance level,
+      there is sufficient evidence to conclude that the population standard
+      deviation of seed weights under the new nutrient treatment has increased
+      <m>0.8</m> grams.
+    </p>
+  </solution>
+</example>
+
+
+
+  </subsection>
+
+<subsection xml:id="subsec-ChiTestVariancePractice ">
+  <title>Practice Problems </title>
+
+<exercise> <title> Rainfall</title>
+  <statement>
+    <p>
+      A climate scientist is studying the year-to-year variability in annual
+      rainfall for a particular region. Historically, the population standard
+      deviation of annual rainfall has been <m>3.2</m> inches. The scientist
+      wants to test whether climate change has altered the variability in annual
+      rainfall.
+    </p>
+    <p>
+      A random sample of <m>18</m> recent years is selected, and the sample
+      standard deviation of annual rainfall is found to be <m>4.5</m> inches.
+      At the <m>0.05</m> significance level, test whether the population
+      standard deviation differs from <m>3.2</m> inches. Assume the distribution
+      of annual rainfall is approximately normal.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      Let <m>\sigma</m> be the population standard deviation of annual rainfall.
+      
+    <md> H_0:\sigma=3.2 \qquad H_a:\sigma\ne 3.2     </md>
+    Since the chi-square procedure is based on variance, we can also write the
+      hypotheses in terms of variance:
+    <md> H_0:\sigma^2=10.24 \qquad H_a:\sigma^2\ne 10.24.     </md>
+This is a two-tailed test. </p>
+</solution>
+<solution> <title> Statistical Test</title>
+    <p>
+      The sample size is <m>n=18</m>, so the degrees of freedom are
+      <m>df=n-1=17</m>. The sample standard deviation is <m>s=4.5</m>, so the
+      sample variance is <m>s^2=(4.5)^2=20.25  </m>. </p>
+<p> The test statistic is
+        <md> \chi^2=\frac{(n-1)s^2}{\sigma_0^2}
+=\frac{(18-1)(20.25)}{10.24}
+=\frac{17(20.25)}{10.24}
+=\frac{344.25}{10.24} \approx 33.62.     </md> </p>
+</solution>
+    <solution> <title> p-value</title>
+<p>
+      For a two-tailed test with <m>df=17</m> and <m>\alpha=0.05</m>, the
+      critical values are a <m>\chi^2_L=7.564</m> and <m>\chi^2_R=30.191</m>.
+      Since the test statistic <m>33.62</m> is greater than the upper critical
+      value <m>30.19</m>, it falls in the rejection region and we reject the null hypothesis. </p>
+<p> For the p-value click on Two Tails and enter the test value 33.62 on the right, the
+   <m>p-value=2(0.0094)=0.0188</m> which is smaller than <m>\alpha = 0.05 </m> so we reject the null hypothesis. </p>
+</solution>
+<solution> <title> Conclusion</title>
+    <p>
+      Since we reject <m>H_0</m> at the <m>0.05</m> significance level,
+      there is sufficient evidence to conclude that the population standard
+      deviation of annual rainfall differs from <m>3.2</m> inches, suggesting
+      that the variability in rainfall may have changed.
+    </p>
+  </solution>
+</exercise>
+
+<exercise> <title> Vapes</title>
+  <statement>
+    <p>
+      A public health researcher is studying the consistency of nicotine content
+      in a particular brand of disposable vapes. The manufacturer claims that
+      the population variance in nicotine content is <m>0.25</m>
+      milligrams squared. The researcher wants to test whether the true variance
+      differs from this claimed value.
+    </p>
+    <p>
+      A random sample of <m>16</m> disposable vapes is selected, and the sample
+      variance in nicotine content is found to be <m>0.49</m> milligrams
+      squared. At the <m>0.05</m> significance level, test whether the
+      population variance in nicotine content differs from <m>0.25</m>
+      milligrams squared. Assume the nicotine content is approximately normally
+      distributed.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      Let <m>\sigma^2</m> be the population variance in nicotine content. The
+      hypotheses are
+        <md> H_0:\sigma^2=0.25 \qquad H_a:\sigma^2\ne 0.25.     </md>
+This is a two-tailed test. </p>
+</solution>
+<solution> <title> Statistical Test</title>
+    <p>
+      The sample size is <m>n=16</m>, so the degrees of freedom are
+      <m>df=n-1=15</m>. The sample variance is <m>s^2=0.49</m>.
+    </p>
+    <p> The test statistic is 
+    <md> \chi^2=\frac{(n-1)s^2}{\sigma_0^2}
+=\frac{(16-1)(0.49)}{0.25} =\frac{15(0.49)}{0.25} =\frac{7.35}{0.25} =29.4   </md></p>
+</solution>
+    <solution> <title> p-value</title>
+<p>
+      For a two-tailed test with <m>df=15</m> and <m>\alpha=0.05</m>, the
+      critical values are   <m>\chi^2_L=6.262</m> and <m>\chi^2_R=27.489</m>.
+    </p>
+    <p>
+      Since the test statistic <m>29.4</m> is greater than the upper critical
+      value <m>27.49</m>, it falls in the rejection region and we reject the null hypothesis.
+    </p>
+<p> for the p-value click on Two Tails and enter the test value 29.4 along the bottom. The <m>p-value=2(0.014)=.028</m>. Since the p-value is less than <m>\alpha =0.05</m> we reject the null hypothesis. </p>
+</solution>
+<solution> <title> Conclusion</title>
+    <p>
+      Since we reject <m>H_0</m> at the <m>0.05</m> significance level,
+      there is sufficient evidence to conclude that the population variance in
+      nicotine content differs from <m>0.25</m> milligrams squared.
+    </p>
+  </solution>
+</exercise>
+
+
+
+  </subsection>
 
 
 
