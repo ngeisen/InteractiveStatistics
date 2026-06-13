@@ -16,7 +16,7 @@
         </ol>
 </objectives>
 
-<subsection xml:id="subsec-SingleProportion">
+<subsection xml:id="subsec-SingleProportionBasics">
   <title>Understanding the Basics</title>
 <p> A quick review on notation. The population proportion is <m>p</m> often read as a percentage, such as 27% of the people in the United States have blue eyes, thus <m>p=0.27</m>. The sample proportion is <m>\hat{p}</m>.  From the class survey, 6 students out of 42 had blue eyes, thus <m> \hat{p} =6/42=0.143 </m>. This sample statistic is less than the population parameter. We may also want to know what proportion of the sample does not have blue eyes. Here we want to find the complement of blue eyes. We often use <m>\hat{q}</m> to represent the probability it does not happen. Thus, <m>\hat{q} = 1-0.143 = 0.857</m>  .</p>
   

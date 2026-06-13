@@ -3,6 +3,11 @@
 <section xml:id="sec-QuantData" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Graphing Quantitative Data </title>
 
+    <introduction>
+      <p> In this section we will learn how to graph and describe quantitative data. In this course we will use technology to graph quantitative data. So our focus will be on interpreting the information from the graph. The three graphs we will use the most are dotplots, boxplots, and histograms. We will also learn how to investigate the relationship between two quantitative variables using scatterplots. 
+      </p>
+      
+    </introduction>
     <objectives>
         <introduction>
           <p>
@@ -17,7 +22,7 @@
         </ol>
       </objectives>
 
-<p> In this course we will use technology to graph quantitative data. So our focus will be on interpreting the information from the graph. The three graphs we will use the most are dotplots, boxplots, and histograms.</p>
+
 <subsection xml:id="subsec-QuantGraphs">
   <title> Graphing One Quantitative Variable </title>
   

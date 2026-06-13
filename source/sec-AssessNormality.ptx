@@ -3,11 +3,10 @@
   <title>Assessing Normality</title>
   <introduction>
     <p>
-        
+        In this section, we will learn how to determine if a variable is normally distributed. We will use histograms, boxplots, and quantile plots to assess normality. We will also use technology to create these graphs to make the assessment of normality easier.  
     </p>
   </introduction>
   
-
 <objectives>
   <introduction>
     <p> At the end of this section you will be able to:   </p>
@@ -18,6 +17,8 @@
         </ol>
 </objectives>
 
+<subsection xml:id="subsec-NormalityBasics">
+  <title>Understanding the Basics</title>
 <p> Some of the distributions we have seen so far have been assumed to be normally distributed, but how do we determine if it is normally distributed?  One way is to take a sample and look at the data to determine if it appears normally distributed.  If the sample appears normal, then most likely the population is also.  Here are some guidelines that are used to help make that determination.</p>
 <ol> 
 <li> <p> <term>Histogram:</term>  Make a histogram.  For a normal distribution, the histogram should be roughly bell-shaped and symmetric.  For small samples, this is not very accurate, and another method may be needed.  A distribution may not look normally distributed from the histogram, but it still may be approximately normally distributed.</p> </li>
@@ -35,6 +36,9 @@
 </ul>
 
 <p> We will look at a couple of examples to determine if the data comes from a population that is normally distributed. </p> 
+
+  </subsection>
+
 <subsection xml:id="subsec-Kiama">
   <title>Example: Kiama Blowhole Eruptions</title>
  

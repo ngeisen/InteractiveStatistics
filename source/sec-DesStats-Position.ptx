@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-DesStat-Position" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Position</title>
-  <p> In addition to measures of center and measures of variability of the data, there are measures of position or location within the data. We will investigate percentile ranking, quartiles, outliers, and z-scores in this section.  </p>
-
+  <introduction>
+    <p>
+      In the previous sections we have investigated measures of center and measures of variability. These are important numerical summaries of the data, but they do not give us information about the position of a particular value in relation to the rest of the data. In this section we will investigate measures of position or location within the data. We will investigate percentile ranking, quartiles, outliers, and z-scores in this section.
+    </p>
+    </introduction>
+  
 <objectives>
   <introduction>
     <p> At the end of this section you will be able to   </p>
@@ -20,16 +24,18 @@
 <p>      
 </p>
 <p> <term> Percentiles </term> </p> 
-<p> Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <term> percentile </term>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child’s growth. </p>
+<p> Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <term> percentile </term>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child's growth. </p>
 
 <p> The percentile corresponding to a given X value is computed by </p> 
-<p>  <me> p=\frac{\text{number  of  values below X plus one-half values at X}}{\text{total number of values}}</me> </p> 
+<p>  <md> p=\frac{\text{number  of  values below X plus one-half values at X}}{\text{total number of values}}</md> </p> 
 
 <p> <term> Example:</term> A teacher gives a 20-point test to ten students.  The scores are 18, 15, 12, 6, 8, 12, 3, 5, 20, 10. Find the percentile rank of the student who scored 12. </p>
 <p> <em> Solution: </em> There are 5 scores below 12. There are 2 scores at 12. There is a total of 10 scores. The percentile ranking <m> = \frac{5+0.5(2)}{10} = 0.60 </m> thus the 60th percentile. This student did better than or equal to 60% of the classmates on the test. </p>
 <p>       </p>  
 <exercise> <title> Percentile </title>
-<p>A teacher gives a 20-point quiz to ten students.  The scores are 16, 15, 16, 6, 8, 16, 3, 5, 20, 10. Find the percentile ranking of the student who scored 16. </p>
+  <statement>
+   <p>A teacher gives a 20-point quiz to ten students.  The scores are 16, 15, 16, 6, 8, 16, 3, 5, 20, 10. Find the percentile ranking of the student who scored 16. </p>
+  </statement>
 <solution> <p> There are 6 scores below 16. There are 3 scores at 16. There is a total of 10 scores. The percentile ranking <m> = \frac{6+0.5(3)}{10} = 0.75 </m> thus the 75th percentile. This student did better than or equal to 75% of the classmates on the quiz. </p> </solution> 
 </exercise> 
 
@@ -124,7 +130,7 @@ A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 
 
   <p> There is an old saying  that <q>You can't compare apples to oranges. </q> But with statistics, we can in a way. There are times when we want to compare how a particular value is in relation to the mean. A <term> z-score </term>  or <em> standard score </em> for a value is obtained by subtracting the mean from the value and dividing the result by the standard deviation.  The z-score represents the number of standard deviations that a data value falls above or below the mean. This allows us to compare two different groups of data to determine which did better in relation to the mean (thus comparing apples to oranges).  If the z-score is positive then it is above the mean, and if the z-score is negative it is below the mean. The formula is: </p> 
 
-<p> <me> z=\frac{X-μ}  {σ} </me> </p>
+<p> <md> z=\frac{X-μ} {\sigma} </md> </p>
 
   <p> <term> Example: </term> A student scored 88 on a calculus test that had a mean of 75 and a standard deviation of 8.  The same student scored 30 on a biology quiz with a mean of 25 and standard deviation of 4.  Compare the student's relative positions on the two tests by finding the z-scores. </p> 
 <p> Calculus test <m> z = \frac{88-75}{8} =1.625 </m>  standard deviation above average. </p>
@@ -133,10 +139,12 @@ A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 
 
 <exercise> 
 <title> Compare z-scores </title> 
+<statement>
  <p> Compare the three test scores to see who did the best overall in terms of z-scores. </p>
 <p>Angela earned a 200 on an aptitude test which has a mean of 220 and a standard deviation of 15. </p>  
 <p>Bryce scored 75 on the math test with a mean of 72 and standard deviation of 8. </p>
 <p> Chris earned a 78 on chemistry test with a mean of 81 and standard deviation of 10. </p>
+</statement>
 <solution> <p> Angela <m> z = \frac{200 - 220}{15} = -1.33 </m> which is below average. </p> 
   <p> Bryce <m> z = \frac{75-72}{8} = 0.375 </m>  which is slightly above average. </p> 
     <p> Chris <m> z = \frac{78-81}{10} = - 0.30 </m>  which is slightly below average. Therefore Bruce did the best since he has the highest positive score. Angela did the worst overall since she has the lowest z-score (most negative).  
@@ -149,7 +157,7 @@ A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 
 
   <subsection xml:id="subsec-PositionApply">
   <title>Application</title>
-
+<p> the </p> 
   
   </subsection>
 

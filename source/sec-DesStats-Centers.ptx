@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-DesStat-Centers" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Center</title>
-  <p> <p> This section focuses on measures of central tendency to describe the center of the data. We are looking at what is considered a typical value. We will use the mean, median, mode, and midrange to describe the center. </p> </p>
+  <introduction>
+    <p>
+      When we have a data set, we often want to summarize the data with a single value that represents the center of the data. This is called a measure of central tendency. The most common measures of center are the mean, median, and mode. These measures help us understand what a typical value in the data set might be and can be useful for comparing different data sets or understanding the overall distribution of the data.
+    </p>
+  </introduction>
+  
 <objectives>
   <introduction>
     <p> At the end of this section you will be able to   </p>
@@ -16,7 +21,8 @@
 
 <subsection xml:id="subsec-CenterBasics">
   <title>Understanding the Basics</title>
-  </subsection>
+  <p> the </p> 
+  
 
 <p> Many times, you are asked what to expect <q>on average </q> or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center that we will focus on: the mean, median, and mode. </p>
 <p> The <term> mode </term> is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs and then determine which data value occurs most often. This is easily seen with a dot plot or a list of values. </p>
@@ -36,7 +42,7 @@
 
 <p> The <term> mean </term> is the arithmetic average of the numbers. You will add all the values together and then divide by the number of values. </p>
 <p> The formula for the sample mean is </p>
-<me> \bar{x}=\frac{\sum x}{n} </me>
+<p> <md> \bar{x}=\frac{\sum x}{n} </md> </p>
 
 <p> where x-bar represents the mean, the sigma symbol indicates to find the sum of the data values, where each <em> x</em> is a data value, and then divide by the sample size of <em> n </em>. </p>
 <p> <em> Example: </em>  A sample of five students are taking the number of credits this semester: 12, 14, 15,16, 18. </p>
@@ -44,7 +50,7 @@
 <p> <m> \bar{x}=\frac{75}{5}=15 </m></p>
 
 <p> The formula for the population mean is </p>
-<p>  <me> \mu=\frac{\sum X}{N} </me>  </p> 
+<p>  <md> \mu=\frac{\sum X}{N} </md>  </p> 
 <p> where <m> \mu </m> represents the mean, the sigma symbol indicates to find the sum of the data values, where each <em> X </em> is a data value in the population, and then divide by the size <em> N </em> of the population. </p> 
 
 <p> Another measure of the center is the <term> midrange </term> which is the average of the smallest and largest value of the data set. The midrange is the middle of the range of values in the data. </p> 
@@ -60,6 +66,8 @@
   <p>The midrange<m> = (25+72)/2 = 48.5 </m> which is also shifted to the right. </p> 
 </solution>
 </example>
+
+</subsection>
 
 
 <subsection xml:id="subsec-CenterCalc">

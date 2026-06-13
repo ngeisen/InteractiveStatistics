@@ -54,14 +54,14 @@
 
 <p> <term> Making Predictions </term> </p> 
 <p> <em> Example: </em> Predict a person's height if the person has a size 8 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
-<p> Solution: Using the linear regression equation  <me> \hat y = 48.396 +2.014(8) = 65.508 </me>  So we predict the person's height to be 65.5 inches or 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches. </p> 
+<p> Solution: Using the linear regression equation  <md> \hat y = 48.396 +2.014(8) = 65.508 </md>  So we predict the person's height to be 65.5 inches or 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches. </p> 
 <p> <em> Example: </em> Predict a person's height for shoe size 11 using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
-<p> Solution: Using the linear regression equation  <me> \hat y = 48.396 +2.014(11) = 70.55 </me> 
+<p> Solution: Using the linear regression equation  <md> \hat y = 48.396 +2.014(11) = 70.55 </md> 
    So we predict the height to be 70.55 inches or 5 feet 10.6 inches tall. This does align with the scatter plot. On the x-axis we start at size 11, go up to the regression line then move to the left to find the height around 71 inches. </p> 
 
    <p> Suppose a person is 6 feet tall (72 inches), predict his/her shoe size using the current regression equation. Make sure you are solving for the correct variable. </p> 
    <p>     Solution: Now we use <m> \hat y=72 </m> and we solve for<m> x</m>. 
-        <me> \ 72=48.396 +2.014x </me>
+        <md> \ 72=48.396 +2.014x </md>
     Subtract 48.396 from both sides of the equation and then divide by 2.014 to get <m>x= 11.7 </m> shoe size. </p>
   <p> Estimating the value from the scatterplot, we start with the y-axis where y=72 inches, we go right until we land on the regression line and drop down to x = 11.5 shoe size. </p> 
   
@@ -73,7 +73,7 @@
     </image>
 </figure>
 <p> We have the same correlation coefficient of r = 0.913 showing a strong positive linear relationship. But the linear regression equation is now <m> \hat y = 0.414x-18.683 </m> where <m> x </m> is the height and <m>y</m> is the shoe size. The slope tells us that the shoe size increases by .414 for each additional inch in height. Notice that for a height of 0 inches the predicted shoe size is -18.683. </p>
-<p> Predicting the shoe size for someone 72 inches becomes <me> \hat y = 0.414(72)-18.683 = 11.125 </me> which is around size 11 shoe. Notice how the two estimates are slightly different.</p> 
+<p> Predicting the shoe size for someone 72 inches becomes <md> \hat y = 0.414(72)-18.683 = 11.125 </md> which is around size 11 shoe. Notice how the two estimates are slightly different.</p> 
 <p> <em> Example:</em> From the data file, the person who was 72 inches tall has a shoe size of 12. The residual using the second regression equation gave us the predicted size of 11.125. Thus the residual <m>y- \hat y =12-11.125 = .875</m> , the actual shoe size is almost one size greater than the estimate.  The first regression equation gave a predicted size of 11.7, thus the residual is  <m>y- \hat y =12-11.7 = .3</m> which is closer to the actual value. </p> 
 <p> Warning: the prediction is only as good as our graph. The y-intercept value often does not make sense in the context, but helps us to make our estimates within the scatterplot (knows as interpolation). Making predictions beyond the bounds of the data, known as extrapolation, can be off. For example, we do not want to predict former UNC basketball player Dalton Knecht's shoe size using his height of 6 feet 6 inches (78 inches) since it goes off the graph. The prediction would not be reliable. </p> 
 <p> The difference between the actual value <em> y </em> and the predicted value <m> \hat y </m> is called a <term> residual </term>. This lets us know how far off our prediction is. </p> 
@@ -81,7 +81,10 @@
 
 </subsection>
 
-
+<subsection xml:id="subsec-RegressionPractice">
+  <title>Practice Problems</title>
+<p> the </p> 
+ 
 
 <p> <term> Practice </term> </p> 
 <p> Now complete the correlation and regression analysis for different scenario. </p>
@@ -133,6 +136,7 @@
         <solution> <p> Predict <m> \hat y = 14.78(4.8)-23.334=47.61 </m> km below surface. Residual <m>y-\hat y = 62.7-47.61 = 15.09 </m> km deeper than predicted .</p> </solution>
         </example>
                
+ </subsection>
 
 
 </section>

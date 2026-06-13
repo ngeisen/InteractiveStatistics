@@ -19,7 +19,7 @@
 </objectives>
 
 
-  <subsection xml:id="subsec-SingleMean">
+  <subsection xml:id="subsec-SingleMeanBasics">
   <title>Understanding the Basics</title>
   <p> The one-sample <m>t</m>-test is used to test a claim about a population mean when the population standard deviation is unknown. The first step is to write the null and alternative <term>hypotheses</term>. In this test, we compare a sample mean <m>\bar{x}</m> to a hypothesized population mean <m>\mu_0</m> by calculating a <em>test statistic</em> that measures how many standard errors the sample mean is from the hypothesized value.</p>
   <p>  The <term>test statistic</term> is computed as <md>t=\dfrac{\bar{x}-\mu_0}{s/\sqrt{n}}</md>, where <m>\bar{x}</m> is the sample mean, <m>\mu_0 </m> is the hypothesized value, <m>s</m> is the sample standard deviation, and <m>n</m> is the sample size. </p> 

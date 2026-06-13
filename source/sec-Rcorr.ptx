@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Rcorr" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Correlation Tests with R</title>
+  <introduction> 
   <p> In this section we will perform the correlation and linear regression analysis with R Studio. We will graph the scatterplot to determine the nature of the relationship, calculate the correlation coefficient to determine its strength. We will conduct a correlation test to determine if it is statistically significant and if so, find the regression equation.  </p>
+</introduction>
 
 <objectives>
   <introduction>
@@ -29,7 +31,7 @@
 <p> <em> Interpret: </em> r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a <term> correlation test </term>. The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant. </p> 
 <p> <c>  cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95) </c> </p>
 
-<p> Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the <term> regression equation </term> so we can make predictions. We will use the command <em> lm </em> for a linear model and we identify the y-variable, Hurricanes, first with the tilda symbol <c> ~ </c> then the x-variable, Year.</p> 
+<p> Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the <term> regression equation </term> so we can make predictions. We will use the command <em> lm </em> for a linear model and we identify the y-variable, Hurricanes, first with the tilde symbol <c> ~ </c> then the x-variable, Year.</p> 
 <p> <c>  lm(Hurricanes~Year) </c> </p>
 <p> <em> Interpret: </em> The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation <m> y =0.031x-56.01 </m> where <em> x </em> represents the year and <em> y </em> represents the predicted number of hurricanes for that year. </p> 
 
@@ -46,7 +48,7 @@
 
 <subsection xml:id="subsec-AssocTests">
   <title>Association Between Categorical Variables </title>
-  
+  <p> the </p> 
 </subsection>
 
     

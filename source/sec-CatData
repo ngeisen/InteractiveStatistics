@@ -2,6 +2,11 @@
 
 <section xml:id="sec-CatData" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Graphing Categorical Data </title>
+    <introduction>
+        <p>
+          Categorical data is data that can be sorted into categories. The categories are typically non-numeric and represent a quality or characteristic of the data. In this section we will explore how to organize and graph categorical data. We will also learn how to summarize the data with proportions. 
+    </p>
+    </introduction> 
 
     <objectives>
         <introduction>
@@ -17,11 +22,10 @@
       </objectives>
        
 
-
-<p> Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the <term> frequency </term> represents the number of times a particular category occurs from the raw data. This is organized in a <term> frequency table </term> summarizing each category with its frequency. This works best with nominal and ordinal level data. </p>
 <subsection xml:id="subsec-GraphOneCat">
   <title>Graphing One Categorical Variable</title>
  
+<p> Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the <term> frequency </term> represents the number of times a particular category occurs from the raw data. This is organized in a <term> frequency table </term> summarizing each category with its frequency. This works best with nominal and ordinal level data. </p>
 
 <p> On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data. </p>
 

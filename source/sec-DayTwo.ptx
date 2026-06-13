@@ -5,14 +5,14 @@
 
 
 <objectives>
-        <introduction>
-          <p> At the end of this section you will able to:   </p>
+    <introduction>
+        <p> At the end of this section you will able to:   </p>
+    </introduction>
             <ol>
            <li> <p> Simulate several sampling methods.   </p> </li>
             <li> <p> Recognize the type sampling methods employed in a study.   </p> </li>
             </ol>
-        </introduction>
-    </objectives>
+</objectives>
 
 <p> Recall that the <term> population </term> is the set of all subjects for the study, while a <term> sample </term> is a group or subset selected from the population. It is often difficult or too expensive to examine the whole population for a study, thus we use a sample to help us draw conclusions about the population. When we choose a sample, we want it to be as similar to the population as possible. We are going to simulate several sampling methods using Gettysburg’s Address as the population. </p>
 
@@ -23,8 +23,8 @@
 <p> Step 1: Your task is to select a sample of 10 words to estimate the average length of words in his speech.  Pick words that appear to be representative of the population of all the words.  If you print the address, you can circle the ten words you choose. </p>
 <p> Step 2: Find the lengths (number of letters) for each of the 10 words you selected. </p> 
 <p> Step 3: Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average. </p>  
-<p>    </p> 
-Which best describes your average value for the average word length?
+<p>     
+Which best describes your average value for the average word length? </p>
 <exercise label="GettysCircleWord">
     <title> Your average word length </title>
     <statement>
