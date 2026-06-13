@@ -5308,7 +5308,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Intervals for Means",
-  "body": " Intervals for Means   Medical researchers have determined normal intervals for a person's blood pressure, cholesterol and triglycerides levels. For example, the normal range of systolic blood pressure is 110 to 140 mmHg. The normal triglycerides level is between 30 to 200 milligrams per deciliter. By measuring these values, a doctor can determine if a patient's vital statistics are within the normal interval or if some type of treatment is needed to correct the condition.     At the end of this section you will be able to:     Identify the point estimate .    Determine the t-distribution value.    Construct and interpret confidence intervals for the mean.      Understanding the Basics  Inferential statistics techniques have various assumptions that must be met before valid conclusion scan be drawn. One assumption is that the samples are randomly selected. Another assumption is the sample size must be greater than or equal to 30 or the population must be normally or approximately normally distributed. Recall from the last chapter that we check the histogram is approximately bell-shaped, few outliers, and the normal quantile plots appears linear.  Recall the first week of class where we completed the class survey for students' weights and heights. From the sample of 42 students, the mean weight was 171 pounds, and the mean height was 67.9 inches. From the sample data we would infer the average weight for all UNC students to be around 171 pounds and the average height for all students to be around 67.9 inches. This type of estimate is called a point estimate   A point estimate is a specific numerical values estimate of the parameter. The best point estimate for the population mean is the sample mean .  Typically, the sample mean will be different than the population mean due to sampling error. What would happen to the class mean if we had the basketball team in our class? So how good is a point estimate? There is no way of knowing how close a particular point estimate is to the parameter. That is why statisticians prefer an interval estimate .  An interval estimate of a parameter is an interval or range of values used to estimate the parameter.  This estimate may or may not contain the value of the parameter being estimated. Thus, a degree of confidence, generally written as a percentage, can be assigned to the interval estimation made. . Common values we will use are 90%, 95%, and 99% confidence.  We may be 90% confidence the true mean height of college students is between 66.6 inches and 69.2 inches, or we could be 99% confidence the true mean height of college students is between 66.0 inches and 69.8 inches which is a bit wider to contain more plausible values.  The confidence level of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter.  A confidence interval is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.  From the 90% confidence interval, the sample mean was 67.9 inches +\/- 1.3 gives the interval 66.6 to 69.2 inches. The amount of variation is referred to as the margin of error . For the 99% confidence interval, the sample mean 67.9 +\/- 1.9 gives 66.0 to 69.8 inches. The higher confidence level allows for more variation in the estimates.  The margin of error is the maximum likely difference between the point estimate of a parameter and the actual value of the population parameter.    t Distribution  Since we are estimating the population parameters, it is unlikely that we know and . Thus, we are no longer able to use the normal z-distribution. Instead, we use the sample standard deviation with the t-distribution .  The t -distribution shares some characters of the normal distribution. It is bell shaped and symmetrical about the mean. The mean, median, and mode are equal to 0 and located at the center of the distribution. The curve does not touch the x-axis.  The t -distribution also differs from the normal distribution in that the variance is greater than 1. The t -distribution is a family of curves based on the concept of degrees of freedom which is related to the sample size. As the sample size increases, it approaches the standard normal distribution.  The formula for finding the degrees of freedom will vary for different statistical tests. The degrees of freedom are the number of values that are free to vary after a sample statistics has been computed, and they tell the researcher which specific curve to use. The degrees of freedom for finding the confidence interval for a single mean is one less than the sample size, thus   How to find t* with StatKey  Example: Suppose we want to create a 90% confidence interval for a sample of 42 students.  From StatKey toward the bottom of the page next to the Theoretical Distributions select t for the t-distribution.   StatKey Menu for t-distribution   third heading down to theoretical then second tab right for t-distribution.    It will request the degrees of freedom, since the sample size is 42, , enter 41 then click on OK . This will give you the appropriate curve based on the sample size.   Enter degrees of freedom   enter 41 df.    Click on Two Tail and enter 0.90 in the middle portion of the curve. The cut scores will be along the bottom of the curve. The t*=1.683. Notice that there are two values, one positive and one negative since it is symmetric about the mean 0.   t-distribution for 90% for 41 df   middle 90% gives t=1.683.      Find t* for 95% confidence for a sample of 20 people.    Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95  The t* = 2.093   t-distribution for 95% for 19 df   middle 95% gives t=2.093.        Find t* for 99% confidence for a sample of 25 people.    Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99  The t* = 2.797      Find t* for 95% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95  The t* = 2.010      Find t* for 99% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99  The t* = 2.680      What happens to t* for the same sample size if the level of confidence increases?    As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets larger because we are allowing for more margin of error in the estimate.      What happens to t* if the level of confidence stays the same but the sample size increases?    As the sample size gets larger, the t* value also gets smaller because there is less variation in larger samples.      Calculate the Confidence Interval for the Mean  Now we are ready to create the confidence interval to predict the population mean. We are assuming the population is approximately normally distributed and the population standard deviation is unknown.  Formula for Confidence interval of the mean is     or    where is the sample mean, is the sample standard deviation, is the sample size, and is the value from the -distribution using .  Example: From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.  Solution: We are given that , thus , , and . The for 90% confidence .  Using the mean CI formula:  substituting in the values we get:  lower bound is and the upper bound is .  which gives the interval of pounds.  We are 90% confident that the true mean weight for all UNC students is between 161.0 and 181.2 pounds.   Heights   From the class survey, 42 students gave their heights, measured in inches. The values ranged from 59 to 78 inches with the mean of 67.9 inches and standard deviation of 4.8. Find the 95% confidence interval for the true mean height for all UNC students.    We are given that , thus , , and . The for 95%.    substituting in the values we get:  which gives lower bound of inches.  We are 95% confident that the true mean height for all UNC students is between 66.4 and 67.4inches.     Sleep   From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.    We are given that , thus , , and . The for 99%.    substituting in the values we get:  which gives lower bound of hours.  We are 99% confident that the true mean sleep hours for all UNC students is between 6.6 and 7.6 hours      Using Technology  Next, let us look at how we can use technology to find the confidence interval for us. The direction should be the same for the TI 83 Plus or TI84.  Example: From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.  Press the STAT button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option 8: T-interval then press [ENTER].   Calculator menu to select Tinterval   scroll to option 8.    You can choose between entering the raw data or the summary statistics. We will use the arrow once to the right to highlight Stats and then press [ENTER] to select it. Then input your summary statistics, enter the C-level of 0.99, scroll to Calculate and press [ENTER].  We are given that , and , and .   Enter statistics into calculator   mean=7.1, sx=1.3, n=43, level=.99.     T-interval on Calculator   mean between 6.5651 and 7.6349.    We are 99% confident that the true mean sleep hours for all UNC students is between 6.57 and 7.63 hours.  Example: Suppose we had a sample of ten students with the following heights, measured in inches: 66, 63, 67, 76, 62, 62, 68, 62, 71, 75. Find the 95% confidence interval for the true mean height for all UNC students.  Press the STAT button and under the EDIT menu select option 1:Edit then press [ENTER] and then input the ten values using [ENTER] after each.   Enter raw data into Calculator   enter the ten heights.    Press the STAT button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option 8: T-interval then press [ENTER]. Use the arrow if needed to highlight Data and then press [ENTER] to select it. The data was entered into List 1 and the Frequency is 1, the confidence level is .95, scroll to Calculate and hit [ENTER].   Select T interval and Data on TI84   Select option 8 T-interval and Data, change level to .95 and enter.     Select T interval and Data on TI83 Plus   Select option 8 T- interval and Data, change level to .95 and enter.    We are 95% confident that the true mean height for all UNC students is between 63.4 and 71.0 inches.  Note: Make sure your List matches where you input the data and the C-Level matches the confidence level in the problem.    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics to complete the table below. Click on Change Column to change variable names.    Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338      Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.      Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.      Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.     "
+  "body": " Intervals for Means   Medical researchers have determined normal intervals for a person's blood pressure, cholesterol and triglycerides levels. For example, the normal range of systolic blood pressure is 110 to 140 mmHg. The normal triglycerides level is between 30 to 200 milligrams per deciliter. By measuring these values, a doctor can determine if a patient's vital statistics are within the normal interval or if some type of treatment is needed to correct the condition.     At the end of this section you will be able to:     Identify the point estimate .    Determine the t-distribution value.    Construct and interpret confidence intervals for the mean.      Understanding the Basics  Inferential statistics techniques have various assumptions that must be met before valid conclusion scan be drawn. One assumption is that the samples are randomly selected. Another assumption is the sample size must be greater than or equal to 30 or the population must be normally or approximately normally distributed. Recall from the last chapter that we check the histogram is approximately bell-shaped, few outliers, and the normal quantile plots appears linear.  Recall the first week of class where we completed the class survey for students' weights and heights. From the sample of 42 students, the mean weight was 171 pounds, and the mean height was 67.9 inches. From the sample data we would infer the average weight for all UNC students to be around 171 pounds and the average height for all students to be around 67.9 inches. This type of estimate is called a point estimate   A point estimate is a specific numerical values estimate of the parameter. The best point estimate for the population mean is the sample mean .  Typically, the sample mean will be different than the population mean due to sampling error. What would happen to the class mean if we had the basketball team in our class? So how good is a point estimate? There is no way of knowing how close a particular point estimate is to the parameter. That is why statisticians prefer an interval estimate .  An interval estimate of a parameter is an interval or range of values used to estimate the parameter.  This estimate may or may not contain the value of the parameter being estimated. Thus, a degree of confidence, generally written as a percentage, can be assigned to the interval estimation made. . Common values we will use are 90%, 95%, and 99% confidence.  We may be 90% confidence the true mean height of college students is between 66.6 inches and 69.2 inches, or we could be 99% confidence the true mean height of college students is between 66.0 inches and 69.8 inches which is a bit wider to contain more plausible values.  The confidence level of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter.  A confidence interval is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.  From the 90% confidence interval, the sample mean was 67.9 inches +\/- 1.3 gives the interval 66.6 to 69.2 inches. The amount of variation is referred to as the margin of error . For the 99% confidence interval, the sample mean 67.9 +\/- 1.9 gives 66.0 to 69.8 inches. The higher confidence level allows for more variation in the estimates.  The margin of error is the maximum likely difference between the point estimate of a parameter and the actual value of the population parameter.    t Distribution  Since we are estimating the population parameters, it is unlikely that we know and . Thus, we are no longer able to use the normal z-distribution. Instead, we use the sample standard deviation with the t-distribution .  The t -distribution shares some characters of the normal distribution. It is bell shaped and symmetrical about the mean. The mean, median, and mode are equal to 0 and located at the center of the distribution. The curve does not touch the x-axis.  The t -distribution also differs from the normal distribution in that the variance is greater than 1. The t -distribution is a family of curves based on the concept of degrees of freedom which is related to the sample size. As the sample size increases, it approaches the standard normal distribution.  The formula for finding the degrees of freedom will vary for different statistical tests. The degrees of freedom are the number of values that are free to vary after a sample statistics has been computed, and they tell the researcher which specific curve to use. The degrees of freedom for finding the confidence interval for a single mean is one less than the sample size, thus   How to find t* with StatKey  Example: Suppose we want to create a 90% confidence interval for a sample of 42 students.  From StatKey toward the bottom of the page next to the Theoretical Distributions select t for the t-distribution.   StatKey Menu for t-distribution   third heading down to theoretical then second tab right for t-distribution.    It will request the degrees of freedom, since the sample size is 42, , enter 41 then click on OK . This will give you the appropriate curve based on the sample size.   Enter degrees of freedom   enter 41 df.    Click on Two Tail and enter 0.90 in the middle portion of the curve. The cut scores will be along the bottom of the curve. The t*=1.683. Notice that there are two values, one positive and one negative since it is symmetric about the mean 0.   t-distribution for 90% for 41 df   middle 90% gives t=1.683.      Find t* for 95% confidence for a sample of 20 people.    Click on Edit Parameter to change the degrees of freedom to df = 19, click on Two Tail and change the middle value to 0.95  The t* = 2.093   t-distribution for 95% for 19 df   middle 95% gives t=2.093.        Find t* for 99% confidence for a sample of 25 people.    Click on Edit Parameter to change the df=24, click on Two Tail and change the middle value to .99  The t* = 2.797      Find t* for 95% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .95  The t* = 2.010      Find t* for 99% confidence for a sample of 50 people.    Click on Edit Parameter to change the df=49, click on Two Tail and change the middle value to .99  The t* = 2.680      What happens to t* for the same sample size if the level of confidence increases?    As the confidence level gets larger, from 90% to 95% to 99%, the t* value also gets larger because we are allowing for more margin of error in the estimate.      What happens to t* if the level of confidence stays the same but the sample size increases?    As the sample size gets larger, the t* value also gets smaller because there is less variation in larger samples.      Calculate the Confidence Interval for the Mean  Now we are ready to create the confidence interval to predict the population mean. We are assuming the population is approximately normally distributed and the population standard deviation is unknown.  Formula for Confidence interval of the mean is     or    where is the sample mean, is the sample standard deviation, is the sample size, and is the value from the -distribution using .  Example: From the class survey, 42 students gave their weights. The values ranged from 115 to 303 pounds with the mean of 171.1 pounds and standard deviation of 39.0. Find the 90% confidence interval for the true man weight for all UNC students.  Solution: We are given that , thus , , and . The for 90% confidence .  Using the mean CI formula:  substituting in the values we get:  lower bound is and the upper bound is .  which gives the interval of pounds.  We are 90% confident that the true mean weight for all UNC students is between 161.0 and 181.2 pounds.   Heights   From the class survey, 42 students gave their heights, measured in inches. The values ranged from 59 to 78 inches with the mean of 67.9 inches and standard deviation of 4.8. Find the 95% confidence interval for the true mean height for all UNC students.    We are given that , thus , , and . The for 95%.    substituting in the values we get:  which gives lower bound of inches.  We are 95% confident that the true mean height for all UNC students is between 66.4 and 67.4inches.     Sleep   From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.    We are given that , thus , , and . The for 99%.    substituting in the values we get:  which gives lower bound of hours.  We are 99% confident that the true mean sleep hours for all UNC students is between 6.6 and 7.6 hours      Using Technology  Next, let us look at how we can use technology to find the confidence interval for us. The direction should be the same for the TI 83 Plus or TI84.  Example: From the class survey, 43 students identified the number of hours they slept the night before. The values ranged from 3 to 10 hours with the mean of 7.1 hours and standard deviation of 1.3. Find the 99% confidence interval for the true mean hours of sleep for all UNC students.  Press the STAT button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option 8: T-interval then press [ENTER].   Calculator menu to select Tinterval   scroll to option 8.    You can choose between entering the raw data or the summary statistics. We will use the arrow once to the right to highlight Stats and then press [ENTER] to select it. Then input your summary statistics, enter the C-level of 0.99, scroll to Calculate and press [ENTER].  We are given that , and , and .   Enter statistics into calculator   mean=7.1, sx=1.3, n=43, level=.99.     T-interval on Calculator   mean between 6.5651 and 7.6349.    We are 99% confident that the true mean sleep hours for all UNC students is between 6.57 and 7.63 hours.  Example: Suppose we had a sample of ten students with the following heights, measured in inches: 66, 63, 67, 76, 62, 62, 68, 62, 71, 75. Find the 95% confidence interval for the true mean height for all UNC students.  Press the STAT button and under the EDIT menu select option 1:Edit then press [ENTER] and then input the ten values using [ENTER] after each.   Enter raw data into Calculator   enter the ten heights.    Press the STAT button and use the arrow twice to the right until it highlights [TESTS] across the top. Scroll down to option 8: T-interval then press [ENTER]. Use the arrow if needed to highlight Data and then press [ENTER] to select it. The data was entered into List 1 and the Frequency is 1, the confidence level is .95, scroll to Calculate and hit [ENTER].   Select T interval and Data on TI84   Select option 8 T-interval and Data, change level to .95 and enter.     Select T interval and Data on TI83 Plus   Select option 8 T- interval and Data, change level to .95 and enter.    We are 95% confident that the true mean height for all UNC students is between 63.4 and 71.0 inches.  Note: Make sure your List matches where you input the data and the C-Level matches the confidence level in the problem.    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in estimating the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics to complete the table below. Click on Change Column to change variable names.    Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    For all hurricanes, the sample size is 109 years included with a mean of 5.872 hurricanes per year and standard deviation of 2.752  For the early years of 1914-1933, the sample size is 20 years with a mean of 4.30 hurricanes per year and standard deviation of 2.774  For the later years of 2003-2022, the sample size is 20 years with a mean of 7.75 hurricanes per year and standard deviation of 3.338      Using your calculator find and interpret the 95% confidence interval for the mean number of hurricanes in the Early Years.    mean 4.3 +\/- 2.093(2.77\/sqrt20) gives 3.00 to 5.6  95% confident that the true mean number of hurricanes in the Early Years is between 3.0 and 5.6 per year.      Using your calculator find and interpret the 90% confidence interval for the mean number of hurricanes in the Later Years.    mean 7.75 +\/- 1.729(3.34\/sqrt20) gives 6.46 to 9.04  90% confident that confident that the true mean number of hurricanes in the Later Years is between 6.5 and 9.4 per year.      Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.    Homework Problems   Atmospheric Carbon Dioxide   A climate scientist wants to estimate the mean annual increase in atmospheric carbon dioxide concentration, measured in parts per million ( ppm ), over a recent 12-year period. From a random sample of years, the recorded annual increases give the following summary statistics:   , ppm, and ppm.  Construct a confidence interval for the true mean annual increase in atmospheric levels. Interpret the interval in context.  Explain why a -interval is appropriate for this situation and describe one way to obtain a narrower interval.    Since the population standard deviation is unknown and the sample size is small, use a one-sample -interval for the mean:       A confidence interval is approximately ppm. A -interval is appropriate because is unknown and the sample is small. A narrower interval could be obtained by increasing the sample size. (or by using a lower confidence level such as 90%).    We use a one-sample -interval for a population mean because the population standard deviation is not known and the sample size is only .  The degrees of freedom are   For a confidence interval with degrees of freedom, the critical value is .  The standard error is   The margin of error is   Therefore, the confidence interval is   Rounding to two decimal places, the confidence interval is ppm.  Interpretation: We are confident that the true mean annual increase in atmospheric carbon dioxide levels lies between ppm and ppm.  To obtain a narrower interval, the climate scientist could increase the sample size to reduce the amount of variation.  Using a lower confidence level, such as 90%, would also narrow the interval since the margin of error will become smaller.     Ocean pH Levels   A marine scientist wants to estimate the mean annual decrease in ocean pH in a coastal region over a recent years. A random sample of 10 years gives the following summary statistics.   , , and , where each value represents the annual decrease in pH.  Construct a confidence interval for the true mean annual decrease in ocean pH. Interpret the interval in context.  Explain why a -interval is appropriate, and describe one way to obtain a wider interval.    Since the population standard deviation is unknown and the sample size is small, use a one-sample -interval for the mean:     A confidence interval is approximately .  A t -interval is appropriate because is unknown and the sample is small. A wider interval could be obtained by decreasing the sample size which allows for more variation or increasing the confidence level to 99%.    We use a one-sample -interval for a population mean because the population standard deviation is unknown and the sample size is only 10.  The degrees of freedom are   For a confidence interval with 9degrees of freedom, the critical value is .  The standard error is   The margin of error is   Therefore, the confidence interval is   Interpretation: We are confident that the true mean annual decrease in ocean pH lies between and .  To obtain a wider interval, the scientist could decrease the sample size allows for more variation. Using a higher confidence level would also widen the interval since the margin of error also increases.     Time Between Old Faithful Eruptions   A hiking enthusiast wants to estimate the mean time between eruptions of Old Faithful in Yellowstone National Park before planning a visit so they can arrive to see an eruption. A random sample of waiting times from the previous day, measured in minutes, is recorded below.   Waiting Times Between Eruptions (minutes)    78  82  74  88  80    76  84  79  81  77    83  75        Construct a 90% confidence interval for the true mean waiting time between eruptions of Old Faithful. Interpret the interval in context.    Since the population standard deviation is unknown and the sample size is small, use a one-sample -interval for the mean:   Here, , so the degrees of freedom are .    A confidence interval for the true mean waiting time is approximately minutes. A -interval is appropriate because the population standard deviation is unknown and the sample size is small. A more precise interval could be obtained by increasing the sample size.    We use a one-sample -interval because the population standard deviation is unknown and the sample size is only .  First compute the sample mean from the data:   The sample standard deviation is approximately   The degrees of freedom are   For a confidence interval with degrees of freedom, the critical value is approximately .  The standard error is   The margin of error is   Therefore, the confidence interval is   Rounding appropriately, a 90% confidence interval for the true mean waiting time between eruptions of Old Faithful is about minutes.  Interpretation: We are 90% confident that the true mean waiting time between eruptions of Old Faithful lies between about and minutes. So the hiking enthusiast will want to arrive about 77 minutes after the previous eruption and should see one within about 5 minutes.     "
 },
 {
   "id": "sec-CI-means-3",
@@ -5635,6 +5635,33 @@ var ptx_lunr_docs = [
   "body": "  Did the mean of all hurricanes land in each of those intervals? Explain why or why not.    The population mean of 5.87 did not land in the interval for the Early Years since there were fewer hurricanes during this time period. The population mean of 5.87 did not land in the interval for the Later Years since more hurricanes were occurring during this time period.   "
 },
 {
+  "id": "co2-confidence-interval",
+  "level": "2",
+  "url": "sec-CI-means.html#co2-confidence-interval",
+  "type": "Checkpoint",
+  "number": "6.1.23",
+  "title": "Atmospheric Carbon Dioxide.",
+  "body": " Atmospheric Carbon Dioxide   A climate scientist wants to estimate the mean annual increase in atmospheric carbon dioxide concentration, measured in parts per million ( ppm ), over a recent 12-year period. From a random sample of years, the recorded annual increases give the following summary statistics:   , ppm, and ppm.  Construct a confidence interval for the true mean annual increase in atmospheric levels. Interpret the interval in context.  Explain why a -interval is appropriate for this situation and describe one way to obtain a narrower interval.    Since the population standard deviation is unknown and the sample size is small, use a one-sample -interval for the mean:       A confidence interval is approximately ppm. A -interval is appropriate because is unknown and the sample is small. A narrower interval could be obtained by increasing the sample size. (or by using a lower confidence level such as 90%).    We use a one-sample -interval for a population mean because the population standard deviation is not known and the sample size is only .  The degrees of freedom are   For a confidence interval with degrees of freedom, the critical value is .  The standard error is   The margin of error is   Therefore, the confidence interval is   Rounding to two decimal places, the confidence interval is ppm.  Interpretation: We are confident that the true mean annual increase in atmospheric carbon dioxide levels lies between ppm and ppm.  To obtain a narrower interval, the climate scientist could increase the sample size to reduce the amount of variation.  Using a lower confidence level, such as 90%, would also narrow the interval since the margin of error will become smaller.   "
+},
+{
+  "id": "oceanph-confidence-interval",
+  "level": "2",
+  "url": "sec-CI-means.html#oceanph-confidence-interval",
+  "type": "Checkpoint",
+  "number": "6.1.24",
+  "title": "Ocean pH Levels.",
+  "body": " Ocean pH Levels   A marine scientist wants to estimate the mean annual decrease in ocean pH in a coastal region over a recent years. A random sample of 10 years gives the following summary statistics.   , , and , where each value represents the annual decrease in pH.  Construct a confidence interval for the true mean annual decrease in ocean pH. Interpret the interval in context.  Explain why a -interval is appropriate, and describe one way to obtain a wider interval.    Since the population standard deviation is unknown and the sample size is small, use a one-sample -interval for the mean:     A confidence interval is approximately .  A t -interval is appropriate because is unknown and the sample is small. A wider interval could be obtained by decreasing the sample size which allows for more variation or increasing the confidence level to 99%.    We use a one-sample -interval for a population mean because the population standard deviation is unknown and the sample size is only 10.  The degrees of freedom are   For a confidence interval with 9degrees of freedom, the critical value is .  The standard error is   The margin of error is   Therefore, the confidence interval is   Interpretation: We are confident that the true mean annual decrease in ocean pH lies between and .  To obtain a wider interval, the scientist could decrease the sample size allows for more variation. Using a higher confidence level would also widen the interval since the margin of error also increases.   "
+},
+{
+  "id": "OldFaithful-confidence-interval",
+  "level": "2",
+  "url": "sec-CI-means.html#OldFaithful-confidence-interval",
+  "type": "Checkpoint",
+  "number": "6.1.25",
+  "title": "Time Between Old Faithful Eruptions.",
+  "body": " Time Between Old Faithful Eruptions   A hiking enthusiast wants to estimate the mean time between eruptions of Old Faithful in Yellowstone National Park before planning a visit so they can arrive to see an eruption. A random sample of waiting times from the previous day, measured in minutes, is recorded below.   Waiting Times Between Eruptions (minutes)    78  82  74  88  80    76  84  79  81  77    83  75        Construct a 90% confidence interval for the true mean waiting time between eruptions of Old Faithful. Interpret the interval in context.    Since the population standard deviation is unknown and the sample size is small, use a one-sample -interval for the mean:   Here, , so the degrees of freedom are .    A confidence interval for the true mean waiting time is approximately minutes. A -interval is appropriate because the population standard deviation is unknown and the sample size is small. A more precise interval could be obtained by increasing the sample size.    We use a one-sample -interval because the population standard deviation is unknown and the sample size is only .  First compute the sample mean from the data:   The sample standard deviation is approximately   The degrees of freedom are   For a confidence interval with degrees of freedom, the critical value is approximately .  The standard error is   The margin of error is   Therefore, the confidence interval is   Rounding appropriately, a 90% confidence interval for the true mean waiting time between eruptions of Old Faithful is about minutes.  Interpretation: We are 90% confident that the true mean waiting time between eruptions of Old Faithful lies between about and minutes. So the hiking enthusiast will want to arrive about 77 minutes after the previous eruption and should see one within about 5 minutes.   "
+},
+{
   "id": "sec-CI-proportions",
   "level": "1",
   "url": "sec-CI-proportions.html",
@@ -5950,198 +5977,558 @@ var ptx_lunr_docs = [
   "body": " Nicotine Content   Find the 90% confidence interval for the standard deviation of the nicotine content of cigarettes if a sample of 20 cigarettes has a variance of 2.25 milligrams.   First find the chi-square values for 90%. The degree of freedom = 19. Left chi squared= 10.117 and right chi squared = 30.143.  We are given and   Substitute values into the formula we get          We are 90% confident that the true standard deviation of the nicotine content of cigarettes is between 1.19 mg and 2.06 mg.   "
 },
 {
-  "id": "sec-SingleMean.ptx",
+  "id": "sec-IntroHypothesisTest",
   "level": "1",
-  "url": "sec-SingleMean.ptx.html",
+  "url": "sec-IntroHypothesisTest.html",
   "type": "Section",
   "number": "7.1",
-  "title": "t-test for the Mean",
-  "body": " t-test for the Mean  Text of section.   Understanding the Basics    Using Technology    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics. Click on Change Column to change variable names.   summary statistics  Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.   summary    We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.   hypotheses  We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?    and      test value  What is the statistical test value?         p-value  Find the p-value for the statistical test value   p-value=0.013 with 19 df for left tail test     decision  Based the p-value, should your reject or not reject the null hypothesis?   since p-value 0.013 is less than alpha (.05), we should reject Ho     conclusion  What is the conclusion?   Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.    We are going to investigate if the mean number of hurricanes in the Later Years is significantly more than the mean of 5.8 hurricanes per year.   hypotheses  We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?    and      test value  What is the statistical test value?         p-value  Find the p-value for the statistical test value   p-value=0.0086 with 19 df for a right tail test     decision  Based the p-value, should your reject or not reject the null hypothesis?   since p-value 0.0086 is less than alpha (.05), we should reject Ho     conclusion  What is the conclusion?   Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.     "
+  "title": "Introduction to Hypothesis Testing",
+  "body": " Introduction to Hypothesis Testing   In hypothesis testing, the research defines the population under study, states the hypotheses being investigated, identify the significance level, selects a sample from the population, collects and summarizes the data, performs the required statistical analysis to reach a conclusion. Throughout the semester we have been simulation part of this process. In this section we will look in more detail at the statistical hypothesis testing process and how to write the hypotheses. Then we will investigate the different types of tests to analyze the data.     At the end of this section you will be able to:     Write hypotheses in terms of the parameter    Identify the type of tail from the alternative hypothesis .    Understand the hypothesis testing process.      Introduction to Hypothesis Testing     Hypothesis testing is a statistical method used to evaluate a claim about a population parameter using sample data.     Hypothesis testing is a statistical method used to evaluate a claim about a population parameter using sample data. This is another form of statistical inference. Every hypothesis testing situation begins with the statement of a hypothesis, which is a conjecture about the population parameter. This conjecture may or may not be true. There are two hypotheses for each situation. In a hypothesis test, the null hypothesis symbolized as is the statement of no difference, no change, or no effect between the parameter and a known value, or between two parameters. While the alternative hypothesis symbolized as is the claim the researcher wants to investigate. The research can indicate an increase, a decrease, or a change (not equal to) to the parameter value. A claim can be either the null hypothesis or the alternative hypothesis.  Data from a sample are used to compute a test statistic , which measures how far the sample result is from what would be expected if the null hypothesis were true. The p-value is the probability of obtaining a result at least as extreme as the one observed, assuming the null hypothesis is true.  Next, we make a decision based on these results. This p-value is compared to the significance level symbolized by , a cutoff chosen in advance, often as . If the p-value is less than , we reject the null hypothesis ; otherwise, we fail to reject the null hypothesis . This statistical evidence can only support the claim if it is the alternative hypothesis. Statistical evidence can be used to reject the claim if the clam is the null hypothesis. Then we state a conclusion from the test referring to the hypotheses in the context of the situation.  Because the conclusion is based on sample data, hypothesis testing always involves the possibility of committing an error. There are two errors will look at in this course, a Type I error occurs when rejecting a true null hypothesis, and a Type II error which is failing to reject a false null hypothesis.    Writing Hypotheses  To understand the process of a hypothesis testing, we first need to understand what a hypothesis is, which is an educated guess about a parameter. This is typically a statement of what the research is about. We will be writing them in short symbolic notation in terms of the parameter under investigation. The hypotheses will also inform us of which test to complete.  When writing hypotheses for a statistical test, begin by identifying the population parameter you are studying, such as a population mean or population proportion , and then state two competing claims about that parameter.  The null hypothesis  always includes an equals sign, such as , , or , because it represents the status quo or a claimed value.  The alternative hypothesis  describes the effect as an increase or decrease, or that a difference exists, or change being investigated and uses , , or .    A park ranger wants to test whether the mean time between Old Faithful eruptions is different from minutes. The parameter is the mean .    The null hypothesis is since claiming the mean still equals 90 minutes.  The alternative hypothesis is . TThe alternative hypothesis is that the mean is different than 90 minutes, thus not equal to the 90 minutes. The mean can be larger or smaller, thus referred to as a two-tailed test.      A marine scientist wants to test whether the average ocean pH has decreased from 8.20. The parameter is the mean .    The null hypothesis is since the mean equals the pH of 8.20.  The alternative hypothesis is . The marine scientist is seeing if the mean pH is less than 8.20 which is a left-tailed test.    The hypotheses use the parameter symbols: mean , proportion , variance , or standard deviation .  In this chapter we will focus on comparing the parameter to a known value. In the next chapter we will compare two populations.  In general, the wording of the research question determines whether the test is:   two-tailed test (using terms of different or changed or not equal to ),   left-tailed test (for less than or decreased or below ),  or right-tailed test (when greater than or increased ).    A plant biologist wants to know whether a new fertilizer will reduce the variability in plant height. Suppose the historical variance in the height of a certain species of tomato seedlings is 4.0 centimeters.    The parameter is the variance to measure the variability.  The null hypotheses is , equal to the historical values.  The alternative hypothesis is since the plant biology claims the new a new fertilizer will reduce the variance. This will give a left-tailed test.      A climatologist may want to study the proportion of days during summer that reach extreme heat levels in a city. For example, historical records show that about 40% of summer days in Denver, Colorado have high temperatures exceeding F. The climatologist wants to test whether this proportion has increased.    The null hypothesis is written as since equal to the historical value of 40%.  The alternative hypothesis is since claiming the proportion has increased. This will give a right-tailed test.    Now is your chance to identify the null and alternative hypotheses in the following scenarios. Identify the population parameter for the hypotheses. This will also indicate what type of test will be needed in future sections.    A biologist wants to test whether more than 60% of seeds germinate using a new potting soil. State the hypotheses.    Looking at parameter for percentages\/proportions.  The null hypothesis is   The alternative hypothesis is since claiming the proportion is greater than 60% for a right tailed test.      Errors in Hypotheses Tests  The decision in hypothesis testing is to reject or not reject the null hypothesis based on the values obtained from the statical test. If the difference is statistically significant, the null hypothesis is rejected in support of the alternative hypothesis. If not, then the null hypothesis is not rejected and there is not enough evidence to support the alternative.  Because hypothesis testing is based on sample data, there's always a possibility of committing an error when making the decision. The null hypothesis may or may not be true. The decision to reject or not reject the null may be correct or not. If a null hypothesis is true and it is rejected, then a Type I error is made.    A Type I error occurs when we reject a null hypothesis that is actually true.    For example, suppose a food company claims that the mean weight of its cereal boxes is ounces. We test   If our statistical test leads us to reject and conclude that the mean weight is not ounces, but in reality the true mean weight really is ounces, then we have made a Type I error . This is a Type I error because the null hypothesis was true, yet we rejected it anyway. In introductory statistics, this is often described as a false positive , meaning that the test suggests a difference or effect that does not actually exist.    A Type II error occurs when we fail to reject a null hypothesis that is actually false.    A Type II error occurs when we fail to reject a null hypothesis that is actually false. For example, suppose a hospital claims that the mean waiting time in its emergency room is minutes, but the patients claim it is more than 30 minutes. We test   If our statistical test leads us to fail to reject and conclude that there is not enough evidence that the mean waiting time is greater than minutes, but in reality the true mean waiting time is actually more than minutes, then we have made a Type II error . This is a Type II error because the null hypothesis was false, yet we did not reject it. This is often described as a false negative , meaning that the test fails to detect a difference or effect when it exists.    Suppose a bottled water company claims that the mean amount of water in each bottle is milliliters. A researcher tests   If the statistical test leads the researcher to reject and conclude that the mean amount of water is not milliliters, but in reality the true mean amount is milliliters, what type of error has been made? Explain why.    A Type I error has been made.    This is a Type I error because the null hypothesis is actually true, but the test rejected it. In other words, the researcher concluded that the mean amount of water was different from milliliters when in fact it was not.      Suppose a pharmaceutical company claims that a new medication lowers mean blood pressure by mmHg on average. A researcher tests   If the statistical test leads the researcher to fail to reject and conclude that there is not enough evidence that the medication lowers blood pressure by less than mmHg, but in reality the true mean reduction is less than mmHg, what type of error has been made? Explain why.    A Type II error has been made.    This is a Type II error because the null hypothesis is actually false, but the test failed to reject it. In other words, the researcher did not detect that the medication was less effective than claimed, even though the true mean reduction in blood pressure was less than mmHg.      Suppose a public health agency claims that the proportion of adults in a city who receive a flu vaccine each year is . A researcher tests   If the statistical test leads the researcher to fail to reject and conclude that there is not enough evidence that the true proportion of vaccinated adults is less than , but in reality the true proportion is actually less than , what type of error has been made? Explain why.    A Type II error has been made.    This is a Type II error because the null hypothesis is actually false, but the test failed to reject it. In other words, the researcher did not detect that the true proportion of vaccinated adults was less than even though it really was.     "
 },
 {
-  "id": "subsec-SinglemeanPractice-3",
+  "id": "sec-IntroHypothesisTest-3",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-3",
+  "url": "sec-IntroHypothesisTest.html#sec-IntroHypothesisTest-3",
+  "type": "Objectives",
+  "number": "7.1",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Write hypotheses in terms of the parameter    Identify the type of tail from the alternative hypothesis .    Understand the hypothesis testing process.    "
+},
+{
+  "id": "def-hypothesis-testing",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#def-hypothesis-testing",
+  "type": "Definition",
+  "number": "7.1.1",
+  "title": "",
+  "body": "   Hypothesis testing is a statistical method used to evaluate a claim about a population parameter using sample data.   "
+},
+{
+  "id": "subsec-IntroHypotheses-3",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-IntroHypotheses-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Hypothesis testing null hypothesis alternative hypothesis "
+},
+{
+  "id": "subsec-IntroHypotheses-4",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-IntroHypotheses-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "test statistic p-value "
+},
+{
+  "id": "subsec-IntroHypotheses-5",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-IntroHypotheses-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "significance level "
+},
+{
+  "id": "subsec-IntroHypotheses-6",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-IntroHypotheses-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Type I error Type II error "
+},
+{
+  "id": "subsec-WriteHypotheses-3",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "population parameter "
+},
+{
+  "id": "subsec-WriteHypotheses-4",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "null hypothesis "
+},
+{
+  "id": "subsec-WriteHypotheses-5",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "alternative hypothesis "
+},
+{
+  "id": "subsec-WriteHypotheses-6",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-6",
+  "type": "Example",
+  "number": "7.1.2",
+  "title": "",
+  "body": "  A park ranger wants to test whether the mean time between Old Faithful eruptions is different from minutes. The parameter is the mean .    The null hypothesis is since claiming the mean still equals 90 minutes.  The alternative hypothesis is . TThe alternative hypothesis is that the mean is different than 90 minutes, thus not equal to the 90 minutes. The mean can be larger or smaller, thus referred to as a two-tailed test.   "
+},
+{
+  "id": "subsec-WriteHypotheses-7",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-7",
+  "type": "Example",
+  "number": "7.1.3",
+  "title": "",
+  "body": "  A marine scientist wants to test whether the average ocean pH has decreased from 8.20. The parameter is the mean .    The null hypothesis is since the mean equals the pH of 8.20.  The alternative hypothesis is . The marine scientist is seeing if the mean pH is less than 8.20 which is a left-tailed test.   "
+},
+{
+  "id": "subsec-WriteHypotheses-11",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "two-tailed test "
+},
+{
+  "id": "subsec-WriteHypotheses-12",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "left-tailed test "
+},
+{
+  "id": "subsec-WriteHypotheses-13",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "right-tailed test "
+},
+{
+  "id": "subsec-WriteHypotheses-14",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-14",
+  "type": "Example",
+  "number": "7.1.4",
+  "title": "",
+  "body": "  A plant biologist wants to know whether a new fertilizer will reduce the variability in plant height. Suppose the historical variance in the height of a certain species of tomato seedlings is 4.0 centimeters.    The parameter is the variance to measure the variability.  The null hypotheses is , equal to the historical values.  The alternative hypothesis is since the plant biology claims the new a new fertilizer will reduce the variance. This will give a left-tailed test.   "
+},
+{
+  "id": "subsec-WriteHypotheses-15",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-15",
+  "type": "Example",
+  "number": "7.1.5",
+  "title": "",
+  "body": "  A climatologist may want to study the proportion of days during summer that reach extreme heat levels in a city. For example, historical records show that about 40% of summer days in Denver, Colorado have high temperatures exceeding F. The climatologist wants to test whether this proportion has increased.    The null hypothesis is written as since equal to the historical value of 40%.  The alternative hypothesis is since claiming the proportion has increased. This will give a right-tailed test.   "
+},
+{
+  "id": "subsec-WriteHypotheses-17",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-WriteHypotheses-17",
+  "type": "Checkpoint",
+  "number": "7.1.6",
+  "title": "",
+  "body": "  A biologist wants to test whether more than 60% of seeds germinate using a new potting soil. State the hypotheses.    Looking at parameter for percentages\/proportions.  The null hypothesis is   The alternative hypothesis is since claiming the proportion is greater than 60% for a right tailed test.   "
+},
+{
+  "id": "def-type-i-error",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#def-type-i-error",
+  "type": "Definition",
+  "number": "7.1.7",
+  "title": "",
+  "body": "  A Type I error occurs when we reject a null hypothesis that is actually true.   "
+},
+{
+  "id": "subsec-ErrorsHypothesis-6",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Type I error "
+},
+{
+  "id": "def-type-ii-error",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#def-type-ii-error",
+  "type": "Definition",
+  "number": "7.1.8",
+  "title": "",
+  "body": "  A Type II error occurs when we fail to reject a null hypothesis that is actually false.   "
+},
+{
+  "id": "subsec-ErrorsHypothesis-8",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Type II error "
+},
+{
+  "id": "subsec-ErrorsHypothesis-9",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Type II error "
+},
+{
+  "id": "subsec-ErrorsHypothesis-10",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis-10",
+  "type": "Checkpoint",
+  "number": "7.1.9",
+  "title": "",
+  "body": "  Suppose a bottled water company claims that the mean amount of water in each bottle is milliliters. A researcher tests   If the statistical test leads the researcher to reject and conclude that the mean amount of water is not milliliters, but in reality the true mean amount is milliliters, what type of error has been made? Explain why.    A Type I error has been made.    This is a Type I error because the null hypothesis is actually true, but the test rejected it. In other words, the researcher concluded that the mean amount of water was different from milliliters when in fact it was not.   "
+},
+{
+  "id": "subsec-ErrorsHypothesis-11",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis-11",
+  "type": "Checkpoint",
+  "number": "7.1.10",
+  "title": "",
+  "body": "  Suppose a pharmaceutical company claims that a new medication lowers mean blood pressure by mmHg on average. A researcher tests   If the statistical test leads the researcher to fail to reject and conclude that there is not enough evidence that the medication lowers blood pressure by less than mmHg, but in reality the true mean reduction is less than mmHg, what type of error has been made? Explain why.    A Type II error has been made.    This is a Type II error because the null hypothesis is actually false, but the test failed to reject it. In other words, the researcher did not detect that the medication was less effective than claimed, even though the true mean reduction in blood pressure was less than mmHg.   "
+},
+{
+  "id": "subsec-ErrorsHypothesis-12",
+  "level": "2",
+  "url": "sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis-12",
+  "type": "Checkpoint",
+  "number": "7.1.11",
+  "title": "",
+  "body": "  Suppose a public health agency claims that the proportion of adults in a city who receive a flu vaccine each year is . A researcher tests   If the statistical test leads the researcher to fail to reject and conclude that there is not enough evidence that the true proportion of vaccinated adults is less than , but in reality the true proportion is actually less than , what type of error has been made? Explain why.    A Type II error has been made.    This is a Type II error because the null hypothesis is actually false, but the test failed to reject it. In other words, the researcher did not detect that the true proportion of vaccinated adults was less than even though it really was.   "
+},
+{
+  "id": "sec-SingleMean",
+  "level": "1",
+  "url": "sec-SingleMean.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "t-test for the Mean",
+  "body": " t-test for the Mean   The one-sample -test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean.     At the end of this section you will be able to:     Write hypotheses for the mean.    Determine the test statistic and p-value for the t-test .    Write the conclusion of a test in context.      Understanding the Basics  The one-sample -test is used to test a claim about a population mean when the population standard deviation is unknown. The first step is to write the null and alternative hypotheses . In this test, we compare a sample mean to a hypothesized population mean by calculating a test statistic that measures how many standard errors the sample mean is from the hypothesized value.  The test statistic is computed as , where is the sample mean, is the hypothesized value, is the sample standard deviation, and is the sample size.  Because the population standard deviation is not known, the test statistic follows a t-distribution with degrees of freedom, provided the data come from a population that is approximately normal or the sample size is large enough. The resulting p-value helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.    A one-sample -test for a mean is a statistical method used to test a claim about a mean when the population standard deviation is unknown and the population is approximately normal. The formula for the t-test is with degrees of freedom .    When competing the t-test for the mean, we assume we have random sample from the population and that the sample is either grater than 30 or the population is normally distributed if the sample size is less than 30. We use the t -distribution because we do not know the population standard deviation.   Example: Hypothesis Test for the Mean Time Between Old Faithful Eruptions   A park researcher wants to determine whether the mean time between eruptions of Old Faithful in Yellowstone National Park is different from the claimed 90 minutes. A random sample of 20 waiting times, measured in minutes, is recorded below.   Waiting Times Between Old Faithful Eruptions (minutes)    82  88  91  95  87    93  89  84  96  90    85  92  94  86  89    91  88  97  83  90     At the significance level, test whether the true mean waiting time between eruptions is different from 90 minutes.   Hypotheses   The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses.    The parameter is the mean  The hypotheses are and .  Because the park ranger asks whether the mean is different from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value.     Assumptions   Identify which test to perform and check that we meet the conditions for that test.    Since the population standard deviation is unknown and we have a sample of 20, use a one-sample -test for the mean. Which tells we use the -distribution. If we graph the data we can see it is approximately bell shaped and symmetric.     Statistical Test   We need to compute the sample mean and sample standard deviation. Then we will calculate the test statistic and estimate the p-value for a two-tailed test    the mean is   the standard deviation is   sample size is and degrees of freedom is   Compute   The standard error is   The test statistic is   With 19 degrees of freedom, the two-tailed p-value is .     Decision   Make the decision to reject or not reject the null hypothesis by comparing the p-value with the level of significance     Since the p-value = 0.61 is greater than , we fail to reject the null hypothesis .     Conclusion   Now summarize the conclusion of the test by referring back to the alternative hypothesis.    There is not enough statistical evidence to conclude that the true mean time between Old Faithful eruptions is different from minutes.      Using Technology  Use TI83    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics. Click on Change Column to change variable names.   summary statistics   Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    summary    We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.   hypotheses   We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and      test value   What is the statistical test value?          p-value   Find the p-value for the statistical test value    p-value=0.013 with 19 df for left tail test     decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.013 is less than alpha (.05), we should reject Ho     conclusion   What is the conclusion?    Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.    We are going to investigate if the mean number of hurricanes in the Later Years is significantly more than the mean of 5.8 hurricanes per year.   hypotheses   We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and      test value   What is the statistical test value?          p-value   Find the p-value for the statistical test value    p-value=0.0086 with 19 df for a right tail test     decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.0086 is less than alpha (.05), we should reject Ho     conclusion   What is the conclusion?    Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.    Homework Problems   Change in Ocean pH   Scientists have long used a historical average surface ocean pH of about as a benchmark. Recent National Ocean and Atmospheric Administration (NOAA) summaries report that global surface ocean pH has decreased by about to units since the Industrial Revolution, suggesting modern ocean pH may now be lower on average.  A marine science team collects a random sample of recent surface-ocean pH measurements from one region and obtains a sample mean of and a sample standard deviation of .  At the significance level, test whether the true mean ocean pH in this region has changed from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Because the population standard deviation is unknown, use a one-sample -test for the mean.  For the question of whether the pH has changed , use a two-sided test:     Then compute       The hypotheses are and . The test statistic is with . The two-sided p-value is . Since the p-value is less than 0.05, we reject . Conclude there is significant evidence that the mean ocean pH in this region has changed from 8.    We test whether the population mean pH differs from the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown and the sample size is 16, we use a one-sample -test.  The standard error is   The test statistic is     The degrees of freedom are   A test statistic of with degrees of freedom gives a two-sided p-value  .  Since the p-value is less than the significance level , we reject the null hypothesis.  There is sufficient statistical evidence to conclude that the true mean ocean pH in this region has changed from the historical value of . Because the sample mean is lower than , the data suggests the change is a decrease in pH level.     Decreasing in Ocean pH   Scientists have historically used an average surface ocean pH of about as a benchmark. Recent NOAA summaries indicate that average surface ocean pH has decreased over time, motivating a test of whether the mean pH in a particular region is now lower than .  A marine science team collects a random sample of recent surface-ocean pH measurements from one coastal region:     At the significance level, test whether the true mean ocean pH in this region has decreased from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Use a one-sample -test for a population mean, since the population standard deviation is unknown.  For a one-sided test of decrease, use     Then compute the sample mean, sample standard deviation, and test statistic       The hypotheses are and . From the data, and . The test statistic is with . The p-value is effectively (far less than ), so we reject . There is strong evidence that the true mean ocean pH in this region has decreased below .    We want to test whether the population mean ocean pH is lower than the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown, we use a one-sample -test for the mean.  First compute the sample statistics from the data:        The sample size is , so the degrees of freedom are   The standard error is   The test statistic is   With , this gives a one-sided p-value that is extremely small, far below .  Therefore, we reject .  There is strong statistical evidence that the true mean ocean pH in this region has decreased below .     "
+},
+{
+  "id": "sec-SingleMean-3",
+  "level": "2",
+  "url": "sec-SingleMean.html#sec-SingleMean-3",
+  "type": "Objectives",
+  "number": "7.2",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Write hypotheses for the mean.    Determine the test statistic and p-value for the t-test .    Write the conclusion of a test in context.    "
+},
+{
+  "id": "subsec-SingleMean-2",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypotheses "
+},
+{
+  "id": "subsec-SingleMean-3",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "test statistic "
+},
+{
+  "id": "subsec-SingleMean-4",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "t-distribution p-value "
+},
+{
+  "id": "def-one-sample-t-test-mean",
+  "level": "2",
+  "url": "sec-SingleMean.html#def-one-sample-t-test-mean",
+  "type": "Definition",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  A one-sample -test for a mean is a statistical method used to test a claim about a mean when the population standard deviation is unknown and the population is approximately normal. The formula for the t-test is with degrees of freedom .   "
+},
+{
+  "id": "subsec-SingleMean-7",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: Hypothesis Test for the Mean Time Between Old Faithful Eruptions "
+},
+{
+  "id": "subsec-SingleMean-9",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-9",
+  "type": "Table",
+  "number": "7.2.2",
+  "title": "Waiting Times Between Old Faithful Eruptions (minutes)",
+  "body": " Waiting Times Between Old Faithful Eruptions (minutes)    82  88  91  95  87    93  89  84  96  90    85  92  94  86  89    91  88  97  83  90    "
+},
+{
+  "id": "subsec-SingleMean-11",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-11",
+  "type": "Example",
+  "number": "7.2.3",
+  "title": "Hypotheses.",
+  "body": " Hypotheses   The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses.    The parameter is the mean  The hypotheses are and .  Because the park ranger asks whether the mean is different from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value.   "
+},
+{
+  "id": "subsec-SingleMean-12",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-12",
+  "type": "Example",
+  "number": "7.2.4",
+  "title": "Assumptions.",
+  "body": " Assumptions   Identify which test to perform and check that we meet the conditions for that test.    Since the population standard deviation is unknown and we have a sample of 20, use a one-sample -test for the mean. Which tells we use the -distribution. If we graph the data we can see it is approximately bell shaped and symmetric.   "
+},
+{
+  "id": "subsec-SingleMean-13",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-13",
+  "type": "Example",
+  "number": "7.2.5",
+  "title": "Statistical Test.",
+  "body": " Statistical Test   We need to compute the sample mean and sample standard deviation. Then we will calculate the test statistic and estimate the p-value for a two-tailed test    the mean is   the standard deviation is   sample size is and degrees of freedom is   Compute   The standard error is   The test statistic is   With 19 degrees of freedom, the two-tailed p-value is .   "
+},
+{
+  "id": "subsec-SingleMean-14",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-14",
+  "type": "Example",
+  "number": "7.2.6",
+  "title": "Decision.",
+  "body": " Decision   Make the decision to reject or not reject the null hypothesis by comparing the p-value with the level of significance     Since the p-value = 0.61 is greater than , we fail to reject the null hypothesis .   "
+},
+{
+  "id": "subsec-SingleMean-15",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMean-15",
+  "type": "Example",
+  "number": "7.2.7",
+  "title": "Conclusion.",
+  "body": " Conclusion   Now summarize the conclusion of the test by referring back to the alternative hypothesis.    There is not enough statistical evidence to conclude that the true mean time between Old Faithful eruptions is different from minutes.   "
+},
+{
+  "id": "subsec-SingleMeanPractice-3",
+  "level": "2",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "One Quantitative Variable "
 },
 {
-  "id": "subsec-SinglemeanPractice-4",
+  "id": "subsec-SingleMeanPractice-4",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-4",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-4",
   "type": "Checkpoint",
-  "number": "7.1.1",
+  "number": "7.2.8",
   "title": "summary statistics.",
-  "body": " summary statistics  Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.   summary   "
+  "body": " summary statistics   Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    summary   "
 },
 {
-  "id": "subsec-SinglemeanPractice-6",
+  "id": "subsec-SingleMeanPractice-6",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-6",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-6",
   "type": "Checkpoint",
-  "number": "7.1.2",
+  "number": "7.2.9",
   "title": "hypotheses.",
-  "body": " hypotheses  We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?    and    "
+  "body": " hypotheses   We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and    "
 },
 {
-  "id": "subsec-SinglemeanPractice-7",
+  "id": "subsec-SingleMeanPractice-7",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-7",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-7",
   "type": "Checkpoint",
-  "number": "7.1.3",
+  "number": "7.2.10",
   "title": "test value.",
-  "body": " test value  What is the statistical test value?       "
+  "body": " test value   What is the statistical test value?        "
 },
 {
-  "id": "subsec-SinglemeanPractice-8",
+  "id": "subsec-SingleMeanPractice-8",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-8",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-8",
   "type": "Checkpoint",
-  "number": "7.1.4",
+  "number": "7.2.11",
   "title": "p-value.",
-  "body": " p-value  Find the p-value for the statistical test value   p-value=0.013 with 19 df for left tail test   "
+  "body": " p-value   Find the p-value for the statistical test value    p-value=0.013 with 19 df for left tail test   "
 },
 {
-  "id": "subsec-SinglemeanPractice-9",
+  "id": "subsec-SingleMeanPractice-9",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-9",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-9",
   "type": "Checkpoint",
-  "number": "7.1.5",
+  "number": "7.2.12",
   "title": "decision.",
-  "body": " decision  Based the p-value, should your reject or not reject the null hypothesis?   since p-value 0.013 is less than alpha (.05), we should reject Ho   "
+  "body": " decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.013 is less than alpha (.05), we should reject Ho   "
 },
 {
-  "id": "subsec-SinglemeanPractice-10",
+  "id": "subsec-SingleMeanPractice-10",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-10",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-10",
   "type": "Checkpoint",
-  "number": "7.1.6",
+  "number": "7.2.13",
   "title": "conclusion.",
-  "body": " conclusion  What is the conclusion?   Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.   "
+  "body": " conclusion   What is the conclusion?    Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.   "
 },
 {
-  "id": "subsec-SinglemeanPractice-12",
+  "id": "subsec-SingleMeanPractice-12",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-12",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-12",
   "type": "Checkpoint",
-  "number": "7.1.7",
+  "number": "7.2.14",
   "title": "hypotheses.",
-  "body": " hypotheses  We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?    and    "
+  "body": " hypotheses   We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and    "
 },
 {
-  "id": "subsec-SinglemeanPractice-13",
+  "id": "subsec-SingleMeanPractice-13",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-13",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-13",
   "type": "Checkpoint",
-  "number": "7.1.8",
+  "number": "7.2.15",
   "title": "test value.",
-  "body": " test value  What is the statistical test value?       "
+  "body": " test value   What is the statistical test value?        "
 },
 {
-  "id": "subsec-SinglemeanPractice-14",
+  "id": "subsec-SingleMeanPractice-14",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-14",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-14",
   "type": "Checkpoint",
-  "number": "7.1.9",
+  "number": "7.2.16",
   "title": "p-value.",
-  "body": " p-value  Find the p-value for the statistical test value   p-value=0.0086 with 19 df for a right tail test   "
+  "body": " p-value   Find the p-value for the statistical test value    p-value=0.0086 with 19 df for a right tail test   "
 },
 {
-  "id": "subsec-SinglemeanPractice-15",
+  "id": "subsec-SingleMeanPractice-15",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-15",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-15",
   "type": "Checkpoint",
-  "number": "7.1.10",
+  "number": "7.2.17",
   "title": "decision.",
-  "body": " decision  Based the p-value, should your reject or not reject the null hypothesis?   since p-value 0.0086 is less than alpha (.05), we should reject Ho   "
+  "body": " decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.0086 is less than alpha (.05), we should reject Ho   "
 },
 {
-  "id": "subsec-SinglemeanPractice-16",
+  "id": "subsec-SingleMeanPractice-16",
   "level": "2",
-  "url": "sec-SingleMean.ptx.html#subsec-SinglemeanPractice-16",
+  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-16",
   "type": "Checkpoint",
-  "number": "7.1.11",
+  "number": "7.2.18",
   "title": "conclusion.",
-  "body": " conclusion  What is the conclusion?   Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.   "
+  "body": " conclusion   What is the conclusion?    Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.   "
 },
 {
-  "id": "sec-SingleProportion.ptx",
+  "id": "oceanpH-hypothesis-test",
+  "level": "2",
+  "url": "sec-SingleMean.html#oceanpH-hypothesis-test",
+  "type": "Checkpoint",
+  "number": "7.2.19",
+  "title": "Change in Ocean pH.",
+  "body": " Change in Ocean pH   Scientists have long used a historical average surface ocean pH of about as a benchmark. Recent National Ocean and Atmospheric Administration (NOAA) summaries report that global surface ocean pH has decreased by about to units since the Industrial Revolution, suggesting modern ocean pH may now be lower on average.  A marine science team collects a random sample of recent surface-ocean pH measurements from one region and obtains a sample mean of and a sample standard deviation of .  At the significance level, test whether the true mean ocean pH in this region has changed from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Because the population standard deviation is unknown, use a one-sample -test for the mean.  For the question of whether the pH has changed , use a two-sided test:     Then compute       The hypotheses are and . The test statistic is with . The two-sided p-value is . Since the p-value is less than 0.05, we reject . Conclude there is significant evidence that the mean ocean pH in this region has changed from 8.    We test whether the population mean pH differs from the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown and the sample size is 16, we use a one-sample -test.  The standard error is   The test statistic is     The degrees of freedom are   A test statistic of with degrees of freedom gives a two-sided p-value  .  Since the p-value is less than the significance level , we reject the null hypothesis.  There is sufficient statistical evidence to conclude that the true mean ocean pH in this region has changed from the historical value of . Because the sample mean is lower than , the data suggests the change is a decrease in pH level.   "
+},
+{
+  "id": "oceanDecph-hypothesis-test",
+  "level": "2",
+  "url": "sec-SingleMean.html#oceanDecph-hypothesis-test",
+  "type": "Checkpoint",
+  "number": "7.2.20",
+  "title": "Decreasing in Ocean pH.",
+  "body": " Decreasing in Ocean pH   Scientists have historically used an average surface ocean pH of about as a benchmark. Recent NOAA summaries indicate that average surface ocean pH has decreased over time, motivating a test of whether the mean pH in a particular region is now lower than .  A marine science team collects a random sample of recent surface-ocean pH measurements from one coastal region:     At the significance level, test whether the true mean ocean pH in this region has decreased from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Use a one-sample -test for a population mean, since the population standard deviation is unknown.  For a one-sided test of decrease, use     Then compute the sample mean, sample standard deviation, and test statistic       The hypotheses are and . From the data, and . The test statistic is with . The p-value is effectively (far less than ), so we reject . There is strong evidence that the true mean ocean pH in this region has decreased below .    We want to test whether the population mean ocean pH is lower than the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown, we use a one-sample -test for the mean.  First compute the sample statistics from the data:        The sample size is , so the degrees of freedom are   The standard error is   The test statistic is   With , this gives a one-sided p-value that is extremely small, far below .  Therefore, we reject .  There is strong statistical evidence that the true mean ocean pH in this region has decreased below .   "
+},
+{
+  "id": "sec-SingleProportion",
   "level": "1",
-  "url": "sec-SingleProportion.ptx.html",
+  "url": "sec-SingleProportion.html",
   "type": "Section",
-  "number": "7.2",
+  "number": "7.3",
   "title": "z-test for Proportions",
   "body": " z-test for Proportions  Text of section.  "
 },
 {
-  "id": "sec-SingleVariance.ptx",
+  "id": "sec-SingleVariance",
   "level": "1",
-  "url": "sec-SingleVariance.ptx.html",
+  "url": "sec-SingleVariance.html",
   "type": "Section",
-  "number": "7.3",
+  "number": "7.4",
   "title": "Chi-Square test for Variance",
   "body": " Chi-Square test for Variance  Text of section.  "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx",
+  "id": "sec-UrbanHeatStudy",
   "level": "1",
-  "url": "sec-UrbanHeatStudy.ptx.html",
+  "url": "sec-UrbanHeatStudy.html",
   "type": "Section",
-  "number": "7.4",
+  "number": "7.5",
   "title": "Urban Heat Study",
   "body": " Urban Heat Study  Text of section.  Urban-Suburban Temperature Investigation  The phenomenon known as the urban heat island (UHI) effect suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth. The following tasks analyze climatological data from the summer 2024.   NASA:Urban heat Islands     CBS Bews: Cities on Fire: The Urban Heat Island Effect    Available Data   NOAA Regional Climate Centers ( https:\/\/scacis.rcc-acis.org\/ ) provides climatological data from stations across the United States. The following information is available from many of the stations:  Temperature    Date: The specific day of the observation.    MaxTemperature: The highest air temperature recorded during a 24-hour period.    MinTemperature: The lowest air temperature recorded during a 24-hour period.    AvgTemperature: The average of the maximum and minimum temperatures for a day.    AvgTemperatureDeparture: The difference between the observed average temperature and a long-term average (typically a 30-year period), indicating how much warmer or cooler the day was compared to the norm.    Degree Day    HDD (Heating Degree Days): A measure of how much (in degrees) and for how long (in days) the outside air temperature was below a certain base temperature (commonly 65°F). It's used to estimate the energy needed for heating.    CDD (Cooling Degree Days): A measure of how much (in degrees) and for how long (in days) the outside air temperature was above a certain base temperature (commonly 65°F). It's used to estimate the energy needed for cooling.    Precipitation and Snow    Precipitation: The total amount of water (in liquid equivalent) that has fallen, including rain, snow, sleet, and hail.    Snowfall: The total amount of snow that has fallen, typically measured in inches.    SnowDepth: The depth of the snow on the ground at a specific time, measured in inches.     Data Organization  The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available:   MetroDenver.csv    Urban Heat Data   Image of datafile showing 15 cities.     Interpretation Questions From Data Table    Rows  Describe what each row represents and describe it in context.  Each row is called a case. It is the information from the climate station for the specific day (the first through the fifteenth) in August 2024.    Columns  Describe what each column represents.  Each column represents a variable. Each column is a measurement of temperature, degree days, and precipitation at the climate station.    Variable  For the column labeled “Den_MaxTemperature”, describe the data values in context, the type of data collected, and determine all the possible data values.  It is the highest air temperature recorded during a 24-hour period in Denver, CO. The variable is quantitative since numerical data. The continuous temperatures appear to be rounded to the nearest integer between 67 and 100 degrees Fahrenheit.    Commonalities  Determine one thing in common for the dates when the high temperature in Denver was 100°F.  Minimum temperatures in the 60s, average temperatures in the 80s, highest average temperature departures, zero HDD, highest CDD values, and zero snow-related values.     Differences  Determine one thing that was different for the dates when the high temperature in Denver was 100°F.  One day had measurable precipitation while the other did not.     Data Display  How would a climatologist characterize the high temperatures of Denver, Colorado, in summer 2024?   StatKey Applet iframe    The following histogram presents that high temperatures from June 1 to August 31, 2024, at the Denver Water Department near downtown Denver.   Denver High Temperatures   Shows daily high temperature with most values between 85 and 100 with a few lower temps down to 65F.     Shape  Describe the shape of the dataset in context.   The high temperatures of Denver in summer 2024 were skewed left.    Center  StatKey reports the mean as 90.78. Interpret it in context.  Typical high temperature at the Denver station was 90.78°F in summer 2024.    Spread  StatKey reports the standard deviation as 6.47. Interpret it in context.   The standard deviation is a measure of spread. According to the 95% rule, we would expect approximately 95% of the temperatures in Denver in summer 2024 to be within 2 standard deviations (2*6.47 = 12.94) of the mean. Because the dataset is skewed left, the 95% rule might not apply as well as it does when the dataset is bell-shaped.      Association Between Variables  The climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado. The complete dataset is available (MetroDenver_Temperatures.csv).  One preliminary way to determine if UHI effect exists is to decide if there is a visual association between location (urban or suburban) and high temperature.  The graph below shows the boxplot of high temperatures at the two Metro Denver climate stations.   Comparing Heat Boxplot   comparing heat temperatures between Denver and Centennial.     Outliers  Identify any outliers in the dataset. State each outlier value and its corresponding station location.   There was one outlier temperature for each climate station represented by the asterisk. Denver had a lower outlier temperature of 67F. Centennial had a lower outlier temperature of 64F.     Medians  Estimate the median temperature values of the two datasets and compare them in context.   In summer 2024, the median high temperature for Denver was 91.5 F while the median high temperature for Centennial was 88 F, suggesting that the typical urban high temperature was 6.5 F higher than the typical suburban high temperature at the two locations.     IQR  Estimate the interquartile ranges (IQRs) of the two datasets and compare them in context.   In summer 2024, the IQR for Denver was 96-87 = 9 F and for Centennial was 93 – 85 = 8 F, suggesting that the spread of the middle 50% of the values of the temperatures was similar for both locations.     Association  Based on the boxplot, is there an association between the high temperatures between Denver and Centennial? Explain your thinking.   An association exists between a categorical variable (location) and a numerical variable (high temperature), if the difference between the measures of center in relation to the measure of spread distinguishes the two datasets.  The difference between the two medians was 6.5 F. The IQRs of the high temperatures of the two locations was about 8.5 F. The proportion of the difference of center to spread was 0.76. There is some visual evidence to suggest that high temperature is associated with location since the box for Denver is shifted farther to the right. Later we will determine this numerically with hypothesis testing.      Study Type  The phenomenon known as the urban heat island (UHI) effect suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth.   Study 1  A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado.  Answer the following questions regarding Study 1.   Sample  Identify the sample. Is the sample representative of the population? Briefly explain.   The sample is the temperatures at the two climate stations in the Denver metro area during the summer 2024. The sample is representative of recent summer high temperatures in the Denver metro area.     Variables  Identify the variables and classify as explanatory or response. Describe what type of variable each is.   The explanatory variable is the location (urban versus nearby suburban), thus categorical or qualitative. The response variable is high temperature (measured in degrees Fahrenheit), thus numeric or quantitative.     Study Design  What research design did the climatologist use to answer the research question? Briefly explain.   The study is a matched pair design. The climatologist obtained the data at two climate stations in the same metro area on the same days in summer 2024.  This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in the Denver metro area on the same days in summer 2024.     Causation  If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.   Because the study is an observational study, any association may not be concluded as causation. There may be confounding variables unaccounted for in the study that affect the high temperatures of the urban and suburban stations other than the UHI effect. For example, Denver is near the Rocky Mountain range; geographical phenomena may influence the temperatures at the stations rather than the UHI effect.     Study 2   A climatologist obtained a list of 20 most urban areas\/cities in the United States. Using the map of climate stations from the NOAA Regional Climate Centers (https:\/\/scacis.rcc-acis.org\/), the climatologist selected an urban station near the center of the city. Next, the climatologist zoomed out from the selected urban station to find a nearby suburban station. In most cases, the climatologist selected the nearest station that recorded the same climatological data located just outside the city’s loop or beltway (i.e., the large, controlled-access highway that encircles a city). The following is a table of the metro areas and the climate stations selected by the climatologist.  Table of cities   Sample  Identify the sample. Is the sample representative of the population? Briefly explain.   The sample is the temperatures at the two climate stations in 20 most populated metro areas in the US in August 2024. The sample is representative of recent summer high temperatures of urban and suburban locations in metro areas in the US.     Variables  Identify the variables and classify as explanatory or response. Describe what type of variable each is.   The explanatory variable is the location (urban versus nearby suburban) which is categorical. The response variable is high temperature (measured in degrees Fahrenheit) which is numerical.     Study Design  What research design did the climatologist use to answer the research question? Briefly explain.   The study is a matched pair design. The climatologist obtained data on the same day in August 2024 for climate stations of 20 metro areas. Thus, the data for each day is paired by location. This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in 20 metro areas.     Causation  If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.   Because the study is an observational study, any association may not be concluded as causation. However, given the diverse locations of the 20 urban areas, a single confounding variable consistent among the metro areas is less likely than selecting the high temperatures at a single urban area.      Estimating with Bootstrapping  A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado.  The climatologist wanted to infer the true difference in high temperatures during the summer between the two stations. So, he calculated the difference in high temperatures between the Denver station and the Centennial station each day. The original sample displays a dotplot of the temperature differences. The bootstrap sample displays one dotplot generated by StatKey.   Bootstrap Samples   original sample and a bootstrap sample.     Bootstrap Sample  Explain how StatKey obtained the Bootstrap Sample.   A bootstrap sample is randomly generated from the original sample with replacement with the same sample size as the original. That is, 92 values from the original sample were randomly selected with replacement to form the bootstrap sample. The bootstrap sample statistic is the mean of 4.5 as the average difference in temperature for the sample.    The dotplot below is a bootstrap distribution of the difference in high temperatures from StatKey based on the high temperature data recorded in summer 2024 (the original sample).   Bootstrap Distribution of 1000 samples   Bootstrap Distribution of 1000 samples.    Answer the following using the Bootstrap distribution.   Bootstrap Dotplot  Identify on the dotplot the relevant value obtained from the bootstrap sample. Briefly explain what you indicated.   There is a single dot for the value of 4.5 in the dotplot. It is the mean of the given bootstrap sample from above. Recall that each dot represents the mean from a bootstrap sample. The bootstrap distribution shows 1000 samples with each sample of 92 values of the difference in temperature.     Standard Error  State the standard error for the bootstrap distribution.   The dotplot states that the standard error is 0.631, which measures the spread in the distribution from the mean.     Margin of Error  Determine the margin of error for a 95% confidence interval for the mean difference of high temperatures.   The margin of error using the 95% Rule is 2 times the standard error, thus 2(0.631) = 1.262. The margin of error is how precise the value of 2.783 (the sample mean difference) is as an estimate for the typical mean difference of high temperatures between the Denver and Centennial climate stations.     Interval  Use the bootstrap distribution to compute a 95% confidence interval for the actual mean difference of high temperatures between the Denver and Centennial climate stations. Round values to three decimal places.   Using the 95% Rule,  Lower bound:  Upper bound:  The 95% confidence interval is (1.521, 4.045).  We are 95% confident that the true mean difference of high temperatures between the Denver and Centennial climate stations is between 1.521 F and 4.045 F.  We are 95% confident that the actual high temperature at the Denver climate stations is on average between 1.521 F and 4.045 F hotter than at the Centennial climate station during the summer months.      Using Randomization Samples  A climatologist collected the data at three stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The following is a summary of the clinical stations:    Denver Water Department near downtown Denver (urban station)    Denver Centennial Airport in Centennial, southeast of downtown Denver (suburban station)    Lakewood, a suburb west of downtown Denver (suburban station)    The climatologist wanted to test whether there were any statistical differences in high temperatures of the three climate stations during summer months. So, he calculated the difference in high temperatures between each pair of stations: Denver–Centennial, Denver–Lakewood, and Centennial–Lakewood.   Study 1   In the first study, the climatologist wanted to decide using statistical analysis if the UHI effect was statistically credible. He examined the differences in high temperatures between two climate stations - one urban and one suburban in the Denver metro area - to test the claim that there is a statistical difference that we would expect if there were a UHI effect.  The original sample displays a dotplot of the differences between the high temperatures of the Denver and Centennial stations. The randomization sample displays one dotplot generated by StatKey.   Randomization Sample   original sample and a randomized sample.     Randomized Sample  Explain how StatKey obtained the Randomization Sample.   A randomization sample for paired data is obtained when we assume that there is no difference between the Denver and Centennial high temperatures, thus the population mean of the differences is zero. So, the center of the randomization dotplot should be centered at the null value of 0. The standard error of the randomization dotplot should be equal to the sampling distribution using the original sample and generating random samples of size 92.  StatKey generates the Randomization Sample by randomly selecting 92 values from the original sample with replacement, into two groups and finds the difference between each pair, so that the randomization sample is centered at 0.     Dotplot  Identify on the dotplot the relevant value obtained from the randomization sample. Briefly explain what you indicated.   The mean of the randomization sample is 1.5. The red dot displays the mean of the randomization sample on the distribution below. Each dot in the distribution below is the average difference between the two randomized groups    Below is a randomization distribution from StatKey based on the climatologist’s claim for 2000 samples.   Randomization Distribution   Randomized distribution of 2000 samples centered at zero.     Hypotheses  Write the null and alternative hypotheses for the climatologist's claim.   Let be the population mean of the difference in the paired high temperatures between the Denver and Centennial stations. Then, the hypotheses are: and      Sample statistic  d. What is the observed sample statistic of the original sample? Estimate where to plot this observed statistic on the randomization dotplot.   The mean of the sample data is . However, the value 2.783 is too far to the right of the maximum value on the randomization dotplot to be identified on the graph. Thus it is unlikely to occur by random chance     p-value  Estimate and interpret the p-value using the randomization distribution.   None of the 2000 random samples were greater than or equal to the sample statistic 2.783. So, the p-value = 0\/2000 = 0.  When we assume that there is no difference in the high temperatures between the Denver and Centennial stations, the chance of getting the mean difference of 2.783 is near zero, thus highly unlikely to occur if the null hypothesis true. This indicates that the difference is statistically significant.     Conclusion  Based on the climatologist's results, what decision and what conclusion would the climatologist make for their investigation assuming α=0.05? Explain your answer.   It is very unlikely that we would get a mean difference of 2.783 by chance if the actual difference was 0. It is much less than the confidence level α=0.05. So, we would reject the assumption that there is no difference between the high temperatures at the Denver and Centennial stations. There is evidence that there is a statistical difference between the high temperatures at the urban and suburban stations, and the average high temperature at the urban station was greater than the average high temperature at the suburban station.     "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx-3",
+  "id": "sec-UrbanHeatStudy-3",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#sec-UrbanHeatStudy.ptx-3",
+  "url": "sec-UrbanHeatStudy.html#sec-UrbanHeatStudy-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Urban-Suburban Temperature Investigation "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx-5",
+  "id": "sec-UrbanHeatStudy-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#sec-UrbanHeatStudy.ptx-5",
+  "url": "sec-UrbanHeatStudy.html#sec-UrbanHeatStudy-5",
   "type": "Figure",
-  "number": "7.4.1",
+  "number": "7.5.1",
   "title": "",
   "body": " NASA:Urban heat Islands   "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx-6",
+  "id": "sec-UrbanHeatStudy-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#sec-UrbanHeatStudy.ptx-6",
+  "url": "sec-UrbanHeatStudy.html#sec-UrbanHeatStudy-6",
   "type": "Figure",
-  "number": "7.4.2",
+  "number": "7.5.2",
   "title": "",
   "body": " CBS Bews: Cities on Fire: The Urban Heat Island Effect   "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx-7",
+  "id": "sec-UrbanHeatStudy-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#sec-UrbanHeatStudy.ptx-7",
+  "url": "sec-UrbanHeatStudy.html#sec-UrbanHeatStudy-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Available Data "
 },
 {
-  "id": "UrbanHeat",
+  "id": "UrbanHeat1",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeat",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeat1",
   "type": "Figure",
-  "number": "7.4.3",
+  "number": "7.5.3",
   "title": "",
   "body": " Urban Heat Data   Image of datafile showing 15 cities.   "
 },
 {
   "id": "subsec-UrbanHeatDatatable-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6150,142 +6537,142 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDatatable-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-6",
   "type": "Checkpoint",
-  "number": "7.4.4",
+  "number": "7.5.4",
   "title": "Rows.",
   "body": " Rows  Describe what each row represents and describe it in context.  Each row is called a case. It is the information from the climate station for the specific day (the first through the fifteenth) in August 2024.  "
 },
 {
   "id": "subsec-UrbanHeatDatatable-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-7",
   "type": "Checkpoint",
-  "number": "7.4.5",
+  "number": "7.5.5",
   "title": "Columns.",
   "body": " Columns  Describe what each column represents.  Each column represents a variable. Each column is a measurement of temperature, degree days, and precipitation at the climate station.  "
 },
 {
   "id": "subsec-UrbanHeatDatatable-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-8",
   "type": "Checkpoint",
-  "number": "7.4.6",
+  "number": "7.5.6",
   "title": "Variable.",
   "body": " Variable  For the column labeled “Den_MaxTemperature”, describe the data values in context, the type of data collected, and determine all the possible data values.  It is the highest air temperature recorded during a 24-hour period in Denver, CO. The variable is quantitative since numerical data. The continuous temperatures appear to be rounded to the nearest integer between 67 and 100 degrees Fahrenheit.  "
 },
 {
   "id": "subsec-UrbanHeatDatatable-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-9",
   "type": "Checkpoint",
-  "number": "7.4.7",
+  "number": "7.5.7",
   "title": "Commonalities.",
   "body": " Commonalities  Determine one thing in common for the dates when the high temperature in Denver was 100°F.  Minimum temperatures in the 60s, average temperatures in the 80s, highest average temperature departures, zero HDD, highest CDD values, and zero snow-related values.   "
 },
 {
   "id": "subsec-UrbanHeatDatatable-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-10",
   "type": "Checkpoint",
-  "number": "7.4.8",
+  "number": "7.5.8",
   "title": "Differences.",
   "body": " Differences  Determine one thing that was different for the dates when the high temperature in Denver was 100°F.  One day had measurable precipitation while the other did not.  "
 },
 {
   "id": "subsec-UrbanHeatDisplay-3",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay-3",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay-3",
   "type": "Figure",
-  "number": "7.4.9",
+  "number": "7.5.9",
   "title": "",
   "body": " StatKey Applet iframe   "
 },
 {
   "id": "UrbanHeatHisto",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatHisto",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatHisto",
   "type": "Figure",
-  "number": "7.4.10",
+  "number": "7.5.10",
   "title": "",
   "body": " Denver High Temperatures   Shows daily high temperature with most values between 85 and 100 with a few lower temps down to 65F.   "
 },
 {
   "id": "subsec-UrbanHeatDisplay-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay-6",
   "type": "Checkpoint",
-  "number": "7.4.11",
+  "number": "7.5.11",
   "title": "Shape.",
   "body": " Shape  Describe the shape of the dataset in context.   The high temperatures of Denver in summer 2024 were skewed left.  "
 },
 {
   "id": "subsec-UrbanHeatDisplay-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay-7",
   "type": "Checkpoint",
-  "number": "7.4.12",
+  "number": "7.5.12",
   "title": "Center.",
   "body": " Center  StatKey reports the mean as 90.78. Interpret it in context.  Typical high temperature at the Denver station was 90.78°F in summer 2024.  "
 },
 {
   "id": "subsec-UrbanHeatDisplay-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay-8",
   "type": "Checkpoint",
-  "number": "7.4.13",
+  "number": "7.5.13",
   "title": "Spread.",
   "body": " Spread  StatKey reports the standard deviation as 6.47. Interpret it in context.   The standard deviation is a measure of spread. According to the 95% rule, we would expect approximately 95% of the temperatures in Denver in summer 2024 to be within 2 standard deviations (2*6.47 = 12.94) of the mean. Because the dataset is skewed left, the 95% rule might not apply as well as it does when the dataset is bell-shaped.   "
 },
 {
   "id": "UrbanHeatBox",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatBox",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatBox",
   "type": "Figure",
-  "number": "7.4.14",
+  "number": "7.5.14",
   "title": "",
   "body": " Comparing Heat Boxplot   comparing heat temperatures between Denver and Centennial.   "
 },
 {
   "id": "subsec-UrbanHeatAssociation-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-6",
   "type": "Checkpoint",
-  "number": "7.4.15",
+  "number": "7.5.15",
   "title": "Outliers.",
   "body": " Outliers  Identify any outliers in the dataset. State each outlier value and its corresponding station location.   There was one outlier temperature for each climate station represented by the asterisk. Denver had a lower outlier temperature of 67F. Centennial had a lower outlier temperature of 64F.   "
 },
 {
   "id": "subsec-UrbanHeatAssociation-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-7",
   "type": "Checkpoint",
-  "number": "7.4.16",
+  "number": "7.5.16",
   "title": "Medians.",
   "body": " Medians  Estimate the median temperature values of the two datasets and compare them in context.   In summer 2024, the median high temperature for Denver was 91.5 F while the median high temperature for Centennial was 88 F, suggesting that the typical urban high temperature was 6.5 F higher than the typical suburban high temperature at the two locations.   "
 },
 {
   "id": "subsec-UrbanHeatAssociation-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-8",
   "type": "Checkpoint",
-  "number": "7.4.17",
+  "number": "7.5.17",
   "title": "IQR.",
   "body": " IQR  Estimate the interquartile ranges (IQRs) of the two datasets and compare them in context.   In summer 2024, the IQR for Denver was 96-87 = 9 F and for Centennial was 93 – 85 = 8 F, suggesting that the spread of the middle 50% of the values of the temperatures was similar for both locations.   "
 },
 {
   "id": "subsec-UrbanHeatAssociation-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-9",
   "type": "Checkpoint",
-  "number": "7.4.18",
+  "number": "7.5.18",
   "title": "Association.",
   "body": " Association  Based on the boxplot, is there an association between the high temperatures between Denver and Centennial? Explain your thinking.   An association exists between a categorical variable (location) and a numerical variable (high temperature), if the difference between the measures of center in relation to the measure of spread distinguishes the two datasets.  The difference between the two medians was 6.5 F. The IQRs of the high temperatures of the two locations was about 8.5 F. The proportion of the difference of center to spread was 0.76. There is some visual evidence to suggest that high temperature is associated with location since the box for Denver is shifted farther to the right. Later we will determine this numerically with hypothesis testing.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-2",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-2",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6294,7 +6681,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-3",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-3",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6303,43 +6690,43 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-6",
   "type": "Checkpoint",
-  "number": "7.4.19",
+  "number": "7.5.19",
   "title": "Sample.",
   "body": " Sample  Identify the sample. Is the sample representative of the population? Briefly explain.   The sample is the temperatures at the two climate stations in the Denver metro area during the summer 2024. The sample is representative of recent summer high temperatures in the Denver metro area.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-7",
   "type": "Checkpoint",
-  "number": "7.4.20",
+  "number": "7.5.20",
   "title": "Variables.",
   "body": " Variables  Identify the variables and classify as explanatory or response. Describe what type of variable each is.   The explanatory variable is the location (urban versus nearby suburban), thus categorical or qualitative. The response variable is high temperature (measured in degrees Fahrenheit), thus numeric or quantitative.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-8",
   "type": "Checkpoint",
-  "number": "7.4.21",
+  "number": "7.5.21",
   "title": "Study Design.",
   "body": " Study Design  What research design did the climatologist use to answer the research question? Briefly explain.   The study is a matched pair design. The climatologist obtained the data at two climate stations in the same metro area on the same days in summer 2024.  This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in the Denver metro area on the same days in summer 2024.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-9",
   "type": "Checkpoint",
-  "number": "7.4.22",
+  "number": "7.5.22",
   "title": "Causation.",
   "body": " Causation  If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.   Because the study is an observational study, any association may not be concluded as causation. There may be confounding variables unaccounted for in the study that affect the high temperatures of the urban and suburban stations other than the UHI effect. For example, Denver is near the Rocky Mountain range; geographical phenomena may influence the temperatures at the stations rather than the UHI effect.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6348,106 +6735,106 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-13",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-13",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-13",
   "type": "Checkpoint",
-  "number": "7.4.23",
+  "number": "7.5.23",
   "title": "Sample.",
   "body": " Sample  Identify the sample. Is the sample representative of the population? Briefly explain.   The sample is the temperatures at the two climate stations in 20 most populated metro areas in the US in August 2024. The sample is representative of recent summer high temperatures of urban and suburban locations in metro areas in the US.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-14",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-14",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-14",
   "type": "Checkpoint",
-  "number": "7.4.24",
+  "number": "7.5.24",
   "title": "Variables.",
   "body": " Variables  Identify the variables and classify as explanatory or response. Describe what type of variable each is.   The explanatory variable is the location (urban versus nearby suburban) which is categorical. The response variable is high temperature (measured in degrees Fahrenheit) which is numerical.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-15",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-15",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-15",
   "type": "Checkpoint",
-  "number": "7.4.25",
+  "number": "7.5.25",
   "title": "Study Design.",
   "body": " Study Design  What research design did the climatologist use to answer the research question? Briefly explain.   The study is a matched pair design. The climatologist obtained data on the same day in August 2024 for climate stations of 20 metro areas. Thus, the data for each day is paired by location. This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in 20 metro areas.   "
 },
 {
   "id": "subsec-UrbanHeatStudyType-16",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-16",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-16",
   "type": "Checkpoint",
-  "number": "7.4.26",
+  "number": "7.5.26",
   "title": "Causation.",
   "body": " Causation  If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.   Because the study is an observational study, any association may not be concluded as causation. However, given the diverse locations of the 20 urban areas, a single confounding variable consistent among the metro areas is less likely than selecting the high temperatures at a single urban area.   "
 },
 {
   "id": "UrbanHeatBoot1",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatBoot1",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatBoot1",
   "type": "Figure",
-  "number": "7.4.27",
+  "number": "7.5.27",
   "title": "",
   "body": " Bootstrap Samples   original sample and a bootstrap sample.   "
 },
 {
   "id": "subsec-UrbanHeatBootstrap-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-5",
   "type": "Checkpoint",
-  "number": "7.4.28",
+  "number": "7.5.28",
   "title": "Bootstrap Sample.",
   "body": " Bootstrap Sample  Explain how StatKey obtained the Bootstrap Sample.   A bootstrap sample is randomly generated from the original sample with replacement with the same sample size as the original. That is, 92 values from the original sample were randomly selected with replacement to form the bootstrap sample. The bootstrap sample statistic is the mean of 4.5 as the average difference in temperature for the sample.   "
 },
 {
   "id": "UrbanHeatBoot2",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatBoot2",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatBoot2",
   "type": "Figure",
-  "number": "7.4.29",
+  "number": "7.5.29",
   "title": "",
   "body": " Bootstrap Distribution of 1000 samples   Bootstrap Distribution of 1000 samples.   "
 },
 {
   "id": "subsec-UrbanHeatBootstrap-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-9",
   "type": "Checkpoint",
-  "number": "7.4.30",
+  "number": "7.5.30",
   "title": "Bootstrap Dotplot.",
   "body": " Bootstrap Dotplot  Identify on the dotplot the relevant value obtained from the bootstrap sample. Briefly explain what you indicated.   There is a single dot for the value of 4.5 in the dotplot. It is the mean of the given bootstrap sample from above. Recall that each dot represents the mean from a bootstrap sample. The bootstrap distribution shows 1000 samples with each sample of 92 values of the difference in temperature.   "
 },
 {
   "id": "subsec-UrbanHeatBootstrap-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-10",
   "type": "Checkpoint",
-  "number": "7.4.31",
+  "number": "7.5.31",
   "title": "Standard Error.",
   "body": " Standard Error  State the standard error for the bootstrap distribution.   The dotplot states that the standard error is 0.631, which measures the spread in the distribution from the mean.   "
 },
 {
   "id": "subsec-UrbanHeatBootstrap-11",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-11",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-11",
   "type": "Checkpoint",
-  "number": "7.4.32",
+  "number": "7.5.32",
   "title": "Margin of Error.",
   "body": " Margin of Error  Determine the margin of error for a 95% confidence interval for the mean difference of high temperatures.   The margin of error using the 95% Rule is 2 times the standard error, thus 2(0.631) = 1.262. The margin of error is how precise the value of 2.783 (the sample mean difference) is as an estimate for the typical mean difference of high temperatures between the Denver and Centennial climate stations.   "
 },
 {
   "id": "subsec-UrbanHeatBootstrap-12",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-12",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-12",
   "type": "Checkpoint",
-  "number": "7.4.33",
+  "number": "7.5.33",
   "title": "Interval.",
   "body": " Interval  Use the bootstrap distribution to compute a 95% confidence interval for the actual mean difference of high temperatures between the Denver and Centennial climate stations. Round values to three decimal places.   Using the 95% Rule,  Lower bound:  Upper bound:  The 95% confidence interval is (1.521, 4.045).  We are 95% confident that the true mean difference of high temperatures between the Denver and Centennial climate stations is between 1.521 F and 4.045 F.  We are 95% confident that the actual high temperature at the Denver climate stations is on average between 1.521 F and 4.045 F hotter than at the Centennial climate station during the summer months.   "
 },
 {
   "id": "subsec-UrbanHeatRandom-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6456,72 +6843,72 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeatRansom1",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatRansom1",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatRansom1",
   "type": "Figure",
-  "number": "7.4.34",
+  "number": "7.5.34",
   "title": "",
   "body": " Randomization Sample   original sample and a randomized sample.   "
 },
 {
   "id": "subsec-UrbanHeatRandom-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-9",
   "type": "Checkpoint",
-  "number": "7.4.35",
+  "number": "7.5.35",
   "title": "Randomized Sample.",
   "body": " Randomized Sample  Explain how StatKey obtained the Randomization Sample.   A randomization sample for paired data is obtained when we assume that there is no difference between the Denver and Centennial high temperatures, thus the population mean of the differences is zero. So, the center of the randomization dotplot should be centered at the null value of 0. The standard error of the randomization dotplot should be equal to the sampling distribution using the original sample and generating random samples of size 92.  StatKey generates the Randomization Sample by randomly selecting 92 values from the original sample with replacement, into two groups and finds the difference between each pair, so that the randomization sample is centered at 0.   "
 },
 {
   "id": "subsec-UrbanHeatRandom-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-10",
   "type": "Checkpoint",
-  "number": "7.4.36",
+  "number": "7.5.36",
   "title": "Dotplot.",
   "body": " Dotplot  Identify on the dotplot the relevant value obtained from the randomization sample. Briefly explain what you indicated.   The mean of the randomization sample is 1.5. The red dot displays the mean of the randomization sample on the distribution below. Each dot in the distribution below is the average difference between the two randomized groups   "
 },
 {
   "id": "UrbanHeatRandom2",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatRandom2",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatRandom2",
   "type": "Figure",
-  "number": "7.4.37",
+  "number": "7.5.37",
   "title": "",
   "body": " Randomization Distribution   Randomized distribution of 2000 samples centered at zero.   "
 },
 {
   "id": "subsec-UrbanHeatRandom-13",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-13",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-13",
   "type": "Checkpoint",
-  "number": "7.4.38",
+  "number": "7.5.38",
   "title": "Hypotheses.",
   "body": " Hypotheses  Write the null and alternative hypotheses for the climatologist's claim.   Let be the population mean of the difference in the paired high temperatures between the Denver and Centennial stations. Then, the hypotheses are: and    "
 },
 {
   "id": "subsec-UrbanHeatRandom-14",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-14",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-14",
   "type": "Checkpoint",
-  "number": "7.4.39",
+  "number": "7.5.39",
   "title": "Sample statistic.",
   "body": " Sample statistic  d. What is the observed sample statistic of the original sample? Estimate where to plot this observed statistic on the randomization dotplot.   The mean of the sample data is . However, the value 2.783 is too far to the right of the maximum value on the randomization dotplot to be identified on the graph. Thus it is unlikely to occur by random chance   "
 },
 {
   "id": "subsec-UrbanHeatRandom-15",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-15",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-15",
   "type": "Checkpoint",
-  "number": "7.4.40",
+  "number": "7.5.40",
   "title": "p-value.",
   "body": " p-value  Estimate and interpret the p-value using the randomization distribution.   None of the 2000 random samples were greater than or equal to the sample statistic 2.783. So, the p-value = 0\/2000 = 0.  When we assume that there is no difference in the high temperatures between the Denver and Centennial stations, the chance of getting the mean difference of 2.783 is near zero, thus highly unlikely to occur if the null hypothesis true. This indicates that the difference is statistically significant.   "
 },
 {
   "id": "subsec-UrbanHeatRandom-16",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-16",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-16",
   "type": "Checkpoint",
-  "number": "7.4.41",
+  "number": "7.5.41",
   "title": "Conclusion.",
   "body": " Conclusion  Based on the climatologist's results, what decision and what conclusion would the climatologist make for their investigation assuming α=0.05? Explain your answer.   It is very unlikely that we would get a mean difference of 2.783 by chance if the actual difference was 0. It is much less than the confidence level α=0.05. So, we would reject the assumption that there is no difference between the high temperatures at the Denver and Centennial stations. There is evidence that there is a statistical difference between the high temperatures at the urban and suburban stations, and the average high temperature at the urban station was greater than the average high temperature at the suburban station.   "
 },
