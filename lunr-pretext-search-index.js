@@ -6028,7 +6028,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "significance level "
+  "body": "significance level conclusion "
 },
 {
   "id": "subsec-IntroHypotheses-6",
@@ -6217,7 +6217,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.2",
   "title": "t-test for the Mean",
-  "body": " t-test for the Mean   The one-sample -test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean.     At the end of this section you will be able to:     Write hypotheses for the mean.    Determine the test statistic and p-value for the t-test .    Write the conclusion of a test in context.      Understanding the Basics  The one-sample -test is used to test a claim about a population mean when the population standard deviation is unknown. The first step is to write the null and alternative hypotheses . In this test, we compare a sample mean to a hypothesized population mean by calculating a test statistic that measures how many standard errors the sample mean is from the hypothesized value.  The test statistic is computed as , where is the sample mean, is the hypothesized value, is the sample standard deviation, and is the sample size.  Because the population standard deviation is not known, the test statistic follows a t-distribution with degrees of freedom, provided the data come from a population that is approximately normal or the sample size is large enough. The resulting p-value helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.    A one-sample -test for a mean is a statistical method used to test a claim about a mean when the population standard deviation is unknown and the population is approximately normal. The formula for the t-test is with degrees of freedom .    When competing the t-test for the mean, we assume we have random sample from the population and that the sample is either grater than 30 or the population is normally distributed if the sample size is less than 30. We use the t -distribution because we do not know the population standard deviation.   Example: Hypothesis Test for the Mean Time Between Old Faithful Eruptions   A park researcher wants to determine whether the mean time between eruptions of Old Faithful in Yellowstone National Park is different from the claimed 90 minutes. A random sample of 20 waiting times, measured in minutes, is recorded below.   Waiting Times Between Old Faithful Eruptions (minutes)    82  88  91  95  87    93  89  84  96  90    85  92  94  86  89    91  88  97  83  90     At the significance level, test whether the true mean waiting time between eruptions is different from 90 minutes.   Hypotheses   The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses.    The parameter is the mean  The hypotheses are and .  Because the park ranger asks whether the mean is different from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value.     Assumptions   Identify which test to perform and check that we meet the conditions for that test.    Since the population standard deviation is unknown and we have a sample of 20, use a one-sample -test for the mean. Which tells we use the -distribution. If we graph the data we can see it is approximately bell shaped and symmetric.     Statistical Test   We need to compute the sample mean and sample standard deviation. Then we will calculate the test statistic and estimate the p-value for a two-tailed test    the mean is   the standard deviation is   sample size is and degrees of freedom is   Compute   The standard error is   The test statistic is   With 19 degrees of freedom, the two-tailed p-value is .     Decision   Make the decision to reject or not reject the null hypothesis by comparing the p-value with the level of significance     Since the p-value = 0.61 is greater than , we fail to reject the null hypothesis .     Conclusion   Now summarize the conclusion of the test by referring back to the alternative hypothesis.    There is not enough statistical evidence to conclude that the true mean time between Old Faithful eruptions is different from minutes.      Using Technology  Use TI83    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics. Click on Change Column to change variable names.   summary statistics   Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    summary    We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.   hypotheses   We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and      test value   What is the statistical test value?          p-value   Find the p-value for the statistical test value    p-value=0.013 with 19 df for left tail test     decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.013 is less than alpha (.05), we should reject Ho     conclusion   What is the conclusion?    Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.    We are going to investigate if the mean number of hurricanes in the Later Years is significantly more than the mean of 5.8 hurricanes per year.   hypotheses   We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and      test value   What is the statistical test value?          p-value   Find the p-value for the statistical test value    p-value=0.0086 with 19 df for a right tail test     decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.0086 is less than alpha (.05), we should reject Ho     conclusion   What is the conclusion?    Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.    Homework Problems   Change in Ocean pH   Scientists have long used a historical average surface ocean pH of about as a benchmark. Recent National Ocean and Atmospheric Administration (NOAA) summaries report that global surface ocean pH has decreased by about to units since the Industrial Revolution, suggesting modern ocean pH may now be lower on average.  A marine science team collects a random sample of recent surface-ocean pH measurements from one region and obtains a sample mean of and a sample standard deviation of .  At the significance level, test whether the true mean ocean pH in this region has changed from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Because the population standard deviation is unknown, use a one-sample -test for the mean.  For the question of whether the pH has changed , use a two-sided test:     Then compute       The hypotheses are and . The test statistic is with . The two-sided p-value is . Since the p-value is less than 0.05, we reject . Conclude there is significant evidence that the mean ocean pH in this region has changed from 8.    We test whether the population mean pH differs from the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown and the sample size is 16, we use a one-sample -test.  The standard error is   The test statistic is     The degrees of freedom are   A test statistic of with degrees of freedom gives a two-sided p-value  .  Since the p-value is less than the significance level , we reject the null hypothesis.  There is sufficient statistical evidence to conclude that the true mean ocean pH in this region has changed from the historical value of . Because the sample mean is lower than , the data suggests the change is a decrease in pH level.     Decreasing in Ocean pH   Scientists have historically used an average surface ocean pH of about as a benchmark. Recent NOAA summaries indicate that average surface ocean pH has decreased over time, motivating a test of whether the mean pH in a particular region is now lower than .  A marine science team collects a random sample of recent surface-ocean pH measurements from one coastal region:     At the significance level, test whether the true mean ocean pH in this region has decreased from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Use a one-sample -test for a population mean, since the population standard deviation is unknown.  For a one-sided test of decrease, use     Then compute the sample mean, sample standard deviation, and test statistic       The hypotheses are and . From the data, and . The test statistic is with . The p-value is effectively (far less than ), so we reject . There is strong evidence that the true mean ocean pH in this region has decreased below .    We want to test whether the population mean ocean pH is lower than the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown, we use a one-sample -test for the mean.  First compute the sample statistics from the data:        The sample size is , so the degrees of freedom are   The standard error is   The test statistic is   With , this gives a one-sided p-value that is extremely small, far below .  Therefore, we reject .  There is strong statistical evidence that the true mean ocean pH in this region has decreased below .     "
+  "body": " t-test for the Mean   The one-sample -test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean. The test statistic measures how many standard errors the sample mean is from the hypothesized value. The resulting p-value helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.     At the end of this section you will be able to:     Write hypotheses for the mean.    Determine the test statistic and p-value for the t-test .    Write the conclusion of a test in context.      Understanding the Basics  The one-sample -test is used to test a claim about a population mean when the population standard deviation is unknown. The first step is to write the null and alternative hypotheses . In this test, we compare a sample mean to a hypothesized population mean by calculating a test statistic that measures how many standard errors the sample mean is from the hypothesized value.  The test statistic is computed as , where is the sample mean, is the hypothesized value, is the sample standard deviation, and is the sample size.  Because the population standard deviation is not known, the test statistic follows a t-distribution with degrees of freedom, provided the data come from a population that is approximately normal or the sample size is large enough. The resulting p-value helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.    A one-sample -test for a mean is a statistical method used to test a claim about a mean when the population standard deviation is unknown and the population is approximately normal. The formula for the t-test is with degrees of freedom .    When competing the t-test for the mean, we assume we have random sample from the population and that the sample is either grater than 30 or the population is normally distributed if the sample size is less than 30. We use the t -distribution because we do not know the population standard deviation.    Old Faithful Hypothesis Test   Hypothesis Test for the Mean Time Between Old Faithful Eruptions   A park researcher wants to determine whether the mean time between eruptions of Old Faithful in Yellowstone National Park is different from the claimed 90 minutes. A random sample of 20 waiting times, measured in minutes, is recorded below.   Waiting Times Between Old Faithful Eruptions (minutes)    82  88  91  95  87    93  89  84  96  90    85  92  94  86  89    91  88  97  83  90     At the significance level, test whether the true mean waiting time between eruptions is different from 90 minutes.   Hypotheses   The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses.    The parameter is the mean  The hypotheses are and .  Because the park ranger asks whether the mean is different from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value.     Assumptions   Identify which test to perform and check that we meet the conditions for that test.    Since the population standard deviation is unknown and we have a sample of 20, use a one-sample -test for the mean. Which tells we use the -distribution. If we graph the data we can see it is approximately bell shaped and symmetric.     Statistical Test   We need to compute the sample mean and sample standard deviation. Then we will calculate the test statistic and estimate the p-value for a two-tailed test    the mean is   the standard deviation is   sample size is and degrees of freedom is   Compute   The standard error is   The test statistic is   With 19 degrees of freedom, the two-tailed p-value is .     Decision   Make the decision to reject or not reject the null hypothesis by comparing the p-value with the level of significance     Since the p-value = 0.61 is greater than , we fail to reject the null hypothesis .     Conclusion   Now summarize the conclusion of the test by referring back to the alternative hypothesis.    There is not enough statistical evidence to conclude that the true mean time between Old Faithful eruptions is different from minutes.    For up-to-date geyser times visit:     Using Technology  Use TI83    Hurricane Hypothesis Tests  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022.  In StatKey under One Quantitative Variable , Upload the data file and select each variable to find the summary statistics. Click on Change Column to change variable names.   summary statistics   Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    summary    We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.   hypotheses   We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and      test value   What is the statistical test value?          p-value   Find the p-value for the statistical test value    p-value=0.013 with 19 df for left tail test     decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.013 is less than alpha (.05), we should reject Ho     conclusion   What is the conclusion?    Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.    We are going to investigate if the mean number of hurricanes in the Later Years is significantly more than the mean of 5.8 hurricanes per year.   hypotheses   We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and      test value   What is the statistical test value?          p-value   Find the p-value for the statistical test value    p-value=0.0086 with 19 df for a right tail test     decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.0086 is less than alpha (.05), we should reject Ho     conclusion   What is the conclusion?    Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.      Practice Problems   Change in Ocean pH   Scientists have long used a historical average surface ocean pH of about as a benchmark. Recent National Ocean and Atmospheric Administration (NOAA) summaries report that global surface ocean pH has decreased by about to units since the Industrial Revolution, suggesting modern ocean pH may now be lower on average.  A marine science team collects a random sample of recent surface-ocean pH measurements from one region and obtains a sample mean of and a sample standard deviation of .  At the significance level, test whether the true mean ocean pH in this region has changed from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Because the population standard deviation is unknown, use a one-sample -test for the mean.  For the question of whether the pH has changed , use a two-sided test:     Then compute       The hypotheses are and . The test statistic is with . The two-sided p-value is . Since the p-value is less than 0.05, we reject . Conclude there is significant evidence that the mean ocean pH in this region has changed from 8.    We test whether the population mean pH differs from the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown and the sample size is 16, we use a one-sample -test.  The standard error is   The test statistic is     The degrees of freedom are   A test statistic of with degrees of freedom gives a two-sided p-value  .  Since the p-value is less than the significance level , we reject the null hypothesis.  There is sufficient statistical evidence to conclude that the true mean ocean pH in this region has changed from the historical value of . Because the sample mean is lower than , the data suggests the change is a decrease in pH level.     Decreasing in Ocean pH   Scientists have historically used an average surface ocean pH of about as a benchmark. Recent NOAA summaries indicate that average surface ocean pH has decreased over time, motivating a test of whether the mean pH in a particular region is now lower than .  A marine science team collects a random sample of recent surface-ocean pH measurements from one coastal region:     At the significance level, test whether the true mean ocean pH in this region has decreased from the historical value of .  State the null and alternative hypotheses, compute the test statistic, estimate the p-value , and state a conclusion in context.    Use a one-sample -test for a population mean, since the population standard deviation is unknown.  For a one-sided test of decrease, use     Then compute the sample mean, sample standard deviation, and test statistic       The hypotheses are and . From the data, and . The test statistic is with . The p-value is effectively (far less than ), so we reject . There is strong evidence that the true mean ocean pH in this region has decreased below .    We want to test whether the population mean ocean pH is lower than the historical benchmark of .  The hypotheses are   Because the population standard deviation is unknown, we use a one-sample -test for the mean.  First compute the sample statistics from the data:        The sample size is , so the degrees of freedom are   The standard error is   The test statistic is   With , this gives a one-sided p-value that is extremely small, far below .  Therefore, we reject .  There is strong statistical evidence that the true mean ocean pH in this region has decreased below .     "
 },
 {
   "id": "sec-SingleMean-3",
@@ -6265,171 +6265,171 @@ var ptx_lunr_docs = [
   "body": "  A one-sample -test for a mean is a statistical method used to test a claim about a mean when the population standard deviation is unknown and the population is approximately normal. The formula for the t-test is with degrees of freedom .   "
 },
 {
-  "id": "subsec-SingleMeanBasics-7",
+  "id": "subsec-MeanOldFaithful-2",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanBasics-7",
+  "url": "sec-SingleMean.html#subsec-MeanOldFaithful-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Example: Hypothesis Test for the Mean Time Between Old Faithful Eruptions "
+  "body": "Hypothesis Test for the Mean Time Between Old Faithful Eruptions "
 },
 {
-  "id": "subsec-SingleMeanBasics-9",
+  "id": "subsec-MeanOldFaithful-4",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanBasics-9",
+  "url": "sec-SingleMean.html#subsec-MeanOldFaithful-4",
   "type": "Table",
   "number": "7.2.2",
   "title": "Waiting Times Between Old Faithful Eruptions (minutes)",
   "body": " Waiting Times Between Old Faithful Eruptions (minutes)    82  88  91  95  87    93  89  84  96  90    85  92  94  86  89    91  88  97  83  90    "
 },
 {
-  "id": "subsec-SingleMeanBasics-11",
+  "id": "subsec-MeanOldFaithful-6",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanBasics-11",
+  "url": "sec-SingleMean.html#subsec-MeanOldFaithful-6",
   "type": "Example",
   "number": "7.2.3",
   "title": "Hypotheses.",
   "body": " Hypotheses   The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses.    The parameter is the mean  The hypotheses are and .  Because the park ranger asks whether the mean is different from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value.   "
 },
 {
-  "id": "subsec-SingleMeanBasics-12",
+  "id": "subsec-MeanOldFaithful-7",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanBasics-12",
+  "url": "sec-SingleMean.html#subsec-MeanOldFaithful-7",
   "type": "Example",
   "number": "7.2.4",
   "title": "Assumptions.",
   "body": " Assumptions   Identify which test to perform and check that we meet the conditions for that test.    Since the population standard deviation is unknown and we have a sample of 20, use a one-sample -test for the mean. Which tells we use the -distribution. If we graph the data we can see it is approximately bell shaped and symmetric.   "
 },
 {
-  "id": "subsec-SingleMeanBasics-13",
+  "id": "subsec-MeanOldFaithful-8",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanBasics-13",
+  "url": "sec-SingleMean.html#subsec-MeanOldFaithful-8",
   "type": "Example",
   "number": "7.2.5",
   "title": "Statistical Test.",
   "body": " Statistical Test   We need to compute the sample mean and sample standard deviation. Then we will calculate the test statistic and estimate the p-value for a two-tailed test    the mean is   the standard deviation is   sample size is and degrees of freedom is   Compute   The standard error is   The test statistic is   With 19 degrees of freedom, the two-tailed p-value is .   "
 },
 {
-  "id": "subsec-SingleMeanBasics-14",
+  "id": "subsec-MeanOldFaithful-9",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanBasics-14",
+  "url": "sec-SingleMean.html#subsec-MeanOldFaithful-9",
   "type": "Example",
   "number": "7.2.6",
   "title": "Decision.",
   "body": " Decision   Make the decision to reject or not reject the null hypothesis by comparing the p-value with the level of significance     Since the p-value = 0.61 is greater than , we fail to reject the null hypothesis .   "
 },
 {
-  "id": "subsec-SingleMeanBasics-15",
+  "id": "subsec-MeanOldFaithful-10",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanBasics-15",
+  "url": "sec-SingleMean.html#subsec-MeanOldFaithful-10",
   "type": "Example",
   "number": "7.2.7",
   "title": "Conclusion.",
   "body": " Conclusion   Now summarize the conclusion of the test by referring back to the alternative hypothesis.    There is not enough statistical evidence to conclude that the true mean time between Old Faithful eruptions is different from minutes.   "
 },
 {
-  "id": "subsec-SingleMeanPractice-3",
+  "id": "subsec-SingleMeanHurricanes-3",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-3",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "One Quantitative Variable "
 },
 {
-  "id": "subsec-SingleMeanPractice-4",
+  "id": "subsec-SingleMeanHurricanes-4",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-4",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-4",
   "type": "Checkpoint",
   "number": "7.2.8",
   "title": "summary statistics.",
   "body": " summary statistics   Find the sample size, mean, and standard deviation for Hurricanes , Early Years and Later Years. Round to two decimal places.    summary   "
 },
 {
-  "id": "subsec-SingleMeanPractice-6",
+  "id": "subsec-SingleMeanHurricanes-6",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-6",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-6",
   "type": "Checkpoint",
   "number": "7.2.9",
   "title": "hypotheses.",
   "body": " hypotheses   We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and    "
 },
 {
-  "id": "subsec-SingleMeanPractice-7",
+  "id": "subsec-SingleMeanHurricanes-7",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-7",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-7",
   "type": "Checkpoint",
   "number": "7.2.10",
   "title": "test value.",
   "body": " test value   What is the statistical test value?        "
 },
 {
-  "id": "subsec-SingleMeanPractice-8",
+  "id": "subsec-SingleMeanHurricanes-8",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-8",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-8",
   "type": "Checkpoint",
   "number": "7.2.11",
   "title": "p-value.",
   "body": " p-value   Find the p-value for the statistical test value    p-value=0.013 with 19 df for left tail test   "
 },
 {
-  "id": "subsec-SingleMeanPractice-9",
+  "id": "subsec-SingleMeanHurricanes-9",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-9",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-9",
   "type": "Checkpoint",
   "number": "7.2.12",
   "title": "decision.",
   "body": " decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.013 is less than alpha (.05), we should reject Ho   "
 },
 {
-  "id": "subsec-SingleMeanPractice-10",
+  "id": "subsec-SingleMeanHurricanes-10",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-10",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-10",
   "type": "Checkpoint",
   "number": "7.2.13",
   "title": "conclusion.",
   "body": " conclusion   What is the conclusion?    Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.   "
 },
 {
-  "id": "subsec-SingleMeanPractice-12",
+  "id": "subsec-SingleMeanHurricanes-12",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-12",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-12",
   "type": "Checkpoint",
   "number": "7.2.14",
   "title": "hypotheses.",
   "body": " hypotheses   We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses?     and    "
 },
 {
-  "id": "subsec-SingleMeanPractice-13",
+  "id": "subsec-SingleMeanHurricanes-13",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-13",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-13",
   "type": "Checkpoint",
   "number": "7.2.15",
   "title": "test value.",
   "body": " test value   What is the statistical test value?        "
 },
 {
-  "id": "subsec-SingleMeanPractice-14",
+  "id": "subsec-SingleMeanHurricanes-14",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-14",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-14",
   "type": "Checkpoint",
   "number": "7.2.16",
   "title": "p-value.",
   "body": " p-value   Find the p-value for the statistical test value    p-value=0.0086 with 19 df for a right tail test   "
 },
 {
-  "id": "subsec-SingleMeanPractice-15",
+  "id": "subsec-SingleMeanHurricanes-15",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-15",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-15",
   "type": "Checkpoint",
   "number": "7.2.17",
   "title": "decision.",
   "body": " decision   Based the p-value, should your reject or not reject the null hypothesis?    since p-value 0.0086 is less than alpha (.05), we should reject Ho   "
 },
 {
-  "id": "subsec-SingleMeanPractice-16",
+  "id": "subsec-SingleMeanHurricanes-16",
   "level": "2",
-  "url": "sec-SingleMean.html#subsec-SingleMeanPractice-16",
+  "url": "sec-SingleMean.html#subsec-SingleMeanHurricanes-16",
   "type": "Checkpoint",
   "number": "7.2.18",
   "title": "conclusion.",
@@ -6460,7 +6460,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "z-test for Proportions",
-  "body": " z-test for Proportions   In this section, we will learn how to perform a one-sample -test for a population proportion. This test is used to determine whether there is enough evidence in a sample of data to support a claim about the true proportion of a population that has a certain characteristic. We will go through the steps of hypothesis testing, including stating the hypotheses, checking assumptions, calculating the test statistic and p-value, and making a conclusion in context. We will also see how to use technology to perform these calculations and practice with real data examples.     At the end of this section you will be able to:     Write hypotheses involving proportions    Determine the test statistic and p-value for the z-test for proportions.    Write the conclusion of a test in context      Hypothesis Testing for Proportions  The one-sample -test for a population proportion is used to test a claim about the true proportion of a population that has a certain characteristic. In this test, a sample proportion is compared to a hypothesized population proportion to determine whether the difference between them is large enough to be statistically significant. We will state the hypotheses and check that we have met the assumptions that 1) the sample is random or representative of the population and 2) the success-failure condition is satisfied, meaning that the expected numbers of successes and failures under the null hypothesis are both sufficiently large. We check that and   Next, the test statistic is computed as , where is the sample proportion, is the hypothesized value, and is the sample size. The resulting p-value is the probability that statistical value or something more extreme is likely to occur if the null hypothesis is true and is used to decide whether to reject the null hypothesis to conclude that there is evidence for the alternative claim about the population proportion.    A one-sample -test for a population proportion is a statistical method used to test a claim about a population proportion using sample data. The test statistic is , where is the sample proportion, is the hypothesized value, and is the sample size.      Hypothesis Test Examples for Parrots  Researchers studying parrot vocal behavior recorded whether each parrot regularly interacted socially with other parrots in the dataset BenedictParrotVocals.csv . Suppose we want to test whether the proportion of parrots that regularly interacted socially with other parrots is greater than 50%.  In the sample, out of parrots were recorded as having Yes for the question Social with other parrots? .  At the significance level, test whether the population proportion of parrots that regularly interacted socially with other parrots is greater than 50%.    State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Hypothesis  Let be the true proportion of parrots that regularly interacted socially with other parrots. The null hypothesis is the proportion is 50% while the alternative hypothesis is the proportion is greater than 50%.     Assumptions  The conditions for the one-sample -test are satisfied because and , both of which are at least . So we can use the normal distribution since the sample is large enough.    Statistical Test  Use the sample proportion   and the test statistic is      p-value  For a right-tailed test, the p-value is     Decision  Since the p-value = 0.54 is slightly greater than the significance level , we fail to reject .    Conclusion  There is not enough evidence at the significance level to conclude that the proportion of parrots that regularly interacted socially with other parrots is greater than 50%.    Researchers studying parrot vocal behavior recorded the number of mimicked sounds, phrases, and words for each parrot in the dataset BenedictParrotVocals.csv . Define a parrot as having a small mimicry repertoire if its total number of mimicked sounds, phrases, and words is less than .  Suppose we want to test whether less than of parrots have a mimicry repertoire size less than 15.  In the sample, out of parrots had a total mimicry repertoire size less than .  At the significance level, test whether the population proportion of parrots with mimicry repertoire sizes less than 15 words and phrases is less than 60%.    State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Let be the true proportion of parrots with a mimicry repertoire size less than 15.  Use sample proportion and     The hypotheses are and . The sample proportion is . The conditions are satisfied because and , both at least . The test statistic is , giving a left-tailed p-value of approximately . Since the p-value is much smaller than , we reject . There is enough evidence to conclude that less than 60% of parrots have mimicry repertoire sizes of less than 15 words and phrases.    Hypotheses  Let represent the true proportion of parrots whose total mimicry repertoire size is less than 15, where total repertoire size is the sum of mimicked sounds, phrases, and words.  The hypothesis are    Assumptions  From the sample, parrots out of had a total mimicry repertoire size less than 15. Therefore,   We verify the success-failure condition using :   Both values are greater than , so the normal approximation is appropriate.   Statistical Test  Now compute the test statistic:     p-value  Because this is a left-tailed test, the p-value is    Decision  Since the p-value = 0 is much smaller than , we reject the null hypothesis.    Conclusion  There is enough evidence at the significance level to conclude that less than of parrots have mimicry repertoire sizes less than 15 words and phrases.      Using Technology  Now let us use the TI-83 Plus Calculator to calculate the test statistic and p-value.  Researchers studying parrot vocal behavior recorded the sex of each parrot in the dataset BenedictParrotVocals.csv . Suppose we want to test whether the proportion of parrots identified as male is different from 50%  In the sample, out of parrots were identified as male.  At the significance level, test whether the population proportion of parrots identified as male differs from 50%.  Using TI-83 Plus   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.    Try the online TI-84 Applet   Using TI-84 Applet   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.     Proportion Test Results for Male Parrots   test value z=-1.07 and pvalue=0.284    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.      Practice Problems  The   "
+  "body": " z-test for Proportions   In this section, we will learn how to perform a one-sample -test for a population proportion. This test is used to determine whether there is enough evidence in a sample of data to support a claim about the true proportion of a population that has a certain characteristic. We will go through the steps of hypothesis testing, including stating the hypotheses, checking assumptions, calculating the test statistic and p-value, and making a conclusion in context. We will also see how to use technology to perform these calculations and practice with real data examples.     At the end of this section you will be able to:     Write hypotheses involving proportions    Determine the test statistic and p-value for the z-test for proportions.    Write the conclusion of a test in context      Hypothesis Testing for Proportions  The one-sample -test for a population proportion is used to test a claim about the true proportion of a population that has a certain characteristic. In this test, a sample proportion is compared to a hypothesized population proportion to determine whether the difference between them is large enough to be statistically significant. We will state the hypotheses and check that we have met the assumptions that 1) the sample is random or representative of the population and 2) the success-failure condition is satisfied, meaning that the expected numbers of successes and failures under the null hypothesis are both sufficiently large. We check that and   Next, the test statistic is computed as , where is the sample proportion, is the hypothesized value, and is the sample size. The resulting p-value is the probability that statistical value or something more extreme is likely to occur if the null hypothesis is true and is used to decide whether to reject the null hypothesis to conclude that there is evidence for the alternative claim about the population proportion.    A one-sample -test for a population proportion is a statistical method used to test a claim about a population proportion using sample data. The test statistic is , where is the sample proportion, is the hypothesized value, and is the sample size.      Hypothesis Test Examples for Parrots  Researchers studying parrot vocal behavior recorded whether each parrot regularly interacted socially with other parrots in the dataset BenedictParrotVocals.csv . Suppose we want to test whether the proportion of parrots that regularly interacted socially with other parrots is greater than 50%.  In the sample, out of parrots were recorded as having Yes for the question Social with other parrots? .  At the significance level, test whether the population proportion of parrots that regularly interacted socially with other parrots is greater than 50%.    State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Hypothesis  Let be the true proportion of parrots that regularly interacted socially with other parrots. The null hypothesis is the proportion is 50% while the alternative hypothesis is the proportion is greater than 50%.     Assumptions  The conditions for the one-sample -test are satisfied because and , both of which are at least . So we can use the normal distribution since the sample is large enough.    Statistical Test  Use the sample proportion   and the test statistic is      p-value  For a right-tailed test, the p-value is     Decision  Since the p-value = 0.54 is slightly greater than the significance level , we fail to reject .    Conclusion  There is not enough evidence at the significance level to conclude that the proportion of parrots that regularly interacted socially with other parrots is greater than 50%.    Researchers studying parrot vocal behavior recorded the number of mimicked sounds, phrases, and words for each parrot in the dataset BenedictParrotVocals.csv . Define a parrot as having a small mimicry repertoire if its total number of mimicked sounds, phrases, and words is less than .  Suppose we want to test whether less than of parrots have a mimicry repertoire size less than 15.  In the sample, out of parrots had a total mimicry repertoire size less than .  At the significance level, test whether the population proportion of parrots with mimicry repertoire sizes less than 15 words and phrases is less than 60%.    State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Let be the true proportion of parrots with a mimicry repertoire size less than 15.  Use sample proportion and     The hypotheses are and . The sample proportion is . The conditions are satisfied because and , both at least . The test statistic is , giving a left-tailed p-value of approximately . Since the p-value is much smaller than , we reject . There is enough evidence to conclude that less than 60% of parrots have mimicry repertoire sizes of less than 15 words and phrases.    Hypotheses  Let represent the true proportion of parrots whose total mimicry repertoire size is less than 15, where total repertoire size is the sum of mimicked sounds, phrases, and words.  The hypothesis are    Assumptions  From the sample, parrots out of had a total mimicry repertoire size less than 15. Therefore,   We verify the success-failure condition using :   Both values are greater than , so the normal approximation is appropriate.   Statistical Test  Now compute the test statistic:     p-value  Because this is a left-tailed test, the p-value is    Decision  Since the p-value = 0 is much smaller than , we reject the null hypothesis.    Conclusion  There is enough evidence at the significance level to conclude that less than of parrots have mimicry repertoire sizes less than 15 words and phrases.      Using Technology  Now let us use the TI-83 Plus Calculator to calculate the test statistic and p-value.  Researchers studying parrot vocal behavior recorded the sex of each parrot in the dataset BenedictParrotVocals.csv . Suppose we want to test whether the proportion of parrots identified as male is different from 50%  In the sample, out of parrots were identified as male.  At the significance level, test whether the population proportion of parrots identified as male differs from 50%.  Using TI-83 Plus   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.    Try the online TI-84 Applet   Using TI-84 Applet   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.     Proportion Test Results for Male Parrots   test value z=-1.07 and pvalue=0.284    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.      Practice Problems   Ocean Sounds   A wellness researcher wants to investigate whether more than half of adults feel that listening to ocean sounds helps them fall asleep faster. In a random sample of adults, said that listening to ocean sounds helps them fall asleep faster.  At the significance level, test whether the population proportion of adults who feel that listening to ocean sounds helps them fall asleep faster is greater than .   Hypotheses  Let represent the true proportion of adults who feel that listening to ocean sounds helps them fall asleep faster.  The hypotheses are This is a right tailed test.    Assumptions  We check the success-failure condition using :   Both values are at least , so the normal approximation is appropriate.    Statistical Test  The sample size is , and the number of successes is . The sample proportion is   The test statistic is     p-value  The p-value for a right-tailed test is  Since the p-value is less than , we reject .   Conclusion  At the significance level, there is sufficient evidence to conclude that more than half of adults feel that listening to ocean sounds helps them fall asleep faster.     Uninsured Drivers   Transportation researchers want to know whether the proportion of drivers in a particular metropolitan area who drive without auto insurance is greater than the recent national rate of , according the Insurance Information Institute(iii.org). In a random sample of drivers, were found to be driving without auto insurance.  At the significance level, test whether the population proportion of drivers in this metropolitan area who drive without auto insurance is greater than .    Hypotheses  Let represent the true proportion of drivers in this metropolitan area who drive without auto insurance.  The hypotheses are This is a right tailed test.    Assumptions  We check the success-failure condition using : Both values are at least , so the normal approximation is appropriate.    Statistical Test  The sample size is , and the number of drivers without auto insurance is . The sample proportion is   The test statistic is     p-value  The p-value for a right-tailed test is    Decision  Since the p-value is less than , we reject .   Conclusion  At the significance level, there is sufficient evidence to conclude that the proportion of drivers in this metropolitan area who drive without auto insurance is greater than .     "
 },
 {
   "id": "sec-SingleProportion-3",
@@ -6472,18 +6472,18 @@ var ptx_lunr_docs = [
   "body": "  At the end of this section you will be able to:     Write hypotheses involving proportions    Determine the test statistic and p-value for the z-test for proportions.    Write the conclusion of a test in context    "
 },
 {
-  "id": "subsec-SingleProportionBasics-2",
+  "id": "subsec-SingleProportionTestBasics-2",
   "level": "2",
-  "url": "sec-SingleProportion.html#subsec-SingleProportionBasics-2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionTestBasics-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "hypotheses "
 },
 {
-  "id": "subsec-SingleProportionBasics-3",
+  "id": "subsec-SingleProportionTestBasics-3",
   "level": "2",
-  "url": "sec-SingleProportion.html#subsec-SingleProportionBasics-3",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionTestBasics-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6535,6 +6535,24 @@ var ptx_lunr_docs = [
   "body": "Using TI-84 Applet   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.     Proportion Test Results for Male Parrots   test value z=-1.07 and pvalue=0.284    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.   "
 },
 {
+  "id": "subsec-SingleProportionPractice-2",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionPractice-2",
+  "type": "Checkpoint",
+  "number": "7.3.9",
+  "title": "Ocean Sounds.",
+  "body": " Ocean Sounds   A wellness researcher wants to investigate whether more than half of adults feel that listening to ocean sounds helps them fall asleep faster. In a random sample of adults, said that listening to ocean sounds helps them fall asleep faster.  At the significance level, test whether the population proportion of adults who feel that listening to ocean sounds helps them fall asleep faster is greater than .   Hypotheses  Let represent the true proportion of adults who feel that listening to ocean sounds helps them fall asleep faster.  The hypotheses are This is a right tailed test.    Assumptions  We check the success-failure condition using :   Both values are at least , so the normal approximation is appropriate.    Statistical Test  The sample size is , and the number of successes is . The sample proportion is   The test statistic is     p-value  The p-value for a right-tailed test is  Since the p-value is less than , we reject .   Conclusion  At the significance level, there is sufficient evidence to conclude that more than half of adults feel that listening to ocean sounds helps them fall asleep faster.   "
+},
+{
+  "id": "subsec-SingleProportionPractice-3",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionPractice-3",
+  "type": "Checkpoint",
+  "number": "7.3.10",
+  "title": "Uninsured Drivers.",
+  "body": " Uninsured Drivers   Transportation researchers want to know whether the proportion of drivers in a particular metropolitan area who drive without auto insurance is greater than the recent national rate of , according the Insurance Information Institute(iii.org). In a random sample of drivers, were found to be driving without auto insurance.  At the significance level, test whether the population proportion of drivers in this metropolitan area who drive without auto insurance is greater than .    Hypotheses  Let represent the true proportion of drivers in this metropolitan area who drive without auto insurance.  The hypotheses are This is a right tailed test.    Assumptions  We check the success-failure condition using : Both values are at least , so the normal approximation is appropriate.    Statistical Test  The sample size is , and the number of drivers without auto insurance is . The sample proportion is   The test statistic is     p-value  The p-value for a right-tailed test is    Decision  Since the p-value is less than , we reject .   Conclusion  At the significance level, there is sufficient evidence to conclude that the proportion of drivers in this metropolitan area who drive without auto insurance is greater than .   "
+},
+{
   "id": "sec-SingleVariance",
   "level": "1",
   "url": "sec-SingleVariance.html",
@@ -6580,36 +6598,36 @@ var ptx_lunr_docs = [
   "body": "  A one-sample -test for a population variance or standard deviation is a statistical method used to test a claim about the variance or standard deviation of a normally distributed population.  The test statistic is where is the sample variance, is the population variance, is the sample size, and with degrees of freedom    "
 },
 {
-  "id": "subsec-ChiTestVarianceExamples -3",
+  "id": "subsec-ChiTestVarianceExamples-3",
   "level": "2",
-  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceExamples -3",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceExamples-3",
   "type": "Example",
   "number": "7.4.2",
   "title": "Flour Bags.",
   "body": " Flour Bags   State the null and alternative hypotheses, verify the conditions for a one-sample -test for variance, compute the test statistic, find the p-value with StatKey, and state your conclusion in context.    Hypotheses  Let be the population variance in bag weights.  The hypotheses are     Test Statistic  Since this is a test about a single population variance, we use a one-sample -test for variance. The test statistic is     p-value  The degrees of freedom are .  For a two-tailed test with , change the middle area to 0.95 so the combined area of the tails is 0.05, thus the critical values are approximately and . Since test value is between these two critical values, the test statistic does not fall in the rejection region wo we will not reject the null hypothesis.  For the p-value click on Two Tail and enter the test value 30.4 on the right side, combine the tail area for . since the p-value is greater than do not reject the null hypothesis.   Conclusion  Therefore, we fail to reject . At the significance level, there is not enough evidence to conclude that the population variance in bag weights is different from ounces squared.   "
 },
 {
-  "id": "subsec-ChiTestVarianceExamples -6",
+  "id": "subsec-ChiTestVarianceExamples-6",
   "level": "2",
-  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceExamples -6",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceExamples-6",
   "type": "Example",
   "number": "7.4.3",
   "title": "Seedlings.",
   "body": " Seedlings   State the null and alternative hypotheses, verify the conditions for a one-sample -test for standard deviation, compute the test statistic, find the p-value with StatKey, and state your conclusion in context.    Hypotheses  Let be the population standard deviation of seed weights. Since the chi-square procedure is based on variance, we can write the hypotheses in terms of . Equivalently, these may be written as This will be a right-tailed test.   Test Statistic  The sample size is , so the degrees of freedom are . The sample standard deviation is , so the sample variance is   The test statistic is     p-value  For a right-tailed test with and , the right critical value  . The test value of 45.375 lands in the reject region so we will reject the null hypothesis.  For the p-value click on Right Tail and enter the test value 45.375 along the bottom to get the area of . Since the p-value is less than we will reject the null hypothesis.   Conclusion  Since we rejected at the significance level, there is sufficient evidence to conclude that the population standard deviation of seed weights under the new nutrient treatment has increased grams.   "
 },
 {
-  "id": "subsec-ChiTestVariancePractice -2",
+  "id": "subsec-ChiTestVariancePractice-2",
   "level": "2",
-  "url": "sec-SingleVariance.html#subsec-ChiTestVariancePractice -2",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVariancePractice-2",
   "type": "Checkpoint",
   "number": "7.4.4",
   "title": "Rainfall.",
   "body": " Rainfall   A climate scientist is studying the year-to-year variability in annual rainfall for a particular region. Historically, the population standard deviation of annual rainfall has been inches. The scientist wants to test whether climate change has altered the variability in annual rainfall.  A random sample of recent years is selected, and the sample standard deviation of annual rainfall is found to be inches. At the significance level, test whether the population standard deviation differs from inches. Assume the distribution of annual rainfall is approximately normal.   Hypotheses  Let be the population standard deviation of annual rainfall. Since the chi-square procedure is based on variance, we can also write the hypotheses in terms of variance: This is a two-tailed test.    Statistical Test  The sample size is , so the degrees of freedom are . The sample standard deviation is , so the sample variance is .  The test statistic is     p-value  For a two-tailed test with and , the critical values are a and . Since the test statistic is greater than the upper critical value , it falls in the rejection region and we reject the null hypothesis.  For the p-value click on Two Tails and enter the test value 33.62 on the right, the which is smaller than so we reject the null hypothesis.    Conclusion  Since we reject at the significance level, there is sufficient evidence to conclude that the population standard deviation of annual rainfall differs from inches, suggesting that the variability in rainfall may have changed.   "
 },
 {
-  "id": "subsec-ChiTestVariancePractice -3",
+  "id": "subsec-ChiTestVariancePractice-3",
   "level": "2",
-  "url": "sec-SingleVariance.html#subsec-ChiTestVariancePractice -3",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVariancePractice-3",
   "type": "Checkpoint",
   "number": "7.4.5",
   "title": "Vapes.",
@@ -7063,7 +7081,52 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "t-test for Two Independent Means",
-  "body": " t-test for Two Independent Means   Text of section.    Understanding the Basics  the    Using Technology  short cuts    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in testing whether the number of hurricanes is increasing over time. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022. Test for evidence that the mean number of hurricanes in the Later Years is greater than the mean number of hurricanes in the Early Years.  Use StatKey to compare the shape of the distribution of the two groups. Under Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variable , click on the Upload the data file and select the variables Compared (quantitative) and Group (categorical) . Compare the dotplots, histograms, and boxplots. What do the graphs indicate? Also find the summary statistics for both groups.   "
+  "body": " t-test for Two Independent Means   The two-sample -test for independent means is used to compare the means of two separate populations in order to determine whether there is evidence of a significant difference between them.     At the end of this section you will be able to:     Write hypotheses for the difference in proportions    Determine the test statistic and p-value for the z-test for two proportions.    Write the conclusion of a test in context      Understanding the Basics  The two-sample -test for independent means is used to compare the means of two separate populations in order to determine whether there is evidence of a significant difference between them. This test is appropriate when the two samples are independent, meaning that the observations in one sample are not related to the observations in the other sample.  The hypotheses are written in terms of the difference between the population means, , which is often compared to . The null hypotheses can also be written as with the alternative hypothesis as or for a one-tailed test, or for a two-tailed test.  The test statistic is where and are the sample means, and are the sample standard deviations, and and are the sample sizes. This test assumes that the two samples are independently selected, that the observations within each sample are independent, and that each population is approximately normally distributed, especially when the sample sizes are small. In practice, the test is also reasonably robust when sample sizes are large.  The resulting p-value is used to determine whether the observed difference between sample means provides enough evidence to conclude that the population means differ.  Recall that when the p-value  we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis.    A two-sample -test for independent means is a statistical test used to compare the means of two independent populations and determine whether there is evidence of a difference between them.  The test statistic is   where and are the sample means, and are the sample standard deviations, and and are the sample sizes.      Using Technology  short cuts    Practice Problems  The data in Hurricanes contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in testing whether the number of hurricanes is increasing over time. Early Years consists of the number of hurricanes from 1914 to 1933 and Later Years consists of the number of hurricanes from 2003 to 2022. Test for evidence that the mean number of hurricanes in the Later Years is greater than the mean number of hurricanes in the Early Years.  Use StatKey to compare the shape of the distribution of the two groups. Under Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variable , click on the Upload the data file and select the variables Compared (quantitative) and Group (categorical) . Compare the dotplots, histograms, and boxplots. What do the graphs indicate? Also find the summary statistics for both groups.   "
+},
+{
+  "id": "sec-CompIndpMeans-3",
+  "level": "2",
+  "url": "sec-CompIndpMeans.html#sec-CompIndpMeans-3",
+  "type": "Objectives",
+  "number": "8.1",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Write hypotheses for the difference in proportions    Determine the test statistic and p-value for the z-test for two proportions.    Write the conclusion of a test in context    "
+},
+{
+  "id": "subsec-IndpmeanBasics-3",
+  "level": "2",
+  "url": "sec-CompIndpMeans.html#subsec-IndpmeanBasics-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypotheses "
+},
+{
+  "id": "subsec-IndpmeanBasics-4",
+  "level": "2",
+  "url": "sec-CompIndpMeans.html#subsec-IndpmeanBasics-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "test statistic "
+},
+{
+  "id": "subsec-IndpmeanBasics-5",
+  "level": "2",
+  "url": "sec-CompIndpMeans.html#subsec-IndpmeanBasics-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "p-value "
+},
+{
+  "id": "def-two-sample-t-test-independent-means",
+  "level": "2",
+  "url": "sec-CompIndpMeans.html#def-two-sample-t-test-independent-means",
+  "type": "Definition",
+  "number": "8.1.1",
+  "title": "",
+  "body": "  A two-sample -test for independent means is a statistical test used to compare the means of two independent populations and determine whether there is evidence of a difference between them.  The test statistic is   where and are the sample means, and are the sample standard deviations, and and are the sample sizes.   "
 },
 {
   "id": "subsec-IndpmeanPractice-3",
@@ -7081,7 +7144,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "t-test for Paired Means",
-  "body": " t-test for Paired Means  Text of section.  "
+  "body": " t-test for Paired Means   intro    Understanding the Basics  The paired -test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired -test analyzes the differences within each pair. If we let represent the difference for each pair, then the hypotheses are written in terms of the population mean difference . The null hypothesis is and the alternative hypothesis can be either or for a one tailed test, or for a two-tailed test .  The test statistic is where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs in the sample, and is the hypothesized mean difference, usually .  This test assumes that the data consist of matched pairs, that the differences are independent from one pair to another, and that the distribution of the differences is approximately normal, especially when the sample size is small. The resulting p-value is used to decide whether there is enough evidence to conclude that a true mean difference exists between the paired observations.  Recall that when the p-value  we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis.    A paired -test for the mean is a statistical test used to compare the mean of the differences between two related measurements and determine whether there is evidence that the population mean difference is different from a hypothesized value.  The test statistic is   where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs, and is the hypothesized population mean difference.      Using Technology  short cuts   "
+},
+{
+  "id": "subsec-PairedMeanTestBasics-2",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanTestBasics-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypotheses "
+},
+{
+  "id": "subsec-PairedMeanTestBasics-3",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanTestBasics-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "test statistic "
+},
+{
+  "id": "subsec-PairedMeanTestBasics-4",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanTestBasics-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "p-value "
+},
+{
+  "id": "def-paired-t-test-mean",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#def-paired-t-test-mean",
+  "type": "Definition",
+  "number": "8.2.1",
+  "title": "",
+  "body": "  A paired -test for the mean is a statistical test used to compare the mean of the differences between two related measurements and determine whether there is evidence that the population mean difference is different from a hypothesized value.  The test statistic is   where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs, and is the hypothesized population mean difference.   "
 },
 {
   "id": "sec-CompProp",
@@ -7090,7 +7189,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "z-test for Two Proportions",
-  "body": " z-test for Two Proportions  Text of section.  "
+  "body": " z-test for Two Proportions       Understanding the Basics  The two-proportion -test is used to compare the proportions of a particular outcome in two populations and determine whether there is evidence of a difference between them. This test is appropriate when each individual in both samples is classified into one of two categories, such as success or failure, yes or no, or support or do not support. The hypotheses are written in terms of the population proportions and . The null hypothesis is often written as or . The alternative hypothesis is writing as either or for a one tailed test, or for a two tailed test.  The test statistic is where and are the sample proportions, and is the pooled sample proportion.  This test assumes that the two samples are independently selected, that the observations within each sample are independent, and that the sampling distribution of the difference in sample proportions is approximately normal. The normality condition is satisfied when there are at least 10 successes and 10 failures in each group.  The resulting p-value is used to determine whether the observed difference between sample proportions provides enough evidence to conclude that the two population proportions differ.  Recall that when the p-value  we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis.    A two-proportion -test is a statistical test used to compare two population proportions and determine whether there is evidence of a difference between them.  The test statistic is   where and are the sample proportions, and is the pooled sample proportion.      Using Technology  short cuts   "
+},
+{
+  "id": "subsec-CompareProportionsBasics-2",
+  "level": "2",
+  "url": "sec-CompProp.html#subsec-CompareProportionsBasics-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypotheses "
+},
+{
+  "id": "subsec-CompareProportionsBasics-3",
+  "level": "2",
+  "url": "sec-CompProp.html#subsec-CompareProportionsBasics-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "test statistic "
+},
+{
+  "id": "subsec-CompareProportionsBasics-5",
+  "level": "2",
+  "url": "sec-CompProp.html#subsec-CompareProportionsBasics-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "p-value "
+},
+{
+  "id": "def-two-proportion-z-test",
+  "level": "2",
+  "url": "sec-CompProp.html#def-two-proportion-z-test",
+  "type": "Definition",
+  "number": "8.3.1",
+  "title": "",
+  "body": "  A two-proportion -test is a statistical test used to compare two population proportions and determine whether there is evidence of a difference between them.  The test statistic is   where and are the sample proportions, and is the pooled sample proportion.   "
 },
 {
   "id": "sec-CompVariance",
@@ -7099,7 +7234,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.4",
   "title": "F-test for Variance",
-  "body": " F-test for Variance  Text of section.  "
+  "body": " F-test for Variance       Understanding the Basics  The two-sample variance test is used to compare the variances of two populations to determine whether the populations have different amounts of variability. In an introductory statistics course, this test is typically carried out with the -test for two population variances. The hypotheses are written in terms of the population variances, and , often to test whether they are equal.  The test statistic is where and are the sample variances from the two independent samples. Usually, the larger sample variance is placed in the numerator so that the test statistic is at least . This will also make it a right tailed test.  If the null hypothesis is true and the populations are normally distributed, this statistic follows an F-distribution with and degrees of freedom. This test assumes that the two samples are independent, that the observations within each sample are independent, and that both populations are approximately normally distributed. Because the -test is sensitive to departures from normality, the normality assumption is especially important. The resulting p-value is used to decide whether there is enough evidence to conclude that the population variances differ.  Recall that when the p-value  we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis.    A two-variance -test is a statistical test used to compare the variances of two populations and determine whether there is evidence of a difference between them.  The test statistic is   where and are the sample variances from the two independent samples.    introduce F-distribution with statkey    Using Technology  short cuts   "
+},
+{
+  "id": "subsec-CompareVarianceBasics-2",
+  "level": "2",
+  "url": "sec-CompVariance.html#subsec-CompareVarianceBasics-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypotheses "
+},
+{
+  "id": "subsec-CompareVarianceBasics-4",
+  "level": "2",
+  "url": "sec-CompVariance.html#subsec-CompareVarianceBasics-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "F-distribution p-value "
+},
+{
+  "id": "def-two-variance-f-test",
+  "level": "2",
+  "url": "sec-CompVariance.html#def-two-variance-f-test",
+  "type": "Definition",
+  "number": "8.4.1",
+  "title": "",
+  "body": "  A two-variance -test is a statistical test used to compare the variances of two populations and determine whether there is evidence of a difference between them.  The test statistic is   where and are the sample variances from the two independent samples.   "
 },
 {
   "id": "sec-DownloadR",
