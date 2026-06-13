@@ -4,15 +4,53 @@
 
   <introduction>
     <p>
-    Text of section. 
+    The two-sample <m>t</m>-test for independent means is used to compare the means of two separate populations in order to determine whether there is evidence of a significant difference between them. 
     </p>
   </introduction>
- 
+  
+ <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses for the difference in proportions </p>    </li>
+    <li> <p> Determine the test statistic and p-value for the z-test for two proportions. </p> </li>
+     <li> <p> Write the conclusion of a test in context </p>    </li>
+    </ol>
+</objectives>
+
 
 
 <subsection xml:id="subsec-IndpmeanBasics">
   <title>Understanding the Basics</title>
-  <p> the </p> 
+ <p> The two-sample <m>t</m>-test for independent means is used to compare the means of two separate populations in order to determine whether there is evidence of a significant difference between them. This test is appropriate when the two samples are independent, meaning that the observations in one sample are not related to the observations in the other sample. </p> 
+ <p> The <term>hypotheses </term>are written in terms of the difference between the population means, <m>\mu_1-\mu_2</m>, which is often compared to <m>0</m>. The null hypotheses can also be written as <m>\mu_1= \mu_2</m> with the alternative hypothesis as <m>\mu_1 \gt \mu_2</m> or <m>\mu_1 \lt \mu_2</m> for a one-tailed test, or <m>\mu_1 \ne\mu_2</m> for a two-tailed test. </p>
+<p>The <term>test statistic</term> is
+<md> t=\frac{(\bar{x}_1-\bar{x}_2)-(\mu_1-\mu_2)_0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}} </md>
+where <m>\bar{x}_1</m> and <m>\bar{x}_2</m> are the sample means, <m>s_1</m> and <m>s_2</m> are the sample standard deviations, and <m>n_1</m> and <m>n_2</m> are the sample sizes. This test assumes that the two samples are independently selected, that the observations within each sample are independent, and that each population is approximately normally distributed, especially when the sample sizes are small. In practice, the test is also reasonably robust when sample sizes are large.  </p>
+<p>The resulting <term>p-value</term> is used to determine whether the observed difference between sample means provides enough evidence to conclude that the population means differ.</p>
+<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+
+<definition xml:id="def-two-sample-t-test-independent-means">
+  <statement>
+    <p>
+      A <term>two-sample <m>t</m>-test for independent means</term> is a
+      statistical test used to compare the means of two independent populations
+      and determine whether there is evidence of a difference between them.
+    </p>
+    <p>
+      The test statistic is
+       <md>
+t=\frac{(\bar{x}_1-\bar{x}_2)-(\mu_1-\mu_2)_0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+    </md> </p> 
+    <p>
+      where <m>\bar{x}_1</m> and <m>\bar{x}_2</m> are the sample means,
+      <m>s_1</m> and <m>s_2</m> are the sample standard deviations, and
+      <m>n_1</m> and <m>n_2</m> are the sample sizes.
+    </p>
+  </statement>
+</definition>
+
   </subsection>
 
 <subsection xml:id="subsec-IndpmeanCalc">

@@ -1,8 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-CompPairedmeans" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>t-test for Paired Means</title>
-  <p> Text of section. </p>
+ <introduction>
+  <p>
+    intro 
+  </p>
+ </introduction>
+
+<subsection xml:id="subsec-PairedMeanTestBasics">
+  <title>Understanding the Basics</title>
+  <p> The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired <m>t</m>-test analyzes the <em> differences </em> within each pair. If we let <m>d</m> represent the difference for each pair, then the <term>hypotheses</term> are written in terms of the population mean difference <m>\mu_d</m>.  The null hypothesis is <m>\mu_d = 0</m> and the alternative hypothesis can be either <m>\mu_d \lt =0</m> or <m>\mu_d \gt 0 </m> for a one tailed test, or <m>\mu_d \ne 0</m> for a two-tailed test .  </p>   
+<p>The <term> test statistic</term> is
+<md> t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}} </md>
+where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sample standard deviation of the differences, <m>n</m> is the number of pairs in the sample, and <m>\mu_{d}</m> is the hypothesized mean difference, usually <m>0</m>. </p>
+<p>This test assumes that the data consist of matched pairs, that the differences are independent from one pair to another, and that the distribution of the differences is approximately normal, especially when the sample size is small. The resulting <term>p-value</term> is used to decide whether there is enough evidence to conclude that a true mean difference exists between the paired observations.</p>
+<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+<definition xml:id="def-paired-t-test-mean">
+  <statement>
+    <p>
+      A <term>paired <m>t</m>-test for the mean</term> is a statistical test
+      used to compare the mean of the differences between two related
+      measurements and determine whether there is evidence that the population
+      mean difference is different from a hypothesized value.
+    </p> 
+    <p>  The test statistic is
+        <md> t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}}     </md> </p>
+    <p>
+      where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is
+      the sample standard deviation of the differences, <m>n</m> is the number
+      of pairs, and <m>\mu_d</m> is the hypothesized population mean
+      difference.
+    </p>
+  </statement>
+</definition>
 
 
+
+</subsection> 
+
+<subsection xml:id="subsec-PairedMeanTestCalc">
+  <title>Using Technology</title>
+  <p> short cuts </p>
+  </subsection>
   
 </section>

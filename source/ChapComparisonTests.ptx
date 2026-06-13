@@ -4,7 +4,7 @@
   <title>Comparison Tests</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p>Sample comparison tests are statistical methods used to compare two or more groups to determine whether observed differences in sample data are likely to reflect real differences in the populations or are simply due to random variation. These tests allow researchers to investigate questions about differences in means, proportions, or variability across groups. Depending on the type of data and the question being asked, different procedures may be used, such as two-sample <m>t</m>-tests for independent means, paired <m>t</m>-tests, <m>x</m>test for two proportions, or chi-square tests for two variances. In each case, the goal is to use sample evidence to evaluate a null hypothesis about no difference and decide whether there is enough evidence to support an alternative claim.</p>
   </introduction>
 
   <objectives>

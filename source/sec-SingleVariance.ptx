@@ -47,7 +47,7 @@
 
   </subsection>
 
-  <subsection xml:id="subsec-ChiTestVarianceExamples ">
+  <subsection xml:id="subsec-ChiTestVarianceExamples">
   <title>Examples of Chi-Squared Test </title>
     <p>
       A machine is designed to fill bags of flour so that the variability in bag
@@ -157,7 +157,7 @@ This will be a right-tailed test. </p>
 
   </subsection>
 
-<subsection xml:id="subsec-ChiTestVariancePractice ">
+<subsection xml:id="subsec-ChiTestVariancePractice">
   <title>Practice Problems </title>
 
 <exercise> <title> Rainfall</title>

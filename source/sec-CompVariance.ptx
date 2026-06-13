@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-CompVariance" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>F-test for Variance</title>
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      
+    </p>
+  </introduction>
 
 
+<subsection xml:id="subsec-CompareVarianceBasics">
+  <title>Understanding the Basics</title>
+<p>The two-sample variance test is used to compare the variances of two populations to determine whether the populations have different amounts of variability. In an introductory statistics course, this test is typically carried out with the <m>F</m>-test for two population variances. The <term>hypotheses</term> are written in terms of the population variances, <m>\sigma_1^2</m> and <m>\sigma_2^2</m>, often to test whether they are equal. </p>
+<p>The test statistic is
+<md> F=\frac{(s_1)^2}{(s_2)^2} </md>
+where <m>s_1^2</m> and <m>s_2^2</m> are the sample variances from the two independent samples. Usually, the larger sample variance is placed in the numerator so that the test statistic is at least <m>1</m>. This will also make it a right tailed test. </p>
+<p>If the null hypothesis is true and the populations are normally distributed, this statistic follows an <term>F-distribution</term> with <m>df_1=n_1-1</m> and <m>df_2=n_2-1</m> degrees of freedom. This test assumes that the two samples are independent, that the observations within each sample are independent, and that both populations are approximately normally distributed. Because the <m>F</m>-test is sensitive to departures from normality, the normality assumption is especially important. The resulting <term>p-value</term> is used to decide whether there is enough evidence to conclude that the population variances differ. </p>
 
+<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+
+<definition xml:id="def-two-variance-f-test">
+  <statement>
+    <p>
+      A <term>two-variance <m>F</m>-test</term> is a statistical test used to
+      compare the variances of two populations and determine whether there is
+      evidence of a difference between them.
+    </p>
+    <p>
+      The test statistic is
+       <md>
+F=\frac{(s_1)^2}{(s_2)^2}
+    </md> </p>
+    <p> where <m>s_1^2</m> and <m>s_2^2</m> are the sample variances from the two independent samples. </p>
+  </statement>
+</definition>   
+
+<p> introduce F-distribution with statkey </p>
+
+  </subsection>
+
+
+<subsection xml:id="subsec-CompareVarianceCalc">
+  <title>Using Technology</title>
+  <p> short cuts </p>
+  </subsection>
 
 
 </section>

@@ -3,7 +3,7 @@
   <title>t-test for the Mean</title>
   <introduction>
     <p>
-      The one-sample <m>t</m>-test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean.
+      The one-sample <m>t</m>-test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean. The test statistic measures how many standard errors the sample mean is from the hypothesized value. The resulting p-value helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.
     </p>
 
   </introduction>
@@ -36,7 +36,11 @@
 </definition>
 <p> When competing the t-test for the mean, we assume we have random sample from the population  and that the sample is either grater than 30 or the population is normally distributed if the sample size is less than 30. We use the <em>t</em>-distribution because we do not know the population standard deviation. </p>
 
-<p> <term>Example: Hypothesis Test for the Mean Time Between Old Faithful Eruptions</term> </p>
+</subsection>
+<subsection xml:id="subsec-MeanOldFaithful">
+  <title>Old Faithful Hypothesis Test</title>
+
+<p> <term>Hypothesis Test for the Mean Time Between Old Faithful Eruptions</term> </p>
     <p>
       A park researcher wants to determine whether the mean time between eruptions
       of Old Faithful in Yellowstone National Park is different from the claimed 90  minutes. A random sample of 20 waiting times, measured in minutes, is recorded below.
@@ -142,7 +146,7 @@
   </solution>
 </example>
 
-
+<p> For up-to-date geyser times visit: <url href="https://www.geysertimes.org/"/> </p>
 
 
 
@@ -157,8 +161,8 @@
   <p> Use TI83 </p>
   </subsection>
 
-<subsection xml:id="subsec-SingleMeanPractice">
-  <title>Practice Problems</title>
+<subsection xml:id="subsec-SingleMeanHurricanes">
+  <title>Hurricane Hypothesis Tests</title>
 <p> The data in <em>Hurricanes</em> contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. <em> Early Years </em> consists of the number of hurricanes from 1914 to 1933 and <em>Later Years </em> consists of the number of hurricanes from 2003 to 2022.</p>
 <p> In StatKey under <term>One Quantitative Variable</term>, <c>Upload </c>the data file and select each variable to find the summary statistics. Click on <c>Change Column</c> to change variable names. </p>
 
@@ -245,7 +249,12 @@
 </solution>
 </exercise> 
 
-<p> Homework Problems </p> 
+</subsection>
+
+<subsection xml:id="subsec-SingleMeanTestPractice">
+  <title>Practice Problems</title>
+
+ 
 <exercise xml:id="oceanpH-hypothesis-test">
   <title> Change in Ocean pH</title>
   <statement>

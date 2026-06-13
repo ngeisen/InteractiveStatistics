@@ -21,7 +21,7 @@
         </ol>
 </objectives>
 
-<subsection xml:id="subsec-SingleProportionBasics">
+<subsection xml:id="subsec-SingleProportionTestBasics">
   <title> Hypothesis Testing for Proportions</title>
 <p>The one-sample <m>z</m>-test for a population proportion is used to test a claim about the true proportion <m>p</m> of a population that has a certain characteristic. In this test, a sample proportion <m>\hat{p}</m> is compared to a hypothesized population proportion <m>p_0</m> to determine whether the difference between them is large enough to be statistically significant. We will state the <term> hypotheses</term> and check that we have met the assumptions that 1) the sample is random or representative of the population and 2) the success-failure condition is satisfied, meaning that the expected numbers of successes and failures under the null hypothesis are both sufficiently large. We check that <m>np \ge 10</m> and <m>n(1-p) \ge 10</m> </p>
 <p> Next, the <term>test statistic</term> is computed as <md>z=\dfrac{\hat{p}-p_0}{\sqrt{p_0(1-p_0)/n}}</md>, where <m>\hat{p}</m>  is the sample proportion, <m>p_0</m> is the hypothesized value, and <m>n</m> is the sample size. The resulting <term>p-value</term>  is the probability that statistical value or something more extreme is likely to occur if the null hypothesis is true and is used to decide whether to reject the null hypothesis to conclude that there is evidence for the alternative claim about the population proportion. </p>
@@ -311,9 +311,131 @@ z=\frac{0.5269-0.50}{\sqrt{\dfrac{0.50(0.50)}{892}}}
 
   </subsection>
 
-<subsection xml:id="subsec-SingleProportionPractice ">
+<subsection xml:id="subsec-SingleProportionPractice">
   <title>Practice Problems </title>
-<p> The</p>
+
+<exercise> <title>Ocean Sounds</title>
+  <statement>
+    <p>
+      A wellness researcher wants to investigate whether more than half of adults
+      feel that listening to ocean sounds helps them fall asleep faster. In a
+      random sample of <m>200</m> adults, <m>118</m> said that listening to
+      ocean sounds helps them fall asleep faster.
+    </p>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      proportion of adults who feel that listening to ocean sounds helps them
+      fall asleep faster is greater than <m>0.50</m>.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      Let <m>p</m> represent the true proportion of adults who feel that
+      listening to ocean sounds helps them fall asleep faster.
+    </p>
+    <p>
+      The hypotheses are 
+    <md> H_0:p=0.50 \qquad H_a:p \gt0.50     </md>
+This is a right tailed test. </p>
+</solution>
+<solution> <title> Assumptions</title> 
+        <p>
+      We check the success-failure condition using <m>p_0=0.50</m>:
+        <md> np_0=200(0.50)=100 \qquad n(1-p_0)=200(0.50)=100.  </md> </p>
+    <p>
+      Both values are at least <m>10</m>, so the normal approximation is
+      appropriate.
+    </p>
+</solution>
+
+
+<solution> <title> Statistical Test</title> 
+<p>
+      The sample size is <m>n=200</m>, and the number of successes is
+      <m>x=118</m>. The sample proportion is 
+    <md> \hat{p}=\frac{x}{n}=\frac{118}{200}=0.59.     </md> </p>
+    <p>       The test statistic is
+        <md> z=\frac{\hat{p}-p_0}{\sqrt{\dfrac{p_0(1-p_0)}{n}}}
+=\frac{0.59-0.50}{\sqrt{\dfrac{0.50(0.50)}{200}}}
+=\frac{0.09}{\sqrt{0.00125}} =\frac{0.09}{0.0354} \approx 2.55. </md> </p>
+</solution>
+<solution> <title> p-value</title>
+    <p>       The p-value for a right-tailed test is  <m>P(Z \gt  2.55)\approx 0.0054. </m></p>
+    <p>
+      Since the <term>p-value</term> is less than <m>\alpha= 0.05</m>, we reject
+      <m>H_0</m>.     </p>
+</solution>
+<solution><title> Conclusion</title>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, there is sufficient evidence to
+      conclude that more than half of adults feel that listening to ocean sounds
+      helps them fall asleep faster.
+    </p>
+  </solution>
+</exercise>
+
+<exercise> <title>Uninsured Drivers</title>
+  <statement>
+    <p>
+      Transportation researchers want to know whether the proportion of drivers
+      in a particular metropolitan area who drive without auto insurance is
+      greater than the recent national rate of <m>15.4\%</m>, according  the Insurance Information Institute(iii.org). In a random sample
+      of <m>400</m> drivers, <m>76</m> were found to be driving without auto
+      insurance.
+    </p>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, test whether the population
+      proportion of drivers in this metropolitan area who drive without auto
+      insurance is greater than <m>0.154</m> .
+    </p>
+  </statement>
+  <solution> <title>Hypotheses</title>
+    <p>
+      Let <m>p</m> represent the true proportion of drivers in this metropolitan
+      area who drive without auto insurance.
+    </p>
+    <p> The hypotheses are 
+    <md> H_0:p=0.154 \qquad H_a:p \gt 0.154.     </md>
+This is a right tailed test. </p>
+</solution>
+<solution> <title>Assumptions</title>
+        <p>      We check the success-failure condition using <m>p_0=0.154</m>:
+    <md> np_0=400(0.154)=61.6 \qquad n(1-p_0)=400(0.846)=338.4.     </md>
+      Both values are at least <m>10</m>, so the normal approximation is
+      appropriate.     </p>
+</solution>
+<solution> <title> Statistical Test</title>
+<p>
+      The sample size is <m>n=400</m>, and the number of drivers without auto
+      insurance is <m>x=76</m>. The sample proportion is
+    <md> \hat{p}=\frac{x}{n}=\frac{76}{400}=0.19.  </md> </p>
+    <p> The test statistic is
+        <md> z=\frac{\hat{p}-p_0}{\sqrt{\dfrac{p_0(1-p_0)}{n}}}
+=\frac{0.19-0.154}{\sqrt{\dfrac{0.154(0.846)}{400}}}
+=\frac{0.036}{\sqrt{0.00032571}}
+\approx \frac{0.036}{0.0180} \approx 1.99.     </md> </p>
+</solution>
+<solution> <title>p-value</title>
+    <p> The p-value for a right-tailed test is <m> P(Z \gt 1.99)\approx 0.0233.
+    </m> </p>
+</solution>
+<solution><title> Decision</title>
+    <p>
+      Since the <term>p-value</term> is less than <m>0.05</m>, we reject
+      <m>H_0</m>.
+    </p>
+</solution>
+<solution><title> Conclusion</title>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, there is sufficient evidence to
+      conclude that the proportion of drivers in this metropolitan area who
+      drive without auto insurance is greater than <m>15.4\%</m>.
+    </p>
+  </solution>
+</exercise>
+
+
+
   </subsection>
 
 

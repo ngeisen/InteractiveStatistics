@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-CompProp" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>z-test for Two Proportions</title>
-  <p> Text of section. </p>
+
+  <introduction>
+    <p>
+      
+    </p>
+  </introduction>
+
+<subsection xml:id="subsec-CompareProportionsBasics">
+  <title>Understanding the Basics</title>
+ <p> The two-proportion <m>z</m>-test is used to compare the proportions of a particular outcome in two populations and determine whether there is evidence of a difference between them. This test is appropriate when each individual in both samples is classified into one of two categories, such as success or failure, yes or no, or support or do not support. The <term> hypotheses</term> are written in terms of the population proportions <m>p_1</m> and <m>p_2</m>. The null hypothesis is often written as <m>p_1-p_2=0</m> or  <m>p_1 = p_2</m>. The alternative hypothesis is writing as either <m>p_1 \lt p_2</m> or <m>p_1 \gt p_2</m> for a one tailed test, or <m>p_1 \ne p_2</m> for a two tailed test. </p>
+<p>The <term>test statistic</term> is
+<md> z=\frac{(\hat{p}_1-\hat{p}_2)-0}{\sqrt{\bar{p}\left(1-\bar{p}\right)\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}} </md>
+where <m>\hat{p}_1=\dfrac{x_1}{n_1}</m> and <m>\hat{p}_2=\dfrac{x_2}{n_2}</m> are the sample proportions, and <m> \bar{p}=\frac{x_1+x_2}{n_1+n_2} </m>
+is the pooled sample proportion. </p>
+<p> This test assumes that the two samples are independently selected, that the observations within each sample are independent, and that the sampling distribution of the difference in sample proportions is approximately normal. The normality condition is satisfied when there are at least 10 successes and 10 failures in each group. </p>
+<p>The resulting <term>p-value</term> is used to determine whether the observed difference between sample proportions provides enough evidence to conclude that the two population proportions differ.</p>
+<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+
+<definition xml:id="def-two-proportion-z-test">
+  <statement>
+    <p>
+      A <term>two-proportion <m>z</m>-test</term> is a statistical test used to
+      compare two population proportions and determine whether there is evidence
+      of a difference between them.
+    </p>
+    <p>
+      The test statistic is
+        <md>
+z=\frac{(\hat{p}_1-\hat{p}_2)-0}{\sqrt{\bar{p}(1-\bar{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+    </md> </p>
+    <p>
+      where <m>\hat{p}_1=\dfrac{x_1}{n_1}</m> and <m>\hat{p}_2=\dfrac{x_2}{n_2}</m>
+      are the sample proportions, and
+      <m>\bar{p}=\dfrac{x_1+x_2}{n_1+n_2}</m> is the pooled sample proportion.
+    </p>
+  </statement>
+</definition>
+
+ 
+
+</subsection> 
 
 
+<subsection xml:id="subsec-CompareProportionsCalc">
+  <title>Using Technology</title>
+  <p> short cuts </p>
+  </subsection>
 
 
 </section>
