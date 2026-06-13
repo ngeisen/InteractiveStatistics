@@ -1,82 +1,387 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="sec-SingleMean.ptx" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-SingleMean" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>t-test for the Mean</title>
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      The one-sample <m>t</m>-test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean.
+    </p>
 
-  <subsection xml:id="subsec-Singlemean">
+  </introduction>
+  <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses for the mean. </p>    </li>
+    <li> <p> Determine the test statistic and p-value for the t-test .</p> </li>
+     <li> <p> Write the conclusion of a test in context. </p>    </li>
+        </ol>
+</objectives>
+
+
+  <subsection xml:id="subsec-SingleMean">
   <title>Understanding the Basics</title>
+  <p> The one-sample <m>t</m>-test is used to test a claim about a population mean when the population standard deviation is unknown. The first step is to write the null and alternative <term>hypotheses</term>. In this test, we compare a sample mean <m>\bar{x}</m> to a hypothesized population mean <m>\mu_0</m> by calculating a <em>test statistic</em> that measures how many standard errors the sample mean is from the hypothesized value.</p>
+  <p>  The <term>test statistic</term> is computed as <md>t=\dfrac{\bar{x}-\mu_0}{s/\sqrt{n}}</md>, where <m>\bar{x}</m> is the sample mean, <m>\mu_0 </m> is the hypothesized value, <m>s</m> is the sample standard deviation, and <m>n</m> is the sample size. </p> 
+  <p> Because the population standard deviation is not known, the test statistic follows a <term>t-distribution</term> with <m>n-1</m> degrees of freedom, provided the data come from a population that is approximately normal or the sample size is large enough. The resulting <term>p-value</term> helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.</p>
+
+  <definition xml:id="def-one-sample-t-test-mean">
+  <statement>
+    <p>
+      A <term>one-sample <m>t</m>-test for a mean</term> is a statistical method
+      used to test a claim about a mean when the population standard
+      deviation is unknown and the population is approximately normal. The formula for the t-test is <md>t=\dfrac{\bar{x}-\mu_0}{s/\sqrt{n}}</md> with degrees of freedom <m>df=n-1</m>.
+    </p>
+  </statement>
+</definition>
+<p> When competing the t-test for the mean, we assume we have random sample from the population  and that the sample is either grater than 30 or the population is normally distributed if the sample size is less than 30. We use the <em>t</em>-distribution because we do not know the population standard deviation. </p>
+
+<p> <term>Example: Hypothesis Test for the Mean Time Between Old Faithful Eruptions</term> </p>
+    <p>
+      A park researcher wants to determine whether the mean time between eruptions
+      of Old Faithful in Yellowstone National Park is different from the claimed 90  minutes. A random sample of 20 waiting times, measured in minutes, is recorded below.
+    </p>
+    <table>
+      <title>Waiting Times Between Old Faithful Eruptions (minutes)</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row bottom="minor">
+          <cell right="minor">82</cell>
+          <cell right="minor">88</cell>
+          <cell right="minor">91</cell>
+          <cell right="minor">95</cell>
+          <cell>87</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">93</cell>
+          <cell right="minor">89</cell>
+          <cell right="minor">84</cell>
+          <cell right="minor">96</cell>
+          <cell>90</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">85</cell>
+          <cell right="minor">92</cell>
+          <cell right="minor">94</cell>
+          <cell right="minor">86</cell>
+          <cell>89</cell>
+        </row>
+        <row>
+          <cell right="minor">91</cell>
+          <cell right="minor">88</cell>
+          <cell right="minor">97</cell>
+          <cell right="minor">83</cell>
+          <cell>90</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, test whether the true mean waiting
+      time between eruptions is different from 90 minutes.
+    </p>
+
+<example>
+<title> Hypotheses</title>
+<statement> 
+<p> The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses. </p>
+</statement>
+<solution> 
+ <p> The parameter is the mean <m> \mu</m></p>
+ <p> The hypotheses are <m>H_0: \mu=90</m> and <m>H_a:\mu \ne 90</m>.    </p>
+ <p> Because the park ranger asks whether the mean is <q>different</q> from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value. </p>
+</solution>
+</example> 
+
+<example>
+<title> Assumptions </title>
+<statement>
+<p>Identify which test to perform and check that we meet the conditions for that test. </p>
+</statement>
+<solution> 
+<p> Since the population standard deviation is unknown and we have a sample of 20, use a one-sample <m>t</m>-test for the mean. Which tells we use the <m>t</m>-distribution. If we graph the data we can see it is approximately bell shaped and symmetric.</p>
+</solution>
+</example> 
+
+<example>
+<title> Statistical Test </title>
+<statement>
+<p> We need to compute the sample mean and sample standard deviation. Then we will calculate the <em>test statistic</em> and estimate the  <em>p-value</em> for a two-tailed test</p>
+</statement>
+<solution> 
+<p> the mean is <m> \bar{x}= \frac{1780}{20}=89.50   </m> </p>
+<p> the standard deviation is <m>s \approx 4.27</m> </p>
+<p> sample size is <m>n=20</m> and degrees of freedom is <m>df=20-1=18</m> </p>
+<p> Compute <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.</md> </p>
+<p> The standard error is     
+    <md>\frac{s}{\sqrt{n}}=\frac{4.27}{\sqrt{20}}\approx 0.95.</md> </p>
+  <p>The test statistic is
+    <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}=\frac{89.50-90}{0.95}\approx -0.52.</md>     </p>
+    <p>
+      With 19 degrees of freedom, the two-tailed <em>p-value</em> is
+      <m>2(.305)=0.61</m>.     </p>
+  </solution>
+</example> 
+
+<example>
+<title>Decision</title>
+<statement> <p> Make the decision to reject or not reject the null hypothesis by comparing the <em>p-value</em> with the level of significance <m>\alpha = 0.05</m> </p>
+</statement>
+<solution>
+    <p>  Since the <em>p-value </em> = 0.61 is greater than <m>\alpha=0.05</m>, we fail to reject the null hypothesis <m>H_0</m>.     </p>
+</solution>
+</example>
+
+<example>
+<title> Conclusion</title>
+<statement> <p> Now summarize the conclusion of the test by referring back to the alternative hypothesis.</p>
+</statement> 
+<solution>
+    <p>
+      There is not enough statistical evidence to conclude that the true mean
+      time between Old Faithful eruptions is different from <m>90</m> minutes.
+    </p>
+  </solution>
+</example>
+
+
+
+
+
+
+
+
+
   </subsection>
 
-<subsection xml:id="subsec-SinglemeanCalc">
+<subsection xml:id="subsec-SingleMeanCalc">
   <title>Using Technology</title>
+  <p> Use TI83 </p>
   </subsection>
 
-<subsection xml:id="subsec-SinglemeanPractice">
+<subsection xml:id="subsec-SingleMeanPractice">
   <title>Practice Problems</title>
 <p> The data in <em>Hurricanes</em> contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Suppose we are interested in comparing the mean number of hurricanes that make landfall during different time periods. <em> Early Years </em> consists of the number of hurricanes from 1914 to 1933 and <em>Later Years </em> consists of the number of hurricanes from 2003 to 2022.</p>
 <p> In StatKey under <term>One Quantitative Variable</term>, <c>Upload </c>the data file and select each variable to find the summary statistics. Click on <c>Change Column</c> to change variable names. </p>
 
 <exercise> <title> summary statistics </title>
-<p>Find the sample size, mean, and standard deviation for <em> Hurricanes</em>, <em>Early Years</em> and <em> Later Years.</em> Round to two decimal places. </p> 
-<solution> <p> summary </p>
+  <statement>
+    <p>Find the sample size, mean, and standard deviation for <em> Hurricanes</em>, <em>Early Years</em> and <em> Later Years.</em> Round to two decimal places. </p>
+  </statement>
+ <solution> <p> summary </p>
 </solution>
 </exercise> 
 <p> We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.</p>
 
-
 <exercise> <title> hypotheses </title> 
-<p> We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses? </p>
+  <statement>
+  <p> We are going to investigate if the mean in Early Years is significantly less than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses? </p>
+  </statement>
 <solution> <p> <m> Ho: \mu =5.8</m> and <m>Ha: \mu \lt 5.8 </m> </p> 
 </solution>
 </exercise> 
 <exercise> <title> test value </title> 
-<p> What is the statistical test value? </p>
-<solution> <p> <me> T= \frac{4.3-5.8} {\frac{2.77} {\sqrt{20}}}= -2.42</me> </p> 
+  <statement>
+    <p> What is the statistical test value? </p>
+  </statement>
+<solution> <p> <m> T= \frac{4.3-5.8} {\frac{2.77} {\sqrt{20}}}= -2.42</m> </p> 
 </solution>
 </exercise> 
 <exercise> <title> p-value </title> 
-<p> Find the p-value for the  statistical test value </p>
+  <statement>
+    <p> Find the p-value for the  statistical test value </p>
+  </statement>
 <solution> <p> p-value=0.013 with 19 df for left tail test </p>
 </solution>
 </exercise> 
 <exercise> <title> decision </title> 
-<p> Based the p-value, should your reject or not reject the null hypothesis?</p>
+  <statement>
+    <p> Based the p-value, should your reject or not reject the null hypothesis?</p>
+  </statement>
 <solution> <p> since p-value 0.013 is less than alpha (.05), we should reject Ho </p>
 </solution>
 </exercise> 
 <exercise> <title> conclusion </title> 
-<p> What is the conclusion?  </p>
+  <statement>
+    <p> What is the conclusion?  </p>
+  </statement>
 <solution> <p> Conclude the mean in Early Years hurricanes is significantly less than the mean of 5.8 hurricanes per year.</p>
 </solution>
 </exercise> 
 
 <p> We are going to investigate if the mean number of hurricanes in the Later Years is significantly more than the mean of 5.8 hurricanes per year. </p> 
 <exercise> <title> hypotheses </title> 
-<p> We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses? </p>
+  <statement>
+    <p> We are going to investigate if the mean in Later Years is significantly more than the mean of 5.8 hurricanes per year. What are the null and alternative hypotheses? </p>
+  </statement>
 <solution> <p> <m> Ho: \mu =5.8</m> and <m>Ha: \mu \gt 5.8 </m> </p> 
 </solution>
 </exercise> 
 <exercise> <title> test value </title> 
-<p> What is the statistical test value? </p>
+  <statement>
+    <p> What is the statistical test value? </p>
+  </statement>
 <solution> <p> <m> T= \frac{7.75-5.8} {\frac{3.34} {\sqrt{20}}}= 2.61
 </m> </p> 
 </solution>
 </exercise> 
 <exercise> <title> p-value </title> 
-<p> Find the p-value for the  statistical test value </p>
+  <statement>
+   <p> Find the p-value for the  statistical test value </p>
+  </statement>
 <solution> <p> p-value=0.0086 with 19 df  for a right tail test </p>
 </solution>
 </exercise> 
 <exercise> <title> decision </title> 
-<p> Based the p-value, should your reject or not reject the null hypothesis?</p>
+  <statement>
+    <p> Based the p-value, should your reject or not reject the null hypothesis?</p>
+  </statement>
 <solution> <p> since p-value 0.0086 is less than alpha (.05), we should reject Ho </p>
 </solution>
 </exercise> 
 <exercise> <title> conclusion </title> 
-<p> What is the conclusion?  </p>
+  <statement>
+   <p> What is the conclusion?  </p>
+  </statement>
 <solution> <p> Conclude the mean in Later Years hurricanes is significantly more than the mean of 5.8 hurricanes per year.</p>
 </solution>
 </exercise> 
+
+<p> Homework Problems </p> 
+<exercise xml:id="oceanpH-hypothesis-test">
+  <title> Change in Ocean pH</title>
+  <statement>
+    <p>
+      Scientists have long used a historical average surface ocean pH of about
+      <m>8.20</m> as a benchmark. Recent National Ocean and Atmospheric Administration (NOAA) summaries report that global surface
+      ocean pH has decreased by about <m>0.1</m> to <m>0.11</m> units since the
+      Industrial Revolution, suggesting modern ocean pH may now be lower on average.
+    </p>
+    <p>
+      A marine science team collects a random sample of <m>16</m> recent surface-ocean
+      pH measurements from one region and obtains a sample mean of
+      <m>\bar{x}=8.08</m> and a sample standard deviation of <m>s=0.12</m>.
+    </p>
+    <p>
+      At the <m>0.05</m> significance level, test whether the true mean ocean pH
+      in this region has changed from the historical value of <m>8.20</m>.
+    </p>
+    <p>
+      State the null and alternative hypotheses, compute the test statistic,
+      estimate the <term>p-value</term>, and state a conclusion in context.
+    </p>
+  </statement>
+  <hint>
+    <p>
+      Because the population standard deviation is unknown, use a one-sample
+      <m>t</m>-test for the mean.
+    </p>
+    <p>
+      For the question of whether the pH has <q>changed</q>, use a two-sided test:
+    </p>
+    <p> <m>H_0:\mu=8.20 \qquad H_a: \mu\ne 8.20 </m> </p>
+    <p>
+      Then compute
+    </p>
+    <p> <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.</md> </p>
+  </hint>
+  <answer>
+    <p> The hypotheses are <m>H_0:\mu=8.20</m> and <m>H_a: \mu \ne 8.20</m>.
+      The test statistic is <m>t=-3.88</m> with <m>df=15</m>.
+      The two-sided <term>p-value</term> is <m>0.0017</m>.
+      Since the <em>p-value</em> is less than 0.05, we reject <m>H_0</m>.
+      Conclude there is significant evidence that the mean ocean pH in this region has changed from 8.    </p>
+  </answer>
+  <solution>
+    <p> We test whether the population mean pH differs from the historical benchmark
+      of <m>8.20</m>.     </p>
+    <p> The hypotheses are    
+    <m> H_0:\mu=8.20 \qquad H_a:\mu\ne 8.20.</m> </p>
+    <p> Because the population standard deviation is unknown and the sample size is
+      16, we use a one-sample <m>t</m>-test.    </p>
+    <p> The standard error is     
+    <md>\frac{s}{\sqrt{n}}=\frac{0.12}{\sqrt{16}}=\frac{0.12}{4}=0.03.</md> </p>
+    <p> The test statistic is     </p>
+    <p> <md>t=\frac{8.08-8.20}{0.03}=\frac{-0.12}{0.03}=-4.00.</md> </p>
+    <p> The degrees of freedom are <m>df=16-1=15.</m> </p>
+    <p> A test statistic of <m>t=-3.89</m> with <m>15</m> degrees of freedom gives a two-sided <term>p-value</term> <m>=2(.0018)=.0036</m>.     </p>
+    <p> Since the <term>p-value</term> is less than the significance level
+      <m>\alpha=0.05</m>, we reject the null hypothesis.     </p>
+    <p>
+      There is sufficient statistical evidence to conclude that the true mean
+      ocean pH in this region has changed from the historical value of <m>8.20</m>.
+      Because the sample mean is lower than <m>8.20</m>, the data suggests the change
+      is a decrease in pH level.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="oceanDecph-hypothesis-test">
+  <title> Decreasing in Ocean pH</title>
+  <statement>
+    <p>
+      Scientists have historically used an average surface ocean pH of about
+      <m>8.20</m> as a benchmark. Recent NOAA summaries indicate that average
+      surface ocean pH has decreased over time, motivating a test of whether
+      the mean pH in a particular region is now lower than <m>8.20</m>.
+    </p>
+    <p>
+      A marine science team collects a random sample of <m>12</m> recent
+      surface-ocean pH measurements from one coastal region:
+    </p>
+    <p>
+      <m>8.07,\; 8.12,\; 8.05,\; 8.10,\; 8.09,\; 8.03,\; 8.11,\; 8.06,\; 8.08,\; 8.04,\; 8.13,\; 8.07</m>
+    </p>
+    <p>
+      At the <m>0.05</m> significance level, test whether the true mean ocean pH
+      in this region has decreased from the historical value of <m>8.20</m>.
+    </p>
+    <p> State the null and alternative hypotheses, compute the test statistic,
+      estimate the <em>p-value</em>, and state a conclusion in context.    </p>
+  </statement>
+  <hint>
+    <p> Use a one-sample <m>t</m>-test for a population mean, since the population
+      standard deviation is unknown.     </p>
+    <p>  For a one-sided test of decrease, use     </p>
+    <p> <md>H_0: \mu=8.20 \qquad H_a: \mu \lt 8.20.</md> </p>
+    <p> Then compute the sample mean, sample standard deviation, and test statistic  </p>
+    <p> <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.</md> </p>
+  </hint>
+  <answer>
+    <p>
+      The hypotheses are <m>H_0:\mu=8.20</m> and <m>H_a: \mu \lt 8.20</m>.
+      From the data, <m>\bar{x}\approx 8.079</m> and <m>s \approx 0.033</m>.
+      The test statistic is <m>t\approx -12.59</m> with
+      <m>df=11</m>. The <em>p-value</em> is effectively <m>0</m>
+      (far less than <m>0.05</m>), so we reject <m>H_0</m>.
+      There is strong evidence that the true mean ocean pH in this region
+      has decreased below <m>8.20</m>.
+    </p>
+  </answer>
+  <solution>
+    <p> We want to test whether the population mean ocean pH is lower than
+      the historical benchmark of <m>8.20</m>.     </p>
+    <p> The hypotheses are     
+    <md> H_0:\mu=8.20 \qquad H_a:\mu \lt 8.20     </md> </p>
+    <p>       Because the population standard deviation is unknown, we use a one-sample
+      <m>t</m>-test for the mean.     </p>
+    <p>  First compute the sample statistics from the data:    </p>
+    <p> <md>\bar{x}=\frac{8.07+8.12+8.05+8.10+8.09+8.03+8.11+8.06+8.08+8.04+8.13+8.07}{12}\approx 8.079.</md> </p>
+    <p> <md>s\approx 0.033.</md> </p>
+    <p>       The sample size is <m>n=12</m>, so the degrees of freedom are  <m>df=12-1=11.</m> </p>
+    <p> The standard error is     
+    <md>\frac{s}{\sqrt{n}} \approx \frac{0.033}{\sqrt{12}} \approx 0.0095.</md> </p>
+    <p>       The test statistic is     
+    <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}=\frac{8.079-8.20}{0.0095}\approx -12.77.</md> </p>
+    <p>
+      With <m>df=11</m>, this gives a one-sided <term>p-value</term> that is
+      extremely small, far below <m>0.05</m>.
+    </p>
+    <p>       Therefore, we reject <m>H_0</m>.     </p>
+    <p>       There is strong statistical evidence that the true mean ocean pH in this
+      region has decreased below <m>8.20</m>.     </p>
+  </solution>
+</exercise>
+
+
 
 
   </subsection>

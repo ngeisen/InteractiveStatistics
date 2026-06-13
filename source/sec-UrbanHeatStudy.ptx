@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="sec-UrbanHeatStudy.ptx" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-UrbanHeatStudy" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Urban Heat Study</title>
   <p> Text of section. </p>
 
@@ -67,7 +67,7 @@
 <title>Data Organization</title>
 <p>The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available: </p>
   <p>  <url href="external/MetroDenverData.csv"> MetroDenver.csv </url> </p>
-<figure xml:id="UrbanHeat">
+<figure xml:id="UrbanHeat1">
             <caption>Urban Heat Data</caption>
             <image source="UrbanHeatTable.png" >
                 <shortdescription>Image of datafile showing 15 cities.</shortdescription>

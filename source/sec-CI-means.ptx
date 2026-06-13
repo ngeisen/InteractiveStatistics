@@ -275,6 +275,201 @@
 </solution>
 </exercise> 
 
+<p>
+  Homework Problems
+</p>
+
+<exercise xml:id="co2-confidence-interval">
+  <title> Atmospheric Carbon Dioxide </title>
+  <statement>
+    <p> A climate scientist wants to estimate the mean annual increase in atmospheric
+      carbon dioxide concentration, measured in parts per million (<abbr>ppm</abbr>),
+      over a recent 12-year period. From a random sample of <m>12</m> years, the recorded annual increases give the following summary statistics:   </p>
+    <p>
+      <m>n = 12</m>, <m>\bar{x} = 2.41</m> ppm, and <m>s = 0.36</m> ppm.
+    </p>
+    <p>
+      Construct a <m>95\%</m> confidence interval for the true mean annual increase in
+      atmospheric <m>\text{CO}_2</m> levels. Interpret the interval in context.
+    </p>
+    <p>
+      Explain why a <m>t</m>-interval is appropriate for this situation and describe one way to obtain a narrower interval.
+    </p>
+  </statement>
+  <hint>
+    <p>
+      Since the population standard deviation is unknown and the sample size is small,
+      use a one-sample <m>t</m>-interval for the mean:
+    </p>
+    <p> <md>\bar{x} \pm t^* \frac{s}{\sqrt{n}}.</md> </p>
+      </hint>
+  <answer>
+    <p>
+      A <m>95\%</m> confidence interval is approximately
+      <m>(2.18, 2.64)</m> ppm.
+      A <m>t</m>-interval is appropriate because <m>\sigma</m> is unknown and the sample is small.
+      A narrower interval could be obtained by increasing the sample size.
+      (or by using a lower confidence level such as 90%).
+    </p>
+  </answer>
+  <solution>
+    <p>   We use a one-sample <m>t</m>-interval for a population mean because the population standard deviation is not known and the sample size is only <m>12</m>.
+    </p>
+    <p>    The degrees of freedom are    <m>df = n-1 = 11.</m>     </p>
+    <p>    For a <m>95\%</m> confidence interval with <m>11</m> degrees of freedom, the critical value is <m>t^* = 2.201</m>.     </p>
+    <p>    The standard error is
+   
+    <md>\frac{s}{\sqrt{n}} = \frac{0.36}{\sqrt{12}} \approx 0.104.</md>  </p>
+    <p>    The margin of error is   
+    <md>ME = t^*\frac{s}{\sqrt{n}} \approx 2.201(0.104) \approx 0.229.</md> </p>
+    <p>    Therefore, the confidence interval is     
+    <md>\bar{x} \pm ME = 2.41 \pm 0.229,</md> </p>
+    <p>    Rounding to two decimal places, the <m>95\%</m> confidence interval is
+      <m>(2.181, 2.639)</m> ppm.     </p>
+    <p> Interpretation: We are <m>95\%</m> confident that the true mean annual increase in  atmospheric carbon dioxide levels lies between <m>2.18</m> ppm and <m>2.64</m> ppm.  </p>
+    <p>  To obtain a narrower interval, the climate scientist could increase the sample size to reduce the amount of variation.</p>
+    <p> Using a lower confidence level, such as 90%, would also narrow the interval since the margin of error will become smaller.     </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="oceanph-confidence-interval">
+  <title> Ocean pH Levels</title>
+  <statement>
+    <p>  A marine scientist wants to estimate the mean annual decrease in ocean pH
+      in a coastal region over a recent years. A random sample of 10 years gives the following summary statistics.   </p>
+    <p>
+      <m>n = 10</m>, <m>\bar{x} = 0.018</m>, and <m>s = 0.006</m>,
+      where each value represents the annual decrease in pH.
+    </p>
+    <p> Construct a <m>95\%</m> confidence interval for the true mean annual decrease
+      in ocean pH. Interpret the interval in context.     </p>
+    <p>
+      Explain why a <m>t</m>-interval is appropriate, and describe one way to obtain
+      a wider interval.
+    </p>
+  </statement>
+  <hint>
+    <p>
+      Since the population standard deviation is unknown and the sample size is small,
+      use a one-sample <m>t</m>-interval for the mean:
+   
+    <md>\bar{x} \pm t^* \frac{s}{\sqrt{n}}.</md>  </p>
+      </hint>
+  <answer>
+    <p>  A <m>95\%</m> confidence interval is approximately <m>(0.0137, 0.0223)</m>.</p>
+<p>  A <em>t</em>-interval is appropriate because <m>\sigma</m> is unknown and the sample is small.
+      A wider interval could be obtained by decreasing the sample size which allows for more variation or increasing the confidence level to 99%.
+    </p>
+  </answer>
+  <solution>
+    <p>
+      We use a one-sample <m>t</m>-interval for a population mean because the population
+      standard deviation is unknown and the sample size is only 10.
+    </p>
+    <p> The degrees of freedom are  <m>df = 10-1 = 9.</m>     </p>
+    <p>
+      For a <m>95\%</m> confidence interval with 9degrees of freedom, the critical value is
+       <m>t^* = 2.262</m>.
+    </p>
+    <p>
+      The standard error is
+      <md>\frac{s}{\sqrt{n}} = \frac{0.006}{\sqrt{10}} \approx 0.00190.</md>   </p>
+    <p>
+      The margin of error is
+      <md>ME = t^*\frac{s}{\sqrt{n}} \approx 2.262(0.00190) \approx 0.0043.</md> </p>
+    <p>
+      Therefore, the confidence interval is
+        <md>\bar{x} \pm ME = 0.018 \pm 0.0043,</md> </p>
+        <p>
+      Interpretation: We are <m>95\%</m> confident that the true mean annual decrease
+      in ocean pH lies between <m>0.0137</m> and <m>0.0223</m>.
+    </p>
+    <p>
+      To obtain a wider interval, the scientist could decrease the sample size allows for more variation.
+      Using a higher confidence level would also widen the interval since the margin of error also increases. 
+    </p>
+  </solution>
+</exercise>
+
+
+<exercise xml:id="OldFaithful-confidence-interval">
+  <title> Time Between Old Faithful Eruptions</title>
+  <statement>
+    <p>
+      A hiking enthusiast wants to estimate the mean time between eruptions of Old Faithful
+      in Yellowstone National Park before planning a visit so they can arrive to see an eruption. A random sample of <m>12</m> waiting times from the previous day, measured in minutes, is recorded below.
+    </p>
+    <table>
+      <title>Waiting Times Between Eruptions (minutes)</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row bottom="minor">
+          <cell right="minor">78</cell>
+          <cell right="minor">82</cell>
+          <cell right="minor">74</cell>
+          <cell right="minor">88</cell>
+          <cell>80</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">76</cell>
+          <cell right="minor">84</cell>
+          <cell right="minor">79</cell>
+          <cell right="minor">81</cell>
+          <cell>77</cell>
+        </row>
+        <row>
+          <cell right="minor">83</cell>
+          <cell right="minor">75</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Construct a 90% confidence interval for the true mean waiting time
+      between eruptions of Old Faithful. Interpret the interval in context.
+    </p>
+  </statement>
+  <hint>
+    <p>
+      Since the population standard deviation is unknown and the sample size is small, use a one-sample <m>t</m>-interval for the mean:
+       <md>\bar{x} \pm t^* \frac{s}{\sqrt{n}}.</md>  </p>
+    <p>
+      Here, <m>n=12</m>, so the degrees of freedom are <m>11</m>.
+    </p>
+  </hint>
+  <answer>
+    <p>
+      A <m>90\%</m> confidence interval for the true mean waiting time is approximately
+      <m>(76.8, 82.4)</m> minutes. A <m>t</m>-interval is appropriate because the
+      population standard deviation is unknown and the sample size is small.
+      A more precise interval could be obtained by increasing the sample size.
+    </p>
+  </answer>
+  <solution>
+    <p>  We use a one-sample <m>t</m>-interval because the population standard deviation is unknown and the sample size is only <m>12</m>.   </p>
+    <p>  First compute the sample mean from the data:
+    <md>\bar{x}=\frac{78+82+74+88+80+76+84+79+81+77+83+75}{12}=79.75.</md>     </p>
+
+    <p>  The sample standard deviation is approximately
+    <m>s\approx 4.72.</m>     </p>
+    <p> The degrees of freedom are <m>df=12-1=11.</m> </p>
+    <p> For a <m>90\%</m> confidence interval with <m>11</m> degrees of freedom, the critical value is approximately    <m>t^*=1.796</m>.     </p>
+    <p> The standard error is  
+    <md>\frac{s}{\sqrt{n}}=\frac{4.72}{\sqrt{12}}\approx 1.36.</md> </p>
+    <p> The margin of error is    
+    <md>ME=t^*\frac{s}{\sqrt{n}}\approx 1.796(1.36)\approx 2.45.</md> </p>
+    <p>  Therefore, the confidence interval is    
+    <md>\bar{x}\pm ME = 79.75 \pm 2.45,</md>  </p>
+    <p> Rounding appropriately, a 90% confidence interval for the true mean
+      waiting time between eruptions of Old Faithful is about <m>(77.3, 82.2)</m> minutes. </p>
+    <p>
+      Interpretation: We are 90% confident that the true mean waiting time
+      between eruptions of Old Faithful lies between about <m>77.3</m> and <m>82.2</m> minutes. So the hiking enthusiast will want to arrive about 77 minutes after the previous eruption and should see one within about 5 minutes. 
+    </p>
+      </solution>
+</exercise>
+
 
 
 
