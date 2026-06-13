@@ -6460,7 +6460,79 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "z-test for Proportions",
-  "body": " z-test for Proportions  Text of section.  "
+  "body": " z-test for Proportions   In this section, we will learn how to perform a one-sample -test for a population proportion. This test is used to determine whether there is enough evidence in a sample of data to support a claim about the true proportion of a population that has a certain characteristic. We will go through the steps of hypothesis testing, including stating the hypotheses, checking assumptions, calculating the test statistic and p-value, and making a conclusion in context. We will also see how to use technology to perform these calculations and practice with real data examples.     At the end of this section you will be able to:     Write hypotheses involving proportions    Determine the test statistic and p-value for the z-test for proportions.    Write the conclusion of a test in context      Hypothesis Testing for Proportions  The one-sample -test for a population proportion is used to test a claim about the true proportion of a population that has a certain characteristic. In this test, a sample proportion is compared to a hypothesized population proportion to determine whether the difference between them is large enough to be statistically significant. We will state the hypotheses and check that we have met the assumptions that 1) the sample is random or representative of the population and 2) the success-failure condition is satisfied, meaning that the expected numbers of successes and failures under the null hypothesis are both sufficiently large. We check that and   Next, the test statistic is computed as , where is the sample proportion, is the hypothesized value, and is the sample size. The resulting p-value is the probability that statistical value or something more extreme is likely to occur if the null hypothesis is true and is used to decide whether to reject the null hypothesis to conclude that there is evidence for the alternative claim about the population proportion.    A one-sample -test for a population proportion is a statistical method used to test a claim about a population proportion using sample data. The test statistic is , where is the sample proportion, is the hypothesized value, and is the sample size.      Hypothesis Test Examples for Parrots  Researchers studying parrot vocal behavior recorded whether each parrot regularly interacted socially with other parrots in the dataset BenedictParrotVocals.csv . Suppose we want to test whether the proportion of parrots that regularly interacted socially with other parrots is greater than 50%.  In the sample, out of parrots were recorded as having Yes for the question Social with other parrots? .  At the significance level, test whether the population proportion of parrots that regularly interacted socially with other parrots is greater than 50%.    State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Hypothesis  Let be the true proportion of parrots that regularly interacted socially with other parrots. The null hypothesis is the proportion is 50% while the alternative hypothesis is the proportion is greater than 50%.     Assumptions  The conditions for the one-sample -test are satisfied because and , both of which are at least . So we can use the normal distribution since the sample is large enough.    Statistical Test  Use the sample proportion   and the test statistic is      p-value  For a right-tailed test, the p-value is     Decision  Since the p-value = 0.54 is slightly greater than the significance level , we fail to reject .    Conclusion  There is not enough evidence at the significance level to conclude that the proportion of parrots that regularly interacted socially with other parrots is greater than 50%.    Researchers studying parrot vocal behavior recorded the number of mimicked sounds, phrases, and words for each parrot in the dataset BenedictParrotVocals.csv . Define a parrot as having a small mimicry repertoire if its total number of mimicked sounds, phrases, and words is less than .  Suppose we want to test whether less than of parrots have a mimicry repertoire size less than 15.  In the sample, out of parrots had a total mimicry repertoire size less than .  At the significance level, test whether the population proportion of parrots with mimicry repertoire sizes less than 15 words and phrases is less than 60%.    State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Let be the true proportion of parrots with a mimicry repertoire size less than 15.  Use sample proportion and     The hypotheses are and . The sample proportion is . The conditions are satisfied because and , both at least . The test statistic is , giving a left-tailed p-value of approximately . Since the p-value is much smaller than , we reject . There is enough evidence to conclude that less than 60% of parrots have mimicry repertoire sizes of less than 15 words and phrases.    Hypotheses  Let represent the true proportion of parrots whose total mimicry repertoire size is less than 15, where total repertoire size is the sum of mimicked sounds, phrases, and words.  The hypothesis are    Assumptions  From the sample, parrots out of had a total mimicry repertoire size less than 15. Therefore,   We verify the success-failure condition using :   Both values are greater than , so the normal approximation is appropriate.   Statistical Test  Now compute the test statistic:     p-value  Because this is a left-tailed test, the p-value is    Decision  Since the p-value = 0 is much smaller than , we reject the null hypothesis.    Conclusion  There is enough evidence at the significance level to conclude that less than of parrots have mimicry repertoire sizes less than 15 words and phrases.      Using Technology  Now let us use the TI-83 Plus Calculator to calculate the test statistic and p-value.  Researchers studying parrot vocal behavior recorded the sex of each parrot in the dataset BenedictParrotVocals.csv . Suppose we want to test whether the proportion of parrots identified as male is different from 50%  In the sample, out of parrots were identified as male.  At the significance level, test whether the population proportion of parrots identified as male differs from 50%.  Using TI-83 Plus   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.    Try the online TI-84 Applet   Using TI-84 Applet   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.     Proportion Test Results for Male Parrots   test value z=-1.07 and pvalue=0.284    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.      Practice Problems  The   "
+},
+{
+  "id": "sec-SingleProportion-3",
+  "level": "2",
+  "url": "sec-SingleProportion.html#sec-SingleProportion-3",
+  "type": "Objectives",
+  "number": "7.3",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Write hypotheses involving proportions    Determine the test statistic and p-value for the z-test for proportions.    Write the conclusion of a test in context    "
+},
+{
+  "id": "subsec-SingleProportionBasics-2",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionBasics-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypotheses "
+},
+{
+  "id": "subsec-SingleProportionBasics-3",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionBasics-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "test statistic p-value "
+},
+{
+  "id": "def-one-sample-z-test-proportion",
+  "level": "2",
+  "url": "sec-SingleProportion.html#def-one-sample-z-test-proportion",
+  "type": "Definition",
+  "number": "7.3.1",
+  "title": "",
+  "body": "  A one-sample -test for a population proportion is a statistical method used to test a claim about a population proportion using sample data. The test statistic is , where is the sample proportion, is the hypothesized value, and is the sample size.   "
+},
+{
+  "id": "subsec-SingleProportionParrots-5",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionParrots-5",
+  "type": "Example",
+  "number": "7.3.2",
+  "title": "",
+  "body": "  State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Hypothesis  Let be the true proportion of parrots that regularly interacted socially with other parrots. The null hypothesis is the proportion is 50% while the alternative hypothesis is the proportion is greater than 50%.     Assumptions  The conditions for the one-sample -test are satisfied because and , both of which are at least . So we can use the normal distribution since the sample is large enough.    Statistical Test  Use the sample proportion   and the test statistic is      p-value  For a right-tailed test, the p-value is     Decision  Since the p-value = 0.54 is slightly greater than the significance level , we fail to reject .    Conclusion  There is not enough evidence at the significance level to conclude that the proportion of parrots that regularly interacted socially with other parrots is greater than 50%.   "
+},
+{
+  "id": "subsec-SingleProportionParrots-10",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionParrots-10",
+  "type": "Checkpoint",
+  "number": "7.3.3",
+  "title": "",
+  "body": "  State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, find the p-value , and state your conclusion in context.    Let be the true proportion of parrots with a mimicry repertoire size less than 15.  Use sample proportion and     The hypotheses are and . The sample proportion is . The conditions are satisfied because and , both at least . The test statistic is , giving a left-tailed p-value of approximately . Since the p-value is much smaller than , we reject . There is enough evidence to conclude that less than 60% of parrots have mimicry repertoire sizes of less than 15 words and phrases.    Hypotheses  Let represent the true proportion of parrots whose total mimicry repertoire size is less than 15, where total repertoire size is the sum of mimicked sounds, phrases, and words.  The hypothesis are    Assumptions  From the sample, parrots out of had a total mimicry repertoire size less than 15. Therefore,   We verify the success-failure condition using :   Both values are greater than , so the normal approximation is appropriate.   Statistical Test  Now compute the test statistic:     p-value  Because this is a left-tailed test, the p-value is    Decision  Since the p-value = 0 is much smaller than , we reject the null hypothesis.    Conclusion  There is enough evidence at the significance level to conclude that less than of parrots have mimicry repertoire sizes less than 15 words and phrases.   "
+},
+{
+  "id": "subsec-SingleProportionCalculator-6",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionCalculator-6",
+  "type": "Example",
+  "number": "7.3.4",
+  "title": "Using TI-83 Plus.",
+  "body": "Using TI-83 Plus   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.   "
+},
+{
+  "id": "subsec-SingleProportionCalculator-8",
+  "level": "2",
+  "url": "sec-SingleProportion.html#subsec-SingleProportionCalculator-8",
+  "type": "Example",
+  "number": "7.3.6",
+  "title": "Using TI-84 Applet.",
+  "body": "Using TI-84 Applet   State the null and alternative hypotheses, verify the conditions for a one-sample -test for a proportion, compute the test statistic, and p-value and state your conclusion in context.    Hypotheses  Let be the true proportion of parrots identified as male.  The hypotheses are    Assumptions  The conditions are satisfied because and , both at least so we can use the normal distribution.   Statistical Test  From the sample, parrots out of were identified as male. Thus, the sample proportion and the test statistic is   For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option 5: 1-PropZ Test and press [ENTER] to select the test.  Input the null hypothesized value , the count of males from the sample . Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]   Proportion Test for Male Parrots   Select 1PropZtest and enter .5, 430, 892, and two tailed test.     Proportion Test Results for Male Parrots   test value z=-1.07 and pvalue=0.284    The test statistic is , and the p-value is .    Conclusion  Since the p-value=0.284 is greater than , we fail to reject . There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.   "
 },
 {
   "id": "sec-SingleVariance",
@@ -6469,7 +6541,79 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.4",
   "title": "Chi-Square test for Variance",
-  "body": " Chi-Square test for Variance  Text of section.  "
+  "body": " Chi-Square test for Variance   In this section we will learn how to perform a chi-square test for variance and standard deviation. We will review using the chi-square distribution to test hypotheses about variance and standard deviation. We will also learn how to write the conclusion for the chi-square test in context.     At the end of this section you will be able to:     Write hypotheses involving variance and standard deviation    Perform chi-square test for variance.    Perform chi-square test for standard deviation.    Write the conclusion for chi-square test in context      Chi-Square Hypothesis Test  A one-sample -test for a population variance is used to test a claim about the variability of a quantitative population when the population is normally distributed. When the hypothesize claim refer to standard deviation we will use in the hypotheses and when the hypothesized situation refers to the variance we will use in the hypotheses. In this test, the sample variance is compared to a hypothesized population variance to determine whether the observed variability is significantly different from the claimed value.  The test statistic is computed as , where is the sample size. When the population is normal, this test statistic follows a chi-square distribution with degrees of freedom. We will use StatKey to calculate the p-values. The resulting p-value is then used to decide whether to reject the null hypothesis and conclude that the population variance differs from, is greater than, or is less than the hypothesized value.    A one-sample -test for a population variance or standard deviation is a statistical method used to test a claim about the variance or standard deviation of a normally distributed population.  The test statistic is where is the sample variance, is the population variance, is the sample size, and with degrees of freedom     When you are given the variance, the value is already squared. When you are given the standard deviation you need to remember to square the value.  review critical and p-values on StatKey    Examples of Chi-Squared Test  A machine is designed to fill bags of flour so that the variability in bag weights have a population variance of ounces squared. A quality control manager wants to test whether the true variance in bag weights is different from ounces squared. A random sample of bags is taken, and the sample variance is found to be ounces squared. Test the claim at the significance level.   Flour Bags   State the null and alternative hypotheses, verify the conditions for a one-sample -test for variance, compute the test statistic, find the p-value with StatKey, and state your conclusion in context.    Hypotheses  Let be the population variance in bag weights.  The hypotheses are     Test Statistic  Since this is a test about a single population variance, we use a one-sample -test for variance. The test statistic is     p-value  The degrees of freedom are .  For a two-tailed test with , change the middle area to 0.95 so the combined area of the tails is 0.05, thus the critical values are approximately and . Since test value is between these two critical values, the test statistic does not fall in the rejection region wo we will not reject the null hypothesis.  For the p-value click on Two Tail and enter the test value 30.4 on the right side, combine the tail area for . since the p-value is greater than do not reject the null hypothesis.   Conclusion  Therefore, we fail to reject . At the significance level, there is not enough evidence to conclude that the population variance in bag weights is different from ounces squared.    A biologist is studying the consistency of seed weights from a particular plant species grown in a laboratory. Under standard growing conditions, the population standard deviation of seed weights is believed to be grams. The biologist wants to test whether the true population standard deviation has increased under a new nutrient treatment.  A random sample of seeds is collected, and the sample standard deviation is found to be grams. At the significance level, test whether the population standard deviation has increased from grams. Assume the population of seed weights is approximately normally distributed.   Seedlings   State the null and alternative hypotheses, verify the conditions for a one-sample -test for standard deviation, compute the test statistic, find the p-value with StatKey, and state your conclusion in context.    Hypotheses  Let be the population standard deviation of seed weights. Since the chi-square procedure is based on variance, we can write the hypotheses in terms of . Equivalently, these may be written as This will be a right-tailed test.   Test Statistic  The sample size is , so the degrees of freedom are . The sample standard deviation is , so the sample variance is   The test statistic is     p-value  For a right-tailed test with and , the right critical value  . The test value of 45.375 lands in the reject region so we will reject the null hypothesis.  For the p-value click on Right Tail and enter the test value 45.375 along the bottom to get the area of . Since the p-value is less than we will reject the null hypothesis.   Conclusion  Since we rejected at the significance level, there is sufficient evidence to conclude that the population standard deviation of seed weights under the new nutrient treatment has increased grams.      Practice Problems   Rainfall   A climate scientist is studying the year-to-year variability in annual rainfall for a particular region. Historically, the population standard deviation of annual rainfall has been inches. The scientist wants to test whether climate change has altered the variability in annual rainfall.  A random sample of recent years is selected, and the sample standard deviation of annual rainfall is found to be inches. At the significance level, test whether the population standard deviation differs from inches. Assume the distribution of annual rainfall is approximately normal.   Hypotheses  Let be the population standard deviation of annual rainfall. Since the chi-square procedure is based on variance, we can also write the hypotheses in terms of variance: This is a two-tailed test.    Statistical Test  The sample size is , so the degrees of freedom are . The sample standard deviation is , so the sample variance is .  The test statistic is     p-value  For a two-tailed test with and , the critical values are a and . Since the test statistic is greater than the upper critical value , it falls in the rejection region and we reject the null hypothesis.  For the p-value click on Two Tails and enter the test value 33.62 on the right, the which is smaller than so we reject the null hypothesis.    Conclusion  Since we reject at the significance level, there is sufficient evidence to conclude that the population standard deviation of annual rainfall differs from inches, suggesting that the variability in rainfall may have changed.     Vapes   A public health researcher is studying the consistency of nicotine content in a particular brand of disposable vapes. The manufacturer claims that the population variance in nicotine content is milligrams squared. The researcher wants to test whether the true variance differs from this claimed value.  A random sample of disposable vapes is selected, and the sample variance in nicotine content is found to be milligrams squared. At the significance level, test whether the population variance in nicotine content differs from milligrams squared. Assume the nicotine content is approximately normally distributed.   Hypotheses  Let be the population variance in nicotine content. The hypotheses are This is a two-tailed test.    Statistical Test  The sample size is , so the degrees of freedom are . The sample variance is .  The test statistic is    p-value  For a two-tailed test with and , the critical values are and .  Since the test statistic is greater than the upper critical value , it falls in the rejection region and we reject the null hypothesis.  for the p-value click on Two Tails and enter the test value 29.4 along the bottom. The . Since the p-value is less than we reject the null hypothesis.    Conclusion  Since we reject at the significance level, there is sufficient evidence to conclude that the population variance in nicotine content differs from milligrams squared.     "
+},
+{
+  "id": "sec-SingleVariance-3",
+  "level": "2",
+  "url": "sec-SingleVariance.html#sec-SingleVariance-3",
+  "type": "Objectives",
+  "number": "7.4",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Write hypotheses involving variance and standard deviation    Perform chi-square test for variance.    Perform chi-square test for standard deviation.    Write the conclusion for chi-square test in context    "
+},
+{
+  "id": "subsec-ChiTestVarianceBasics-2",
+  "level": "2",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceBasics-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypothesize claim "
+},
+{
+  "id": "subsec-ChiTestVarianceBasics-3",
+  "level": "2",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceBasics-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "test statistic chi-square distribution p-value "
+},
+{
+  "id": "def-one-sample-chi-square-test-variance",
+  "level": "2",
+  "url": "sec-SingleVariance.html#def-one-sample-chi-square-test-variance",
+  "type": "Definition",
+  "number": "7.4.1",
+  "title": "",
+  "body": "  A one-sample -test for a population variance or standard deviation is a statistical method used to test a claim about the variance or standard deviation of a normally distributed population.  The test statistic is where is the sample variance, is the population variance, is the sample size, and with degrees of freedom    "
+},
+{
+  "id": "subsec-ChiTestVarianceExamples -3",
+  "level": "2",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceExamples -3",
+  "type": "Example",
+  "number": "7.4.2",
+  "title": "Flour Bags.",
+  "body": " Flour Bags   State the null and alternative hypotheses, verify the conditions for a one-sample -test for variance, compute the test statistic, find the p-value with StatKey, and state your conclusion in context.    Hypotheses  Let be the population variance in bag weights.  The hypotheses are     Test Statistic  Since this is a test about a single population variance, we use a one-sample -test for variance. The test statistic is     p-value  The degrees of freedom are .  For a two-tailed test with , change the middle area to 0.95 so the combined area of the tails is 0.05, thus the critical values are approximately and . Since test value is between these two critical values, the test statistic does not fall in the rejection region wo we will not reject the null hypothesis.  For the p-value click on Two Tail and enter the test value 30.4 on the right side, combine the tail area for . since the p-value is greater than do not reject the null hypothesis.   Conclusion  Therefore, we fail to reject . At the significance level, there is not enough evidence to conclude that the population variance in bag weights is different from ounces squared.   "
+},
+{
+  "id": "subsec-ChiTestVarianceExamples -6",
+  "level": "2",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVarianceExamples -6",
+  "type": "Example",
+  "number": "7.4.3",
+  "title": "Seedlings.",
+  "body": " Seedlings   State the null and alternative hypotheses, verify the conditions for a one-sample -test for standard deviation, compute the test statistic, find the p-value with StatKey, and state your conclusion in context.    Hypotheses  Let be the population standard deviation of seed weights. Since the chi-square procedure is based on variance, we can write the hypotheses in terms of . Equivalently, these may be written as This will be a right-tailed test.   Test Statistic  The sample size is , so the degrees of freedom are . The sample standard deviation is , so the sample variance is   The test statistic is     p-value  For a right-tailed test with and , the right critical value  . The test value of 45.375 lands in the reject region so we will reject the null hypothesis.  For the p-value click on Right Tail and enter the test value 45.375 along the bottom to get the area of . Since the p-value is less than we will reject the null hypothesis.   Conclusion  Since we rejected at the significance level, there is sufficient evidence to conclude that the population standard deviation of seed weights under the new nutrient treatment has increased grams.   "
+},
+{
+  "id": "subsec-ChiTestVariancePractice -2",
+  "level": "2",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVariancePractice -2",
+  "type": "Checkpoint",
+  "number": "7.4.4",
+  "title": "Rainfall.",
+  "body": " Rainfall   A climate scientist is studying the year-to-year variability in annual rainfall for a particular region. Historically, the population standard deviation of annual rainfall has been inches. The scientist wants to test whether climate change has altered the variability in annual rainfall.  A random sample of recent years is selected, and the sample standard deviation of annual rainfall is found to be inches. At the significance level, test whether the population standard deviation differs from inches. Assume the distribution of annual rainfall is approximately normal.   Hypotheses  Let be the population standard deviation of annual rainfall. Since the chi-square procedure is based on variance, we can also write the hypotheses in terms of variance: This is a two-tailed test.    Statistical Test  The sample size is , so the degrees of freedom are . The sample standard deviation is , so the sample variance is .  The test statistic is     p-value  For a two-tailed test with and , the critical values are a and . Since the test statistic is greater than the upper critical value , it falls in the rejection region and we reject the null hypothesis.  For the p-value click on Two Tails and enter the test value 33.62 on the right, the which is smaller than so we reject the null hypothesis.    Conclusion  Since we reject at the significance level, there is sufficient evidence to conclude that the population standard deviation of annual rainfall differs from inches, suggesting that the variability in rainfall may have changed.   "
+},
+{
+  "id": "subsec-ChiTestVariancePractice -3",
+  "level": "2",
+  "url": "sec-SingleVariance.html#subsec-ChiTestVariancePractice -3",
+  "type": "Checkpoint",
+  "number": "7.4.5",
+  "title": "Vapes.",
+  "body": " Vapes   A public health researcher is studying the consistency of nicotine content in a particular brand of disposable vapes. The manufacturer claims that the population variance in nicotine content is milligrams squared. The researcher wants to test whether the true variance differs from this claimed value.  A random sample of disposable vapes is selected, and the sample variance in nicotine content is found to be milligrams squared. At the significance level, test whether the population variance in nicotine content differs from milligrams squared. Assume the nicotine content is approximately normally distributed.   Hypotheses  Let be the population variance in nicotine content. The hypotheses are This is a two-tailed test.    Statistical Test  The sample size is , so the degrees of freedom are . The sample variance is .  The test statistic is    p-value  For a two-tailed test with and , the critical values are and .  Since the test statistic is greater than the upper critical value , it falls in the rejection region and we reject the null hypothesis.  for the p-value click on Two Tails and enter the test value 29.4 along the bottom. The . Since the p-value is less than we reject the null hypothesis.    Conclusion  Since we reject at the significance level, there is sufficient evidence to conclude that the population variance in nicotine content differs from milligrams squared.   "
 },
 {
   "id": "sec-UrbanHeatStudy",
@@ -6526,54 +6670,54 @@ var ptx_lunr_docs = [
   "body": " Urban Heat Data   Image of datafile showing 15 cities.   "
 },
 {
-  "id": "subsec-UrbanHeatDatatable-5",
+  "id": "subsec-UrbanHeatDataTable-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDataTable-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Interpretation Questions From Data Table "
 },
 {
-  "id": "subsec-UrbanHeatDatatable-6",
+  "id": "subsec-UrbanHeatDataTable-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDataTable-6",
   "type": "Checkpoint",
   "number": "7.5.4",
   "title": "Rows.",
   "body": " Rows  Describe what each row represents and describe it in context.  Each row is called a case. It is the information from the climate station for the specific day (the first through the fifteenth) in August 2024.  "
 },
 {
-  "id": "subsec-UrbanHeatDatatable-7",
+  "id": "subsec-UrbanHeatDataTable-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDataTable-7",
   "type": "Checkpoint",
   "number": "7.5.5",
   "title": "Columns.",
   "body": " Columns  Describe what each column represents.  Each column represents a variable. Each column is a measurement of temperature, degree days, and precipitation at the climate station.  "
 },
 {
-  "id": "subsec-UrbanHeatDatatable-8",
+  "id": "subsec-UrbanHeatDataTable-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDataTable-8",
   "type": "Checkpoint",
   "number": "7.5.6",
   "title": "Variable.",
   "body": " Variable  For the column labeled “Den_MaxTemperature”, describe the data values in context, the type of data collected, and determine all the possible data values.  It is the highest air temperature recorded during a 24-hour period in Denver, CO. The variable is quantitative since numerical data. The continuous temperatures appear to be rounded to the nearest integer between 67 and 100 degrees Fahrenheit.  "
 },
 {
-  "id": "subsec-UrbanHeatDatatable-9",
+  "id": "subsec-UrbanHeatDataTable-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDataTable-9",
   "type": "Checkpoint",
   "number": "7.5.7",
   "title": "Commonalities.",
   "body": " Commonalities  Determine one thing in common for the dates when the high temperature in Denver was 100°F.  Minimum temperatures in the 60s, average temperatures in the 80s, highest average temperature departures, zero HDD, highest CDD values, and zero snow-related values.   "
 },
 {
-  "id": "subsec-UrbanHeatDatatable-10",
+  "id": "subsec-UrbanHeatDataTable-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDataTable-10",
   "type": "Checkpoint",
   "number": "7.5.8",
   "title": "Differences.",
