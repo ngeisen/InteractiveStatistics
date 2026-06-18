@@ -57,7 +57,7 @@
 </statement>
 <solution>
 <p>The null hypothesis is <m>H_0:\mu=90</m> since claiming the mean still equals 90 minutes. </p>
-<p> The alternative hypothesis is <m>H_a:\mu\ne 90</m>. TThe alternative hypothesis is that the mean is different than 90 minutes, thus not equal to the 90 minutes. The mean can be larger or smaller, thus referred to as a two-tailed test. </p>
+<p> The alternative hypothesis is <m>H_a:\mu\ne 90</m>. The alternative hypothesis is that the mean is different than 90 minutes, thus not equal to the 90 minutes. The mean can be larger or smaller, thus referred to as a two-tailed test. </p>
 </solution>
 </example> 
  
@@ -75,9 +75,9 @@
 <p> The hypotheses use the parameter symbols: mean <m>\mu</m>, proportion <m>p</m>, variance <m> \sigma ^2 </m>, or standard deviation <m> \sigma </m>. </p>
 <p> In this chapter we will focus on comparing the parameter to a known value. In the next chapter we will compare two populations. </p>
 <p> In general, the wording of the research question determines whether the test is: </p>
-<p>  <term>two-tailed test </term> (using terms of <q>different</q> or <q>changed</q> or <q>not equal to</q>), </p>
-<p> <term>left-tailed test</term> (for <q>less than</q> or <q>decreased</q> or <q>below</q>), </p>
-<p> or <term>right-tailed test </term> (when <q>greater than</q> or <q>increased</q>).
+<p>  <term>two-tailed test </term> using terms of <q>different</q> or <q>changed</q> or <q>not equal to</q>, </p>
+<p> <term>left-tailed test</term> for <q>less than</q> or <q>decreased</q> or <q>below</q>, </p>
+<p> <term>right-tailed test </term> when <q>greater than</q> or <q>increased</q>.
 </p>
 
 <example>
@@ -101,17 +101,46 @@
 </example>
 
 <p> Now is your chance to identify the null and alternative hypotheses in the following scenarios. Identify the population parameter for the hypotheses. This will also indicate what type of test will be needed in future sections. </p>
-<exercise>
+
+<exercise> <title> Germination </title>
 <statement> <p> A biologist wants to test whether more than 60% of seeds germinate using a new potting soil. State the hypotheses. </p>
 </statement>
 <solution>
 <p> Looking at parameter <m> p</m> for percentages/proportions. </p>
 <p>The null hypothesis is <m>H_0:p=0.60</m> </p>
-<p> The alternative hypothesis is <m>H_a: p \ge 0.60</m> since claiming the proportion is greater than 60% for a right tailed test. </p>
+<p> The alternative hypothesis is <m>H_a: p \gt 0.60</m> since claiming the proportion is greater than 60% for a right tailed test. </p>
 </solution>
 </exercise>
 
+<exercise> <title> Movies </title>
+<statement> <p> Previously the average moviegoer saw about 8.5 movies per year in the movie theater. A movie enthusiast believes this value has decreased with more option for streaming movies. State the hypotheses. </p>
+</statement>
+<solution>
+<p> Looking at parameter <m> \mu</m> for the mean (average). </p>
+<p>The null hypothesis is <m>H_0: \mu = 8.5</m> </p>
+<p> The alternative hypothesis is <m>H_a: \mu \lt 8.5</m> since claiming the mean has decreased for a left tailed test. </p>
+</solution>
+</exercise>
 
+<exercise> <title> Days</title>
+<statement> <p> A hospital administration believes the standard deviation of the number of people using outpatient surgery per day is greater than 5. State the hypotheses. </p>
+</statement>
+<solution>
+<p> Looking at parameter <m> \sigma </m> for the standard deviation. </p>
+<p>The null hypothesis is <m>H_0: \sigma = 5</m> </p>
+<p> The alternative hypothesis is <m>H_a: \sigma \gt 5</m> since claiming standard deviation is greater than 5 for a right tailed test. </p>
+</solution>
+</exercise>
+
+<exercise> <title> Syrup </title>
+<statement> <p> A nutritionist claims that the variance in the number of calories in 1 tablespoon of pancake syrup is 640. State the hypotheses to test if the variance differs from the 640. </p>
+</statement>
+<solution>
+<p> Looking at parameter <m> \sigma ^2</m> for variance. </p>
+<p>The null hypothesis is <m>H_0: \sigma ^2 = 640</m> </p>
+<p> The alternative hypothesis is <m>H_a: : \sigma ^2  \ne 640</m> since claiming the variance differs for a two tailed test. </p>
+</solution>
+</exercise>
 
   </subsection>
 
@@ -185,7 +214,7 @@
   <solution>
     <p>
       This is a <term>Type I error</term> because the null hypothesis
-      <m>H_0:\mu=500</m> is actually true, but the test rejected it. In other
+      <m>H_0:\mu=500</m> is actually true, but the researcher rejected it. In other
       words, the researcher concluded that the mean amount of water was different
       from <m>500</m> milliliters when in fact it was not. 
     </p>
@@ -255,6 +284,256 @@
 
   </subsection>
 
+<subsection xml:id="subsec-HypothesesPractice">
+  <title>Practice Problems</title>
+<p> Now is your chance to identify the null and alternative hypotheses in the following scenarios. Identify the population parameter for the hypotheses. This will also indicate what type of test will be needed in future sections. </p>
+
+<exercise> <title> Rocky Mountain Visitors </title>
+  <statement>
+    <p>
+      A park ranger wants to test whether the mean number of people who visit
+      Rocky Mountain National Park is greater than <m>4.1</m> million people per
+      year.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p>
+     </statement>
+    <choices>
+      <choice correct="no">
+        <statement> <p><m>H_0:\mu \gt 4.1</m> million, <m>H_a:\mu=4.1</m> million</p>
+        </statement>
+        <feedback>
+          <p>  Claiming greater than.  </p>
+        </feedback>
+              </choice>
+      <choice correct="no">
+        <statement> 
+      <p><m>H_0:\mu=4.1</m> million, <m>H_a:\mu\ne 4.1</m> million</p>
+        </statement>  
+        <feedback>
+          <p>  Claiming greater than.  </p>
+        </feedback>
+            </choice>
+      <choice correct="yes">
+        <statement>
+        <p><m>H_0:\mu=4.1</m> million, <m>H_a:\mu \gt 4.1</m> million</p>
+        </statement>
+        <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback> 
+      </choice>
+      <choice correct="no">
+        <statement>
+        <p><m>H_0:\mu \lt 4.1</m> million, <m>H_a:\mu \gt 4.1</m> million</p>
+        </statement>  
+        <feedback>
+          <p>  Null hypothesis contains the equal sign.  </p>
+        </feedback>
+
+      </choice>
+    </choices>
+ 
+</exercise>
+
+<exercise> <title> Uninsured </title> 
+  <statement>
+    <p>
+      Approximately <m>15.4\%</m> of Americans were uninsured in <m>2023</m>
+      according to the Insurance Research Council. An insurance company believes
+      this proportion is too high for their state.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p>
+</statement>
+    <choices>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p \gt 0.154</m>, <m>H_a:p=0.154</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming less than since too high.  </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:p=0.154</m>, <m>H_a:p \lt 0.154</m></p>
+       </statement>
+       <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p=0.154</m>, <m>H_a:p \ne 0.154</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming less than since too high.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p \lt 0.154</m>, <m>H_a:p \ge 0.154</m></p>
+      </statement>
+      <feedback>
+          <p>  Null hypothesis contains the equal sign.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+<exercise> <title> Hudson Bay</title>
+  <statement>
+    <p>
+      The average depth of Hudson Bay in Canada is about <m>328</m> feet.
+      Climatologists are interested in seeing whether the effects of global
+      warming and ice melt are affecting the water levels. They want to test
+      whether the mean water depth is increasing.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p>
+</statement>
+    <choices>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \gt 328</m>, <m>H_a:\mu=328</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming mean is increasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:\mu=328</m>, <m>H_a:\mu \gt 328</m></p>
+      </statement>
+      <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu=328</m>, <m>H_a:\mu\ne 328</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming mean is increasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \gt;328</m>, <m>H_a:\mu \lt328</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming mean is increasing.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+<exercise> <title>Barrier Reef </title>
+  <statement>
+    <p>
+      A marine biologist is investigating the pH levels of the ocean near the
+      Barrier Reef. In the <m>1950</m>s, the mean pH level was <m>8.15</m>. The
+      biologist believes the mean pH level has decreased.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p> </statement>
+    <choices>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \lt 8.15</m>, <m>H_a:\mu=8.15</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming mean is decreasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:\mu=8.15</m>, <m>H_a:\mu \lt 8.15</m></p>
+       </statement>
+       <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu=8.15</m>, <m>H_a:\mu\ne 8.15</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming mean is decreasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \lt 8.15</m>, <m>H_a:\mu \gt 8.15</m></p> 
+      </statement>
+      <feedback>
+          <p>  Null hypothesis contains the equal sign.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+<exercise> <title>Blue Eyes </title>
+  <statement>
+    <p>
+      A researcher wants to test if the class proportion of blue eyes is the same as the population. The proportion of the United States population with blue eyes is 27%.
+    </p>
+    <p>
+      Which of the following is the correct null and alternative
+      hypotheses for a hypothesis test about a population proportion?
+    </p> </statement>
+    <choices>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:p=0.27</m>, <m>H_a:p \ne 0.27</m></p> 
+      </statement>
+      <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu=0.27</m>, <m>H_a:\mu \ne 0.27</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming proportion equals 0.27 thus alternative is not equal.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\hat{p}=0.27</m>, <m>H_a:\hat{p} \ne 0.27</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming proportion equals 0.27 thus alternative is not equal.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p \gt 0.27</m>, <m>H_a:p \lt 0.27</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming proportion equals 0.27 thus alternative is not equal.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+
+</subsection> 
 
 
 

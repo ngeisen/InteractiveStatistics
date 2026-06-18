@@ -7,6 +7,20 @@
   </p>
  </introduction>
 
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses for the paired difference in means </p>    </li>
+    <li> <p> Determine the test statistic and p-value for the paired t-test. </p> </li>
+     <li> <p> Write the conclusion of a test in context </p>    </li>
+<li> <p>Construct confidence intervals for the difference in means. </p> </li>
+
+        </ol>
+</objectives>
+
+
 <subsection xml:id="subsec-PairedMeanTestBasics">
   <title>Understanding the Basics</title>
   <p> The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired <m>t</m>-test analyzes the <em> differences </em> within each pair. If we let <m>d</m> represent the difference for each pair, then the <term>hypotheses</term> are written in terms of the population mean difference <m>\mu_d</m>.  The null hypothesis is <m>\mu_d = 0</m> and the alternative hypothesis can be either <m>\mu_d \lt =0</m> or <m>\mu_d \gt 0 </m> for a one tailed test, or <m>\mu_d \ne 0</m> for a two-tailed test .  </p>   
@@ -41,6 +55,9 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
 <subsection xml:id="subsec-PairedMeanTestCalc">
   <title>Using Technology</title>
   <p> short cuts </p>
+
+
+  <p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" /> </p>
   </subsection>
   
 </section>

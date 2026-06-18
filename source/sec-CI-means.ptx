@@ -470,7 +470,94 @@
       </solution>
 </exercise>
 
+  <exercise>
+    <title>Mean Plant Height</title>
+    <statement>
+      <p>
+        A botanist wants to estimate the mean height of a certain species of bean
+        plant after  6 weeks of growth under a new fertilizer. A random sample
+        of 16  plants has a mean height of 24.8 cm and a standard  deviation of 3.6  cm.
+      </p>
+      <p>
+        Construct a <m>95\%</m> confidence interval for the true mean height of
+        bean plants grown with this fertilizer. Interpret the interval in context.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Using a <m>t</m>-interval with <m>df=15</m>, the confidence interval is
+        approximately <m>(22.88,\;26.72)</m> cm.
+      </p>
+    </answer>
+  </exercise>
 
+<exercise>
+    <title>Mean Enzyme Activity</title>
+    <statement>
+      <p>
+        A biology student is studying the activity of catalase under specific
+        laboratory conditions. A random sample of 12 trials gives a mean
+        reaction rate of 18.4 units per minute with a standard deviation
+        of 2.1 units per minute.
+      </p>
+      <p>
+        Construct a <m>90\%</m> confidence interval for the true mean catalase
+        activity under these conditions. Interpret the interval in context.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Using a <m>t</m>-interval with <m>df=11</m>, the confidence interval is
+        approximately <m>(17.31,\;19.49)</m> units per minute.
+      </p>
+    </answer>
+  </exercise>
+
+    <exercise>
+    <title> Resting Heart Rate</title>
+    <statement>
+      <p>
+        A physiology class wants to estimate the mean resting heart rate of
+        undergraduate athletes at their college. A random sample of 25
+        athletes has a mean resting heart rate of 62.3 beats per minute
+        and a standard deviation of 5.8 beats per minute.
+      </p>
+      <p>
+        Construct a <m>95\%</m> confidence interval for the true mean resting
+        heart rate of undergraduate athletes at this college. Interpret the
+        interval in context.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Using a <m>t</m>-interval with <m>df=24</m>, the confidence interval is
+        approximately <m>(59.91,\;64.69)</m> beats per minute.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <title> Glucose Level</title>
+    <statement>
+      <p>
+        A medical researcher wants to estimate the mean fasting blood glucose
+        level of healthy adults in a city. A random sample of 20 adults
+        has a mean glucose level of 92.7 mg/dL and a standard deviation
+        of 8.9 mg/dL.
+      </p>
+      <p>
+        Construct a <m>99\%</m> confidence interval for the true mean fasting
+        blood glucose level of healthy adults in this city. Interpret the interval
+        in context.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Using a <m>t</m>-interval with <m>df=19</m>, the confidence interval is
+        approximately <m>(86.83,\;98.57)</m> mg/dL.
+      </p>
+    </answer>
+  </exercise>
 
 
   </subsection>
@@ -481,3 +568,4 @@
 
 
 </section>
+ 

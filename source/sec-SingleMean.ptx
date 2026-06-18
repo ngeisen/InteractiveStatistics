@@ -34,7 +34,7 @@
     </p>
   </statement>
 </definition>
-<p> When competing the t-test for the mean, we assume we have random sample from the population  and that the sample is either grater than 30 or the population is normally distributed if the sample size is less than 30. We use the <em>t</em>-distribution because we do not know the population standard deviation. </p>
+<p> When competing the t-test for the mean, we assume we have a random sample from the population  and that the sample is either greater than 30 or the population is normally distributed if the sample size is less than 30. We use the <em>t</em>-distribution because we do not know the population standard deviation. </p>
 
 </subsection>
 <subsection xml:id="subsec-MeanOldFaithful">
@@ -158,7 +158,96 @@
 
 <subsection xml:id="subsec-SingleMeanCalc">
   <title>Using Technology</title>
-  <p> Use TI83 </p>
+  <p> Let us solve the Old Faithful problem again, but this time using technology. We will need to enter the raw data into a list in the TI-83 Plus or the TI-84.  </p>
+
+  <example><title> Input Data </title>
+<statement>
+<p> Let us solve the Old Faithful problem again, but this time using technology. We will need to enter the raw data into a list in the TI-83 Plus or the TI-84. Press the <term>[STAT]</term> button and under the EDIT menu select option <term>1: Edit</term> and press [ENTER] to select it. </p>
+<p> Input each value pressing [ENTER] after each. Recall there are 20 data values. </p>
+<figure xml:id="InputFaithfulCalc">
+            <caption>Inputting Old Faithful Data</caption>
+            <image source="FaithfulCalc1.png" width="90%">
+                <shortdescription>Stat button, edit 1,  then enter values.</shortdescription>
+            </image>
+        </figure> 
+
+</statement>
+<solution>
+<p> You can check the summary statistics statistics by pressing the [STAT] button, press the arrow once to the right to select CALC and select option <term>1: 1-Var Stats</term> and press [ENTER] to select it. Press the <c>2nd</c> button and <c> 1</c> to identify the location of the data in List 1 then press [ENTER] again to see the results. </p>
+<figure xml:id="FaithfulSummaryCalc">
+            <caption>Summary Statistics for Old Faithful Data</caption>
+            <image source="FaithfulCalc4.png" width="50%">
+                <shortdescription>mean=89.5, Sx=4.26, n=20.</shortdescription>
+            </image>
+        </figure>
+<p> The sample mean is <m> \bar{x} = 89.5</m> and sample standard deviation of <m> Sx=4.2612</m> for a sample of <m>n=20</m>. </p>
+</solution>
+</example>
+
+<example><title> T-test on TI-83 Plus </title>
+<statement>
+<p> Press the <term>[STAT]</term> button and press the arrow button twice to the right to the TESTS menu and select option <term>2: T-Test</term> and press [ENTER] to select it. </p>
+<p> Since we entered the raw data, highlight <term>Data</term> and [ENTER] to select it. </p>
+<p> Input the null value <m> \mu_0 :90</m>, the data is in List: <m> L_1</m>, the frequency is 1,  select the alternative hypothesis <m> \ne \mu_0</m>, scroll to <term> Calculate</term> and press [ENTER]</p>
+<figure xml:id="SelectTtestCalc">
+            <caption>Selecting T-test for Old Faithful Data</caption>
+            <image source="FaithfulCalc2.png" width="90%">
+                <shortdescription>Data, null=90, list =L1, two tailed test.</shortdescription>
+            </image>
+        </figure>
+</statement>
+<solution> 
+<p> The displays tells us we performed the T-Test with the statistical test value of <m>t=-0.5247 </m> and p-value = 0.6058. The sample mean is <m> \bar{x} = 89.5</m> and sample standard deviation of <m> Sx=4.2612</m> for a sample of <m>n=20</m>. </p>
+<p> If you selected <term>Draw</term>, it will graph the two tailed test. </p>
+<figure xml:id="ResultsFaithfulCalc">
+            <caption>Results for Old FaithfulTest</caption>
+            <image source="FaithfulCalc3.png" width="90%">
+                <shortdescription>t=-.5247, p-value=.605 for two tails.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+
+
+  <p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" /> </p>
+
+<example><title> T-test on TI-84 </title>
+<statement>
+<p> We will need to enter the raw data into a list in the TI-84. Press the <term>[STAT]</term> button and under the EDIT menu select option <term>1: Edit</term> and press [ENTER] to select it. </p>
+<p> Input each value pressing [ENTER] after each. Recall there are 20 data values. </p>
+<figure xml:id="InputFaithfulCalc84">
+            <caption>Inputting Old Faithful Data</caption>
+            <image source="FaithfulCalc5.png" width="90%">
+                <shortdescription>Stat button, edit 1,  then enter values.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Press the <term>[STAT]</term> button and press the arrow button twice to the right to the TESTS menu and select option <term>2: T-Test</term> and press [ENTER] to select it. </p>
+<p> Since we entered the raw data, highlight <term>Data</term> and [ENTER] to select it. </p>
+<p> Input the null value <m> \mu_0 :90</m>, the data is in List: <m> L_1</m>, the frequency is 1,  select the alternative hypothesis <m> \ne \mu_0</m>, scroll to <term> Calculate</term> and press [ENTER]</p>
+<figure xml:id="SelectTtestCalc84">
+            <caption>Selecting T-test for Old Faithful Data</caption>
+            <image source="FaithfulCalc6.png" width="90%">
+                <shortdescription>Data, null=90, list =L1, two tailed test.</shortdescription>
+            </image>
+        </figure>
+</statement>
+<solution> 
+<p> The displays tells us we performed the T-Test with the statistical test value of <m>t=-0.5247 </m> and p-value = 0.6058. The sample mean is <m> \bar{x} = 89.5</m> and sample standard deviation of <m> Sx=4.2612</m> for a sample of <m>n=20</m>. </p>
+<p> If you selected <term>Draw</term>, it will graph the two tailed test. </p>
+<figure xml:id="ResultsFaithfulCalc84">
+            <caption>Results for Old FaithfulTest</caption>
+            <image source="FaithfulCalc7.png" width="90%">
+                <shortdescription>t=-.5247, p-value=.605 for two tails.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+
+
+
   </subsection>
 
 <subsection xml:id="subsec-SingleMeanHurricanes">
@@ -170,7 +259,10 @@
   <statement>
     <p>Find the sample size, mean, and standard deviation for <em> Hurricanes</em>, <em>Early Years</em> and <em> Later Years.</em> Round to two decimal places. </p>
   </statement>
- <solution> <p> summary </p>
+ <solution> 
+  <p> The Hurricanes data lists 109 hurricanes with a mean = 5.872, standard deviation = 2.752, with values ranging from 0 to 15 hurricanes within a year. </p>
+  <p> The Early Years is a ample of 20 hurricanes with a mean = 4.3 and standard deviation 2.774 with values ranging from 0 to 11 hurricanes. </p>
+  <p> The Later Years is a ample of 20 hurricanes with a mean = 7.75 and standard deviation 3.338 with values ranging from 2 to 15 hurricanes. </p>
 </solution>
 </exercise> 
 <p> We are going to investigate if the mean number of hurricanes in the Early Years is significantly less than the mean of 5.8 hurricanes per year.</p>
@@ -182,7 +274,7 @@
 <solution> <p> <m> Ho: \mu =5.8</m> and <m>Ha: \mu \lt 5.8 </m> </p> 
 </solution>
 </exercise> 
-<exercise> <title> test value </title> 
+<exercise> <title> Statistical Test </title> 
   <statement>
     <p> What is the statistical test value? </p>
   </statement>

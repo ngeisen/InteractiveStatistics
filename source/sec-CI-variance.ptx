@@ -150,6 +150,265 @@
   <title>Practice Problems</title>
 <p> Use the chi square distribution. Pay attention if you are given the sample standard deviation or variance. The variance is already squared. You do not square the chi-squared values, use them as written. </p> 
 
+<exercise> 
+  <title> Variance of Temperatures</title>
+  <statement>
+    <p>
+      A meteorologist wants to estimate the variance of daily high temperatures
+      in a Colorado mountain town during July. A random sample of 12
+      daily high temperatures, measured in degrees Fahrenheit, is recorded below.
+    </p>
+    <table>
+      <title>Daily High Temperatures (°F)</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row bottom="minor">
+          <cell right="minor">78</cell>
+          <cell right="minor">82</cell>
+          <cell right="minor">75</cell>
+          <cell right="minor">80</cell>
+          <cell>77</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">84</cell>
+          <cell right="minor">79</cell>
+          <cell right="minor">81</cell>
+          <cell right="minor">76</cell>
+          <cell>83</cell>
+        </row>
+        <row>
+          <cell right="minor">78</cell>
+          <cell right="minor">80</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Assume the daily high temperatures are approximately normally distributed.
+    </p>
+    <p>
+      Construct a <m>90\%</m> confidence interval for the population variance
+      <m>\sigma^2</m> of daily high temperatures using the chi-square distribution.
+    </p>
+    <p>
+      Compute the sample variance, state the degrees of freedom, find the needed
+      chi-square critical values, and interpret the interval in context.
+    </p>
+  </statement>
+  <hint>
+    <p>
+      If the population is normally distributed, then a confidence interval for
+      the population variance <m>\sigma^2</m> is
+        <md> \left(
+\frac{(n-1)s^2}{\chi^2_{\alpha/2}},
+\frac{(n-1)s^2}{\chi^2_{1-\alpha/2}}
+\right).
+    </md></p>
+    <p>
+      For a <m>90\%</m> confidence interval, use <m>\alpha=0.10</m> and
+      <m>df=n-1</m>.
+    </p>
+  </hint>
+  <answer>
+    <p>
+      From the data, <m>s^2 \approx 7.54</m> and <m>df=11</m>.
+      Using chi-square critical values <m>\chi^2_{0.95,11}\approx 19.675</m> and
+      <m>\chi^2_{0.05,11}\approx 4.575</m>, a <m>90\%</m> confidence interval
+      for the population variance is approximately <m>(4.21, 18.13)</m>.
+    </p>
+  </answer>
+  <solution>
+    <p>
+      We are given a sample of <m>12</m> daily high temperatures:
+    </p>
+    <p>
+      <m>78,\;82,\;75,\;80,\;77,\;84,\;79,\;81,\;76,\;83,\;78,\;80</m>.
+    </p>
+    <p>
+      Because the population is assumed to be approximately normally distributed,
+      we can use the chi-square distribution to construct a confidence interval
+      for the population variance.
+    </p>
+    <p>
+      First, compute the sample mean:
+        <md>
+\bar{x}=\frac{78+82+75+80+77+84+79+81+76+83+78+80}{12}\approx 79.42.
+    </md> </p>
+    <p>
+      Next, compute the sample variance. Using the formula
+    <md> s^2=\frac{\sum (x_i-\bar{x})^2}{n-1},
+    </md></p>
+    <p>
+      we obtain <m>s^2 \approx 7.54.</m> </p>
+    <p>
+      The degrees of freedom are  <m>df=n-1=11.</m> </p>
+    <p>
+      For a <m>90\%</m> confidence interval, <m>\alpha=0.10</m>, so we use the
+      chi-square critical values
+    <md>\chi^2_{0.95,11}\approx 19.675 \qquad \text{and} \qquad \chi^2_{0.05,11}\approx 4.575.</md>    </p>
+    <p>
+      The confidence interval for the population variance is
+        <md> \left( \frac{(n-1)s^2}{\chi^2_{0.95,11}},
+\frac{(n-1)s^2}{\chi^2_{0.05,11}} \right) =
+\left(
+\frac{11(7.54)}{19.675},
+\frac{11(7.54)}{4.575}
+\right).
+    </md> </p>
+    <p>
+      Simplifying gives
+        <md>(4.21,\;18.13).</md> </p>
+    <p>
+      Therefore, a <m>90\%</m> confidence interval for the population variance of
+      daily high temperatures is approximately <m>(4.21, 18.13)</m>.
+    </p>
+    <p>
+      Interpretation: We are <m>90\%</m> confident that the true variance of daily
+      high temperatures in this Colorado mountain town during July lies between
+      <m>4.21</m> and <m>18.13</m> square degrees Fahrenheit.
+    </p>
+  </solution>
+</exercise>
+
+
+<exercise>
+  <title> Winter Temperatures</title>
+  <statement>
+    <p>
+      A meteorologist wants to estimate the standard deviation of daily low
+      temperatures in a Colorado mountain town during the winter. A random sample
+      of 12 daily low temperatures, measured in degrees Fahrenheit, is  recorded below.
+    </p>
+    <table>
+      <title>Daily Winter Low Temperatures (°F)</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row bottom="minor">
+          <cell right="minor">12</cell>
+          <cell right="minor">18</cell>
+          <cell right="minor">9</cell>
+          <cell right="minor">15</cell>
+          <cell>11</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">20</cell>
+          <cell right="minor">14</cell>
+          <cell right="minor">17</cell>
+          <cell right="minor">8</cell>
+          <cell>13</cell>
+        </row>
+        <row>
+          <cell right="minor">16</cell>
+          <cell right="minor">10</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Assume the daily low temperatures are approximately normally distributed.
+    </p>
+    <p>
+      Construct a <m>90\%</m> confidence interval for the population standard
+      deviation <m>\sigma</m> of daily winter low temperatures using the
+      chi-square distribution.
+    </p>
+    <p>
+      Compute the sample variance, find the confidence interval for the population
+      variance, then convert it to a confidence interval for the population
+      standard deviation. Interpret the interval in context.
+    </p>
+  </statement>
+  <hint>
+    <p>
+      First construct a confidence interval for the population variance
+      <m>\sigma^2</m> using the chi-square distribution:
+    <md>
+\left(
+\frac{(n-1)s^2}{\chi^2_{0.95}},
+\frac{(n-1)s^2}{\chi^2_{0.05}}
+\right).
+    </md> </p>
+    <p>
+      Then take square roots of the endpoints to get a confidence interval for
+      <m>\sigma</m>.
+    </p>
+  </hint>
+  <answer>
+    <p>
+      From the data, the sample variance is approximately <m>s^2 \approx 14.99</m>,
+      so <m>s \approx 3.87</m>. With <m>df=11</m>, using
+      <m>\chi^2_{0.95,11}\approx 19.675</m> and
+      <m>\chi^2_{0.05,11}\approx 4.575</m>, the <m>90\%</m> confidence interval
+      for the population variance is approximately <m>(8.38, 36.03)</m>.
+      Taking square roots gives a <m>90\%</m> confidence interval for the population
+      standard deviation of approximately <m>(2.89, 6.00)</m>.
+    </p>
+  </answer>
+  <solution>
+    <p>
+      We are given the sample of winter low temperatures
+    </p>
+    <p>
+      <m>12,\;18,\;9,\;15,\;11,\;20,\;14,\;17,\;8,\;13,\;16,\;10</m>.
+    </p>
+    <p>
+      Since the population is assumed to be approximately normally distributed,
+      we use the chi-square distribution to construct a confidence interval for
+      the population variance and then convert it to one for the population
+      standard deviation.
+    </p>
+    <p>
+      First compute the sample mean:
+        <md>
+\bar{x}=\frac{12+18+9+15+11+20+14+17+8+13+16+10}{12}\approx 13.58.
+    </md> </p>
+    <p>
+      Next compute the sample variance:
+       <md>s^2 \approx 14.99.</md></p>
+    <p>
+      So the sample standard deviation is
+    <md>s=\sqrt{14.99}\approx 3.87.</md>  </p>   
+ <p>
+      The sample size is <m>n=12</m>, so the degrees of freedom are
+    <m>df=n-1=11.</m>     </p>
+    <p>
+      For a <m>90\%</m> confidence interval, <m>\alpha=0.10</m>. The needed
+      chi-square critical values are
+    <md>\chi^2_{0.95,11}\approx 19.675 \qquad \text{and} \qquad \chi^2_{0.05,11}\approx 4.575.</md> </p>
+    <p>
+      The confidence interval for the population variance is
+    
+    <md> \left(
+\frac{(n-1)s^2}{\chi^2_{0.95,11}},
+\frac{(n-1)s^2}{\chi^2_{0.05,11}}
+\right)
+=
+\left(
+\frac{11(14.99)}{19.675},
+\frac{11(14.99)}{4.575}
+\right).
+    </md></p>
+    <p>
+      This simplifies to
+    <md>(8.38,\;36.03).</md> </p>
+    <p>
+      Now take square roots of the endpoints to get the confidence interval for
+      the population standard deviation:
+        <md>(\sqrt{8.38},\;\sqrt{36.03})\approx (2.89,\;6.00).</md> </p>
+    <p>
+      Therefore, a <m>90\%</m> confidence interval for the population standard
+      deviation of daily winter low temperatures is approximately
+      <m>(2.89,\;6.00)</m> degrees Fahrenheit.
+    </p>
+    <p>
+      Interpretation: We are <m>90\%</m> confident that the true standard deviation
+      of daily winter low temperatures in this Colorado mountain town lies between
+      about <m>2.89</m> and <m>6.00</m> degrees Fahrenheit.
+    </p>
+  </solution>
+</exercise>
 
 
   </subsection>
