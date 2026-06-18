@@ -2,7 +2,11 @@
 
 <section xml:id="sec-DayThree" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Study Types </title>
-
+<introduction>
+    <p>
+    In this section we will look at the different types of studies and how they are designed and conducted. We will also look at the different types of variables that are used in an experimental study.
+    </p>
+</introduction>
 
 <objectives>
         <introduction>
@@ -14,7 +18,10 @@
         </ol>
       </objectives>
 
-<p> Recall there are two main types of studies: </p>
+<subsection xml:id="subsec-StudyTypes">
+  <title>Types of Studies</title>
+  
+<p> Recall there are two main types of studies we will be investigating in this course: </p>
 <p> <term> Observational studies </term> where researchers collect data by watching or asking questions, and draw conclusions based on these observations.</p>
 <p>  <term> Experimental studies </term>  where the researcher manipulates a variable to determine how the treatment influences the other variables. </p>
 <p>        </p> 
@@ -38,7 +45,7 @@
 
 <exercise label="ExpMatching">
 <title> Identify the type of study described </title>
-•	<statement> <p> Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups:  consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.   </p> </statement>
+<statement> <p> Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups:  consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.   </p> </statement>
 <choices randomize="yes">
     <choice correct="yes">
         <statement> <p> Experimental study </p> </statement>
@@ -60,11 +67,10 @@
 <p> The <term> dependent variable </term>  is the result of manipulation.  It is also called the response variable. </p>
 <p> A <term> confounding variable </term>  is one that influences the dependent variable but cannot be separated from the independent variable. </p>
 
-<p> For this example, identify the variables. A sample of 50 men with high triglyceride levels were randomly assigned to two groups:  one consumed 2 tablespoons of oat bran daily for 6 weeks and the other group consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels. </p> 
-<p>      </p>
+<p> <em> Example:</em> A sample of 50 men with high triglyceride levels were randomly assigned to two groups:  one consumed 2 tablespoons of oat bran daily for 6 weeks and the other group consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels. Let's identify the variables. </p> 
 <exercise label="MatchingIndep">
-<title> Identify the type of variable </title>
-•	<statement> <p> What variable is the type of bran the participants consumed?  </p> </statement>
+<title> Bran </title>
+<statement> <p> What variable is the type of bran the participants consumed?  </p> </statement>
 <choices randomize="yes">
     <choice correct="yes">
         <statement> <p> independent variable </p> </statement>
@@ -87,8 +93,8 @@
 
 <p>     </p> 
   <exercise label="MatchingDep">
-<title> Identify the type of variable </title>
-•	<statement> <p> What variable is the triglyceride levels?  </p> </statement>
+<title> Triglycerides </title>
+ <statement> <p> What variable is the triglyceride levels?  </p> </statement>
 <choices randomize="yes">
     <choice correct="yes">
         <statement> <p> dependent variable </p> </statement>
@@ -115,12 +121,160 @@
 <p> In this case, both bran groups were in the treatment group, there was not control group in the study. </p>
 <p> There are several possible confounding variables in this study. Things that could influence the triglyceride levels could be diet, amount of exercise, current healthy, and weight of the participants. </p>
 
+<exercise>
+<title> Identify the type of study </title>
+<statement> 
+  <p> A medical researcher wants to determine whether a new energy drink affects reaction time. The researcher randomly assigns 60 adult volunteers to one of two groups. One group drinks the new energy drink, while the other group drinks a similar beverage without the active ingredients. After 30 minutes, each participant completes the same reaction-time test. The researcher then compares the reaction times of the two groups.
+ </p>
+ <p> Identify the type of study described. </p> 
+ </statement>
+<choices randomize="yes">
+    <choice correct="no">
+        <statement> <p> Observational study </p> </statement>
+    <feedback> <p> No, this is an experimental study because the researcher imposes  a treatment by assigning participants to receive the energy drink or the  comparison beverage.
+</p> </feedback>
+</choice>
+<choice correct="yes">
+        <statement> <p> Experimental study </p> </statement>
+        <feedback>
+        <p> Correct, because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage. </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
+<exercise> <title> Energy Drink </title> 
+  <introduction>
+    <p>
+        A medical researcher wants to determine whether a new energy drink affects
+        reaction time. The researcher randomly assigns <m>60</m> adult volunteers
+        to one of two groups. One group drinks the new energy drink, while the
+        other group drinks a similar beverage without the active ingredients. After
+        <m>30</m> minutes, each participant completes the same reaction-time test.
+        The researcher then compares the reaction times of the two groups.
+    </p>
+  </introduction>
+     <task>
+    <statement>
+         <p>
+        Which of the following is the <term>independent variable</term> in this study?
+      </p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>
+            Whether the participant drinks the new energy drink or the beverage
+            without the active ingredients
+          </p>
+        </statement>
+        <feedback>
+            <p>
+            Correct, because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>The participant's reaction time</p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>The number of volunteers in the study</p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>The <m>30</m> minutes that pass before the test</p>
+        </statement>
+      </choice>
+    </choices>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Which of the following is the <term>dependent variable</term> in this study?
+      </p>
+    </statement>
+    <choices>
+      <choice correct="no">
+        <statement>
+          <p>
+            Whether the participant drinks the new energy drink or the beverage
+            without the active ingredients
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The participant's reaction time</p>
+        </statement>
+        <feedback>
+            <p>
+            Correct, because the reaction time is the result of the treatment (the type of beverage consumed).
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>The number of groups in the study</p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>The age of the volunteers</p>
+        </statement>
+      </choice>
+    </choices>
+  </task>
+</exercise>
+
+<exercise>
+<title> Identify the type of study </title>
+<statement> 
+<p> A health researcher wants to investigate whether there is an association
+      between the number of hours of sleep a college student gets each night and
+      the student's grade point average. The researcher surveys a random sample
+      of college students and records how many hours they usually sleep and their
+      current grade point averages. The researcher then looks for patterns in
+      the collected data.
+ </p>
+<p> Identify the type of study described. </p> 
+ </statement>
+<choices randomize="yes">
+    <choice correct="yes">
+    <statement> <p> Observational study </p> </statement>
+    <feedback> 
+        <p> Correct, because the researcher does
+      not impose any treatment or attempt to change the students' sleeping
+      habits, but only observes and records existing behavior.
+    </p> 
+    </feedback>
+</choice>
+<choice correct="no">
+    <statement> <p> Experimental study </p> </statement>
+        <feedback>
+        <p> No, this is an observational study because the researcher does
+      not impose any treatment or attempt to change the students' sleeping
+      habits, but only observes and records existing behavior.  </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
+
+  </subsection>
+  
+<subsection xml:id="subsec-StudyDesign">
+  <title> Experimental Design</title>
+  
 <p>There are many ways experimental studies can be conducted. We will look at some of the most common for this course.</p>
 <p> In a <term> Randomized Two-treatment Experiment </term>  there are typically two treatments
 and the individuals are randomly placed into the two groups. Either both groups get a
 treatment, or one group gets a treatment and the other gets either nothing or a placebo.
 The group getting either no treatment or the placebo is called the <em>control group </em>. The
-group getting the treatment is called the <em> treatment group </em>. A doctor may be comparing two different diabetes mediations. The subjects are randomly assigned which medication to use for the study. </p>
+group getting the treatment is called the <em> treatment group </em>. A doctor may be comparing two different diabetes medications. The subjects are randomly assigned which medication to use for the study. </p>
 <p> The purpose of the placebo is that a person thinks they are receiving the treatment, but in reality, they are receiving a sugar pill or fake treatment. Doing this helps to account for the <em> placebo effect </em>, which is where a person thinks their body responds favorable to a treatment because they are in the study even though they are not really taking the treatment. Not every experiment needs a placebo, such as when working using animals, plants, or children. Also, it is not always possible to use a placebo or no treatment. As an example, if you are testing a new blood pressure medication you cannot give a person with high blood pressure a placebo or no treatment because of health or moral reasons. </p>
 <p> In a <term> Randomized Block Design </term> a group of subjects (considered the block) that are similar in some aspects are randomly assigned to a treatment. Everyone in that block has the same treatment while everyone in a different block is assigned a different treatment. This is different in that the intact group is given the treatment rather than randomly assigned to a group.
 An example would be comparing the instructional methods of two different teachers. Each classroom would represent a block; thus, each class receives a different treatment. </p>
@@ -133,21 +287,441 @@ use. This is more common in medicine. </p>
 <p> In a <term> Matched Pairs Design </term> the treatments are given to two groups that can be matched up with each other in some ways. One example would be to measure the effectiveness of a muscle relaxer cream on the right arm and the left arm of individuals, and then for each
 individual you can match up their right arm measurement with their left arm. Another example of this would be before and after measurement during an experiment, such as weight before and weight after a diet regiment. </p>
 
-<p> <term> Other Considerations </term> </p>
+<exercise>  <title> Plant Fertilizer </title> 
+  <statement>
+    <p>
+      A group of biology students wants to test whether a new plant fertilizer
+      affects the height of bean plants. They randomly assign 40 bean
+      plants to one of two treatment groups. One group receives the new
+      fertilizer each week, while the other group receives only water under the
+      same growing conditions. After 6 weeks, the students measure the
+      height of each plant and compare the results between the two groups.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>Randomized two-treatment experiment</p>
+      </statement>
+<feedback> <p>
+      Correct, this is a randomized two-treatment experiment because the
+      plants are randomly assigned to one of two treatments: the new fertilizer
+      or the control condition of water only.
+    </p>
+</feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>Observational study</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>Matched pairs design</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>Stratified design</p>
+      </statement>
+    </choice>
+  </choices>
+</exercise>
+
+<exercise> <title> Stretching</title>
+  <statement>
+    <p>
+      A physical therapist wants to compare two different stretching routines
+      for improving flexibility. The therapist recruits 20 volunteers.
+      Each volunteer performs routine A on one leg and routine B on the other
+      leg for 4 weeks. At the end of the study, the therapist measures
+      the flexibility improvement in each leg and compares the results within
+      each person.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p> 
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p> Matched pairs design</p>
+      </statement>
+<feedback> <p> Correct, this is a matched pairs design because each subject receives
+      both treatments, and the comparison is made within the same individual.
+    </p> </feedback> 
+
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Randomized block design</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Randomized two-treatment experiment </p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Observational study</p>
+      </statement>
+    </choice>
+  </choices>
+</exercise>
+
+<exercise> <title> Fish Diets</title> 
+  <statement>
+    <p>
+      A team of biology researchers wants to compare the effectiveness of two
+      different fish diets on weight gain. Since the age of the fish may affect
+      growth, the researchers first divide the fish into blocks based on age:
+      young fish and older fish. Then, within each age block, they randomly
+      assign fish to one of two diet treatments. After 8 weeks, the
+      researchers measure the weight gain of the fish in each group and compare
+      the diets.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p> Randomized block design</p>
+      </statement>
+      <feedback>
+        <p>
+        Correct, this is a randomized block design because the fish are first
+        divided into blocks based on age, and then within each block, they are randomly assigned to one of the two diet treatments.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Simple random sample</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Observational study</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Matched pairs design</p>
+      </statement>
+    </choice>
+  </choices>
+</exercise>
+
+<exercise> <title> Medication</title> 
+  <statement>
+    <p>
+      A pharmaceutical company wants to test whether a new allergy medication is
+      effective. The researchers assign participants to treatment groups so that
+      each group has similar ages, health conditions, and numbers of men and
+      women. All participants take pills that look identical, follow the same
+      schedule, receive the same instructions, and are evaluated in the same
+      environment. The only difference between groups is whether the pill
+      contains the new medication or a placebo.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>A rigorously controlled design</p>
+      </statement>
+      <feedback>
+        <p>
+        Correct, this is a rigorously controlled design because the researchers carefully assign participants to treatment groups to ensure they are similar in important ways, and they control all other aspects of the study except for the treatment being tested.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Convenience sample</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Matched pairs design</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p> Randomized two-treatment experiment </p>
+      </statement>
+    </choice>
+  </choices>
+</exercise>
+
+
+
+  </subsection>
+
+<subsection xml:id="subsec-StudyConsiders">
+  <title> Other Considerations</title>
+
 <p> There are other things to consider when designing a study. </p> 
 <p> A <term>Blind study </term> is where the individual does not know which treatment they are getting or if they are getting the treatment or a placebo. </p>
 <p> <term> Double-blind study </term> is where neither the individual nor the researcher knows who is getting which treatment or the placebo.  This is important so that there can be no bias created by either the individual or the researcher. </p>
-<p> Exercides </p> 
 
-    <p> Another consideration is the time period the researcher collected the data over.  There are three types of time periods to consider. </p> 
+<example> <title> Pain Relief </title>
+  <statement>
+    <p>
+      A medical researcher is testing whether a new pain-relief pill works
+      better than a standard pill. Participants are randomly assigned to receive
+      either the new pill or the standard pill, but the participants do not know
+      which one they are taking. After one week, the researcher compares the
+      pain levels reported by the two groups.
+    </p>
+    <p>
+      This is a <term>blind study</term> because the participants do not know
+      which treatment they received.
+    </p>
+ </statement>
+</example>
+ 
+<example> <title> Double-blind-study </title>
+  <statement>
+    <p>
+      A medical researcher is testing whether a new pain-relief pill works
+      better than a standard pill. Participants are randomly assigned to receive
+      either the new pill or the standard pill. Neither the participants nor the
+      researchers who interact with them know which pill each participant
+      receives until the study is over. After one week, the reported pain levels
+      of the two groups are compared.
+    </p>
+    <p>
+      This is a <term>double-blind study</term> because neither the subjects nor
+      the researchers who administer or evaluate the treatment know who received
+      which treatment during the study.
+    </p>
+  </statement>
+</example>
+
+<exercise>   <title> Vitamin Drink</title>
+  <statement>
+    <p>
+      A nutrition researcher is studying whether a new vitamin drink improves
+      energy levels. Participants are randomly assigned to receive either the
+      vitamin drink or a similar-tasting drink without the added vitamins. The
+      participants do not know which drink they receive, but the researchers do.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+ <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>A blind study</p>
+      </statement>
+      <feedback>
+        <p>
+        Correct, this is a blind study because the participants do not know which treatment they received, but the researchers do know.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A double-blind study</p>
+      </statement>
+      <feedback>
+        <p>
+        No, this is not a double-blind study because the researchers know which treatment each participant received.
+        </p>
+      </feedback>
+    </choice>
+  </choices>
+</exercise>
+
+<exercise> <title> Allergies </title>
+  <statement>
+    <p>
+      A pharmaceutical company is testing a new medication for seasonal
+      allergies. Participants are randomly assigned to receive either the new
+      medication or a placebo. The pills look identical, and neither the
+      participants nor the doctors who give the pills and record symptoms know
+      who receives the medication and who receives the placebo until the study
+      ends.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+ <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>A double-blind study</p>
+      </statement>
+      <feedback>
+        <p>
+        Correct, this is a double-blind study because neither the participants nor the doctors who administer the treatment know which treatment each participant received until the study ends.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A blind study</p>
+      </statement>
+      <feedback>
+        <p>
+        No, this is a double-blind study because neither the participants nor the doctors who administer the treatment know which treatment each participant received until the study ends.
+        </p>
+      </feedback>
+    </choice>
+    </choices>
+</exercise>
+
+
+<p> Another consideration is the time period the researcher collected the data over.  There are three main types of time periods to consider. </p> 
 
 <p> <term> Cross-sectional study:</term>  The data is observed, measured, or collected at one point in time. After completing the Student Orientation, the participants completed a survey answering questions about how the day went and what events were most useful.  </p>
-
 <p> <term> Retrospective study:</term> The data is collected from the past using records, old journals, interviews, and other similar artifacts. </p>
 <p>A <term>longitudinal study </term> collects data repeatedly from the same subjects over time, often focusing on a smaller group of individuals that are connected by a common trait. Researchers plan to collect data in the future from these groups. </p>
+
 <p> <em> Example:</em> Suppose you want to study the impact that a low-carb diet has on diabetes. First you gather research on prior studies to see what has already been done. This would be a retrospective study. Then you conduct a cross-sectional study with a sample of diabetes patients to see if there are differences in health outcomes like weight or blood sugar in those who follow a low-carb diet. You discover that the diet correlates with weight loss in younger patients, but not older ones. And then you then decide to design a longitudinal study to further examine this link by collecting data over a period of ten years from a sample of younger patients from a specific clinic. </p> 
 
+
 <p> Exercises </p> 
+
+<exercise> <title> Exercise Habits</title> 
+  <statement>
+    <p>
+      A public health researcher surveys a random sample of adults in
+      2026 and records their current exercise habits and blood pressure
+      levels. The researcher uses the data to study the relationship between
+      exercise and blood pressure at that one point in time.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>A cross-sectional study</p>
+      </statement>
+      <feedback>
+        <p>
+        Correct, this is a cross-sectional study because the data is collected at one point in time.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A retrospective study</p>
+      </statement>
+      <feedback>
+        <p>
+          No, this is a cross-sectional study because the data is collected at one point in time.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A longitudinal study</p>
+      </statement>
+      <feedback>
+        <p>
+          No, this is a cross-sectional study because the data is collected at one point in time.
+        </p>
+      </feedback>
+    </choice>
+      </choices>
+</exercise>
+
+<exercise> <title> Smoking Habits</title>
+  <statement>
+    <p>
+      A medical researcher studies whether past smoking habits are related to
+      lung disease. The researcher reviews medical records from the past
+      15 years and compares patients who currently have lung disease with
+      their earlier smoking histories.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>A retrospective study</p>
+      </statement>
+      <feedback>
+        <p>
+        Correct, this is a retrospective study because the researcher is collecting data from the past using medical records.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A longitudinal study</p>
+      </statement>
+      <feedback>
+        <p>
+          No, this is a retrospective study because the researcher is collecting data from the past using medical records.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A cross-sectional study</p>
+      </statement>
+      <feedback>
+        <p>
+          No, this is a retrospective study because the researcher is collecting data from the past using medical records.
+        </p>
+      </feedback>
+    </choice>
+      </choices>
+</exercise>
+
+<exercise> <title>Study Habits </title>
+  <statement>
+    <p>
+      A researcher follows a group of 200 middle school students for
+      6 years, recording their study habits and math test scores at the
+      end of each school year. The researcher uses the data to examine how study
+      habits and performance change over time.
+    </p>
+    <p>
+      Which of the following best describes this study?
+    </p>
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>A longitudinal study</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A retrospective study</p>
+      </statement>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>A cross-sectional study</p>
+      </statement>
+    </choice>
+      </choices>
+</exercise>
+
+
+
+
+</subsection>
+
+
 
 
 </section>

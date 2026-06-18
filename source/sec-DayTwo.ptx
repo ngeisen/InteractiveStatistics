@@ -2,7 +2,11 @@
 
 <section xml:id="sec-DayTwo" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Collecting Data </title>
-
+<introduction>
+    <p>
+   Now that we know something about the variables and the types of data that can be collected in study, how do we go about collecting a sample that is representative of the population of interest? Well, in this section we will explore several ways that data can be collected. We will look at the different types of study designs and sampling methods. We will also look at how to avoid bias in our sampling methods. 
+    </p>
+</introduction>
 
 <objectives>
     <introduction>
@@ -14,15 +18,32 @@
             </ol>
 </objectives>
 
-<p> Recall that the <term> population </term> is the set of all subjects for the study, while a <term> sample </term> is a group or subset selected from the population. It is often difficult or too expensive to examine the whole population for a study, thus we use a sample to help us draw conclusions about the population. When we choose a sample, we want it to be as similar to the population as possible. We are going to simulate several sampling methods using Gettysburg’s Address as the population. </p>
+<subsection xml:id="subsec-GettysburgActivity">
+  <title>Creating a Sample with Gettysburg Address</title>
+ 
 
-<p> President Abraham Lincoln delivered one of the most famous speeches in United States history at the dedication of the Gettysburg National Cemetery on November 19, 1863. After the featured speaker spoke for two hours, Lincoln delivered his 269-word message in approximately two minutes. Our goal is to estimate the average word length in Abraham Lincoln’s Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln’s Gettysburg Address is given below.  </p> 
-<p> <em> Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.  But, in a larger sense, we cannot dedicate—we cannot consecrate—we cannot hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth. </em> </p> 
+<p> Recall that the <term> population </term> is the set of all subjects for the study, while a <term> sample </term> is a group or subset selected from the population. It is often difficult or too expensive to examine the whole population for a study, thus we use a sample to help us draw conclusions about the population. When we choose a sample, we want it to be as similar to the population as possible, we refer to this as a representative sample. We are going to simulate several sampling methods using Gettysburg's Address as the population. </p>
 
+<activity xml:id="act-Gettysburg">
+  <title> Creating a Sample from Gettysburg Address </title>
+  <introduction>
+    <p> We are going to simulate several sampling methods using Gettysburg's Address as the population. </p>
+   <p> President Abraham Lincoln delivered one of the most famous speeches in United States history at the dedication of the Gettysburg National Cemetery on November 19, 1863. After the featured speaker spoke for two hours, Lincoln delivered his 269-word message in approximately two minutes. Our goal is to estimate the average word length in Abraham Lincoln's Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln's Gettysburg Address is given below.  </p> 
+    <p> <em> Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.  But, in a larger sense, we cannot dedicate—we cannot consecrate—we cannot hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth. </em> </p> 
+  </introduction>
 
-<p> Step 1: Your task is to select a sample of 10 words to estimate the average length of words in his speech.  Pick words that appear to be representative of the population of all the words.  If you print the address, you can circle the ten words you choose. </p>
-<p> Step 2: Find the lengths (number of letters) for each of the 10 words you selected. </p> 
-<p> Step 3: Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average. </p>  
+  <task>
+    <p>Your task is to select a sample of 10 words to estimate the average length of words in his speech. Pick words that appear to be representative of the population of all the words. If you print the address, you can circle the ten words you choose. </p>
+  </task>
+  <task>
+    <p>Find the lengths (number of letters) for each of the 10 words you selected. </p>
+  </task>
+<task>
+    <p>Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average number of letters per word. </p>
+  </task>
+</activity>
+
+ 
 <p>     
 Which best describes your average value for the average word length? </p>
 <exercise label="GettysCircleWord">
@@ -52,7 +73,7 @@ Which best describes your average value for the average word length? </p>
         <p> More than 6 letters per word. </p>
         </statement>
         <feedback>
-        <p> This estimate is a bit high, you likely included a lot of the larger words and did not include some of the smaller words  </p>
+        <p> This estimate is a bit high, you likely included a lot of the larger words but did not include some of the smaller words.  </p>
         </feedback>
     </choice>
 </choices>
@@ -63,26 +84,49 @@ Which best describes your average value for the average word length? </p>
 <p> The image below is a class distribution of the average number of letters for the Gettysburg Address by circling ten words. Each dot represents the average value for a student. There were 64 student samples taken. We can see the values range from 3.4 to 9.4 with the center around 5.5 letters per word, thus this will be our predicted value for the typical word length. But it turns out, we are often biased in the words we select. Some students selected bigger words to be representative, others selected more smaller words. Did you notice how many two and three letter words there were? Were you biased in your sampling selection? </p>
     
         <figure xml:id="GettysburgCircle">
-            <caption>Image of Average Word Length from Gettysburg Address</caption>
+            <caption>Average Word Length from Gettysburg Address</caption>
             <image source="GettyCircle.png" >
                 <shortdescription>Shows average word length prediction for 64 students clustered between 5 and 6.</shortdescription>
             </image>
         </figure> 
-<p> Now let’s investigate using a more random approach in selecting the words for a better estimate of the population average. </p>
-<p> Randomly choose ten numbers between 1 and 269 and record them. Find the corresponding word in Lincoln’s Gettysburg Address and find the average word length for your new sample. </p>
+
+<activity xml:id="act-GettysburgRandom">
+  <title> Creating a Random Sample </title>
+  <introduction>
+    <p> Now let's investigate using a more random approach in selecting the words for a better estimate of the population average. </p>
+    <p> We are going to simulate creating a random sample from Gettysburg's Address. </p>
+  </introduction>
+  <task>
+ <p>   Randomly choose ten numbers between 1 and 269 and record them.  </p>
+  </task>
+<task>
+  <p> Find the corresponding word in Lincoln's Gettysburg Address, write down the number of letters in that word, and then find the average word length for your new sample for ten words.</p>
+
         <figure xml:id="GettysAddressNumbers">
             <caption>Image of Gettysburg Address numbered</caption>
             <image source="GettyAddressNum.png">
                 <shortdescription> Image of Gettysburg Address numbered.</shortdescription>
             </image>
         </figure>
+</task>
+  <task>
+    <p>Alternatively, we can use a random number generator to help create a sample.</p>
+  </task>
+</activity>
+     
 
 
 <p> You can also use technology to find the random numbers. Try the link for a random number generator at <url href=" https://www.random.org/" />  </p> 
+
+<example> <title> Using random number generator</title>
+<statement>
+    <p>Researcher often use a random number generator to help create the random sample.</p>
+
+
     <p> Go midway down the page to <c> Numbers </c> and select <c>Integer Generator</c>. Generate 10 random integers between 1 and 269. Click on <c>Get Numbers</c>. </p>
 
         <figure xml:id="RandomOrg">
-            <caption>Image RandomOrg menu</caption>
+            <caption>RandomOrg menu</caption>
             <image source="RandomOrg.png" width="60%">
                 <shortdescription>image of website menu.</shortdescription>
             </image>
@@ -95,21 +139,27 @@ Which best describes your average value for the average word length? </p>
             </image>
         </figure>
 
-<p> Matching these numbers to the corresponding word in Gettysburg Address gives the average of 3.9 letters per word,  which is closer to the population mean of 4.29 letters per word. We will look at the distributions again later. </p>
+<p> Next, match these numbers to the corresponding word in Gettysburg Address. These words are highlighted in yellow in the image below. </p>
 
         <figure xml:id="GettysWords">
-            <caption>Sample of Gettysburg Address wods</caption>
+            <caption>Sample of Gettysburg Address words</caption>
             <image source="GettyYellow.png" >
                 <shortdescription> Image of highlighted words.</shortdescription>
             </image>
         </figure>
+</statement>
+<solution>
+<p> Matching these numbers to the corresponding word in Gettysburg Address gives the average of 3.9 letters per word,  which is closer to the population mean of 4.29 letters per word. We will look at the distributions of the words later. </p> 
+</solution>
+</example>
 
+ </subsection>
+
+ <subsection xml:id="subsec-SamplingMethods">
+  <title>Sampling Methods</title>
 
 
 <p> <term> Sampling bias </term> occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way. If sampling bias exists, we cannot trust generalizations from the sample to the population. So, we need a better method for predicting the typical or average value.    </p>
-
-
-
 
 <p> There are many sampling techniques, we will look at some of the more common sampling methods in statistics. We will simulate some of these methods in class with the Gettysburg Address. </p>
 <p> <term> Simple Random Sample </term> is a method in which every element in the population has an equal chance of being selected for the sample.  It's like putting all the names of the students in class in a hat and randomly drawing ten names. </p>
@@ -158,10 +208,230 @@ Alfred is conducting a survey to determine who students will vote for as their n
         <premise>
         Convenience Sampling 
         </premise>
-    <response> Douglas is conducting a survey to determine if the University Center should open up a McDonalds, Wendy’s, or Burger King. He stands outside the UC and surveys students as they enter the building.  </response>
+    <response> Douglas is conducting a survey to determine if the University Center should open up a McDonald's, Wendy's, or Burger King. He stands outside the UC and surveys students as they enter the building.  </response>
     </match>
     </matches>
 </exercise>
  
-    
+<exercise> <title> Systematic Sampling </title>
+  <statement>
+    <p>  Which of the following is the best example of a <term>systematic sample</term>?
+    </p>
+</statement> 
+    <choices>
+      <choice correct="no">
+        <statement>
+          <p>  A teacher puts all student names in a hat and draws 10 names.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a simple random sample.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>  A manager has a list of all employees arranged alphabetically and selects
+            every 15th employee after choosing a random starting point.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Correct, there is a system to how it was selected.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            A researcher divides voters into age groups and randomly selects
+            people from each group.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a stratified sample.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            A pollster surveys only the first <m>50</m> people who enter a store.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a convenience sample.
+            </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+<exercise> <title>Cluster Sampling</title>
+  <statement>
+    <p>  Which of the following is the best example of a <term>cluster sample</term>?
+    </p> </statement>
+    <choices>
+      <choice correct="no">
+        <statement>
+          <p> A researcher numbers all households in a city and uses a random
+            number generator to select 200 households about the recent city tax.
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p> Principal Stevens separates students by grade level and randomly selects
+            students from each grade.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a stratified sample.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>  A city planner randomly selects 5 neighborhoods and surveys
+            every household in those neighborhoods about the quality of the roads.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Correct, there is a natural cluster of households in the neighborhoods and all households in the selected neighborhoods are surveyed.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>  A nurse surveys every 20th patient who checks in at a clinic about their health care experience.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a systematic sample.
+            </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+<exercise> <title> Random Sample </title>
+  <statement>
+    <p>  Which of the following is the best example of a <term>simple random sample</term> ?  </p>
+ </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>  A researcher assigns a number to every student at a university and
+            uses a random number generator to select 100 students to see what they like best about the university.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Correct, every student has an equal chance of being selected.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>  A company surveys every 12th customer who exits a discount store to see if they used coupons for the their purchases.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a systematic sample.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>  A scientist divides a forest into sections and randomly selects
+            3 sections to study the amount of beetle kill.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a cluster sample.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>  A pollster separates residents into homeowners and renters and then
+            randomly selects people from each group.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a stratified sample.
+            </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+  <exercise> <title> Stratified Sample </title>
+  <statement>
+    <p> Which of the following is the best example of a <term>stratified sample</term>?
+    </p> 
+    </statement>
+    <choices>
+      <choice correct="no">
+        <statement>
+          <p> A researcher selects every 25th name from an alphabetical list
+            of all registered voters to see how they will vote for the upcoming election.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a systematic sample.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p> A hospital separates patients into children, adults, and seniors, and
+            then randomly select patients from each group to question their experience about their care.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Correct, there are natural groups of patients and random samples are taken from each group.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>  A principal randomly selects 2 classrooms and every student in those classrooms receives a gift card.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a cluster sample.
+            </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>  A survey is given to the first 100 people who arrive at a concert about their favorite song.
+          </p>
+        </statement>
+        <feedback>
+            <p>
+                Incorrect, this is an example of a convenience sample.
+            </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+
+  </subsection>
+
+
  </section>
