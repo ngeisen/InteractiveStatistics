@@ -48,11 +48,204 @@ F=\frac{(s_1)^2}{(s_2)^2}
 <p> introduce F-distribution with statkey </p>
 
   </subsection>
+<subsection xml:id="subsec-FTestExamples">
+  <title>Examples to Compare Variance </title>
+
+<p> A school administrator wants to compare the consistency of travel times to
+      school for students who ride the bus and students who are driven by a
+      parent. To measure consistency, the administrator records the travel time,
+      in minutes, for a random sample of students from each group over several
+      mornings. The summary statistics are shown below.
+    </p>
+    
+      <p>   Bus riders: <m>n_1=12</m>, <m>s_1=4.8</m> minutes    </p>
+      <p>   Parent drop-off: <m>n_2=10</m>, <m>s_2=2.9</m> minutes    </p>
+    
+    <p> At the <m>0.05</m> significance level, test whether the population
+      variances in travel time are different for the two groups.
+    </p>
+
+<example> <title> Travel Times</title> 
+  <statement>
+<p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context. </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p> Let population <m>1</m> be bus riders and population <m>2</m> be parent
+      drop-off students. We want to test whether the population variances are
+      different.
+    </p>
+    <p> The hypotheses are
+      <m>H_0:\sigma_1^2=\sigma_2^2</m>
+      and
+      <m>H_a:\sigma_1^2\ne\sigma_2^2</m>.
+    </p>
+</solution>
+<solution> <title> Statistical Test </title> 
+    <p> The test statistic for a two-variance <m>F</m>-test is
+      <md>F=\dfrac{s_1^2}{s_2^2}</md>.
+    </p>
+    <p> Using the sample standard deviations,
+      <md>  F=\dfrac{4.8^2}{2.9^2}   =\dfrac{23.04}{8.41}    \approx 2.74
+      </md>.     </p>
+    <p>   The degrees of freedom are
+      <m>df_1=n_1-1=11</m>
+      and
+      <m>df_2=n_2-1=9</m>.
+    </p>
+    <p>
+      Using an <m>F</m>-distribution with <m>11</m> and <m>9</m> degrees of
+      freedom, the two-sided <m>p</m>-value is approximately <m>0.19</m>.
+    </p>
+</solution>
+<solution> <title> Conclusion</title> 
+    <p>
+      Since <m>p-value=0.19 \gt  0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>\alpha = 0.05</m> significance level to
+      conclude that the population variances in travel time are different for
+      students who ride the bus and students who are driven by a parent.
+    </p>
+  </solution>
+</example>
+
+    <p>
+      A manufacturing engineer wants to compare the consistency of fill amounts
+      for two machines that package bottles of sports drink. A random sample of
+      bottles is taken from each machine, and the amount in each bottle is
+      measured in ounces. The summary statistics are shown below.
+    </p>
+       <p>  Machine A: <m>n_1=15</m>, <m>s_1=0.18</m> ounces
+      </p>
+      <p>  Machine B: <m>n_2=12</m>, <m>s_2=0.10</m> ounces
+      </p>
+     <p>
+      At the <m>0.05</m> significance level, test whether the population
+      variances in fill amounts are different for the two machines.
+    </p>
+<example> <title> Bottle</title>
+  <statement>
+  <p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypothesis</title> 
+    <p>
+      Let population <m>1</m> be bottles filled by Machine A and population
+      <m>2</m> be bottles filled by Machine B. We want to test whether the
+      population variances are different.
+    </p>
+    <p>
+      The hypotheses are
+      <m>H_0: \sigma_1 ^2= \sigma_2 ^2</m>
+      and
+      <m>H_a: \sigma_1 ^2\ne \sigma_2 ^2</m>. This is a two tailed test.
+    </p>
+</solution>
+<solution> <title> Statistical Test</title> 
+    <p>  The test statistic is
+      <md>F=\dfrac{s_1^2}{s_2^2}</md>.
+    </p>
+    <p>  Substitute the sample standard deviations:
+      <md>
+        F=\dfrac{0.18^2}{0.10^2}
+        =\dfrac{0.0324}{0.0100}   =3.24
+      </md>.     </p>
+    <p>
+      The degrees of freedom are
+      <m>df_1=n_1-1=14</m>
+      and
+      <m>df_2=n_2-1=11</m>.
+    </p>
+    <p>
+      Using the <m>F</m>-distribution with <m>14</m> and <m>11</m> degrees of
+      freedom, the two-sided <m>p</m>-value is approximately <m>0.08</m>.
+    </p>
+</solution>
+<solution> <title> Conclusion</title> 
+    <p>   Since <m>p=0.08 \gt  0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the population variances in fill amounts are different for
+      the two machines.
+    </p>
+  </solution>
+</example>
+
+
+
+
+
+  </subsection>
 
 
 <subsection xml:id="subsec-CompareVarianceCalc">
   <title>Using Technology</title>
-  <p> short cuts </p>
+ <p>
+      A hospital administrator wants to determine whether emergency room wait
+      times are more variable on weekends than on weekdays. A random sample of
+      wait times, measured in minutes, is collected for patients arriving on
+      weekends and for patients arriving on weekdays. The summary statistics are
+      shown below.
+    </p>
+    <p>    Weekends: <m>n_1=14</m>, <m>s_1=18.2</m> minutes
+      </p>
+      <p>  Weekdays: <m>n_2=12</m>, <m>s_2=11.4</m> minutes
+      </p>
+       
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      variance in weekend wait times is greater than the population variance in
+      weekday wait times.
+    </p>
+<exercise><title>Wait Times </title> 
+  <statement>
+<p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypotheses</title> 
+    <p>
+      Let population <m>1</m> be weekend wait times and population <m>2</m> be
+      weekday wait times.
+    </p>
+    <p>
+      We test
+      <m>H_0: \sigma_1^2=\sigma_2 ^2</m>
+      versus
+      <m>H_a: \sigma_1^2 \gt \sigma_2 ^2</m>. This is a right tailed test.
+    </p>
+</solution>
+<solution> <title> Statistical Test</title> 
+    <p>   The test statistic for a two-variance <m>F</m>-test is
+      <m>F=\dfrac{s_1^2}{s_2^2}</m>.
+    </p>
+    <p>   Substituting the sample standard deviations gives
+      <md>
+        F=\dfrac{18.2^2}{11.4^2}
+        =\dfrac{331.24}{129.96}    \approx 2.55
+      </md>.     </p>
+    <p>  The degrees of freedom are
+      <m>df_1=n_1-1=13</m>
+      and
+      <m>df_2=n_2-1=11</m>.
+    </p>
+    <p>
+      Using the <m>F</m>-distribution with <m>13</m> and <m>11</m> degrees of
+      freedom, the one-sided <m>p</m>-value is approximately <m>0.07</m>.
+    </p>
+</solution>
+<solution> <title> Conclusion</title> 
+    <p>
+      Since <m>p-value=0.07  \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that emergency room wait times are more variable on weekends than
+      on weekdays.
+    </p>
+  </solution>
+</exercise>
+
+
+
   </subsection>
 
 

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-CompPairedmeans" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>t-test for Paired Means</title>
+
  <introduction>
   <p>
-    intro 
+    The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects.   
   </p>
  </introduction>
 
@@ -23,7 +24,7 @@
 
 <subsection xml:id="subsec-PairedMeanTestBasics">
   <title>Understanding the Basics</title>
-  <p> The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired <m>t</m>-test analyzes the <em> differences </em> within each pair. If we let <m>d</m> represent the difference for each pair, then the <term>hypotheses</term> are written in terms of the population mean difference <m>\mu_d</m>.  The null hypothesis is <m>\mu_d = 0</m> and the alternative hypothesis can be either <m>\mu_d \lt =0</m> or <m>\mu_d \gt 0 </m> for a one tailed test, or <m>\mu_d \ne 0</m> for a two-tailed test .  </p>   
+  <p> The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired <m>t</m>-test analyzes the <em> differences </em> within each pair. If we let <m>d</m> represent the difference for each pair, then the <term>hypotheses</term> are written in terms of the population mean difference <m>\mu_d</m>.  The null hypothesis is <m>\mu_d = 0</m> and the alternative hypothesis can be either <m>\mu_d \lt 0</m> or <m>\mu_d \gt 0 </m> for a one tailed test, or <m>\mu_d \ne 0</m> for a two-tailed test .  </p>   
 <p>The <term> test statistic</term> is
 <md> t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}} </md>
 where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sample standard deviation of the differences, <m>n</m> is the number of pairs in the sample, and <m>\mu_{d}</m> is the hypothesized mean difference, usually <m>0</m>. </p>
@@ -48,6 +49,19 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
   </statement>
 </definition>
 
+<p>
+  A confidence interval for a paired mean is used when data are collected in
+  matched pairs, such as before-and-after measurements on the same subjects or
+  measurements on two related conditions. First, compute the difference for each
+  pair, usually written as <m>d = x_1 - x_2</m> or in a context-specific way such
+  as <m>d=\text{After}-\text{Before}</m>. Then treat the list of differences as a
+  single sample. If the conditions for inference are satisfied, a confidence
+  interval for the population mean difference <m>\mu_d</m> is given by
+  <m>\bar{d}\pm t^*\dfrac{s_d}{\sqrt{n}}</m>, where <m>\bar{d}</m> is the sample
+  mean of the differences, <m>s_d</m> is the sample standard deviation of the
+  differences, <m>n</m> is the number of pairs, and <m>t^*</m> is the critical
+  value from the <m>t</m>-distribution with <m>n-1</m> degrees of freedom.
+</p> 
 
 
 </subsection> 
