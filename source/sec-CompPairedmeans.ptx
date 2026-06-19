@@ -52,6 +52,280 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
 
 </subsection> 
 
+
+<subsection xml:id="subsec-PairedMeanPushUps">
+  <title>Paired Mean Hypothesis Test for Push Ups </title>
+
+
+    <p>
+      A fitness instructor wants to know whether a 6-week training
+      program improves the number of push-ups participants can complete in one
+      minute. The instructor records the number of push-ups for each participant
+      before the program and again after the program.
+    </p>
+    <p>
+      The data are shown below.
+    </p>
+    <tabular>
+      <row>
+        <cell><p><term>Participant</term></p></cell>
+        <cell><p><m>1</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>4</m></p></cell>
+        <cell><p><m>5</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Before</term></p></cell>
+        <cell><p><m>18</m></p></cell>
+        <cell><p><m>22</m></p></cell>
+        <cell><p><m>20</m></p></cell>
+        <cell><p><m>16</m></p></cell>
+        <cell><p><m>19</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>After</term></p></cell>
+        <cell><p><m>21</m></p></cell>
+        <cell><p><m>25</m></p></cell>
+        <cell><p><m>23</m></p></cell>
+        <cell><p><m>18</m></p></cell>
+        <cell><p><m>22</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Difference</term></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+      </row>
+    </tabular>
+    <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
+
+  <example> <title> Push up</title> 
+  <statement>
+    <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
+    <p>
+      Because the same participants are measured twice, this is a
+      <term>paired t-test for the mean</term>. The differences can be found by
+      subtracting the Before values from the After training values, giving the differences of
+      <m>3, 3, 3, 2, 3</m>.
+    </p>
+  </statement>
+
+<solution> <title> Differences</title> 
+    <p>
+      A paired <m>t</m>-test is appropriate because the same  of 5
+      participants are measured twice, once before the training program and once
+      after the training program. This creates matched pairs of observations.
+    </p>
+    <p>  First we need to compute the differences using
+      <m>d = \text{After} - \text{Before}</m>.
+    </p>
+    <tabular>
+      <row>
+        <cell><p><term>Participant</term></p></cell>
+        <cell><p><m>1</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>4</m></p></cell>
+        <cell><p><m>5</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Difference</term></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+      </row>
+    </tabular>
+    <p>  So the sample of differences are
+      <m>3, 3, 3, 2, 3</m>.
+    </p>
+</solution>
+<solution> <title> Hypotheses </title>
+    <p>  We test
+      <m>H_0: \mu_d = 0</m>
+      versus
+      <m>H_a: \mu_d  \gt 0</m>,
+      where <m>\mu_d</m> is the mean difference in push-ups. Since the number of push ups increased we are testing if it is greater than 0,  thus a right tailed test. 
+    </p>
+</solution>
+<solution> <title> Statistical Test </title> 
+    <p> The sample mean of the differences is
+      <m>\bar{d} = \frac{3+3+3+2+3}{5} = \frac{14}{5} = 2.8</m>.
+    </p>
+    <p>  The sample standard deviation of the differences is
+      <m>s_d \approx 0.447</m>.
+    </p>
+    <p> The test statistic is
+      <m>         t = \frac{\bar{d}-0}{s_d/\sqrt{n}}
+        = \frac{2.8}{0.447/\sqrt{5}}         \approx 14.0
+      </m>
+      with <m>df = 5-1 = 4</m>.
+    </p>
+    <p>
+      This gives a very small <m>p</m>-value <m> \approx 0.000076</m>, so we reject <m>H_0</m> since it is less than <m> \alpha = .05</m>.
+    </p>
+</solution>
+<solution> <title> Conclusion</title>
+<p>
+      This gives a very small <m>p</m>-value <m> \approx 0.000076</m>, so we reject <m>H_0</m> since it is less than <m> \alpha = .05</m>.
+    </p>
+    <p>
+      There is strong evidence that the 6-week training program increases
+      the mean number of push-ups participants can complete in one minute.
+    </p>
+  </solution>
+</example>
+
+
+
+<p><term>Paired Mean Hypothesis Test for Sleep Improvement </term> </p>
+<p>
+      A sleep researcher wants to know whether a new bedtime routine increases
+      the number of hours of sleep college students get each night. The
+      researcher records the hours of sleep for each student before starting the
+      routine and again after 2 weeks on the routine. The routine consists of a 30-minute wind down period each night where the college students disconnect from electronic devices, dim the lighting to encourage melatonin production, and engage in calming activities like reading or gentle stretching. 
+    </p>
+    <p>
+      The data are shown below.
+    </p>
+    <tabular>
+      <row>
+        <cell><p><term>Student</term></p></cell>
+        <cell><p><m>A</m></p></cell>
+        <cell><p><m>B</m></p></cell>
+        <cell><p><m>C</m></p></cell>
+        <cell><p><m>D</m></p></cell>
+        <cell><p><m>E</m></p></cell>
+        <cell><p><m>F</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Before</term></p></cell>
+        <cell><p><m>6.1</m></p></cell>
+        <cell><p><m>5.8</m></p></cell>
+        <cell><p><m>6.4</m></p></cell>
+        <cell><p><m>5.9</m></p></cell>
+        <cell><p><m>6.0</m></p></cell>
+        <cell><p><m>5.7</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>After</term></p></cell>
+        <cell><p><m>6.8</m></p></cell>
+        <cell><p><m>6.2</m></p></cell>
+        <cell><p><m>6.9</m></p></cell>
+        <cell><p><m>6.3</m></p></cell>
+        <cell><p><m>6.5</m></p></cell>
+        <cell><p><m>6.1</m></p></cell>
+      </row>
+    </tabular>
+<p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
+
+<exercise> <title> Sleep Routine</title>
+  <statement>
+  <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
+  </statement>
+  <solution><title> Differences</title>
+    <p>
+      A paired <m>t</m>-test is appropriate because the same students are
+      measured twice, once before the bedtime routine and once after
+      2 weeks on the routine.
+    </p>
+    <p>
+      Let <m>d = \text{After} - \text{Before}</m>. Then the differences are
+      <m>0.7, 0.4, 0.5, 0.4, 0.5, 0.4</m>.
+    </p>
+</solution>
+<solution> <title> Hypotheses </title>
+    <p> Since we are seeing if sleep is improving the difference values are positive.
+      The hypotheses are
+      <m>H_0: \mu_d = 0</m>
+      versus
+      <m>H_a: \mu_d \gt  0</m> for a right tailed test.
+    </p>
+</solution>
+<solution> <title> Statistical Test </title>
+    <p> The sample mean difference is
+      <md>
+        \bar{d} = \frac{0.7+0.4+0.5+0.4+0.5+0.4}{6}  = \frac{2.9}{6}    \approx 0.483
+      </md>.
+    </p>
+    <p> The sample standard deviation of the differences is
+      <md>s_d \approx 0.117</md>.
+    </p>
+    <p> The test statistic is
+      <m>
+        t = \frac{\bar{d}-0}{s_d/\sqrt{n}}  = \frac{0.483}{0.117/\sqrt{6}}    \approx 10.14
+      </m>
+      with <m>df = 6-1 = 5</m>.
+    </p>
+    <p>  The <m>p</m>-value is very small <m>\approx 0.00008 </m>, so we reject <m>H_0</m> since it is less than <m>\alpha = 0.05</m>.
+    </p>
+</solution>
+<solution> <title> Conclusion</title> 
+    <p>
+      Since <m>p</m>-value <m>\approx 0.00008 </m> is less than <m>\alpha = 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is strong evidence that the new bedtime routine increases the mean
+      number of hours of sleep college students get each night.
+    </p>
+  </solution>
+</exercise>
+
+<p> A sleep researcher wants to know whether a new bedtime routine increases the number of hours of sleep college students get each night. The researcher records the hours of sleep for each student before starting the routine and again after 2 weeks on the routine. 
+</p>
+<p>   Construct a 95% confidence interval for the mean difference in sleep hours, let
+    <m>d=\text{After}-\text{Before}</m>.
+  </p>
+<exercise> <title> Confidence Interval </title>
+<statement> 
+<p>   To construct a 95% confidence interval for the mean difference in sleep hours, let
+    <m>d=\text{After}-\text{Before}</m>.
+  </p>
+  </statement>
+<solution> 
+  <p>  The differences are  <m>0.7, 0.4, 0.5, 0.4, 0.5, 0.4</m>.
+  </p>
+  <p> From these data,  <m>n=6</m>,  <m>\bar{d}\approx 0.483</m>,
+    And   <m>s_d\approx 0.117</m>.
+  </p>
+  <p>
+    Since the population standard deviation is unknown and the data are paired,
+    we use a <m>t</m>-interval with  <m>df=n-1=5</m>.
+  </p>
+  <p> For a <m>95\%</m> confidence interval with <m>df=5</m>, the critical value
+    Is  <m>t^*\approx 2.571</m> using StatKey.
+  </p>
+  <p> The margin of error is
+    <md>   ME=t^*\frac{s_d}{\sqrt{n}}
+      =2.571\left(\frac{0.117}{\sqrt{6}}\right)
+      \approx 0.123
+    </md>.
+  </p>
+  <p> The confidence interval is
+    <md>   \bar{d}\pm ME = 0.483 \pm 0.123
+    </md>.
+  </p>
+  <p>
+    So the <m>95\%</m> confidence interval for the mean difference is
+    <m>(0.360,\ 0.606)</m>.
+  </p>
+  <p>
+    We are <m>95\%</m> confident that the true mean increase in hours of sleep
+    from the bedtime routine is between <m>0.360</m> and <m>0.606</m> hours per
+    night.
+  </p>
+</solution>
+</exercise>
+
+
+  </subsection>
+
+
+
 <subsection xml:id="subsec-PairedMeanTestCalc">
   <title>Using Technology</title>
   <p> short cuts </p>
