@@ -396,7 +396,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-CompPairedmeans.html" class="internal"><span class="codenumber">8.2</span> <span class="title">t-test for Paired Means</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanTestBasics" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanTestCalc" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanPushUps" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Paired Mean Hypothesis Test for Push Ups</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanTestCalc" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Using Technology</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -556,15 +557,501 @@ t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}}
 <div class="autopermalink" data-description="Definition 8.2.1"><a href="#def-paired-t-test-mean" title="Copy heading and permalink for Definition 8.2.1" aria-label="Copy heading and permalink for Definition 8.2.1">🔗</a></div>
 </article><div class="autopermalink" data-description="Subsection 8.2.1: Understanding the Basics"><a href="#subsec-PairedMeanTestBasics" title="Copy heading and permalink for Subsection 8.2.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 8.2.1: Understanding the Basics">🔗</a></div>
 </section>
+<section class="subsection" id="subsec-PairedMeanPushUps">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Paired Mean Hypothesis Test for Push Ups</span>
+</h3>
+<div class="para" id="subsec-PairedMeanPushUps-2">A fitness instructor wants to know whether a 6-week training program improves the number of push-ups participants can complete in one minute. The instructor records the number of push-ups for each participant before the program and again after the program.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-3">The data are shown below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-1-1">
+<dfn class="terminology">Participant</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-2-1">
+<span class="process-math">\(1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-3-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-5-1">
+<span class="process-math">\(4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-6-1">
+<span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-1-1">
+<dfn class="terminology">Before</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-2-1">
+<span class="process-math">\(18\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-3-1">
+<span class="process-math">\(22\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-4-1">
+<span class="process-math">\(20\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-5-1">
+<span class="process-math">\(16\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-6-1">
+<span class="process-math">\(19\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-1-1">
+<dfn class="terminology">After</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-2-1">
+<span class="process-math">\(21\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-3-1">
+<span class="process-math">\(25\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-4-1">
+<span class="process-math">\(23\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-5-1">
+<span class="process-math">\(18\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-6-1">
+<span class="process-math">\(22\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-1-1">
+<dfn class="terminology">Difference</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-2-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-3-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-5-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-6-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+</table></div>
+<div class="para" id="subsec-PairedMeanPushUps-5">Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PairedMeanPushUps-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Push up.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-2-1">Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-PairedMeanPushUps-6-2-2">Because the same participants are measured twice, this is a <dfn class="terminology">paired t-test for the mean</dfn>. The differences can be found by subtracting the Before values from the After training values, giving the differences of <span class="process-math">\(3, 3, 3, 2, 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-PairedMeanPushUps-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Differences</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-2">A paired <span class="process-math">\(t\)</span>-test is appropriate because the same  of 5 participants are measured twice, once before the training program and once after the training program. This creates matched pairs of observations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-3-3">First we need to compute the differences using <span class="process-math">\(d = \text{After} - \text{Before}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-1-1">
+<dfn class="terminology">Participant</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-2-1">
+<span class="process-math">\(1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-3-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-5-1">
+<span class="process-math">\(4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-6-1">
+<span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-1-1">
+<dfn class="terminology">Difference</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-2-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-3-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-5-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-6-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+</table></div>
+<div class="para" id="subsec-PairedMeanPushUps-6-3-5">So the sample of differences are <span class="process-math">\(3, 3, 3, 2, 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.2.1: Differences"><a href="#subsec-PairedMeanPushUps-6-3" title="Copy heading and permalink for Solution 8.2.2.1: Differences" aria-label="Copy heading and permalink for Solution 8.2.2.1: Differences">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-6-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-4-2">We test <span class="process-math">\(H_0: \mu_d = 0\)</span> versus <span class="process-math">\(H_a: \mu_d  \gt 0\text{,}\)</span> where <span class="process-math">\(\mu_d\)</span> is the mean difference in push-ups. Since the number of push ups increased we are testing if it is greater than 0,  thus a right tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.2.2: Hypotheses"><a href="#subsec-PairedMeanPushUps-6-4" title="Copy heading and permalink for Solution 8.2.2.2: Hypotheses" aria-label="Copy heading and permalink for Solution 8.2.2.2: Hypotheses">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-6-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statistical Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-5-2">The sample mean of the differences is <span class="process-math">\(\bar{d} = \frac{3+3+3+2+3}{5} = \frac{14}{5} = 2.8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-5-3">The sample standard deviation of the differences is <span class="process-math">\(s_d \approx 0.447\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-5-4">The test statistic is <span class="process-math">\(t = \frac{\bar{d}-0}{s_d/\sqrt{n}}
+= \frac{2.8}{0.447/\sqrt{5}}         \approx 14.0\)</span> with <span class="process-math">\(df = 5-1 = 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-5-5">This gives a very small <span class="process-math">\(p\)</span>-value <span class="process-math">\(\approx 0.000076\text{,}\)</span> so we reject <span class="process-math">\(H_0\)</span> since it is less than <span class="process-math">\(\alpha = .05\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.2.3: Statistical Test"><a href="#subsec-PairedMeanPushUps-6-5" title="Copy heading and permalink for Solution 8.2.2.3: Statistical Test" aria-label="Copy heading and permalink for Solution 8.2.2.3: Statistical Test">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-6-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-6-2">This gives a very small <span class="process-math">\(p\)</span>-value <span class="process-math">\(\approx 0.000076\text{,}\)</span> so we reject <span class="process-math">\(H_0\)</span> since it is less than <span class="process-math">\(\alpha = .05\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-6-3">There is strong evidence that the 6-week training program increases the mean number of push-ups participants can complete in one minute.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.2.4: Conclusion"><a href="#subsec-PairedMeanPushUps-6-6" title="Copy heading and permalink for Solution 8.2.2.4: Conclusion" aria-label="Copy heading and permalink for Solution 8.2.2.4: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.2.2: Push up"><a href="#subsec-PairedMeanPushUps-6" title="Copy heading and permalink for Example 8.2.2: Push up" aria-label="Copy heading and permalink for Example 8.2.2: Push up">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-PairedMeanPushUps-7">
+<dfn class="terminology">Paired Mean Hypothesis Test for Sleep Improvement</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-8">A sleep researcher wants to know whether a new bedtime routine increases the number of hours of sleep college students get each night. The researcher records the hours of sleep for each student before starting the routine and again after 2 weeks on the routine. The routine consists of a 30-minute wind down period each night where the college students disconnect from electronic devices, dim the lighting to encourage melatonin production, and engage in calming activities like reading or gentle stretching.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-9">The data are shown below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-1-1-1">
+<dfn class="terminology">Student</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-1-2-1">
+<span class="process-math">\(A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-1-3-1">
+<span class="process-math">\(B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-1-4-1">
+<span class="process-math">\(C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-1-5-1">
+<span class="process-math">\(D\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-1-6-1">
+<span class="process-math">\(E\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-1-7-1">
+<span class="process-math">\(F\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-2-1-1">
+<dfn class="terminology">Before</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-2-2-1">
+<span class="process-math">\(6.1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-2-3-1">
+<span class="process-math">\(5.8\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-2-4-1">
+<span class="process-math">\(6.4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-2-5-1">
+<span class="process-math">\(5.9\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-2-6-1">
+<span class="process-math">\(6.0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-2-7-1">
+<span class="process-math">\(5.7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-3-1-1">
+<dfn class="terminology">After</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-3-2-1">
+<span class="process-math">\(6.8\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-3-3-1">
+<span class="process-math">\(6.2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-3-4-1">
+<span class="process-math">\(6.9\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-3-5-1">
+<span class="process-math">\(6.3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-3-6-1">
+<span class="process-math">\(6.5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-10-3-7-1">
+<span class="process-math">\(6.1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-10-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+</table></div>
+<div class="para" id="subsec-PairedMeanPushUps-11">Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PairedMeanPushUps-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sleep Routine.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-12-2-1">Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-PairedMeanPushUps-12-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Differences</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-12-3-2">A paired <span class="process-math">\(t\)</span>-test is appropriate because the same students are measured twice, once before the bedtime routine and once after 2 weeks on the routine.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-12-3-3">Let <span class="process-math">\(d = \text{After} - \text{Before}\text{.}\)</span> Then the differences are <span class="process-math">\(0.7, 0.4, 0.5, 0.4, 0.5, 0.4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.3.1: Differences"><a href="#subsec-PairedMeanPushUps-12-3" title="Copy heading and permalink for Solution 8.2.3.1: Differences" aria-label="Copy heading and permalink for Solution 8.2.3.1: Differences">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-12-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-12-4-2">Since we are seeing if sleep is improving the difference values are positive. The hypotheses are <span class="process-math">\(H_0: \mu_d = 0\)</span> versus <span class="process-math">\(H_a: \mu_d \gt  0\)</span> for a right tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.3.2: Hypotheses"><a href="#subsec-PairedMeanPushUps-12-4" title="Copy heading and permalink for Solution 8.2.3.2: Hypotheses" aria-label="Copy heading and permalink for Solution 8.2.3.2: Hypotheses">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-12-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statistical Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-PairedMeanPushUps-12-5-2">
+<div class="para">The sample mean difference is</div>
+<div class="displaymath process-math" id="subsec-PairedMeanPushUps-12-5-2-1">
+\begin{equation*}
+\bar{d} = \frac{0.7+0.4+0.5+0.4+0.5+0.4}{6}  = \frac{2.9}{6}    \approx 0.483\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PairedMeanPushUps-12-5-3">
+<div class="para">The sample standard deviation of the differences is</div>
+<div class="displaymath process-math" id="subsec-PairedMeanPushUps-12-5-3-1">
+\begin{equation*}
+s_d \approx 0.117\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-12-5-4">The test statistic is <span class="process-math">\(t = \frac{\bar{d}-0}{s_d/\sqrt{n}}  = \frac{0.483}{0.117/\sqrt{6}}    \approx 10.14\)</span> with <span class="process-math">\(df = 6-1 = 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-12-5-5">The <span class="process-math">\(p\)</span>-value is very small <span class="process-math">\(\approx 0.00008 \text{,}\)</span> so we reject <span class="process-math">\(H_0\)</span> since it is less than <span class="process-math">\(\alpha = 0.05\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.3.3: Statistical Test"><a href="#subsec-PairedMeanPushUps-12-5" title="Copy heading and permalink for Solution 8.2.3.3: Statistical Test" aria-label="Copy heading and permalink for Solution 8.2.3.3: Statistical Test">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-12-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-12-6-2">Since <span class="process-math">\(p\)</span>-value <span class="process-math">\(\approx 0.00008 \)</span> is less than <span class="process-math">\(\alpha = 0.05\text{,}\)</span> we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-12-6-3">There is strong evidence that the new bedtime routine increases the mean number of hours of sleep college students get each night.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-12-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.3.4: Conclusion"><a href="#subsec-PairedMeanPushUps-12-6" title="Copy heading and permalink for Solution 8.2.3.4: Conclusion" aria-label="Copy heading and permalink for Solution 8.2.3.4: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 8.2.3: Sleep Routine"><a href="#subsec-PairedMeanPushUps-12" title="Copy heading and permalink for Checkpoint 8.2.3: Sleep Routine" aria-label="Copy heading and permalink for Checkpoint 8.2.3: Sleep Routine">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-PairedMeanPushUps-13">A sleep researcher wants to know whether a new bedtime routine increases the number of hours of sleep college students get each night. The researcher records the hours of sleep for each student before starting the routine and again after 2 weeks on the routine.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-14">Construct a 95% confidence interval for the mean difference in sleep hours, let <span class="process-math">\(d=\text{After}-\text{Before}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PairedMeanPushUps-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Confidence Interval.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-15-2-1">To construct a 95% confidence interval for the mean difference in sleep hours, let <span class="process-math">\(d=\text{After}-\text{Before}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-PairedMeanPushUps-15-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-15-3-1">The differences are  <span class="process-math">\(0.7, 0.4, 0.5, 0.4, 0.5, 0.4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-15-3-2">From these data,  <span class="process-math">\(n=6\text{,}\)</span>  <span class="process-math">\(\bar{d}\approx 0.483\text{,}\)</span> And   <span class="process-math">\(s_d\approx 0.117\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-15-3-3">Since the population standard deviation is unknown and the data are paired, we use a <span class="process-math">\(t\)</span>-interval with  <span class="process-math">\(df=n-1=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-15-3-4">For a <span class="process-math">\(95\%\)</span> confidence interval with <span class="process-math">\(df=5\text{,}\)</span> the critical value Is  <span class="process-math">\(t^*\approx 2.571\)</span> using StatKey.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PairedMeanPushUps-15-3-5">
+<div class="para">The margin of error is</div>
+<div class="displaymath process-math" id="subsec-PairedMeanPushUps-15-3-5-1">
+\begin{equation*}
+ME=t^*\frac{s_d}{\sqrt{n}}
+=2.571\left(\frac{0.117}{\sqrt{6}}\right)
+\approx 0.123\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PairedMeanPushUps-15-3-6">
+<div class="para">The confidence interval is</div>
+<div class="displaymath process-math" id="subsec-PairedMeanPushUps-15-3-6-1">
+\begin{equation*}
+\bar{d}\pm ME = 0.483 \pm 0.123\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-15-3-7">So the <span class="process-math">\(95\%\)</span> confidence interval for the mean difference is <span class="process-math">\((0.360,\ 0.606)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-15-3-8">We are <span class="process-math">\(95\%\)</span> confident that the true mean increase in hours of sleep from the bedtime routine is between <span class="process-math">\(0.360\)</span> and <span class="process-math">\(0.606\)</span> hours per night.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-15-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.2.4.1"><a href="#subsec-PairedMeanPushUps-15-3" title="Copy heading and permalink for Solution 8.2.4.1" aria-label="Copy heading and permalink for Solution 8.2.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 8.2.4: Confidence Interval"><a href="#subsec-PairedMeanPushUps-15" title="Copy heading and permalink for Checkpoint 8.2.4: Confidence Interval" aria-label="Copy heading and permalink for Checkpoint 8.2.4: Confidence Interval">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 8.2.2: Paired Mean Hypothesis Test for Push Ups"><a href="#subsec-PairedMeanPushUps" title="Copy heading and permalink for Subsection 8.2.2: Paired Mean Hypothesis Test for Push Ups" aria-label="Copy heading and permalink for Subsection 8.2.2: Paired Mean Hypothesis Test for Push Ups">🔗</a></div>
+</section>
 <section class="subsection" id="subsec-PairedMeanTestCalc">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
 </h3>
 <div class="para" id="subsec-PairedMeanTestCalc-2">short cuts<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanTestCalc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-PairedMeanTestCalc-3">Try the online TI-84 Applet <a class="external" href="https://ti84calcpro.com/" target="_blank"><code class="code-inline tex2jax_ignore"> https://ti84calcpro.com/</code></a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanTestCalc-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 8.2.2: Using Technology"><a href="#subsec-PairedMeanTestCalc" title="Copy heading and permalink for Subsection 8.2.2: Using Technology" aria-label="Copy heading and permalink for Subsection 8.2.2: Using Technology">🔗</a></div>
+<div class="autopermalink" data-description="Subsection 8.2.3: Using Technology"><a href="#subsec-PairedMeanTestCalc" title="Copy heading and permalink for Subsection 8.2.3: Using Technology" aria-label="Copy heading and permalink for Subsection 8.2.3: Using Technology">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 8.2: t-test for Paired Means"><a href="#sec-CompPairedmeans" title="Copy heading and permalink for Section 8.2: t-test for Paired Means" aria-label="Copy heading and permalink for Section 8.2: t-test for Paired Means">🔗</a></div>
 </section>
 </div>

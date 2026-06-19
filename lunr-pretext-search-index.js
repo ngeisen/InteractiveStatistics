@@ -7513,7 +7513,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "t-test for Paired Means",
-  "body": " t-test for Paired Means   intro     At the end of this section you will be able to:     Write hypotheses for the paired difference in means    Determine the test statistic and p-value for the paired t-test.    Write the conclusion of a test in context    Construct confidence intervals for the difference in means.      Understanding the Basics  The paired -test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired -test analyzes the differences within each pair. If we let represent the difference for each pair, then the hypotheses are written in terms of the population mean difference . The null hypothesis is and the alternative hypothesis can be either or for a one tailed test, or for a two-tailed test .  The test statistic is where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs in the sample, and is the hypothesized mean difference, usually .  This test assumes that the data consist of matched pairs, that the differences are independent from one pair to another, and that the distribution of the differences is approximately normal, especially when the sample size is small. The resulting p-value is used to decide whether there is enough evidence to conclude that a true mean difference exists between the paired observations.  Recall that when the p-value  we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis.    A paired -test for the mean is a statistical test used to compare the mean of the differences between two related measurements and determine whether there is evidence that the population mean difference is different from a hypothesized value.  The test statistic is   where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs, and is the hypothesized population mean difference.      Using Technology  short cuts  Try the online TI-84 Applet    "
+  "body": " t-test for Paired Means   intro     At the end of this section you will be able to:     Write hypotheses for the paired difference in means    Determine the test statistic and p-value for the paired t-test.    Write the conclusion of a test in context    Construct confidence intervals for the difference in means.      Understanding the Basics  The paired -test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired -test analyzes the differences within each pair. If we let represent the difference for each pair, then the hypotheses are written in terms of the population mean difference . The null hypothesis is and the alternative hypothesis can be either or for a one tailed test, or for a two-tailed test .  The test statistic is where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs in the sample, and is the hypothesized mean difference, usually .  This test assumes that the data consist of matched pairs, that the differences are independent from one pair to another, and that the distribution of the differences is approximately normal, especially when the sample size is small. The resulting p-value is used to decide whether there is enough evidence to conclude that a true mean difference exists between the paired observations.  Recall that when the p-value  we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis.    A paired -test for the mean is a statistical test used to compare the mean of the differences between two related measurements and determine whether there is evidence that the population mean difference is different from a hypothesized value.  The test statistic is   where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs, and is the hypothesized population mean difference.      Paired Mean Hypothesis Test for Push Ups  A fitness instructor wants to know whether a 6-week training program improves the number of push-ups participants can complete in one minute. The instructor records the number of push-ups for each participant before the program and again after the program.  The data are shown below.    Participant         Before         After         Difference         Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.   Push up   Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.  Because the same participants are measured twice, this is a paired t-test for the mean . The differences can be found by subtracting the Before values from the After training values, giving the differences of .    Differences  A paired -test is appropriate because the same of 5 participants are measured twice, once before the training program and once after the training program. This creates matched pairs of observations.  First we need to compute the differences using .    Participant         Difference         So the sample of differences are .    Hypotheses  We test versus , where is the mean difference in push-ups. Since the number of push ups increased we are testing if it is greater than 0, thus a right tailed test.    Statistical Test  The sample mean of the differences is .  The sample standard deviation of the differences is .  The test statistic is with .  This gives a very small -value , so we reject since it is less than .    Conclusion  This gives a very small -value , so we reject since it is less than .  There is strong evidence that the 6-week training program increases the mean number of push-ups participants can complete in one minute.    Paired Mean Hypothesis Test for Sleep Improvement   A sleep researcher wants to know whether a new bedtime routine increases the number of hours of sleep college students get each night. The researcher records the hours of sleep for each student before starting the routine and again after 2 weeks on the routine. The routine consists of a 30-minute wind down period each night where the college students disconnect from electronic devices, dim the lighting to encourage melatonin production, and engage in calming activities like reading or gentle stretching.  The data are shown below.    Student          Before          After          Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.   Sleep Routine   Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.   Differences  A paired -test is appropriate because the same students are measured twice, once before the bedtime routine and once after 2 weeks on the routine.  Let . Then the differences are .    Hypotheses  Since we are seeing if sleep is improving the difference values are positive. The hypotheses are versus for a right tailed test.    Statistical Test  The sample mean difference is .  The sample standard deviation of the differences is .  The test statistic is with .  The -value is very small , so we reject since it is less than .    Conclusion  Since -value is less than , we reject .  There is strong evidence that the new bedtime routine increases the mean number of hours of sleep college students get each night.    A sleep researcher wants to know whether a new bedtime routine increases the number of hours of sleep college students get each night. The researcher records the hours of sleep for each student before starting the routine and again after 2 weeks on the routine.  Construct a 95% confidence interval for the mean difference in sleep hours, let .   Confidence Interval   To construct a 95% confidence interval for the mean difference in sleep hours, let .    The differences are .  From these data, , , And .  Since the population standard deviation is unknown and the data are paired, we use a -interval with .  For a confidence interval with , the critical value Is using StatKey.  The margin of error is .  The confidence interval is .  So the confidence interval for the mean difference is .  We are confident that the true mean increase in hours of sleep from the bedtime routine is between and hours per night.      Using Technology  short cuts  Try the online TI-84 Applet    "
 },
 {
   "id": "sec-CompPairedmeans-3",
@@ -7559,6 +7559,105 @@ var ptx_lunr_docs = [
   "number": "8.2.1",
   "title": "",
   "body": "  A paired -test for the mean is a statistical test used to compare the mean of the differences between two related measurements and determine whether there is evidence that the population mean difference is different from a hypothesized value.  The test statistic is   where is the sample mean of the differences, is the sample standard deviation of the differences, is the number of pairs, and is the hypothesized population mean difference.   "
+},
+{
+  "id": "subsec-PairedMeanPushUps-4-1-1-1",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-4-1-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Participant "
+},
+{
+  "id": "subsec-PairedMeanPushUps-4-2-1-1",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-4-2-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Before "
+},
+{
+  "id": "subsec-PairedMeanPushUps-4-3-1-1",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-4-3-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "After "
+},
+{
+  "id": "subsec-PairedMeanPushUps-4-4-1-1",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-4-4-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Difference "
+},
+{
+  "id": "subsec-PairedMeanPushUps-6",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-6",
+  "type": "Example",
+  "number": "8.2.2",
+  "title": "Push up.",
+  "body": " Push up   Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.  Because the same participants are measured twice, this is a paired t-test for the mean . The differences can be found by subtracting the Before values from the After training values, giving the differences of .    Differences  A paired -test is appropriate because the same of 5 participants are measured twice, once before the training program and once after the training program. This creates matched pairs of observations.  First we need to compute the differences using .    Participant         Difference         So the sample of differences are .    Hypotheses  We test versus , where is the mean difference in push-ups. Since the number of push ups increased we are testing if it is greater than 0, thus a right tailed test.    Statistical Test  The sample mean of the differences is .  The sample standard deviation of the differences is .  The test statistic is with .  This gives a very small -value , so we reject since it is less than .    Conclusion  This gives a very small -value , so we reject since it is less than .  There is strong evidence that the 6-week training program increases the mean number of push-ups participants can complete in one minute.   "
+},
+{
+  "id": "subsec-PairedMeanPushUps-7",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Paired Mean Hypothesis Test for Sleep Improvement "
+},
+{
+  "id": "subsec-PairedMeanPushUps-10-1-1-1",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-10-1-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Student "
+},
+{
+  "id": "subsec-PairedMeanPushUps-10-2-1-1",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-10-2-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Before "
+},
+{
+  "id": "subsec-PairedMeanPushUps-10-3-1-1",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-10-3-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "After "
+},
+{
+  "id": "subsec-PairedMeanPushUps-12",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-12",
+  "type": "Checkpoint",
+  "number": "8.2.3",
+  "title": "Sleep Routine.",
+  "body": " Sleep Routine   Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.   Differences  A paired -test is appropriate because the same students are measured twice, once before the bedtime routine and once after 2 weeks on the routine.  Let . Then the differences are .    Hypotheses  Since we are seeing if sleep is improving the difference values are positive. The hypotheses are versus for a right tailed test.    Statistical Test  The sample mean difference is .  The sample standard deviation of the differences is .  The test statistic is with .  The -value is very small , so we reject since it is less than .    Conclusion  Since -value is less than , we reject .  There is strong evidence that the new bedtime routine increases the mean number of hours of sleep college students get each night.   "
+},
+{
+  "id": "subsec-PairedMeanPushUps-15",
+  "level": "2",
+  "url": "sec-CompPairedmeans.html#subsec-PairedMeanPushUps-15",
+  "type": "Checkpoint",
+  "number": "8.2.4",
+  "title": "Confidence Interval.",
+  "body": " Confidence Interval   To construct a 95% confidence interval for the mean difference in sleep hours, let .    The differences are .  From these data, , , And .  Since the population standard deviation is unknown and the data are paired, we use a -interval with .  For a confidence interval with , the critical value Is using StatKey.  The margin of error is .  The confidence interval is .  So the confidence interval for the mean difference is .  We are confident that the true mean increase in hours of sleep from the bedtime routine is between and hours per night.   "
 },
 {
   "id": "sec-CompProp",
