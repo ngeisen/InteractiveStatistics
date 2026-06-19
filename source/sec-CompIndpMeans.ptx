@@ -582,7 +582,7 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
         </figure> 
 
 <p> Use the arrow button to continue down the menu. Identify the alternative hypothesis for <m> \gt  \mu_2 </m>  and the <term>Pooled: NO</term> for this course. Then click on <term> Calculate</term> and press [ENTER] to evaluate the test. </p>
-<figure xml:id=" TwoParrotTestCalc6">
+<figure xml:id="TwoParrotTestCalc6">
             <caption>Two Sample Test Results</caption>
             <image source=" TwoParrotCalc6.png" width="60%">
                 <shortdescription> test statistic is t=2.29 with p-value =0.0143 and the Welch's degrees of freedom 31.79.</shortdescription>
