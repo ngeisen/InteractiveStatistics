@@ -349,25 +349,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Collecting Data",
-  "body": " Collecting Data    At the end of this section you will able to:     Simulate several sampling methods.    Recognize the type sampling methods employed in a study.     Recall that the population is the set of all subjects for the study, while a sample is a group or subset selected from the population. It is often difficult or too expensive to examine the whole population for a study, thus we use a sample to help us draw conclusions about the population. When we choose a sample, we want it to be as similar to the population as possible. We are going to simulate several sampling methods using Gettysburg’s Address as the population.  President Abraham Lincoln delivered one of the most famous speeches in United States history at the dedication of the Gettysburg National Cemetery on November 19, 1863. After the featured speaker spoke for two hours, Lincoln delivered his 269-word message in approximately two minutes. Our goal is to estimate the average word length in Abraham Lincoln’s Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln’s Gettysburg Address is given below.   Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we cannot dedicate—we cannot consecrate—we cannot hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.   Step 1: Your task is to select a sample of 10 words to estimate the average length of words in his speech. Pick words that appear to be representative of the population of all the words. If you print the address, you can circle the ten words you choose.  Step 2: Find the lengths (number of letters) for each of the 10 words you selected.  Step 3: Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average.  Which best describes your average value for the average word length?   Your average word length   Which best describes your average value for the average word length?      Between 3 and 6 letters per word.    That is a reasonable estimate.      Less than 3 letters per word.    This estimate is a bit low, there are a lot of large words not included in your sample.      More than 6 letters per word.    This estimate is a bit high, you likely included a lot of the larger words and did not include some of the smaller words      The image below is a class distribution of the average number of letters for the Gettysburg Address by circling ten words. Each dot represents the average value for a student. There were 64 student samples taken. We can see the values range from 3.4 to 9.4 with the center around 5.5 letters per word, thus this will be our predicted value for the typical word length. But it turns out, we are often biased in the words we select. Some students selected bigger words to be representative, others selected more smaller words. Did you notice how many two and three letter words there were? Were you biased in your sampling selection?   Image of Average Word Length from Gettysburg Address   Shows average word length prediction for 64 students clustered between 5 and 6.    Now let’s investigate using a more random approach in selecting the words for a better estimate of the population average.  Randomly choose ten numbers between 1 and 269 and record them. Find the corresponding word in Lincoln’s Gettysburg Address and find the average word length for your new sample.   Image of Gettysburg Address numbered   Image of Gettysburg Address numbered.    You can also use technology to find the random numbers. Try the link for a random number generator at   Go midway down the page to Numbers and select Integer Generator . Generate 10 random integers between 1 and 269. Click on Get Numbers .   Image RandomOrg menu   image of website menu.    The image below is a sample of ten randomly selected numbers using the applet.   Image Sample of random numbers   lists ten random numbers.    Matching these numbers to the corresponding word in Gettysburg Address gives the average of 3.9 letters per word, which is closer to the population mean of 4.29 letters per word. We will look at the distributions again later.   Sample of Gettysburg Address wods   Image of highlighted words.     Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way. If sampling bias exists, we cannot trust generalizations from the sample to the population. So, we need a better method for predicting the typical or average value.  There are many sampling techniques, we will look at some of the more common sampling methods in statistics. We will simulate some of these methods in class with the Gettysburg Address.   Simple Random Sample is a method in which every element in the population has an equal chance of being selected for the sample. It's like putting all the names of the students in class in a hat and randomly drawing ten names.   Systematic Sampling is a method that useful when the population is already ordered in some way and every kth item is selected. While standing in line at a game, every 10th person gets a 10% off coupon. There is a system in how the sample is collected.   Stratified Sampling occurs when the population is divided into natural groups or strata. People are randomly polled in each group and the number of people polled in each group is determined by the ratio of the group to size of the total population. When sampling for how students study, the sample should consist of some freshman, sophomore, juniors, and seniors. If there are twice as many freshman as seniors, then the sample would also have twice as many freshman.   Cluster Sampling is a method that randomly selects a naturally occurring group or cluster and all in that cluster are selected. This is common in education where all of one class is selected to participate in the study. It is helpful to think of a cluster of grapes: you take the whole cluster rather than just grabbing a couple of grapes.   Convenience Sampling occurs when a group of subjects are convenient to sample. Around election time, people stand outside grocery stores to gather an easy sample of people to ask who they will vote for.   Exercise: Identify the type of sampling method described for each scenario:   Sampling Methods Matching Problem   Match the type of sampling method described with the appropriate scenario. Drag the sampling method name to the description.     Systematic Sampling  Alfred is conducting a survey to determine who students will vote for as their next Student Affairs President. He decided to survey students in a dormitory and knocks on every 10th door    Simple Random Sample  Betty is conducting a survey to determine if students like the new plus\/minus grading system. She randomly draws 100 bear numbers from a list and surveys those students.    Stratified Sampling  Charlotte is conducting a survey to determine if students make use of the campus recreation center. She polls 100 freshman, 100 sophomores, 100 juniors, and 100 seniors on how frequently they use the recreation center.    Cluster Sampling  Eugene is conducting a survey to determine if the dorms should have more study break sessions during finals week. He asks everyone on the 5th floor of Turner their opinion.    Convenience Sampling  Douglas is conducting a survey to determine if the University Center should open up a McDonalds, Wendy’s, or Burger King. He stands outside the UC and surveys students as they enter the building.     "
+  "body": " Collecting Data   Now that we know something about the variables and the types of data that can be collected in study, how do we go about collecting a sample that is representative of the population of interest? Well, in this section we will explore several ways that data can be collected. We will look at the different types of study designs and sampling methods. We will also look at how to avoid bias in our sampling methods.     At the end of this section you will able to:     Simulate several sampling methods.    Recognize the type sampling methods employed in a study.      Creating a Sample with Gettysburg Address  Recall that the population is the set of all subjects for the study, while a sample is a group or subset selected from the population. It is often difficult or too expensive to examine the whole population for a study, thus we use a sample to help us draw conclusions about the population. When we choose a sample, we want it to be as similar to the population as possible, we refer to this as a representative sample. We are going to simulate several sampling methods using Gettysburg's Address as the population.   Creating a Sample from Gettysburg Address   We are going to simulate several sampling methods using Gettysburg's Address as the population.  President Abraham Lincoln delivered one of the most famous speeches in United States history at the dedication of the Gettysburg National Cemetery on November 19, 1863. After the featured speaker spoke for two hours, Lincoln delivered his 269-word message in approximately two minutes. Our goal is to estimate the average word length in Abraham Lincoln's Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln's Gettysburg Address is given below.   Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we cannot dedicate—we cannot consecrate—we cannot hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.     Your task is to select a sample of 10 words to estimate the average length of words in his speech. Pick words that appear to be representative of the population of all the words. If you print the address, you can circle the ten words you choose.    Find the lengths (number of letters) for each of the 10 words you selected.    Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average number of letters per word.    Which best describes your average value for the average word length?   Your average word length   Which best describes your average value for the average word length?      Between 3 and 6 letters per word.    That is a reasonable estimate.      Less than 3 letters per word.    This estimate is a bit low, there are a lot of large words not included in your sample.      More than 6 letters per word.    This estimate is a bit high, you likely included a lot of the larger words but did not include some of the smaller words.      The image below is a class distribution of the average number of letters for the Gettysburg Address by circling ten words. Each dot represents the average value for a student. There were 64 student samples taken. We can see the values range from 3.4 to 9.4 with the center around 5.5 letters per word, thus this will be our predicted value for the typical word length. But it turns out, we are often biased in the words we select. Some students selected bigger words to be representative, others selected more smaller words. Did you notice how many two and three letter words there were? Were you biased in your sampling selection?   Average Word Length from Gettysburg Address   Shows average word length prediction for 64 students clustered between 5 and 6.     Creating a Random Sample   Now let's investigate using a more random approach in selecting the words for a better estimate of the population average.  We are going to simulate creating a random sample from Gettysburg's Address.    Randomly choose ten numbers between 1 and 269 and record them.    Find the corresponding word in Lincoln's Gettysburg Address, write down the number of letters in that word, and then find the average word length for your new sample for ten words.   Image of Gettysburg Address numbered   Image of Gettysburg Address numbered.      Alternatively, we can use a random number generator to help create a sample.    You can also use technology to find the random numbers. Try the link for a random number generator at    Using random number generator   Researcher often use a random number generator to help create the random sample.  Go midway down the page to Numbers and select Integer Generator . Generate 10 random integers between 1 and 269. Click on Get Numbers .   RandomOrg menu   image of website menu.    The image below is a sample of ten randomly selected numbers using the applet.   Image Sample of random numbers   lists ten random numbers.    Next, match these numbers to the corresponding word in Gettysburg Address. These words are highlighted in yellow in the image below.   Sample of Gettysburg Address words   Image of highlighted words.      Matching these numbers to the corresponding word in Gettysburg Address gives the average of 3.9 letters per word, which is closer to the population mean of 4.29 letters per word. We will look at the distributions of the words later.      Sampling Methods   Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way. If sampling bias exists, we cannot trust generalizations from the sample to the population. So, we need a better method for predicting the typical or average value.  There are many sampling techniques, we will look at some of the more common sampling methods in statistics. We will simulate some of these methods in class with the Gettysburg Address.   Simple Random Sample is a method in which every element in the population has an equal chance of being selected for the sample. It's like putting all the names of the students in class in a hat and randomly drawing ten names.   Systematic Sampling is a method that useful when the population is already ordered in some way and every kth item is selected. While standing in line at a game, every 10th person gets a 10% off coupon. There is a system in how the sample is collected.   Stratified Sampling occurs when the population is divided into natural groups or strata. People are randomly polled in each group and the number of people polled in each group is determined by the ratio of the group to size of the total population. When sampling for how students study, the sample should consist of some freshman, sophomore, juniors, and seniors. If there are twice as many freshman as seniors, then the sample would also have twice as many freshman.   Cluster Sampling is a method that randomly selects a naturally occurring group or cluster and all in that cluster are selected. This is common in education where all of one class is selected to participate in the study. It is helpful to think of a cluster of grapes: you take the whole cluster rather than just grabbing a couple of grapes.   Convenience Sampling occurs when a group of subjects are convenient to sample. Around election time, people stand outside grocery stores to gather an easy sample of people to ask who they will vote for.   Exercise: Identify the type of sampling method described for each scenario:   Sampling Methods Matching Problem   Match the type of sampling method described with the appropriate scenario. Drag the sampling method name to the description.     Systematic Sampling  Alfred is conducting a survey to determine who students will vote for as their next Student Affairs President. He decided to survey students in a dormitory and knocks on every 10th door    Simple Random Sample  Betty is conducting a survey to determine if students like the new plus\/minus grading system. She randomly draws 100 bear numbers from a list and surveys those students.    Stratified Sampling  Charlotte is conducting a survey to determine if students make use of the campus recreation center. She polls 100 freshman, 100 sophomores, 100 juniors, and 100 seniors on how frequently they use the recreation center.    Cluster Sampling  Eugene is conducting a survey to determine if the dorms should have more study break sessions during finals week. He asks everyone on the 5th floor of Turner their opinion.    Convenience Sampling  Douglas is conducting a survey to determine if the University Center should open up a McDonald's, Wendy's, or Burger King. He stands outside the UC and surveys students as they enter the building.      Systematic Sampling   Which of the following is the best example of a systematic sample ?      A teacher puts all student names in a hat and draws 10 names.    Incorrect, this is an example of a simple random sample.      A manager has a list of all employees arranged alphabetically and selects every 15th employee after choosing a random starting point.    Correct, there is a system to how it was selected.      A researcher divides voters into age groups and randomly selects people from each group.    Incorrect, this is an example of a stratified sample.      A pollster surveys only the first people who enter a store.    Incorrect, this is an example of a convenience sample.       Cluster Sampling   Which of the following is the best example of a cluster sample ?      A researcher numbers all households in a city and uses a random number generator to select 200 households about the recent city tax.      Principal Stevens separates students by grade level and randomly selects students from each grade.    Incorrect, this is an example of a stratified sample.      A city planner randomly selects 5 neighborhoods and surveys every household in those neighborhoods about the quality of the roads.    Correct, there is a natural cluster of households in the neighborhoods and all households in the selected neighborhoods are surveyed.      A nurse surveys every 20th patient who checks in at a clinic about their health care experience.    Incorrect, this is an example of a systematic sample.       Random Sample   Which of the following is the best example of a simple random sample ?      A researcher assigns a number to every student at a university and uses a random number generator to select 100 students to see what they like best about the university.    Correct, every student has an equal chance of being selected.      A company surveys every 12th customer who exits a discount store to see if they used coupons for the their purchases.    Incorrect, this is an example of a systematic sample.      A scientist divides a forest into sections and randomly selects 3 sections to study the amount of beetle kill.    Incorrect, this is an example of a cluster sample.      A pollster separates residents into homeowners and renters and then randomly selects people from each group.    Incorrect, this is an example of a stratified sample.       Stratified Sample   Which of the following is the best example of a stratified sample ?      A researcher selects every 25th name from an alphabetical list of all registered voters to see how they will vote for the upcoming election.    Incorrect, this is an example of a systematic sample.      A hospital separates patients into children, adults, and seniors, and then randomly select patients from each group to question their experience about their care.    Correct, there are natural groups of patients and random samples are taken from each group.      A principal randomly selects 2 classrooms and every student in those classrooms receives a gift card.    Incorrect, this is an example of a cluster sample.      A survey is given to the first 100 people who arrive at a concert about their favorite song.    Incorrect, this is an example of a convenience sample.       "
 },
 {
-  "id": "sec-DayTwo-2",
+  "id": "sec-DayTwo-3",
   "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-2",
+  "url": "sec-DayTwo.html#sec-DayTwo-3",
   "type": "Objectives",
   "number": "1.2",
   "title": "",
   "body": "  At the end of this section you will able to:     Simulate several sampling methods.    Recognize the type sampling methods employed in a study.    "
 },
 {
-  "id": "sec-DayTwo-3",
+  "id": "subsec-GettysburgActivity-2",
   "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-3",
+  "url": "sec-DayTwo.html#subsec-GettysburgActivity-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "population sample "
+},
+{
+  "id": "act-Gettysburg",
+  "level": "2",
+  "url": "sec-DayTwo.html#act-Gettysburg",
+  "type": "Activity",
+  "number": "1.2.1",
+  "title": "Creating a Sample from Gettysburg Address.",
+  "body": " Creating a Sample from Gettysburg Address   We are going to simulate several sampling methods using Gettysburg's Address as the population.  President Abraham Lincoln delivered one of the most famous speeches in United States history at the dedication of the Gettysburg National Cemetery on November 19, 1863. After the featured speaker spoke for two hours, Lincoln delivered his 269-word message in approximately two minutes. Our goal is to estimate the average word length in Abraham Lincoln's Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln's Gettysburg Address is given below.   Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we cannot dedicate—we cannot consecrate—we cannot hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.     Your task is to select a sample of 10 words to estimate the average length of words in his speech. Pick words that appear to be representative of the population of all the words. If you print the address, you can circle the ten words you choose.    Find the lengths (number of letters) for each of the 10 words you selected.    Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average number of letters per word.   "
 },
 {
   "id": "GettysCircleWord",
@@ -376,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.2.1",
   "title": "Your average word length.",
-  "body": " Your average word length   Which best describes your average value for the average word length?      Between 3 and 6 letters per word.    That is a reasonable estimate.      Less than 3 letters per word.    This estimate is a bit low, there are a lot of large words not included in your sample.      More than 6 letters per word.    This estimate is a bit high, you likely included a lot of the larger words and did not include some of the smaller words     "
+  "body": " Your average word length   Which best describes your average value for the average word length?      Between 3 and 6 letters per word.    That is a reasonable estimate.      Less than 3 letters per word.    This estimate is a bit low, there are a lot of large words not included in your sample.      More than 6 letters per word.    This estimate is a bit high, you likely included a lot of the larger words but did not include some of the smaller words.     "
 },
 {
   "id": "GettysburgCircle",
@@ -385,93 +394,75 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.2.2",
   "title": "",
-  "body": " Image of Average Word Length from Gettysburg Address   Shows average word length prediction for 64 students clustered between 5 and 6.   "
+  "body": " Average Word Length from Gettysburg Address   Shows average word length prediction for 64 students clustered between 5 and 6.   "
 },
 {
-  "id": "GettysAddressNumbers",
+  "id": "act-GettysburgRandom",
   "level": "2",
-  "url": "sec-DayTwo.html#GettysAddressNumbers",
-  "type": "Figure",
-  "number": "1.2.3",
-  "title": "",
-  "body": " Image of Gettysburg Address numbered   Image of Gettysburg Address numbered.   "
+  "url": "sec-DayTwo.html#act-GettysburgRandom",
+  "type": "Activity",
+  "number": "1.2.2",
+  "title": "Creating a Random Sample.",
+  "body": " Creating a Random Sample   Now let's investigate using a more random approach in selecting the words for a better estimate of the population average.  We are going to simulate creating a random sample from Gettysburg's Address.    Randomly choose ten numbers between 1 and 269 and record them.    Find the corresponding word in Lincoln's Gettysburg Address, write down the number of letters in that word, and then find the average word length for your new sample for ten words.   Image of Gettysburg Address numbered   Image of Gettysburg Address numbered.      Alternatively, we can use a random number generator to help create a sample.   "
 },
 {
-  "id": "RandomOrg",
+  "id": "subsec-GettysburgActivity-10",
   "level": "2",
-  "url": "sec-DayTwo.html#RandomOrg",
-  "type": "Figure",
+  "url": "sec-DayTwo.html#subsec-GettysburgActivity-10",
+  "type": "Example",
   "number": "1.2.4",
-  "title": "",
-  "body": " Image RandomOrg menu   image of website menu.   "
+  "title": "Using random number generator.",
+  "body": " Using random number generator   Researcher often use a random number generator to help create the random sample.  Go midway down the page to Numbers and select Integer Generator . Generate 10 random integers between 1 and 269. Click on Get Numbers .   RandomOrg menu   image of website menu.    The image below is a sample of ten randomly selected numbers using the applet.   Image Sample of random numbers   lists ten random numbers.    Next, match these numbers to the corresponding word in Gettysburg Address. These words are highlighted in yellow in the image below.   Sample of Gettysburg Address words   Image of highlighted words.      Matching these numbers to the corresponding word in Gettysburg Address gives the average of 3.9 letters per word, which is closer to the population mean of 4.29 letters per word. We will look at the distributions of the words later.   "
 },
 {
-  "id": "SampleRandom",
+  "id": "subsec-SamplingMethods-2",
   "level": "2",
-  "url": "sec-DayTwo.html#SampleRandom",
-  "type": "Figure",
-  "number": "1.2.5",
-  "title": "",
-  "body": " Image Sample of random numbers   lists ten random numbers.   "
-},
-{
-  "id": "GettysWords",
-  "level": "2",
-  "url": "sec-DayTwo.html#GettysWords",
-  "type": "Figure",
-  "number": "1.2.6",
-  "title": "",
-  "body": " Sample of Gettysburg Address wods   Image of highlighted words.   "
-},
-{
-  "id": "sec-DayTwo-23",
-  "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-23",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Sampling bias "
 },
 {
-  "id": "sec-DayTwo-25",
+  "id": "subsec-SamplingMethods-4",
   "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-25",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Simple Random Sample "
 },
 {
-  "id": "sec-DayTwo-26",
+  "id": "subsec-SamplingMethods-5",
   "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-26",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Systematic Sampling "
 },
 {
-  "id": "sec-DayTwo-27",
+  "id": "subsec-SamplingMethods-6",
   "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-27",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Stratified Sampling "
 },
 {
-  "id": "sec-DayTwo-28",
+  "id": "subsec-SamplingMethods-7",
   "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-28",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Cluster Sampling "
 },
 {
-  "id": "sec-DayTwo-29",
+  "id": "subsec-SamplingMethods-8",
   "level": "2",
-  "url": "sec-DayTwo.html#sec-DayTwo-29",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -482,9 +473,45 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DayTwo.html#Sample-matching2",
   "type": "Checkpoint",
-  "number": "1.2.7",
+  "number": "1.2.8",
   "title": "Sampling Methods Matching Problem.",
-  "body": " Sampling Methods Matching Problem   Match the type of sampling method described with the appropriate scenario. Drag the sampling method name to the description.     Systematic Sampling  Alfred is conducting a survey to determine who students will vote for as their next Student Affairs President. He decided to survey students in a dormitory and knocks on every 10th door    Simple Random Sample  Betty is conducting a survey to determine if students like the new plus\/minus grading system. She randomly draws 100 bear numbers from a list and surveys those students.    Stratified Sampling  Charlotte is conducting a survey to determine if students make use of the campus recreation center. She polls 100 freshman, 100 sophomores, 100 juniors, and 100 seniors on how frequently they use the recreation center.    Cluster Sampling  Eugene is conducting a survey to determine if the dorms should have more study break sessions during finals week. He asks everyone on the 5th floor of Turner their opinion.    Convenience Sampling  Douglas is conducting a survey to determine if the University Center should open up a McDonalds, Wendy’s, or Burger King. He stands outside the UC and surveys students as they enter the building.    "
+  "body": " Sampling Methods Matching Problem   Match the type of sampling method described with the appropriate scenario. Drag the sampling method name to the description.     Systematic Sampling  Alfred is conducting a survey to determine who students will vote for as their next Student Affairs President. He decided to survey students in a dormitory and knocks on every 10th door    Simple Random Sample  Betty is conducting a survey to determine if students like the new plus\/minus grading system. She randomly draws 100 bear numbers from a list and surveys those students.    Stratified Sampling  Charlotte is conducting a survey to determine if students make use of the campus recreation center. She polls 100 freshman, 100 sophomores, 100 juniors, and 100 seniors on how frequently they use the recreation center.    Cluster Sampling  Eugene is conducting a survey to determine if the dorms should have more study break sessions during finals week. He asks everyone on the 5th floor of Turner their opinion.    Convenience Sampling  Douglas is conducting a survey to determine if the University Center should open up a McDonald's, Wendy's, or Burger King. He stands outside the UC and surveys students as they enter the building.    "
+},
+{
+  "id": "subsec-SamplingMethods-11",
+  "level": "2",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-11",
+  "type": "Checkpoint",
+  "number": "1.2.9",
+  "title": "Systematic Sampling.",
+  "body": " Systematic Sampling   Which of the following is the best example of a systematic sample ?      A teacher puts all student names in a hat and draws 10 names.    Incorrect, this is an example of a simple random sample.      A manager has a list of all employees arranged alphabetically and selects every 15th employee after choosing a random starting point.    Correct, there is a system to how it was selected.      A researcher divides voters into age groups and randomly selects people from each group.    Incorrect, this is an example of a stratified sample.      A pollster surveys only the first people who enter a store.    Incorrect, this is an example of a convenience sample.     "
+},
+{
+  "id": "subsec-SamplingMethods-12",
+  "level": "2",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-12",
+  "type": "Checkpoint",
+  "number": "1.2.10",
+  "title": "Cluster Sampling.",
+  "body": " Cluster Sampling   Which of the following is the best example of a cluster sample ?      A researcher numbers all households in a city and uses a random number generator to select 200 households about the recent city tax.      Principal Stevens separates students by grade level and randomly selects students from each grade.    Incorrect, this is an example of a stratified sample.      A city planner randomly selects 5 neighborhoods and surveys every household in those neighborhoods about the quality of the roads.    Correct, there is a natural cluster of households in the neighborhoods and all households in the selected neighborhoods are surveyed.      A nurse surveys every 20th patient who checks in at a clinic about their health care experience.    Incorrect, this is an example of a systematic sample.     "
+},
+{
+  "id": "subsec-SamplingMethods-13",
+  "level": "2",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-13",
+  "type": "Checkpoint",
+  "number": "1.2.11",
+  "title": "Random Sample.",
+  "body": " Random Sample   Which of the following is the best example of a simple random sample ?      A researcher assigns a number to every student at a university and uses a random number generator to select 100 students to see what they like best about the university.    Correct, every student has an equal chance of being selected.      A company surveys every 12th customer who exits a discount store to see if they used coupons for the their purchases.    Incorrect, this is an example of a systematic sample.      A scientist divides a forest into sections and randomly selects 3 sections to study the amount of beetle kill.    Incorrect, this is an example of a cluster sample.      A pollster separates residents into homeowners and renters and then randomly selects people from each group.    Incorrect, this is an example of a stratified sample.     "
+},
+{
+  "id": "subsec-SamplingMethods-14",
+  "level": "2",
+  "url": "sec-DayTwo.html#subsec-SamplingMethods-14",
+  "type": "Checkpoint",
+  "number": "1.2.12",
+  "title": "Stratified Sample.",
+  "body": " Stratified Sample   Which of the following is the best example of a stratified sample ?      A researcher selects every 25th name from an alphabetical list of all registered voters to see how they will vote for the upcoming election.    Incorrect, this is an example of a systematic sample.      A hospital separates patients into children, adults, and seniors, and then randomly select patients from each group to question their experience about their care.    Correct, there are natural groups of patients and random samples are taken from each group.      A principal randomly selects 2 classrooms and every student in those classrooms receives a gift card.    Incorrect, this is an example of a cluster sample.      A survey is given to the first 100 people who arrive at a concert about their favorite song.    Incorrect, this is an example of a convenience sample.     "
 },
 {
   "id": "sec-DayThree",
@@ -493,30 +520,30 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Study Types",
-  "body": " Study Types    At the end of this section you will able to:     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.     Recall there are two main types of studies:   Observational studies where researchers collect data by watching or asking questions, and draw conclusions based on these observations.   Experimental studies where the researcher manipulates a variable to determine how the treatment influences the other variables.     Identify the type of study described   A researcher decided to check the Greeley Police Department records for 2 months to determine what types of crimes were committed.      Observational study    Yes, an observational study because they are looking at the records, not manipulating a variable.      Experimental study    They are not manipulating a variable.       Identify the type of study described •  Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups: consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.      Experimental study    Yes, they are manipulating a variable.      Observational study    Experimental since they are manipulating a variable.      Many observational studies involve surveys and questionnaires, which uses questions to collect the data for the study. Others look at historical records to collect the data. In educational environment, observations of the participants is how the data is collected, by jotting down notes or videotaping the behaviors.  There are three main types of variables we will look at within an experimental study.  The independent variable is the variable that is being manipulated by the researchers. It is also called the explanatory variable.  The dependent variable is the result of manipulation. It is also called the response variable.  A confounding variable is one that influences the dependent variable but cannot be separated from the independent variable.  For this example, identify the variables. A sample of 50 men with high triglyceride levels were randomly assigned to two groups: one consumed 2 tablespoons of oat bran daily for 6 weeks and the other group consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.     Identify the type of variable •  What variable is the type of bran the participants consumed?      independent variable    Yes, because they want to see if the type of bran influences the triglyceride level.      dependent variable    No, the dependent variable is the resulting triglyceride level.      confounding variable    There were no confounding variable listed, but a person’s diet and health may influence the results.         Identify the type of variable •  What variable is the triglyceride levels?      dependent variable    Yes, checking to see if triglyceride level changes.      independent variable    No, the independent variable is the type of bran.      confounding variable    There were no confounding variables listed, but the amount of time a person exercises may influence the results.      Type of bran consumed is the independent variable. They want to determine which one works better in lowering the triglyceride levels.  Whether or not the triglyceride level changes is the dependent variable. This is the result of the of manipulating which type of bran they consumed.  In this case, both bran groups were in the treatment group, there was not control group in the study.  There are several possible confounding variables in this study. Things that could influence the triglyceride levels could be diet, amount of exercise, current healthy, and weight of the participants.  There are many ways experimental studies can be conducted. We will look at some of the most common for this course.  In a Randomized Two-treatment Experiment there are typically two treatments and the individuals are randomly placed into the two groups. Either both groups get a treatment, or one group gets a treatment and the other gets either nothing or a placebo. The group getting either no treatment or the placebo is called the control group . The group getting the treatment is called the treatment group . A doctor may be comparing two different diabetes mediations. The subjects are randomly assigned which medication to use for the study.  The purpose of the placebo is that a person thinks they are receiving the treatment, but in reality, they are receiving a sugar pill or fake treatment. Doing this helps to account for the placebo effect , which is where a person thinks their body responds favorable to a treatment because they are in the study even though they are not really taking the treatment. Not every experiment needs a placebo, such as when working using animals, plants, or children. Also, it is not always possible to use a placebo or no treatment. As an example, if you are testing a new blood pressure medication you cannot give a person with high blood pressure a placebo or no treatment because of health or moral reasons.  In a Randomized Block Design a group of subjects (considered the block) that are similar in some aspects are randomly assigned to a treatment. Everyone in that block has the same treatment while everyone in a different block is assigned a different treatment. This is different in that the intact group is given the treatment rather than randomly assigned to a group. An example would be comparing the instructional methods of two different teachers. Each classroom would represent a block; thus, each class receives a different treatment.   Rigorously Controlled Design carefully assign subjects to different treatment groups, so that those given each treatment are similar in ways that are important to the experiment. An example would be if you want to have a full-time student who is male, takes only night classes, has a full-time job, and has children in one treatment group, then you need to have the same type of student getting the other treatment. This type of design is hard to implement since you don't know how many differentiations you would use. This is more common in medicine.  In a Matched Pairs Design the treatments are given to two groups that can be matched up with each other in some ways. One example would be to measure the effectiveness of a muscle relaxer cream on the right arm and the left arm of individuals, and then for each individual you can match up their right arm measurement with their left arm. Another example of this would be before and after measurement during an experiment, such as weight before and weight after a diet regiment.   Other Considerations   There are other things to consider when designing a study.  A Blind study is where the individual does not know which treatment they are getting or if they are getting the treatment or a placebo.   Double-blind study is where neither the individual nor the researcher knows who is getting which treatment or the placebo. This is important so that there can be no bias created by either the individual or the researcher.  Exercides  Another consideration is the time period the researcher collected the data over. There are three types of time periods to consider.   Cross-sectional study: The data is observed, measured, or collected at one point in time. After completing the Student Orientation, the participants completed a survey answering questions about how the day went and what events were most useful.   Retrospective study: The data is collected from the past using records, old journals, interviews, and other similar artifacts.  A longitudinal study collects data repeatedly from the same subjects over time, often focusing on a smaller group of individuals that are connected by a common trait. Researchers plan to collect data in the future from these groups.   Example: Suppose you want to study the impact that a low-carb diet has on diabetes. First you gather research on prior studies to see what has already been done. This would be a retrospective study. Then you conduct a cross-sectional study with a sample of diabetes patients to see if there are differences in health outcomes like weight or blood sugar in those who follow a low-carb diet. You discover that the diet correlates with weight loss in younger patients, but not older ones. And then you then decide to design a longitudinal study to further examine this link by collecting data over a period of ten years from a sample of younger patients from a specific clinic.  Exercises  "
+  "body": " Study Types   In this section we will look at the different types of studies and how they are designed and conducted. We will also look at the different types of variables that are used in an experimental study.     At the end of this section you will able to:     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.      Types of Studies  Recall there are two main types of studies we will be investigating in this course:   Observational studies where researchers collect data by watching or asking questions, and draw conclusions based on these observations.   Experimental studies where the researcher manipulates a variable to determine how the treatment influences the other variables.     Identify the type of study described   A researcher decided to check the Greeley Police Department records for 2 months to determine what types of crimes were committed.      Observational study    Yes, an observational study because they are looking at the records, not manipulating a variable.      Experimental study    They are not manipulating a variable.       Identify the type of study described   Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups: consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.      Experimental study    Yes, they are manipulating a variable.      Observational study    Experimental since they are manipulating a variable.      Many observational studies involve surveys and questionnaires, which uses questions to collect the data for the study. Others look at historical records to collect the data. In educational environment, observations of the participants is how the data is collected, by jotting down notes or videotaping the behaviors.  There are three main types of variables we will look at within an experimental study.  The independent variable is the variable that is being manipulated by the researchers. It is also called the explanatory variable.  The dependent variable is the result of manipulation. It is also called the response variable.  A confounding variable is one that influences the dependent variable but cannot be separated from the independent variable.   Example: A sample of 50 men with high triglyceride levels were randomly assigned to two groups: one consumed 2 tablespoons of oat bran daily for 6 weeks and the other group consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels. Let's identify the variables.   Bran   What variable is the type of bran the participants consumed?      independent variable    Yes, because they want to see if the type of bran influences the triglyceride level.      dependent variable    No, the dependent variable is the resulting triglyceride level.      confounding variable    There were no confounding variable listed, but a person’s diet and health may influence the results.         Triglycerides   What variable is the triglyceride levels?      dependent variable    Yes, checking to see if triglyceride level changes.      independent variable    No, the independent variable is the type of bran.      confounding variable    There were no confounding variables listed, but the amount of time a person exercises may influence the results.      Type of bran consumed is the independent variable. They want to determine which one works better in lowering the triglyceride levels.  Whether or not the triglyceride level changes is the dependent variable. This is the result of the of manipulating which type of bran they consumed.  In this case, both bran groups were in the treatment group, there was not control group in the study.  There are several possible confounding variables in this study. Things that could influence the triglyceride levels could be diet, amount of exercise, current healthy, and weight of the participants.   Identify the type of study   A medical researcher wants to determine whether a new energy drink affects reaction time. The researcher randomly assigns 60 adult volunteers to one of two groups. One group drinks the new energy drink, while the other group drinks a similar beverage without the active ingredients. After 30 minutes, each participant completes the same reaction-time test. The researcher then compares the reaction times of the two groups.  Identify the type of study described.      Observational study    No, this is an experimental study because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage.      Experimental study    Correct, because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage.       Energy Drink   A medical researcher wants to determine whether a new energy drink affects reaction time. The researcher randomly assigns adult volunteers to one of two groups. One group drinks the new energy drink, while the other group drinks a similar beverage without the active ingredients. After minutes, each participant completes the same reaction-time test. The researcher then compares the reaction times of the two groups.     Which of the following is the independent variable in this study?      Whether the participant drinks the new energy drink or the beverage without the active ingredients    Correct, because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage.      The participant's reaction time      The number of volunteers in the study      The minutes that pass before the test        Which of the following is the dependent variable in this study?      Whether the participant drinks the new energy drink or the beverage without the active ingredients      The participant's reaction time    Correct, because the reaction time is the result of the treatment (the type of beverage consumed).      The number of groups in the study      The age of the volunteers        Identify the type of study   A health researcher wants to investigate whether there is an association between the number of hours of sleep a college student gets each night and the student's grade point average. The researcher surveys a random sample of college students and records how many hours they usually sleep and their current grade point averages. The researcher then looks for patterns in the collected data.  Identify the type of study described.      Observational study    Correct, because the researcher does not impose any treatment or attempt to change the students' sleeping habits, but only observes and records existing behavior.      Experimental study    No, this is an observational study because the researcher does not impose any treatment or attempt to change the students' sleeping habits, but only observes and records existing behavior.        Experimental Design  There are many ways experimental studies can be conducted. We will look at some of the most common for this course.  In a Randomized Two-treatment Experiment there are typically two treatments and the individuals are randomly placed into the two groups. Either both groups get a treatment, or one group gets a treatment and the other gets either nothing or a placebo. The group getting either no treatment or the placebo is called the control group . The group getting the treatment is called the treatment group . A doctor may be comparing two different diabetes medications. The subjects are randomly assigned which medication to use for the study.  The purpose of the placebo is that a person thinks they are receiving the treatment, but in reality, they are receiving a sugar pill or fake treatment. Doing this helps to account for the placebo effect , which is where a person thinks their body responds favorable to a treatment because they are in the study even though they are not really taking the treatment. Not every experiment needs a placebo, such as when working using animals, plants, or children. Also, it is not always possible to use a placebo or no treatment. As an example, if you are testing a new blood pressure medication you cannot give a person with high blood pressure a placebo or no treatment because of health or moral reasons.  In a Randomized Block Design a group of subjects (considered the block) that are similar in some aspects are randomly assigned to a treatment. Everyone in that block has the same treatment while everyone in a different block is assigned a different treatment. This is different in that the intact group is given the treatment rather than randomly assigned to a group. An example would be comparing the instructional methods of two different teachers. Each classroom would represent a block; thus, each class receives a different treatment.   Rigorously Controlled Design carefully assign subjects to different treatment groups, so that those given each treatment are similar in ways that are important to the experiment. An example would be if you want to have a full-time student who is male, takes only night classes, has a full-time job, and has children in one treatment group, then you need to have the same type of student getting the other treatment. This type of design is hard to implement since you don't know how many differentiations you would use. This is more common in medicine.  In a Matched Pairs Design the treatments are given to two groups that can be matched up with each other in some ways. One example would be to measure the effectiveness of a muscle relaxer cream on the right arm and the left arm of individuals, and then for each individual you can match up their right arm measurement with their left arm. Another example of this would be before and after measurement during an experiment, such as weight before and weight after a diet regiment.   Plant Fertilizer   A group of biology students wants to test whether a new plant fertilizer affects the height of bean plants. They randomly assign 40 bean plants to one of two treatment groups. One group receives the new fertilizer each week, while the other group receives only water under the same growing conditions. After 6 weeks, the students measure the height of each plant and compare the results between the two groups.  Which of the following best describes this study?      Randomized two-treatment experiment    Correct, this is a randomized two-treatment experiment because the plants are randomly assigned to one of two treatments: the new fertilizer or the control condition of water only.      Observational study      Matched pairs design      Stratified design       Stretching   A physical therapist wants to compare two different stretching routines for improving flexibility. The therapist recruits 20 volunteers. Each volunteer performs routine A on one leg and routine B on the other leg for 4 weeks. At the end of the study, the therapist measures the flexibility improvement in each leg and compares the results within each person.  Which of the following best describes this study?      Matched pairs design    Correct, this is a matched pairs design because each subject receives both treatments, and the comparison is made within the same individual.      Randomized block design      Randomized two-treatment experiment      Observational study       Fish Diets   A team of biology researchers wants to compare the effectiveness of two different fish diets on weight gain. Since the age of the fish may affect growth, the researchers first divide the fish into blocks based on age: young fish and older fish. Then, within each age block, they randomly assign fish to one of two diet treatments. After 8 weeks, the researchers measure the weight gain of the fish in each group and compare the diets.  Which of the following best describes this study?      Randomized block design    Correct, this is a randomized block design because the fish are first divided into blocks based on age, and then within each block, they are randomly assigned to one of the two diet treatments.      Simple random sample      Observational study      Matched pairs design       Medication   A pharmaceutical company wants to test whether a new allergy medication is effective. The researchers assign participants to treatment groups so that each group has similar ages, health conditions, and numbers of men and women. All participants take pills that look identical, follow the same schedule, receive the same instructions, and are evaluated in the same environment. The only difference between groups is whether the pill contains the new medication or a placebo.  Which of the following best describes this study?      A rigorously controlled design    Correct, this is a rigorously controlled design because the researchers carefully assign participants to treatment groups to ensure they are similar in important ways, and they control all other aspects of the study except for the treatment being tested.      Convenience sample      Matched pairs design      Randomized two-treatment experiment        Other Considerations  There are other things to consider when designing a study.  A Blind study is where the individual does not know which treatment they are getting or if they are getting the treatment or a placebo.   Double-blind study is where neither the individual nor the researcher knows who is getting which treatment or the placebo. This is important so that there can be no bias created by either the individual or the researcher.   Blind Study   A medical researcher is testing whether a new pain-relief pill works better than a standard pill. Participants are randomly assigned to receive either the new pill or the standard pill, but the participants do not know which one they are taking. After one week, the researcher compares the pain levels reported by the two groups.  This is a blind study because the participants do not know which treatment they received.     Double Blind Study   A medical researcher is testing whether a new pain-relief pill works better than a standard pill. Participants are randomly assigned to receive either the new pill or the standard pill. Neither the participants nor the researchers who interact with them know which pill each participant receives until the study is over. After one week, the reported pain levels of the two groups are compared.  This is a double-blind study because neither the subjects nor the researchers who administer or evaluate the treatment know who received which treatment during the study.     Vitamin Drink   A nutrition researcher is studying whether a new vitamin drink improves energy levels. Participants are randomly assigned to receive either the vitamin drink or a similar-tasting drink without the added vitamins. The participants do not know which drink they receive, but the researchers do.  Which of the following best describes this study?      A blind study    Correct, this is a blind study because the participants do not know which treatment they received, but the researchers do know.      A double-blind study    No, this is not a double-blind study because the researchers know which treatment each participant received.       Allergies   A pharmaceutical company is testing a new medication for seasonal allergies. Participants are randomly assigned to receive either the new medication or a placebo. The pills look identical, and neither the participants nor the doctors who give the pills and record symptoms know who receives the medication and who receives the placebo until the study ends.  Which of the following best describes this study?      A double-blind study    Correct, this is a double-blind study because neither the participants nor the doctors who administer the treatment know which treatment each participant received until the study ends.      A blind study    No, this is a double-blind study because neither the participants nor the doctors who administer the treatment know which treatment each participant received until the study ends.      Another consideration is the time period the researcher collected the data over. There are three main types of time periods to consider.   Cross-sectional study: The data is observed, measured, or collected at one point in time. After completing the Student Orientation, the participants completed a survey answering questions about how the day went and what events were most useful.   Retrospective study: The data is collected from the past using records, old journals, interviews, and other similar artifacts.  A longitudinal study collects data repeatedly from the same subjects over time, often focusing on a smaller group of individuals that are connected by a common trait. Researchers plan to collect data in the future from these groups.   Example: Suppose you want to study the impact that a low-carb diet has on diabetes. First you gather research on prior studies to see what has already been done. This would be a retrospective study. Then you conduct a cross-sectional study with a sample of diabetes patients to see if there are differences in health outcomes like weight or blood sugar in those who follow a low-carb diet. You discover that the diet correlates with weight loss in younger patients, but not older ones. And then you then decide to design a longitudinal study to further examine this link by collecting data over a period of ten years from a sample of younger patients from a specific clinic.   Exercise Habits   A public health researcher surveys a random sample of adults in 2026 and records their current exercise habits and blood pressure levels. The researcher uses the data to study the relationship between exercise and blood pressure at that one point in time.  Which of the following best describes this study?      A cross-sectional study    Correct, this is a cross-sectional study because the data is collected at one point in time.      A retrospective study    No, this is a cross-sectional study because the data is collected at one point in time.      A longitudinal study    No, this is a cross-sectional study because the data is collected at one point in time.       Smoking Habits   A medical researcher studies whether past smoking habits are related to lung disease. The researcher reviews medical records from the past 15 years and compares patients who currently have lung disease with their earlier smoking histories.  Which of the following best describes this study?      A retrospective study    Correct, this is a retrospective study because the researcher is collecting data from the past using medical records.      A longitudinal study    No, this is a retrospective study because the researcher is collecting data from the past using medical records.      A cross-sectional study    No, this is a retrospective study because the researcher is collecting data from the past using medical records.       Study Habits   A researcher follows a group of 200 middle school students for 6 years, recording their study habits and math test scores at the end of each school year. The researcher uses the data to examine how study habits and performance change over time.  Which of the following best describes this study?      A longitudinal study      A retrospective study      A cross-sectional study       "
 },
 {
-  "id": "sec-DayThree-2",
+  "id": "sec-DayThree-3",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-2",
+  "url": "sec-DayThree.html#sec-DayThree-3",
   "type": "Objectives",
   "number": "1.3",
   "title": "",
   "body": "  At the end of this section you will able to:     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.    "
 },
 {
-  "id": "sec-DayThree-4",
+  "id": "subsec-StudyTypes-3",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-4",
+  "url": "sec-DayThree.html#subsec-StudyTypes-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Observational studies "
 },
 {
-  "id": "sec-DayThree-5",
+  "id": "subsec-StudyTypes-4",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-5",
+  "url": "sec-DayThree.html#subsec-StudyTypes-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -538,30 +565,30 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.3.2",
   "title": "Identify the type of study described.",
-  "body": " Identify the type of study described •  Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups: consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.      Experimental study    Yes, they are manipulating a variable.      Observational study    Experimental since they are manipulating a variable.     "
+  "body": " Identify the type of study described   Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups: consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.      Experimental study    Yes, they are manipulating a variable.      Observational study    Experimental since they are manipulating a variable.     "
 },
 {
-  "id": "sec-DayThree-11",
+  "id": "subsec-StudyTypes-10",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-11",
+  "url": "sec-DayThree.html#subsec-StudyTypes-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "independent variable "
 },
 {
-  "id": "sec-DayThree-12",
+  "id": "subsec-StudyTypes-11",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-12",
+  "url": "sec-DayThree.html#subsec-StudyTypes-11",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "dependent variable "
 },
 {
-  "id": "sec-DayThree-13",
+  "id": "subsec-StudyTypes-12",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-13",
+  "url": "sec-DayThree.html#subsec-StudyTypes-12",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -573,8 +600,8 @@ var ptx_lunr_docs = [
   "url": "sec-DayThree.html#MatchingIndep",
   "type": "Checkpoint",
   "number": "1.3.3",
-  "title": "Identify the type of variable.",
-  "body": " Identify the type of variable •  What variable is the type of bran the participants consumed?      independent variable    Yes, because they want to see if the type of bran influences the triglyceride level.      dependent variable    No, the dependent variable is the resulting triglyceride level.      confounding variable    There were no confounding variable listed, but a person’s diet and health may influence the results.     "
+  "title": "Bran.",
+  "body": " Bran   What variable is the type of bran the participants consumed?      independent variable    Yes, because they want to see if the type of bran influences the triglyceride level.      dependent variable    No, the dependent variable is the resulting triglyceride level.      confounding variable    There were no confounding variable listed, but a person’s diet and health may influence the results.     "
 },
 {
   "id": "MatchingDep",
@@ -582,98 +609,215 @@ var ptx_lunr_docs = [
   "url": "sec-DayThree.html#MatchingDep",
   "type": "Checkpoint",
   "number": "1.3.4",
-  "title": "Identify the type of variable.",
-  "body": " Identify the type of variable •  What variable is the triglyceride levels?      dependent variable    Yes, checking to see if triglyceride level changes.      independent variable    No, the independent variable is the type of bran.      confounding variable    There were no confounding variables listed, but the amount of time a person exercises may influence the results.     "
+  "title": "Triglycerides.",
+  "body": " Triglycerides   What variable is the triglyceride levels?      dependent variable    Yes, checking to see if triglyceride level changes.      independent variable    No, the independent variable is the type of bran.      confounding variable    There were no confounding variables listed, but the amount of time a person exercises may influence the results.     "
 },
 {
-  "id": "sec-DayThree-24",
+  "id": "subsec-StudyTypes-21",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-24",
+  "url": "sec-DayThree.html#subsec-StudyTypes-21",
+  "type": "Checkpoint",
+  "number": "1.3.5",
+  "title": "Identify the type of study.",
+  "body": " Identify the type of study   A medical researcher wants to determine whether a new energy drink affects reaction time. The researcher randomly assigns 60 adult volunteers to one of two groups. One group drinks the new energy drink, while the other group drinks a similar beverage without the active ingredients. After 30 minutes, each participant completes the same reaction-time test. The researcher then compares the reaction times of the two groups.  Identify the type of study described.      Observational study    No, this is an experimental study because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage.      Experimental study    Correct, because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage.     "
+},
+{
+  "id": "subsec-StudyTypes-22",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyTypes-22",
+  "type": "Checkpoint",
+  "number": "1.3.6",
+  "title": "Energy Drink.",
+  "body": " Energy Drink   A medical researcher wants to determine whether a new energy drink affects reaction time. The researcher randomly assigns adult volunteers to one of two groups. One group drinks the new energy drink, while the other group drinks a similar beverage without the active ingredients. After minutes, each participant completes the same reaction-time test. The researcher then compares the reaction times of the two groups.     Which of the following is the independent variable in this study?      Whether the participant drinks the new energy drink or the beverage without the active ingredients    Correct, because the researcher imposes a treatment by assigning participants to receive the energy drink or the comparison beverage.      The participant's reaction time      The number of volunteers in the study      The minutes that pass before the test        Which of the following is the dependent variable in this study?      Whether the participant drinks the new energy drink or the beverage without the active ingredients      The participant's reaction time    Correct, because the reaction time is the result of the treatment (the type of beverage consumed).      The number of groups in the study      The age of the volunteers      "
+},
+{
+  "id": "subsec-StudyTypes-23",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyTypes-23",
+  "type": "Checkpoint",
+  "number": "1.3.7",
+  "title": "Identify the type of study.",
+  "body": " Identify the type of study   A health researcher wants to investigate whether there is an association between the number of hours of sleep a college student gets each night and the student's grade point average. The researcher surveys a random sample of college students and records how many hours they usually sleep and their current grade point averages. The researcher then looks for patterns in the collected data.  Identify the type of study described.      Observational study    Correct, because the researcher does not impose any treatment or attempt to change the students' sleeping habits, but only observes and records existing behavior.      Experimental study    No, this is an observational study because the researcher does not impose any treatment or attempt to change the students' sleeping habits, but only observes and records existing behavior.     "
+},
+{
+  "id": "subsec-StudyDesign-3",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyDesign-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Randomized Two-treatment Experiment "
 },
 {
-  "id": "sec-DayThree-26",
+  "id": "subsec-StudyDesign-5",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-26",
+  "url": "sec-DayThree.html#subsec-StudyDesign-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Randomized Block Design "
 },
 {
-  "id": "sec-DayThree-27",
+  "id": "subsec-StudyDesign-6",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-27",
+  "url": "sec-DayThree.html#subsec-StudyDesign-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Rigorously Controlled Design "
 },
 {
-  "id": "sec-DayThree-28",
+  "id": "subsec-StudyDesign-7",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-28",
+  "url": "sec-DayThree.html#subsec-StudyDesign-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Matched Pairs Design "
 },
 {
-  "id": "sec-DayThree-29",
+  "id": "subsec-StudyDesign-8",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-29",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Other Considerations "
+  "url": "sec-DayThree.html#subsec-StudyDesign-8",
+  "type": "Checkpoint",
+  "number": "1.3.8",
+  "title": "Plant Fertilizer.",
+  "body": " Plant Fertilizer   A group of biology students wants to test whether a new plant fertilizer affects the height of bean plants. They randomly assign 40 bean plants to one of two treatment groups. One group receives the new fertilizer each week, while the other group receives only water under the same growing conditions. After 6 weeks, the students measure the height of each plant and compare the results between the two groups.  Which of the following best describes this study?      Randomized two-treatment experiment    Correct, this is a randomized two-treatment experiment because the plants are randomly assigned to one of two treatments: the new fertilizer or the control condition of water only.      Observational study      Matched pairs design      Stratified design     "
 },
 {
-  "id": "sec-DayThree-31",
+  "id": "subsec-StudyDesign-9",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-31",
+  "url": "sec-DayThree.html#subsec-StudyDesign-9",
+  "type": "Checkpoint",
+  "number": "1.3.9",
+  "title": "Stretching.",
+  "body": " Stretching   A physical therapist wants to compare two different stretching routines for improving flexibility. The therapist recruits 20 volunteers. Each volunteer performs routine A on one leg and routine B on the other leg for 4 weeks. At the end of the study, the therapist measures the flexibility improvement in each leg and compares the results within each person.  Which of the following best describes this study?      Matched pairs design    Correct, this is a matched pairs design because each subject receives both treatments, and the comparison is made within the same individual.      Randomized block design      Randomized two-treatment experiment      Observational study     "
+},
+{
+  "id": "subsec-StudyDesign-10",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyDesign-10",
+  "type": "Checkpoint",
+  "number": "1.3.10",
+  "title": "Fish Diets.",
+  "body": " Fish Diets   A team of biology researchers wants to compare the effectiveness of two different fish diets on weight gain. Since the age of the fish may affect growth, the researchers first divide the fish into blocks based on age: young fish and older fish. Then, within each age block, they randomly assign fish to one of two diet treatments. After 8 weeks, the researchers measure the weight gain of the fish in each group and compare the diets.  Which of the following best describes this study?      Randomized block design    Correct, this is a randomized block design because the fish are first divided into blocks based on age, and then within each block, they are randomly assigned to one of the two diet treatments.      Simple random sample      Observational study      Matched pairs design     "
+},
+{
+  "id": "subsec-StudyDesign-11",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyDesign-11",
+  "type": "Checkpoint",
+  "number": "1.3.11",
+  "title": "Medication.",
+  "body": " Medication   A pharmaceutical company wants to test whether a new allergy medication is effective. The researchers assign participants to treatment groups so that each group has similar ages, health conditions, and numbers of men and women. All participants take pills that look identical, follow the same schedule, receive the same instructions, and are evaluated in the same environment. The only difference between groups is whether the pill contains the new medication or a placebo.  Which of the following best describes this study?      A rigorously controlled design    Correct, this is a rigorously controlled design because the researchers carefully assign participants to treatment groups to ensure they are similar in important ways, and they control all other aspects of the study except for the treatment being tested.      Convenience sample      Matched pairs design      Randomized two-treatment experiment     "
+},
+{
+  "id": "subsec-StudyConsiders-3",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Blind study "
 },
 {
-  "id": "sec-DayThree-32",
+  "id": "subsec-StudyConsiders-4",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-32",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Double-blind study "
 },
 {
-  "id": "sec-DayThree-35",
+  "id": "subsec-StudyConsiders-5",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-35",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-5",
+  "type": "Example",
+  "number": "1.3.12",
+  "title": "Blind Study.",
+  "body": " Blind Study   A medical researcher is testing whether a new pain-relief pill works better than a standard pill. Participants are randomly assigned to receive either the new pill or the standard pill, but the participants do not know which one they are taking. After one week, the researcher compares the pain levels reported by the two groups.  This is a blind study because the participants do not know which treatment they received.   "
+},
+{
+  "id": "subsec-StudyConsiders-6",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-6",
+  "type": "Example",
+  "number": "1.3.13",
+  "title": "Double Blind Study.",
+  "body": " Double Blind Study   A medical researcher is testing whether a new pain-relief pill works better than a standard pill. Participants are randomly assigned to receive either the new pill or the standard pill. Neither the participants nor the researchers who interact with them know which pill each participant receives until the study is over. After one week, the reported pain levels of the two groups are compared.  This is a double-blind study because neither the subjects nor the researchers who administer or evaluate the treatment know who received which treatment during the study.   "
+},
+{
+  "id": "subsec-StudyConsiders-7",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-7",
+  "type": "Checkpoint",
+  "number": "1.3.14",
+  "title": "Vitamin Drink.",
+  "body": " Vitamin Drink   A nutrition researcher is studying whether a new vitamin drink improves energy levels. Participants are randomly assigned to receive either the vitamin drink or a similar-tasting drink without the added vitamins. The participants do not know which drink they receive, but the researchers do.  Which of the following best describes this study?      A blind study    Correct, this is a blind study because the participants do not know which treatment they received, but the researchers do know.      A double-blind study    No, this is not a double-blind study because the researchers know which treatment each participant received.     "
+},
+{
+  "id": "subsec-StudyConsiders-8",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-8",
+  "type": "Checkpoint",
+  "number": "1.3.15",
+  "title": "Allergies.",
+  "body": " Allergies   A pharmaceutical company is testing a new medication for seasonal allergies. Participants are randomly assigned to receive either the new medication or a placebo. The pills look identical, and neither the participants nor the doctors who give the pills and record symptoms know who receives the medication and who receives the placebo until the study ends.  Which of the following best describes this study?      A double-blind study    Correct, this is a double-blind study because neither the participants nor the doctors who administer the treatment know which treatment each participant received until the study ends.      A blind study    No, this is a double-blind study because neither the participants nor the doctors who administer the treatment know which treatment each participant received until the study ends.     "
+},
+{
+  "id": "subsec-StudyConsiders-10",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Cross-sectional study: "
 },
 {
-  "id": "sec-DayThree-36",
+  "id": "subsec-StudyConsiders-11",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-36",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-11",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Retrospective study: "
 },
 {
-  "id": "sec-DayThree-37",
+  "id": "subsec-StudyConsiders-12",
   "level": "2",
-  "url": "sec-DayThree.html#sec-DayThree-37",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-12",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "longitudinal study "
+},
+{
+  "id": "subsec-StudyConsiders-14",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-14",
+  "type": "Checkpoint",
+  "number": "1.3.16",
+  "title": "Exercise Habits.",
+  "body": " Exercise Habits   A public health researcher surveys a random sample of adults in 2026 and records their current exercise habits and blood pressure levels. The researcher uses the data to study the relationship between exercise and blood pressure at that one point in time.  Which of the following best describes this study?      A cross-sectional study    Correct, this is a cross-sectional study because the data is collected at one point in time.      A retrospective study    No, this is a cross-sectional study because the data is collected at one point in time.      A longitudinal study    No, this is a cross-sectional study because the data is collected at one point in time.     "
+},
+{
+  "id": "subsec-StudyConsiders-15",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-15",
+  "type": "Checkpoint",
+  "number": "1.3.17",
+  "title": "Smoking Habits.",
+  "body": " Smoking Habits   A medical researcher studies whether past smoking habits are related to lung disease. The researcher reviews medical records from the past 15 years and compares patients who currently have lung disease with their earlier smoking histories.  Which of the following best describes this study?      A retrospective study    Correct, this is a retrospective study because the researcher is collecting data from the past using medical records.      A longitudinal study    No, this is a retrospective study because the researcher is collecting data from the past using medical records.      A cross-sectional study    No, this is a retrospective study because the researcher is collecting data from the past using medical records.     "
+},
+{
+  "id": "subsec-StudyConsiders-16",
+  "level": "2",
+  "url": "sec-DayThree.html#subsec-StudyConsiders-16",
+  "type": "Checkpoint",
+  "number": "1.3.18",
+  "title": "Study Habits.",
+  "body": " Study Habits   A researcher follows a group of 200 middle school students for 6 years, recording their study habits and math test scores at the end of each school year. The researcher uses the data to examine how study habits and performance change over time.  Which of the following best describes this study?      A longitudinal study      A retrospective study      A cross-sectional study     "
 },
 {
   "id": "sec-section-name",
