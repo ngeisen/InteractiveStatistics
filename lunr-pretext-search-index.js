@@ -1297,18 +1297,18 @@ var ptx_lunr_docs = [
   "body": "Graphing with StatKey "
 },
 {
-  "id": "subsec-GraphTwoCat-2",
+  "id": "subsec-GraphTwoCategorical-2",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-2",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "two-way table "
 },
 {
-  "id": "subsec-GraphTwoCat-3",
+  "id": "subsec-GraphTwoCategorical-3",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-3",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1324,9 +1324,9 @@ var ptx_lunr_docs = [
   "body": " Image of partial data set   Lists 9 games as home\/awa and win\/loss.   "
 },
 {
-  "id": "subsec-GraphTwoCat-5",
+  "id": "subsec-GraphTwoCategorical-5",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-5",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1342,45 +1342,45 @@ var ptx_lunr_docs = [
   "body": " Image of WB two-way table   Summarizes value for 31 games.   "
 },
 {
-  "id": "subsec-GraphTwoCat-9",
+  "id": "subsec-GraphTwoCategorical-9",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-9",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-9",
   "type": "Checkpoint",
   "number": "2.1.10",
   "title": "",
   "body": " As a review, is the study an experiment or an observational study?   This is an observational study since we are looking at recorded data, there was no manipulation of variables.   "
 },
 {
-  "id": "subsec-GraphTwoCat-13",
+  "id": "subsec-GraphTwoCategorical-13",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-13",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-13",
   "type": "Checkpoint",
   "number": "2.1.11",
   "title": "",
   "body": " What proportion of games did the UNC Women's Basketball team play at Away during the 2022-2023 season?   p(away) = 16\/31 = .516 so 51.6% of the games.   "
 },
 {
-  "id": "subsec-GraphTwoCat-14",
+  "id": "subsec-GraphTwoCategorical-14",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-14",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-14",
   "type": "Checkpoint",
   "number": "2.1.12",
   "title": "",
   "body": " Does the UNC Women's Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games?   P (win at home) = 8\/15 = .533 = 53.3%  P (win at away) = 5\/16 = 0.3125 = 31.3%  So it does appear they win more at home.   "
 },
 {
-  "id": "subsec-GraphTwoCat-16",
+  "id": "subsec-GraphTwoCategorical-16",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-16",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Side by side bar graph "
 },
 {
-  "id": "subsec-GraphTwoCat-17",
+  "id": "subsec-GraphTwoCategorical-17",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-17",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-17",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1405,9 +1405,9 @@ var ptx_lunr_docs = [
   "body": " Image of WB wins and losses   Segment bar graph comparing wins and losses.   "
 },
 {
-  "id": "subsec-GraphTwoCat-22",
+  "id": "subsec-GraphTwoCategorical-22",
   "level": "2",
-  "url": "sec-CatData.html#subsec-GraphTwoCat-22",
+  "url": "sec-CatData.html#subsec-GraphTwoCategorical-22",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1531,36 +1531,36 @@ var ptx_lunr_docs = [
   "body": "bimodal "
 },
 {
-  "id": "subsec-GraphScatterplots-2",
+  "id": "subsec-GraphTwoQuantitative-2",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-2",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "scatterplot "
 },
 {
-  "id": "subsec-GraphScatterplots-3",
+  "id": "subsec-GraphTwoQuantitative-3",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-3",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Correlation "
 },
 {
-  "id": "subsec-GraphScatterplots-4",
+  "id": "subsec-GraphTwoQuantitative-4",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-4",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "positive correlation negative correlation "
 },
 {
-  "id": "subsec-GraphScatterplots-5",
+  "id": "subsec-GraphTwoQuantitative-5",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-5",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1585,9 +1585,9 @@ var ptx_lunr_docs = [
   "body": " Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.   "
 },
 {
-  "id": "subsec-GraphScatterplots-19",
+  "id": "subsec-GraphTwoQuantitative-19",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-19",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-19",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1603,54 +1603,54 @@ var ptx_lunr_docs = [
   "body": " Image of Scatterplot for Weight and Height   Scatterplot with weight on x-axis and height on y.   "
 },
 {
-  "id": "subsec-GraphScatterplots-22",
+  "id": "subsec-GraphTwoQuantitative-22",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-22",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-22",
   "type": "Example",
   "number": "2.2.4",
   "title": "Correlation Coefficient.",
   "body": " Correlation Coefficient   Compute the correlation coefficient between weight and height.    Correlation Coefficient r = 0.623.   "
 },
 {
-  "id": "subsec-GraphScatterplots-23",
+  "id": "subsec-GraphTwoQuantitative-23",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-23",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-23",
   "type": "Example",
   "number": "2.2.5",
   "title": "Type of Relationship.",
   "body": " Type of Relationship   Identify the type of relationship between weight and height.    There's a moderate positive linear relationship.   "
 },
 {
-  "id": "subsec-GraphScatterplots-24",
+  "id": "subsec-GraphTwoQuantitative-24",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-24",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-24",
   "type": "Example",
   "number": "2.2.6",
   "title": "Describe the Relationship.",
   "body": " Describe the Relationship   Describe the relationship between weight and height.    As student's weights increase, their heights also increase.   "
 },
 {
-  "id": "subsec-GraphScatterplots-25",
+  "id": "subsec-GraphTwoQuantitative-25",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-25",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-25",
   "type": "Example",
   "number": "2.2.7",
   "title": "Slope.",
   "body": " Slope   Identify the slope when x= weight and y=height.    Slope = 0.077 is positive.   "
 },
 {
-  "id": "subsec-GraphScatterplots-26",
+  "id": "subsec-GraphTwoQuantitative-26",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-26",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-26",
   "type": "Example",
   "number": "2.2.8",
   "title": "Y-intercept.",
   "body": " Y-intercept   Identify the y-intercept when x=weight and y=height.    The y-intercept = 54.692 inches.   "
 },
 {
-  "id": "subsec-GraphScatterplots-27",
+  "id": "subsec-GraphTwoQuantitative-27",
   "level": "2",
-  "url": "sec-QuantData.html#subsec-GraphScatterplots-27",
+  "url": "sec-QuantData.html#subsec-GraphTwoQuantitative-27",
   "type": "Example",
   "number": "2.2.9",
   "title": "Regression Equation.",
@@ -2824,75 +2824,75 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Basic Probability",
-  "body": " Basic Probability   At the end of this section you will able to:    Determine the probability of a single event.    Identify the sample space of an event.    Determine if outcomes are equally likely.    Compare experimental probability with theoretical probability.     In this chapter we will learn a little about probability. Many people are familiar with probability from playing games of chance, such as flipping coins, rolling dice and playing cards. We will use several of these examples to help explain the rules of probability.  The questions that probability can help with are your chances that the car you are buying will need more maintenance, your chances of passing a class, your chances of winning the lottery, your chances of being in a car accident. The chance of winning the lottery is very small, yet many people will spend the money on lottery tickets. Yet, if instead they saved the money that they spend on the lottery, they would have more money. In general, events that have a low probability (under 5%) are unlikely to occur. Whereas if an event has a high probability of happening (over 80%), then there is a good chance that the event will happen.  First let us review some definitions to help us understand probability.   Experiment is an activity that has specific results that can occur, but the result is unknown before you begin. Such as flipping a coin.  The outcomes are the results of an experiment. The outcomes from flipping a coin is head or tail.  An event is a set of certain outcomes of an experiment that you want to have happen. So if I want to know the likelihood of getting heads, getting heads is the event I want to happen.  The sample space is the collection of all possible outcomes of the experiment. For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. A tree diagrams helps us see all these outcomes.   Outcomes   Suppose that the experiment is rolling a single die. List the outcomes and sample space.    The outcomes are the die number 1, 2, 3, 4, 5, 6. The sample space is the set {1, 2, 3, 4, 5, 6}.    To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4\/10 = 2\/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513\/100 = 51.3% of the time. This is an example of experimental probability since the value was found by actually doing the experiment.  The approximate probability of an event A, written as , is     Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates theoretical probability which is based on the sample space. But it assumes that all outcomes are equally likely to occur.  Consider the experiment of spinning the spinner below. There are four possible outcomes: red, blue, green, and yellow. We will expect the color blue to be spun about ¼ of the time if we spin it many times. The probability is indicated by writing P(blue) = ¼.   Spinner with equal outcomes   circular spinner split into four equal parts.    Since each color represents the same fraction of the circle, we refer to them being equally likely to occur since the probability is the same. Just as rolling any number on a fair die is also equally likely at 1\/6 since there are six sides.   Spinner with unequal outcomes   circular spinner split into four equal of different size.     Spinner Probabilities  Find the following probabilities for the spinner above.  a. Probability of spinning red  b. Probability of spinning yellow  c. Probability of spinning green   a. P(red)=25%, b. P(yellow) = 38%, and c. P(green) = 13%     More likely  Which color is most likely to occur on the spinner? Why.   P(yellow) = 38%, thus yellow is most likely to occur since it has the highest probability     Spinner Probabilities  Find the following probabilities for the spinner above.  a. Probability of spinning red or blue  b. Probability of spinning yellow or green   P(red or blue) = 50% since this represents half the circle  P(yellow or green) = 38+12 = 50%     Marbles  Find the probability of selecting a green marble on one draw from a box containing five green marbles and seven blue marbles.   Since there are 5 green marbles and a total of 12 marbles in the box, the probability is P(green)=5\/12.    There are several rules regarding the possible values in probability. The probability of an event A is any number between and including 0 and 1, when written as decimals. If an event cannot occur the probability is 0, since no chance of it occurring. While an event that is certain to occur the probability is 1, which is 100%.   For example, when rolling a fair six-sided die, the probability of each event is 1\/6 = 0.167 since the sample space is the set {1, 2, 3, 4, 5, 6}. The probability of rolling an 8 on this die would be 0 since it is not in the sample space. The sum of the probabilities of the outcomes in the sample space is 1, which represents 100% of the events.   Probability Rules  Find the following probabilities using these rules .  a. Drawing a red marble from a bag containing three red and two blue marbles.  b. Drawing a green marble from a bag containing only green marbles.  c. Drawing a black marble from a bag containing only blue marbles.   a. P(red) = 3\/5 = 0.60 = 60% since 3 of the 5 marbles are red.  b. P(green) = 1 or 100% since all the marbles are green.  c. P(black) = 0 since black is not in the sample space of only blue marbles    Suppose you want to know the probability that an event will not occur, this uses the complement of the event. When we roll a die, we know that sample space consists of the outcomes 1, 2, 3, 4, 5, 6. The probability of rolling a 3 is . The probability of not rolling a 3 is since there are 5 outcomes that are not a 3. Since the sum of the outcomes in the sample space is 1 or 100%, we can find the complement by subtracting the probability of the event from 1.  The complement of an event E is the set of outcomes in the sample space that are not included in the outcomes of the event E. The complement of E is .   Complement  Find the complement of rolling an even number on a fair six-sided die.   P(even) = 3\/6=0.5 for the event of 2, 4, 6. So the complement will be not even (thus odd numbers) therefore P(not even) = 1-0.5 = 0.5 which are the events 1, 3, 5.     Complement  Find the complement of drawing a red marble from a bag containing 3 red marbles and 5 blue marbles.   P(red)=3\/8=0.375 thus the complement is P(not red) which is the same as the 5\/8 that are blue in the bag.    So far we have focused on simple events where we focus on just one outcome. When we found the probability of getting an even number on a dice roll, we are working with compound events since there are three outcomes we are considering. This can be extended to multiple experiments – such as tossing two coins or rolling two dice. This will increase our sample space.  We can use tree diagrams to help us find the sample space from compound events. A tree diagram is a device consisting of line segments branching from a starting point and from each outcome for each event. We read across the rows to find all possible outcomes for the sample space.  Lets find the sample space for tossing two coins, say a penny and nickel. If we toss the penny first, we have two outcomes of heads or tails. So we choose a starting point and draw two lines to represent the two outcomes and list them. When we toss the nickel, we also have two outcomes. So we draw two lines from EACH of the previous outcomes to represent the second event and list the outcomes. As we read along the tree diagram, we have the sample space that includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space.   Tree diagram for two coin tosses   four outcomes since four branches.    With the four outcomes, which are equally likely to happen due to the fair coins, the probability is ¼ for each. The probability of getting at least one head on either of the tosses is ¾ since three of the four outcomes have a head. The probability of getting exactly one head on either toss is ½ for head-tail or tail-head.  Tree diagrams can be used for multiple events. Suppose you flip a penny, nickel and dime. Make a tree diagram to list all possible outcomes. Hint: from your previous tree diagram, draw two lines from each previous branch to represent the outcomes for the dime.   Tree Diagram  Make a tree diagram to list all possible outcomes for tossing three fair coins.   There are eight outcomes as shown below.   Tree diagram for three coin tosses   four outcomes since four branches.       Probabilities from tree diagram  Find the following probabilities using your tree diagram for three coins.  a. getting three heads  b. getting at least two heads  c. getting exactly two tails  d. getting four tails   a. P( three heads) = 1\/8  b. P(at least two heads) = 4\/8 = ½  c. P(exactly two tails) = 3\/8  d. P(four tails) = 0 since not in sample space    Next, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.     Sample Space  How many outcomes are in the sample space for a standard deck of cards?   There are 52 outcomes in a standard deck. Each card represents an outcome.     Spades  What is the probability of getting a spade drawing one card randomly from a deck?   There are 13 spades in a deck of 52 cards, thus P(spade)=13\/52=1\/4 .     Jack  What is the probability of getting a Jack drawing one card randomly from a deck?   There are 4 jacks in a deck of 52 cards, thus P(jack)=4\/52=1\/13=0.077     Complement  What is the probability of not getting an Ace by drawing one card randomly from a deck?   P(Ace)=4\/52 thus P(not Ace) = 1-4\/52 = 0.923    Supplemental links  Online Spinner:   Online Dice:    Practice Problems    Blood Probabilities  Suppose in a sample of 50 people the following blood types were recorded: 19 Type O, 22 Type A, 6 Type B, and 3 Type AB. Find the probability of getting the specified blood type if one person is selected at random from this sample.  a. Type A blood.  b. Type O or Type B.  c. Not type AB.   a. P(A)=22\/50  b. P(O or B) = 19\/50 + 6\/50 = 25\/50  c. P(not AB) = 1-3\/50 = 47\/50 is the complement     Rain  Suppose the weather person predicted the probability of it raining today is 0.45. What is the probability of it not raining?   Since not raining is the complement of raining, then P(not rain) = 1-P(rain) = 1-.45=0.55     COVID  Moderna estimated the effectiveness of the COVID19 vaccine at 95% for preventing COVID. What was the probability of getting COVID if you had the vaccine?   Using the complement, P(COVID) = 1-P(vaccine)=1-.95=0.05    "
+  "body": " Basic Probability   In this chapter we will learn a little about probability. Many people are familiar with probability from playing games of chance, such as flipping coins, rolling dice and playing cards. We will use several of these examples to help explain the rules of probability.     At the end of this section you will able to:     Determine the probability of a single event.    Identify the sample space of an event.    Determine if outcomes are equally likely.    Compare experimental probability with theoretical probability.      Understanding the Basics  In this chapter we will learn a little about probability. Many people are familiar with probability from playing games of chance, such as flipping coins, rolling dice and playing cards. We will use several of these examples to help explain the rules of probability.  The questions that probability can help with are your chances that the car you are buying will need more maintenance, your chances of passing a class, your chances of winning the lottery, your chances of being in a car accident. The chance of winning the lottery is very small, yet many people will spend the money on lottery tickets. Yet, if instead they saved the money that they spend on the lottery, they would have more money. In general, events that have a low probability (under 5%) are unlikely to occur. Whereas if an event has a high probability of happening (over 80%), then there is a good chance that the event will happen.  First let us review some definitions to help us understand probability.   Experiment is an activity that has specific results that can occur, but the result is unknown before you begin. Such as flipping a coin.  The outcomes are the results of an experiment. The outcomes from flipping a coin is head or tail.  An event is a set of certain outcomes of an experiment that you want to have happen. So if I want to know the likelihood of getting heads, getting heads is the event I want to happen.  The sample space is the collection of all possible outcomes of the experiment. For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. A tree diagrams helps us see all these outcomes.   Outcomes   Suppose that the experiment is rolling a single die. List the outcomes and sample space.    The outcomes are the die number 1, 2, 3, 4, 5, 6. The sample space is the set {1, 2, 3, 4, 5, 6}.    To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4\/10 = 2\/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513\/100 = 51.3% of the time. This is an example of experimental probability since the value was found by actually doing the experiment.  The approximate probability of an event A, written as , is     Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates theoretical probability which is based on the sample space. But it assumes that all outcomes are equally likely to occur.  Consider the experiment of spinning the spinner below. There are four possible outcomes: red, blue, green, and yellow. We will expect the color blue to be spun about ¼ of the time if we spin it many times. The probability is indicated by writing P(blue) = ¼.   Spinner with equal outcomes   circular spinner split into four equal parts.    Since each color represents the same fraction of the circle, we refer to them being equally likely to occur since the probability is the same. Just as rolling any number on a fair die is also equally likely at 1\/6 since there are six sides.   Spinner with unequal outcomes   circular spinner split into four equal of different size.     Spinner Probabilities   Find the following probabilities for the spinner above.  a. Probability of spinning red  b. Probability of spinning yellow  c. Probability of spinning green    a. P(red)=25%, b. P(yellow) = 38%, and c. P(green) = 13%     More likely   Which color is most likely to occur on the spinner? Why.    P(yellow) = 38%, thus yellow is most likely to occur since it has the highest probability     Spinner Probabilities   Find the following probabilities for the spinner above.  a. Probability of spinning red or blue  b. Probability of spinning yellow or green    P(red or blue) = 50% since this represents half the circle  P(yellow or green) = 38+12 = 50%     Marbles   Find the probability of selecting a green marble on one draw from a box containing five green marbles and seven blue marbles.    Since there are 5 green marbles and a total of 12 marbles in the box, the probability is P(green)=5\/12.    There are several rules regarding the possible values in probability. The probability of an event A is any number between and including 0 and 1, when written as decimals. If an event cannot occur the probability is 0, since no chance of it occurring. While an event that is certain to occur the probability is 1, which is 100%.   For example, when rolling a fair six-sided die, the probability of each event is 1\/6 = 0.167 since the sample space is the set {1, 2, 3, 4, 5, 6}. The probability of rolling an 8 on this die would be 0 since it is not in the sample space. The sum of the probabilities of the outcomes in the sample space is 1, which represents 100% of the events.   Probability Rules   Find the following probabilities using these rules .  a. Drawing a red marble from a bag containing three red and two blue marbles.  b. Drawing a green marble from a bag containing only green marbles.  c. Drawing a black marble from a bag containing only blue marbles.    a. P(red) = 3\/5 = 0.60 = 60% since 3 of the 5 marbles are red.  b. P(green) = 1 or 100% since all the marbles are green.  c. P(black) = 0 since black is not in the sample space of only blue marbles    Suppose you want to know the probability that an event will not occur, this uses the complement of the event. When we roll a die, we know that sample space consists of the outcomes 1, 2, 3, 4, 5, 6. The probability of rolling a 3 is . The probability of not rolling a 3 is since there are 5 outcomes that are not a 3. Since the sum of the outcomes in the sample space is 1 or 100%, we can find the complement by subtracting the probability of the event from 1.  The complement of an event E is the set of outcomes in the sample space that are not included in the outcomes of the event E. The complement of E is .   Complement   Find the complement of rolling an even number on a fair six-sided die.    P(even) = 3\/6=0.5 for the event of 2, 4, 6. So the complement will be not even (thus odd numbers) therefore P(not even) = 1-0.5 = 0.5 which are the events 1, 3, 5.     Complement   Find the complement of drawing a red marble from a bag containing 3 red marbles and 5 blue marbles.    P(red)=3\/8=0.375 thus the complement is P(not red) which is the same as the 5\/8 that are blue in the bag.      Compound Events  So far we have focused on simple events where we focus on just one outcome. When we found the probability of getting an even number on a dice roll, we are working with compound events since there are three outcomes we are considering. This can be extended to multiple experiments - such as tossing two coins or rolling two dice. This will increase our sample space.  We can use tree diagrams to help us find the sample space from compound events. A tree diagram is a device consisting of line segments branching from a starting point and from each outcome for each event. We read across the rows to find all possible outcomes for the sample space.  Lets find the sample space for tossing two coins, say a penny and nickel. If we toss the penny first, we have two outcomes of heads or tails. So we choose a starting point and draw two lines to represent the two outcomes and list them. When we toss the nickel, we also have two outcomes. So we draw two lines from EACH of the previous outcomes to represent the second event and list the outcomes. As we read along the tree diagram, we have the sample space that includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space.   Tree diagram for two coin tosses   four outcomes since four branches.    With the four outcomes, which are equally likely to happen due to the fair coins, the probability is ¼ for each. The probability of getting at least one head on either of the tosses is ¾ since three of the four outcomes have a head. The probability of getting exactly one head on either toss is ½ for head-tail or tail-head.  Tree diagrams can be used for multiple events. Suppose you flip a penny, nickel and dime. Make a tree diagram to list all possible outcomes. Hint: from your previous tree diagram, draw two lines from each previous branch to represent the outcomes for the dime.   Tree Diagram   Make a tree diagram to list all possible outcomes for tossing three fair coins.    There are eight outcomes as shown below.   Tree diagram for three coin tosses   four outcomes since four branches.       Probabilities from tree diagram   Find the following probabilities using your tree diagram for three coins.  a. getting three heads  b. getting at least two heads  c. getting exactly two tails  d. getting four tails    a. P( three heads) = 1\/8  b. P(at least two heads) = 4\/8 = ½  c. P(exactly two tails) = 3\/8  d. P(four tails) = 0 since not in sample space    Next, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.     Sample Space   How many outcomes are in the sample space for a standard deck of cards?    There are 52 outcomes in a standard deck. Each card represents an outcome.     Spades   What is the probability of getting a spade drawing one card randomly from a deck?    There are 13 spades in a deck of 52 cards, thus P(spade)=13\/52=1\/4 .     Jack   What is the probability of getting a Jack drawing one card randomly from a deck?    There are 4 jacks in a deck of 52 cards, thus P(jack)=4\/52=1\/13=0.077     Complement   What is the probability of not getting an Ace by drawing one card randomly from a deck?    P(Ace)=4\/52 thus P(not Ace) = 1-4\/52 = 0.923    Supplemental links  Online Spinner:   Online Dice:     Practice Problems   Practice Problems    Blood Probabilities   Suppose in a sample of 50 people the following blood types were recorded: 19 Type O, 22 Type A, 6 Type B, and 3 Type AB. Find the probability of getting the specified blood type if one person is selected at random from this sample.  a. Type A blood.  b. Type O or Type B.  c. Not type AB.    a. P(A)=22\/50  b. P(O or B) = 19\/50 + 6\/50 = 25\/50  c. P(not AB) = 1-3\/50 = 47\/50 is the complement     Rain   Suppose the weather person predicted the probability of it raining today is 0.45. What is the probability of it not raining?    Since not raining is the complement of raining, then P(not rain) = 1-P(rain) = 1-.45=0.55     COVID   Moderna estimated the effectiveness of the COVID19 vaccine at 95% for preventing COVID. What was the probability of getting COVID if you had the vaccine?    Using the complement, P(COVID) = 1-P(vaccine)=1-.95=0.05     "
 },
 {
-  "id": "BasicProb-2",
+  "id": "BasicProb-3",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-2",
+  "url": "BasicProb.html#BasicProb-3",
   "type": "Objectives",
   "number": "4.1",
   "title": "",
-  "body": " At the end of this section you will able to:    Determine the probability of a single event.    Identify the sample space of an event.    Determine if outcomes are equally likely.    Compare experimental probability with theoretical probability.    "
+  "body": "  At the end of this section you will able to:     Determine the probability of a single event.    Identify the sample space of an event.    Determine if outcomes are equally likely.    Compare experimental probability with theoretical probability.    "
 },
 {
-  "id": "BasicProb-6",
+  "id": "subsec-ProbabilityBasics-5",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-6",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Experiment "
 },
 {
-  "id": "BasicProb-7",
+  "id": "subsec-ProbabilityBasics-6",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-7",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "outcomes "
 },
 {
-  "id": "BasicProb-8",
+  "id": "subsec-ProbabilityBasics-7",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-8",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "event "
 },
 {
-  "id": "BasicProb-9",
+  "id": "subsec-ProbabilityBasics-8",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-9",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "sample space "
 },
 {
-  "id": "BasicProb-10",
+  "id": "subsec-ProbabilityBasics-9",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-10",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-9",
   "type": "Checkpoint",
   "number": "4.1.1",
   "title": "Outcomes.",
   "body": " Outcomes   Suppose that the experiment is rolling a single die. List the outcomes and sample space.    The outcomes are the die number 1, 2, 3, 4, 5, 6. The sample space is the set {1, 2, 3, 4, 5, 6}.   "
 },
 {
-  "id": "BasicProb-11",
+  "id": "subsec-ProbabilityBasics-10",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-11",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "experimental probability "
 },
 {
-  "id": "BasicProb-14",
+  "id": "subsec-ProbabilityBasics-13",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-14",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-13",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2908,9 +2908,9 @@ var ptx_lunr_docs = [
   "body": " Spinner with equal outcomes   circular spinner split into four equal parts.   "
 },
 {
-  "id": "BasicProb-17",
+  "id": "subsec-ProbabilityBasics-16",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-17",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2926,90 +2926,90 @@ var ptx_lunr_docs = [
   "body": " Spinner with unequal outcomes   circular spinner split into four equal of different size.   "
 },
 {
-  "id": "BasicProb-19",
+  "id": "subsec-ProbabilityBasics-18",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-19",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-18",
   "type": "Checkpoint",
   "number": "4.1.4",
   "title": "Spinner Probabilities.",
-  "body": " Spinner Probabilities  Find the following probabilities for the spinner above.  a. Probability of spinning red  b. Probability of spinning yellow  c. Probability of spinning green   a. P(red)=25%, b. P(yellow) = 38%, and c. P(green) = 13%   "
+  "body": " Spinner Probabilities   Find the following probabilities for the spinner above.  a. Probability of spinning red  b. Probability of spinning yellow  c. Probability of spinning green    a. P(red)=25%, b. P(yellow) = 38%, and c. P(green) = 13%   "
 },
 {
-  "id": "BasicProb-20",
+  "id": "subsec-ProbabilityBasics-19",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-20",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-19",
   "type": "Checkpoint",
   "number": "4.1.5",
   "title": "More likely.",
-  "body": " More likely  Which color is most likely to occur on the spinner? Why.   P(yellow) = 38%, thus yellow is most likely to occur since it has the highest probability   "
+  "body": " More likely   Which color is most likely to occur on the spinner? Why.    P(yellow) = 38%, thus yellow is most likely to occur since it has the highest probability   "
 },
 {
-  "id": "BasicProb-21",
+  "id": "subsec-ProbabilityBasics-20",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-21",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-20",
   "type": "Checkpoint",
   "number": "4.1.6",
   "title": "Spinner Probabilities.",
-  "body": " Spinner Probabilities  Find the following probabilities for the spinner above.  a. Probability of spinning red or blue  b. Probability of spinning yellow or green   P(red or blue) = 50% since this represents half the circle  P(yellow or green) = 38+12 = 50%   "
+  "body": " Spinner Probabilities   Find the following probabilities for the spinner above.  a. Probability of spinning red or blue  b. Probability of spinning yellow or green    P(red or blue) = 50% since this represents half the circle  P(yellow or green) = 38+12 = 50%   "
 },
 {
-  "id": "BasicProb-22",
+  "id": "subsec-ProbabilityBasics-21",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-22",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-21",
   "type": "Checkpoint",
   "number": "4.1.7",
   "title": "Marbles.",
-  "body": " Marbles  Find the probability of selecting a green marble on one draw from a box containing five green marbles and seven blue marbles.   Since there are 5 green marbles and a total of 12 marbles in the box, the probability is P(green)=5\/12.   "
+  "body": " Marbles   Find the probability of selecting a green marble on one draw from a box containing five green marbles and seven blue marbles.    Since there are 5 green marbles and a total of 12 marbles in the box, the probability is P(green)=5\/12.   "
 },
 {
-  "id": "BasicProb-25",
+  "id": "subsec-ProbabilityBasics-24",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-25",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-24",
   "type": "Checkpoint",
   "number": "4.1.8",
   "title": "Probability Rules.",
-  "body": " Probability Rules  Find the following probabilities using these rules .  a. Drawing a red marble from a bag containing three red and two blue marbles.  b. Drawing a green marble from a bag containing only green marbles.  c. Drawing a black marble from a bag containing only blue marbles.   a. P(red) = 3\/5 = 0.60 = 60% since 3 of the 5 marbles are red.  b. P(green) = 1 or 100% since all the marbles are green.  c. P(black) = 0 since black is not in the sample space of only blue marbles   "
+  "body": " Probability Rules   Find the following probabilities using these rules .  a. Drawing a red marble from a bag containing three red and two blue marbles.  b. Drawing a green marble from a bag containing only green marbles.  c. Drawing a black marble from a bag containing only blue marbles.    a. P(red) = 3\/5 = 0.60 = 60% since 3 of the 5 marbles are red.  b. P(green) = 1 or 100% since all the marbles are green.  c. P(black) = 0 since black is not in the sample space of only blue marbles   "
 },
 {
-  "id": "BasicProb-27",
+  "id": "subsec-ProbabilityBasics-26",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-27",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-26",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "complement "
 },
 {
-  "id": "BasicProb-28",
+  "id": "subsec-ProbabilityBasics-27",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-28",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-27",
   "type": "Checkpoint",
   "number": "4.1.9",
   "title": "Complement.",
-  "body": " Complement  Find the complement of rolling an even number on a fair six-sided die.   P(even) = 3\/6=0.5 for the event of 2, 4, 6. So the complement will be not even (thus odd numbers) therefore P(not even) = 1-0.5 = 0.5 which are the events 1, 3, 5.   "
+  "body": " Complement   Find the complement of rolling an even number on a fair six-sided die.    P(even) = 3\/6=0.5 for the event of 2, 4, 6. So the complement will be not even (thus odd numbers) therefore P(not even) = 1-0.5 = 0.5 which are the events 1, 3, 5.   "
 },
 {
-  "id": "BasicProb-29",
+  "id": "subsec-ProbabilityBasics-28",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-29",
+  "url": "BasicProb.html#subsec-ProbabilityBasics-28",
   "type": "Checkpoint",
   "number": "4.1.10",
   "title": "Complement.",
-  "body": " Complement  Find the complement of drawing a red marble from a bag containing 3 red marbles and 5 blue marbles.   P(red)=3\/8=0.375 thus the complement is P(not red) which is the same as the 5\/8 that are blue in the bag.   "
+  "body": " Complement   Find the complement of drawing a red marble from a bag containing 3 red marbles and 5 blue marbles.    P(red)=3\/8=0.375 thus the complement is P(not red) which is the same as the 5\/8 that are blue in the bag.   "
 },
 {
-  "id": "BasicProb-30",
+  "id": "subsec-ProbabilityCompound-2",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-30",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "simple events compound events "
 },
 {
-  "id": "BasicProb-31",
+  "id": "subsec-ProbabilityCompound-3",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-31",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3025,22 +3025,22 @@ var ptx_lunr_docs = [
   "body": " Tree diagram for two coin tosses   four outcomes since four branches.   "
 },
 {
-  "id": "BasicProb-36",
+  "id": "subsec-ProbabilityCompound-8",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-36",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-8",
   "type": "Checkpoint",
   "number": "4.1.12",
   "title": "Tree Diagram.",
-  "body": " Tree Diagram  Make a tree diagram to list all possible outcomes for tossing three fair coins.   There are eight outcomes as shown below.   Tree diagram for three coin tosses   four outcomes since four branches.     "
+  "body": " Tree Diagram   Make a tree diagram to list all possible outcomes for tossing three fair coins.    There are eight outcomes as shown below.   Tree diagram for three coin tosses   four outcomes since four branches.     "
 },
 {
-  "id": "BasicProb-37",
+  "id": "subsec-ProbabilityCompound-9",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-37",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-9",
   "type": "Checkpoint",
   "number": "4.1.14",
   "title": "Probabilities from tree diagram.",
-  "body": " Probabilities from tree diagram  Find the following probabilities using your tree diagram for three coins.  a. getting three heads  b. getting at least two heads  c. getting exactly two tails  d. getting four tails   a. P( three heads) = 1\/8  b. P(at least two heads) = 4\/8 = ½  c. P(exactly two tails) = 3\/8  d. P(four tails) = 0 since not in sample space   "
+  "body": " Probabilities from tree diagram   Find the following probabilities using your tree diagram for three coins.  a. getting three heads  b. getting at least two heads  c. getting exactly two tails  d. getting four tails    a. P( three heads) = 1\/8  b. P(at least two heads) = 4\/8 = ½  c. P(exactly two tails) = 3\/8  d. P(four tails) = 0 since not in sample space   "
 },
 {
   "id": "StandardDeck1",
@@ -3052,76 +3052,76 @@ var ptx_lunr_docs = [
   "body": " Standard deck of cards   four suits with 13 numbered cards in deck.   "
 },
 {
-  "id": "BasicProb-40",
+  "id": "subsec-ProbabilityCompound-12",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-40",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-12",
   "type": "Checkpoint",
   "number": "4.1.16",
   "title": "Sample Space.",
-  "body": " Sample Space  How many outcomes are in the sample space for a standard deck of cards?   There are 52 outcomes in a standard deck. Each card represents an outcome.   "
+  "body": " Sample Space   How many outcomes are in the sample space for a standard deck of cards?    There are 52 outcomes in a standard deck. Each card represents an outcome.   "
 },
 {
-  "id": "BasicProb-41",
+  "id": "subsec-ProbabilityCompound-13",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-41",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-13",
   "type": "Checkpoint",
   "number": "4.1.17",
   "title": "Spades.",
-  "body": " Spades  What is the probability of getting a spade drawing one card randomly from a deck?   There are 13 spades in a deck of 52 cards, thus P(spade)=13\/52=1\/4 .   "
+  "body": " Spades   What is the probability of getting a spade drawing one card randomly from a deck?    There are 13 spades in a deck of 52 cards, thus P(spade)=13\/52=1\/4 .   "
 },
 {
-  "id": "BasicProb-42",
+  "id": "subsec-ProbabilityCompound-14",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-42",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-14",
   "type": "Checkpoint",
   "number": "4.1.18",
   "title": "Jack.",
-  "body": " Jack  What is the probability of getting a Jack drawing one card randomly from a deck?   There are 4 jacks in a deck of 52 cards, thus P(jack)=4\/52=1\/13=0.077   "
+  "body": " Jack   What is the probability of getting a Jack drawing one card randomly from a deck?    There are 4 jacks in a deck of 52 cards, thus P(jack)=4\/52=1\/13=0.077   "
 },
 {
-  "id": "BasicProb-43",
+  "id": "subsec-ProbabilityCompound-15",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-43",
+  "url": "BasicProb.html#subsec-ProbabilityCompound-15",
   "type": "Checkpoint",
   "number": "4.1.19",
   "title": "Complement.",
-  "body": " Complement  What is the probability of not getting an Ace by drawing one card randomly from a deck?   P(Ace)=4\/52 thus P(not Ace) = 1-4\/52 = 0.923   "
+  "body": " Complement   What is the probability of not getting an Ace by drawing one card randomly from a deck?    P(Ace)=4\/52 thus P(not Ace) = 1-4\/52 = 0.923   "
 },
 {
-  "id": "BasicProb-47",
+  "id": "subsec-ProbabilityPractice-2",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-47",
+  "url": "BasicProb.html#subsec-ProbabilityPractice-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Practice Problems "
 },
 {
-  "id": "BasicProb-48",
+  "id": "subsec-ProbabilityPractice-3",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-48",
+  "url": "BasicProb.html#subsec-ProbabilityPractice-3",
   "type": "Checkpoint",
   "number": "4.1.20",
   "title": "Blood Probabilities.",
-  "body": " Blood Probabilities  Suppose in a sample of 50 people the following blood types were recorded: 19 Type O, 22 Type A, 6 Type B, and 3 Type AB. Find the probability of getting the specified blood type if one person is selected at random from this sample.  a. Type A blood.  b. Type O or Type B.  c. Not type AB.   a. P(A)=22\/50  b. P(O or B) = 19\/50 + 6\/50 = 25\/50  c. P(not AB) = 1-3\/50 = 47\/50 is the complement   "
+  "body": " Blood Probabilities   Suppose in a sample of 50 people the following blood types were recorded: 19 Type O, 22 Type A, 6 Type B, and 3 Type AB. Find the probability of getting the specified blood type if one person is selected at random from this sample.  a. Type A blood.  b. Type O or Type B.  c. Not type AB.    a. P(A)=22\/50  b. P(O or B) = 19\/50 + 6\/50 = 25\/50  c. P(not AB) = 1-3\/50 = 47\/50 is the complement   "
 },
 {
-  "id": "BasicProb-49",
+  "id": "subsec-ProbabilityPractice-4",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-49",
+  "url": "BasicProb.html#subsec-ProbabilityPractice-4",
   "type": "Checkpoint",
   "number": "4.1.21",
   "title": "Rain.",
-  "body": " Rain  Suppose the weather person predicted the probability of it raining today is 0.45. What is the probability of it not raining?   Since not raining is the complement of raining, then P(not rain) = 1-P(rain) = 1-.45=0.55   "
+  "body": " Rain   Suppose the weather person predicted the probability of it raining today is 0.45. What is the probability of it not raining?    Since not raining is the complement of raining, then P(not rain) = 1-P(rain) = 1-.45=0.55   "
 },
 {
-  "id": "BasicProb-50",
+  "id": "subsec-ProbabilityPractice-5",
   "level": "2",
-  "url": "BasicProb.html#BasicProb-50",
+  "url": "BasicProb.html#subsec-ProbabilityPractice-5",
   "type": "Checkpoint",
   "number": "4.1.22",
   "title": "COVID.",
-  "body": " COVID  Moderna estimated the effectiveness of the COVID19 vaccine at 95% for preventing COVID. What was the probability of getting COVID if you had the vaccine?   Using the complement, P(COVID) = 1-P(vaccine)=1-.95=0.05   "
+  "body": " COVID   Moderna estimated the effectiveness of the COVID19 vaccine at 95% for preventing COVID. What was the probability of getting COVID if you had the vaccine?    Using the complement, P(COVID) = 1-P(vaccine)=1-.95=0.05   "
 },
 {
   "id": "ProbRules",
@@ -3130,7 +3130,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Probability Rules",
-  "body": " Probability Rules   It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.     At the end of this section you will able to:     Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given\"    Use a tree diagram to determine the probability of multiple events      Basic Probability Rules Review  It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment. In this section we will focus on probability rules based on the theoretical probabilities .  There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are equally likely to occur. This means that every outcome has the same chance of happening.   Equally Likely   Which of the following experiments have equally likely outcomes?      Tossing a fair coin.      Rolling loaded dice.    Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.      Pull a ball out of a bag containing 5 red balls and 6 green balls.    Assuming the balls are the same size, then each ball has the same chance of being chosen. The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .      First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.     Hearts  If one card is randomly drawn from a deck, what is the probability of drawing a heart?   There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .     Queen  If one card is randomly drawn from a deck, what is the probability of drawing a Queen?   P(Queen) = 4\/52 = 1\/13 = 0.077     Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.     not Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.     Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card.  Two events are mutually exclusive if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5.  Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together. We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  When two events A and B are mutually exclusive, the probability that either A or B will occur is   When two events A and B are mutually exclusive, the probability that A and B will occur together is since they cannot occur at the same time.   For example, find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) =   Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus   Queen or King  If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?   P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538     Face Card  If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?   P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308    So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. For example, what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card.  P(Spade or Ace) 13\/52 + 4\/52 - 1\/52 = 16\/52 = 0.3077.  If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event.  When two events A and B are not mutually exclusive, the probability that either A or B will occur is      Five or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?   P(5 or diamond) = 4\/52 +13\/52 – 1\/52 = 16\/52 = 0.3077     Five or Six or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?   P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups      When two events are mutually exclusive, this is also known as being disjoint . In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.   Disjoint Venn Diagram   non touching circles .    When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula.   Non Disjoint Venn Diagram   overlapping circles .    We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV.   Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .     Examples: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.  a. A foreign car is sold.  Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90\/300 = 0.30 or 30%  b. The car is foreign and compact.  Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50\/300 = 0.1667 or 16.7%  c. The car is foreign or compact.  Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90\/300 + 150\/300 – 50\/300 = 190\/300 = 0.633 or 63.3%  Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total.   Checkpoints: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.   Compact  The car is compact.   P(compact) = 150\/300 = 0.5 or 50%     domestic or sedan  The car is domestic or a sedan.   P(domestic or a sedan) = 210\/300+ 65\/300 – 45\/300 = 230\/300 = 0.767 or 76.7%%     Domestic SUV  The car is domestic and SUV.   P(compact) = 65\/300 = 0.217 or 21.7%    given   Practice Problems   Hockey Hall of Fame: From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com   Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table.   Defense  What is the probability that an inductee chosen at random is a defenseman?   P(defenseman) = 89\/298 = .2987 or 29.9%     Canadian  What is the probability that an inductee chosen at random is not Canadian?   P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%     Canadian goalie  What is the probability that a player chosen at random is a goalie born in Canada   P(goalie and Canadian) = 36\/298 = .1208 or 12.1%     Canada or Defense  What is the probability that a player chosen at random is either born in Canada or a defenseman?   P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926     Defense or Goalie  What is the probability that the player chosen at random either plays defense or is a goalie   P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.     Canada plays Defense  What is the probability that a Canadian inductee plays defense?   P(defense | Canada) = 74\/251 = .2948     Defense is Canadian  What is the probability that an inductee who plays defense is Canadian?   P(Canda | defense) = 74\/89 = .8315     Blood Typing: Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative. The table below presents the results of a representative sample of 360 adults in the U.S.   Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table.   negative  What is the probability that a person in the sample chosen at random has a negative Rh factor?   P(negative) 58\/360 = .161 have negative blood     not AB  What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?   use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958     B+  What is the probability that a person in the sample chosen at random has type B and positive Rh factor?   intersection P(B and pos) = 32\/360 = .089     A or negative  What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?   P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive     A or B  What is the probability that a person in the sample chosen at random has blood type A or blood type B?   P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive     Blood  What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?   P(O | neg) = 25\/58 = .431     Blood  What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?   P(neg | O) = 25\/162 = .154    "
+  "body": " Probability Rules   It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.     At the end of this section you will able to:     Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given\"    Use a tree diagram to determine the probability of multiple events      Basic Probability Review  It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment. In this section we will focus on probability rules based on the theoretical probabilities .  There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are equally likely to occur. This means that every outcome has the same chance of happening.   Equally Likely   Which of the following experiments have equally likely outcomes?      Tossing a fair coin.      Rolling loaded dice.    Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.      Pull a ball out of a bag containing 5 red balls and 6 green balls.    Assuming the balls are the same size, then each ball has the same chance of being chosen. The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .      First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.   Standard deck of cards   four suits with 13 numbered cards in deck.     Hearts   If one card is randomly drawn from a deck, what is the probability of drawing a heart?    There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .     Queen   If one card is randomly drawn from a deck, what is the probability of drawing a Queen?    P(Queen) = 4\/52 = 1\/13 = 0.077     Queen of Hearts   If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?    P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.     not Queen of Hearts   If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?    P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.      Probability Rules  Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card.  Two events are mutually exclusive if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5.  Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together. We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  When two events A and B are mutually exclusive, the probability that either A or B will occur is   When two events A and B are mutually exclusive, the probability that A and B will occur together is since they cannot occur at the same time.   For example, find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) =   Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus   Queen or King   If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?    P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538     Face Card   If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?    P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308    So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. For example, what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card.  P(Spade or Ace) 13\/52 + 4\/52 - 1\/52 = 16\/52 = 0.3077.  If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event.  When two events A and B are not mutually exclusive, the probability that either A or B will occur is      Five or Diamond   If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?    P(5 or diamond) = 4\/52 +13\/52 - 1\/52 = 16\/52 = 0.3077     Five or Six or Diamond   If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?    P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 - 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups      When two events are mutually exclusive, this is also known as being disjoint . In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.   Disjoint Venn Diagram   non touching circles .    When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula.   Non Disjoint Venn Diagram   overlapping circles .    We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV.   Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .     Examples: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.  a. A foreign car is sold.  Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90\/300 = 0.30 or 30%  b. The car is foreign and compact.  Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50\/300 = 0.1667 or 16.7%  c. The car is foreign or compact.  Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90\/300 + 150\/300 – 50\/300 = 190\/300 = 0.633 or 63.3%  Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total.   Checkpoints: If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.   Compact   The car is compact.    P(compact) = 150\/300 = 0.5 or 50%     domestic or sedan   The car is domestic or a sedan.    P(domestic or a sedan) = 210\/300+ 65\/300 - 45\/300 = 230\/300 = 0.767 or 76.7%%     Domestic SUV   The car is domestic and SUV.    P(domestic and SUV) = 65\/300 = 0.217 or 21.7%    given problems    Probability Practice Problems   Hockey Hall of Fame: From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com   Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table.   Defense   What is the probability that an inductee chosen at random is a defenseman?    P(defenseman) = 89\/298 = .2987 or 29.9%     Canadian   What is the probability that an inductee chosen at random is not Canadian?    P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%     Canadian goalie   What is the probability that a player chosen at random is a goalie born in Canada    P(goalie and Canadian) = 36\/298 = .1208 or 12.1%     Canada or Defense   What is the probability that a player chosen at random is either born in Canada or a defenseman?    P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926     Defense or Goalie   What is the probability that the player chosen at random either plays defense or is a goalie    P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.     Canada plays Defense   What is the probability that a Canadian inductee plays defense?    P(defense | Canada) = 74\/251 = .2948     Defense is Canadian   What is the probability that an inductee who plays defense is Canadian?    P(Canada | defense) = 74\/89 = .8315     Blood Typing: Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative. The table below presents the results of a representative sample of 360 adults in the U.S.   Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.    Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table.   negative   What is the probability that a person in the sample chosen at random has a negative Rh factor?    P(negative) 58\/360 = .161 have negative blood     not AB   What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?    use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958     B+   What is the probability that a person in the sample chosen at random has type B and positive Rh factor?    intersection P(B and pos) = 32\/360 = .089     A or negative   What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?    P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive     A or B   What is the probability that a person in the sample chosen at random has blood type A or blood type B?    P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive     Blood   What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?    P(O | neg) = 25\/58 = .431     Blood   What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?    P(neg | O) = 25\/162 = .154     "
 },
 {
   "id": "ProbRules-3",
@@ -3166,7 +3166,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.2.3",
   "title": "Hearts.",
-  "body": " Hearts  If one card is randomly drawn from a deck, what is the probability of drawing a heart?   There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .   "
+  "body": " Hearts   If one card is randomly drawn from a deck, what is the probability of drawing a heart?    There are 13 hearts in a deck of 52 cards, thus P(heart)=13\/52=1\/4 .   "
 },
 {
   "id": "subsec-ProbRules1-8",
@@ -3175,7 +3175,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.2.4",
   "title": "Queen.",
-  "body": " Queen  If one card is randomly drawn from a deck, what is the probability of drawing a Queen?   P(Queen) = 4\/52 = 1\/13 = 0.077   "
+  "body": " Queen   If one card is randomly drawn from a deck, what is the probability of drawing a Queen?    P(Queen) = 4\/52 = 1\/13 = 0.077   "
 },
 {
   "id": "subsec-ProbRules1-9",
@@ -3184,7 +3184,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.2.5",
   "title": "Queen of Hearts.",
-  "body": " Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.   "
+  "body": " Queen of Hearts   If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?    P(Queen of Hearts) = 1\/52, only one card in the deck meets this condition. This has a low probability of occurring.   "
 },
 {
   "id": "subsec-ProbRules1-10",
@@ -3193,57 +3193,57 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.2.6",
   "title": "not Queen of Hearts.",
-  "body": " not Queen of Hearts  If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?   P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.   "
+  "body": " not Queen of Hearts   If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?    P(Queen of Hearts) = 1\/52, thus P(not Queen of Hearts) = 1-1\/52 = 51\/52 is the complement which is likely to happen.   "
 },
 {
-  "id": "ProbRules-6",
+  "id": "subsec-ProbabilityRules-3",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-6",
+  "url": "ProbRules.html#subsec-ProbabilityRules-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "mutually exclusive "
 },
 {
-  "id": "ProbRules-12",
+  "id": "subsec-ProbabilityRules-9",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-12",
+  "url": "ProbRules.html#subsec-ProbabilityRules-9",
   "type": "Checkpoint",
   "number": "4.2.7",
   "title": "Queen or King.",
-  "body": " Queen or King  If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?   P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538   "
+  "body": " Queen or King   If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?    P(Queen or King) = 4\/52 +4\/52 = 8\/52 = .01538   "
 },
 {
-  "id": "ProbRules-13",
+  "id": "subsec-ProbabilityRules-10",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-13",
+  "url": "ProbRules.html#subsec-ProbabilityRules-10",
   "type": "Checkpoint",
   "number": "4.2.8",
   "title": "Face Card.",
-  "body": " Face Card  If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?   P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308   "
+  "body": " Face Card   If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?    P(Jack or Queen or King) = 4\/52 +4\/52 +4\/52 = 12\/52 = 0.2308   "
 },
 {
-  "id": "ProbRules-19",
+  "id": "subsec-ProbabilityRules-16",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-19",
+  "url": "ProbRules.html#subsec-ProbabilityRules-16",
   "type": "Checkpoint",
   "number": "4.2.9",
   "title": "Five or Diamond.",
-  "body": " Five or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?   P(5 or diamond) = 4\/52 +13\/52 – 1\/52 = 16\/52 = 0.3077   "
+  "body": " Five or Diamond   If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?    P(5 or diamond) = 4\/52 +13\/52 - 1\/52 = 16\/52 = 0.3077   "
 },
 {
-  "id": "ProbRules-20",
+  "id": "subsec-ProbabilityRules-17",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-20",
+  "url": "ProbRules.html#subsec-ProbabilityRules-17",
   "type": "Checkpoint",
   "number": "4.2.10",
   "title": "Five or Six or Diamond.",
-  "body": " Five or Six or Diamond  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?   P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 – 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups   "
+  "body": " Five or Six or Diamond   If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?    P(5 or 6 or diamond) = 4\/52 +4\/52 + 13\/52 - 2\/52 = 23\/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups   "
 },
 {
-  "id": "ProbRules-22",
+  "id": "subsec-ProbabilityRules-19",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-22",
+  "url": "ProbRules.html#subsec-ProbabilityRules-19",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3277,63 +3277,54 @@ var ptx_lunr_docs = [
   "body": " Iron Mountain Auto Sales Table   First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .   "
 },
 {
-  "id": "ProbRules-28",
+  "id": "subsec-ProbabilityRules-25",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-28",
+  "url": "ProbRules.html#subsec-ProbabilityRules-25",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Examples: "
 },
 {
-  "id": "ProbRules-36",
+  "id": "subsec-ProbabilityRules-33",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-36",
+  "url": "ProbRules.html#subsec-ProbabilityRules-33",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Checkpoints: "
 },
 {
-  "id": "ProbRules-37",
+  "id": "subsec-ProbabilityRules-34",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-37",
+  "url": "ProbRules.html#subsec-ProbabilityRules-34",
   "type": "Checkpoint",
   "number": "4.2.14",
   "title": "Compact.",
-  "body": " Compact  The car is compact.   P(compact) = 150\/300 = 0.5 or 50%   "
+  "body": " Compact   The car is compact.    P(compact) = 150\/300 = 0.5 or 50%   "
 },
 {
-  "id": "ProbRules-38",
+  "id": "subsec-ProbabilityRules-35",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-38",
+  "url": "ProbRules.html#subsec-ProbabilityRules-35",
   "type": "Checkpoint",
   "number": "4.2.15",
   "title": "domestic or sedan.",
-  "body": " domestic or sedan  The car is domestic or a sedan.   P(domestic or a sedan) = 210\/300+ 65\/300 – 45\/300 = 230\/300 = 0.767 or 76.7%%   "
+  "body": " domestic or sedan   The car is domestic or a sedan.    P(domestic or a sedan) = 210\/300+ 65\/300 - 45\/300 = 230\/300 = 0.767 or 76.7%%   "
 },
 {
-  "id": "ProbRules-39",
+  "id": "subsec-ProbabilityRules-36",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-39",
+  "url": "ProbRules.html#subsec-ProbabilityRules-36",
   "type": "Checkpoint",
   "number": "4.2.16",
   "title": "Domestic SUV.",
-  "body": " Domestic SUV  The car is domestic and SUV.   P(compact) = 65\/300 = 0.217 or 21.7%   "
+  "body": " Domestic SUV   The car is domestic and SUV.    P(domestic and SUV) = 65\/300 = 0.217 or 21.7%   "
 },
 {
-  "id": "ProbRules-41",
+  "id": "subsec-ProbRulesPractice-2",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-41",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Practice Problems "
-},
-{
-  "id": "ProbRules-42",
-  "level": "2",
-  "url": "ProbRules.html#ProbRules-42",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3349,72 +3340,72 @@ var ptx_lunr_docs = [
   "body": " Hockey Hall of Fame Table   First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .   "
 },
 {
-  "id": "ProbRules-45",
+  "id": "subsec-ProbRulesPractice-5",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-45",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-5",
   "type": "Checkpoint",
   "number": "4.2.18",
   "title": "Defense.",
-  "body": " Defense  What is the probability that an inductee chosen at random is a defenseman?   P(defenseman) = 89\/298 = .2987 or 29.9%   "
+  "body": " Defense   What is the probability that an inductee chosen at random is a defenseman?    P(defenseman) = 89\/298 = .2987 or 29.9%   "
 },
 {
-  "id": "ProbRules-46",
+  "id": "subsec-ProbRulesPractice-6",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-46",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-6",
   "type": "Checkpoint",
   "number": "4.2.19",
   "title": "Canadian.",
-  "body": " Canadian  What is the probability that an inductee chosen at random is not Canadian?   P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%   "
+  "body": " Canadian   What is the probability that an inductee chosen at random is not Canadian?    P(not Canadian) = 1 – 251\/298 = 47\/298 = .1577 or 15.8%   "
 },
 {
-  "id": "ProbRules-47",
+  "id": "subsec-ProbRulesPractice-7",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-47",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-7",
   "type": "Checkpoint",
   "number": "4.2.20",
   "title": "Canadian goalie.",
-  "body": " Canadian goalie  What is the probability that a player chosen at random is a goalie born in Canada   P(goalie and Canadian) = 36\/298 = .1208 or 12.1%   "
+  "body": " Canadian goalie   What is the probability that a player chosen at random is a goalie born in Canada    P(goalie and Canadian) = 36\/298 = .1208 or 12.1%   "
 },
 {
-  "id": "ProbRules-48",
+  "id": "subsec-ProbRulesPractice-8",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-48",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-8",
   "type": "Checkpoint",
   "number": "4.2.21",
   "title": "Canada or Defense.",
-  "body": " Canada or Defense  What is the probability that a player chosen at random is either born in Canada or a defenseman?   P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926   "
+  "body": " Canada or Defense   What is the probability that a player chosen at random is either born in Canada or a defenseman?    P(Canada or defenseman) = 251\/298 + 89\/298 – 74\/398 = 266\/298 = .8926   "
 },
 {
-  "id": "ProbRules-49",
+  "id": "subsec-ProbRulesPractice-9",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-49",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-9",
   "type": "Checkpoint",
   "number": "4.2.22",
   "title": "Defense or Goalie.",
-  "body": " Defense or Goalie  What is the probability that the player chosen at random either plays defense or is a goalie   P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.   "
+  "body": " Defense or Goalie   What is the probability that the player chosen at random either plays defense or is a goalie    P(defense or goalie) = 89\/298 + 39\/298 = 128\/298 = .4295 since mutually exclusive events.   "
 },
 {
-  "id": "ProbRules-50",
+  "id": "subsec-ProbRulesPractice-10",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-50",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-10",
   "type": "Checkpoint",
   "number": "4.2.23",
   "title": "Canada plays Defense.",
-  "body": " Canada plays Defense  What is the probability that a Canadian inductee plays defense?   P(defense | Canada) = 74\/251 = .2948   "
+  "body": " Canada plays Defense   What is the probability that a Canadian inductee plays defense?    P(defense | Canada) = 74\/251 = .2948   "
 },
 {
-  "id": "ProbRules-51",
+  "id": "subsec-ProbRulesPractice-11",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-51",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-11",
   "type": "Checkpoint",
   "number": "4.2.24",
   "title": "Defense is Canadian.",
-  "body": " Defense is Canadian  What is the probability that an inductee who plays defense is Canadian?   P(Canda | defense) = 74\/89 = .8315   "
+  "body": " Defense is Canadian   What is the probability that an inductee who plays defense is Canadian?    P(Canada | defense) = 74\/89 = .8315   "
 },
 {
-  "id": "ProbRules-52",
+  "id": "subsec-ProbRulesPractice-12",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-52",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-12",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3430,67 +3421,67 @@ var ptx_lunr_docs = [
   "body": " Blood Type Table   First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.   "
 },
 {
-  "id": "ProbRules-55",
+  "id": "subsec-ProbRulesPractice-15",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-55",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-15",
   "type": "Checkpoint",
   "number": "4.2.26",
   "title": "negative.",
-  "body": " negative  What is the probability that a person in the sample chosen at random has a negative Rh factor?   P(negative) 58\/360 = .161 have negative blood   "
+  "body": " negative   What is the probability that a person in the sample chosen at random has a negative Rh factor?    P(negative) 58\/360 = .161 have negative blood   "
 },
 {
-  "id": "ProbRules-56",
+  "id": "subsec-ProbRulesPractice-16",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-56",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-16",
   "type": "Checkpoint",
   "number": "4.2.27",
   "title": "not AB.",
-  "body": " not AB  What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?   use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958   "
+  "body": " not AB   What is the probability that a person in the sample chosen at random is not a universal plasma donor (universal plasma donors have Type AB blood)?    use the complement thus P(not AB) = 1 – 15\/360 = 345\/360 = .958   "
 },
 {
-  "id": "ProbRules-57",
+  "id": "subsec-ProbRulesPractice-17",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-57",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-17",
   "type": "Checkpoint",
   "number": "4.2.28",
   "title": "B+.",
-  "body": " B+  What is the probability that a person in the sample chosen at random has type B and positive Rh factor?   intersection P(B and pos) = 32\/360 = .089   "
+  "body": " B+   What is the probability that a person in the sample chosen at random has type B and positive Rh factor?    intersection P(B and pos) = 32\/360 = .089   "
 },
 {
-  "id": "ProbRules-58",
+  "id": "subsec-ProbRulesPractice-18",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-58",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-18",
   "type": "Checkpoint",
   "number": "4.2.29",
   "title": "A or negative.",
-  "body": " A or negative  What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?   P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive   "
+  "body": " A or negative   What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?    P(A or negative) = 144\/360 + 58\/360 – 22\/360 = 180\/360=.500 subtract the intersection since not mutually exclusive   "
 },
 {
-  "id": "ProbRules-59",
+  "id": "subsec-ProbRulesPractice-19",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-59",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-19",
   "type": "Checkpoint",
   "number": "4.2.30",
   "title": "A or B.",
-  "body": " A or B  What is the probability that a person in the sample chosen at random has blood type A or blood type B?   P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive   "
+  "body": " A or B   What is the probability that a person in the sample chosen at random has blood type A or blood type B?    P( A or B) = 144\/360 + 39\/390 = 183\/360 = .508 since mutually exclusive   "
 },
 {
-  "id": "ProbRules-60",
+  "id": "subsec-ProbRulesPractice-20",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-60",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-20",
   "type": "Checkpoint",
   "number": "4.2.31",
   "title": "Blood.",
-  "body": " Blood  What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?   P(O | neg) = 25\/58 = .431   "
+  "body": " Blood   What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?    P(O | neg) = 25\/58 = .431   "
 },
 {
-  "id": "ProbRules-61",
+  "id": "subsec-ProbRulesPractice-21",
   "level": "2",
-  "url": "ProbRules.html#ProbRules-61",
+  "url": "ProbRules.html#subsec-ProbRulesPractice-21",
   "type": "Checkpoint",
   "number": "4.2.32",
   "title": "Blood.",
-  "body": " Blood  What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?   P(neg | O) = 25\/162 = .154   "
+  "body": " Blood   What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?    P(neg | O) = 25\/162 = .154   "
 },
 {
   "id": "CondProb",
@@ -3850,7 +3841,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Probability Distribution",
-  "body": " Probability Distribution   In this section we will learn how to create a probability distribution, find the mean and standard deviation for a probability distribution, and use technology to find these statistics.     At the end of this section you will able to:    Create a probability distribution.    Calculate the events from a probability distribution.    Calculate the mean and standard deviation for probability distributions      Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.  We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values.   Pre-Class Activity: Dice Data   Each person will roll a die 50 times and keep track of the number that lands face up each time. It's handy using a tally for each dice value. Then find the total frequency for each dice value and then its corresponding probability. There is a link for some virtual dice below.  Online Dice: Virtual Dice   Below is my data for 50 dice rolls.   Sample of dice data table   lists dice number and probabilities.    Next, we want to graph the frequency or the probabilities to see the shape of the distribution. Using a graphing calculator, enter the dice number in and the frequency in . Use the [STAT] button and select option 1: Edit [enter] to enter the data.   Entering dice data into calculator   Entering dice data into calculator.    Create a histogram on the calculator. Use [2nd] [y =] button for the [Stat Plot] and select the first option and [enter]. Make sure ON is highlight or hit [enter] to turn on the graph. Arrow down once to TYPE and scroll over to the histogram which is the third image and hit [enter], then identify where the data is located, Xlist: and Freq: . Make sure to adjust the [Window] to scale for x = [0,7] and y = [0, largest frequency] and then [graph]. (If you do not have a graphing calculator you can construct a bar graph by hand. For StatKey you will have to list all 50 dice rolls individually.)   Graph of dice frequencies   Histogram of dice frequencies is approximately uniform.    How would you describe the shape of your distribution? What does that tell you about the probability of each event? We will compare your distribution in class.   Understanding the Basics  Let us review some vocabulary that we will be using in this section. Recall from Chapter 1 that a variable was defined as a characteristic that can assume different values. Since we are focusing on probability we will use random variables.  A random variable is a variable whose values are determined by chance. The value of your dice roll was random. Each student in class will likely have differing results.   Discrete variables have values that can be counted (whole numbers). The number of sixes that was rolled is discrete. The number of tables in each classroom is also discrete. While continuous variables can assume any real number value. The temperature outside does not jump from 75 to 76, it can be any temperature in between these endpoints such as 75.6 to 75.83.  When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically.    A discrete probability distribution consists of the values a random variable can assume and the corresponding probabilities of those values.    If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth.   Discrete Variables   Which of the following variables are discrete? Select all statements that apply.      The number of energy drinks you purchased each day.    Yes, counting the number of drinks is discrete.      Time to complete the Bolder Boulder 10K run..    Time is continuous. The 2025 winning time was 28:21 minutes.      Speed of swimmers in 100 m breaststroke.    Speed is a continuous rate.      Number of clients an insurance agent has.    Yes, counting the number of clients is discrete.       Continuous Variables   Which of the following variables are continuous? Select all statements that apply.      The weight of players on the football team.    Yes, weight is continuous.      The number of credit hours students are taking this semester.    Credit hours will be discrete.      The number of pets students have.    The number of pets is discrete.      Speed of swimmers in 100 m breaststroke.    Speed of swimmers will be continuous.       Probability Distribution  Determine whether the following table is an appropriate probability distribution. Explain why or why not.    probabilities of -.05, 0.18, 0.28, 1.22.     No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1.     Probability Distribution  Is the following table an appropriate probability distribution? Explain why or why not.    probabilities of .35, 0.25, 0.15, .25.     Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1.      Summary Statistics  The next step in our adventure with probability distributions is to find the summary statistics – the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time.  So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move – on average, for the game?  If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data.  How can we do this theoretically? First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21\/6 = 3.5 spaces on average. Now let’s look at the college version. We create the theoretical probability distribution table – we list the dice numbers and their probabilities. We are going to multiply each event by it’s probability and then add them all together.   Theoretical dice distribution   lists dice number and theoretical values of 1\/6.    The mean is       The mean of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability. where each X is one of the outcomes and each P(X) is the corresponding probability.    Now let's find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together.    dice probabilities of .20, .18, .16, .14, .12, .20    Mean is   Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.    To find the variance , subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products. where each represents the outcome, is the mean, and is the corresponding probability.    Find the variance for 50 dice rolls.       The standard deviation is the square root of the variance. It measures how spread out the values are from the mean.     Find the standard deviation for 50 dice rolls.     From the center of 3.4 most values are within 1.8 of it.     Statistics  A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.    there are 0 to 4 credit cards with probabilities of ..08, .18, .27, .44, .03.    Find the mean, variance, and standard deviation for the probability distribution.   Mean is     Variance is     Standard deviation is       Expected Value  Another concept related to the mean for a probability distribution is that of the expected value or expectations over time. Expected values can be used in various types of games of chance and insurance. Note that the expected value formula is the same as the theoretical mean formula.    The expected value of a discrete probability distribution is the theoretical average of the variable. It is the net gain of each outcome multiplied by its probability.     The Greeley Fire Department wishes to raise $5000 to purchase some new equipment. They decide to conduct a raffle. A cash prize of $5000 is to be awarded. If 2500 tickets are sold at $5 each find the expected gain per ticket. Are they selling enough tickets to reach their goal?  The first step is creating the probability distribution table. We want the net gain and the probability for each event. We have two main events: the person wins the raffle or loses. Since each person must pay $5 for the ticket we take the prize of 5000-5=4995 as the net profit outcome for a win. If the person loses, they are out the 5 thus -5 is the outcome. Since there is just one winner, the probability is 1\/2500 since 2500 tickets are sold. There are 2499 losing tickets thus the probability of losing is 2499\/2500.    win 1\/2500 and lose 2499\/2500.    The expected value is which means if a person buys a raffle ticket, they lose on average $3 per ticket.  This means the fire department gains $3 per ticket. Therefore, the Greeley Fire department gains 3(2500) = $7500 profit from the raffle.  Another way to look at it is $5(2500 tickets) - $5000 prize = $7500 profit for the fire department. So either way they will reach their goal.     Expected Value  If one thousand tickets are sold at $1 each in a raffle for a TV valued at $350, what is the expected value if you purchase one ticket?   The net win is $349 with a probability of 1\/1000. If you lose, the outcome is -1 with a probability of 999\/1000. Therefore, the expected value . You lose about $.65 for each ticket.      Using Technology  Lucky for us, we can use technology to help us find the summary statistics for a probability distribution. Let’s revisit the 50 dice rolls.    dice probabilities of .20, .18, .16, .14, .12, .20    To enter the data use [STAT] button and under EDIT select option 1: Edit [enter] to input the values. Enter the dice number in L1 and the probability in L2.    input values into calculator    To find the summary statistics begin with the [STAT] button, use the arrow to the right once to highlight CALC across the top and select option 1: 1-var Stats and [enter]. Identify where the data is located as [2nd] 1 [,] [2nd] 2 [enter] on the TI83. On the TI84 the Xlist is L1 and Freq is L2 and then Calculate.   Summary statistics on calculator   summary values on calculator    This gives the mean 3.4 and population standard deviation 1.8 (this is the only time we will use σx). To get the variance you will need to square the standard deviation, thus      Statistics  A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.     Credit cards  0  1  2  3  4    P(X)  0.08  0.18  0.27  0.44  0.03     Find the mean, variance, and standard deviation for the probability distribution.   Mean is and the standard deviation is and the variance is           Random Phones Investigation  Four students drop off their smartphones at a testing center. One day, as a cruel joke, the testing center staff member decides to return the phones to their owners completely at random. How many phones were returned to the correct student?  Take a moment to think how can you create a way to simulate a random assignment of four phones to four students.  Break into groups of four or five people. Give each person a notecard to represent the phone. Have each student write their name on the card. Have the students flip the cards so you cannot see the names, mix them up, and randomly pass them out to the group of four. The fifth person can act as an evil staff member. Record how many people got the correct card\/phone back. Repeat 5 times for the simulation.  Perform a total of five random assignments, recording the information on a table like below.    table listing 5 trials and number of correct matches.    Here is a sample of five simulations from a group of students.    listing 1, 2, 0, 0, 0, 4 as number of correct matches.    Next will combine the class data for the empirical estimate.  The discrete random variable can be called X where X represents the number of correct phones returned. For example, if X=2 that means two phones were correctly returned to the owners (and 2 phones were not correctly returned).  Here is an example of the results of the random assignments from a class.   Combined totals   totals for 0 correct match as 14, 4 for 1 match, 6 has 2 matches, none for three, and 1 had four matches out of 25 trials.    What is the empirical estimate of the probability of all four students getting the correct phone?  Based on this sample of 5 groups of students with five trials each, the probability of all four students getting the correct phone back was 1\/25 = 4%. Does this seem likely to you?  Now let us analyze this theoretically. How many ways can we pass out the four phones? Take a minute to think about how to do this.  We are looking at a permutation of four items where the order matters. Thus, there are unique ways to pass out the four phones.  Below is a theoretical sample space for the random variable X for number of correct matches when four phones are randomly returned to students. We can present these outcomes in a list where each item is a different ordering of the numbers 1 through 4 which represents the order with which the phones are returned to the students.  We can see there are 24 possible ways to randomly assign the four phones to students. How many received the correct phones with these permutations?   List of outcomes   lists the 24 permutations.    Identify the number of correct phones returned: 1234 means all four returned correctly; 1243 means 1 and 2 correct but 3 and 4 were switched thus 2 correct. The item 1324 means 1 and 4 were returned correctly but 2 and 3 were switched, thus 2 correct.  Determine how many were returned correctly in the list above and make a list of the number of correctly returned phones for the 24 possible outcomes.  The theoretical sample space for the random variable X for number of correct matches when four phones are randomly returned to the students is given below:   List of correct matches   lists correct number of matches for the 24 permutations.    We can summarize the information into a frequency table where represents the correct number of phones returned:   Frequency of correct matches   lists correct number of matches for the 24 permutations.    Which can be converted to a probability distribution table for the random variable X for the number of correct matches when the phones are randomly returned out of the sample space of 24 outcomes.   Probability of correct matches   lists probability of correct number of matches for the 24 permutations.    Now we can calculate the mean and standard deviation for the number of correct matches using the theoretical probability distribution.  Recall that for a random variable X with probability function P(X), the mean is thus,     For a random variable X with probability function p(x), and mean μ, the variance is     Therefore the standard deviation is     Thus the mean is 1 correct match with a standard deviation of 1.  Using technology, enter the number of correct matches in L1 and the corresponding probability in L2. Using the STAT button use the arrow once to the right to CALC and select 1: 1VarStat and input the data location as L1  ,  L2 for the TI83 Plus.   Calculator images   calculator images.     "
+  "body": " Probability Distribution   In this section we will learn how to create a probability distribution, find the mean and standard deviation for a probability distribution, and use technology to find these statistics.     At the end of this section you will able to:    Create a probability distribution.    Calculate the events from a probability distribution.    Calculate the mean and standard deviation for probability distributions      Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.  We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values.   Pre-Class Activity: Dice Data   Each person will roll a die 50 times and keep track of the number that lands face up each time. It's handy using a tally for each dice value. Then find the total frequency for each dice value and then its corresponding probability. There is a link for some virtual dice below.  Online Dice: Virtual Dice   Below is my data for 50 dice rolls.   Sample of dice data table   lists dice number and probabilities.    Next, we want to graph the frequency or the probabilities to see the shape of the distribution. Using a graphing calculator, enter the dice number in and the frequency in . Use the [STAT] button and select option 1: Edit [enter] to enter the data.   Entering dice data into calculator   Entering dice data into calculator.    Create a histogram on the calculator. Use [2nd] [y =] button for the [Stat Plot] and select the first option and [enter]. Make sure ON is highlight or hit [enter] to turn on the graph. Arrow down once to TYPE and scroll over to the histogram which is the third image and hit [enter], then identify where the data is located, Xlist: and Freq: . Make sure to adjust the [Window] to scale for x = [0,7] and y = [0, largest frequency] and then [graph]. (If you do not have a graphing calculator you can construct a bar graph by hand. For StatKey you will have to list all 50 dice rolls individually.)   Graph of dice frequencies   Histogram of dice frequencies is approximately uniform.    How would you describe the shape of your distribution? What does that tell you about the probability of each event? We will compare your distribution in class.   Understanding the Basics  Let us review some vocabulary that we will be using in this section. Recall from Chapter 1 that a variable was defined as a characteristic that can assume different values. Since we are focusing on probability we will use random variables.  A random variable is a variable whose values are determined by chance. The value of your dice roll was random. Each student in class will likely have differing results.   Discrete variables have values that can be counted (whole numbers). The number of sixes that was rolled is discrete. The number of tables in each classroom is also discrete. While continuous variables can assume any real number value. The temperature outside does not jump from 75 to 76, it can be any temperature in between these endpoints such as 75.6 to 75.83.  When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically.    A discrete probability distribution consists of the values a random variable can assume and the corresponding probabilities of those values.    If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth.   Discrete Variables   Which of the following variables are discrete? Select all statements that apply.      The number of energy drinks you purchased each day.    Yes, counting the number of drinks is discrete.      Time to complete the Bolder Boulder 10K run..    Time is continuous. The 2025 winning time was 28:21 minutes.      Speed of swimmers in 100 m breaststroke.    Speed is a continuous rate.      Number of clients an insurance agent has.    Yes, counting the number of clients is discrete.       Continuous Variables   Which of the following variables are continuous? Select all statements that apply.      The weight of players on the football team.    Yes, weight is continuous.      The number of credit hours students are taking this semester.    Credit hours will be discrete.      The number of pets students have.    The number of pets is discrete.      Speed of swimmers in 100 m breaststroke.    Speed of swimmers will be continuous.       Probability Distribution  Determine whether the following table is an appropriate probability distribution. Explain why or why not.    probabilities of -.05, 0.18, 0.28, 1.22.     No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1.     Probability Distribution  Is the following table an appropriate probability distribution? Explain why or why not.    probabilities of .35, 0.25, 0.15, .25.     Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1.      Summary Statistics  The next step in our adventure with probability distributions is to find the summary statistics - the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time.  So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move - on average, for the game?  If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data.  How can we do this theoretically? First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21\/6 = 3.5 spaces on average. Now let's look at the college version. We create the theoretical probability distribution table - we list the dice numbers and their probabilities. We are going to multiply each event by its probability and then add them all together.   Theoretical dice distribution   lists dice number and theoretical values of 1\/6.    The mean is       The mean of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability. where each X is one of the outcomes and each P(X) is the corresponding probability.    Now let's find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together.    dice probabilities of .20, .18, .16, .14, .12, .20    Mean is   Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.    To find the variance , subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products. where each represents the outcome, is the mean, and is the corresponding probability.    Find the variance for 50 dice rolls.       The standard deviation is the square root of the variance. It measures how spread out the values are from the mean.     Find the standard deviation for 50 dice rolls.     From the center of 3.4 most values are within 1.8 of it.     Statistics  A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.    there are 0 to 4 credit cards with probabilities of .08, .18, .27, .44, .03.    Find the mean, variance, and standard deviation for the probability distribution.   Mean is     Variance is     Standard deviation is       Expected Value  Another concept related to the mean for a probability distribution is that of the expected value or expectations over time. Expected values can be used in various types of games of chance and insurance. Note that the expected value formula is the same as the theoretical mean formula.    The expected value of a discrete probability distribution is the theoretical average of the variable. It is the net gain of each outcome multiplied by its probability.     The Greeley Fire Department wishes to raise $5000 to purchase some new equipment. They decide to conduct a raffle. A cash prize of $5000 is to be awarded. If 2500 tickets are sold at $5 each find the expected gain per ticket. Are they selling enough tickets to reach their goal?  The first step is creating the probability distribution table. We want the net gain and the probability for each event. We have two main events: the person wins the raffle or loses. Since each person must pay $5 for the ticket we take the prize of 5000-5=4995 as the net profit outcome for a win. If the person loses, they are out the 5 thus -5 is the outcome. Since there is just one winner, the probability is 1\/2500 since 2500 tickets are sold. There are 2499 losing tickets thus the probability of losing is 2499\/2500.    win 1\/2500 and lose 2499\/2500.    The expected value is which means if a person buys a raffle ticket, they lose on average $3 per ticket.  This means the fire department gains $3 per ticket. Therefore, the Greeley Fire department gains 3(2500) = $7500 profit from the raffle.  Another way to look at it is $5(2500 tickets) - $5000 prize = $7500 profit for the fire department. So either way they will reach their goal.     Expected Value  If one thousand tickets are sold at $1 each in a raffle for a TV valued at $350, what is the expected value if you purchase one ticket?   The net win is $349 with a probability of 1\/1000. If you lose, the outcome is -1 with a probability of 999\/1000. Therefore, the expected value . You lose about $.65 for each ticket.      Using Technology  Lucky for us, we can use technology to help us find the summary statistics for a probability distribution. Let’s revisit the 50 dice rolls.    dice probabilities of .20, .18, .16, .14, .12, .20    To enter the data use [STAT] button and under EDIT select option 1: Edit [enter] to input the values. Enter the dice number in L1 and the probability in L2.    input values into calculator    To find the summary statistics begin with the [STAT] button, use the arrow to the right once to highlight CALC across the top and select option 1: 1-var Stats and [enter]. Identify where the data is located as [2nd] 1 [,] [2nd] 2 [enter] on the TI83. On the TI84 the Xlist is L1 and Freq is L2 and then Calculate.   Summary statistics on calculator   summary values on calculator    This gives the mean 3.4 and population standard deviation 1.8 (this is the only time we will use σx). To get the variance you will need to square the standard deviation, thus      Statistics  A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.     Credit cards  0  1  2  3  4    P(X)  0.08  0.18  0.27  0.44  0.03     Find the mean, variance, and standard deviation for the probability distribution.   Mean is and the standard deviation is and the variance is           Random Phones Investigation  Four students drop off their smartphones at a testing center. One day, as a cruel joke, the testing center staff member decides to return the phones to their owners completely at random. How many phones were returned to the correct student?  Take a moment to think how can you create a way to simulate a random assignment of four phones to four students.  Break into groups of four or five people. Give each person a notecard to represent the phone. Have each student write their name on the card. Have the students flip the cards so you cannot see the names, mix them up, and randomly pass them out to the group of four. The fifth person can act as an evil staff member. Record how many people got the correct card\/phone back. Repeat 5 times for the simulation.  Perform a total of five random assignments, recording the information on a table like below.    table listing 5 trials and number of correct matches.    Here is a sample of five simulations from a group of students.    listing 1, 2, 0, 0, 0, 4 as number of correct matches.    Next will combine the class data for the empirical estimate.  The discrete random variable can be called X where X represents the number of correct phones returned. For example, if X=2 that means two phones were correctly returned to the owners (and 2 phones were not correctly returned).  Here is an example of the results of the random assignments from a class.   Combined totals   totals for 0 correct match as 14, 4 for 1 match, 6 has 2 matches, none for three, and 1 had four matches out of 25 trials.    What is the empirical estimate of the probability of all four students getting the correct phone?  Based on this sample of 5 groups of students with five trials each, the probability of all four students getting the correct phone back was 1\/25 = 4%. Does this seem likely to you?  Now let us analyze this theoretically. How many ways can we pass out the four phones? Take a minute to think about how to do this.  We are looking at a permutation of four items where the order matters. Thus, there are unique ways to pass out the four phones.  Below is a theoretical sample space for the random variable X for number of correct matches when four phones are randomly returned to students. We can present these outcomes in a list where each item is a different ordering of the numbers 1 through 4 which represents the order with which the phones are returned to the students.  We can see there are 24 possible ways to randomly assign the four phones to students. How many received the correct phones with these permutations?   List of outcomes   lists the 24 permutations.    Identify the number of correct phones returned: 1234 means all four returned correctly; 1243 means 1 and 2 correct but 3 and 4 were switched thus 2 correct. The item 1324 means 1 and 4 were returned correctly but 2 and 3 were switched, thus 2 correct.  Determine how many were returned correctly in the list above and make a list of the number of correctly returned phones for the 24 possible outcomes.  The theoretical sample space for the random variable X for number of correct matches when four phones are randomly returned to the students is given below:   List of correct matches   lists correct number of matches for the 24 permutations.    We can summarize the information into a frequency table where represents the correct number of phones returned:   Frequency of correct matches   lists correct number of matches for the 24 permutations.    Which can be converted to a probability distribution table for the random variable X for the number of correct matches when the phones are randomly returned out of the sample space of 24 outcomes.   Probability of correct matches   lists probability of correct number of matches for the 24 permutations.    Now we can calculate the mean and standard deviation for the number of correct matches using the theoretical probability distribution.  Recall that for a random variable X with probability function P(X), the mean is thus,     For a random variable X with probability function p(x), and mean μ, the variance is     Therefore the standard deviation is     Thus the mean is 1 correct match with a standard deviation of 1.  Using technology, enter the number of correct matches in L1 and the corresponding probability in L2. Using the STAT button use the arrow once to the right to CALC and select 1: 1VarStat and input the data location as L1  ,  L2 for the TI83 Plus.   Calculator images   calculator images.     "
 },
 {
   "id": "ProbDist-3",
@@ -3934,9 +3925,9 @@ var ptx_lunr_docs = [
   "body": " Discrete Variables   Which of the following variables are discrete? Select all statements that apply.      The number of energy drinks you purchased each day.    Yes, counting the number of drinks is discrete.      Time to complete the Bolder Boulder 10K run..    Time is continuous. The 2025 winning time was 28:21 minutes.      Speed of swimmers in 100 m breaststroke.    Speed is a continuous rate.      Number of clients an insurance agent has.    Yes, counting the number of clients is discrete.     "
 },
 {
-  "id": "ProbContin-matching",
+  "id": "ProbContinuous-matching",
   "level": "2",
-  "url": "ProbDist.html#ProbContin-matching",
+  "url": "ProbDist.html#ProbContinuous-matching",
   "type": "Checkpoint",
   "number": "4.4.6",
   "title": "Continuous Variables.",
@@ -4012,7 +4003,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.4.16",
   "title": "Statistics.",
-  "body": " Statistics  A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.    there are 0 to 4 credit cards with probabilities of ..08, .18, .27, .44, .03.    Find the mean, variance, and standard deviation for the probability distribution.   Mean is     Variance is     Standard deviation is    "
+  "body": " Statistics  A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found.    there are 0 to 4 credit cards with probabilities of .08, .18, .27, .44, .03.    Find the mean, variance, and standard deviation for the probability distribution.   Mean is     Variance is     Standard deviation is    "
 },
 {
   "id": "def-ExpectedValue",
@@ -4777,7 +4768,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Bootstrap Distributions",
-  "body": " Bootstrap Distributions   Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.     At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean.    Construct and interpret a bootstrap distribution for proportions.      Bootstrap Distributions for Means  Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.  In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample - by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.  Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.  Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.  What is the typical MPGe of newer models of EVs?  To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:    Tesla Model X Plaid - 91 MPGe    Jaguar I-Pace EV400 - 85 MPGe    Polestar 2 Single Motor - 107 MPGe    Lucid Air Pure AWD - 140 MPGe    Lordstown Endurance - 48 MPGe    We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.  To generate a bootstrap distribution, we:    Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.    Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.    Collect the statistics for many bootstrap samples to create a bootstrap distribution.    To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.  The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.  Give example  To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.    Using Technology: Mean  Open StatKey and in the middle column under Bootstrap Confidence Intervals we are going to select CI for Single Mean .   Bootstrap Menu   first option in second column is bootstrap for the mean.    Click on the Upload File button and identify the data file: EV2023-Sample5 and select the variable CombMPGe .   Bootstrap for Mean   fourth option is to upload the file.    Interpreting StatKey: On the top right side you will see the Original Sample information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.  If we click on the Generate 1 Sample button, then on the bottom right side we will see the five randomly selected cars with replacement under the Bootstrap Sample . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.   Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.    Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.   Exploration   Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.    As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.      Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.      Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.    Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.  When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using statistics  where SE denotes the standard error of the statistic estimated from the bootstrap distribution.  Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives             We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.  If we click on Two Tail we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.   Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.    If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.   Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.     Exploration   Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.    Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.      Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.     Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.   As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.     What happens to the standard error as you increase the number of samples.   The standard error does not change much by adding generating additional samples.      Bootstrap Distributions for Proportions  Suppose you want to find what proportion of Skittles are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution.  Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape.   Bootstrap For 10 Bags   proportions between 12.5% and 25% grape .    This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%.   Bootstrap For 250 Bags   proportions between 8% and 32% grape with higher frequencies at the center near 0.183.    This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%.    Using Technology: Proportions  Using StatKey to construct bootstrap distributions from a single proportion.  Launch StatKey , and from the center column under Bootstrap Confidence Intervals , select the second option CI for Single Proportion .   StatKey Menu   select the second option under Bootstrap Confidence Intervals .    Click on Edit Data and enter the count of 12 grape from a sample size of 65 candies and then click OK    Edit Proportion   use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .    Click on Generate 1 Sample . On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends.   Generate Bootstrap Sample   one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .    Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4\/65=0.062 to 23\/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047.   Generate Bootstrap Distribution   500 dots representing the proportion of grapes for each bag .    If you click on Two-Tail it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution.   Bootstrap Confidence Interval   Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .      Practice Problems  samples   "
+  "body": " Bootstrap Distributions   Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.     At the end of this section you will be able to:     Construct and interpret a bootstrap distribution for the mean.    Construct and interpret a bootstrap distribution for proportions.      Bootstrap Distributions for Means  Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.  In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample - by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.  Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.  Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.  What is the typical MPGe of newer models of EVs?  To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:    Tesla Model X Plaid - 91 MPGe    Jaguar I-Pace EV400 - 85 MPGe    Polestar 2 Single Motor - 107 MPGe    Lucid Air Pure AWD - 140 MPGe    Lordstown Endurance - 48 MPGe    We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.  To generate a bootstrap distribution, we:    Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.    Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.    Collect the statistics for many bootstrap samples to create a bootstrap distribution.    To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.  The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.  Give example  To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.    Using Technology: Mean  Open StatKey and in the middle column under Bootstrap Confidence Intervals we are going to select CI for Single Mean .   Bootstrap Menu   first option in second column is bootstrap for the mean.    Click on the Upload File button and identify the data file: EV2023-Sample5 and select the variable CombMPGe .   Bootstrap for Mean   fourth option is to upload the file.    Interpreting StatKey: On the top right side you will see the Original Sample information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.  If we click on the Generate 1 Sample button, then on the bottom right side we will see the five randomly selected cars with replacement under the Bootstrap Sample . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.   Bootstrap MPGe for 501 Samples   dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.    Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.   Exploration   Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.    As you generate more samples, what happens to the shape of the distribution?   Notice how the distribution becomes more bell shaped and symmetric with more samples.      Where is the center of the distribution?   The center of the bootstrap distribution is approximately the same as the original sample mean.      Compare the standard deviation of the original sample to the standard error of the distribution.   The standard error is smaller since there is less variation with the distribution than a single sample.    Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.  When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using statistics  where SE denotes the standard error of the statistic estimated from the bootstrap distribution.  Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives             We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.  If we click on Two Tail we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.   Bootstrap Interval for MPGe   Middle 95% of dots between 67.2 and 117 MPGe.    If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.   Bootstrap Interval for MPGe   Middle 90% of dots between 71.6 and 113.14 MPGe.     Exploration   Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.    Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval   Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.      Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.   As the middle percentage increases, the interval becomes wider since it includes more values in the interval.      Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.    As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.      What happens to the standard error as you increase the number of samples.    The standard error does not change much by adding generating additional samples.      Bootstrap Distributions for Proportions  Suppose you want to find what proportion of Skittles are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution.  Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape.   Bootstrap For 10 Bags   proportions between 12.5% and 25% grape .    This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%.   Bootstrap For 250 Bags   proportions between 8% and 32% grape with higher frequencies at the center near 0.183.    This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%.    Using Technology: Proportions  Using StatKey to construct bootstrap distributions from a single proportion.  Launch StatKey , and from the center column under Bootstrap Confidence Intervals , select the second option CI for Single Proportion .   StatKey Menu   select the second option under Bootstrap Confidence Intervals .    Click on Edit Data and enter the count of 12 grape from a sample size of 65 candies and then click OK    Edit Proportion   use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .    Click on Generate 1 Sample . On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends.   Generate Bootstrap Sample   one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .    Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4\/65=0.062 to 23\/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047.   Generate Bootstrap Distribution   500 dots representing the proportion of grapes for each bag .    If you click on Two-Tail it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution.   Bootstrap Confidence Interval   Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .      Practice Problems  samples   "
 },
 {
   "id": "sec-BootstrapDist-3",
@@ -4939,7 +4930,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "5.2.11",
   "title": "",
-  "body": " Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.   As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.   "
+  "body": "  Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.    As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.   "
 },
 {
   "id": "subsec-BootTechnologyMean-32",
@@ -4948,7 +4939,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "5.2.12",
   "title": "",
-  "body": " What happens to the standard error as you increase the number of samples.   The standard error does not change much by adding generating additional samples.   "
+  "body": "  What happens to the standard error as you increase the number of samples.    The standard error does not change much by adding generating additional samples.   "
 },
 {
   "id": "BootstrapSkittle1",
