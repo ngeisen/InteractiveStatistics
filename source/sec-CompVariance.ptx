@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-CompVariance" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>F-test for Variance</title>
+
   <introduction>
     <p>
-      
+      An <m>F</m>-test for two variances is used to compare the variability of two
+  populations by testing whether their population variances are equal or whether
+  one population has a larger variance than the other.
     </p>
   </introduction>
 
@@ -12,22 +15,22 @@
     <p> At the end of this section you will be able to:   </p>
   </introduction>
   <ol>
-    <li> <p> Write hypotheses for the difference in variance </p>    </li>
-    <li> <p> Determine the test statistic and p-value for the F-test. </p> </li>
-     <li> <p> Write the conclusion of a test in context </p>    </li>
+    <li> <p> Write hypotheses for the difference in variance. </p>    </li>
+    <li> <p> Calculate the test statistic and p-value for the F-test. </p> </li>
+     <li> <p> Write the conclusion of a test in context. </p>    </li>
         </ol>
 </objectives>
  
 
 <subsection xml:id="subsec-CompareVarianceBasics">
   <title>Understanding the Basics</title>
-<p>The two-sample variance test is used to compare the variances of two populations to determine whether the populations have different amounts of variability. In an introductory statistics course, this test is typically carried out with the <m>F</m>-test for two population variances. The <term>hypotheses</term> are written in terms of the population variances, <m>\sigma_1^2</m> and <m>\sigma_2^2</m>, often to test whether they are equal. </p>
-<p>The test statistic is
+<p>The two-sample variance test is used to compare the variances of two populations to determine whether the populations have different amounts of variability. In an introductory statistics course, this test is typically carried out with the <m>F</m>-test for two population variances. The <term>hypotheses</term> are written in terms of the population variances, <m>\sigma_1^2</m> and <m>\sigma_2^2</m>, often to test whether they are equal or not. Pay attention to whether you are given the sample variances or the sample standard deviations. The null hypothesis is that the population variances are equal thus <m>H_0: \sigma_1^2 = \sigma_2^2</m>. The alternative hypothesis is that the population variances are not equal, thus <m>H_a: \sigma_1^2 \neq \sigma_2^2</m>, or one is greater than the other <m>H_a: \sigma_1^2 \gt \sigma_2^2</m> or <m>H_a: \sigma_1^2 \lt \sigma_2^2</m>. </p>
+<p>The <term>test statistic</term> is
 <md> F=\frac{(s_1)^2}{(s_2)^2} </md>
-where <m>s_1^2</m> and <m>s_2^2</m> are the sample variances from the two independent samples. Usually, the larger sample variance is placed in the numerator so that the test statistic is at least <m>1</m>. This will also make it a right tailed test. </p>
+where <m>s_1^2</m> and <m>s_2^2</m> are the sample variances from the two independent samples. Usually, the larger sample variance is placed in the numerator so that the test statistic is at least <m>1</m>.  </p>
 <p>If the null hypothesis is true and the populations are normally distributed, this statistic follows an <term>F-distribution</term> with <m>df_1=n_1-1</m> and <m>df_2=n_2-1</m> degrees of freedom. This test assumes that the two samples are independent, that the observations within each sample are independent, and that both populations are approximately normally distributed. Because the <m>F</m>-test is sensitive to departures from normality, the normality assumption is especially important. The resulting <term>p-value</term> is used to decide whether there is enough evidence to conclude that the population variances differ. </p>
 
-<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis and we conclude that there is no significant difference in variances. </p>
 
 <definition xml:id="def-two-variance-f-test">
   <statement>
@@ -41,13 +44,127 @@ where <m>s_1^2</m> and <m>s_2^2</m> are the sample variances from the two indepe
        <md>
 F=\frac{(s_1)^2}{(s_2)^2}
     </md> </p>
-    <p> where <m>s_1^2</m> and <m>s_2^2</m> are the sample variances from the two independent samples. </p>
+    <p> where <m>s_1^2</m> and <m>s_2^2</m> are the sample variances from the two independent samples that are approximately normally distributed. </p>
   </statement>
 </definition>   
 
-<p> introduce F-distribution with statkey </p>
+
+
+
 
   </subsection>
+
+  <subsection xml:id="subsec-FTestDistribution">
+  <title>F-Distribution </title>
+  <p>
+  The <m>F</m>-distribution is used when comparing two population variances. In
+  a test for two variances, we form the ratio of two sample variances,
+  <m>F=\dfrac{(s_1)^2}{(s_2)^2}</m>, and use the <m>F</m>-distribution to determine
+  whether the observed difference in variability is large enough to suggest a
+  real difference in the population variances. The shape of the
+  <m>F</m>-distribution depends on two degrees of freedom, one from the numerator
+  sample and one from the denominator sample, and it is used in hypothesis tests
+  and confidence intervals involving population variances.
+</p>
+<p>First, we will be using StatKey to find the critical values and p-values for the F-distribution, then we will look at finding them on the calculator. Recall the larger variance will be in the numerator so the degrees of freedom will be <m> dfN = n_1 -1</m> and the degrees of freedom for the denominator will be <m> dfD = n_2 -1</m>. </p>
+
+<p> <term> F-distribution with StatKey </term> </p>
+<p> To find the critical values for a two-tailed test with an <m>\alpha</m> level of significance, we will need to find the upper tail critical value and the lower tail critical value. The upper tail critical value is found by entering the degrees of freedom for the numerator and denominator, then selecting the area in the upper tail equal to <m>\alpha/2</m>. The lower tail critical value is found by entering the same degrees of freedom, then selecting the area in the lower tail equal to <m>\alpha/2</m>. For confidence intervals, we will need to find the critical values for the desired confidence level by entering the the area <m> 1-\alpha</m> in the middle section of the graph. </p>
+<p> In StatKey, under <term>Theoretical Distribution </term> select <term>F</term>. Suppose the sample size for the numerator is 12 and the sample size for the denominator is 10 for a test for <m>\alpha = .05</m> testing for the difference in variance, which also suggests we want a 95% confidence interval. </p> 
+<figure xml:id="FDistMenu">
+            <caption>F-Distribution Menu for StatKey</caption>
+            <image source="Fdist1.png" width="90%">
+                <shortdescription>Under Theoretical Distribution select  F which is the fourth option.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The degree of freedom for the numerator is <m>dfN=12-1=11</m> and the degree of freedom for the denominator is <m>dfD=10-1=9</m>. Input the appropriate values and click <c> OK</c> </p> 
+<figure xml:id="FDistParameters">
+            <caption>F-Distribution degrees of freedom</caption>
+            <image source="Fdist2.png" width="50%">
+                <shortdescription>enter degrees of freedom 11 for numerator and 9 for denominator.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Since we are looking at a two-tailed test, check <term>Two Tail </term> and enter 0.95 in the center region for the critical values for the confidence interval or enter 0.025 in each tail for the hypothesis test. The lower critical value is 0.279 and the upper critical value is 3.912 along the bottom of the graph. </p> 
+<figure xml:id="FdistExample1">
+            <caption>F-Distribution for StatKey</caption>
+            <image source="Fdist3.png" width="90%">
+                <shortdescription> The lower value is 0.279 and the upper value is 3.912, with each tail area of 0.025 and the center region area of 0.95 .</shortdescription>
+            </image>
+        </figure> 
+
+
+<p> To find the p-value for a two-tailed test, we will need to find the area in the upper tail and the area in the lower tail. The area in the upper tail is found by entering the degrees of freedom for the numerator and denominator, then selecting the area in the upper tail equal to the test statistic. The area in the lower tail is found by entering the same degrees of freedom, then selecting the area in the lower tail equal to the test statistic. The two-tailed p-value is found by adding these two areas together. </p>
+<example> <title> Two tailed p-value </title>
+<p> Suppose the sample size for the numerator is 15 and the sample size for the denominator is 12 for a test for the difference in variance which produces F-test statistic F=2.51 for a two-tailed test </p>
+<p> The degree of freedom for the numerator is <m>dfN=15-1=14</m> and the degree of freedom for the denominator is <m>dfD=12-1=1</m>. Click on <c>Edit Parameter </c> and input the appropriate values and click <c> OK</c> </p> 
+<figure xml:id="FDistParameters2">
+            <caption>F-Distribution degrees of freedom</caption>
+            <image source="Fdist4.png" width="50%">
+                <shortdescription>enter degrees of freedom 14 for numerator and 1 for denominator.</shortdescription>
+            </image>
+        </figure> 
+<p> Since we are looking at a two-tailed test, check <term>Two Tail </term> and enter the test statistic <m>2.51</m>on the right side. The p-value=2(0.066)=0.132.</p> 
+<figure xml:id="FdistExample2">
+            <caption>F-distribution for two-tailed test</caption>
+            <image source="Fdist5.png" width="90%">
+                <shortdescription> Test value F=2.51 for a two tailed test, with each tail area of 0.066 giving a p-value=.132 .</shortdescription>
+            </image>
+        </figure> 
+</example> 
+
+
+
+<p> To find the critical value for a right-tailed test with an <m>\alpha</m> level of significance, we will need to find the upper tail critical value. This is found by entering the degrees of freedom for the numerator and denominator, then selecting the area in the upper tail equal to <m>\alpha</m>. </p> 
+<example> <title> Right tail critical value </title>
+<p> Suppose the sample size for the numerator is 12 and the sample size for the denominator is 10 for a test for <m>\alpha = .05</m> test for greater variance of the numerator sample, for a right tailed test. </p> 
+<p> The degree of freedom for the numerator is <m>dfN=12-1=11</m> and the degree of freedom for the denominator is <m>dfD=10-1=9</m>. Click on <c>Edit Parameter </c> and input the appropriate values and click <c> OK</c> </p> 
+<p> Since we are looking at a right-tailed test, check <term>Right Tail </term> and enter the <m>\alpha =0.05</m> on the right-side area. The critical values is F=3.102.</p> 
+<figure xml:id="FdistExample4">
+            <caption>F-distribution for right tail test</caption>
+            <image source="Fdist7.png" width="90%">
+                <shortdescription> For a right tailed test with area of 0.05 gives  critical value=3.102 </shortdescription>
+            </image>
+        </figure> 
+</example>
+
+<p> To find the p-value for a right-tailed test, we will need to find the area in the upper tail. This is found by entering the degrees of freedom for the numerator and denominator, then selecting the area in the upper tail equal to the test statistic. </p>
+<example> <title> One tail p-value </title>
+<p> Suppose the sample size for the numerator is 15 and the sample size for the denominator is 12 for a test for greater variance which produces F-test statistic F=2.51 for a right-tailed test </p>
+<p> The degree of freedom for the numerator is <m>dfN=15-1=14</m> and the degree of freedom for the denominator is <m>dfD=12-1=1</m>. Click on <c>Edit Parameter </c> and input the appropriate values and click <c> OK</c> </p> 
+<p> Since we are looking at a right-tailed test, check <term>Right Tail </term> and enter the test statistic <m>2.51</m>on the right side. The p-value=0.066.</p> 
+<figure xml:id="FdistExample3">
+            <caption>F-distribution for right tail test</caption>
+            <image source="Fdist6.png" width="90%">
+                <shortdescription> Test value F=2.51 for a right tailed test, with right tail area of 0.066 giving a p-value=.066 .</shortdescription>
+            </image>
+        </figure> 
+</example>
+
+
+<p> To find the critical value for a left-tailed test with an <m>\alpha</m> level of significance, we will need to find the lower tail critical value. This is found by entering the degrees of freedom for the numerator and denominator, then selecting the area in the lower tail equal to <m>\alpha</m>. To find the p-value for a left-tailed test, we will need to find the area in the lower tail. This is found by entering the degrees of freedom fort he numerator and denominator, then selecting the area in the lower tail equal to the test statistic. But since we typically have the larger variance in the numerator it will become a right tailed test since the test value is greater than one.</p>
+ <example> <title> Left tail critical value </title>
+<p> Suppose the sample size for the numerator is 12 and the sample size for the denominator is 10 for a test for <m>\alpha = .05</m> test for lesser variance of the numerator sample, for a left tailed test. </p> 
+<p> The degree of freedom for the numerator is <m>dfN=12-1=11</m> and the degree of freedom for the denominator is <m>dfD=10-1=9</m>. Click on <c>Edit Parameter </c> and input the appropriate values and click <c> OK</c> </p> 
+<p> Since we are looking at a left-tailed test with the smaller variance in the numerator, check <term>Left Tail </term> and enter the <m>\alpha =0.05</m> on the left-side area. The critical value is F=0.345 which is less than 1.</p> 
+<figure xml:id="FdistExample5">
+            <caption>F-distribution for left tail test</caption>
+            <image source="Fdist8.png" width="90%">
+                <shortdescription> For a left tailed test with area of 0.05 gives  critical value=0.345 which is less than 1 </shortdescription>
+            </image>
+        </figure> 
+</example>
+
+
+ 
+
+ 
+  </subsection>
+
+
+
+
 <subsection xml:id="subsec-FTestExamples">
   <title>Examples to Compare Variance </title>
 
@@ -71,48 +188,51 @@ F=\frac{(s_1)^2}{(s_2)^2}
   </statement>
   <solution><title> Hypotheses</title> 
     <p> Let population <m>1</m> be bus riders and population <m>2</m> be parent
-      drop-off students. We want to test whether the population variances are
-      different.
+      drop-off students. We want the larger variance in the numerator. We want to test whether the population variances are different.
     </p>
-    <p> The hypotheses are
-      <m>H_0:\sigma_1^2=\sigma_2^2</m>
-      and
-      <m>H_a:\sigma_1^2\ne\sigma_2^2</m>.
+    <p> The null hypothesis is the variances are equal
+      <md>H_0:\sigma_1^2=\sigma_2^2</md>
+      and the alternative hypothesis is the variances are not equal
+      <md>H_a:\sigma_1^2\ne\sigma_2^2</md>.
     </p>
 </solution>
 <solution> <title> Statistical Test </title> 
     <p> The test statistic for a two-variance <m>F</m>-test is
-      <md>F=\dfrac{s_1^2}{s_2^2}</md>.
+      <md>F=\dfrac{(s_1)^2}{(s_2)^2}</md>.
     </p>
     <p> Using the sample standard deviations,
       <md>  F=\dfrac{4.8^2}{2.9^2}   =\dfrac{23.04}{8.41}    \approx 2.74
       </md>.     </p>
     <p>   The degrees of freedom are
-      <m>df_1=n_1-1=11</m>
+      <m>dfN=n_1-1=11</m> for the numerator
       and
-      <m>df_2=n_2-1=9</m>.
+      <m>dfD=n_2-1=9</m> for the denominator.
     </p>
     <p>
       Using an <m>F</m>-distribution with <m>11</m> and <m>9</m> degrees of
-      freedom, the two-sided <m>p</m>-value is approximately <m>0.19</m>.
+      freedom, the two-sided <m>p</m>-value is approximately <m>2(.071)=0.142</m>.
     </p>
+   <figure xml:id="FdistTravelTimes">
+            <caption>F-distribution two tailed test for travel times</caption>
+            <image source="Fdist9.png" width="90%">
+                <shortdescription> Test value F=2.74 for a two tailed test, with each tail area of 0.071 giving a p-value=.142 .</shortdescription>
+            </image>
+        </figure> 
 </solution>
 <solution> <title> Conclusion</title> 
     <p>
-      Since <m>p-value=0.19 \gt  0.05</m>, we fail to reject <m>H_0</m>.
+      Since <m>p-value=0.142 \gt  0.05</m>, we fail to reject <m>H_0</m>.
     </p>
     <p>
-      There is not sufficient evidence at the <m>\alpha = 0.05</m> significance level to
-      conclude that the population variances in travel time are different for
-      students who ride the bus and students who are driven by a parent.
+      There is not sufficient evidence at the <m>\alpha = 0.05</m> significance level to conclude that the population variances in travel time are different for
+      students who ride the bus and students who are driven by a parent to school.
     </p>
   </solution>
 </example>
 
     <p>
       A manufacturing engineer wants to compare the consistency of fill amounts
-      for two machines that package bottles of sports drink. A random sample of
-      bottles is taken from each machine, and the amount in each bottle is
+      for two machines that package bottles for a popular sports drink. A random sample of bottles is taken from each machine, and the amount in each bottle is
       measured in ounces. The summary statistics are shown below.
     </p>
        <p>  Machine A: <m>n_1=15</m>, <m>s_1=0.18</m> ounces
@@ -134,38 +254,44 @@ F=\frac{(s_1)^2}{(s_2)^2}
       population variances are different.
     </p>
     <p>
-      The hypotheses are
-      <m>H_0: \sigma_1 ^2= \sigma_2 ^2</m>
-      and
-      <m>H_a: \sigma_1 ^2\ne \sigma_2 ^2</m>. This is a two tailed test.
+      The null hypothesis is that the variances are equal
+      <md>H_0: \sigma_1 ^2= \sigma_2 ^2</md>
+      and the alternative hypothesis is that the variances are not equal
+      <md>H_a: \sigma_1 ^2\ne \sigma_2 ^2</md>. This is a two tailed test.
     </p>
 </solution>
 <solution> <title> Statistical Test</title> 
     <p>  The test statistic is
-      <md>F=\dfrac{s_1^2}{s_2^2}</md>.
+      <md>F=\dfrac{(s_1)^2}{(s_2)^2}</md>.
     </p>
-    <p>  Substitute the sample standard deviations:
+    <p>  Substitute in the sample standard deviations:
       <md>
         F=\dfrac{0.18^2}{0.10^2}
         =\dfrac{0.0324}{0.0100}   =3.24
       </md>.     </p>
     <p>
       The degrees of freedom are
-      <m>df_1=n_1-1=14</m>
+      <m>df_1=n_1-1=14</m> for the numerator
       and
-      <m>df_2=n_2-1=11</m>.
+      <m>df_2=n_2-1=11</m> for the denominator.
     </p>
     <p>
       Using the <m>F</m>-distribution with <m>14</m> and <m>11</m> degrees of
-      freedom, the two-sided <m>p</m>-value is approximately <m>0.08</m>.
+      freedom, the two-tailed <m>p</m>-value is approximately <m>2(.028)=0.056</m>.
     </p>
+ <figure xml:id="FdistBottles">
+            <caption>F-distribution two tailed test for bottles</caption>
+            <image source="Fdist10.png" width="90%">
+                <shortdescription> Test value F=3.24 for a two tailed test, with each tail area of 0.028 giving a p-value=.056 .</shortdescription>
+            </image>
+        </figure>    
 </solution>
 <solution> <title> Conclusion</title> 
-    <p>   Since <m>p=0.08 \gt  0.05</m>, we fail to reject <m>H_0</m>.
+    <p>   Since <m>p=0.056 \gt  0.05</m>, we fail to reject <m>H_0</m>.
     </p>
     <p>
       There is not sufficient evidence at the <m>0.05</m> significance level to
-      conclude that the population variances in fill amounts are different for
+      conclude that the population variances in bottle fill amounts are different for
       the two machines.
     </p>
   </solution>
@@ -207,7 +333,7 @@ F=\frac{(s_1)^2}{(s_2)^2}
       weekday wait times.
     </p>
     <p>
-      We test
+      The hypotheses are
       <m>H_0: \sigma_1^2=\sigma_2 ^2</m>
       versus
       <m>H_a: \sigma_1^2 \gt \sigma_2 ^2</m>. This is a right tailed test.
@@ -215,7 +341,7 @@ F=\frac{(s_1)^2}{(s_2)^2}
 </solution>
 <solution> <title> Statistical Test</title> 
     <p>   The test statistic for a two-variance <m>F</m>-test is
-      <m>F=\dfrac{s_1^2}{s_2^2}</m>.
+      <md>F=\dfrac{(s_1)^2}{(s_2)^2}</md>.
     </p>
     <p>   Substituting the sample standard deviations gives
       <md>
@@ -223,18 +349,62 @@ F=\frac{(s_1)^2}{(s_2)^2}
         =\dfrac{331.24}{129.96}    \approx 2.55
       </md>.     </p>
     <p>  The degrees of freedom are
-      <m>df_1=n_1-1=13</m>
+      <m>df_1=n_1-1=13</m> for the numerator
       and
-      <m>df_2=n_2-1=11</m>.
+      <m>df_2=n_2-1=11</m> for the denominator.
     </p>
     <p>
       Using the <m>F</m>-distribution with <m>13</m> and <m>11</m> degrees of
-      freedom, the one-sided <m>p</m>-value is approximately <m>0.07</m>.
+      freedom, the right tailed <m>p</m>-value is approximately <m>0.064</m>.
     </p>
+  <figure xml:id="FdistWaitTimes">
+            <caption>F-distribution for right tailed test on wait times</caption>
+            <image source="Fdist11.png" width="90%">
+                <shortdescription> Test value F=2.55 for a right tailed test, giving a p-value=.064 .</shortdescription>
+            </image>
+        </figure> 
+ </solution>
+ <solution> <title> Test with TI-83 Plus </title>
+<p> Press the [STAT] button and use the arrow twice to the right to TEST and scroll down to option <term>D: 2-SampFTest </term> and press [ENTER] to select it. </p>
+<p> Since we are given the summary statistics select <term>Stats</term> and press [ENTER] to select it, then input the summary values. Notice the calculator is requesting standard deviations. Sx1=18.2, n1=14, Sx2=11.4, n2=12. Then select the alternative hypothesis <m> \gt  \sigma  2</m>. Select <term>Calculate</term> and press [ENTER]. 
+</p> 
+<figure xml:id="FtestCalc1">
+            <caption>F-Test menu on calculator</caption>
+            <image source="Fdist12.png" width="90%">
+                <shortdescription> Under TESTS select D 2-Samp F Test .</shortdescription>
+            </image>
+        </figure> 
+<p> The display identifies test performed <em>2-SampFTest </em> and the alternative hypothesis <m>\sigma_1 \gt \sigma_2</m>, the test value is <m>F=2.5487</m> and the p-value is <m>p=.064</m>. If you selected <term>Draw</term> it will graph the F-distribution giving the test value <m>F=2.5488</m> with p-value <m>p=.0643</m> 
+</p> 
+<figure xml:id="FtestCalc2s">
+            <caption>F-test for wait times on calculator </caption>
+            <image source="Fdist13.png" width="90%">
+                <shortdescription> Test value F=2.55 for a right tailed test, giving a p-value=.064 .</shortdescription>
+            </image>
+        </figure> 
+</solution><solution> <title> Test with TI-84 </title>
+<p> Press the [STAT] button and use the arrow twice to the right to TEST and scroll down to option <term>E: 2-SampFTest </term> and press [ENTER] to select it. </p>
+<p> Since we are given the summary statistics select <term>Stats</term> and press [ENTER] to select it, then input the summary values. Notice the calculator is requesting standard deviations. Sx1=18.2, n1=14, Sx2=11.4, n2=12. Then select the alternative hypothesis <m> \gt  \sigma  2</m>. Select <term>Calculate</term> and press [ENTER]. 
+</p> 
+<figure xml:id="FtestCalc3">
+            <caption>F-Test menu on calculator</caption>
+            <image source="Fdist14.png" width="90%">
+                <shortdescription> Under TESTS select D 2-Samp F Test .</shortdescription>
+            </image>
+        </figure> 
+
+<p> The display identifies test performed <em>2-SampFTest </em> and the alternative hypothesis <m>\sigma_1 \gt \sigma_2</m>, the test value is <m>F=2.5487</m> and the p-value is <m>p=.064</m>. If you selected <term>Draw</term> it will graph the F-distribution giving the test value <m>F=2.5488</m> with p-value <m>p=.0643</m> 
+</p> 
+<figure xml:id="FtestCalc4">
+            <caption>F-test for wait times on calculator </caption>
+            <image source="Fdist15.png" width="90%">
+                <shortdescription> Test value F=2.55 for a right tailed test, giving a p-value=.064 .</shortdescription>
+            </image>
+        </figure> 
 </solution>
 <solution> <title> Conclusion</title> 
     <p>
-      Since <m>p-value=0.07  \gt 0.05</m>, we fail to reject <m>H_0</m>.
+      Since <m>p-value=0.064  \gt 0.05</m>, we fail to reject <m>H_0</m>.
     </p>
     <p>
       There is not sufficient evidence at the <m>0.05</m> significance level to
@@ -245,8 +415,170 @@ F=\frac{(s_1)^2}{(s_2)^2}
 </exercise>
 
 
+  </subsection>
+
+<subsection xml:id="subsec-FtestPractice">
+  <title> Compare Variance Practice </title>
+    <p>
+      A restaurant manager wants to compare the consistency of customer wait
+      times at two locations during the dinner rush. A random sample of wait
+      times, measured in minutes, is taken from each location. The summary
+      statistics are shown below.
+    </p>
+    <p> Location A: <m>n_1=16</m>, <m>s_1=5.2</m> minutes </p>
+    <p> Location B: <m>n_2=12</m>, <m>s_2=3.4</m> minutes </p>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      variances in customer wait times are different for the two locations.
+    </p>
+<exercise> <title> Restaurant Times </title>
+  <statement>
+<p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      Let population <m>1</m> be customer wait times at Location A and
+      population <m>2</m> be customer wait times at Location B.
+    </p>
+    <p>
+      The hypotheses are:
+      <m>H_0:\sigma_1^2=\sigma_2^2</m>
+      versus
+      <m>H_a:\sigma_1^2 \ne \sigma_2^2</m> for a two tailed test.
+    </p>
+</solution>
+<solution> <title> Statistical Test</title>
+    <p>
+      The test statistic is
+       <md>   F=\dfrac{5.2^2}{3.4^2}
+        =\dfrac{27.04}{11.56}      \approx 2.34
+      </md>.  </p>
+    <p>
+      The degrees of freedom are
+      <m>dfN=n_1-1=15</m>
+      and
+      <m>dfD=n_2-1=11</m>.
+    </p>
+    <p>
+      Using the <m>F</m>-distribution with <m>15</m> and <m>11</m> degrees of
+      freedom, the two-sided <m>p-value= 2(0.08)=0.16</m>.
+    </p>
+   <figure xml:id="FdistRestaurant1">
+            <caption>F- test for restaurant times</caption>
+            <image source="Fdist16.png" width="90%">
+                <shortdescription> Test value F=2.34 for a two tailed test, with each tail area of 0.08 giving a p-value=.160 .</shortdescription>
+            </image>
+        </figure> 
+</solution>
+<solution> <title> Test with TI-84 </title>
+<p> Press the [STAT] button and use the arrow twice to the right to TEST and scroll down to option <term>E: 2-SampFTest </term> and press [ENTER] to select it. </p>
+<p> Since we are given the summary statistics select <term>Stats</term> and press [ENTER] to select it, then input the summary values. Sx1=5.2, n1=16, Sx2=3.4, n2=12. Then select the alternative hypothesis <m> \ne  \sigma  2</m>. Select <term>Calculate</term> and press [ENTER]. 
+</p> 
+<figure xml:id="FtestCalc5">
+            <caption>F-test for wait times </caption>
+            <image source="Fdist17.png" width="90%">
+                <shortdescription> Test value F=2.339 for a two tailed test, giving a p-value=.1599.</shortdescription>
+            </image>
+        </figure> 
+<p> The display identifies the F-test value as <m>F=2.339</m> and the p-value as <m>p=.15997</m>. </p> 
+</solution>
+
+<solution> <title> Conclusion</title> 
+    <p>
+      Since <m>p=0.16 \gt  0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the population variances in customer wait times are
+      different for the two restaurant locations.
+    </p>
+  </solution>
+</exercise>
+
+<p>
+      A quality control engineer wants to compare the consistency of bolt
+      diameters produced by two different machines. A random sample of bolts is
+      taken from each machine, and the diameter of each bolt is measured in
+      millimeters. The summary statistics are shown below.
+</p>
+  <p>  Machine A: <m>n_1=14</m>, <m>s_1=0.021</m> mm </p> 
+  <p>  Machine B: <m>n_2=12</m>, <m>s_2=0.012</m> mm </p> 
+  <p>
+      At the <m>0.10</m> significance level, test whether the population
+      variances in bolt diameters are different for the two machines.
+  </p>
+<exercise> <title> Bolt Diameters </title>
+<statement>
+<p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypotheses</title> 
+    <p>
+      Let population <m>1</m> be bolts produced by Machine A and population
+      <m>2</m> be bolts produced by Machine B.
+    </p>
+    <p>
+      The hypotheses are the bolt variances are equal or not equal:</p>
+      <p>
+      <m>H_0:\sigma_1^2=\sigma_2^2</m>
+      versus
+      <m>H_a:\sigma_1^2 \ne \sigma_2^2</m> for a two tailed test.
+    </p>
+</solution>
+<solution> <title> Statistical Test </title> 
+    <p>
+      The test statistic is
+       <md>         F=\dfrac{0.021^2}{0.012^2}
+        =\dfrac{0.000441}{0.000144} \approx 3.06
+      </md>     </p>
+    <p> The degrees of freedom are
+      <m>dfN=n_1-1=13</m>
+      and
+      <m>dfD=n_2-1=11</m>.
+    </p>
+    <p>
+      Using the <m>F</m>-distribution with <m>13</m> and <m>11</m> degrees of
+      freedom, the two-tailed <m>p-value=2(0.036)=0.072</m>.
+    </p>
+   <figure xml:id="FdistBolts1">
+            <caption>F- test for bolt diameters</caption>
+            <image source="Fdist18.png" width="90%">
+                <shortdescription> Test value F=3.06 for a two tailed test, with each tail area of 0.036 giving a p-value=.072.</shortdescription>
+            </image>
+        </figure> 
+
+</solution>
+<solution> <title> Test with TI-84 </title>
+<p> Press the [STAT] button and use the arrow twice to the right to TEST and scroll down to option <term>E: 2-SampFTest </term> and press [ENTER] to select it. </p>
+<p> Since we are given the summary statistics select <term>Stats</term> and press [ENTER] to select it, then input the summary values. Sx1=0.21, n1=14, Sx2=.012, n2=12. Then select the alternative hypothesis <m> \ne  \sigma  2</m>. Select <term>Calculate</term> and press [ENTER]. 
+</p> 
+<figure xml:id="FtestCalc6">
+            <caption>F-test for bolt diameters </caption>
+            <image source="Fdist19.png" width="90%">
+                <shortdescription> Test value F=3.0625 for a two tailed test, giving a p-value=.0711.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The display identifies the F-test value as <m>F=3.0625</m> and the p-value as <m>p=.0711</m>. </p> 
+</solution>
+
+  <solution> <title> Conclusion</title> 
+    <p>
+      Since <m>p=0.072 \lt  0.10</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.10</m> significance level to
+      conclude that the population variances in bolt diameters are different for
+      the two machines.
+    </p>
+  </solution>
+</exercise>
+
+
+
+
 
   </subsection>
+
 
 
 </section>
