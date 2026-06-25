@@ -48,6 +48,7 @@
 <p> To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology. </p> 
 
 </subsection>
+
 <subsection xml:id="subsec-BootTechnologyMean">
   <title>Using Technology: Mean</title>
 
@@ -95,10 +96,10 @@
 <p> Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter. </p> 
 <p> When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using <term> statistics </term> <m>  \pm 2 \bullet  SE </m>   where SE denotes the standard error of the statistic estimated from the bootstrap distribution. </p> 
 <p> Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives </p>
-<p> <me> \text {mean} \pm 2 \bullet SE </me>  </p>
-<p> <me> 94.2 \pm 2 (12.797) </me></p>
-<p> <me> 94.2 \pm 25.594 </me> </p>
-<p> <me> (68.606, 119.794) </me> </p>
+<p> <md> \text {mean} \pm 2 \bullet SE </md>  </p>
+<p> <md> 94.2 \pm 2 (12.797) </md></p>
+<p> <md> 94.2 \pm 25.594 </md> </p>
+<p> <md> (68.606, 119.794) </md> </p>
 <p> We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles. </p> 
 
 <p> If we click on <c>Two Tail </c> we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles. </p> 
@@ -129,12 +130,16 @@
 <solution> <p> As the middle percentage increases, the interval becomes wider since it includes more values in the interval.  </p> </solution> 
 </exercise> 
 <exercise>
-<p> Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle. </p>
-<solution> <p> As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.  </p> </solution> 
+    <statement>
+    <p> Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle. </p>
+    </statement>
+    <solution> <p> As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.  </p> </solution> 
 </exercise> 
 <exercise>
-<p> What happens to the standard error as you increase the number of samples. </p>
-<solution> <p> The standard error does not change much by adding generating additional samples.  </p> </solution> 
+    <statement>
+     <p> What happens to the standard error as you increase the number of samples. </p>
+    </statement>
+    <solution> <p> The standard error does not change much by adding generating additional samples.  </p> </solution> 
 </exercise> 
 
 

@@ -14,9 +14,9 @@
           <li> <p> Identify the cases and variables in a data set.</p> </li>
           <li> <p> Distinguish between a sample and a poplulation. </p> </li>
           <li> <p> Classify variables as qualitative or quantitative. </p> </li>
-          </ol>   
-      
+          </ol>      
 </objectives>
+
 <subsection xml:id="subsec-DataIntro">
   <title>Understanding the Basics</title>
  
@@ -187,8 +187,8 @@ If we asked the students (each student is a case) in class, there will be lots o
 <p>In <term>descriptive statistics </term> the statistician tries to describe a situation.  It consists of collecting, organizing, summarizing and presenting the data. </p>
 <p> While with <term> inferential statistics </term> the statisticians make inferences from samples to make predictions about the population.  It consists of generalizing data from samples, performing estimations and hypothesis testing, determining relationships among variables, and making predictions. </p>
 <p> We will begin with descriptive statistics since we will summarize the data to make the inferences. </p>
-<p> <em> Example:</em> According to the Center for Disease Control and Prevention (CDC) for the week January 9, 2021, there were 25,974 deaths in the United States attributed to COVID. This is descriptive since it is stating the total deaths. </p
->
+<p> <em> Example:</em> According to the Center for Disease Control and Prevention (CDC) for the week January 9, 2021, there were 25,974 deaths in the United States attributed to COVID. This is descriptive since it is stating the total deaths. </p>
+
 <p> <em>Example:</em> According to a 2023 Pew Research Center study, approximately 32% of Americans have at least one tattoo. This is inferential since the since they are assuming what is true for the population from a sample study. It is unlikely they asked the entire population how many tattoos they have. </p> 
 <p>     </p> 
     <p> Identify if each situation is descriptive or inferential statistics: </p>

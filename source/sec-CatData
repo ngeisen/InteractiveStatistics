@@ -96,7 +96,7 @@
  </subsection>
 
 
- <subsection xml:id="subsec-GraphTwoCat">
+ <subsection xml:id="subsec-GraphTwoCategorical">
   <title> Graphing Two Categorical Variables </title>
  
 <p> When working with two categorical variables, we often look for possible relationships between the two variables using a <term> two-way table </term>.  The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.</p> 

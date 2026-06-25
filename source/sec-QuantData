@@ -87,7 +87,7 @@
 
   </subsection>
 
-<subsection xml:id="subsec-GraphScatterplots">
+<subsection xml:id="subsec-GraphTwoQuantitative">
   <title> Graphing Two Quantitative Variables </title>
   <p> There are times when we want to determine whether a relationship exists between two quantitative variables. This can visually be seen with a <term> scatterplot </term> where the data are plotted as points. The independent variable, also known as the explanatory variable, is scaled along the x-axis and the dependent variable, also known as the response variable, is scaled along the y-axis. Once the data is plotted as paired points (x,y) we can describe the pattern between the two variables. </p>
   <p>  <term>Correlation </term> is a statistical method used to determine whether a relationship between two quantitative variables exists. </p>

@@ -107,7 +107,7 @@
     </choices>
 </exercise>
 
-<exercise label="ProbContin-matching">
+<exercise label="ProbContinuous-matching">
     <title> Continuous Variables </title>
     <statement>
     <p> Which of the following variables are continuous?  Select all statements that apply.     </p>
@@ -185,11 +185,11 @@
 <subsection xml:id="subsec-ProbDistStatistics">
   <title>Summary Statistics</title>
   
-<p> The next step in our adventure with probability distributions is to find the summary statistics – the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time. </p>
+<p> The next step in our adventure with probability distributions is to find the summary statistics - the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time. </p>
 
-<p> So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move – on average, for the game? </p>
+<p> So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move - on average, for the game? </p>
 <p> If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data. </p>
-<p> How can we do this theoretically?  First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21/6 = 3.5 spaces on average. Now let’s look at the college version. We create the theoretical probability distribution table – we list the dice numbers and their probabilities. We are going to multiply each event by it’s probability and then add them all together.  </p>
+<p> How can we do this theoretically?  First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21/6 = 3.5 spaces on average. Now let's look at the college version. We create the theoretical probability distribution table - we list the dice numbers and their probabilities. We are going to multiply each event by its probability and then add them all together.  </p>
 
 <figure xml:id="DiceDataTable2">
             <caption>Theoretical dice distribution </caption>
@@ -239,12 +239,13 @@ where each X is one of the outcomes and each P(X) is the corresponding probabili
 <p> <m> \sigma = \sqrt{3.24} =1.8 </m> </p>  
 <p> From the center of 3.4 most values are within 1.8 of it. </p>
 <p>     </p>
+
 <exercise>
 <title> Statistics </title> 
 <p> A bank manager wants to know the average number of credit cards customers have. From a sample of customers the following probability distribution was found. </p>
 <figure> 
            <image source="Creditcards.png" width="75%">
-                <shortdescription> there are 0 to 4 credit cards with probabilities of ..08, .18, .27, .44, .03.</shortdescription>
+                <shortdescription> there are 0 to 4 credit cards with probabilities of .08, .18, .27, .44, .03.</shortdescription>
             </image>
         </figure>
 
