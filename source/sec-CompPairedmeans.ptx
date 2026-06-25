@@ -13,9 +13,9 @@
     <p> At the end of this section you will be able to:   </p>
   </introduction>
   <ol>
-    <li> <p> Write hypotheses for the paired difference in means </p>    </li>
+    <li> <p> Write hypotheses for the paired difference in means. </p>    </li>
     <li> <p> Determine the test statistic and p-value for the paired t-test. </p> </li>
-     <li> <p> Write the conclusion of a test in context </p>    </li>
+     <li> <p> Write the conclusion of a test in context. </p>    </li>
 <li> <p>Construct confidence intervals for the difference in means. </p> </li>
 
         </ol>
@@ -27,9 +27,10 @@
   <p> The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired <m>t</m>-test analyzes the <em> differences </em> within each pair. If we let <m>d</m> represent the difference for each pair, then the <term>hypotheses</term> are written in terms of the population mean difference <m>\mu_d</m>.  The null hypothesis is <m>\mu_d = 0</m> and the alternative hypothesis can be either <m>\mu_d \lt 0</m> or <m>\mu_d \gt 0 </m> for a one tailed test, or <m>\mu_d \ne 0</m> for a two-tailed test .  </p>   
 <p>The <term> test statistic</term> is
 <md> t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}} </md>
-where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sample standard deviation of the differences, <m>n</m> is the number of pairs in the sample, and <m>\mu_{d}</m> is the hypothesized mean difference, usually <m>0</m>. </p>
+where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sample standard deviation of the differences, <m>n</m> is the number of pairs in the sample, and <m>\mu_{d}</m> is the hypothesized mean difference, usually <m>0</m> indicating no difference in values. </p>
 <p>This test assumes that the data consist of matched pairs, that the differences are independent from one pair to another, and that the distribution of the differences is approximately normal, especially when the sample size is small. The resulting <term>p-value</term> is used to decide whether there is enough evidence to conclude that a true mean difference exists between the paired observations.</p>
 <p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+
 <definition xml:id="def-paired-t-test-mean">
   <statement>
     <p>
@@ -62,6 +63,21 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
   differences, <m>n</m> is the number of pairs, and <m>t^*</m> is the critical
   value from the <m>t</m>-distribution with <m>n-1</m> degrees of freedom.
 </p> 
+
+<definition xml:id="def-paired-means-confidence-interval">
+  <statement>
+    <p>
+      A <term>confidence interval for paired means</term> is used to estimate the
+      population mean difference <m>\mu_d</m> when data are collected in matched
+      pairs. The confidence interval for the population mean difference is
+      <md>\bar{d} \pm t^*\dfrac{s_d}{\sqrt{n}}</md>,
+      where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is
+      the sample standard deviation of the differences, <m>n</m> is the number of
+      pairs, and <m>t^*</m> is the critical value from the <m>t</m>-distribution
+      with <m>n-1</m> degrees of freedom.
+    </p>
+  </statement>
+</definition>
 
 
 </subsection> 
@@ -114,16 +130,15 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
         <cell><p><m>3</m></p></cell>
       </row>
     </tabular>
-    <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
+    <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context against <m>\alpha = 0.05</m>. </p> 
 
-  <example> <title> Push up</title> 
+  <example> <title> Push Up Test</title> 
   <statement>
     <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
     <p>
       Because the same participants are measured twice, this is a
       <term>paired t-test for the mean</term>. The differences can be found by
-      subtracting the Before values from the After training values, giving the differences of
-      <m>3, 3, 3, 2, 3</m>.
+      subtracting the Before values from the After training values, giving the differences of  <m>3, 3, 3, 2, 3</m>. This indicated they were able to do more push ups after the training program.  
     </p>
   </statement>
 
@@ -157,6 +172,12 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
     <p>  So the sample of differences are
       <m>3, 3, 3, 2, 3</m>.
     </p>
+  <p> The sample mean of the differences is
+      <m>\bar{d} = \frac{3+3+3+2+3}{5} = \frac{14}{5} = 2.8</m>.
+    </p>
+    <p>  The sample standard deviation of the differences is
+      <m>s_d \approx 0.447</m>.
+    </p>
 </solution>
 <solution> <title> Hypotheses </title>
     <p>  We test
@@ -168,7 +189,7 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
 </solution>
 <solution> <title> Statistical Test </title> 
     <p> The sample mean of the differences is
-      <m>\bar{d} = \frac{3+3+3+2+3}{5} = \frac{14}{5} = 2.8</m>.
+      <m>\bar{d} = \frac{14}{5} = 2.8</m>.
     </p>
     <p>  The sample standard deviation of the differences is
       <m>s_d \approx 0.447</m>.
@@ -179,10 +200,16 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
       </m>
       with <m>df = 5-1 = 4</m>.
     </p>
-    <p>
-      This gives a very small <m>p</m>-value <m> \approx 0.000076</m>, so we reject <m>H_0</m> since it is less than <m> \alpha = .05</m>.
+    <p> This gives a very small <m>p</m>-value <m> \approx 0.000076</m>, so we reject <m>H_0</m> since it is less than <m> \alpha = .05</m>.
     </p>
-</solution>
+    <p> Recall with StatKey we select the t-distribution, enter the 4 degrees of freedom, select the Right Tail and enter the test value 14.0 along the bottom to get the shaded area of .000076. </p> 
+  <figure xml:id="TdistPushups">
+            <caption>t-distribution in StatKey for t=14 with 4 df</caption>
+            <image source="Tdist1.png" width="90%">
+                <shortdescription> Test value T=14.0 for a right tailed test giving a p-value=.000076 .</shortdescription>
+            </image>
+        </figure> 
+  </solution>
 <solution> <title> Conclusion</title>
 <p>
       This gives a very small <m>p</m>-value <m> \approx 0.000076</m>, so we reject <m>H_0</m> since it is less than <m> \alpha = .05</m>.
@@ -194,14 +221,68 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
   </solution>
 </example>
 
+<p>  A fitness instructor wants to know whether a 6-week training
+      program improves the number of push-ups participants can complete in one
+      minute. The instructor records the number of push-ups for each participant
+      before the program and again after the program. Construct a 95% confidence interval for the mean difference in the number of pushups after the training program. 
+    </p>
+<example> <title> Pushup Confidence Interval </title>
+<statement> 
+<p>   To construct a 95% confidence interval for the mean difference in the number of pushups after the training program, let
+    <m>d=\text{After}-\text{Before}</m>.
+  </p> </statement> 
+<solution> <title> Find t* </title>
+<p>
+    Since the population standard deviation is unknown and the data are paired,
+    we use a <m>t</m>-distribution with <m>df=5-1=4</m>.
+  </p>
+<p> With StatKey, under the <term> Theoretical Distributions</term> select <term> t </term>, enter the degrees of freedom of <m> 4</m>,  click on<em> Two Tail </em> and enter 0.95 in the center area region. The <m> t^* </m> value is along the bottom of the graph for <m> t^* =2.776</m>. </p> 
+<figure xml:id="TdistPushups2">
+            <caption> StatKey for 95% confidence for 4 degrees of freedom</caption>
+            <image source="Tdist3.png" width="90%">
+                <shortdescription>95% confidence for 4 df is t=2.776</shortdescription>
+            </image>
+        </figure> 
+</solution>
+<solution> <title> Interval</title>
+  <p>  The differences between the paired values are  <m>3, 3, 3, 2, 3</m>.
+  </p>
+  <p> From these data,  <m>n=5</m>,  <m>\bar{d}= 2.8</m>,
+    And   <m>s_d\approx 0.447</m>.
+  </p>
+    <p> For a <m>95\%</m> confidence interval with <m>df=4</m>, the critical value
+    Is  <m>t^*\approx 2.776</m> using StatKey.
+  </p>
+  <p> The margin of error is
+    <md>   ME=t^*\frac{s_d}{\sqrt{n}}
+      =2.776\left(\frac{0.447}{\sqrt{5}}\right)
+      \approx 0.555
+    </md>.
+  </p>
+  <p> The confidence interval is
+    <md>   \bar{d}\pm ME = 2.8 \pm 0.555
+    </md>.
+  </p>
+  <p>
+    So the <m>95\%</m> confidence interval for the mean difference is
+    <m>(2.245,\ 3.355)</m>.
+  </p>
+  <p>
+    We are 95% confident that the true mean difference in the number of pushups after the training program is between <m>2.2</m> and <m>3.4</m> more pushups. Since the interval does not contain 0, this is consistent with the hypothesis test that the training program increases the mean number of pushups.
+  </p>
+</solution>
+</example>
 
+ </subsection>
 
-<p><term>Paired Mean Hypothesis Test for Sleep Improvement </term> </p>
+<subsection xml:id="subsec-PairedMeanSleep">
+  <title>Paired Mean Test for Sleep Improvement </title>
+
 <p>
       A sleep researcher wants to know whether a new bedtime routine increases
       the number of hours of sleep college students get each night. The
       researcher records the hours of sleep for each student before starting the
-      routine and again after 2 weeks on the routine. The routine consists of a 30-minute wind down period each night where the college students disconnect from electronic devices, dim the lighting to encourage melatonin production, and engage in calming activities like reading or gentle stretching. 
+      routine and again after 4 weeks on the routine. The routine consists of a 30-minute wind down period each night where the college students disconnect from electronic devices, dim the lighting to encourage melatonin production, and engage in calming activities like reading or gentle stretching. 
     </p>
     <p>
       The data are shown below.
@@ -235,9 +316,9 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
         <cell><p><m>6.1</m></p></cell>
       </row>
     </tabular>
-<p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
+<p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. Test against <m> \alpha = .05 </m> level of significance. </p> 
 
-<exercise> <title> Sleep Routine</title>
+<exercise> <title> Sleep Routine Test</title>
   <statement>
   <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
   </statement>
@@ -245,15 +326,34 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
     <p>
       A paired <m>t</m>-test is appropriate because the same students are
       measured twice, once before the bedtime routine and once after
-      2 weeks on the routine.
+      4 weeks on the routine.
     </p>
     <p>
-      Let <m>d = \text{After} - \text{Before}</m>. Then the differences are
-      <m>0.7, 0.4, 0.5, 0.4, 0.5, 0.4</m>.
-    </p>
+      Let <m>d = \text{After} - \text{Before}</m>. Then the differences are </p>
+      <tabular>
+      <row>
+        <cell><p><term>Participant</term></p></cell>
+        <cell><p><m>A</m></p></cell>
+        <cell><p><m>B</m></p></cell>
+        <cell><p><m>C</m></p></cell>
+        <cell><p><m>D</m></p></cell>
+        <cell><p><m>E</m></p></cell>
+       <cell><p><m>F</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Difference</term></p></cell>
+        <cell><p><m>0.7</m></p></cell>
+        <cell><p><m>0.4</m></p></cell>
+        <cell><p><m>0.5</m></p></cell>
+        <cell><p><m>0.4</m></p></cell>
+        <cell><p><m>0.5</m></p></cell>
+     <cell><p><m>0.4</m></p></cell>
+      </row>
+    </tabular>
+  <p> Since the differences are positive, it looks like the students slept more. We need to determine if it is statistically significant more. </p>  
 </solution>
 <solution> <title> Hypotheses </title>
-    <p> Since we are seeing if sleep is improving the difference values are positive.
+    <p> Since we are seeing if sleep is improving, the difference values are positive.
       The hypotheses are
       <m>H_0: \mu_d = 0</m>
       versus
@@ -270,9 +370,9 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
       <md>s_d \approx 0.117</md>.
     </p>
     <p> The test statistic is
-      <m>
+      <md>
         t = \frac{\bar{d}-0}{s_d/\sqrt{n}}  = \frac{0.483}{0.117/\sqrt{6}}    \approx 10.14
-      </m>
+      </md>
       with <m>df = 6-1 = 5</m>.
     </p>
     <p>  The <m>p</m>-value is very small <m>\approx 0.00008 </m>, so we reject <m>H_0</m> since it is less than <m>\alpha = 0.05</m>.
@@ -289,18 +389,30 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
   </solution>
 </exercise>
 
-<p> A sleep researcher wants to know whether a new bedtime routine increases the number of hours of sleep college students get each night. The researcher records the hours of sleep for each student before starting the routine and again after 2 weeks on the routine. 
+<p> A sleep researcher wants to know whether a new bedtime routine increases the number of hours of sleep college students get each night. The researcher records the hours of sleep for each student before starting the routine and again after 4 weeks on the routine. 
 </p>
 <p>   Construct a 95% confidence interval for the mean difference in sleep hours, let
     <m>d=\text{After}-\text{Before}</m>.
   </p>
-<exercise> <title> Confidence Interval </title>
+<exercise> <title> Sleep Confidence Interval </title>
 <statement> 
 <p>   To construct a 95% confidence interval for the mean difference in sleep hours, let
     <m>d=\text{After}-\text{Before}</m>.
   </p>
   </statement>
-<solution> 
+<solution> <title> Find t* </title> 
+<p> Recall with StatKey, select the t-distribution, enter the degrees of freedom of <m> df=6-1= 5</m>,  click on Two Tail and enter 0.95 in the center area region. The <m> t^* </m> value is along the bottom of the graph for <m> t^* =2.571</m>. </p> 
+
+<figure xml:id="TdistSleep">
+            <caption> StatKey for 95% confidence for 5 degrees of freedom</caption>
+            <image source="Tdist2.png" width="90%">
+                <shortdescription>95% confidence for 5 df is t=2.571.</shortdescription>
+            </image>
+        </figure> 
+</solution> 
+
+<solution> <title>Interval </title>
+
   <p>  The differences are  <m>0.7, 0.4, 0.5, 0.4, 0.5, 0.4</m>.
   </p>
   <p> From these data,  <m>n=6</m>,  <m>\bar{d}\approx 0.483</m>,
@@ -342,10 +454,118 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
 
 <subsection xml:id="subsec-PairedMeanTestCalc">
   <title>Using Technology</title>
-  <p> short cuts </p>
+   <p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" />  or your personal calculator.</p>
+
+    <p>
+      A health researcher wants to determine whether adults in a small pilot
+      program lost weight after <term>GLP-1</term> treatment. The weights of
+      10 participants were recorded before starting the treatment and again
+      after several months on the medication. The data, measured in pounds, are shown
+      below.
+     </p>
+
+     <p>    <md>
+\begin{array}{c|c|c}
+\text{Participant} &amp; \text{Before} &amp; \text{After} \\
+\hline
+1 &amp; 242 &amp; 230 \\
+2 &amp; 215 &amp; 207 \\
+3 &amp; 261 &amp; 246 \\
+4 &amp; 233 &amp; 223 \\
+5 &amp; 208 &amp; 202 \\
+6 &amp; 250 &amp; 236 \\
+7 &amp; 227 &amp; 218 \\
+8 &amp; 239 &amp; 228 \\
+9 &amp; 221 &amp; 214 \\
+10 &amp; 246 &amp; 233
+\end{array}
+    </md> </p>
 
 
-  <p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" /> </p>
+    <p>
+      At the <m> \alpha =0.05</m> significance level, test whether the mean weight loss for adults using the GLP-1 treatment is greater than <m>0</m>. Let <m>d = \text{before} - \text{after}</m>, so that positive differences indicate weight loss.
+    </p>
+<example> <title> Weight Loss Test</title>
+    <statement>
+ <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value using technology, and state the conclusion in context. </p>
+  </statement>
+  <solution> <title> Input Differences</title>
+    <p>
+      Let <m>d = \text{before} - \text{after}</m>, so that positive differences
+      indicate weight loss. Let <m>\mu_d</m> be the population mean difference.
+    </p>
+    <p> The differences are
+    <md> 12,\ 8,\ 15,\ 10,\ 6,\ 14,\ 9,\ 11,\ 7,\ 13.     </md> </p>
+<p> Press the [STAT] button, under the EDIT menu select <term>1:Edit </term> and press [ENTER]. Input the difference in the calculator under L1.</p>
+<figure xml:id="PairedCalc1">
+            <caption> Entering the difference values</caption>
+            <image source="PairedCalc1.png" width="80%">
+                <shortdescription>Under Edit select 1 to input values.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button, and press the arrow once to the right for CALC menu and select option <term>1:1-Var Stats</term> and press [ENTER] to select it. The data is in List: L1 and scroll to <term>Calculate</term> and press [ENTER] to compute the summary statistics.</p>
+<figure xml:id="PairedCalc2">
+            <caption> Compute summary statistics </caption>
+            <image source="PairedCalc2.png" width="90%">
+                <shortdescription>Under CALC menu select 1-Var Stat and select the location of the data .</shortdescription>
+            </image>
+        </figure> 
+
+<p> the sample mean is <m> \bar{x}=10.5 </m>, sample standard deviation <m>Sx=3.028 </m> and sample size of <m>n=10</m> . </p>
+</solution>
+<solution> <title> Hypotheses </title>
+    <p> The hypotheses are
+    <m> H_0:\mu_d=0 \qquad H_a:\mu_d \gt 0 </m> for a right tailed test. </p>
+</solution> 
+<solution> <title> Statistical Test</title>
+    <p>
+      The sample size is <m>n=10</m>. The sample mean of the differences is
+    <md> \bar{d} = \frac{105}{10} =10.5.  </md> </p> 
+    <p>The sample standard deviation of the differences is <m>s_d \approx 3.03</m>. </p>
+    <p> The test statistic is
+    <md> t=\frac{\bar{d}-0}{s_d/\sqrt{n}}
+=\frac{10.5}{3.03/\sqrt{10}} \approx \frac{10.5}{0.958} \approx 10.96.     </md></p>
+</solution>
+<solution> <title> Test on TI-84</title>
+<p> Press the [STAT] button and press the arrow twice to the right for TESTS menu and select option <term>2: T-test</term> and press [ENTER] to select it.</p>
+<p> Since we entered the raw differences, select <term>Data</term> and press [ENTER]. The null difference is 0, the data is listed in L1, the Frequency is 1, select the alternative hypothesis <m> \gt \mu_0 </m> and then select <term>Calculate</term> and press [ENTER] to compute the test values. </p>
+<figure xml:id="PairedCalc3">
+            <caption> Select T-test for the differences</caption>
+            <image source="PairedCalc3.png" width="90%">
+                <shortdescription>Under Tests section 2: T-test.</shortdescription>
+            </image>
+        </figure> 
+<figure xml:id="PairedCalc4">
+            <caption> T-test results for weight loss</caption>
+            <image source="PairedCalc4.png" width="90%">
+                <shortdescription>test value is t=10.97 with p-value near zero.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The display says you performed <term>T-test</term> with the alterative hypothesis <m> \mu \gt 0</m> and test statistic t=10.9669 and p-value <m>p \approx 0</m> since it is written in scientific notation with six zeros before 8. It also lists the summary statistics. If you selected <term>Draw</term> it will graph the right tailed test with a p=value =0. </p> 
+
+</solution>
+
+<solution> <title> Conclusion</title>
+    <p>  Since the <term>p-value</term> is less than <m>0.05</m>, we reject
+      <m>H_0</m>.
+    </p>
+    <p>  At the <m>0.05</m> significance level, there is sufficient evidence to
+      conclude that the mean weight loss for adults using GLP-1 treatment is
+      greater than <m>0</m>.
+    </p>
+  </solution>
+
+
+
+</example>
+
+
+
+
+
+
+
   </subsection>
   
 </section>
