@@ -555,17 +555,233 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
       greater than <m>0</m>.
     </p>
   </solution>
-
-
-
 </example>
 
 
+<p> At the <m> \alpha =0.05</m> significance level, test whether the mean weight loss
+      for adults using GLP-1 treatment is less than <m>0</m>. Let <m>d = \text{After} - \text{Before}</m>, so that the negative differences indicate weight loss.
+  </p>
 
+<example> <title> Negative Weight Loss</title>
+    <statement>
+ <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value using technology, and state the conclusion in context. </p>
+  </statement>
+  <solution> <title> Input Differences</title>
+    <p>
+      Let <m>d = \text{After} - \text{Before}</m>, so that the negative differences
+      indicate weight loss. Let <m>\mu_d</m> be the population mean difference.
+    </p>
+    <p> The differences are
+    <md> -12,\ -8,\ -15,\ -10,\ -6,\ -14,\ -9,\ -11,\ -7,\ -13.     </md> </p>
+<p> Press the [STAT] button, under the EDIT menu select <term>1:Edit </term> and press [ENTER]. Input the difference in the calculator under L1. Make sure to use the <c>(-)</c> button and not the subtraction button.</p>
+<figure xml:id="PairedCalc5">
+            <caption> Entering negative difference values</caption>
+            <image source="PairedCalc5.png" width="80%">
+                <shortdescription>Under Edit select 1 to input values.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button, and press the arrow once to the right for CALC menu and select option <term>1:1-Var Stats</term> and press [ENTER] to select it. The data is in List: L1 and scroll to <term>Calculate</term> and press [ENTER] to compute the summary statistics.</p>
+
+<p> The sample mean is <m> \bar{x}=-10.5 </m>, sample standard deviation <m>Sx=3.03 </m> and sample size of <m>n=10</m> . </p>
+
+</solution>
+<solution> <title> Hypotheses </title>
+    <p> The hypotheses are
+    <m> H_0:\mu_d=0 \qquad H_a:\mu_d  \lt 0 </m> for a left tailed test. </p>
+</solution> 
+<solution> <title> Test on TI-84</title>
+<p> Press the [STAT] button and press the arrow twice to the right for TESTS menu and select option <term>2: T-test</term> and press [ENTER] to select it.</p>
+<p> Since we entered the raw differences, select <term>Data</term> and press [ENTER]. The null difference is 0, the data is listed in L1, the Frequency is 1, select the alternative hypothesis <m> \lt \mu_0 </m> and then select <term>Calculate</term> and press [ENTER] to compute the test values. </p>
+<figure xml:id="PairedCalc6">
+            <caption> T-test results for negative weight loss</caption>
+            <image source="PairedCalc6.png" width="90%">
+                <shortdescription>test value is t=-10.97 with p-value near zero.</shortdescription>
+            </image>
+        </figure> 
+<p> The display says you performed <term>T-test</term> with the alterative hypothesis <m> \mu \gt 0</m> and test statistic t=-10.9669 and p-value <m>p \approx 0</m> since it is written in scientific notation. It also lists the summary statistics. </p> 
+</solution>
+
+<solution> <title> Conclusion</title>
+    <p>  Since the <term>p-value</term> is less than <m>0.05</m>, we reject
+      <m>H_0</m>.
+    </p>
+    <p>  At the <m>0.05</m> significance level, there is sufficient evidence to
+      conclude a mean weight loss for adults using the GLP-1 treatment.
+    </p>
+    <p> It is important to note whether you are finding the difference as Before-After or After-Before since this will determine if the values are positive or negative and whether the test value is positive or negative. The numerical values for the test and p-value are the same, just different by the sign. </p>
+  </solution>
+
+</example> 
+
+<p>   Construct a 95% confidence interval for the mean difference in weight loss using the GLP-1 treatment. Let  <m>d=\text{After}-\text{Before}</m>. </p> 
+<example> <title> Weight Loss Interval</title>
+<statement>
+<p> Since we are letting  <m>d=\text{After}-\text{Before}</m>, the difference values are negative. 
+</p>
+</statement>
+<solution>
+<p> We have a sample of 10 so the degrees of freedom is 9. Using Statkey <m> t^* = 2.262 </m> for a Two Tail with 0.95 in the middle area.</p>
+<p> Press the [STAT] button, under the EDIT menu select <term>1:Edit </term> and press [ENTER]. Input the difference in the calculator under L1, if you haven't already done so.</p>
+<figure xml:id="PairedCalc7">
+            <caption> Entering negative difference values</caption>
+            <image source="PairedCalc5.png" width="80%">
+                <shortdescription>Under Edit select 1 to input values.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button and press the arrow twice to the right for TESTS menu and select option <term>8: T-Interval</term> and press [ENTER] to select it.</p>
+<p> Since we entered the raw differences, select <term>Data</term> and press [ENTER]. The data is listed in L1, the Frequency is 1, change the C-level to 0.95 and then select <term>Calculate</term> and press [ENTER] to compute the test values. </p>
+<figure xml:id="PairedCalc8">
+            <caption> Interval menu and results for weight loss</caption>
+            <image source="PairedCalc8.png" width="90%">
+                <shortdescription> The t-interval is (-12.67, -8.334).</shortdescription>
+            </image>
+        </figure> 
+<p> The t-interval is (-12.67, -8.334). We are 95% confident that the mean difference in weight is between 8.33 and 12.67 pounds less than before using GLP1 treatment. This indicates that the mean weight loss is between 8.33 and 12.67 pounds. </p>
+</solution>
+</example> 
+
+  </subsection>
+  
+<subsection xml:id="subsec-PairedMeanPractice">
+  <title>Paired Mean Practice </title>
+    <p>
+      A pediatric researcher wants to investigate whether first-born twins tend
+      to have different resting pulse rates than their second-born twins. A
+      random sample of <m>8</m> twin pairs is selected, and the resting pulse
+      rate of each infant is measured in beats per minute. For each pair, the
+      researcher records the pulse rate of the first-born twin and the
+      second-born twin.
+    </p>
+    <table>
+      <title>Resting Pulse Rates for Twin Pairs</title>
+      <tabular>
+        <row>
+          <cell>Twin Pair</cell>
+          <cell>First-Born</cell>
+          <cell>Second-Born</cell>
+          <cell>Difference </cell>
+        </row>
+        <row><cell>1</cell><cell>136</cell><cell>132</cell><cell>4</cell></row>
+        <row><cell>2</cell><cell>128</cell><cell>130</cell><cell>-2</cell></row>
+        <row><cell>3</cell><cell>142</cell><cell>137</cell><cell>5</cell></row>
+        <row><cell>4</cell><cell>133</cell><cell>131</cell><cell>2</cell></row>
+        <row><cell>5</cell><cell>139</cell><cell>135</cell><cell>4</cell></row>
+        <row><cell>6</cell><cell>130</cell><cell>129</cell><cell>1</cell></row>
+        <row><cell>7</cell><cell>137</cell><cell>134</cell><cell>3</cell></row>
+        <row><cell>8</cell><cell>131</cell><cell>133</cell><cell>-2</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population mean
+      difference in resting pulse rates between first-born and second-born twins
+      is different. Let the difference <m>d=\text{First}-\text{Second}</m> twins pulse rate. 
+    </p>
+<exercise> <title> Pulse Rates Test</title>
+<statement>
+<p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value using technology, and state the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypotheses</title> 
+    <p>
+      Since the data come from matched twin pairs, this is a paired <m>t</m>-test.
+      Let
+      <m>d=\text{First-Born}-\text{Second-Born}</m> for their pulse rates.
+    </p>
+    <p>
+      The hypotheses are
+      <m>H_0:\mu_d=0</m>
+      and
+      <m>H_a:\mu_d\ne 0</m> for a two tailed test.
+    </p>
+</solution>
+<solution> <title> Statistical Test</title>
+    <p>  The sample differences are   <m>4,-2,5,2,4,1,3,-2</m>. Notice that some values are positive and some are negative for the difference in the twins.
+    </p>
+    <p> From these values,
+      <m>n=8</m>,
+      <m>\bar{d}=1.875</m>,
+      and
+      <m>s_d\approx 2.696</m>.
+    </p>
+    <p> The test statistic is
+      <md>t=\dfrac{\bar{d}-0}{s_d/\sqrt{n}}</md>.
+       Substituting the sample values gives
+      <md>
+        t=\dfrac{1.875}{2.696/\sqrt{8}}
+        \approx \dfrac{1.875}{0.954}
+        \approx 1.96
+      </md>.
+    </p>
+    <p>  The degrees of freedom are  <m>df=n-1=7</m>.
+    </p>
+    <p>
+      Using a <m>t</m>-distribution with <m>7</m> degrees of freedom, the
+      two-sided <m>p</m>-value is approximately <m>0.090</m>.
+    </p>
+</solution>
+<solution> <title> Test with TI-84 </title>
+<p> Press the [STAT] button, under the EDIT menu select <term>1:Edit </term> and press [ENTER]. Input the difference in the calculator under L1.</p>
+<p> Press the [STAT] button and press the arrow twice to the right for TESTS menu and select option <term>2: T-test</term> and press [ENTER] to select it.</p>
+<p> Since we entered the raw differences, select <term>Data</term> and press [ENTER]. The null difference is 0, the data is listed in L1, the Frequency is 1, select the alternative hypothesis <m> \ne \mu_0 </m> and then select <term>Calculate</term> and press [ENTER] to compute the test values. </p>
+<figure xml:id="PairedCalc9">
+            <caption> Paired t-test for twin pulse rates</caption>
+            <image source="PairedCalc9.png" width="90%">
+                <shortdescription> test value is t=1.967 and p-value 0.8986.</shortdescription>
+            </image>
+        </figure> 
+<p> The statistical test value is <m> t=1.967 </m> and <m>p-value =0.08986</m> </p> 
+</solution> 
+<solution> <title> Conclusion</title>
+    <p>
+      Since <m>p=0.090 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the mean difference in resting pulse rates
+      between first-born and second-born twins is different.
+    </p>
+  </solution>
+</exercise>
+
+<p>   Construct a 95% confidence interval for the mean difference in the pulse rates of twins using the difference <m>d=\text{First}-\text{Second}</m>. </p> 
+<exercise> <title> Pulse Rate Interval</title>
+<statement>
+<p>   Construct a 95% confidence interval for the mean difference in the pulse rates of twins using the difference <m>d=\text{First}-\text{Second}</m>. </p> 
+</statement>
+<solution>
+<p> Using StatKey for <m> df=7</m> the <m>t^* = 2.365</m> for 95% confidence. </p>
+<p> The margin of error is
+    <md>   ME=t^*\frac{s_d}{\sqrt{n}}
+      =2.365\left(\frac{2.70}{\sqrt{8}}\right)
+      \approx 2.258
+    </md>.
+  </p>
+  <p> The confidence interval is
+    <md>   \bar{d}\pm ME = 1.875\pm 2.258
+    </md>.
+  </p>
+  <p>
+    So the <m>95\%</m> confidence interval for the mean difference in pulse rates is
+    <m>(-0.383,\ 4.13)</m>. We are 95% confident that the mean difference in pulse rate of twins is between -0.38 and 4.13 beats per minute.  This indicates there is no difference in pulse rates since 0 is contained within the interval.
+  </p>
+  </solution>
+<solution> <title>With TI-84</title> 
+<p> Using the calculator, press the [STAT] button, under the EDIT menu select <term>1:Edit </term> and press [ENTER]. Input the difference in the calculator under L1, if you haven't already done so.</p>
+<p> Press the [STAT] button and press the arrow twice to the right for TESTS menu and select option <term>8: T-Interval</term> and press [ENTER] to select it.</p>
+<p> Since we entered the raw differences, select <term>Data</term> and press [ENTER]. The data is listed in L1, the Frequency is 1, change the C-level to 0.95 and then select <term>Calculate</term> and press [ENTER] to compute the test values. </p>
+<figure xml:id="PairedCalc10">
+            <caption> Interval menu and results for pulse rates</caption>
+            <image source="PairedCalc10.png" width="90%">
+                <shortdescription> The t-interval is (-0.3788, 4.1288) for 95% confidence.</shortdescription>
+            </image>
+        </figure> 
+<p> The t-interval is (-0.3788, 4.1288). We are 95% confident that the mean difference in pulse rate of twins is between -0.38 and 4.13 beats per minute.  This indicates there is no difference in pulse rates since 0 is contained within the interval. </p>
+</solution>
+</exercise> 
 
 
 
 
   </subsection>
-  
+
+
 </section>

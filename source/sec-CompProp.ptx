@@ -3,9 +3,14 @@
   <title>z-test for Two Proportions</title>
 
   <introduction>
-    <p>
-      In this section we will test the equality of two proportions. 
-    </p>
+  <p> In this section we will test the equality of two proportions. </p>
+  <p> A two-proportion <m>z</m>-test is used to determine whether two population
+  proportions are significantly different. It compares the difference between two
+  sample proportions to what would be expected by random chance if the population
+  proportions were actually equal. This test is commonly used when data are
+  collected from two independent groups and the response for each individual
+  falls into one of two categories, such as success or failure.
+  </p>
   </introduction>
 
   <objectives>
