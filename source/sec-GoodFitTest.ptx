@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-GoodFitTest" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Chi-square Goodness of Fit Test</title>
+
+  <introduction>
+    <p>
+      In this section
+    </p>
+  </introduction>
+
+ <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Test a distribution for goodness of fit using the chi square test. </p> </li>
+     <li> <p> Determine if same. </p>    </li>
+     <li> <p> Determine if matches pattern. </p>    </li>
+        </ol>
+</objectives>
+
+<subsection xml:id="subsec-GoodFitBasics">
+  <title>Understanding the Basics</title>
+<p> A chi-square test for one categorical variable is used to analyze the
+  distribution of counts across categories and determine whether the observed
+  frequencies differ significantly from what we would expect. In an introductory
+  statistics course, this test is often used to decide whether sample data
+  provide enough evidence to conclude that a population distribution does not
+  follow a claimed set of proportions. By comparing observed counts to expected
+  counts, the chi-square test helps us judge whether any differences are likely
+  due to random chance or indicate a real difference in the population. A large chi-square statistic indicates that the observed counts differ substantially from the expected counts, suggesting that the claimed distribution may not accurately describe the population.
+ </p> 
+<definition xml:id="def-chi-square-goodness-of-fit">
+  <statement>
+    <p>
+      A <term>chi-square goodness-of-fit test</term> is used to determine whether
+      the distribution of a single categorical variable in a population matches a
+      claimed set of proportions. The test compares the observed counts in each
+      category to the expected counts that would occur if the claimed
+      distribution were true. The test statistic is
+      <m>\chi^2=\sum \frac{(O-E)^2}{E}</m>,
+      where <m>O</m> represents an observed count and <m>E</m> represents the
+      corresponding expected count. The degrees of freedom for the test are <m>df=k-1</m>, where <m>k</m> is the number of categories. 
+    </p>
+  </statement>
+</definition>
+
+
+</subsection>
+
+<subsection xml:id="subsec-GoodFitPractice">
+  <title> Goodness of Fit Practice Problems </title>
+<p> For each problem,. </p> 
+</subsection>
+
+</section> 

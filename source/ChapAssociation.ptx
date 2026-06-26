@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ChapAssociation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Association Between Variables</title>
+
+  <introduction>
+    <p> This chapter introduces analyzing data for associations. We will begin with correlation between two quantitative variables. We will investigate the goodness of fit for one categorical variable. We will explore the association between two or more categorical variables.  
+    </p>
+  </introduction>
+
+  <objectives>
+  <introduction>
+    <p> At the end of this chapter you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Determine if the correlation is statistically significant between two quantitative variables. </p>    </li>
+    <li> <p> Test a distribution for goodness of fit using the chi square test. </p> </li>
+    <li> <p> Test for an association between two categorical variables using the chi square test.  </p> </li>
+    <li> <p> Test for the homogeneity of proportions using the chi square test.  </p> </li>
+  </ol>
+</objectives>
+
+<xi:include href="sec-CorrelationTest.ptx" />
+<xi:include href="sec-GoodFitTest.ptx" />
+<xi:include href="sec-AssociationTests.ptx" />
+<xi:include href="sec-ANOVA.ptx" />
+
+</chapter>  

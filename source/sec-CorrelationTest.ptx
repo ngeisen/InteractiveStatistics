@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-CorrelationTest" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Testing for Correlation</title>
+
+  <introduction>
+    <p>
+      In this section
+    </p>
+  </introduction>
+
+ <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Determine if the correlation is statistically significant using hypothesis testing. </p>    </li>
+    <li> <p> Determine the regression line equation. </p> </li>
+     <li> <p> Compute the coefficient of determination. </p>    </li>
+     <li> <p> Compute the standard error of the estimate. </p>    </li>
+        </ol>
+</objectives>
+
+<subsection xml:id="subsec-CorrelationTestBasics">
+  <title>Understanding the Basics</title>
+  <p> In correlation and regression hypothesis testing, we use sample data to decide
+  whether there is enough evidence of a linear relationship between two
+  quantitative variables in the population. For correlation, we test whether the
+  population correlation coefficient <m>\rho</m> is equal to zero, which would
+  indicate no linear association. For regression, we test whether the population
+  slope <m>\beta_1</m> is equal to zero, which would indicate that the
+  explanatory variable is not useful for predicting the response variable with a
+  linear model. In both cases, the goal is to determine whether an observed
+  relationship in the sample is strong enough to conclude that a real linear
+  relationship exists in the population.
+  </p> 
+<p> We will begin with a review of correlation and regression. </p> 
+</subsection>
+
+<subsection xml:id="subsec-CorrelationPractice">
+  <title> Correlation Practice Problems </title>
+<p> For each problem, construct a scatterplot, find the correlation coefficient, determine if it is significant, find the regression equation, and interpret the coefficient of determination. </p> 
+</subsection>
+
+
+
+
+</section> 

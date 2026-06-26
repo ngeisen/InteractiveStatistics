@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-ANOVA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>One-Way Analysis of Variance</title>
+
+  <introduction>
+    <p>
+      In this section we will discuss the one-way analysis of variance (ANOVA) test, which is used to compare the means of three or more populations to determine if at least one population mean is different from the others. ANOVA allows us to assess the variation between group means relative to the variation within groups, providing a single hypothesis test for multiple comparisons. This method is particularly useful in situations where conducting multiple two-sample tests would increase the risk of Type I errors. We will explore the assumptions of ANOVA, how to calculate the F-statistic, and how to interpret the results of the test.
+    </p>
+  </introduction>
+
+ <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Use one-way ANOVA to determine if there is a significant difference between three or more means.  </p> </li>
+<li> <p> Use technology appropriately.  </p> </li>
+        </ol>
+</objectives>
+
+<subsection xml:id="subsec-ANOVABasics">
+  <title>Understanding the Basics</title>
+<p> Analysis of variance, or <term>ANOVA</term>, is used to compare the means of
+  three or more populations to determine whether at least one population mean is
+  different from the others. Instead of performing many separate two-sample
+  tests, ANOVA uses sample data from all groups at once and compares the
+  variation between the group means to the variation within the groups. If the
+  variation between groups is large relative to the variation within groups, we
+  have evidence that not all population means are equal. In an introductory
+  statistics course, ANOVA provides a practical method for testing differences
+  among several groups using a single hypothesis test.
+ </p> 
+<definition xml:id="def-anova">
+  <statement>
+    <p>
+      <term>Analysis of variance</term>, or <term>ANOVA</term>, is a hypothesis
+      test used to determine whether the means of three or more populations are
+      equal. The hypotheses are
+      <m>H_0:\mu_1=\mu_2=\cdots=\mu_k</m>
+      and
+      <m>H_a:</m> at least one population mean is different. </p>
+<p> ANOVA compares the   variation between the groups to the variation within the groups using the test statistic
+      <md>F=\dfrac{MS_{\text{between}}}{MS_{\text{within}}}</md>,
+      where
+      <m>MS_{\text{between}}=\dfrac{SS_{\text{between}}}{df_{\text{between}}}</m>
+      and
+      <m>MS_{\text{within}}=\dfrac{SS_{\text{within}}}{df_{\text{within}}}</m>.
+      Here,
+      <m>SS_{\text{between}}</m> measures variation among the sample means,
+      <m>SS_{\text{within}}</m> measures variation within the groups,
+      <m>df_{\text{between}}=k-1</m>,
+      and
+      <m>df_{\text{within}}=n-k</m>.
+    </p>
+  </statement>
+</definition>
+
+
+
+
+
+
+
+
+</subsection>
+
+<subsection xml:id="subsec-ANOVAPractice">
+  <title> ANOVA Practice Problems </title>
+<p> For each problem,. </p> 
+</subsection>
+
+
+</section> 

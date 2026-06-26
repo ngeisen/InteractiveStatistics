@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-AssociationTests" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Chi-square Association Test</title>
+
+  <introduction>
+    <p>
+      In this section we will discuss the chi-square test for association between two categorical variables and the chi-square test for homogeneity of proportions. The chi-square test for association is used to determine whether there is a significant relationship between two categorical variables in a population. The chi-square test for homogeneity of proportions is used to compare the distribution of a categorical variable across different populations or groups. Both tests involve comparing observed counts to expected counts under the assumption of independence or homogeneity, and calculating a chi-square statistic to assess the significance of any observed differences.
+    </p>
+  </introduction>
+
+ <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Test for an association between two categorical variables using the chi square test.  </p> </li>
+    <li> <p> Test for the homogeneity of proportions using the chi square test. </p> </li>
+  </ol>
+</objectives>
+
+<subsection xml:id="subsec-AssociationBasics">
+  <title>Understanding the Basics</title>
+  <p> A chi-square test for two categorical variables is used to determine whether
+  there is an association between the variables in a population. In an
+  introductory statistics course, this test is applied to data arranged in a
+  two-way table, where the counts show how individuals fall into combinations of
+  categories. The test compares the observed counts in the table to the counts
+  we would expect if the two variables were independent. If the observed counts
+  differ enough from the expected counts, we have evidence of an association
+  between the two categorical variables.
+ </p> 
+ <definition xml:id="def-chi-square-association">
+  <statement>
+    <p>
+      A <term>chi-square test for association</term> is used to determine whether
+      two categorical variables are associated in a population. The data are
+      arranged in a two-way table, and the observed counts in each cell are
+      compared to the expected counts that would occur if the variables were
+      independent. The expected count for a cell is
+      <m>E=\dfrac{(\text{row total})(\text{column total})}{\text{table total}}</m>,
+      and the test statistic is
+      <m>\chi^2=\sum \frac{(O-E)^2}{E}</m>,
+      where <m>O</m> is the observed count and <m>E</m> is the expected count. The degrees of freedom for the test are <m>df=(r-1)(c-1)</m>, where <m>r</m> is the number of rows and <m>c</m> is the number of columns in the table.
+    </p>
+  </statement>
+</definition>
+
+</subsection>
+
+<subsection xml:id="subsec-AssociationPractice">
+  <title> Association Practice Problems </title>
+<p> For each problem,. </p> 
+</subsection>
+
+</section> 
