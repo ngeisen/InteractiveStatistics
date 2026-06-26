@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Measures of Spread</title>
+<title>Chi-square Association Test</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -81,7 +81,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-DesStat-Centers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapSummaryStats.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-DesStat-Position.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-GoodFitTest.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapAssociation.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-ANOVA.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -173,9 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapSummaryStats.html" class="internal"><span class="codenumber">3</span> <span class="title">Descriptive Statistics</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DesStat-Centers.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Measures of Center</span></a></div>
 <ul class="structural toc-item-list">
@@ -185,9 +185,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Centers.html#subsec-CenterStatKey" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Using StatKey to Find Summary Statistics</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section contains-active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DesStat-Spread.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Measures of Spread</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadBasics" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadCalc" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Using TI-83 Calculator for Summary Statistics</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Spread.html#subsec-SpreadUses" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Using the Standard Deviation</span></a></div></li>
@@ -435,9 +435,9 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ChapAssociation.html" class="internal"><span class="codenumber">9</span> <span class="title">Association Between Variables</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-CorrelationTest.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Hypothesis Testing for Correlation</span></a></div>
 <ul class="structural toc-item-list">
@@ -452,9 +452,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GoodFitTest.html#subsec-GoodFitPractice" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Goodness of Fit Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-AssociationTests.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Chi-square Association Test</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationBasics" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationPractice" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Association Practice Problems</span></a></div></li>
 </ul>
@@ -530,182 +530,58 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
-<section class="section" id="sec-DesStat-Spread">
+<section class="section" id="sec-AssociationTests">
 <h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Measures of Spread</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chi-square Association Test</span>
 </h2>
-<section class="introduction" id="sec-DesStat-Spread-2">
-<div class="para" id="sec-DesStat-Spread-2-1">In the previous sections we have focused on measures of center to describe the typical value in a data set. We have seen that the mean and median are two common measures of center. However, these values do not give us any information about how the data are spread out. For example, if we have two sets of data with the same mean, they could be very different in how the values are spread out. In this section we will investigate measures of spread to describe how the data are distributed around the center.<div class="autopermalink" data-description="Paragraph"><a href="#sec-DesStat-Spread-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-DesStat-Spread-2-2">Variability is an important idea in statistics. If we were to measure the height of everyone in our class, every observation could give a different value. That means not every student is the same height. Thus, there is variability in the heights of the students in class. If we asked the heights of students in several different classes, there will be variation among the different samples. Variability describes how the data are spread out. If the data are very close to each other, then there is low variability. If the data are very spread out, then there is high variability. We will investigate the range, variance, and standard deviation as measures of spread in the values.<div class="autopermalink" data-description="Paragraph"><a href="#sec-DesStat-Spread-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-AssociationTests-2">
+<div class="para" id="sec-AssociationTests-2-1">In this section we will discuss the chi-square test for association between two categorical variables and the chi-square test for homogeneity of proportions. The chi-square test for association is used to determine whether there is a significant relationship between two categorical variables in a population. The chi-square test for homogeneity of proportions is used to compare the distribution of a categorical variable across different populations or groups. Both tests involve comparing observed counts to expected counts under the assumption of independence or homogeneity, and calculating a chi-square statistic to assess the significance of any observed differences.<div class="autopermalink" data-description="Paragraph"><a href="#sec-AssociationTests-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
-<article class="objectives goal-like" id="sec-DesStat-Spread-3"><h3 class="heading"><span class="type">Objectives</span></h3>
-<div class="introduction" id="sec-DesStat-Spread-3-1">
-<div class="para" id="sec-DesStat-Spread-3-1-1">At the end of this section you will be able to<div class="autopermalink" data-description="Paragraph"><a href="#sec-DesStat-Spread-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="objectives goal-like" id="sec-AssociationTests-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-AssociationTests-3-1">
+<div class="para" id="sec-AssociationTests-3-1-1">At the end of this section you will be able to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-AssociationTests-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<ol class="decimal" id="sec-DesStat-Spread-3-2">
-<li id="sec-DesStat-Spread-3-2-1">
-<div class="para" id="sec-DesStat-Spread-3-2-1-1">Determine the range of values<div class="autopermalink" data-description="Paragraph"><a href="#sec-DesStat-Spread-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="sec-AssociationTests-3-2">
+<li id="sec-AssociationTests-3-2-1">
+<div class="para" id="sec-AssociationTests-3-2-1-1">Test for an association between two categorical variables using the chi square test.<div class="autopermalink" data-description="Paragraph"><a href="#sec-AssociationTests-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective 3.2.1"><a href="#sec-DesStat-Spread-3-2-1" title="Copy heading and permalink for Objective 3.2.1" aria-label="Copy heading and permalink for Objective 3.2.1">🔗</a></div>
+<div class="autopermalink" data-description="Objective 9.3.1"><a href="#sec-AssociationTests-3-2-1" title="Copy heading and permalink for Objective 9.3.1" aria-label="Copy heading and permalink for Objective 9.3.1">🔗</a></div>
 </li>
-<li id="sec-DesStat-Spread-3-2-2">
-<div class="para" id="sec-DesStat-Spread-3-2-2-1">Calculate the variance and standard deviation<div class="autopermalink" data-description="Paragraph"><a href="#sec-DesStat-Spread-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-AssociationTests-3-2-2">
+<div class="para" id="sec-AssociationTests-3-2-2-1">Test for the homogeneity of proportions using the chi square test.<div class="autopermalink" data-description="Paragraph"><a href="#sec-AssociationTests-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective 3.2.2"><a href="#sec-DesStat-Spread-3-2-2" title="Copy heading and permalink for Objective 3.2.2" aria-label="Copy heading and permalink for Objective 3.2.2">🔗</a></div>
-</li>
-<li id="sec-DesStat-Spread-3-2-3">
-<div class="para" id="sec-DesStat-Spread-3-2-3-1">Use technology to find the standard deviation<div class="autopermalink" data-description="Paragraph"><a href="#sec-DesStat-Spread-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Objective 3.2.3"><a href="#sec-DesStat-Spread-3-2-3" title="Copy heading and permalink for Objective 3.2.3" aria-label="Copy heading and permalink for Objective 3.2.3">🔗</a></div>
+<div class="autopermalink" data-description="Objective 9.3.2"><a href="#sec-AssociationTests-3-2-2" title="Copy heading and permalink for Objective 9.3.2" aria-label="Copy heading and permalink for Objective 9.3.2">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Objectives 3.2"><a href="#sec-DesStat-Spread-3" title="Copy heading and permalink for Objectives 3.2" aria-label="Copy heading and permalink for Objectives 3.2">🔗</a></div>
+<div class="autopermalink" data-description="Objectives 9.3"><a href="#sec-AssociationTests-3" title="Copy heading and permalink for Objectives 9.3" aria-label="Copy heading and permalink for Objectives 9.3">🔗</a></div>
 </article>
-<section class="subsection" id="subsec-SpreadBasics">
+<section class="subsection" id="subsec-AssociationBasics">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
 </h3>
-<div class="para" id="subsec-SpreadBasics-2">The <dfn class="terminology">range</dfn> of a set of data is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-AssociationBasics-2">A chi-square test for two categorical variables is used to determine whether there is an association between the variables in a population. In an introductory statistics course, this test is applied to data arranged in a two-way table, where the counts show how individuals fall into combinations of categories. The test compares the observed counts in the table to the counts we would expect if the two variables were independent. If the observed counts differ enough from the expected counts, we have evidence of an association between the two categorical variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AssociationBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SpreadBasics-3">Range = maximum - minimum<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="def-chi-square-association"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-chi-square-association-1-1">A <dfn class="terminology">chi-square test for association</dfn> is used to determine whether two categorical variables are associated in a population. The data are arranged in a two-way table, and the observed counts in each cell are compared to the expected counts that would occur if the variables were independent. The expected count for a cell is <span class="process-math">\(E=\dfrac{(\text{row total})(\text{column total})}{\text{table total}}\text{,}\)</span> and the test statistic is <span class="process-math">\(\chi^2=\sum \frac{(O-E)^2}{E}\text{,}\)</span> where <span class="process-math">\(O\)</span> is the observed count and <span class="process-math">\(E\)</span> is the expected count. The degrees of freedom for the test are <span class="process-math">\(df=(r-1)(c-1)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number of rows and <span class="process-math">\(c\)</span> is the number of columns in the table.<div class="autopermalink" data-description="Paragraph"><a href="#def-chi-square-association-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SpreadBasics-4">A better way is to describe the variability within the data with the <dfn class="terminology">standard deviation</dfn> , which is the average distance each value is from the mean. We will illustrate this with an example and then review how to calculate it using technology.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-5">Suppose you need to re-stain the fence in your backyard. There are two common brands at the local hardware store. Before purchasing the new stain, you ask your neighbors how long the stain lasts before having to re-stain the fence. For Brand A you find it needs reapplied after 25, 30, 35, 40, 45 months. For Brand B it needed to be reapplied after 10, 35, 35, 45, 50 months.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-6">Based on this small sample, which brand would you choose and why?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-7">As a new statistics student, you decided to compare the centers to see how long each brand typically lasts. We see there is no mode for Brand A, the mean is 175/5= 35 months, and the median is 35 months. For Brand B the mode is 35 months, the mean is 175/5= 35 months, and the median is 35 months. From these results one might assume both brands will last equally as long. So, we need another way to analyze the data - thus the amount of spread and variation in how long each brand lasts.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-8">Range of Brand A = 45 - 25 = 20 months<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-9">Range of Brand B = 50 - 10 = 40 months.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-10">Brand A has a smaller spread in values while Brand B is more spread out in how long the stain lasts. Brand B may only last 10 months or as long as 50 months.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-11">To find the <dfn class="terminology">deviation</dfn>, we find the distance between each value and the mean. Take the value and subtract the mean of 35. Keep track of the negative values to indicate the values was below the mean and positive that it lasted longer than the mean. The sum of the deviations should be around zero.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-12">Next, we will square each deviation value. Find the total deviation by adding them together and then divide by one less than the sample size. This will give the <dfn class="terminology">sample variance</dfn> for each brand.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/DeviationTable.png" class="contained" alt="table showing deviation computation"></div>
-<div class="para" id="subsec-SpreadBasics-14">Variance for Brand A is 250/4 = 62.5 and the variance for Brand B is 950/4 =237.5<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-15">Square root the variance to get the standard deviation. This describes how far most values are from the mean. The smaller the standard deviation, the more consistent the brand of stain lasts since it is closer to the mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-16">Standard deviation for Brand A is <span class="process-math">\(\sqrt{62.5} = 7.9 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-17">Standard deviation for Brand B is <span class="process-math">\(\sqrt{237.5} = 15.4 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-18">Therefore, Brand A is more consistent around the mean while Brand B has more variation in how long the stain will last.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StainBoxplot.png" class="contained" alt="boxplot of stain values"></div>
-<div class="para" id="subsec-SpreadBasics-20">The boxplot helps to see that Brand A is more consistent while Brand B is more spread out. The value of 10 is an outlier in the boxplot for Brand B.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-21">In general a “small” standard deviation indicates the data is close together around the mean (more consistent) while a “large” standard deviation indicates the data is more spread out (less consistent). If a manufacturer is making bolts, they want the diameters to be very consistent so the nuts still fit, thus they want a small standard deviation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-22">Claiming the standard deviation is small or large also depends on the actual data values. To a bicyclist whose average speed is 20 mph, s = 10 mph is huge. To an airplane whose average speed is 500 mph, s = 10 mph is relatively small. The size of the variation depends on the size of the numbers in the data and the mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadBasics-23">The good news is we can use technology to find the standard deviation. This is the only time we will do it by hand. Next is to find standard deviation on the calculator.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadBasics-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection 3.2.1: Understanding the Basics"><a href="#subsec-SpreadBasics" title="Copy heading and permalink for Subsection 3.2.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 3.2.1: Understanding the Basics">🔗</a></div>
+<div class="autopermalink" data-description="Definition 9.3.1"><a href="#def-chi-square-association" title="Copy heading and permalink for Definition 9.3.1" aria-label="Copy heading and permalink for Definition 9.3.1">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 9.3.1: Understanding the Basics"><a href="#subsec-AssociationBasics" title="Copy heading and permalink for Subsection 9.3.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 9.3.1: Understanding the Basics">🔗</a></div>
 </section>
-<section class="subsection" id="subsec-SpreadCalc">
+<section class="subsection" id="subsec-AssociationPractice">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using TI-83 Calculator for Summary Statistics</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Association Practice Problems</span>
 </h3>
-<div class="para" id="subsec-SpreadCalc-2">Suppose you need to stain the fence in your backyard. There are two common brands at the local hardware store. Before purchasing the new stain, you ask your neighbors how long the stain lasts before having to re-stain the fence. For Brand A you find it needs reapplied after 25, 30, 35, 40, 45 months. For Brand B it needed to be reapplied after 10, 35, 35, 45, 50 months.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-AssociationPractice-2">For each problem,.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AssociationPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SpreadCalc-3">Let’s use technology to find the standard deviation to see which brand is more consistent.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadCalc-4">First, enter the raw data into one of the lists: Start with the <code class="code-inline tex2jax_ignore"> STAT </code>button and under the EDIT menu choose option <dfn class="terminology">1:Edit</dfn> and then hit the <code class="code-inline tex2jax_ignore"> enter </code> button.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/Center1.png" class="contained" alt="image of STAT button 1:Edit"></div>
-<div class="para" id="subsec-SpreadCalc-6">Type in the values from Brand A in L1 and hit [enter] after each entry. Enter the values from Brand B in L2 and hit [enter] after each entry.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/Spread1.png" class="contained" alt="image of entering brand data"></div>
-<div class="para" id="subsec-SpreadCalc-8">Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for <dfn class="terminology">1-Var Stats</dfn> which refers to 1-variable statistics and then hit [enter]. Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then the number <code class="code-inline tex2jax_ignore">1</code> which has L1 above it and then [enter] button. This will give the summary for Brand A. The sample standard deviation is 7.9, to find the variance we square the value thus <span class="process-math">\(7.9^2 = 62.41 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Spread2.png" class="contained" alt="values for Brand A"></div>
-<div class="para" id="subsec-SpreadCalc-10">Repeat for Brand B.  Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for <dfn class="terminology">1-Var Stats</dfn> and then hit [enter] and select the location L2 by hitting the [2nd] button then the number <code class="code-inline tex2jax_ignore">2</code> which has L2 above it and then [enter] button. The sample standard deviation is 15.41 which lets us know the values are more spread out than Brand A, to find the variance we square the value thus <span class="process-math">\(15.41^2 = 237.4681 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Srpead3.png" class="contained" alt="values for Brand B"></div>
-<div class="para" id="subsec-SpreadCalc-12">Note: If you are using a TI-84 the List is L1 and the FreqList is left blank, scroll down to Calculate and hit [enter]. You should see the following outputs for Brand A.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/Srpead4.png" class="contained" alt="TI84 values for Brand A"></div>
-<div class="para" id="subsec-SpreadCalc-14">And to the following outputs for Brand B by changing the List to L2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadCalc-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/Srpead5.png" class="contained" alt="TI84 values for Brand B"></div>
-<div class="autopermalink" data-description="Subsection 3.2.2: Using TI-83 Calculator for Summary Statistics"><a href="#subsec-SpreadCalc" title="Copy heading and permalink for Subsection 3.2.2: Using TI-83 Calculator for Summary Statistics" aria-label="Copy heading and permalink for Subsection 3.2.2: Using TI-83 Calculator for Summary Statistics">🔗</a></div>
-</section>
-<section class="subsection" id="subsec-SpreadUses">
-<h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using the Standard Deviation</span>
-</h3>
-<div class="para" id="subsec-SpreadUses-2">One of the uses of the standard deviation is to describe how a population is distributed by using the Empirical Rule. This rule describes how much data is within a certain distance on either side of the mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-3">Approximately 68% of the data fall with one standard deviation of the mean, giving the interval from μ − σ to μ + σ  for the middle 68% of the values in a distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-4">Approximately 95% of the data fall with two standard deviations of the mean, giving the interval from μ − 2σ to μ + 2σ . This gives the middle 95% of the values in the distribution. This is often called the 95% Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-5">Approximately 99% of the data fall with three standard deviations of the mean, giving the interval from μ − 3σ to μ + 3σ .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-6">
-<dfn class="terminology">Example:</dfn> Find the interval for middle 68% of time that the stain will last for Brand A.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-7">
-<em class="emphasis">Solution:</em> The 68% rules says the values are within 1 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 7.9, the interval is 35 - 7.9 to 35 + 7.9 giving 27.1 to 42.9 months for the typical time the stain will last.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-8">
-<dfn class="terminology">Example:</dfn> Use the 95% rule for the time interval that Brand B will last.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-9">
-<em class="emphasis">Solution:</em> The 95% rule says the values are within 2 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 15.4, the interval is 35 - 2(15.4) to 35 + 2(15.4) giving 4.2 to 65.8 months. This interval is much wider because there was more variation in the original data.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-10">
-<dfn class="terminology">Summary of formulas and notations</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-11">range = maximum - minimum<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-12">The sample standard deviation is designated by <span class="process-math">\(s \)</span> and the sample variance is <span class="process-math">\(s^2 \text{.}\)</span> The formula for the sample standard deviation is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="subsec-SpreadUses-13">
-<div class="displaymath process-math" id="subsec-SpreadUses-13-1">
-\begin{equation*}
-s = \sqrt { \frac{\sum{(x-\bar x)^2}} {n-1} } 
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-14">The formula says we took each value <span class="process-math">\(x \)</span>  and subtract the sample mean <span class="process-math">\(\bar x \text{,}\)</span> we square the difference, then add them all together, and then divided by one less than the sample size to get the variance. Then we take the square root to get the standard deviation.  Aren’t you glad we can do this with technology!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-15">The population standard deviation is designated by <span class="process-math">\(\sigma \)</span> and the variance is <span class="process-math">\(\sigma ^2 \text{.}\)</span> The formula for the population standard deviation is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="subsec-SpreadUses-16">
-<div class="displaymath process-math" id="subsec-SpreadUses-16-1">
-\begin{equation*}
-\sigma = \sqrt { \frac{\sum{(X-\mu)^2}} {N} } 
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-SpreadUses-17">The formula says we took each value <span class="process-math">\(X \)</span> and subtract the population mean <span class="process-math">\(\mu \text{,}\)</span> we square the difference, then add them all together, and then divided by the population size <span class="process-math">\(N \)</span> to get the variance. Then we take the square root to get the population standard deviation <span class="process-math">\(\sigma \)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadUses-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection 3.2.3: Using the Standard Deviation"><a href="#subsec-SpreadUses" title="Copy heading and permalink for Subsection 3.2.3: Using the Standard Deviation" aria-label="Copy heading and permalink for Subsection 3.2.3: Using the Standard Deviation">🔗</a></div>
-</section>
-<section class="subsection" id="subsec-SpreadApply">
-<h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Application Problems</span>
-</h3>
-<div class="para" id="subsec-SpreadApply-2">the<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SpreadApply-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection 3.2.4: Application Problems"><a href="#subsec-SpreadApply" title="Copy heading and permalink for Subsection 3.2.4: Application Problems" aria-label="Copy heading and permalink for Subsection 3.2.4: Application Problems">🔗</a></div>
-</section><div class="autopermalink" data-description="Section 3.2: Measures of Spread"><a href="#sec-DesStat-Spread" title="Copy heading and permalink for Section 3.2: Measures of Spread" aria-label="Copy heading and permalink for Section 3.2: Measures of Spread">🔗</a></div>
+<div class="autopermalink" data-description="Subsection 9.3.2: Association Practice Problems"><a href="#subsec-AssociationPractice" title="Copy heading and permalink for Subsection 9.3.2: Association Practice Problems" aria-label="Copy heading and permalink for Subsection 9.3.2: Association Practice Problems">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 9.3: Chi-square Association Test"><a href="#sec-AssociationTests" title="Copy heading and permalink for Section 9.3: Chi-square Association Test" aria-label="Copy heading and permalink for Section 9.3: Chi-square Association Test">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec-DesStat-Centers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-DesStat-Position.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-GoodFitTest.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ANOVA.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

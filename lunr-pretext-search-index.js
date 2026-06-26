@@ -8065,11 +8065,119 @@ var ptx_lunr_docs = [
   "body": " Bolt Diameters   State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context.    Hypotheses  Let population be bolts produced by Machine A and population be bolts produced by Machine B.  The hypotheses are the bolt variances are equal or not equal:   versus for a two tailed test.    Statistical Test  The test statistic is   The degrees of freedom are and .  Using the -distribution with and degrees of freedom, the two-tailed .   F- test for bolt diameters   Test value F=3.06 for a two tailed test, with each tail area of 0.036 giving a p-value=.072.      Test with TI-84  Press the [STAT] button and use the arrow twice to the right to TEST and scroll down to option E: 2-SampFTest and press [ENTER] to select it.  Since we are given the summary statistics select Stats and press [ENTER] to select it, then input the summary values. Sx1=0.21, n1=14, Sx2=.012, n2=12. Then select the alternative hypothesis . Select Calculate and press [ENTER].   F-test for bolt diameters   Test value F=3.0625 for a two tailed test, giving a p-value=.0711.    The display identifies the F-test value as and the p-value as .    Conclusion  Since , we reject .  There is sufficient evidence at the significance level to conclude that the population variances in bolt diameters are different for the two machines.   "
 },
 {
+  "id": "sec-CorrelationTest",
+  "level": "1",
+  "url": "sec-CorrelationTest.html",
+  "type": "Section",
+  "number": "9.1",
+  "title": "Hypothesis Testing for Correlation",
+  "body": " Hypothesis Testing for Correlation   In this section     At the end of this section you will be able to:     Determine if the correlation is statistically significant using hypothesis testing.    Determine the regression line equation.    Compute the coefficient of determination.    Compute the standard error of the estimate.      Understanding the Basics  In correlation and regression hypothesis testing, we use sample data to decide whether there is enough evidence of a linear relationship between two quantitative variables in the population. For correlation, we test whether the population correlation coefficient is equal to zero, which would indicate no linear association. For regression, we test whether the population slope is equal to zero, which would indicate that the explanatory variable is not useful for predicting the response variable with a linear model. In both cases, the goal is to determine whether an observed relationship in the sample is strong enough to conclude that a real linear relationship exists in the population.  We will begin with a review of correlation and regression.    Correlation Practice Problems  For each problem, construct a scatterplot, find the correlation coefficient, determine if it is significant, find the regression equation, and interpret the coefficient of determination.   "
+},
+{
+  "id": "sec-CorrelationTest-3",
+  "level": "2",
+  "url": "sec-CorrelationTest.html#sec-CorrelationTest-3",
+  "type": "Objectives",
+  "number": "9.1",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Determine if the correlation is statistically significant using hypothesis testing.    Determine the regression line equation.    Compute the coefficient of determination.    Compute the standard error of the estimate.    "
+},
+{
+  "id": "sec-GoodFitTest",
+  "level": "1",
+  "url": "sec-GoodFitTest.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "Chi-square Goodness of Fit Test",
+  "body": " Chi-square Goodness of Fit Test   In this section     At the end of this section you will be able to:     Test a distribution for goodness of fit using the chi square test.    Determine if same.    Determine if matches pattern.      Understanding the Basics  A chi-square test for one categorical variable is used to analyze the distribution of counts across categories and determine whether the observed frequencies differ significantly from what we would expect. In an introductory statistics course, this test is often used to decide whether sample data provide enough evidence to conclude that a population distribution does not follow a claimed set of proportions. By comparing observed counts to expected counts, the chi-square test helps us judge whether any differences are likely due to random chance or indicate a real difference in the population. A large chi-square statistic indicates that the observed counts differ substantially from the expected counts, suggesting that the claimed distribution may not accurately describe the population.    A chi-square goodness-of-fit test is used to determine whether the distribution of a single categorical variable in a population matches a claimed set of proportions. The test compares the observed counts in each category to the expected counts that would occur if the claimed distribution were true. The test statistic is , where represents an observed count and represents the corresponding expected count. The degrees of freedom for the test are , where is the number of categories.      Goodness of Fit Practice Problems  For each problem,.   "
+},
+{
+  "id": "sec-GoodFitTest-3",
+  "level": "2",
+  "url": "sec-GoodFitTest.html#sec-GoodFitTest-3",
+  "type": "Objectives",
+  "number": "9.2",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Test a distribution for goodness of fit using the chi square test.    Determine if same.    Determine if matches pattern.    "
+},
+{
+  "id": "def-chi-square-goodness-of-fit",
+  "level": "2",
+  "url": "sec-GoodFitTest.html#def-chi-square-goodness-of-fit",
+  "type": "Definition",
+  "number": "9.2.1",
+  "title": "",
+  "body": "  A chi-square goodness-of-fit test is used to determine whether the distribution of a single categorical variable in a population matches a claimed set of proportions. The test compares the observed counts in each category to the expected counts that would occur if the claimed distribution were true. The test statistic is , where represents an observed count and represents the corresponding expected count. The degrees of freedom for the test are , where is the number of categories.   "
+},
+{
+  "id": "sec-AssociationTests",
+  "level": "1",
+  "url": "sec-AssociationTests.html",
+  "type": "Section",
+  "number": "9.3",
+  "title": "Chi-square Association Test",
+  "body": " Chi-square Association Test   In this section we will discuss the chi-square test for association between two categorical variables and the chi-square test for homogeneity of proportions. The chi-square test for association is used to determine whether there is a significant relationship between two categorical variables in a population. The chi-square test for homogeneity of proportions is used to compare the distribution of a categorical variable across different populations or groups. Both tests involve comparing observed counts to expected counts under the assumption of independence or homogeneity, and calculating a chi-square statistic to assess the significance of any observed differences.     At the end of this section you will be able to:     Test for an association between two categorical variables using the chi square test.    Test for the homogeneity of proportions using the chi square test.      Understanding the Basics  A chi-square test for two categorical variables is used to determine whether there is an association between the variables in a population. In an introductory statistics course, this test is applied to data arranged in a two-way table, where the counts show how individuals fall into combinations of categories. The test compares the observed counts in the table to the counts we would expect if the two variables were independent. If the observed counts differ enough from the expected counts, we have evidence of an association between the two categorical variables.    A chi-square test for association is used to determine whether two categorical variables are associated in a population. The data are arranged in a two-way table, and the observed counts in each cell are compared to the expected counts that would occur if the variables were independent. The expected count for a cell is , and the test statistic is , where is the observed count and is the expected count. The degrees of freedom for the test are , where is the number of rows and is the number of columns in the table.      Association Practice Problems  For each problem,.   "
+},
+{
+  "id": "sec-AssociationTests-3",
+  "level": "2",
+  "url": "sec-AssociationTests.html#sec-AssociationTests-3",
+  "type": "Objectives",
+  "number": "9.3",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Test for an association between two categorical variables using the chi square test.    Test for the homogeneity of proportions using the chi square test.    "
+},
+{
+  "id": "def-chi-square-association",
+  "level": "2",
+  "url": "sec-AssociationTests.html#def-chi-square-association",
+  "type": "Definition",
+  "number": "9.3.1",
+  "title": "",
+  "body": "  A chi-square test for association is used to determine whether two categorical variables are associated in a population. The data are arranged in a two-way table, and the observed counts in each cell are compared to the expected counts that would occur if the variables were independent. The expected count for a cell is , and the test statistic is , where is the observed count and is the expected count. The degrees of freedom for the test are , where is the number of rows and is the number of columns in the table.   "
+},
+{
+  "id": "sec-ANOVA",
+  "level": "1",
+  "url": "sec-ANOVA.html",
+  "type": "Section",
+  "number": "9.4",
+  "title": "One-Way Analysis of Variance",
+  "body": " One-Way Analysis of Variance   In this section we will discuss the one-way analysis of variance (ANOVA) test, which is used to compare the means of three or more populations to determine if at least one population mean is different from the others. ANOVA allows us to assess the variation between group means relative to the variation within groups, providing a single hypothesis test for multiple comparisons. This method is particularly useful in situations where conducting multiple two-sample tests would increase the risk of Type I errors. We will explore the assumptions of ANOVA, how to calculate the F-statistic, and how to interpret the results of the test.     At the end of this section you will be able to:     Use one-way ANOVA to determine if there is a significant difference between three or more means.    Use technology appropriately.      Understanding the Basics  Analysis of variance, or ANOVA , is used to compare the means of three or more populations to determine whether at least one population mean is different from the others. Instead of performing many separate two-sample tests, ANOVA uses sample data from all groups at once and compares the variation between the group means to the variation within the groups. If the variation between groups is large relative to the variation within groups, we have evidence that not all population means are equal. In an introductory statistics course, ANOVA provides a practical method for testing differences among several groups using a single hypothesis test.     Analysis of variance , or ANOVA , is a hypothesis test used to determine whether the means of three or more populations are equal. The hypotheses are and at least one population mean is different.  ANOVA compares the variation between the groups to the variation within the groups using the test statistic , where and . Here, measures variation among the sample means, measures variation within the groups, , and .      ANOVA Practice Problems  For each problem,.   "
+},
+{
+  "id": "sec-ANOVA-3",
+  "level": "2",
+  "url": "sec-ANOVA.html#sec-ANOVA-3",
+  "type": "Objectives",
+  "number": "9.4",
+  "title": "",
+  "body": "  At the end of this section you will be able to:     Use one-way ANOVA to determine if there is a significant difference between three or more means.    Use technology appropriately.    "
+},
+{
+  "id": "subsec-ANOVABasics-2",
+  "level": "2",
+  "url": "sec-ANOVA.html#subsec-ANOVABasics-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ANOVA "
+},
+{
+  "id": "def-anova",
+  "level": "2",
+  "url": "sec-ANOVA.html#def-anova",
+  "type": "Definition",
+  "number": "9.4.1",
+  "title": "",
+  "body": "   Analysis of variance , or ANOVA , is a hypothesis test used to determine whether the means of three or more populations are equal. The hypotheses are and at least one population mean is different.  ANOVA compares the variation between the groups to the variation within the groups using the test statistic , where and . Here, measures variation among the sample means, measures variation within the groups, , and .   "
+},
+{
   "id": "sec-DownloadR",
   "level": "1",
   "url": "sec-DownloadR.html",
   "type": "Section",
-  "number": "9.1",
+  "number": "10.1",
   "title": "Downloading R and R Studio",
   "body": " Downloading R and R Studio  This section gives you the directions for download R for the first time. R is a free, open-source programming language for statistical computing.   Download R   How to download R visit   Download R Studio   How to download R Studio visit  For UNC students only: if you cannot download R and R Studio, you can still access the programs through UNC’s Apporto link. Log in with your UNC credentials. Details can be found in Canvas.  Note: For my classes we will be using R Studio since it has a friendlier interface. R Studio will split the screen into 4 panels, each panel has a different purpose. The top left is where you will see the files that are currently open in R Studio. The bottom left panel is where you will type in the commands and see the computational outputs. The top right panel summarizes the variables. The bottom right panel is where you can access the folders, and this is where the graphical output will show. The R commands are the same for both programs.   Getting ready to use R     Set up a folder for the Using R Files    Save the data and lesson files in this folder    Launch R or R Studio    Set up the working directory    You are ready to begin.    "
 },
@@ -8105,7 +8213,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-GraphR.html",
   "type": "Section",
-  "number": "9.2",
+  "number": "10.2",
   "title": "Graphing with R",
   "body": " Graphing with R   In this section we will learn how to construct several common graphs with R Studio. The commands are the same for R. We will be using R Studio since it has a friendlier interface for beginners.     At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.    Use R Studio to construct quantile plots.      Getting Started with R Studio  First, add the Lesson 1 Graphing text file to your Using R Files folder and the Cereal.csv dataset.  You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should now see the Lesson 1 file and the Cereal datafile in the bottom right panel. Click on the Lesson 1 and it opens in the top left panel so you can copy the R code or you can type it directly in the bottom left panel.  Next, you will need to import the data file by clicking on the file and select Import Dataset , a new window will open to give you a preview of the spreadsheet and then click on the Import button at the bottom right.   Import Dataset   Click on data file then import dataset.    Once it is loaded into R Studio (you will see it in the top left panel), in the bottom left panel type attach(Cereal) so you can call up the variable names.  Now we are all set to start graphing the data. For each scenario, we will start with the most basic graph and then add some aesthetics, such as titles and colors.    Boxplots  Let's begin with boxplots, which split the data into four sections so we can see the spread of the values. We will first analyze the number of calories in each serving of cereal. Type the following command in the bottom left corner in R Studio. This will construct a vertical boxplot. The graphs will show up in the bottom right panel of R Studio.   boxplot(Calories)   Alternatively, you can use the imbedded code blocks to run the R program. You will need to name a variable and enter all the data values, then the R command as shown below. In the code block below click on Evaluate (R) to run R within the textbook. The boxplot graph will appear below it.    Image of Vertical Boxplot   Boxplot with values from 80 to 214.     Interpreting the Boxplot: The boxplot shows the smallest value at 80 and the largest value is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The inter-quartile range = Q3-Q1 =160-113.2 = 46.8. The thick line in the middle is the median = 118 . To calculate the actual values use the summary command with the variable name.   summary(Calories)    Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.    Now let's add a label along the x-axis and make the boxplot horizontal.   boxplot(Calories,horizontal = TRUE,xlab = \"Calories per Serving\")  In the code block below click on Evaluate (R) to run R within the textbook. The graph will appear below it. Note: you need to make sure to run the code box above with the data first or you will receive an error.   With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values.   Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.    Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilde symbol ~ followed by the categorical variable.   boxplot(Calories~Company)    Image of comparing boxplots   Boxplot for each company.     Comparing Boxplots: With the three boxplots we can see that Company G has an outlier at the top, Company G and K have similar median values while company Q has a larger median. Company Q is more symmetric while Company G and K are skewed.  Next we will add some color to the graph for fun and give the graph a main title. But we are going to investigate the amount of fat in each serving. The boxplot is right skewed with several outliers on the right.   boxplot(Fat,horizontal = TRUE, col='blue', border='red',main=\"Fat Content\")    Image of Fat Content Boxplot   Boxplot with colors.           Histograms  Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram. The R command is hist followed by the variable name in parentheses.   hist(Sugars)    Image of histogram   Histogram of sugar content.    The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution.  The R code block has sugar content for the cereals. Change the R command for the appropriate graph for the variable sugar. Click on Evaluate (R) to see the graph.   Suppose we want to adjust the number of bars in the histogram, we do this by identifying the number of breaks we want. Suppose we want 10 bars instead of the default of four.   hist(Sugars,breaks=10)    Image of histogram with 10 breaks   Histogram of sugar content with 10 bars.    This histogram has 10 bars showing more variation in the amount of sugar per serving. This distribution is bimodal.  Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title.   hist(Sodium,breaks=9,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content')    Image of histogram for sodium   Histogram of sodium content.    This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms.    Categorical Graphs     Frequency Table   To construct graphs for categorical data we first need to create a table of the frequencies from the raw data. We will use the table command for the variable Company.   table(Company)    Company Table Output   G=13 and K=11 and G=6.    The table will appear just under the R code.  Notice that the categories are G, K and Q. Next, we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.   Brand   c('General Mills', 'Kelloggs', 'Quacker')    Totals   c(13,11,6)       Pie Graph   Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the labels = Brand names were created.   pie(Totals, labels=Brand)    Pie Graph of Cereal Company   Circle graph showing Kelloggs count of 11, Quaker at 6, and General Mills at 13.    Next let us add some brighter colors to the graph and give it a main title.   pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies')    Colorful Circle Graph of Cereal Company   Colorful circle graph showing company categories.     Bar Graph   Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the names.arg = Brand names were created.   barplot(Totals, names.arg=Brand)    Bar Graph of Cereal Company   Bar graph showing company frequencies of 13, 11, 6.    Next let us add some brighter colors to the graph and give the bar graph a main title and label the x-axis.   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies')    Colorful Bar Graph of Cereal Company   Colorful bar graph showing company frequencies of 13, 11, 6.      Scatterplots  Now let us construct a simple scatterplot to show the relationship between two quantitative variables. We will use the plot command and identify the x-variable first and then the y-variable.   plot(Fat,Carbs)    Scatterplot of Fat and Carbohydrates   Scatterplot showing fat content on x-axis and carbohydrates on y-axis. The values are clustered with low fat content of les than 2 and low carbs between 20-30. A few cereals have fat of 4 with low carbs near 30, and some with 2 fats with 45 carbs.    To add at title to the graph we add the main= to the command with the title in quotes.   plot(Fat,Carbs,main='Scatterplot of Fat Content and Carbohydrates')    Scatterplot of Fat and Carbohydrates   Scatterplot showing fat content on x-axis and carbohydrates on y-axis.    The scatterplot shows a positive relationship between the Fat content and Carbohydrates in these cereals. As the fat content increases, so does the amount of carbohydrates. Since the dots are spread apart it is likely weak to moderately strong correlation.  To find the linear correlation coefficient we use the cor command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative. The tighter the points are together, the larger the value in the correlation.   cor(Fat,Carbs)   The correlation coefficient value is which appears just below the R code. This tells us we have a moderate positive relationship between the Fat content and Carbohydrates in these cereals.    Quantile Plots  We often look at the shape of the histogram to help us determine if a variable is approximately normal. We can also check the quantile plot which graphs the z-value with the data values. If the quantile plot forms a line it lets us know the variable is approximately normal. If the graph is curved it is typically not normally distribution. We will use the qqnorm command for the quantile plot. We can add the qqline command afterwards to draw a line through the data to see if it appears linear.   qqnorm(Calories)    qqline(Calories)    Quantile Plot for Calories   Normal quantile plot to test normality of variable. The dots do not form a straight line through the data, thus not normally distributed.    Since the z-score values do not form a straight line when paired with the data values, this variable is not normally distributed.   "
 },
@@ -8114,7 +8222,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#sec-GraphR-3",
   "type": "Objectives",
-  "number": "9.2",
+  "number": "10.2",
   "title": "",
   "body": "  At the end of this section you will able to:     Use R Studio to graph boxplots and histograms.    Use R Studio to construct bar graphs and circle graphs.    Use R Studio to construct scatterplots.    Use R Studio to construct quantile plots.    "
 },
@@ -8141,7 +8249,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#Rimport",
   "type": "Figure",
-  "number": "9.2.1",
+  "number": "10.2.1",
   "title": "",
   "body": " Import Dataset   Click on data file then import dataset.   "
 },
@@ -8159,7 +8267,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxCalorie",
   "type": "Figure",
-  "number": "9.2.2",
+  "number": "10.2.2",
   "title": "",
   "body": " Image of Vertical Boxplot   Boxplot with values from 80 to 214.   "
 },
@@ -8168,7 +8276,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#SummaryCalorie",
   "type": "Figure",
-  "number": "9.2.3",
+  "number": "10.2.3",
   "title": "",
   "body": " Image of summary output   summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.   "
 },
@@ -8177,7 +8285,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxHorzCalorie",
   "type": "Figure",
-  "number": "9.2.4",
+  "number": "10.2.4",
   "title": "",
   "body": " Image of horizontal boxplot   horizontal boxplot with values from 80 to 214.   "
 },
@@ -8186,7 +8294,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxplotbyCompany",
   "type": "Figure",
-  "number": "9.2.5",
+  "number": "10.2.5",
   "title": "",
   "body": " Image of comparing boxplots   Boxplot for each company.   "
 },
@@ -8195,7 +8303,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#BoxplotColor",
   "type": "Figure",
-  "number": "9.2.6",
+  "number": "10.2.6",
   "title": "",
   "body": " Image of Fat Content Boxplot   Boxplot with colors.   "
 },
@@ -8204,7 +8312,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSugar",
   "type": "Figure",
-  "number": "9.2.7",
+  "number": "10.2.7",
   "title": "",
   "body": " Image of histogram   Histogram of sugar content.   "
 },
@@ -8213,7 +8321,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSugar2",
   "type": "Figure",
-  "number": "9.2.8",
+  "number": "10.2.8",
   "title": "",
   "body": " Image of histogram with 10 breaks   Histogram of sugar content with 10 bars.   "
 },
@@ -8222,7 +8330,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#HistoSodium",
   "type": "Figure",
-  "number": "9.2.9",
+  "number": "10.2.9",
   "title": "",
   "body": " Image of histogram for sodium   Histogram of sodium content.   "
 },
@@ -8240,7 +8348,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#CompanyTable",
   "type": "Figure",
-  "number": "9.2.10",
+  "number": "10.2.10",
   "title": "",
   "body": " Company Table Output   G=13 and K=11 and G=6.   "
 },
@@ -8258,7 +8366,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#CompanyPie",
   "type": "Figure",
-  "number": "9.2.11",
+  "number": "10.2.11",
   "title": "",
   "body": " Pie Graph of Cereal Company   Circle graph showing Kelloggs count of 11, Quaker at 6, and General Mills at 13.   "
 },
@@ -8267,7 +8375,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#CompanyCircle",
   "type": "Figure",
-  "number": "9.2.12",
+  "number": "10.2.12",
   "title": "",
   "body": " Colorful Circle Graph of Cereal Company   Colorful circle graph showing company categories.   "
 },
@@ -8285,7 +8393,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#CompanyBar",
   "type": "Figure",
-  "number": "9.2.13",
+  "number": "10.2.13",
   "title": "",
   "body": " Bar Graph of Cereal Company   Bar graph showing company frequencies of 13, 11, 6.   "
 },
@@ -8294,7 +8402,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#ColorfulBar",
   "type": "Figure",
-  "number": "9.2.14",
+  "number": "10.2.14",
   "title": "",
   "body": " Colorful Bar Graph of Cereal Company   Colorful bar graph showing company frequencies of 13, 11, 6.   "
 },
@@ -8303,7 +8411,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#ScatterFatCarbs",
   "type": "Figure",
-  "number": "9.2.15",
+  "number": "10.2.15",
   "title": "",
   "body": " Scatterplot of Fat and Carbohydrates   Scatterplot showing fat content on x-axis and carbohydrates on y-axis. The values are clustered with low fat content of les than 2 and low carbs between 20-30. A few cereals have fat of 4 with low carbs near 30, and some with 2 fats with 45 carbs.   "
 },
@@ -8312,7 +8420,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#ScatterFatCarbs2",
   "type": "Figure",
-  "number": "9.2.16",
+  "number": "10.2.16",
   "title": "",
   "body": " Scatterplot of Fat and Carbohydrates   Scatterplot showing fat content on x-axis and carbohydrates on y-axis.   "
 },
@@ -8321,7 +8429,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GraphR.html#NormQuantileCalories",
   "type": "Figure",
-  "number": "9.2.17",
+  "number": "10.2.17",
   "title": "",
   "body": " Quantile Plot for Calories   Normal quantile plot to test normality of variable. The dots do not form a straight line through the data, thus not normally distributed.   "
 },
@@ -8330,7 +8438,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rstats.html",
   "type": "Section",
-  "number": "9.3",
+  "number": "10.3",
   "title": "Statistics with R",
   "body": " Statistics with R   In this section we will learn to calculate the summary statistics using R studio. We will find the mean and median to measure the center, the variance and standard deviation to measure the spread of values, and find the five-number summary.     At the end of this section you will be able to:     Import data into R Studio for analysis.    Calculate the summary statistics.      Finding Summary Statistics with R Studio  We are going to complete Lesson 2 for finding the summary statistics with R Studio. Add the Lesson 2 Statistic text file to your Using R Files folder. We are going to use the same Cereal data set as for graphing data.  You may need to update your working directory , to do this go to the bottom right panel and under the Files tab click on the triple dots on the far right to relocate your file and click Open . You should now see the Lesson 2 file. Click on this and it opens in the top left panel so you can copy the code or you can type it in the bottom left panel.  Next, we will need to import the data file by clicking on file and selecting Import Dataset then click on the Import button at the bottom right. Once the data is loaded into R Studio make sure to use the attach command with the data set name Cereal so you can call up the variable names.   attach(Cereal)   Recall that the commands in R or R studio are all lower case. I tend to use a capital for the first letter of the variables names to help distinguish them.  We will start by looking at some of the summary statistical values for number of calories per serving for a variety of cereal brands.  The most common measures for the center of the distribution are the mean and median. Use the following commands:   mean(Calories)    median(Calories)   Alternatively, you can use the imbedded code blocks to run the R program. You will need to name a variable and enter all the data values, then the R command as shown below. Click on Evaluate (R) to run R within the textbook.   The calculations will appear below the R commands. The mean is 133.833 calories per serving while the median is 118 calories. If you are using the code block, you may need to do each one separately to get the values.  To find the measures of spread we look at variance (var) and standard deviation (sd). Use the following commands:   var(Calories)    sd(Calories)  The variance is 1212.075 and the standard deviation is 34.81486. You can use the above code block to re-evaluate with the new code.  To find the maximum (largest) and minimum (smallest) values use the following commands:   max(Calories)    min(Calories)   The maximum value is 214 and the minimum value is 80. You can use the above code block to re-evaluate with the new commands.   Summary of the output for Calories: The number of calories per serving has a mean of 133.833 and median of 118. The variance is 1212.075.The standard deviation of 34.81 tells us that most values are within 34.81 calories of the mean. The number of calories is between 80 (minimum) and 214 (maximum) per serving. This gives a range of 214 - 80 = 134 calories.  A handy command is a six number summary which contains the typical five-number summary from boxplots and the mean.   summary(Calories)  This gives the minimum value of 80, first quartile , median (second quartile) of , third quartile of , mean and maximum value of 214.  Sometimes you want the summary for all the variables for the data set. In this case we use summary with the name for the data file which is Cereal    summary(Cereal)     Data Exploration  Now repeat the process with some of the other variables in the Cereal data. What do these summary statistics tell you about the cereal data set?  The R code block has the sodium content for the cereals. Change the R command for the appropriate statistic. Summarize the sodium content for these cereals.   The R code block has sugar content for the cereals. Change the R command for the appropriate statistic. Click on Evaluate (R) to see the results.   If you have access to R Studio, explore the summary statistics for the Case Studies from Chapter 1. You will need to import the data, use the attach command to call up the variables, then find the summary statistics for the variables of interest.   "
 },
@@ -8339,7 +8447,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rstats.html#sec-Rstats-3",
   "type": "Objectives",
-  "number": "9.3",
+  "number": "10.3",
   "title": "",
   "body": "  At the end of this section you will be able to:     Import data into R Studio for analysis.    Calculate the summary statistics.    "
 },
@@ -8357,7 +8465,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rtests.html",
   "type": "Section",
-  "number": "9.4",
+  "number": "10.4",
   "title": "Testing with R",
   "body": " Testing with R   In this section we will perform hypothesis testing and find confidence intervals for a single sample.     At the end of this section you will be able to     Conduct a single t-test for the mean.    Interpret the confidence interval for the mean.    Conduct a single proportion test using chi square.    Interpret the confidence interval for a proportion.      Import the Data   Import the Cereal Data   You may need to link your Using R Files folder with the working directory, to do this go to the bottom right panel and under the Files tab click on the triple dots … on the far right to locate your folder and click Open . You should the Cereal data in the bottom right panel.  Next, you will need to import the data file by clicking on file and Import Dataset , the file will give you a preview of the spreadsheet and then click on the Import button at the bottom right.  Once the data has been imported into R, use the command attach so you can call the data by the variable name.   attach(Cereal)   A handy command is summary of the data set. This finds the minimum, maximum, the quartiles, and the mean for each variable. If the data is categorical it indicates that ….. Recall that the R commands are all lower cases, and I tend to use a capital for the first letter of my variables for easy recognition.   summary(Cereal)     Single Mean Test   Single t-test for the mean   Lets begin our investigation with a one-sample t-test for the mean. The R command is t.test . We will need to identify the variable, set the null hypothesis to mu= null value, and identify the alternative hypothesis using greater , less or two.sided in quotes. The default is 95% confidence level for the intervals.  We are going to test if the mean for the variable calories is greater than 100 calories per serving. But first, let us see what the mean of the Calories is per serving.   mean(Calories)   Can we determine if the mean calories is significantly more than 100 calories per serving? The Variable = Calories, the null hypothesis is mu=100, and we are checking if the mean is “greater” than 100 calories. Copy the code into R Studio in the bottom left panel. Make sure to hit [enter] to perform the test. The results will show directly under the command.   t.test(Calories,mu=100,alternative=\"greater\")   Alternatively, you can use the R code block below by clicking on the Evaluate (R) button.    Interpretation: The output states you completed the one sample t-test for the mean. You chose the variable Calories. The test value is with degrees of freedom of and p-value which is statistically significant since it is so small, written in scientific notation. The null hypothesis is the mean equals 100 calories while the alternative hypothesis is the mean is greater than 100 calories for a right tailed test. The 95% confidence interval says the true mean calories is between 123.03 to positive infinity, with the sample mean of 133.833. Since the p-value is less than 0.05 we reject the null hypothesis and conclude that the mean number of calories is greater than 100.  Hypotheses are often written as: and . Since this is a right tailed test, the confidence interval goes to positive infinity. Since the hypothesized value is not contained within the interval, we reject the null hypotheses and conclude the mean calories is greater than 100.   Mean Fiber Test   Let us determine what the mean fiber is per serving.   mean(Fiber)   Next, test if the mean fiber is less than 2 grams per serving.   t.test(Fiber,mu=2,alternative=\"less\")     Test if the mean fiber is less than 2 grams.   Fiber t-test output   mean test value t=-0.59248 with df=29 and p value=0.2791 . The sample mean is 1.7967       Interpretation: The output states you completed the one sample t-test for the mean using the Fiber data. The test value is value t=-0.59248 with df=29 and p-value=0.2791 which is not statistically. The null hypothesis is the mean equals 2 while the alternative is mean is less than 2 for a left tailed test. The 95% confidence interval says the true mean is between negative infinity to 2.3798, with the sample mean of 1.7967. Since the confidence interval contains the hypothesized value of 2 it is not significant. Since p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude that the mean fiber is less than 2 grams.     Mean Fat Test   What is the mean amount of fat per serving in these cereals?   mean(Fat)   Test if mean fat content is different than 1 gram per serving with 90% confidence level. Since this is a two tailed test, we will use two.sided as the alternative hypothesis and add the command conf.level = to specify we want 90% precision.   t.test(Fat,mu=1,alternative=\"two.sided\", conf.level = 0.90)     Test if the mean fat content is different than 1 gram with 90% confidence.   Fat t-test output   mean fat test value t=1.415 with df=29 and pvalue=0.1677 . The sample mean is 1.2833      Interpretation: The output states that you completed one sample t-test for the mean using the Fat data. The test value is value t=1.415 with df=29 and p-value=0. 6771 which is not statistically. The null hypothesis is the mean fat equals 1 while the alternative is mean fat does not equal 1 which is a two tailed test. The 90% confidence interval says the true mean fat is between 0.94 grams and 1.623 grams, with the same mean of 1.2833. Since the confidence interval contains the hypothesize value of 1, it is not significant. Since p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude that the mean fat differs from 1 gram.      Single Proportion Test  We are going to conduct several proportion tests using the cereal data set. Rather than using the standard z-test for proportions, R Studio does a chi-square test which can be generalized to multiple proportions. The format of prop.test (count x, sample size,p=null value, alternative= ) with a default of 95% confidence for a two-tailed test.  First, find the proportions of each brand of cereal using the table command with the variable name of Company.   table(Company)   The table states G=13, K=11, and Q=6. Thus, 13 cereals were General Mills, 11 were Kellogg's, and 6 were Quaker cereals.  The first test is to determine if the proportion of Kellogg cereals is different than 50%. Use the prop.test command with the count of 11 out of the sample of 30 cereals. The null hypothesis is p=.50 and we will use the two-tailed test default.   prop.test(11,30,p=.5)   Alternatively, you can use the R code block below. Click on the Evaluate (R) button for the proportion test results.    Interpretation The output indicated you completed a 1 sample proportion test using the proportion of 11 Kellogg out of sample of 30 cereals. The null hypothesis is the proportion equal 0.50 or 50%. The test value is chi squared = 1.633 with 1 degree of freedom with a p-value of 0.2012. The alternative hypothesis is that the true proportion is not equal to 0.50. The 95% confidence interval says the true proportion of cereals that are Kellogg's is between 0.205 and 0.560 or 20.5% to 56.0%. The sample proportion is 11\/30 = 0.36667. Since the p-value is greater than 0.05 we will not reject the null hypothesis and cannot conclude the proportion differs from 50%. The confidence interval contains the null value of 0.50, thus the proportion does not different from 50%.   Quaker Proportion Test   Next, determine if the proportion of Quaker cereals is less than 50%. Here we need to identify the alternative hypothesis as less with a count of 6 out of 30 cereals.   prop.test(6,30,p=.5, alternative=\"less\")      Test if the proportion of Quaker cereals is less than 50%.   Proportion Quaker Test   proportion test value chi=9.633 with df=1and pvalue=0.0009554       Interpretation The output indicated you completed a 1 sample proportion test using the proportion of 6 Quaker out of sample of 30 cereals. The null hypothesis is the proportion equal 0.50 or 50%. The test value is chi squared = 9.633 with 1 degree of freedom with a p-value of 0.0009554. The alternative hypothesis is that the true proportion is less than 50%. The 95% confidence interval says the true proportion of cereals that are Quaker is between 0.000 and 0.3609. The sample proportion is 6\/30 = 0.20. Since the p-value is less than 0.05 we reject the null hypothesis and conclude the proportion of Quaker cereals is less than 50%. The confidence interval does not contain the null value of 0.50, thus the proportion is less than 50%.     General Mills Proportion Test   Now determine if the proportion of General Mills cereal is greater than 1\/3 of the cereals at the 90% confidence level. The alternative hypothesis as greater with a count of 13 out of the 30 cereals. We also need to add the condition conf.level = 0.90 to the command.   prop.test(13,30,p=.333, alternative=\"greater\", conf.level = 0.90)      Test if the proportion of General Mills cereal is grater than 1\/3 or 33.3%.   Proportion General Mills Test   proportion test value chi=0.9455 with df=1and pvalue=0.1654       Interpretation The output indicated you completed a 1 sample proportion test using the proportion of 13 General Mills out of sample of 30 cereals. The null hypothesis is the proportion equal 0.333 The test value is chi squared = 0.945 with 1 degree of freedom with a p-value of 0.1654. The alternative hypothesis is that the true proportion is greater than 33.3%. The 95% confidence interval says the true proportion of cereals that are General Mills is between 0 0.3086 and 1.00. The sample proportion is 13\/30 = 0.4333. Since the p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude the proportion of General Mills cereal is greater than 1\/3 or 33.3%. The confidence interval does contain the null value of 0.333, thus the proportion is not greater than 33.3%.      Data Exploration  Now it is your chance to explore hypothesis testing using the data from the Case Studies from Chapter 1. Choose which data set you wish to investigate using R Studio and conduct at least three hypothesis tests from that data set. Below are some possible suggestions:   Class Survey 1   Is the proportion of brown eyes greater than 40%?  Is the proportion of green eyes different than 8%?  Is the mean number of siblings less than two?  Is the mean weight of students greater than 150 pounds?  Is the mean height of students different than 68 inches?   Class Survey 2   Is the proportion of students who prefer summer greater than 40%?  Is the proportion of students who prefer winter less than 25%?  Is the proportion of students who medium rare steaks greater than 33%?  Is the proportion of students who do not eat steaks less than 10%?  Is the mean number of tattoos students have greater than two?   Florida Bass   Is the mean alkalinity in Florida lakes greater than 25 mg\/l?  Is the mean calcium levels in Florida lakes less than 25 mg\/l?  Is the mean of the average mercury levels in Florida lakes greater than 0.5 parts per million to be deemed unsafe to eat?   Parrots   Is the average age of parrots less than 10 years?  Is the proportion of parrots that are social with other parrots greater than 30%?  Is the average number of mimicry sounds greater than 10?  Is the mean word count of parrots greater than 20 words?   "
 },
@@ -8366,7 +8474,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rtests.html#sec-Rtests-3",
   "type": "Objectives",
-  "number": "9.4",
+  "number": "10.4",
   "title": "",
   "body": "  At the end of this section you will be able to     Conduct a single t-test for the mean.    Interpret the confidence interval for the mean.    Conduct a single proportion test using chi square.    Interpret the confidence interval for a proportion.    "
 },
@@ -8420,7 +8528,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rtests.html#subsec-SingleMean-17",
   "type": "Example",
-  "number": "9.4.1",
+  "number": "10.4.1",
   "title": "",
   "body": "  Test if the mean fiber is less than 2 grams.   Fiber t-test output   mean test value t=-0.59248 with df=29 and p value=0.2791 . The sample mean is 1.7967       Interpretation: The output states you completed the one sample t-test for the mean using the Fiber data. The test value is value t=-0.59248 with df=29 and p-value=0.2791 which is not statistically. The null hypothesis is the mean equals 2 while the alternative is mean is less than 2 for a left tailed test. The 95% confidence interval says the true mean is between negative infinity to 2.3798, with the sample mean of 1.7967. Since the confidence interval contains the hypothesized value of 2 it is not significant. Since p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude that the mean fiber is less than 2 grams.   "
 },
@@ -8438,7 +8546,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rtests.html#subsec-SingleMean-23",
   "type": "Example",
-  "number": "9.4.3",
+  "number": "10.4.3",
   "title": "",
   "body": "  Test if the mean fat content is different than 1 gram with 90% confidence.   Fat t-test output   mean fat test value t=1.415 with df=29 and pvalue=0.1677 . The sample mean is 1.2833      Interpretation: The output states that you completed one sample t-test for the mean using the Fat data. The test value is value t=1.415 with df=29 and p-value=0. 6771 which is not statistically. The null hypothesis is the mean fat equals 1 while the alternative is mean fat does not equal 1 which is a two tailed test. The 90% confidence interval says the true mean fat is between 0.94 grams and 1.623 grams, with the same mean of 1.2833. Since the confidence interval contains the hypothesize value of 1, it is not significant. Since p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude that the mean fat differs from 1 gram.   "
 },
@@ -8465,7 +8573,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rtests.html#subsec-SingleProportion-15",
   "type": "Example",
-  "number": "9.4.5",
+  "number": "10.4.5",
   "title": "",
   "body": "  Test if the proportion of Quaker cereals is less than 50%.   Proportion Quaker Test   proportion test value chi=9.633 with df=1and pvalue=0.0009554       Interpretation The output indicated you completed a 1 sample proportion test using the proportion of 6 Quaker out of sample of 30 cereals. The null hypothesis is the proportion equal 0.50 or 50%. The test value is chi squared = 9.633 with 1 degree of freedom with a p-value of 0.0009554. The alternative hypothesis is that the true proportion is less than 50%. The 95% confidence interval says the true proportion of cereals that are Quaker is between 0.000 and 0.3609. The sample proportion is 6\/30 = 0.20. Since the p-value is less than 0.05 we reject the null hypothesis and conclude the proportion of Quaker cereals is less than 50%. The confidence interval does not contain the null value of 0.50, thus the proportion is less than 50%.   "
 },
@@ -8483,7 +8591,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rtests.html#subsec-SingleProportion-20",
   "type": "Example",
-  "number": "9.4.7",
+  "number": "10.4.7",
   "title": "",
   "body": "  Test if the proportion of General Mills cereal is grater than 1\/3 or 33.3%.   Proportion General Mills Test   proportion test value chi=0.9455 with df=1and pvalue=0.1654       Interpretation The output indicated you completed a 1 sample proportion test using the proportion of 13 General Mills out of sample of 30 cereals. The null hypothesis is the proportion equal 0.333 The test value is chi squared = 0.945 with 1 degree of freedom with a p-value of 0.1654. The alternative hypothesis is that the true proportion is greater than 33.3%. The 95% confidence interval says the true proportion of cereals that are General Mills is between 0 0.3086 and 1.00. The sample proportion is 13\/30 = 0.4333. Since the p-value is greater than 0.05 we do not reject the null hypothesis and cannot conclude the proportion of General Mills cereal is greater than 1\/3 or 33.3%. The confidence interval does contain the null value of 0.333, thus the proportion is not greater than 33.3%.   "
 },
@@ -8528,7 +8636,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rcompare.html",
   "type": "Section",
-  "number": "9.5",
+  "number": "10.5",
   "title": "Comparison Tests with R",
   "body": " Comparison Tests with R    We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group.      At the end of this section you will be able to     Compare two independent means using the t-test    Interpret the confidence interval for the difference in means    Conduct a t-test for paired means    Compare two proportions using chi-square test    Interpret the confidence interval for the difference in proportions    Compare two variances with the F-tst      Comparing Two Independent Means  The standard format for a t.test for the mean is identifying the two variables names separated by commas, the alternative hypothesis as alternative = , and the confidence level using conf.level = with the default being 95%.R Studio finds the difference is u1 - u2 so list them in the order you are calculating them.  For our first example, we are comparing the mean time for completing a maze. Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX  We are going to perform a simple t-test for the difference in mean times. Thus the alternative hypothesis is that the means are not equal. We will using the default settings at 95% level. Import the data set and attach the variable names. We will be using the variables WhiteMice and BrownMice. There are no spaces in the name of variables when using R.   t.test(WhiteMice,BrownMice)   Suppose we claim the average mean time is greater for the white mice using alpha = 0.10 level. We can use White mice is greater than Brown mice or brown mice is less than white mice as shown below, and we need to add conf.level = .90 to both commands.   t.test(WhiteMice,BrownMice,alternative = 'greater',conf.level = .90)    t.test(BrownMice,WhiteMice,alternative = 'less',conf.level = .90)   compare the R outputs    Paired Means  When the data is paired in some way we only look at the difference between those paired values. This is also known as a dependent t-test.  The format I use for the paired t-test is t.test(PostValues, PreValues , paired=TRUE, alternative=, conf.level= ) . The difference is u1 - u2 by default, so list the Post values first so it aligns with the claim better.  A physical education director claims that by taking special vitamins a weight lifter can increase his or her strength. Eight athletes are selected and given a test of strength using the standard bench press. Test the effectiveness of the vitamin regimen at alpha = 0.05. Each value represents the maximum number of pounds the athlete can bench press.  Use the data XX and the variables are WeightAfter and the WeightBefore. Since we are comparing the bench press weights before and after the vitamin regiment, it is a paired or dependent t-test. Enter the following R command to compare the change in weights lifted.   t.test(WeightAfter,WeightBefore, paired=TRUE, alternative='greater', conf.level=.95)     Comparing Two Proportions  next    Comparing Two Variances  Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX. Only this time we want to compare the variance of time between the white and brown mice. So we are checking if the variance is equal or not equal. We will use the R command var.test and we identify our two variables.   var.test(WhiteMice,BrownMice)   Sometimes when we use a data set, not all values are included. In that case we want to ignore any cells without data. We do this by using na.rm=TRUE. Find the standard deviation for the times for both mice groups.   sd(WhiteMice, na.rm=TRUE)    sd(BrownMice, na.rm=TRUE)    "
 },
@@ -8537,7 +8645,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rcompare.html#sec-Rcompare-3",
   "type": "Objectives",
-  "number": "9.5",
+  "number": "10.5",
   "title": "",
   "body": "  At the end of this section you will be able to     Compare two independent means using the t-test    Interpret the confidence interval for the difference in means    Conduct a t-test for paired means    Compare two proportions using chi-square test    Interpret the confidence interval for the difference in proportions    Compare two variances with the F-tst    "
 },
@@ -8546,7 +8654,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rcorr.html",
   "type": "Section",
-  "number": "9.6",
+  "number": "10.6",
   "title": "Correlation Tests with R",
   "body": " Correlation Tests with R   In this section we will perform the correlation and linear regression analysis with R Studio. We will graph the scatterplot to determine the nature of the relationship, calculate the correlation coefficient to determine its strength. We will conduct a correlation test to determine if it is statistically significant and if so, find the regression equation.     At the end of this section you will be able to     Graph a scatterplot.    Calculate the correlation coefficient.    Determine if the correlation is significant.    Determine the regression equation.    Interpret the coefficient of determination.      Correlation Between Quantitative Variables   Hurricanes   Climate change is a long-term change in the average weather patterns that have come to define Earth's local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature. One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes.  The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant.  First, construct a scatterplot to describe the nature of the relationship. Use the plot command and identify the independent x -variable, Years, and the dependent y -variable, Hurricanes. It is also helpful to include a main title.   plot(Year, Hurricanes, main='Hurricanes over the Years')    Interpret: We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes.  Second, calculate the correlation coefficient to describe the strength of the relationship. We will use the cor command with the x-variable and y-variable.   cor(Year, Hurricanes)    Interpret: r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a correlation test . The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant.   cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95)   Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the regression equation so we can make predictions. We will use the command lm for a linear model and we identify the y-variable, Hurricanes, first with the tilde symbol ~ then the x-variable, Year.   lm(Hurricanes~Year)    Interpret: The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation where x represents the year and y represents the predicted number of hurricanes for that year.  We can create a Simple Linear Regression Model (naming it SLRmodelHurr for Hurricanes) and then summarize the results for some additional information.   SLRmodelHurr=lm(Hurricanes~Year)    summary(SLRmodelHurr)    Interpret: This shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination is which indicates that 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables.    Association Between Categorical Variables  the   "
 },
@@ -8555,7 +8663,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Rcorr.html#sec-Rcorr-3",
   "type": "Objectives",
-  "number": "9.6",
+  "number": "10.6",
   "title": "",
   "body": "  At the end of this section you will be able to     Graph a scatterplot.    Calculate the correlation coefficient.    Determine if the correlation is significant.    Determine the regression equation.    Interpret the coefficient of determination.    "
 },
@@ -8609,7 +8717,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Rassoc.html",
   "type": "Section",
-  "number": "9.7",
+  "number": "10.7",
   "title": "Associations with R",
   "body": " Associations with R  Chi Square tests for Association.  "
 },
@@ -8618,7 +8726,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Ranova.html",
   "type": "Section",
-  "number": "9.8",
+  "number": "10.8",
   "title": "ANOVA with R",
   "body": " ANOVA with R  ANOVA with R.  "
 },
@@ -8627,7 +8735,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-UNCdata.html",
   "type": "Section",
-  "number": "10.1",
+  "number": "11.1",
   "title": "UNC Data Sets",
   "body": " UNC Data Sets  This section includes the data sets from UNC sports and research conducted by UNC faculty.  Bird Vocalization  Gettysburg Data   Vocal Mimicry of Parrots  A survey of vocal mimicry in companion parrots: Article.   Full data set: Parrots Data.    Cereal.csv    ClassSurvey1.csv    ClassSurvey2.csv    MetroDenver.csv   UNC Men Basketball  UNC Women Basketball  UNC Women Volleyball  Link to StatKey   "
 },
@@ -8645,7 +8753,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-ClimateData.html",
   "type": "Section",
-  "number": "10.2",
+  "number": "11.2",
   "title": "Climate Data Sets",
   "body": " Climate Data Sets  This section includes data sets to analyze climate change as well as the websites where the data was gathered for more current data.   Earthquakes   SCEDC (2013): Southern California Earthquake Center. Caltech.Dataset. doi:10.7909\/C3WD3xH1  California Earthquakes:    Earthquakes April 2025   California Institute of Technology (Caltech) (1926): Southern California Seismic Network. International Federation of Digital Seismograph Networks. Other\/Seismic Network. doi:10.7914\/SN\/CI   Hurricanes   National Hurricane Center    Hurricanes    Severe Weather   NOAA National Centers for Environmental Information (NCEI) U.S. Billion-Dollar Weather and Climate Disasters (2025). https:\/\/www.ncei.noaa.gov\/access\/billions\/, DOI: 10.25921\/stkw-7w73  Billion Dollar Weather Events:    BillionWeather    Temperatures   Greeley:    Tornadoes   US Tornado Mapping:    Tornados2024   "
 },
@@ -8699,7 +8807,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-StudyData.html",
   "type": "Section",
-  "number": "10.3",
+  "number": "11.3",
   "title": "Studies Data Sets",
   "body": " Studies Data Sets  This section includes the data sets for the studies mentioned.   Florida Lakes Bass   Original data source: Florida Bass.   Mammals  Old Faithful   Embedding R Shiny app that is on a website ~ Batting iframe         Embedding R Shiny app that is on a website ~ Chess iframe    "
 },
@@ -8717,7 +8825,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-StudyData.html#sec-StudyData-7",
   "type": "Figure",
-  "number": "10.3.1",
+  "number": "11.3.1",
   "title": "",
   "body": " Embedding R Shiny app that is on a website ~ Batting iframe   "
 },
@@ -8726,7 +8834,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-StudyData.html#sec-StudyData-10",
   "type": "Figure",
-  "number": "10.3.2",
+  "number": "11.3.2",
   "title": "",
   "body": " Embedding R Shiny app that is on a website ~ Chess iframe   "
 },
