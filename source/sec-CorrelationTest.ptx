@@ -4,7 +4,7 @@
 
   <introduction>
     <p>
-      In this section
+      Another area of inferential statistics involves determining whether relationship exists between two or more variables. For example, a medical researcher may be interested in whether increased caffeine in energy drinks is related to heart damage. A zoologist may want to know whether the birth weight of a certain mammal is related to its life span.  In this section, we will be analyzing data with correlation and regression analysis.
     </p>
   </introduction>
 
@@ -20,8 +20,54 @@
         </ol>
 </objectives>
 
+<subsection xml:id="subsec-CorrelationReview">
+  <title>Review of Correlation and Regression</title>
+<p> We will begin with a review of correlation and regression, as discussed in Chapter 2 when we graphed data and found the summary statistics. </p> 
+<p> <term> Correlation</term> is a statistical method used to determine whether a linear relationship exists between two quantitative variables exists. This can be seen visually with a scatterplot, and the strength and direction of the relationship is measured by the <em>correlation coefficient</em>. <term>Regression </term> is a method used to describe the nature of the relationship, whether positive, negative, linear, or non-linear. The regression equation allows us to make predictions using either variable. The regression line is also known as the line of best fit since it minimizes the distances each point is to the regression line.
+</p>
+<p> Recall that a <em> positive</em> relationship exists when both variables increase while a <em>negative </em> relationship exists when one variable increase and the other variable decreases. The correlation coefficient measures its strength on a scale from -1 to +1. Values near 0 indicate no linear relationship. The sample correlation coefficient is designated as <em> r </em> and the population value as <m> \rho</m>  (rho) .</p> 
+<p>There are several ways to compute correlation. One formula to compute the sample correlation coefficient is
+      <md>
+        r=\frac{\sum \left(\frac{x-\bar{x}}{s_x}\right)\left(\frac{y-\bar{y}}{s_y}\right)}{n-1}
+      </md>.
+    </p>
+
+<p> Another is 
+  <md>r=\frac{n(\sum{xy})-(\sum{x})\times(\sum{y})}{\sqrt{n(\sum{x^2}-(\sum{x})^2)\times(n(\sum{y^2}-(\sum{y})^2)}} </md>
+</p> 
+<p> The good news is we will use technology to compute the correlation coefficient. </p>
+    <p>
+      The <term>regression equation</term> is an equation that describes the
+      linear relationship between an explanatory variable and a response
+      variable. The least-squares regression line is written as
+      <m>\hat{y}=a+bx</m>,
+      where <m>\hat{y}</m> is the predicted value of the response variable,
+      <m>a</m> is the <term>y</term>-intercept, and <m>b</m> is the slope. The
+      slope is computed using
+      <m>b=r\frac{s_y}{s_x}</m>,
+      and the intercept is computed using
+      <m>a=\bar{y}-b\bar{x}</m>.
+    </p>
+<p>
+  The slope indicates the change in the predicted value of the response variable for a one-unit increase in the explanatory variable. The y-intercept is the predicted value of the response variable when the explanatory variable is zero. 
+</p>
+<p> The y-intercept can also be calculated using
+<md>a=\frac{\sum{y} \sum{x^2}-\sum{x}\sum{xy}}{n\sum{x^2}-(\sum{x}^2)} </md> 
+</p> 
+<p> The slope can also be calculated using
+<md>b=\frac{n \sum{xy}-\sum{x} \sum{y}}{n\sum{x^2}-(\sum{x})^2} </md> </p>  
+
+<p> Again, we will use technology to find the values for the regression equation. </p>
+ 
+
+
+
+
+</subsection>
+
 <subsection xml:id="subsec-CorrelationTestBasics">
   <title>Understanding the Basics</title>
+
   <p> In correlation and regression hypothesis testing, we use sample data to decide
   whether there is enough evidence of a linear relationship between two
   quantitative variables in the population. For correlation, we test whether the
@@ -33,12 +79,357 @@
   relationship in the sample is strong enough to conclude that a real linear
   relationship exists in the population.
   </p> 
-<p> We will begin with a review of correlation and regression. </p> 
+  <p> A <term>correlation test</term> is a hypothesis test used to determine
+      whether there is a linear relationship between two quantitative variables
+      in a population. It tests the population correlation coefficient
+      <m>\rho</m> using the null hypothesis <m>H_0:\rho=0</m> saying there is no correlation and the alternative hypothesis is  <m>H_a: \rho \ne 0</m> stating there is a significant correlation. The alternative hypotheses can also be one-tailed test, stating the correlation greater than or less than 0. If <m>H_a \gt 0</m> the claim is a significant positive correlation while <m>H_a \lt 0</m> claims a significant negative correlation. 
+    </p>
+<definition xml:id="def-correlation-test">
+  <statement>
+    <p>
+      A <term>correlation test</term> is a hypothesis test used to determine
+      whether there is a linear relationship between two quantitative variables
+      in a population. The test statistic is
+      <md>  t=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}}    </md>,
+      where <m>r</m> is the sample correlation coefficient and <m>n</m> is the
+      number of paired observations. The test uses a <m>t</m>-distribution with
+      <m>n-2</m> degrees of freedom.
+    </p>
+  </statement>
+</definition>
+
+<p>
+ The <term>coefficient of determination</term>, denoted <m>R^2</m>, is a measure of how well the regression line fits the data. It is computed as
+  <m>R^2=\frac{SS_{regression}}{SS_{total}}</m>,
+  where <m>SS_{regression}</m> is the sum of squares due to regression and <m>SS_{total}</m> is the total sum of squares.
+</p>
+
+
+
+
+
 </subsection>
+
+<subsection xml:id="subsec-CorrelationExample">
+ <title>  Correlation Test Example</title>
+<p>
+      A biologist wants to investigate whether there is a linear relationship between the length of a fish and its weight. A random sample of 10 fish is collected from a lake, and each fish is measured for length in centimeters and weight in grams.
+    </p>
+    <table>
+      <title>Fish Length and Weight</title>
+      <tabular>
+        <row>
+          <cell>Fish</cell>
+          <cell>Length (cm)</cell>
+          <cell>Weight (g)</cell>
+        </row>
+        <row><cell>1</cell><cell>12</cell><cell>24</cell></row>
+        <row><cell>2</cell><cell>14</cell><cell>28</cell></row>
+        <row><cell>3</cell><cell>15</cell><cell>31</cell></row>
+        <row><cell>4</cell><cell>17</cell><cell>36</cell></row>
+        <row><cell>5</cell><cell>18</cell><cell>40</cell></row>
+        <row><cell>6</cell><cell>20</cell><cell>43</cell></row>
+        <row><cell>7</cell><cell>21</cell><cell>47</cell></row>
+        <row><cell>8</cell><cell>23</cell><cell>50</cell></row>
+        <row><cell>9</cell><cell>24</cell><cell>54</cell></row>
+        <row><cell>10</cell><cell>26</cell><cell>57</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether there is a linear correlation between fish length and fish weight in the population.
+    </p>
+ 
+<example xml:id="ex-correlation-test-biology">
+  <statement>
+<p> First graph a scatterplot to describe the type of relationship, compute the correlation coefficient to describe its strength, and determine if it significant using hypothesis testing. </p> 
+  </statement>
+  <solution><title> Scatterplot and Correlation</title> 
+    <p>
+ Let <m>x</m> be fish length and <m>y</m> be fish weight. From the scatterplot in StatKey we see a positive linear relationship. As the fish length increases, so does the fish weight. The correlation coefficient is <m> r=0.997</m> which indicates a strong positive relationship. </p>
+<figure xml:id="FishScatterplot1">
+            <caption>Scatterplot of Fish Length vs weight</caption>
+            <image source="FishCorTest1.png" width="90%">
+                <shortdescription>shows a positive linear trend with fish lengths between 12 cm to 26 cm and weights between 24 grams and 57 grams.</shortdescription>
+            </image>
+        </figure> 
+
+
+</solution>
+  <solution><title> Correlation Test </title> 
+<p> We want to test whether the population correlation coefficient differs from zero, indicating a linear relationship exists.
+    </p>
+    <p>  The null hypothesis is that there is no correlation <m>H_0:\rho=0</m>  </p>
+<p> The alternative hypothesis states there is a correlation  <m>H_a:\rho \ne 0</m> for a two tailed test.    </p>
+    <p>   From the sample data, the correlation coefficient is <m>r \approx 0.997</m>.
+    </p>
+    <p> The test statistic for correlation is
+      <md>t=\dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}</md>.
+    </p>
+    <p>  With sample size <m>n=10</m>, we have
+      <md>   t=\dfrac{0.997\sqrt{8}}{\sqrt{1-0.997^2}}   \approx 36.43
+      </md>.   </p>
+    <p>  The degrees of freedom are <m>df=n-2=8</m>.    </p>
+    <p> If we go to StatKey, under Theoretical Distributions, select <term> t</term>, enter the 8 degrees of freedom, select Two Tail and enter the test statistic along the bottom of the graph.</p>
+     <p> The <m>p</m>-value is extremely small, so <m>p \approx 0</m>.
+    </p>
+</solution>
+  <solution><title> Conclusion </title> 
+    <p>   Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>   There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that there is a linear correlation between fish length and fish
+      weight in the population.
+    </p>
+  </solution>
+  <solution><title> Regression</title>
+<p> The regression equation is <m> \hat{y}=2.432x-5.2</m> where <m>x=\text{fish length}</m> and <m>y=\text{fish weight}</m> .</p>
+</solution>
+
+</example>
+
+
+
+
+
+
+</subsection>
+
+
+<subsection xml:id="subsec-CorrelationTechnology">
+ <title>  Using Technology</title>
+    <p>
+      A kinesiology researcher wants to investigate whether there is a positive linear relationship between forearm length and height in adults. A random sample of 10 adults is selected, and each person’s forearm length and height are measured in centimeters.
+    </p>
+    <table>
+      <title>Forearm Length and Height</title>
+      <tabular>
+        <row>
+          <cell>Person</cell>
+          <cell>Forearm Length (cm)</cell>
+          <cell>Height (cm)</cell>
+        </row>
+        <row><cell>1</cell><cell>24</cell><cell>158</cell></row>
+        <row><cell>2</cell><cell>26</cell><cell>165</cell></row>
+        <row><cell>3</cell><cell>25</cell><cell>163</cell></row>
+        <row><cell>4</cell><cell>27</cell><cell>167</cell></row>
+        <row><cell>5</cell><cell>29</cell><cell>173</cell></row>
+        <row><cell>6</cell><cell>28.5</cell><cell>170</cell></row>
+        <row><cell>7</cell><cell>33</cell><cell>186</cell></row>
+        <row><cell>8</cell><cell>31</cell><cell>180</cell></row>
+        <row><cell>9</cell><cell>28</cell><cell>174</cell></row>
+        <row><cell>10</cell><cell>32</cell><cell>180</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether there is a positive
+      linear correlation between forearm length and height in the population. We are going to solve this using a graphing calculator. 
+    </p>
+<example xml:id="ex-correlation-test-forearm-height">
+  <statement>
+<p> First graph a scatterplot to describe the type of relationship, compute the correlation coefficient to describe its strength, and determine if it significant using hypothesis testing. </p> 
+  </statement>
+  <solution><title> Input Data</title>
+<p>Press the [STAT] button and under the EDIT menu select <term> 1:Edit</term> and press [ENTER] to select it. Input the forearm length in L1and the height in L2. Make sure to keep as pairs.</p>
+<figure xml:id="InputForearmData">
+            <caption>Input the forearm data </caption>
+            <image source="Forearm1.png" width="90%">
+                <shortdescription>Under the edit menu input the forearm and height data.</shortdescription>
+            </image>
+        </figure> 
+</solution> 
+  <solution><title> Scatterplot </title>
+<p> Press the <c> 2nd</c> button and then <c>Y=</c> button to select STATPLOT. Select <term> 1: Plot1</term> and press [ENTER] to select it. Make sure it says <term>On</term>, you may need to use the arrows to highlight it and press [ENTER]. Under the Type of graph, select the first image for the scatterplot. The Xlist : L1 and Ylist:L2. You can choose what the graph points look like.</p>
+<p> Next, press the [Window] button to adjust the scale of the graph. The forearm lengths are between 20 and 35, the heights are between 150 and 190. Then press the [GRAPH] button. </p>
+  <figure xml:id="ForearmScatterplot">
+            <caption>Scatterplot for forearm vs height </caption>
+            <image source="Forearm2.png" width="90%">
+                <shortdescription>shows a positive linear trend.</shortdescription>
+            </image>
+        </figure> 
+
+<p> We can see a strong positive linear relationship between the forearm length sand heights. As the forearm length increases, so does the person's height. </p>
+  </solution> 
+  <solution><title> Correlation</title>
+<p> First, let us confirm the Diagnostics are turned on so the calculator will compute the correlation coefficient.  Press the [2nd] button then [0] to select CATALOG. Scroll down to <term>DiagnosticOn</term> and press [ENTER] twice so it says DONE. </p> 
+  
+<figure xml:id="ForearmDiagnostics">
+            <caption>Turn on Diagnostics </caption>
+            <image source="Forearm3.png" width="90%">
+                <shortdescription>from catalog menu turn diagnostics on.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button and arrow once to the right to the CALC menu, select <term>4:LinReg(ax+b) </term> where a = slope and b=y-intercept, then press [ENTER].  On the TI-83 Plus you need to identify where the data is located, press [2nd ] and [1] to select L1, press the [,] button, then press [2nd ] and [2] to select L2. Press [ENTER] to perform the calculations. </p> 
+    
+<figure xml:id="ForearmCorrelation">
+            <caption>Correlation and regression equation for forearm and height</caption>
+            <image source="Forearm4.png" width="90%">
+                <shortdescription>slope is 2.866, y-intercept is 90.33,  correlation is r=.982.</shortdescription>
+            </image>
+        </figure> 
+
+
+<p> The linear regression equation is <m>y=2.8666x+90.332</m> and the correlation coefficient is <m>r=0.982</m>. </p>
+</solution> 
+<solution><title> Correlation Test</title>
+    <p>   Let <m>x</m> be forearm length and <m>y</m> be height. We want to test for
+      a positive linear correlation.
+    </p>
+    <p> The null hypothesis is there is no correlation. <m>H_0:\rho=0</m> </p>
+      <p> The alterative hypothesis is there is a positive correlation for a right tailed test.
+      <m>H_a:\rho&gt;0</m>.
+    </p>
+    <p>  From the sample data, the correlation coefficient is
+      <m>r\approx 0.982</m> and the sample size is <m>n=10</m>.
+    </p>
+    <p> The test statistic is
+      <md>t=\dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}</md>.
+      <md>    t=\dfrac{0.982\sqrt{8}}{\sqrt{1-0.982^2}} \approx 14.56  </md>
+          </p>
+    <p>  The degrees of freedom are  <m>df=n-2=8</m>. 
+    </p>
+<p> On the calculator press the [STAT] button and press the arrow twice to the right to the TESTS menu and scroll down to <term>E:LinRegTest</term> and press [ENTER] to select it. </p>
+<p> The Xlist:L1 and Ylist:L2, change alternative hypothesis to <m>\rho \gt 0 </m>. Scroll to Calculate and press [ENTER] to perform the test.</p>
+<figure xml:id="ForearmCorrelationTest">
+            <caption>Correlation Test for forearm and height</caption>
+            <image source="Forearm5.png" width="90%">
+                <shortdescription>Under the test menu select E for LinRegTest.</shortdescription>
+            </image>
+        </figure> 
+  <figure xml:id="ForearmCorrelationTestResults">
+            <caption>Correlation Test Results</caption>
+            <image source="Forearm6.png" width="90%">
+                <shortdescription>test statistic ist=14.56 and p-value near 0.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The correlation test statistic is <m>t=14.56</m> and the p-value is very small since it is in scientific notation, <m>p-value \approx 0</m>. Notice on the test the regression equation is written as <m>y=a+bx</m>. If you continue to scroll down, you will also see the correlation coefficient <m>r=0.981</m>.</p>
+</solution>
+
+   
+
+<solution><title> Conclusion</title>
+    <p>  Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.     </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that there is a <em>positive </em>  linear correlation between forearm
+      length and height in the population.
+    </p>
+  </solution>
+
+
+
+
+
+
+
+</example>
+
+    
+</subsection>
+
+
 
 <subsection xml:id="subsec-CorrelationPractice">
   <title> Correlation Practice Problems </title>
-<p> For each problem, construct a scatterplot, find the correlation coefficient, determine if it is significant, find the regression equation, and interpret the coefficient of determination. </p> 
+<p> For each problem, construct a scatterplot, find the correlation coefficient, determine if it is significant, find the regression equation and residuals, and interpret the coefficient of determination. </p> 
+
+<p>
+      A medical researcher wants to investigate whether there is a linear
+      relationship between the amount of caffeine in a person’s daily energy
+      drink consumption and a heart damage marker level measured during a health
+      screening. A random sample of <m>10</m> adults who regularly consume energy
+      drinks is selected. For each person, the researcher records the average
+      daily caffeine intake from energy drinks, in milligrams, and a heart
+      damage marker score from a blood test.
+    </p>
+    <table>
+      <title>Caffeine Intake and Heart Damage Marker Score</title>
+      <tabular>
+        <row>
+          <cell>Person</cell>
+          <cell>Caffeine (mg)</cell>
+          <cell>Marker Score</cell>
+        </row>
+        <row><cell>1</cell><cell>80</cell><cell>14</cell></row>
+        <row><cell>2</cell><cell>160</cell><cell>19</cell></row>
+        <row><cell>3</cell><cell>120</cell><cell>15</cell></row>
+        <row><cell>4</cell><cell>200</cell><cell>23</cell></row>
+        <row><cell>5</cell><cell>100</cell><cell>17</cell></row>
+        <row><cell>6</cell><cell>240</cell><cell>24</cell></row>
+        <row><cell>7</cell><cell>140</cell><cell>21</cell></row>
+        <row><cell>8</cell><cell>160</cell><cell>27</cell></row>
+        <row><cell>9</cell><cell>210</cell><cell>26</cell></row>
+        <row><cell>10</cell><cell>95</cell><cell>15</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether there is a positive
+      linear correlation between daily caffeine intake from energy drinks and
+      heart damage marker score in the population.
+    </p>
+<exercise xml:id="ex-correlation-test-caffeine-heart">
+<title> Correlation Test for Caffeine and Heart Damage</title>
+  <statement>
+<p> First graph a scatterplot to describe the type of relationship, compute the correlation coefficient to describe its strength, and determine if it significant using hypothesis testing. </p> 
+  </statement>
+  <solution><title> Scatterplot and Correlation</title> 
+    <p>
+      Let <m>x</m> be daily caffeine intake from energy drinks and <m>y</m> be
+      the heart damage marker score. Upload the data into StatKey or input the data into your calculator. You should see a positive linear relationship.  As the amount of caffeine consumption increases, the heart damage marker score also increases. The correlation coefficient is <m>r=0.828</m> and the regression equation is <m>HD = 0.074(Caf)+8.942</m>. 
+    </p>
+ 
+</solution> 
+  <solution><title> Correlation Test </title> 
+<p> We want to test whether the population correlation coefficient is greater than zero, indicating a positive linear relationship exists.</p>
+    <p>The hypotheses are  <m>H_0:\rho=0</m>
+      Versus  <m>H_a:\rho \gt 0</m> for a right tailed test.
+    </p>
+    <p>
+      From the sample data, the sample correlation coefficient is
+      <m>r\approx 0.828</m> and the sample size is <m>n=10</m>.
+
+    </p>
+    <p> The test statistic is
+      <md>t=\dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}</md>.
+      <md>  t=\dfrac{0.828\sqrt{8}}{\sqrt{1-0.828^2}}
+        \approx 4.18
+      </md>.
+    </p>
+    <p> The degrees of freedom are <m>df=n-2=8</m>.  </p>    
+   <p>  The <m>p</m>-value is <m>p =0.0015</m>.  </p>
+ 
+</solution>
+<solution> <title> Test with TI83 Plus</title>
+<p><term>Input Data: </term>Press the [STAT] button and under the EDIT menu select <term> 1:Edit</term> and press [ENTER] to select it. Input the caffeine in L1and the heart score in L2. Make sure to keep as pairs.</p>
+<p> <term> Graph Data:</term> Press the <c> 2nd</c> button and then <c>Y=</c> button to select STATPLOT. Select <term> 1: Plot1</term> and press [ENTER] to select it. Under the Type of graph, select the first image for the scatterplot. The Xlist : L1 and Ylist:L2. </p>
+<p> Next, press the [Window] button to adjust the scale of the graph. The caffeine  are between 70 and 250, the heart scores are between 10 and 30. Then press the [GRAPH] button. </p>
+
+    
+<p> <term> Correlation: </term>  Press the [STAT] button and arrow once to the right to the CALC menu, select <term>4:LinReg(ax+b) </term> and then press [ENTER]. The correlation coefficient is <m>r=0.828</m> </p>
+
+  
+
+<p> <term>Test:</term> Press the [STAT] button and arrow twice to the right to the TESTS menu and scroll down to <term>E:LinRegTest</term> and press [ENTER] to select it.  The Xlist:L1 and Ylist:L2, change alternative hypothesis to <m>\rho \gt 0 </m>. Scroll to Calculate and press [ENTER] to perform the test.</p>
+
+    
+<p> The statistical test value is <m>t=4.181</m> and the p-value is <m>p=0.0015</m>.</p>
+</solution>
+<solution><title> Conclusion</title>
+    <p>    Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.   </p>
+    <p>   There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that there is a positive linear correlation between daily
+      caffeine intake from energy drinks and heart damage marker score in the
+      population.
+    </p>
+  </solution>
+
+
+
+</exercise> 
+
+
+
+
 </subsection>
 
 
