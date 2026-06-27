@@ -53,14 +53,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.4';
+eBookConfig.runestone_version = '8.1.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<script src="_static/prefix-runtime.53a23d1b65c1dce2.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f24402517dcb7959.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -441,8 +441,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-CorrelationTest.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Hypothesis Testing for Correlation</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CorrelationTest.html#subsec-CorrelationTestBasics" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CorrelationTest.html#subsec-CorrelationPractice" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Correlation Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CorrelationTest.html#subsec-CorrelationReview" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Review of Correlation and Regression</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CorrelationTest.html#subsec-CorrelationTestBasics" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Correlation Test Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CorrelationTest.html#subsec-CorrelationExample" class="internal"><span class="codenumber">9.1.3</span> <span class="title">Correlation Test Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CorrelationTest.html#subsec-CorrelationTechnology" class="internal"><span class="codenumber">9.1.4</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CorrelationTest.html#subsec-CorrelationPractice" class="internal"><span class="codenumber">9.1.5</span> <span class="title">Correlation Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -535,7 +538,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypothesis Testing for Correlation</span>
 </h2>
 <section class="introduction" id="sec-CorrelationTest-2">
-<div class="para" id="sec-CorrelationTest-2-1">In this section<div class="autopermalink" data-description="Paragraph"><a href="#sec-CorrelationTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-CorrelationTest-2-1">Another area of inferential statistics involves determining whether relationship exists between two or more variables. For example, a medical researcher may be interested in whether increased caffeine in energy drinks is related to heart damage. A zoologist may want to know whether the birth weight of a certain mammal is related to its life span.  In this section, we will be analyzing data with correlation and regression analysis.<div class="autopermalink" data-description="Paragraph"><a href="#sec-CorrelationTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <article class="objectives goal-like" id="sec-CorrelationTest-3"><h3 class="heading"><span class="type">Objectives</span></h3>
 <div class="introduction" id="sec-CorrelationTest-3-1">
@@ -566,23 +569,817 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Objectives 9.1"><a href="#sec-CorrelationTest-3" title="Copy heading and permalink for Objectives 9.1" aria-label="Copy heading and permalink for Objectives 9.1">🔗</a></div>
 </article>
+<section class="subsection" id="subsec-CorrelationReview">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Review of Correlation and Regression</span>
+</h3>
+<div class="para" id="subsec-CorrelationReview-2">We will begin with a review of correlation and regression, as discussed in Chapter 2 when we graphed data and found the summary statistics.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationReview-3">
+<dfn class="terminology">Correlation</dfn> is a statistical method used to determine whether a linear relationship exists between two quantitative variables exists. This can be seen visually with a scatterplot, and the strength and direction of the relationship is measured by the <em class="emphasis">correlation coefficient</em>. <dfn class="terminology">Regression</dfn> is a method used to describe the nature of the relationship, whether positive, negative, linear, or non-linear. The regression equation allows us to make predictions using either variable. The regression line is also known as the line of best fit since it minimizes the distances each point is to the regression line.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationReview-4">Recall that a <em class="emphasis">positive</em> relationship exists when both variables increase while a <em class="emphasis">negative</em> relationship exists when one variable increase and the other variable decreases. The correlation coefficient measures its strength on a scale from -1 to +1. Values near 0 indicate no linear relationship. The sample correlation coefficient is designated as <em class="emphasis">r</em> and the population value as <span class="process-math">\(\rho\)</span>  (rho) .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-CorrelationReview-5">
+<div class="para">There are several ways to compute correlation. One formula to compute the sample correlation coefficient is</div>
+<div class="displaymath process-math" id="subsec-CorrelationReview-5-1">
+\begin{equation*}
+r=\frac{\sum \left(\frac{x-\bar{x}}{s_x}\right)\left(\frac{y-\bar{y}}{s_y}\right)}{n-1}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-CorrelationReview-6">
+<div class="para">Another is</div>
+<div class="displaymath process-math" id="subsec-CorrelationReview-6-1">
+\begin{equation*}
+r=\frac{n(\sum{xy})-(\sum{x})\times(\sum{y})}{\sqrt{n(\sum{x^2}-(\sum{x})^2)\times(n(\sum{y^2}-(\sum{y})^2)}} 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationReview-7">The good news is we will use technology to compute the correlation coefficient.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationReview-8">The <dfn class="terminology">regression equation</dfn> is an equation that describes the linear relationship between an explanatory variable and a response variable. The least-squares regression line is written as <span class="process-math">\(\hat{y}=a+bx\text{,}\)</span> where <span class="process-math">\(\hat{y}\)</span> is the predicted value of the response variable, <span class="process-math">\(a\)</span> is the <dfn class="terminology">y</dfn>-intercept, and <span class="process-math">\(b\)</span> is the slope. The slope is computed using <span class="process-math">\(b=r\frac{s_y}{s_x}\text{,}\)</span> and the intercept is computed using <span class="process-math">\(a=\bar{y}-b\bar{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationReview-9">The slope indicates the change in the predicted value of the response variable for a one-unit increase in the explanatory variable. The y-intercept is the predicted value of the response variable when the explanatory variable is zero.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-CorrelationReview-10">
+<div class="para">The y-intercept can also be calculated using</div>
+<div class="displaymath process-math" id="subsec-CorrelationReview-10-1">
+\begin{equation*}
+a=\frac{\sum{y} \sum{x^2}-\sum{x}\sum{xy}}{n\sum{x^2}-(\sum{x}^2)} 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-CorrelationReview-11">
+<div class="para">The slope can also be calculated using</div>
+<div class="displaymath process-math" id="subsec-CorrelationReview-11-1">
+\begin{equation*}
+b=\frac{n \sum{xy}-\sum{x} \sum{y}}{n\sum{x^2}-(\sum{x})^2} 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationReview-12">Again, we will use technology to find the values for the regression equation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationReview-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.1.1: Review of Correlation and Regression"><a href="#subsec-CorrelationReview" title="Copy heading and permalink for Subsection 9.1.1: Review of Correlation and Regression" aria-label="Copy heading and permalink for Subsection 9.1.1: Review of Correlation and Regression">🔗</a></div>
+</section>
 <section class="subsection" id="subsec-CorrelationTestBasics">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Test Basics</span>
 </h3>
 <div class="para" id="subsec-CorrelationTestBasics-2">In correlation and regression hypothesis testing, we use sample data to decide whether there is enough evidence of a linear relationship between two quantitative variables in the population. For correlation, we test whether the population correlation coefficient <span class="process-math">\(\rho\)</span> is equal to zero, which would indicate no linear association. For regression, we test whether the population slope <span class="process-math">\(\beta_1\)</span> is equal to zero, which would indicate that the explanatory variable is not useful for predicting the response variable with a linear model. In both cases, the goal is to determine whether an observed relationship in the sample is strong enough to conclude that a real linear relationship exists in the population.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTestBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrelationTestBasics-3">We will begin with a review of correlation and regression.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTestBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CorrelationTestBasics-3">A <dfn class="terminology">correlation test</dfn> is a hypothesis test used to determine whether there is a linear relationship between two quantitative variables in a population. It tests the population correlation coefficient <span class="process-math">\(\rho\)</span> using the null hypothesis <span class="process-math">\(H_0:\rho=0\)</span> saying there is no correlation and the alternative hypothesis is  <span class="process-math">\(H_a: \rho \ne 0\)</span> stating there is a significant correlation. The alternative hypotheses can also be one-tailed test, stating the correlation greater than or less than 0. If <span class="process-math">\(H_a \gt 0\)</span> the claim is a significant positive correlation while <span class="process-math">\(H_a \lt 0\)</span> claims a significant negative correlation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTestBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 9.1.1: Understanding the Basics"><a href="#subsec-CorrelationTestBasics" title="Copy heading and permalink for Subsection 9.1.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 9.1.1: Understanding the Basics">🔗</a></div>
+<article class="definition definition-like" id="def-correlation-test"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="def-correlation-test-1-1">
+<div class="para">A <dfn class="terminology">correlation test</dfn> is a hypothesis test used to determine whether there is a linear relationship between two quantitative variables in a population. The test statistic is</div>
+<div class="displaymath process-math" id="def-correlation-test-1-1-2">
+\begin{equation*}
+t=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}}    \text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(r\)</span> is the sample correlation coefficient and <span class="process-math">\(n\)</span> is the number of paired observations. The test uses a <span class="process-math">\(t\)</span>-distribution with <span class="process-math">\(n-2\)</span> degrees of freedom.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-correlation-test-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.1.1"><a href="#def-correlation-test" title="Copy heading and permalink for Definition 9.1.1" aria-label="Copy heading and permalink for Definition 9.1.1">🔗</a></div>
+</article>
+<div class="para" id="subsec-CorrelationTestBasics-5">When the p-value <span class="process-math">\(\lt \alpha\)</span> we reject the null hypothesis in support of the alternative indicating a significant correlation. When we do not reject the null hypothesis, we conclude there is no significant correlation between the variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTestBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationTestBasics-6">The <dfn class="terminology">coefficient of determination</dfn>, denoted <span class="process-math">\(r^2\text{,}\)</span> is a measure of how well the regression line fits the data. The coefficient of determination, denoted by <span class="process-math">\(r^2\text{,}\)</span> is the proportion of the variation in the response variable that is explained by the linear relationship with the explanatory variable. Its value is between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> and often written as a percentage when in context. Larger values of <span class="process-math">\(r^2\)</span> indicate that the regression line explains more of the variability in the response variable.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTestBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationTestBasics-7">It is computed as <span class="process-math">\(r^2=\frac{SS_{regression}}{SS_{total}}\text{,}\)</span> where <span class="process-math">\(SS_{regression}\)</span> is the sum of squares due to regression and <span class="process-math">\(SS_{total}\)</span> is the total sum of squares.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTestBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-CorrelationTestBasics-8">A <dfn class="terminology">residual</dfn> in regression is the difference between an observed value of the response variable and the value predicted by the regression equation. It measures how far a data point lies above or below the regression line. The formula for a residual is <span class="process-math">\(e=y-\hat{y}\text{,}\)</span> where <span class="process-math">\(y\)</span> is the observed value and <span class="process-math">\(\hat{y}\)</span> is the predicted value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTestBasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.1.2: Correlation Test Basics"><a href="#subsec-CorrelationTestBasics" title="Copy heading and permalink for Subsection 9.1.2: Correlation Test Basics" aria-label="Copy heading and permalink for Subsection 9.1.2: Correlation Test Basics">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-CorrelationExample">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Test Example</span>
+</h3>
+<div class="para" id="subsec-CorrelationExample-2">A biologist wants to investigate whether there is a linear relationship between the length of a fish and its weight. A random sample of 10 fish is collected from a lake, and each fish is measured for length in centimeters and weight in grams.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationExample-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-CorrelationExample-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Fish Length and Weight<div class="autopermalink" data-description="Table 9.1.2: Fish Length and Weight"><a href="#subsec-CorrelationExample-3" title="Copy heading and permalink for Table 9.1.2: Fish Length and Weight" aria-label="Copy heading and permalink for Table 9.1.2: Fish Length and Weight">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Fish</td>
+<td class="l m b0 r0 l0 t0 lines">Length (cm)</td>
+<td class="l m b0 r0 l0 t0 lines">Weight (g)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines">28</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines">31</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">17</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">43</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">21</td>
+<td class="l m b0 r0 l0 t0 lines">47</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines">23</td>
+<td class="l m b0 r0 l0 t0 lines">50</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">54</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">26</td>
+<td class="l m b0 r0 l0 t0 lines">57</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-CorrelationExample-4">At the <span class="process-math">\(0.05\)</span> significance level, test whether there is a linear correlation between fish length and fish weight in the population.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationExample-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-correlation-test-biology" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-correlation-test-biology-1-1">First graph a scatterplot to describe the type of relationship, compute the correlation coefficient to describe its strength, and determine if it significant using hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-correlation-test-biology-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scatterplot and Correlation</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-biology-2-2">Let <span class="process-math">\(x\)</span> be fish length and <span class="process-math">\(y\)</span> be fish weight. From the scatterplot in StatKey we see a positive linear relationship. As the fish length increases, so does the fish weight. The correlation coefficient is <span class="process-math">\(r=0.997\)</span> which indicates a strong positive relationship.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="FishScatterplot1"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/FishCorTest1.png" class="contained" alt="shows a positive linear trend with fish lengths between 12 cm to 26 cm and weights between 24 grams and 57 grams."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatterplot of Fish Length vs weight<div class="autopermalink" data-description="Figure 9.1.4"><a href="#FishScatterplot1" title="Copy heading and permalink for Figure 9.1.4" aria-label="Copy heading and permalink for Figure 9.1.4">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 9.1.3.1: Scatterplot and Correlation"><a href="#ex-correlation-test-biology-2" title="Copy heading and permalink for Solution 9.1.3.1: Scatterplot and Correlation" aria-label="Copy heading and permalink for Solution 9.1.3.1: Scatterplot and Correlation">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-biology-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-biology-3-2">We want to test whether the population correlation coefficient differs from zero, indicating a linear relationship exists.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-biology-3-3">The null hypothesis is that there is no correlation <span class="process-math">\(H_0:\rho=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-biology-3-4">The alternative hypothesis states there is a correlation  <span class="process-math">\(H_a:\rho \ne 0\)</span> for a two tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-biology-3-5">From the sample data, the correlation coefficient is <span class="process-math">\(r \approx 0.997\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-correlation-test-biology-3-6">
+<div class="para">The test statistic for correlation is</div>
+<div class="displaymath process-math" id="ex-correlation-test-biology-3-6-1">
+\begin{equation*}
+t=\dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-correlation-test-biology-3-7">
+<div class="para">With sample size <span class="process-math">\(n=10\text{,}\)</span> we have</div>
+<div class="displaymath process-math" id="ex-correlation-test-biology-3-7-2">
+\begin{equation*}
+t=\dfrac{0.997\sqrt{8}}{\sqrt{1-0.997^2}}   \approx 36.43\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-biology-3-8">The degrees of freedom are <span class="process-math">\(df=n-2=8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-biology-3-9">If we go to StatKey, under Theoretical Distributions, select <dfn class="terminology">t</dfn>, enter the 8 degrees of freedom, select Two Tail and enter the test statistic along the bottom of the graph.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-biology-3-10">The <span class="process-math">\(p\)</span>-value is extremely small, so <span class="process-math">\(p \approx 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.3.2: Correlation Test"><a href="#ex-correlation-test-biology-3" title="Copy heading and permalink for Solution 9.1.3.2: Correlation Test" aria-label="Copy heading and permalink for Solution 9.1.3.2: Correlation Test">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-biology-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-biology-4-2">Since <span class="process-math">\(p \lt 0.05\text{,}\)</span> we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-biology-4-3">There is sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that there is a linear correlation between fish length and fish weight in the population.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.3.3: Conclusion"><a href="#ex-correlation-test-biology-4" title="Copy heading and permalink for Solution 9.1.3.3: Conclusion" aria-label="Copy heading and permalink for Solution 9.1.3.3: Conclusion">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-biology-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Regression</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-biology-5-2">The regression equation is <span class="process-math">\(\hat{y}=2.432x-5.2\)</span> where <span class="process-math">\(x=\text{fish length}\)</span> and <span class="process-math">\(y=\text{fish weight}\)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-biology-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.3.4: Regression"><a href="#ex-correlation-test-biology-5" title="Copy heading and permalink for Solution 9.1.3.4: Regression" aria-label="Copy heading and permalink for Solution 9.1.3.4: Regression">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 9.1.3"><a href="#ex-correlation-test-biology" title="Copy heading and permalink for Example 9.1.3" aria-label="Copy heading and permalink for Example 9.1.3">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 9.1.3: Correlation Test Example"><a href="#subsec-CorrelationExample" title="Copy heading and permalink for Subsection 9.1.3: Correlation Test Example" aria-label="Copy heading and permalink for Subsection 9.1.3: Correlation Test Example">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-CorrelationTechnology">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
+</h3>
+<div class="para" id="subsec-CorrelationTechnology-2">A kinesiology researcher wants to investigate whether there is a positive linear relationship between forearm length and height in adults. A random sample of 10 adults is selected, and each person’s forearm length and height are measured in centimeters.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTechnology-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-CorrelationTechnology-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Forearm Length and Height<div class="autopermalink" data-description="Table 9.1.5: Forearm Length and Height"><a href="#subsec-CorrelationTechnology-3" title="Copy heading and permalink for Table 9.1.5: Forearm Length and Height" aria-label="Copy heading and permalink for Table 9.1.5: Forearm Length and Height">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Person</td>
+<td class="l m b0 r0 l0 t0 lines">Forearm Length (cm)</td>
+<td class="l m b0 r0 l0 t0 lines">Height (cm)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">158</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">26</td>
+<td class="l m b0 r0 l0 t0 lines">165</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">25</td>
+<td class="l m b0 r0 l0 t0 lines">163</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">27</td>
+<td class="l m b0 r0 l0 t0 lines">167</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">29</td>
+<td class="l m b0 r0 l0 t0 lines">173</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">28.5</td>
+<td class="l m b0 r0 l0 t0 lines">170</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">33</td>
+<td class="l m b0 r0 l0 t0 lines">186</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines">31</td>
+<td class="l m b0 r0 l0 t0 lines">180</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">28</td>
+<td class="l m b0 r0 l0 t0 lines">174</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">32</td>
+<td class="l m b0 r0 l0 t0 lines">180</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-CorrelationTechnology-4">At the <span class="process-math">\(0.05\)</span> significance level, test whether there is a positive linear correlation between forearm length and height in the population. We are going to solve this using a graphing calculator.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationTechnology-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-correlation-test-forearm-height" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-correlation-test-forearm-height-1-1">First graph a scatterplot to describe the type of relationship, compute the correlation coefficient to describe its strength, and determine if it significant using hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-correlation-test-forearm-height-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Input Data</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-forearm-height-2-2">Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:Edit</dfn> and press [ENTER] to select it. Input the forearm length in L1and the height in L2. Make sure to keep as pairs.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="InputForearmData"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Forearm1.png" class="contained" alt="Under the edit menu input the forearm and height data."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input the forearm data<div class="autopermalink" data-description="Figure 9.1.7"><a href="#InputForearmData" title="Copy heading and permalink for Figure 9.1.7" aria-label="Copy heading and permalink for Figure 9.1.7">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 9.1.6.1: Input Data"><a href="#ex-correlation-test-forearm-height-2" title="Copy heading and permalink for Solution 9.1.6.1: Input Data" aria-label="Copy heading and permalink for Solution 9.1.6.1: Input Data">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-forearm-height-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scatterplot</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-forearm-height-3-2">Press the <code class="code-inline tex2jax_ignore"> 2nd</code> button and then <code class="code-inline tex2jax_ignore">Y=</code> button to select STATPLOT. Select <dfn class="terminology">1: Plot1</dfn> and press [ENTER] to select it. Make sure it says <dfn class="terminology">On</dfn>, you may need to use the arrows to highlight it and press [ENTER]. Under the Type of graph, select the first image for the scatterplot. Identify where the data is located, the Xlist:L1 and Ylist:L2. You can choose what the graph points look like.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-3-3">Next, press the [Window] button to adjust the scale of the graph. The forearm lengths are between 20 and 35, the heights are between 150 and 190. Then press the [GRAPH] button.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ForearmScatterplot"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Forearm2.png" class="contained" alt="shows a positive linear trend."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatterplot for forearm vs height<div class="autopermalink" data-description="Figure 9.1.8"><a href="#ForearmScatterplot" title="Copy heading and permalink for Figure 9.1.8" aria-label="Copy heading and permalink for Figure 9.1.8">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-test-forearm-height-3-5">We can see a strong positive linear relationship between the forearm length and heights. As the forearm length increases, so does the person’s height.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.6.2: Scatterplot"><a href="#ex-correlation-test-forearm-height-3" title="Copy heading and permalink for Solution 9.1.6.2: Scatterplot" aria-label="Copy heading and permalink for Solution 9.1.6.2: Scatterplot">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-forearm-height-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-forearm-height-4-2">First, let us confirm the Diagnostics are turned on so the calculator will compute the correlation coefficient.  Press the [2nd] button then [0] to select CATALOG. Scroll down to <dfn class="terminology">DiagnosticOn</dfn> and press [ENTER] twice so it says DONE.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ForearmDiagnostics"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Forearm3.png" class="contained" alt="from catalog menu turn diagnostics on."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Turn on Diagnostics<div class="autopermalink" data-description="Figure 9.1.9"><a href="#ForearmDiagnostics" title="Copy heading and permalink for Figure 9.1.9" aria-label="Copy heading and permalink for Figure 9.1.9">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-test-forearm-height-4-4">Press the [STAT] button and arrow once to the right to the CALC menu, select <dfn class="terminology">4:LinReg(ax+b)</dfn> where a = slope and b = y-intercept, then press [ENTER].  On the TI-83 Plus you need to identify where the data is located, press [2nd] and [1] to select L1, press the [,] button, then press [2nd] and [2] to select L2. Press [ENTER] to perform the calculations.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ForearmCorrelation"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Forearm4.png" class="contained" alt="slope is 2.866, y-intercept is 90.33,  correlation is r=.982. The coefficient of determination is r^2=0.964."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Correlation and regression equation for forearm and height<div class="autopermalink" data-description="Figure 9.1.10"><a href="#ForearmCorrelation" title="Copy heading and permalink for Figure 9.1.10" aria-label="Copy heading and permalink for Figure 9.1.10">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-test-forearm-height-4-6">The linear regression equation is <span class="process-math">\(y=2.8666x+90.332\)</span> where x = forearm length and y = height. The correlation coefficient is <span class="process-math">\(r=0.982\text{.}\)</span> The coefficient of determination is <span class="process-math">\(r^2=0.964 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.6.3: Correlation"><a href="#ex-correlation-test-forearm-height-4" title="Copy heading and permalink for Solution 9.1.6.3: Correlation" aria-label="Copy heading and permalink for Solution 9.1.6.3: Correlation">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-forearm-height-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-forearm-height-5-2">Let <span class="process-math">\(x\)</span> be forearm length and <span class="process-math">\(y\)</span> be height. We want to test for a positive linear correlation.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-5-3">The null hypothesis is there is no correlation. <span class="process-math">\(H_0:\rho=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-5-4">The alterative hypothesis is there is a positive correlation for a right tailed test. <span class="process-math">\(H_a:\rho&gt;0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-5-5">From the sample data, the correlation coefficient is <span class="process-math">\(r\approx 0.982\)</span> and the sample size is <span class="process-math">\(n=10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-correlation-test-forearm-height-5-6">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-correlation-test-forearm-height-5-6-1">
+\begin{equation*}
+t=\dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}\text{.}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-correlation-test-forearm-height-5-6-2">
+\begin{equation*}
+t=\dfrac{0.982\sqrt{8}}{\sqrt{1-0.982^2}} \approx 14.56  
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-5-7">The degrees of freedom are  <span class="process-math">\(df=n-2=8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-5-8">On the calculator press the [STAT] button and press the arrow twice to the right to the TESTS menu and scroll down to <dfn class="terminology">E:LinRegTest</dfn> and press [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-5-9">Identify where the data is located, Xlist:L1 and Ylist:L2, change alternative hypothesis to <span class="process-math">\(\rho \gt 0 \text{.}\)</span> Scroll to Calculate and press [ENTER] to perform the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ForearmCorrelationTest"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Forearm5.png" class="contained" alt="Under the test menu select E for LinRegTest."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Correlation Test for forearm and height<div class="autopermalink" data-description="Figure 9.1.11"><a href="#ForearmCorrelationTest" title="Copy heading and permalink for Figure 9.1.11" aria-label="Copy heading and permalink for Figure 9.1.11">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="ForearmCorrelationTestResults"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Forearm6.png" class="contained" alt="test statistic ist=14.56 and p-value near 0."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Correlation Test Results<div class="autopermalink" data-description="Figure 9.1.12"><a href="#ForearmCorrelationTestResults" title="Copy heading and permalink for Figure 9.1.12" aria-label="Copy heading and permalink for Figure 9.1.12">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-test-forearm-height-5-12">The correlation test statistic is <span class="process-math">\(t=14.564\)</span> and the p-value is very small since it is in scientific notation, <span class="process-math">\(p-value \approx 0\text{.}\)</span> Notice on the test the regression equation is written as <span class="process-math">\(y=a+bx\text{,}\)</span> thus the equation is <span class="process-math">\(y=90.332+2.8666x\)</span> . If you continue to scroll down, you will also see the correlation coefficient <span class="process-math">\(r=0.981\)</span> and the coefficient of determination is <span class="process-math">\(r^2=0.964 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.6.4: Correlation Test"><a href="#ex-correlation-test-forearm-height-5" title="Copy heading and permalink for Solution 9.1.6.4: Correlation Test" aria-label="Copy heading and permalink for Solution 9.1.6.4: Correlation Test">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-forearm-height-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-forearm-height-6-2">Since <span class="process-math">\(p \lt 0.05\text{,}\)</span> we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-forearm-height-6-3">There is sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that there is a <em class="emphasis">positive</em>  linear correlation between forearm length and height in the population.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-forearm-height-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.6.5: Conclusion"><a href="#ex-correlation-test-forearm-height-6" title="Copy heading and permalink for Solution 9.1.6.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.1.6.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 9.1.6"><a href="#ex-correlation-test-forearm-height" title="Copy heading and permalink for Example 9.1.6" aria-label="Copy heading and permalink for Example 9.1.6">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 9.1.4: Using Technology"><a href="#subsec-CorrelationTechnology" title="Copy heading and permalink for Subsection 9.1.4: Using Technology" aria-label="Copy heading and permalink for Subsection 9.1.4: Using Technology">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-CorrelationPractice">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Practice Problems</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Practice Problems</span>
 </h3>
-<div class="para" id="subsec-CorrelationPractice-2">For each problem, construct a scatterplot, find the correlation coefficient, determine if it is significant, find the regression equation, and interpret the coefficient of determination.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-CorrelationPractice-2">For each problem, construct a scatterplot, find the correlation coefficient, determine if it is significant, find the regression equation and residuals, and interpret the coefficient of determination.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 9.1.2: Correlation Practice Problems"><a href="#subsec-CorrelationPractice" title="Copy heading and permalink for Subsection 9.1.2: Correlation Practice Problems" aria-label="Copy heading and permalink for Subsection 9.1.2: Correlation Practice Problems">🔗</a></div>
+<div class="para" id="subsec-CorrelationPractice-3">A medical researcher wants to investigate whether there is a linear relationship between the amount of caffeine in a person’s daily energy drink consumption and a heart damage marker level measured during a health screening. A random sample of <span class="process-math">\(10\)</span> adults who regularly consume energy drinks is selected. For each person, the researcher records the average daily caffeine intake from energy drinks, in milligrams, and a heart damage marker score from a blood test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationPractice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-CorrelationPractice-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Caffeine Intake and Heart Damage Marker Score<div class="autopermalink" data-description="Table 9.1.13: Caffeine Intake and Heart Damage Marker Score"><a href="#subsec-CorrelationPractice-4" title="Copy heading and permalink for Table 9.1.13: Caffeine Intake and Heart Damage Marker Score" aria-label="Copy heading and permalink for Table 9.1.13: Caffeine Intake and Heart Damage Marker Score">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Person</td>
+<td class="l m b0 r0 l0 t0 lines">Caffeine (mg)</td>
+<td class="l m b0 r0 l0 t0 lines">Marker Score</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">80</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">160</td>
+<td class="l m b0 r0 l0 t0 lines">19</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">120</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">200</td>
+<td class="l m b0 r0 l0 t0 lines">23</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">100</td>
+<td class="l m b0 r0 l0 t0 lines">17</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">240</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">140</td>
+<td class="l m b0 r0 l0 t0 lines">21</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines">160</td>
+<td class="l m b0 r0 l0 t0 lines">27</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">210</td>
+<td class="l m b0 r0 l0 t0 lines">26</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">95</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-CorrelationPractice-5">At the <span class="process-math">\(0.05\)</span> significance level, test whether there is a positive linear correlation between daily caffeine intake from energy drinks and heart damage marker score in the population.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationPractice-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-correlation-test-caffeine-heart" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Test for Caffeine and Heart Damage.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-correlation-test-caffeine-heart-2-1">First graph a scatterplot to describe the type of relationship, compute the correlation coefficient to describe its strength, and determine if it significant using hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-correlation-test-caffeine-heart-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scatterplot and Correlation</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-caffeine-heart-3-2">Let <span class="process-math">\(x\)</span> be daily caffeine intake from energy drinks and <span class="process-math">\(y\)</span> be the heart damage marker score. Upload the data into StatKey or input the data into your calculator. You should see a positive linear relationship.  As the amount of caffeine consumption increases, the heart damage marker score also increases. The correlation coefficient is <span class="process-math">\(r=0.828\)</span> and the regression equation is <span class="process-math">\(HD = 0.074(Caf)+8.942\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CaffeineScatterplot1"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/CaffCorTest1.png" class="contained" alt="shows a positive linear trend with caffeine consumption between 80 to 240 mg and heart damage scores between 14 and 30."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatterplot of Caffeine consumption and heart damage<div class="autopermalink" data-description="Figure 9.1.15"><a href="#CaffeineScatterplot1" title="Copy heading and permalink for Figure 9.1.15" aria-label="Copy heading and permalink for Figure 9.1.15">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 9.1.14.1: Scatterplot and Correlation"><a href="#ex-correlation-test-caffeine-heart-3" title="Copy heading and permalink for Solution 9.1.14.1: Scatterplot and Correlation" aria-label="Copy heading and permalink for Solution 9.1.14.1: Scatterplot and Correlation">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-caffeine-heart-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-caffeine-heart-4-2">We want to test whether the population correlation coefficient is greater than zero, indicating a positive linear relationship exists.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-caffeine-heart-4-3">The hypotheses are  <span class="process-math">\(H_0:\rho=0\)</span> versus  <span class="process-math">\(H_a:\rho \gt 0\)</span> for a right tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-caffeine-heart-4-4">From the sample data, the sample correlation coefficient is <span class="process-math">\(r\approx 0.828\)</span> and the sample size is <span class="process-math">\(n=10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-correlation-test-caffeine-heart-4-5">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-correlation-test-caffeine-heart-4-5-1">
+\begin{equation*}
+t=\dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}\text{.}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-correlation-test-caffeine-heart-4-5-2">
+\begin{equation*}
+t=\dfrac{0.828\sqrt{8}}{\sqrt{1-0.828^2}}
+\approx 4.18\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-caffeine-heart-4-6">The degrees of freedom are <span class="process-math">\(df=n-2=8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-caffeine-heart-4-7">The <span class="process-math">\(p\)</span>-value is <span class="process-math">\(p =0.0015\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.14.2: Correlation Test"><a href="#ex-correlation-test-caffeine-heart-4" title="Copy heading and permalink for Solution 9.1.14.2: Correlation Test" aria-label="Copy heading and permalink for Solution 9.1.14.2: Correlation Test">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-caffeine-heart-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Test with TI83 Plus</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-caffeine-heart-5-2">
+<dfn class="terminology">Input Data:</dfn> Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:Edit</dfn> and press [ENTER] to select it. Input the caffeine in L1and the heart score in L2. Make sure to keep as pairs.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-caffeine-heart-5-3">
+<dfn class="terminology">Graph Data:</dfn> Press the <code class="code-inline tex2jax_ignore"> 2nd</code> button and then <code class="code-inline tex2jax_ignore">Y=</code> button to select STATPLOT. Select <dfn class="terminology">1: Plot1</dfn> and press [ENTER] to select it. Under the Type of graph, select the first image for the scatterplot. The data us ub Xlist : L1 and Ylist:L2.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-caffeine-heart-5-4">Next, press the [Window] button to adjust the scale of the graph. The caffeine  are between 70 and 250, the heart scores are between 10 and 30. Then press the [GRAPH] button.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CaffeineScatterplotCalc"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/CaffCorTest2.png" class="contained" alt="shows a positive linear trend."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatterplot for forearm vs height<div class="autopermalink" data-description="Figure 9.1.16"><a href="#CaffeineScatterplotCalc" title="Copy heading and permalink for Figure 9.1.16" aria-label="Copy heading and permalink for Figure 9.1.16">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-test-caffeine-heart-5-6">
+<dfn class="terminology">Correlation:</dfn>  Press the [STAT] button and arrow once to the right to the CALC menu, select <dfn class="terminology">8:LinReg(a+bx)</dfn> and then press [ENTER]. The correlation coefficient is <span class="process-math">\(r=0.828\)</span> and the regression equation is <span class="process-math">\(y=8.942+0.0741x\text{.}\)</span> Or select <dfn class="terminology">4:LinReg(ax+b)</dfn> for the same results. Pay attention to the order the values are listed for the regression equation.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CaffeineCorrelation"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/CaffCorTest3.png" class="contained" alt="slope is 0.0741, y-intercept is 8.942,  correlation is r=.828."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Correlation and regression equation for caffeine and heart<div class="autopermalink" data-description="Figure 9.1.17"><a href="#CaffeineCorrelation" title="Copy heading and permalink for Figure 9.1.17" aria-label="Copy heading and permalink for Figure 9.1.17">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-test-caffeine-heart-5-8">
+<dfn class="terminology">Test:</dfn> Press the [STAT] button and arrow twice to the right to the TESTS menu and scroll down to <dfn class="terminology">E:LinRegTest</dfn> and press [ENTER] to select it.  The data is in Xlist:L1 and Ylist:L2, change alternative hypothesis to <span class="process-math">\(\rho \gt 0 \text{.}\)</span> Scroll to Calculate and press [ENTER] to perform the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CaffeineCorrTest"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/CaffCorTest4.png" class="contained" alt="test statistics is t=4.18 and p-value=0.0015."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Correlation result for caffeine and heart<div class="autopermalink" data-description="Figure 9.1.18"><a href="#CaffeineCorrTest" title="Copy heading and permalink for Figure 9.1.18" aria-label="Copy heading and permalink for Figure 9.1.18">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-test-caffeine-heart-5-10">The statistical test value is <span class="process-math">\(t=4.181\)</span> and the p-value is <span class="process-math">\(p=0.0015\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.14.3: Test with TI83 Plus"><a href="#ex-correlation-test-caffeine-heart-5" title="Copy heading and permalink for Solution 9.1.14.3: Test with TI83 Plus" aria-label="Copy heading and permalink for Solution 9.1.14.3: Test with TI83 Plus">🔗</a></div>
+</div></details>
+<details id="ex-correlation-test-caffeine-heart-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-test-caffeine-heart-6-2">Since <span class="process-math">\(p \lt 0.05\text{,}\)</span> we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-test-caffeine-heart-6-3">There is sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that there is a positive linear correlation between daily caffeine intake from energy drinks and heart damage marker score in the population.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-test-caffeine-heart-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.14.4: Conclusion"><a href="#ex-correlation-test-caffeine-heart-6" title="Copy heading and permalink for Solution 9.1.14.4: Conclusion" aria-label="Copy heading and permalink for Solution 9.1.14.4: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.1.14: Correlation Test for Caffeine and Heart Damage"><a href="#ex-correlation-test-caffeine-heart" title="Copy heading and permalink for Checkpoint 9.1.14: Correlation Test for Caffeine and Heart Damage" aria-label="Copy heading and permalink for Checkpoint 9.1.14: Correlation Test for Caffeine and Heart Damage">🔗</a></div>
+</article></details>
+<details id="ex-regression-caffeine-heart" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Regression for Caffeine and Heart Damage.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-regression-caffeine-heart-2-1">If there is a significant relationship, find the regression equation and predict the heart damage marker score if a person consumes an average of 200 mg of caffeine per day. Also find the residual.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-caffeine-heart-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-regression-caffeine-heart-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Regression Equation</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-regression-caffeine-heart-3-2">Press the [STAT] button and arrow once to the right to the CALC menu, select <dfn class="terminology">4:LinReg(ax+b)</dfn> and then press [ENTER].<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-caffeine-heart-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CaffeineRegression"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/CaffCorTest5.png" class="contained" alt="slope is 0.0741, y-intercept is 8.942,  correlation is r=.828."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Regression equation for caffeine and heart<div class="autopermalink" data-description="Figure 9.1.20"><a href="#CaffeineRegression" title="Copy heading and permalink for Figure 9.1.20" aria-label="Copy heading and permalink for Figure 9.1.20">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-regression-caffeine-heart-3-4">The slope is <span class="process-math">\(a=0.074\)</span> and the y-intercept is <span class="process-math">\(b=8.942\)</span> giving the regression equation to predict heart damage score as <span class="process-math">\(y=0.074x+8.942\)</span> or <span class="process-math">\(\text{heart damage} = 0.074(\text{caffeine})+8.942\)</span> with a correlation coefficient of <span class="process-math">\(r=0.828\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-caffeine-heart-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.19.1: Regression Equation"><a href="#ex-regression-caffeine-heart-3" title="Copy heading and permalink for Solution 9.1.19.1: Regression Equation" aria-label="Copy heading and permalink for Solution 9.1.19.1: Regression Equation">🔗</a></div>
+</div></details>
+<details id="ex-regression-caffeine-heart-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Prediction</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-regression-caffeine-heart-4-2">Substituting 200 mg of caffeine in the regression equation gives <span class="process-math">\(y=0.074(200)+8.942=23.742\text{.}\)</span> Predict around 23.7 as the heart damage score.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-caffeine-heart-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-regression-caffeine-heart-4-3">If you add the regression equation to the graph, we can see a value near it. So, it is a reasonable estimate. The person with 200 mg of caffeine had a heart damage score of 23.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-caffeine-heart-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.19.2: Prediction"><a href="#ex-regression-caffeine-heart-4" title="Copy heading and permalink for Solution 9.1.19.2: Prediction" aria-label="Copy heading and permalink for Solution 9.1.19.2: Prediction">🔗</a></div>
+</div></details>
+<details id="ex-regression-caffeine-heart-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Residual</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-regression-caffeine-heart-5-2">The person with 200 mg of caffeine had a heart damage score of <span class="process-math">\(y=23\text{.}\)</span> The predicted value is <span class="process-math">\(\hat{y} =23.7 \)</span> score.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-caffeine-heart-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-regression-caffeine-heart-5-3">The residual is  <span class="process-math">\(e=y-\hat{y}\text{,}\)</span> where <span class="process-math">\(y\)</span> is the observed value and <span class="process-math">\(\hat{y}\)</span> is the predicted value. Thus, <span class="process-math">\(e=23-23.7=-0.7\)</span> the actual is 0.7 lower than the predicated value and under the regression line in the graph.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-caffeine-heart-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.19.3: Residual"><a href="#ex-regression-caffeine-heart-5" title="Copy heading and permalink for Solution 9.1.19.3: Residual" aria-label="Copy heading and permalink for Solution 9.1.19.3: Residual">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.1.19: Regression for Caffeine and Heart Damage"><a href="#ex-regression-caffeine-heart" title="Copy heading and permalink for Checkpoint 9.1.19: Regression for Caffeine and Heart Damage" aria-label="Copy heading and permalink for Checkpoint 9.1.19: Regression for Caffeine and Heart Damage">🔗</a></div>
+</article></details>
+<details id="ex-coeff-determination-caffeine-heart" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coefficient of Determination for Caffeine and Heart Damage.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-coeff-determination-caffeine-heart-2-1">Calculate the coefficient of determination and the coefficient of non-determination and explain what they indicate in this context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-caffeine-heart-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-coeff-determination-caffeine-heart-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-coeff-determination-caffeine-heart-3-1">The correlation coefficient is <span class="process-math">\(r=0.828\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-caffeine-heart-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-caffeine-heart-3-2">The correlation of determination is <span class="process-math">\(r^2 =(0.828)^2=0.686\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-caffeine-heart-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-caffeine-heart-3-3">This indicates that 68.6% of the variation is accounted for by the relationship between the variables. Thus, 68.6% of the variation in heart damage marker score is accounted for by the relationship with caffeine consumption.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-caffeine-heart-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-caffeine-heart-3-4">The correlation of non-determination is <span class="process-math">\(1-r^2 = 1-0.686=0.314\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-caffeine-heart-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-caffeine-heart-3-5">This indicates that 31.4% of the variation is due to chance or other variables.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-caffeine-heart-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.21.1"><a href="#ex-coeff-determination-caffeine-heart-3" title="Copy heading and permalink for Solution 9.1.21.1" aria-label="Copy heading and permalink for Solution 9.1.21.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.1.21: Coefficient of Determination for Caffeine and Heart Damage"><a href="#ex-coeff-determination-caffeine-heart" title="Copy heading and permalink for Checkpoint 9.1.21: Coefficient of Determination for Caffeine and Heart Damage" aria-label="Copy heading and permalink for Checkpoint 9.1.21: Coefficient of Determination for Caffeine and Heart Damage">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-CorrelationPractice-9">A veterinary researcher wants to investigate whether birth weight is related to average life span in dogs. Based on published research suggesting that larger birth mass is associated with shorter life span in dogs, the researcher collects data from a sample of <span class="process-math">\(10\)</span> dog breeds. For each breed, the average birth weight, in grams, and the average life span, in years, are recorded.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationPractice-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-CorrelationPractice-10"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Birth Weight and Average Life Span of Dog Breeds<div class="autopermalink" data-description="Table 9.1.22: Birth Weight and Average Life Span of Dog Breeds"><a href="#subsec-CorrelationPractice-10" title="Copy heading and permalink for Table 9.1.22: Birth Weight and Average Life Span of Dog Breeds" aria-label="Copy heading and permalink for Table 9.1.22: Birth Weight and Average Life Span of Dog Breeds">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Breed</td>
+<td class="l m b0 r0 l0 t0 lines">Birth Weight (g)</td>
+<td class="l m b0 r0 l0 t0 lines">Life Span (years)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Chihuahua</td>
+<td class="l m b0 r0 l0 t0 lines">160</td>
+<td class="l m b0 r0 l0 t0 lines">15.8</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Toy Poodle</td>
+<td class="l m b0 r0 l0 t0 lines">190</td>
+<td class="l m b0 r0 l0 t0 lines">14.4</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Beagle</td>
+<td class="l m b0 r0 l0 t0 lines">280</td>
+<td class="l m b0 r0 l0 t0 lines">14.8</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Cocker Spaniel</td>
+<td class="l m b0 r0 l0 t0 lines">310</td>
+<td class="l m b0 r0 l0 t0 lines">13.3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Border Collie</td>
+<td class="l m b0 r0 l0 t0 lines">370</td>
+<td class="l m b0 r0 l0 t0 lines">13.9</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Bulldog</td>
+<td class="l m b0 r0 l0 t0 lines">420</td>
+<td class="l m b0 r0 l0 t0 lines">10.4</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Labrador Retriever</td>
+<td class="l m b0 r0 l0 t0 lines">510</td>
+<td class="l m b0 r0 l0 t0 lines">12.2</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">German Shepherd</td>
+<td class="l m b0 r0 l0 t0 lines">560</td>
+<td class="l m b0 r0 l0 t0 lines">10.8</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Rottweiler</td>
+<td class="l m b0 r0 l0 t0 lines">630</td>
+<td class="l m b0 r0 l0 t0 lines">9.6</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Great Dane</td>
+<td class="l m b0 r0 l0 t0 lines">720</td>
+<td class="l m b0 r0 l0 t0 lines">8.9</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-CorrelationPractice-11">At the <span class="process-math">\(0.05\)</span> significance level, test whether there is a negative linear correlation between birth weight and average life span in the population of dog breeds. Also find the regression equation and interpret the scatterplot.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrelationPractice-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-correlation-dog-birth-weight-lifespan" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation for Dog Birth Weight and Lifespan.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-2-1">First graph a scatterplot to describe the type of relationship, compute the correlation coefficient to describe its strength, and determine if it significant using hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-correlation-dog-birth-weight-lifespan-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scatterplot and Correlation</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-3-2">Let <span class="process-math">\(x\)</span> be birth weight and <span class="process-math">\(y\)</span> be average life span. Upload the data into StatKey or input the data into your calculator. You should see a negative linear relationship.  As the birth weight of dogs increases, their life span decreases.  The correlation coefficient is <span class="process-math">\(r=-0.929\)</span> and the regression equation is <span class="process-math">\(Life = -0.012BW+17.309\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DogScatterplot1"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/DogCorTest1.png" class="contained" alt="shows a negative linear trend with birth weight and lifespan."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatterplot of dog birth weight and lifespan<div class="autopermalink" data-description="Figure 9.1.24"><a href="#DogScatterplot1" title="Copy heading and permalink for Figure 9.1.24" aria-label="Copy heading and permalink for Figure 9.1.24">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 9.1.23.1: Scatterplot and Correlation"><a href="#ex-correlation-dog-birth-weight-lifespan-3" title="Copy heading and permalink for Solution 9.1.23.1: Scatterplot and Correlation" aria-label="Copy heading and permalink for Solution 9.1.23.1: Scatterplot and Correlation">🔗</a></div>
+</div></details>
+<details id="ex-correlation-dog-birth-weight-lifespan-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-4-2">We want to test whether higher birth weights are associated with shorter life spans.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-4-3">The hypotheses are  <span class="process-math">\(H_0:\rho=0\)</span> And  <span class="process-math">\(H_a:\rho \lt 0\)</span> for a left tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-4-4">From the sample data, the sample correlation coefficient is <span class="process-math">\(r\approx -0.929\)</span> and the sample size is <span class="process-math">\(n=10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-correlation-dog-birth-weight-lifespan-4-5">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-correlation-dog-birth-weight-lifespan-4-5-1">
+\begin{equation*}
+t=\dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}\text{.}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-correlation-dog-birth-weight-lifespan-4-5-2">
+\begin{equation*}
+t=\dfrac{-0.929\sqrt{8}}{\sqrt{1-(-0.929)^2}}    \approx -7.10\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-4-6">The degrees of freedom are <span class="process-math">\(df=n-2=8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-4-7">The <span class="process-math">\(p\)</span>-value is <span class="process-math">\(p \approx 0.000051\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.23.2: Correlation Test"><a href="#ex-correlation-dog-birth-weight-lifespan-4" title="Copy heading and permalink for Solution 9.1.23.2: Correlation Test" aria-label="Copy heading and permalink for Solution 9.1.23.2: Correlation Test">🔗</a></div>
+</div></details>
+<details id="ex-correlation-dog-birth-weight-lifespan-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Test with TI83 Plus</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-5-2">
+<dfn class="terminology">Input Data:</dfn> Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:Edit</dfn> and press [ENTER] to select it. Input the birth weight in L3 and the lifespan in L4.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-5-3">
+<dfn class="terminology">Graph Data:</dfn> Press the <code class="code-inline tex2jax_ignore"> 2nd</code> button and then <code class="code-inline tex2jax_ignore">Y=</code> button to select STATPLOT. Select <dfn class="terminology">1: Plot1</dfn> and press [ENTER] to select it. Under the Type of graph, select the first image for the scatterplot. The data is in Xlist:L3 and Ylist:L4.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-5-4">Next, press the [Window] button to adjust the scale of the graph. The birth weights are between 150 and 750, the lifespans are between 8 and 16. Then press the [GRAPH] button.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DogScatterplotCalc"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/DogCorTest2.png" class="contained" alt="shows a negative linear trend with birth weight and lifespan of dogs."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatterplot of dog birth weight and lifespan<div class="autopermalink" data-description="Figure 9.1.25"><a href="#DogScatterplotCalc" title="Copy heading and permalink for Figure 9.1.25" aria-label="Copy heading and permalink for Figure 9.1.25">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-5-6">
+<dfn class="terminology">Correlation:</dfn>  Press the [STAT] button and arrow once to the right to the CALC menu, select <dfn class="terminology">4:LinReg(ax+b)</dfn> and then press [ENTER]. The correlation coefficient is <span class="process-math">\(r=-0.929\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DogCorrelation"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/DogCorTest3.png" class="contained" alt="shows r=-0.929 with slope=-0.012 and y intercept=17.309."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Correlation for dog birth weight and lifespan<div class="autopermalink" data-description="Figure 9.1.26"><a href="#DogCorrelation" title="Copy heading and permalink for Figure 9.1.26" aria-label="Copy heading and permalink for Figure 9.1.26">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-5-8">
+<dfn class="terminology">Test:</dfn> Press the [STAT] button and arrow twice to the right to the TESTS menu and scroll down to <dfn class="terminology">E:LinRegTest</dfn> and press [ENTER] to select it.  The Xlist:L3 and Ylist:L4, change alternative hypothesis to <span class="process-math">\(\rho \lt 0 \text{.}\)</span> Scroll to Calculate and press [ENTER] to perform the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DogCorrelationResults"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/DogCorTest4.png" class="contained" alt="statistical test t=-7.10 and p-value=0.000051."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Correlation Test results for dog birth weight and lifespan<div class="autopermalink" data-description="Figure 9.1.27"><a href="#DogCorrelationResults" title="Copy heading and permalink for Figure 9.1.27" aria-label="Copy heading and permalink for Figure 9.1.27">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-5-10">The statistical test value is <span class="process-math">\(t=-7.101\)</span> and the p-value is <span class="process-math">\(p=0.000051\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.23.3: Test with TI83 Plus"><a href="#ex-correlation-dog-birth-weight-lifespan-5" title="Copy heading and permalink for Solution 9.1.23.3: Test with TI83 Plus" aria-label="Copy heading and permalink for Solution 9.1.23.3: Test with TI83 Plus">🔗</a></div>
+</div></details>
+<details id="ex-correlation-dog-birth-weight-lifespan-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-6-2">Since <span class="process-math">\(p \lt0.05\text{,}\)</span> we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-6-3">There is sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that there is a negative linear correlation between birth weight and average life span in dog breeds.<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-correlation-dog-birth-weight-lifespan-6-4">This example is consistent with published work by Rong Fan and colleagues, who reported that larger dogs tend to have shorter life spans and argued that birth mass is an important factor in understanding this negative relationship. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/27956710/?utm_source=openai))<div class="autopermalink" data-description="Paragraph"><a href="#ex-correlation-dog-birth-weight-lifespan-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.23.4: Conclusion"><a href="#ex-correlation-dog-birth-weight-lifespan-6" title="Copy heading and permalink for Solution 9.1.23.4: Conclusion" aria-label="Copy heading and permalink for Solution 9.1.23.4: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.1.23: Correlation for Dog Birth Weight and Lifespan"><a href="#ex-correlation-dog-birth-weight-lifespan" title="Copy heading and permalink for Checkpoint 9.1.23: Correlation for Dog Birth Weight and Lifespan" aria-label="Copy heading and permalink for Checkpoint 9.1.23: Correlation for Dog Birth Weight and Lifespan">🔗</a></div>
+</article></details>
+<details id="ex-regression-dog-birth-weight-lifespan" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Regression for Dog Birth Weight and Lifespan.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-regression-dog-birth-weight-lifespan-2-1">If there is a significant relationship, find the regression equation and predict the lifespan for a dog that weighed 510 grams at birth. Also find the residual.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-dog-birth-weight-lifespan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-regression-dog-birth-weight-lifespan-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Regression Equation</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-regression-dog-birth-weight-lifespan-3-2">The least-squares regression equation is <span class="process-math">\(\hat{y}=17.309-0.012x\text{,}\)</span> where <span class="process-math">\(x\)</span> is birth weight in grams and <span class="process-math">\(\hat{y}\)</span> is the predicted average life span in years.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-dog-birth-weight-lifespan-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.28.1: Regression Equation"><a href="#ex-regression-dog-birth-weight-lifespan-3" title="Copy heading and permalink for Solution 9.1.28.1: Regression Equation" aria-label="Copy heading and permalink for Solution 9.1.28.1: Regression Equation">🔗</a></div>
+</div></details>
+<details id="ex-regression-dog-birth-weight-lifespan-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Prediction</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-regression-dog-birth-weight-lifespan-4-2">
+<div class="para">The predicted lifespan for a dog weighing 510 grams at birth is</div>
+<div class="displaymath process-math" id="ex-regression-dog-birth-weight-lifespan-4-2-1">
+\begin{equation*}
+\hat{y}=17.309-0.012(510)=11.189
+\end{equation*}
+</div>
+<div class="para">years.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-dog-birth-weight-lifespan-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-regression-dog-birth-weight-lifespan-4-3">The slope of the regression line is <span class="process-math">\(-0.012\text{.}\)</span> This means that for each increase of <span class="process-math">\(1\)</span> gram in birth weight, the predicted average life span decreases by about <span class="process-math">\(0.012\)</span> years. Equivalently, an increase of <span class="process-math">\(100\)</span> grams in birth weight is associated with a decrease of about <span class="process-math">\(1.18\)</span> years in predicted life span.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-dog-birth-weight-lifespan-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.28.2: Prediction"><a href="#ex-regression-dog-birth-weight-lifespan-4" title="Copy heading and permalink for Solution 9.1.28.2: Prediction" aria-label="Copy heading and permalink for Solution 9.1.28.2: Prediction">🔗</a></div>
+</div></details>
+<details id="ex-regression-dog-birth-weight-lifespan-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Residual</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-regression-dog-birth-weight-lifespan-5-2">From the sample, a dog that weighed 510 grams lived 12.2 years.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-dog-birth-weight-lifespan-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-regression-dog-birth-weight-lifespan-5-3">The residual is <span class="process-math">\(e=y-\hat{y}\text{,}\)</span> where <span class="process-math">\(y\)</span> is the observed value and <span class="process-math">\(\hat{y}\)</span> is the predicted value. Thus, <span class="process-math">\(e=12.2-11.2=1\)</span> the actual is 1 year longer than the predicated value and over the regression line in the graph.<div class="autopermalink" data-description="Paragraph"><a href="#ex-regression-dog-birth-weight-lifespan-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.28.3: Residual"><a href="#ex-regression-dog-birth-weight-lifespan-5" title="Copy heading and permalink for Solution 9.1.28.3: Residual" aria-label="Copy heading and permalink for Solution 9.1.28.3: Residual">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.1.28: Regression for Dog Birth Weight and Lifespan"><a href="#ex-regression-dog-birth-weight-lifespan" title="Copy heading and permalink for Checkpoint 9.1.28: Regression for Dog Birth Weight and Lifespan" aria-label="Copy heading and permalink for Checkpoint 9.1.28: Regression for Dog Birth Weight and Lifespan">🔗</a></div>
+</article></details>
+<details id="ex-coeff-determination-dog-lifespan" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coefficient of Determination.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-coeff-determination-dog-lifespan-2-1">Calculate the coefficient of determination and the coefficient of non-determination and explain what they indicate in this context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-dog-lifespan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-coeff-determination-dog-lifespan-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-coeff-determination-dog-lifespan-3-1">The correlation coefficient is <span class="process-math">\(r=-0.929\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-dog-lifespan-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-dog-lifespan-3-2">The correlation of determination is <span class="process-math">\(r^2 =(-0.929)^2=0.863\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-dog-lifespan-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-dog-lifespan-3-3">This indicates that 86.3% of the variation is accounted for by the relationship between the variables. Thus, 86.3% of the variation in lifespan is accounted for by the relationship with the dogs birth weight.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-dog-lifespan-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-dog-lifespan-3-4">The correlation of non-determination is <span class="process-math">\(1-r^2 = 1-0.863=0.137\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-dog-lifespan-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-coeff-determination-dog-lifespan-3-5">This indicates that 13.7% of the variation is due to chance or other variables.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coeff-determination-dog-lifespan-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.29.1"><a href="#ex-coeff-determination-dog-lifespan-3" title="Copy heading and permalink for Solution 9.1.29.1" aria-label="Copy heading and permalink for Solution 9.1.29.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.1.29: Coefficient of Determination"><a href="#ex-coeff-determination-dog-lifespan" title="Copy heading and permalink for Checkpoint 9.1.29: Coefficient of Determination" aria-label="Copy heading and permalink for Checkpoint 9.1.29: Coefficient of Determination">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 9.1.5: Correlation Practice Problems"><a href="#subsec-CorrelationPractice" title="Copy heading and permalink for Subsection 9.1.5: Correlation Practice Problems" aria-label="Copy heading and permalink for Subsection 9.1.5: Correlation Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.1: Hypothesis Testing for Correlation"><a href="#sec-CorrelationTest" title="Copy heading and permalink for Section 9.1: Hypothesis Testing for Correlation" aria-label="Copy heading and permalink for Section 9.1: Hypothesis Testing for Correlation">🔗</a></div>
 </section>
 </div>
