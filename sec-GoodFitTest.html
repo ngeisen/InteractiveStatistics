@@ -53,14 +53,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.5';
+eBookConfig.runestone_version = '8.1.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.53a23d1b65c1dce2.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f24402517dcb7959.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.39f982db166f319d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -452,14 +452,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-GoodFitTest.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Chi-square Goodness of Fit Test</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GoodFitTest.html#subsec-GoodFitBasics" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GoodFitTest.html#subsec-GoodFitPractice" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Goodness of Fit Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GoodFitTest.html#subsec-GoodFitExamples" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Examples for the chi-square goodness of fit test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GoodFitTest.html#subsec-GoodFitPractice" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Goodness of Fit Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AssociationTests.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Chi-square Association Test</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationBasics" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationPractice" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Association Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationExamples" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Example for the chi-square independence test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationPractice" class="internal"><span class="codenumber">9.3.3</span> <span class="title">Association Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -538,7 +540,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chi-square Goodness of Fit Test</span>
 </h2>
 <section class="introduction" id="sec-GoodFitTest-2">
-<div class="para" id="sec-GoodFitTest-2-1">In this section<div class="autopermalink" data-description="Paragraph"><a href="#sec-GoodFitTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-GoodFitTest-2-1">A chi square distribution can be used for tests concerning frequency distributions.  Such as, is the number of colors the same for each flavor in a bag of Skittles. It can also be used to see whether a frequency distribution fits a specific pattern. Suppose traffic engineer wishes to see whether accidents occur more often on some days of the week than others. When testing to see whether a frequency distribution fits a specific pattern, we can use the <dfn class="terminology">chi-square goodness-of-fit test</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-GoodFitTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <article class="objectives goal-like" id="sec-GoodFitTest-3"><h3 class="heading"><span class="type">Objectives</span></h3>
 <div class="introduction" id="sec-GoodFitTest-3-1">
@@ -552,12 +554,12 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Objective 9.2.1"><a href="#sec-GoodFitTest-3-2-1" title="Copy heading and permalink for Objective 9.2.1" aria-label="Copy heading and permalink for Objective 9.2.1">🔗</a></div>
 </li>
 <li id="sec-GoodFitTest-3-2-2">
-<div class="para" id="sec-GoodFitTest-3-2-2-1">Determine if same.<div class="autopermalink" data-description="Paragraph"><a href="#sec-GoodFitTest-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-GoodFitTest-3-2-2-1">Determine if frequencies are the same.<div class="autopermalink" data-description="Paragraph"><a href="#sec-GoodFitTest-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Objective 9.2.2"><a href="#sec-GoodFitTest-3-2-2" title="Copy heading and permalink for Objective 9.2.2" aria-label="Copy heading and permalink for Objective 9.2.2">🔗</a></div>
 </li>
 <li id="sec-GoodFitTest-3-2-3">
-<div class="para" id="sec-GoodFitTest-3-2-3-1">Determine if matches pattern.<div class="autopermalink" data-description="Paragraph"><a href="#sec-GoodFitTest-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-GoodFitTest-3-2-3-1">Determine if frequencies match a specific pattern.<div class="autopermalink" data-description="Paragraph"><a href="#sec-GoodFitTest-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Objective 9.2.3"><a href="#sec-GoodFitTest-3-2-3" title="Copy heading and permalink for Objective 9.2.3" aria-label="Copy heading and permalink for Objective 9.2.3">🔗</a></div>
 </li>
@@ -573,18 +575,817 @@ eBookConfig.enable_chatcodes =  false;
 <article class="definition definition-like" id="def-chi-square-goodness-of-fit"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="def-chi-square-goodness-of-fit-1-1">A <dfn class="terminology">chi-square goodness-of-fit test</dfn> is used to determine whether the distribution of a single categorical variable in a population matches a claimed set of proportions. The test compares the observed counts in each category to the expected counts that would occur if the claimed distribution were true. The test statistic is <span class="process-math">\(\chi^2=\sum \frac{(O-E)^2}{E}\text{,}\)</span> where <span class="process-math">\(O\)</span> represents an observed count and <span class="process-math">\(E\)</span> represents the corresponding expected count. The degrees of freedom for the test are <span class="process-math">\(df=k-1\text{,}\)</span> where <span class="process-math">\(k\)</span> is the number of categories.<div class="autopermalink" data-description="Paragraph"><a href="#def-chi-square-goodness-of-fit-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="def-chi-square-goodness-of-fit-1-1">
+<div class="para">A <dfn class="terminology">chi-square goodness-of-fit test</dfn> is used to determine whether the distribution of a single categorical variable in a population matches a claimed set of proportions. The test compares the observed counts in each category to the expected counts that would occur if the claimed distribution were true. The test statistic is</div>
+<div class="displaymath process-math" id="def-chi-square-goodness-of-fit-1-1-2">
+\begin{equation*}
+\chi^2=\sum \frac{(O-E)^2}{E}\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(O\)</span> represents an observed count and <span class="process-math">\(E\)</span> represents the corresponding expected count. The degrees of freedom for the test are <span class="process-math">\(df=k-1\text{,}\)</span> where <span class="process-math">\(k\)</span> is the number of categories.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-chi-square-goodness-of-fit-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 9.2.1"><a href="#def-chi-square-goodness-of-fit" title="Copy heading and permalink for Definition 9.2.1" aria-label="Copy heading and permalink for Definition 9.2.1">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 9.2.1: Understanding the Basics"><a href="#subsec-GoodFitBasics" title="Copy heading and permalink for Subsection 9.2.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 9.2.1: Understanding the Basics">🔗</a></div>
+</article>
+<div class="para" id="subsec-GoodFitBasics-4">Suppose a candy enthusiast wants to test if the number of candies for each flavor in a bag of Skittles is the same. He opens a big of skittles and collects a random sample of 100 candies and organizes them into flavors with the following results: 22 strawberry, 24 orange, 14 grape, 17 lemon, and 23 green apple.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-5">If there was no difference, one would expect each flavor to have the same frequency. In this case, <span class="process-math">\(100/5=20 \)</span> candies per flavor is expected. Since the frequencies for each flavor were obtained from a sample, these actual frequencies are called the <dfn class="terminology">observed frequencies</dfn>. The frequencies obtained by calculations are called the <dfn class="terminology">expected frequencies</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-6">The observed frequencies often differ from the expected frequencies due to sampling error. But our question is, is there a significant difference between the frequencies or is it due to chance?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-7">We are going to shift how we write hypotheses. The null hypothesis is a statement indication there is no difference or no change in the frequencies while the alternative states that the frequency is different than expected.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-8">
+<span class="process-math">\(H_0:\)</span> The flavor frequencies are equal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-9">
+<span class="process-math">\(H_a:\)</span> The flavor frequencies are not equal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-10">In the goodness of fit test, the degrees of freedom are equal to the number of categories minus 1. In this case, there are five flavors for <span class="process-math">\(df=5-1=4 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-GoodFitBasics-11">
+<div class="para">The formula for the chi square goodness of fit test is</div>
+<div class="displaymath process-math" id="subsec-GoodFitBasics-11-1">
+\begin{equation*}
+\chi ^2 = \sum{\frac{(O-E)^2}{E}} 
+\end{equation*}
+</div>
+<div class="para">where O = observed frequencies, E = expected frequency.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-12">The assumption for the chi-square test is that the data are obtained from a random sample and the expected frequency for each category must be at least 5. Because the O-E values are squared, the answer will always be positive so every test will be a right-tailed test using the chi-square distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-13">It is helpful to create a table with the observed frequencies, the expected counts, the difference between the observed and expected values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-GoodFitBasics-14"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed and Expected Counts<div class="autopermalink" data-description="Table 9.2.2: Observed and Expected Counts"><a href="#subsec-GoodFitBasics-14" title="Copy heading and permalink for Table 9.2.2: Observed and Expected Counts" aria-label="Copy heading and permalink for Table 9.2.2: Observed and Expected Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Flavor</td>
+<td class="l m b0 r0 l0 t0 lines">Observed</td>
+<td class="l m b0 r0 l0 t0 lines">Expected</td>
+<td class="l m b0 r0 l0 t0 lines">Difference O-E</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{(O-E)^2}{E}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Strawberry</td>
+<td class="l m b0 r0 l0 t0 lines">22</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.20\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Orange</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.80\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Grape</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">-6</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.80\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Lemon</td>
+<td class="l m b0 r0 l0 t0 lines">17</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">-3</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.45\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Green Apple</td>
+<td class="l m b0 r0 l0 t0 lines">23</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.45\)</span></td>
+</tr>
+</table></div>
+</figure>
+<div class="para logical" id="subsec-GoodFitBasics-15">
+<div class="para">The test statistic is <span class="process-math">\(\chi^2 = \sum{\dfrac{(O-E)^2}{E}}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-GoodFitBasics-15-2">
+\begin{equation*}
+\chi^2 = \frac{2^2}{20} + \frac{4^2}{20} + \frac{(-6)^2} {20} +\frac{(-3)^2} {20}+\frac{3^2} {20}=3.70
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-16">Since the test statistic is relatively small for chi-squared, this means it is a good fit for having an equal distribution. If the test statistic is large, that indicates there is a larger difference between the observed and the expected values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitBasics-17">To find the p-value, we go to StatKey and under <dfn class="terminology">Theoretical Distributions</dfn> select <span class="process-math">\(\chi ^2 \)</span> and enter the degrees of freedom of 4, identify Right Tail, and enter the test statistic 3.70 along the bottom to get the p-value of 0.448, image below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiSquareSkittles1"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ChiSkittles1.png" class="contained" alt="Right tail area of 0.448 for chi=3.70."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Chi-square p-value for a test statistic of 3.70<div class="autopermalink" data-description="Figure 9.2.3"><a href="#ChiSquareSkittles1" title="Copy heading and permalink for Figure 9.2.3" aria-label="Copy heading and permalink for Figure 9.2.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GoodFitBasics-19">On the graphing calculator press [2nd] button and [VARS] to select DISTR and scroll down to <dfn class="terminology">7: <span class="process-math">\(\chi^2\)</span> cdf(</dfn>  then press [ENTER] to select it and then input 3.70 [,] E99 [,] 4 [)] then press [ENTER] to calculate the p-value = 0.448126. To get the EE press the [2nd] button then [,] button and then enter 99.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiSquareSkittles2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/ChiSkittles2.png" class="contained" alt="Right tail area of 0.4481 for chi=3.70."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Chi-square p-value from calculator<div class="autopermalink" data-description="Figure 9.2.4"><a href="#ChiSquareSkittles2" title="Copy heading and permalink for Figure 9.2.4" aria-label="Copy heading and permalink for Figure 9.2.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GoodFitBasics-21">Since <span class="process-math">\(p \gt 0.05\)</span> we do not reject the null hypothesis. We cannot conclude a significant difference in the number of candies for each flavor. Thus, there are approximately the same number of candies for each flavor. The chi-square test indicates it is still a good fit for having approximately equal frequencies.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitBasics-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.2.1: Understanding the Basics"><a href="#subsec-GoodFitBasics" title="Copy heading and permalink for Subsection 9.2.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 9.2.1: Understanding the Basics">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-GoodFitExamples">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Examples for the chi-square goodness of fit test</span>
+</h3>
+<div class="para" id="subsec-GoodFitExamples-2">There are two main cases for the chi-square goodness of fit test that we will be investigating. 1) the frequency distribution is equal for each category or 2) it matches a specific pattern based on previous data. We will look at an example of both cases here.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-3">
+<dfn class="terminology">Wildflowers</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-4">A hiking enthusiast is studying whether four species of wildflowers appear in equal proportions along some hiking trails in Rocky Mountain National Park. After randomly selecting and identifying  <span class="process-math">\(120\)</span> wildflowers, the hiker records the following observed counts:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-GoodFitExamples-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed Wildflower Counts<div class="autopermalink" data-description="Table 9.2.5: Observed Wildflower Counts"><a href="#subsec-GoodFitExamples-5" title="Copy heading and permalink for Table 9.2.5: Observed Wildflower Counts" aria-label="Copy heading and permalink for Table 9.2.5: Observed Wildflower Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Species</td>
+<td class="l m b0 r0 l0 t0 lines">Observed Count</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Colorado Columbine</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Mountain Bluebell</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Lupine</td>
+<td class="l m b0 r0 l0 t0 lines">31</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Yarrow</td>
+<td class="l m b0 r0 l0 t0 lines">29</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-GoodFitExamples-6">At the <span class="process-math">\(\alpha = 0.05\)</span> significance level, test whether the four species of wildflowers are equally distributed along the hiking trails.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="Flowers1"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Flowers1.png" class="contained" alt="decorative- pictures of wildflowers ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Wildflower images<div class="autopermalink" data-description="Figure 9.2.6"><a href="#Flowers1" title="Copy heading and permalink for Figure 9.2.6" aria-label="Copy heading and permalink for Figure 9.2.6">🔗</a></div></figcaption>
+</figure>
+<details id="ex-chisquareGOF-equal-flowers" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Wildflowers.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-flowers-2-1">State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-chisquareGOF-equal-flowers-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-flowers-3-2">Let the null hypothesis be that the four wildflower species are equally distributed. So we would expect 25% in each of the four categories.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-flowers-3-3">The null hypotheses is<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-flowers-3-4">
+<span class="process-math">\(H_0:\)</span> The flower species are equally distributed or <span class="process-math">\(p_1=p_2=p_3=p_4=0.25\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-flowers-3-5">And the alternative hypothesis is<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-flowers-3-6">
+<span class="process-math">\(H_a:\)</span> The species are not equally distributed. Which means at least one of the proportions differs from 0.25.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.1: Hypotheses"><a href="#ex-chisquareGOF-equal-flowers-3" title="Copy heading and permalink for Solution 9.2.7.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.2.7.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-flowers-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Assumptions</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-flowers-4-2">It was a random sample of flowers and there are at least 5 in each category, so we can use the chi-square distribution.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.2: Assumptions"><a href="#ex-chisquareGOF-equal-flowers-4" title="Copy heading and permalink for Solution 9.2.7.2: Assumptions" aria-label="Copy heading and permalink for Solution 9.2.7.2: Assumptions">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-flowers-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Values</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-flowers-5-2">Since there are 120 flowers and 4 categories, the expected count for each flower species under equal distribution is <span class="process-math">\(\dfrac{120}{4}=30\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-chisquareGOF-equal-flowers-5-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed and Expected Counts<div class="autopermalink" data-description="Table 9.2.8: Observed and Expected Counts"><a href="#ex-chisquareGOF-equal-flowers-5-3" title="Copy heading and permalink for Table 9.2.8: Observed and Expected Counts" aria-label="Copy heading and permalink for Table 9.2.8: Observed and Expected Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Species</td>
+<td class="l m b0 r0 l0 t0 lines">Observed</td>
+<td class="l m b0 r0 l0 t0 lines">Expected</td>
+<td class="l m b0 r0 l0 t0 lines">Difference O-E</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{(O-E)^2}{E}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Columbine</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">-6</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.20\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Bluebell</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.20\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Lupine</td>
+<td class="l m b0 r0 l0 t0 lines">31</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.033\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Yarrow</td>
+<td class="l m b0 r0 l0 t0 lines">29</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">-1</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.033\)</span></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 9.2.7.3: Values"><a href="#ex-chisquareGOF-equal-flowers-5" title="Copy heading and permalink for Solution 9.2.7.3: Values" aria-label="Copy heading and permalink for Solution 9.2.7.3: Values">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-flowers-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Good Fit Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-chisquareGOF-equal-flowers-6-2">
+<div class="para">The chi-square test statistic is  <span class="process-math">\(\chi^2 = \sum{\dfrac{(O-E)^2}{E}}\)</span>
+</div>
+<div class="displaymath process-math" id="ex-chisquareGOF-equal-flowers-6-2-2">
+\begin{equation*}
+\chi^2 = \frac{(-6)^2}{30} + \frac{6^2}{30} + \frac{1^2} {30} +\frac{(-1)^2} {30} =2.467
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-chisquareGOF-equal-flowers-6-2-3">
+\begin{equation*}
+\chi^2=1.20+1.20+0.033+0.033=2.466
+\end{equation*}
+</div>
+<div class="para">from the table above.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-flowers-6-3">The degrees of freedom from 4 categories is <span class="process-math">\(df=k-1=4-1=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-flowers-6-4">Using a chi-square distribution with 3 degrees of freedom, the <span class="process-math">\(p\)</span>-value for a right tailed test is <span class="process-math">\(p=0.481\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.4: Good Fit Test"><a href="#ex-chisquareGOF-equal-flowers-6" title="Copy heading and permalink for Solution 9.2.7.4: Good Fit Test" aria-label="Copy heading and permalink for Solution 9.2.7.4: Good Fit Test">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-flowers-7" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-flowers-7-2">Since <span class="process-math">\(p=0.481 \gt 0.05\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-flowers-7-3">There is not sufficient evidence at the <span class="process-math">\(\alpha = 0.05\)</span> significance level to conclude that the four wildflower species are not equally distributed along the hiking trails in Rocky Mountain National Park.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-flowers-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.5: Conclusion"><a href="#ex-chisquareGOF-equal-flowers-7" title="Copy heading and permalink for Solution 9.2.7.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.2.7.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 9.2.7: Wildflowers"><a href="#ex-chisquareGOF-equal-flowers" title="Copy heading and permalink for Example 9.2.7: Wildflowers" aria-label="Copy heading and permalink for Example 9.2.7: Wildflowers">🔗</a></div>
+</article></details>
+<details id="subsec-GoodFitExamples-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">TI-83 Plus.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GoodFitExamples-9-2">Note: The TI-83 Plus does not have the chi-square goodness of fit test, but we can program it to do the calculations from the lists.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-9-3">
+<dfn class="terminology">Input Data:</dfn>Press [STAT] button and under the EDIT menu select <dfn class="terminology">1:Edit</dfn> and press [ENTER].  Input the Observed values in L1 and the Expected values in L2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-9-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-9-4">
+<dfn class="terminology">Find Sum:</dfn>Press [2nd] [STAT] for LIST and use the arrow twice to the right to the MATH menu across the top and select <dfn class="terminology">5 Sum(</dfn> and press [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-9-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiFlowers2"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Flowers2.png" class="contained" alt="Input values into calculator under Lists."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input values into calculator<div class="autopermalink" data-description="Figure 9.2.10"><a href="#ChiFlowers2" title="Copy heading and permalink for Figure 9.2.10" aria-label="Copy heading and permalink for Figure 9.2.10">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GoodFitExamples-9-6">We are going to program the calculator to compute the chi-square value: You will need to add a parenthesis at the beginning since we want to square the difference in the values before dividing by the expected value for that cell. The process is [ ( ] [2nd] [1] for L1 [–] [2nd] [2] for L2 [ ) ]  [x²] [÷] [2nd] [2] for  L2 [ ) ] then press [ENTER] to perform the calculations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-9-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiFlowers3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Flowers3.png" class="contained" alt="Program calculator to find sum (L1-L2)62 divide L2."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Program calculator to find sum<div class="autopermalink" data-description="Figure 9.2.11"><a href="#ChiFlowers3" title="Copy heading and permalink for Figure 9.2.11" aria-label="Copy heading and permalink for Figure 9.2.11">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GoodFitExamples-9-8">The statistical test value is <span class="process-math">\(\chi^2 = 2.467\)</span> and the degrees of freedom is 3.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-9-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-9-9">To find the p-value press [2nd] button and [VARS] to select DISTR and scroll down to <dfn class="terminology">7: <span class="process-math">\(\chi^2\)</span> cdf(</dfn> then press [ENTER] to select it and then input 2.467 [,] E99 [,] 3 [)] then press [ENTER] to calculate the p-value = 0.48128. To get the EE press the [2nd] button then [,] button then enter 99.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-9-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiFlowers4"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Flowers4.png" class="contained" alt="Test value chi=2.467 and p-value=0.481."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Calculate the p-value<div class="autopermalink" data-description="Figure 9.2.12"><a href="#ChiFlowers4" title="Copy heading and permalink for Figure 9.2.12" aria-label="Copy heading and permalink for Figure 9.2.12">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Example 9.2.9: TI-83 Plus"><a href="#subsec-GoodFitExamples-9" title="Copy heading and permalink for Example 9.2.9: TI-83 Plus" aria-label="Copy heading and permalink for Example 9.2.9: TI-83 Plus">🔗</a></div>
+</article></details>
+<details id="subsec-GoodFitExamples-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">TI-84 GOF-test.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GoodFitExamples-10-2">
+<dfn class="terminology">Input Data:</dfn> Press [STAT] button and under the EDIT menu select <dfn class="terminology">1:Edit</dfn> and press [ENTER]. Input the Observed values in L1 and the Expected values in L2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-10-3">Press the [STAT] button and under the TESTS menu select <dfn class="terminology">D: GOF-Test</dfn> and press [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-10-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiFlowers5"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Flowers5.png" class="contained" alt="Input values into calculator under Lists."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input values into calculator<div class="autopermalink" data-description="Figure 9.2.14"><a href="#ChiFlowers5" title="Copy heading and permalink for Figure 9.2.14" aria-label="Copy heading and permalink for Figure 9.2.14">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GoodFitExamples-10-5">Identify where the data is located, Observed in L1 and Expected in L2. Identify the degrees of freedom of 3  and then scroll to Calculate and press [ENTER].<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-10-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiFlowers6"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Flowers6.png" class="contained" alt="Test value chi=2.467 and p-value=0.481."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>GOF-Test value and p-value<div class="autopermalink" data-description="Figure 9.2.15"><a href="#ChiFlowers6" title="Copy heading and permalink for Figure 9.2.15" aria-label="Copy heading and permalink for Figure 9.2.15">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GoodFitExamples-10-7">The chi-square test value is <span class="process-math">\(\chi ^2 = 2.4667\)</span> and the p-value is <span class="process-math">\(p=0.4813\)</span> and it will list the contributions for each category.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-10-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-10-8">If you select <dfn class="terminology">Draw</dfn> instead it will graph the chi-square distribution and identified the chi-square test statistic 2.4667 and p-value p=0.4813.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-10-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiFlowers7"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/Flowers7.png" class="contained" alt="Test value chi=2.467 and p-value=0.481."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Chi-square distribution with p-value<div class="autopermalink" data-description="Figure 9.2.16"><a href="#ChiFlowers7" title="Copy heading and permalink for Figure 9.2.16" aria-label="Copy heading and permalink for Figure 9.2.16">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Example 9.2.13: TI-84 GOF-test"><a href="#subsec-GoodFitExamples-10" title="Copy heading and permalink for Example 9.2.13: TI-84 GOF-test" aria-label="Copy heading and permalink for Example 9.2.13: TI-84 GOF-test">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-GoodFitExamples-11">
+<dfn class="terminology">Intersection Accidents</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitExamples-12">A traffic safety researcher wants to test whether the distribution of accidents among four types of intersections matches a previously reported pattern. Past transportation data suggest that <span class="process-math">\(20\%\)</span> of intersection accidents occur at roundabouts, <span class="process-math">\(30\%\)</span> at stop-sign intersections, <span class="process-math">\(35\%\)</span> at traffic-light intersections, and <span class="process-math">\(15\%\)</span> at other types of intersections. To investigate whether a more recent sample follows this distribution, the researcher records <span class="process-math">\(400\)</span> intersection accidents and classifies each one by intersection type.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-GoodFitExamples-13"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed Accident Counts by Intersection Type<div class="autopermalink" data-description="Table 9.2.17: Observed Accident Counts by Intersection Type"><a href="#subsec-GoodFitExamples-13" title="Copy heading and permalink for Table 9.2.17: Observed Accident Counts by Intersection Type" aria-label="Copy heading and permalink for Table 9.2.17: Observed Accident Counts by Intersection Type">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Intersection Type</td>
+<td class="l m b0 r0 l0 t0 lines">Observed Count</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Roundabout</td>
+<td class="l m b0 r0 l0 t0 lines">68</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Stop Sign</td>
+<td class="l m b0 r0 l0 t0 lines">134</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Traffic Light</td>
+<td class="l m b0 r0 l0 t0 lines">146</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Other</td>
+<td class="l m b0 r0 l0 t0 lines">52</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-GoodFitExamples-14">At the <span class="process-math">\(0.05\)</span> significance level, test whether the population distribution of accidents differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitExamples-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-chi-square-GOF-intersections" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intersection Accidents.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-chi-square-GOF-intersections-2-1">State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-chi-square-GOF-intersections-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chi-square-GOF-intersections-3-2">This is a chi-square goodness-of-fit test for a specific pattern. A random sample was taken and at least 5 accidents in each category.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-GOF-intersections-3-3">The hypotheses are:<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-GOF-intersections-3-4">
+<span class="process-math">\(H_0:\)</span> the population proportions are <span class="process-math">\(0.20\)</span> for roundabouts, <span class="process-math">\(0.30\)</span> for stop-sign intersections, <span class="process-math">\(0.35\)</span> for traffic-light intersections, and <span class="process-math">\(0.15\)</span> for other intersections, and<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-GOF-intersections-3-5">
+<span class="process-math">\(H_a:\)</span> the population accident distribution is different.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.18.1: Hypotheses"><a href="#ex-chi-square-GOF-intersections-3" title="Copy heading and permalink for Solution 9.2.18.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.2.18.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-chi-square-GOF-intersections-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Values</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chi-square-GOF-intersections-4-2">Under the null hypothesis, the expected counts are the proportions multiplied by the sample size of <span class="process-math">\(400\text{:}\)</span> Thus, we would expect <span class="process-math">\(400(0.20)=80\)</span> in roundabouts, <span class="process-math">\(400(0.30)=120\)</span> in stop-sign intersections, <span class="process-math">\(400(0.35)=140\)</span> in traffic-light intersections, and <span class="process-math">\(400(0.15)=60\)</span> in other intersections.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-chi-square-GOF-intersections-4-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed and Expected Counts<div class="autopermalink" data-description="Table 9.2.19: Observed and Expected Counts"><a href="#ex-chi-square-GOF-intersections-4-3" title="Copy heading and permalink for Table 9.2.19: Observed and Expected Counts" aria-label="Copy heading and permalink for Table 9.2.19: Observed and Expected Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Intersection Type</td>
+<td class="l m b0 r0 l0 t0 lines">Observed</td>
+<td class="l m b0 r0 l0 t0 lines">Expected</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{(O-E)^2}{E}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Roundabout</td>
+<td class="l m b0 r0 l0 t0 lines">68</td>
+<td class="l m b0 r0 l0 t0 lines">80</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.80\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Stop Sign</td>
+<td class="l m b0 r0 l0 t0 lines">134</td>
+<td class="l m b0 r0 l0 t0 lines">120</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.633\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Traffic Light</td>
+<td class="l m b0 r0 l0 t0 lines">146</td>
+<td class="l m b0 r0 l0 t0 lines">140</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.257\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Other</td>
+<td class="l m b0 r0 l0 t0 lines">52</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.067\)</span></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 9.2.18.2: Values"><a href="#ex-chi-square-GOF-intersections-4" title="Copy heading and permalink for Solution 9.2.18.2: Values" aria-label="Copy heading and permalink for Solution 9.2.18.2: Values">🔗</a></div>
+</div></details>
+<details id="ex-chi-square-GOF-intersections-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Good Fit Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-chi-square-GOF-intersections-5-2">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-chi-square-GOF-intersections-5-2-1">
+\begin{equation*}
+\chi^2=\sum \frac{(O-E)^2}{E}=1.80+1.633+0.257+1.067=4.757\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-GOF-intersections-5-3">The degrees of freedom are <span class="process-math">\(df=k-1=4-1=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-GOF-intersections-5-4">Using a chi-square distribution with <span class="process-math">\(3\)</span> degrees of freedom, the <span class="process-math">\(p\)</span>-value is approximately <span class="process-math">\(0.190\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.18.3: Good Fit Test"><a href="#ex-chi-square-GOF-intersections-5" title="Copy heading and permalink for Solution 9.2.18.3: Good Fit Test" aria-label="Copy heading and permalink for Solution 9.2.18.3: Good Fit Test">🔗</a></div>
+</div></details>
+<details id="ex-chi-square-GOF-intersections-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">TI-84 GOF-test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chi-square-GOF-intersections-6-2">Press [STAT] button and under the EDIT menu select <dfn class="terminology">1:Edit</dfn> and press [ENTER]. <dfn class="terminology">Input</dfn> the Observed values in L1 and the Expected values in L2.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-GOF-intersections-6-3">Press the STAT button and under the TESTS menu select <dfn class="terminology">D: GOF-Test</dfn> and press [ENTER] to select it. Identify where the data is located and enter df=3 then press Calculate.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiIntersect1"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ChiCars.png" class="contained" alt="Test value chi=4.575 and p-value=0.190."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>GOF-Test on calculator for Intersection Accidents<div class="autopermalink" data-description="Figure 9.2.20"><a href="#ChiIntersect1" title="Copy heading and permalink for Figure 9.2.20" aria-label="Copy heading and permalink for Figure 9.2.20">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-chi-square-GOF-intersections-6-5">The statistical test value is <span class="process-math">\(\chi^2 = 4.757\)</span> and p-value =0.190<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.18.4: TI-84 GOF-test"><a href="#ex-chi-square-GOF-intersections-6" title="Copy heading and permalink for Solution 9.2.18.4: TI-84 GOF-test" aria-label="Copy heading and permalink for Solution 9.2.18.4: TI-84 GOF-test">🔗</a></div>
+</div></details>
+<details id="ex-chi-square-GOF-intersections-7" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chi-square-GOF-intersections-7-2">Since <span class="process-math">\(p=0.19 \gt 0.05\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-GOF-intersections-7-3">There is not sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that the population distribution of accidents among roundabouts, stop-sign intersections, traffic-light intersections, and other types of intersections differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-GOF-intersections-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.18.5: Conclusion"><a href="#ex-chi-square-GOF-intersections-7" title="Copy heading and permalink for Solution 9.2.18.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.2.18.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 9.2.18: Intersection Accidents"><a href="#ex-chi-square-GOF-intersections" title="Copy heading and permalink for Example 9.2.18: Intersection Accidents" aria-label="Copy heading and permalink for Example 9.2.18: Intersection Accidents">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 9.2.2: Examples for the chi-square goodness of fit test"><a href="#subsec-GoodFitExamples" title="Copy heading and permalink for Subsection 9.2.2: Examples for the chi-square goodness of fit test" aria-label="Copy heading and permalink for Subsection 9.2.2: Examples for the chi-square goodness of fit test">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-GoodFitPractice">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Goodness of Fit Practice Problems</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Goodness of Fit Practice Problems</span>
 </h3>
-<div class="para" id="subsec-GoodFitPractice-2">For each problem,.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-GoodFitPractice-2">For each problem, state the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 9.2.2: Goodness of Fit Practice Problems"><a href="#subsec-GoodFitPractice" title="Copy heading and permalink for Subsection 9.2.2: Goodness of Fit Practice Problems" aria-label="Copy heading and permalink for Subsection 9.2.2: Goodness of Fit Practice Problems">🔗</a></div>
+<div class="para" id="subsec-GoodFitPractice-3">
+<dfn class="terminology">Beetles</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitPractice-4">A biologist is studying whether four color patterns of a certain beetle species occur in equal proportions in a forest habitat. After randomly collecting 160 beetles, the biologist records the following observed counts:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-GoodFitPractice-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed Beetle Color Pattern Counts<div class="autopermalink" data-description="Table 9.2.21: Observed Beetle Color Pattern Counts"><a href="#subsec-GoodFitPractice-5" title="Copy heading and permalink for Table 9.2.21: Observed Beetle Color Pattern Counts" aria-label="Copy heading and permalink for Table 9.2.21: Observed Beetle Color Pattern Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Color Pattern</td>
+<td class="l m b0 r0 l0 t0 lines">Observed Count</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Green</td>
+<td class="l m b0 r0 l0 t0 lines">52</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Brown</td>
+<td class="l m b0 r0 l0 t0 lines">33</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Striped</td>
+<td class="l m b0 r0 l0 t0 lines">41</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Spotted</td>
+<td class="l m b0 r0 l0 t0 lines">34</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-GoodFitPractice-6">At the <span class="process-math">\(0.05\)</span> significance level, test whether the four beetle color patterns are equally distributed in the population.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-chisquareGOF-equal-beetles" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Beetles.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-beetles-2-1">State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-chisquareGOF-equal-beetles-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-beetles-3-2">The null hypothesis is that the four beetle color patterns are equally distributed in the population. So we would expect 25% in each category.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-beetles-3-3">The hypotheses are <span class="process-math">\(H_0:p_1=p_2=p_3=p_4=0.25\)</span> or the color patterns are equally distributed and <span class="process-math">\(H_a:\)</span> the color patterns are not equally distributed<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.22.1: Hypotheses"><a href="#ex-chisquareGOF-equal-beetles-3" title="Copy heading and permalink for Solution 9.2.22.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.2.22.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-beetles-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Values</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-beetles-4-2">Since there are <span class="process-math">\(160\)</span> beetles and <span class="process-math">\(4\)</span> categories, the expected count for each category under equal distribution is  <span class="process-math">\(\dfrac{160}{4}=40\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-chisquareGOF-equal-beetles-4-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed and Expected Counts<div class="autopermalink" data-description="Table 9.2.23: Observed and Expected Counts"><a href="#ex-chisquareGOF-equal-beetles-4-3" title="Copy heading and permalink for Table 9.2.23: Observed and Expected Counts" aria-label="Copy heading and permalink for Table 9.2.23: Observed and Expected Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Color Pattern</td>
+<td class="l m b0 r0 l0 t0 lines">Observed</td>
+<td class="l m b0 r0 l0 t0 lines">Expected</td>
+<td class="l m b0 r0 l0 t0 lines">Difference O=E</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{(O-E)^2}{E}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Green</td>
+<td class="l m b0 r0 l0 t0 lines">52</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">3.60</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Brown</td>
+<td class="l m b0 r0 l0 t0 lines">33</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+<td class="l m b0 r0 l0 t0 lines">-7</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.225\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Striped</td>
+<td class="l m b0 r0 l0 t0 lines">41</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.025\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Spotted</td>
+<td class="l m b0 r0 l0 t0 lines">34</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+<td class="l m b0 r0 l0 t0 lines">-6</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.90\)</span></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 9.2.22.2: Values"><a href="#ex-chisquareGOF-equal-beetles-4" title="Copy heading and permalink for Solution 9.2.22.2: Values" aria-label="Copy heading and permalink for Solution 9.2.22.2: Values">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-beetles-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Good Fit Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-chisquareGOF-equal-beetles-5-2">
+<div class="para">The chi-square test statistic is</div>
+<div class="displaymath process-math" id="ex-chisquareGOF-equal-beetles-5-2-1">
+\begin{equation*}
+\chi^2=\sum \frac{(O-E)^2}{E}=3.60+1.225+0.025+0.90=5.75\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-beetles-5-3">The degrees of freedom are <span class="process-math">\(df=k-1=4-1=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-beetles-5-4">Using a chi-square distribution with <span class="process-math">\(3\)</span> degrees of freedom, the <span class="process-math">\(p\)</span>-value is approximately <span class="process-math">\(0.124\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.22.3: Good Fit Test"><a href="#ex-chisquareGOF-equal-beetles-5" title="Copy heading and permalink for Solution 9.2.22.3: Good Fit Test" aria-label="Copy heading and permalink for Solution 9.2.22.3: Good Fit Test">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-beetles-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">TI-84 GOF-test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-beetles-6-2">Press [STAT] button and under the EDIT menu select <dfn class="terminology">1:Edit</dfn> and press [ENTER]. <dfn class="terminology">Input</dfn> the Observed values in L1 and the Expected values in L2.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-beetles-6-3">Press the STAT button and under the TESTS menu select <dfn class="terminology">D: GOF-Test</dfn> and press [ENTER] to select it. Identify where the data is located and enter df=3 then press Calculate<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-beetles-6-4">The statistical test value is <span class="process-math">\(\chi^2 = 5.75\)</span> and p-value =0.124<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ChiBeetles"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ChiBeetles.png" class="contained" alt="Test value chi=5.75 and p-value=0.124"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>GOF-Test on calculator for Beetles<div class="autopermalink" data-description="Figure 9.2.24"><a href="#ChiBeetles" title="Copy heading and permalink for Figure 9.2.24" aria-label="Copy heading and permalink for Figure 9.2.24">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 9.2.22.4: TI-84 GOF-test"><a href="#ex-chisquareGOF-equal-beetles-6" title="Copy heading and permalink for Solution 9.2.22.4: TI-84 GOF-test" aria-label="Copy heading and permalink for Solution 9.2.22.4: TI-84 GOF-test">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-equal-beetles-7" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-equal-beetles-7-2">Since <span class="process-math">\(p=0.124 \gt 0.05\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-equal-beetles-7-3">There is not sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that the four beetle color patterns are not equally distributed in the population.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-equal-beetles-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.22.5: Conclusion"><a href="#ex-chisquareGOF-equal-beetles-7" title="Copy heading and permalink for Solution 9.2.22.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.2.22.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.2.22: Beetles"><a href="#ex-chisquareGOF-equal-beetles" title="Copy heading and permalink for Checkpoint 9.2.22: Beetles" aria-label="Copy heading and permalink for Checkpoint 9.2.22: Beetles">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-GoodFitPractice-8">
+<dfn class="terminology">Support for Gun Laws</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitPractice-9">A political scientist wants to test whether the distribution of opinions among United States senators matches a previously reported national distribution of stronger gun laws. In 2022 the Bipartisan Safer Communities Act passed for expanded background checks after several school shootings. A recent Gallup report suggested that among Americans, <span class="process-math">\(60\%\)</span> support strong gun laws, <span class="process-math">\(27\%\)</span> are neutral or keep as now,  and <span class="process-math">\(13\%\)</span> oppose strong gun laws. To examine whether a current sample is consistent with that distribution, the researcher classifies a random sample of <span class="process-math">\(100\)</span> senators and house representative with the following results.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-GoodFitPractice-10"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed Opinions on Strong Gun Laws<div class="autopermalink" data-description="Table 9.2.25: Observed Opinions on Strong Gun Laws"><a href="#subsec-GoodFitPractice-10" title="Copy heading and permalink for Table 9.2.25: Observed Opinions on Strong Gun Laws" aria-label="Copy heading and permalink for Table 9.2.25: Observed Opinions on Strong Gun Laws">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Opinion</td>
+<td class="l m b0 r0 l0 t0 lines">Observed Count</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Support</td>
+<td class="l m b0 r0 l0 t0 lines">55</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Neutral</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Oppose</td>
+<td class="l m b0 r0 l0 t0 lines">21</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-GoodFitPractice-11">At the <span class="process-math">\(0.05\)</span> significance level, test whether the population distribution of opinions differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-chisquareGOF-gun-laws" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Gun Laws.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-chisquareGOF-gun-laws-2-1">State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-chisquareGOF-gun-laws-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-gun-laws-3-2">This is a chi-square goodness-of-fit test looking at a specific pattern.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-gun-laws-3-3">The hypotheses are <span class="process-math">\(H_0:\)</span> the population proportions are  <span class="process-math">\(0.50\text{,}\)</span> <span class="process-math">\(0.30\text{,}\)</span> and <span class="process-math">\(0.20\)</span>  for support, neutral, and oppose, respectively, and <span class="process-math">\(H_a:\)</span> the population distribution is different.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.26.1: Hypotheses"><a href="#ex-chisquareGOF-gun-laws-3" title="Copy heading and permalink for Solution 9.2.26.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.2.26.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-gun-laws-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Assumptions</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-gun-laws-4-2">A random sample was taken and at least 5 are in each category, thus the chi-square distribution is appropriate.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.26.2: Assumptions"><a href="#ex-chisquareGOF-gun-laws-4" title="Copy heading and permalink for Solution 9.2.26.2: Assumptions" aria-label="Copy heading and permalink for Solution 9.2.26.2: Assumptions">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-gun-laws-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Values</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-gun-laws-5-2">Under <span class="process-math">\(H_0\text{,}\)</span> the expected counts are found by multiplying each proportion by the sample size <span class="process-math">\(100\)</span> senators.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-chisquareGOF-gun-laws-5-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed and Expected Counts<div class="autopermalink" data-description="Table 9.2.27: Observed and Expected Counts"><a href="#ex-chisquareGOF-gun-laws-5-3" title="Copy heading and permalink for Table 9.2.27: Observed and Expected Counts" aria-label="Copy heading and permalink for Table 9.2.27: Observed and Expected Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Opinion</td>
+<td class="l m b0 r0 l0 t0 lines">Observed</td>
+<td class="l m b0 r0 l0 t0 lines">Expected</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{(O-E)^2}{E}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Support</td>
+<td class="l m b0 r0 l0 t0 lines">55</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.417\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Neutral</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">27</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(.333\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Oppose</td>
+<td class="l m b0 r0 l0 t0 lines">21</td>
+<td class="l m b0 r0 l0 t0 lines">13</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4.923\)</span></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 9.2.26.3: Values"><a href="#ex-chisquareGOF-gun-laws-5" title="Copy heading and permalink for Solution 9.2.26.3: Values" aria-label="Copy heading and permalink for Solution 9.2.26.3: Values">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-gun-laws-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Good Fit Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-chisquareGOF-gun-laws-6-2">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-chisquareGOF-gun-laws-6-2-1">
+\begin{equation*}
+\chi^2=\sum \frac{(O-E)^2}{E}=0.417+0.333+4.923=5.67\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-gun-laws-6-3">The degrees of freedom are  <span class="process-math">\(df=k-1=3-1=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-gun-laws-6-4">Using a chi-square distribution with <span class="process-math">\(2\)</span> degrees of freedom, the <span class="process-math">\(p\)</span>-value is approximately <span class="process-math">\(0.059\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.26.4: Good Fit Test"><a href="#ex-chisquareGOF-gun-laws-6" title="Copy heading and permalink for Solution 9.2.26.4: Good Fit Test" aria-label="Copy heading and permalink for Solution 9.2.26.4: Good Fit Test">🔗</a></div>
+</div></details>
+<details id="ex-chisquareGOF-gun-laws-7" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chisquareGOF-gun-laws-7-2">Since <span class="process-math">\(p=0.059 \gt 0.05\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chisquareGOF-gun-laws-7-3">There is not sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that the population distribution of senators’ opinions on strong gun laws differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chisquareGOF-gun-laws-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.26.5: Conclusion"><a href="#ex-chisquareGOF-gun-laws-7" title="Copy heading and permalink for Solution 9.2.26.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.2.26.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.2.26: Gun Laws"><a href="#ex-chisquareGOF-gun-laws" title="Copy heading and permalink for Checkpoint 9.2.26: Gun Laws" aria-label="Copy heading and permalink for Checkpoint 9.2.26: Gun Laws">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-GoodFitPractice-13">
+<dfn class="terminology">Fire Department Calls</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GoodFitPractice-14">A city manager wants to test whether the distribution of calls received by the fire department matches a previously reported pattern. Past city data suggest that <span class="process-math">\(15\%\)</span> of calls are for auto accidents, <span class="process-math">\(10\%\)</span> are for fires, <span class="process-math">\(45\%\)</span> are for medical emergencies, <span class="process-math">\(20\%\)</span> are for public assistance, and <span class="process-math">\(10\%\)</span> are for other calls. To investigate whether a more recent sample follows this distribution, the manager reviews <span class="process-math">\(300\)</span> randomly selected fire department calls and classifies each one by type.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-GoodFitPractice-15"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed Fire Department Call Types<div class="autopermalink" data-description="Table 9.2.28: Observed Fire Department Call Types"><a href="#subsec-GoodFitPractice-15" title="Copy heading and permalink for Table 9.2.28: Observed Fire Department Call Types" aria-label="Copy heading and permalink for Table 9.2.28: Observed Fire Department Call Types">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Call Type</td>
+<td class="l m b0 r0 l0 t0 lines">Observed Count</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Auto Accidents</td>
+<td class="l m b0 r0 l0 t0 lines">39</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Fires</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Medical Emergencies</td>
+<td class="l m b0 r0 l0 t0 lines">126</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Public Assistance</td>
+<td class="l m b0 r0 l0 t0 lines">63</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Other</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-GoodFitPractice-16">At the <span class="process-math">\(0.05\)</span> significance level, test whether the population distribution of fire department call types differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GoodFitPractice-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-chi-square-gof-fire-department" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fire Department Calls.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-chi-square-gof-fire-department-2-1">State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-chi-square-gof-fire-department-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chi-square-gof-fire-department-3-2">This is a chi-square goodness-of-fit test for a specific pattern. A random sample of calls was taken and there are at least 5 in each category.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-gof-fire-department-3-3">The hypotheses are<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-gof-fire-department-3-4">
+<span class="process-math">\(H_0:\)</span> the population proportions are <span class="process-math">\(0.15\)</span> for auto accidents, <span class="process-math">\(0.10\)</span> for fires, <span class="process-math">\(0.45\)</span> for medical emergencies, <span class="process-math">\(0.20\)</span> for public assistance, and <span class="process-math">\(0.10\)</span> for other calls, and<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-gof-fire-department-3-5">
+<span class="process-math">\(H_a:\)</span> the population distribution is different.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.29.1: Hypotheses"><a href="#ex-chi-square-gof-fire-department-3" title="Copy heading and permalink for Solution 9.2.29.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.2.29.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-chi-square-gof-fire-department-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Values</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chi-square-gof-fire-department-4-2">Under the null hypotheses, the expected counts are the proportions multiplied by the sample size of <span class="process-math">\(300\text{.}\)</span> Thus, we would expect <span class="process-math">\(300(0.15)=45\)</span> auto accidents, <span class="process-math">\(300(0.10)=30\)</span> fires, <span class="process-math">\(300(0.45)=135\)</span> medical emergencies, <span class="process-math">\(300(0.20)=60\)</span> public assistance, and <span class="process-math">\(300(0.10)=30\)</span> other calls.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-chi-square-gof-fire-department-4-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed and Expected Counts<div class="autopermalink" data-description="Table 9.2.30: Observed and Expected Counts"><a href="#ex-chi-square-gof-fire-department-4-3" title="Copy heading and permalink for Table 9.2.30: Observed and Expected Counts" aria-label="Copy heading and permalink for Table 9.2.30: Observed and Expected Counts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Call Type</td>
+<td class="l m b0 r0 l0 t0 lines">Observed</td>
+<td class="l m b0 r0 l0 t0 lines">Expected</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{(O-E)^2}{E}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Auto Accidents</td>
+<td class="l m b0 r0 l0 t0 lines">39</td>
+<td class="l m b0 r0 l0 t0 lines">45</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.80\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Fires</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.20\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Medical Emergencies</td>
+<td class="l m b0 r0 l0 t0 lines">126</td>
+<td class="l m b0 r0 l0 t0 lines">135</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.60\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Public Assistance</td>
+<td class="l m b0 r0 l0 t0 lines">63</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.15\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Other</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.20\)</span></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 9.2.29.2: Values"><a href="#ex-chi-square-gof-fire-department-4" title="Copy heading and permalink for Solution 9.2.29.2: Values" aria-label="Copy heading and permalink for Solution 9.2.29.2: Values">🔗</a></div>
+</div></details>
+<details id="ex-chi-square-gof-fire-department-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Good Fit Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-chi-square-gof-fire-department-5-2">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-chi-square-gof-fire-department-5-2-1">
+\begin{equation*}
+\chi^2=\sum \frac{(O-E)^2}{E}=0.80+1.20+0.60+0.15+1.20=3.95\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-gof-fire-department-5-3">The degrees of freedom are  <span class="process-math">\(df=k-1=5-1=4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-gof-fire-department-5-4">Using a chi-square distribution with <span class="process-math">\(4\)</span> degrees of freedom, the <span class="process-math">\(p\)</span>-value is approximately <span class="process-math">\(0.413\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.29.3: Good Fit Test"><a href="#ex-chi-square-gof-fire-department-5" title="Copy heading and permalink for Solution 9.2.29.3: Good Fit Test" aria-label="Copy heading and permalink for Solution 9.2.29.3: Good Fit Test">🔗</a></div>
+</div></details>
+<details id="ex-chi-square-gof-fire-department-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-chi-square-gof-fire-department-6-2">Since <span class="process-math">\(p=0.413 \gt 0.05\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-chi-square-gof-fire-department-6-3">There is not sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that the population distribution of fire department call types differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chi-square-gof-fire-department-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.29.4: Conclusion"><a href="#ex-chi-square-gof-fire-department-6" title="Copy heading and permalink for Solution 9.2.29.4: Conclusion" aria-label="Copy heading and permalink for Solution 9.2.29.4: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.2.29: Fire Department Calls"><a href="#ex-chi-square-gof-fire-department" title="Copy heading and permalink for Checkpoint 9.2.29: Fire Department Calls" aria-label="Copy heading and permalink for Checkpoint 9.2.29: Fire Department Calls">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 9.2.3: Goodness of Fit Practice Problems"><a href="#subsec-GoodFitPractice" title="Copy heading and permalink for Subsection 9.2.3: Goodness of Fit Practice Problems" aria-label="Copy heading and permalink for Subsection 9.2.3: Goodness of Fit Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.2: Chi-square Goodness of Fit Test"><a href="#sec-GoodFitTest" title="Copy heading and permalink for Section 9.2: Chi-square Goodness of Fit Test" aria-label="Copy heading and permalink for Section 9.2: Chi-square Goodness of Fit Test">🔗</a></div>
 </section>
 </div>
