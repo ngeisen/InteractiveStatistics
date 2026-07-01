@@ -14,21 +14,32 @@
   </introduction>
   <ol>
     <li> <p> Test for an association between two categorical variables using the chi square test.  </p> </li>
-    <li> <p> Test for the homogeneity of proportions using the chi square test. </p> </li>
+    <li> <p> Test for the homogeneity of multiple proportions using the chi square test. </p> </li>
   </ol>
 </objectives>
 
 <subsection xml:id="subsec-AssociationBasics">
   <title>Understanding the Basics</title>
   <p> A chi-square test for two categorical variables is used to determine whether
-  there is an association between the variables in a population. In an
-  introductory statistics course, this test is applied to data arranged in a
+  there is an association between the variables in a population. This test is applied to data arranged in a
   two-way table, where the counts show how individuals fall into combinations of
   categories. The test compares the observed counts in the table to the counts
   we would expect if the two variables were independent. If the observed counts
   differ enough from the expected counts, we have evidence of an association
   between the two categorical variables.
  </p> 
+<p> The null hypothesis will be a statement that the variables are independent of each other or that there is no association between them. The alternative hypothesis will be a statement that the variables are dependent or there is an association between them. </p> 
+<p> Since we are working with a two-way table, we need to find the expected count for each cell. It is found by taking the total for the row multiplied by the total for the column and then divided by the grand total which is the total sample size. </p>
+<p>The expected count for a cell is
+      <md>E=\dfrac{(\text{row total})(\text{column total})}{\text{table total}}</md></p>
+<p> The test statistic is the difference between the observed and expected value for each cell, squared, and divided by the expected value. Then we find the sum of the values. The formula is the same as the chi-square goodness-of-fit test. But we much be careful to pair up each cell. The formula for the test statistic is
+      <md>\chi^2=\sum \frac{(O-E)^2}{E}</md> </p>
+<p> When the test statistic is small, that indicates there is little change in the observed and expected values thus there is no association and the variables are independent of each other. If the change is larger then there is an association and the variables are dependent on one or more of the categories. </p>
+
+
+
+
+
  <definition xml:id="def-chi-square-association">
   <statement>
     <p>
@@ -47,9 +58,487 @@
 
 </subsection>
 
+
+<subsection xml:id="subsec-AssociationExamples">
+  <title>Example for the chi-square independence test</title>
+<p> For this course, the chi-square test for independence of two categorical variables is equivalent to the chi-square test for an association between two categorical variables. </p> 
+
+<p>
+      A biologist wants to determine whether plant growth is independent of
+      fertilizer type. A sample of <m>90</m> plants is randomly assigned to one
+      of three fertilizer types, and after a fixed growing period each plant is
+      classified as having low, medium, or high growth.
+    </p>
+    <table>
+      <title>Plant Growth by Fertilizer Type</title>
+      <tabular>
+        <row>
+          <cell>Fertilizer Type</cell>
+          <cell>Low Growth</cell>
+          <cell>Medium Growth</cell>
+          <cell>High Growth</cell>
+        </row>
+        <row><cell>A</cell><cell>14</cell><cell>10</cell><cell>6</cell></row>
+        <row><cell>B</cell><cell>9</cell><cell>12</cell><cell>9</cell></row>
+        <row><cell>C</cell><cell>7</cell><cell>11</cell><cell>12</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether plant growth category
+      is independent of fertilizer type.
+    </p>
+
+<example xml:id="ex-chi-square-independence-Plants">
+<title> Plant Growth</title> 
+  <statement>
+ <p>At the <m>0.05</m> significance level, test whether plant growth category
+      is independent of fertilizer type. Include the hypotheses, expected values table, chi-square test and p-value, and the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypotheses</title> 
+    <p>
+      This is a chi-square test of independence between two categorical variables.
+    </p>
+    <p> The hypotheses are: </p>
+    <p>  <m>H_0:</m> plant growth category and fertilizer type are independent,
+     </p>
+      <p><m>H_a:</m> plant growth category and fertilizer type are dependent.
+    </p>
+</solution>
+<solution> <title> Table of Values </title>
+ <p> Since we are assuming the variables are independent of each other, we would expect the counts to be the same for each category of plant growth and for each type of fertilizer. </p>
+    <p> First, we find the row totals for how many plants for each fertilizer, column totals for growth, and the grand total for the number of plants in the study.
+    </p>
+
+    <table>
+      <title>Observed Counts with Totals</title>
+      <tabular>
+        <row>
+          <cell>Fertilizer Type</cell>
+          <cell>Low</cell>
+          <cell>Medium</cell>
+          <cell>High</cell>
+          <cell>Row Total</cell>
+        </row>
+        <row><cell>A</cell><cell>14</cell><cell>10</cell><cell>6</cell><cell>30</cell></row>
+        <row><cell>B</cell><cell>9</cell><cell>12</cell><cell>9</cell><cell>30</cell></row>
+        <row><cell>C</cell><cell>7</cell><cell>11</cell><cell>12</cell><cell>30</cell></row>
+        <row><cell>Column Total</cell><cell>30</cell><cell>33</cell><cell>27</cell><cell>90</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Under the assumption of independence, each expected count for each cell in the table is
+      <md>
+        E=\dfrac{(\text{row total})(\text{column total})}{\text{grand total}}
+      </md>.
+    </p>
+<p> For Fertilize A with Low growth, the expected value is <m>\frac {30 \times 30}{90}=10</m> </p>
+<p> For Fertilize A with Medium growth, the expected value is <m>\frac {30 \times 33}{90}=11</m> </p>
+<p> For Fertilize A with High growth, the expected value is <m>\frac {30 \times 27}{90}=9</m> </p>
+<p> For Fertilize B with Low growth, the expected value is <m>\frac {30 \times 30}{90}=10</m> </p>
+<p> For Fertilize B with Medium growth, the expected value is <m>\frac {30 \times 33}{90}=11</m> </p>
+<p> For Fertilize B with High growth, the expected value is <m>\frac {30 \times 27}{90}=9</m> </p>
+  <p> For Fertilize C with Low growth, the expected value is <m>\frac {30 \times 30}{90}=10</m> </p>
+<p> For Fertilize C with Medium growth, the expected value is <m>\frac {30 \times 33}{90}=11</m> </p>
+<p> For Fertilize C with High growth, the expected value is <m>\frac {30 \times 27}{90}=9</m> </p>
+  <p> Now we can organize the values into the Expect Counts Table. </p> 
+
+    <table>
+      <title>Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Fertilizer Type</cell>
+          <cell>Low</cell>
+          <cell>Medium</cell>
+          <cell>High</cell>
+        </row>
+        <row><cell>A</cell><cell><m>10</m></cell><cell><m>11</m></cell><cell><m>9</m></cell></row>
+        <row><cell>B</cell><cell><m>10</m></cell><cell><m>11</m></cell><cell><m>9</m></cell></row>
+        <row><cell>C</cell><cell><m>10</m></cell><cell><m>11</m></cell><cell><m>9</m></cell></row>
+      </tabular>
+    </table>
+  </solution> 
+<solution> <title> Chi-square Test </title> 
+    <p>
+      Now we compute the test statistic pairing each cell:
+      <md>     \chi^2=\sum \frac{(O-E)^2}{E}
+      </md>.
+    </p>
+    <p>
+      The contributions for fertilizer A are:
+      <m>
+        \frac{(14-10)^2}{10}=1.60,\quad
+        \frac{(10-11)^2}{11}\approx 0.091,\quad
+        \frac{(6-9)^2}{9}=1.00
+      </m> 
+    </p> 
+    <p> The contributions for fertilizer B are:
+      <m>
+        \frac{(9-10)^2}{10}=0.10,\quad
+        \frac{(12-11)^2}{11}\approx 0.091,\quad
+        \frac{(9-9)^2}{9}=0.00
+      </m> 
+    </p> 
+    <p> The contributions for fertilizer C are:
+      <m>
+        \frac{(7-10)^2}{10}=0.90,\quad
+        \frac{(11-11)^2}{11}=0.00,\quad
+        \frac{(12-9)^2}{9}=1.00
+      </m> 
+    </p>
+    <p> So,
+      <m>
+        \chi^2 \approx 1.60+0.091+1.00+0.10+0.091+0.00+0.90+0.00+1.00=4.782
+      </m>.
+    </p>
+    <p>
+      The degrees of freedom is found be take one from the number of rows, and one from the number of columns, then we multiply the two values. There are 3 rows for fertilizer types and 3 columns for growth categories. So the degrees of freedom is: 
+      <md>df=(r-1)(c-1)=(3-1)(3-1)=(2)(2)=4</md>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>4</m> degrees of freedom for a right tailed test, the <m>p</m>-value is <m>p=0.310</m>.
+    </p>
+</solution>
+<solution> <title> Conclusion </title> 
+    <p>
+      Since <m>p=0.31 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that plant growth category and fertilizer type are dependent.
+    </p>
+  </solution>
+
+</example> 
+<p> When there is a small chi-square test value, there is little difference between the observed and expected values thus we do not reject the null hypothesis and assume they are independent or that there is no association. When the chi-square value is large, there is a difference between the observed and expected values thus we reject the null hypothesis and support the alternative hypotheses that the variables are dependent or associated with each other. 
+</p>
+
+<example> <title> Chi-square Test on TI-83 Plus </title> 
+<p> As you can see, there is a lot of computation with this test. But the good news is that technology can help us out. We will be creating a matrix in the calculator so it can compute the expected values for us. </p>
+<p> Find the MATRIX above the [<m>x^{-1}</m>] button. </p>
+<p>Press [2nd] [<m>x^{-1}</m>]  for the Matrix, use the arrow to the right twice for the EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+<p>We need to identify the size of the matrix, input 3 rows (across/horizontal) x 3 columns (down/vertical) and then input the observed data by hitting [ENTER] after each entry. The data is entered across each row. </p>
+    <figure xml:id="ChiSquarePlant1">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiPlant1.png" width="90%">
+                <shortdescription>create 3x3 matrix.</shortdescription>
+            </image>
+        </figure> 
+ 
+<p> Next, we will perform the hypothesis test. </p>
+<p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+<p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+<figure xml:id="ChiSquarePlant2">
+            <caption>Chi-square test in calculator</caption>
+            <image source="ChiPlant2.png" width="90%">
+                <shortdescription>select option C for chi-square test. Test value =4.782 and p=0.310</shortdescription>
+            </image>
+        </figure> 
+<p> The  statistical tests value is <m>\chi^2 = 4.782</m> and a p-value of <m>p=0.310</m> with 4 degrees of freedom.
+</p>
+</example> 
+
+<example> <title> Chi-square Test on TI-84 </title> 
+<p> As you can see, there is a lot of computation with this test. But the good news is that technology can help us out. We will be creating a matrix in the calculator so it can compute the expected values for us. </p>
+<p> Find the MATRIX above the [<m>x^{-1}</m>] button. </p>
+<p>Press [2nd] [<m>x^{-1}</m>] for the Matrix, use the arrow to the right twice for the EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+<p>We need to identify the size of the matrix, input 3 rows (across/horizontal) x 3 columns (down/vertical) and then input the observed data by hitting [ENTER] after each entry. </p>
+ <figure xml:id="ChiSquarePlant3">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiPlant3.png" width="80%">
+                <shortdescription>create 3x3 matrix.</shortdescription>
+            </image>
+        </figure> 
+ 
+<p> Next, we will perform the hypothesis test. </p>
+<p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+<p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+  <figure xml:id="ChiSquarePlant4">
+            <caption>Chi-square test in calculator</caption>
+            <image source="ChiPlant4.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =4.782 and p=0.310</shortdescription>
+            </image>
+        </figure> 
+
+<p> The  statistical tests value is <m>\chi^2 = 4.782</m> and p-value of <m>p=0.310</m> with 4 degrees of freedom.
+</p>
+</example> 
+
+
+ 
+</subsection>
+
 <subsection xml:id="subsec-AssociationPractice">
   <title> Association Practice Problems </title>
 <p> For each problem,. </p> 
+
+<p> <term> Olympic Medals</term></p> 
+    <p>
+      A sports analyst wants to know whether the type of medal won at the
+      2024 Paris Olympics was independent of country for five countries
+      with the most total medals. The top five countries by total medals were
+      the United States, China, Great Britain, France, and Australia.
+    </p>
+    <table>
+      <title>2024 Paris Olympics Medal Counts for Five Countries</title>
+      <tabular>
+        <row>
+          <cell><term>Country</term></cell>
+          <cell><term>Gold</term></cell>
+          <cell><term>Silver</term></cell>
+          <cell><term>Bronze</term></cell>
+          <cell><term>Total</term></cell>
+        </row>
+        <row><cell>United States</cell><cell>40</cell><cell>44</cell><cell>42</cell><cell>126</cell></row>
+        <row><cell>China</cell><cell>40</cell><cell>27</cell><cell>24</cell><cell>91</cell></row>
+        <row><cell>Great Britain</cell><cell>14</cell><cell>22</cell><cell>29</cell><cell>65</cell></row>
+        <row><cell>France</cell><cell>16</cell><cell>26</cell><cell>22</cell><cell>64</cell></row>
+        <row><cell>Australia</cell><cell>18</cell><cell>19</cell><cell>16</cell><cell>53</cell></row>
+        <row><cell>Total</cell><cell>128</cell><cell>138</cell><cell>133</cell><cell>399</cell></row>
+      </tabular>
+    </table>
+    <p> 
+      At the <m>0.05</m> significance level, test whether medal type
+      (gold, silver, or bronze) is independent of country.
+    </p>
+<exercise xml:id="ex-chisquare-independence-OlympicMedals">
+<title> Olympic Medals</title>
+  <statement>
+  <p> At the <m>0.05</m> significance level, test whether medal type (gold, silver, or bronze) is independent of country. Include the hypotheses, expected values table, chi-square test and p-value, and the conclusion in context. </p>
+  </statement>
+    <solution> <title> Hypotheses</title> 
+    <p>  This is a chi-square test of independence. Although the sample is not random, there are 5 in each category. We could have selected 5 random countries, but not all countries had at least five medals.
+    </p>
+    <p> The hypotheses are: </p>
+    <p><m>H_0:</m> Medal type and country are independent. </p>
+    <p><m>H_a:</m> Medal type and country are dependent. </p>
+    </solution>
+  <solution> <title> Expected Values</title> 
+  <p> Compute the expected counts for each using the totals:
+      <md>
+        E=\dfrac{(\text{row total})(\text{column total})}{\text{grand total}}.
+      </md>
+    </p>
+    <p>
+      The row totals are <m>126</m>, <m>91</m>, <m>65</m>, <m>64</m>, and
+      <m>53</m>. The column totals are <m>128</m> gold, <m>138</m> silver,
+      and <m>133</m> bronze, with grand total <m>399</m>.
+    </p>
+    <table>
+      <title>Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Country</cell>
+          <cell>Gold</cell>
+          <cell>Silver</cell>
+          <cell>Bronze</cell>
+        </row>
+        <row><cell>United States</cell><cell><m>40.42</m></cell><cell><m>43.60</m></cell><cell><m>42.01</m></cell></row>
+        <row><cell>China</cell><cell><m>29.19</m></cell><cell><m>31.49</m></cell><cell><m>30.33</m></cell></row>
+        <row><cell>Great Britain</cell><cell><m>20.85</m></cell><cell><m>22.49</m></cell><cell><m>21.67</m></cell></row>
+        <row><cell>France</cell><cell><m>20.53</m></cell><cell><m>22.13</m></cell><cell><m>21.34</m></cell></row>
+        <row><cell>Australia</cell><cell><m>17.01</m></cell><cell><m>18.34</m></cell><cell><m>17.67</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+  <solution> <title> Statistical Test</title> 
+    <p> Next compute the test statistic using each cell:
+      <md>\chi^2=\sum \dfrac{(O-E)^2}{E}</md>.
+    </p>
+    <p>
+      Using the observed and expected counts, the chi-square test statistic is
+      <m>\chi^2 \approx 12.65</m>.
+    </p>
+    <p>
+      The degrees of freedom using the 5 country rows and 3 medal columns as
+      <md>df=(r-1)(c-1)=(5-1)(3-1)=8</md>.
+    </p>
+    <p>
+      For a chi-square distribution with <m>8</m> degrees of freedom, the
+      <m>p</m>-value is approximately <m>0.125</m>.
+    </p>
+</solution>
+<solution> <title> Chi-square Test on TI-84 </title> 
+<p> As you can see, there is a lot of computation with this test. But the good news is that technology can help us out. We will be creating a matrix in the calculator so it can compute the expected values for us. </p>
+<p> Find the MATRIX above the [X-1] button. </p>
+<p>Press [2nd] [X-1] for the Matrix, use the arrow to the right twice for EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+<p>We need to identify the size of the matrix, input 5 rows (across/horizontal) x 3 columns (down/vertical) and then input the observed data by hitting [ENTER] after each entry. </p>
+ <figure xml:id="ChiSquareOlympics3">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiMedal3.png" width="80%">
+                <shortdescription>create 5x3 matrix.</shortdescription>
+            </image>
+        </figure> 
+<p> Next, we will perform the hypothesis test. </p>
+<p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+<p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+  <figure xml:id="ChiSquareOlympic4">
+            <caption>Chi-square test in calculator</caption>
+            <image source="ChiMedal4.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =12.647 and p=0.125</shortdescription>
+            </image>
+        </figure> 
+<p> The  statistical tests value is <m>\chi^2 = 12.647</m> and p-value of <m>p=0.125</m> with 8 degrees of freedom.
+</p>
+</solution> 
+  <solution> <title> Conclusion</title> 
+    <p>
+      Since <m>p \gt 0.05</m>, we do not reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the 0.05 significance level to
+      conclude that medal type won was dependent on the country for the 2024 Olympics.
+    </p>
+    <p>
+      In context, this means the proportion of gold, silver, and bronze
+      medals was the same across the United States, China, Great Britain,
+      France, and Australia (based on the totals for that country).
+    </p>
+  </solution>
+
+</exercise>
+
+<example> <title> Chi-square Test on TI-83 Plus </title> 
+<p> We will be creating a matrix in the calculator so it can compute the expected values for us. Find the MATRIX above the [<m>x^{-1}</m>] button. </p>
+<p>Press [2nd] [<m>x^{-1}</m>] for the Matrix, use the arrow to the right twice for EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+<p>We need to identify the size of the matrix, input 5 rows (country) x 3 columns (medals) and then input the observed data by hitting [ENTER] after each entry. Do not input the totals. </p>
+   <figure xml:id="ChiSquareOlympics1">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiMedal1.png" width="80%">
+                <shortdescription>create 5x3 matrix.</shortdescription>
+            </image>
+        </figure> 
+<p> Next, perform the hypothesis test. </p>
+<p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+<p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+<figure xml:id="ChiSquareOlympic2">
+            <caption>Chi-square test in calculator</caption>
+            <image source="ChiMedal2.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =12.647 and p=0.125</shortdescription>
+            </image>
+        </figure> 
+
+<p> The  statistical tests value is <m>\chi^2 = 12.647</m> and a p-value of <m>p=0.125</m> with 8 degrees of freedom.
+</p>
+</example> 
+
+<p><term> Social Media Usage</term></p> 
+<p>
+      A marketing researcher wants to determine whether the type of social media
+      platform most often used is independent of age group. A random sample of
+      <m>230</m> adults is classified by age group and by the social media
+      platform they report using most often.
+    </p>
+    <table>
+      <title>Most-Used Social Media Platform by Age Group</title>
+      <tabular>
+        <row>
+          <cell>Age Group</cell>
+          <cell>Facebook</cell>
+          <cell>Instagram</cell>
+          <cell>TikTok</cell>
+          <cell>WhatsApp</cell>
+          <cell>YouTube</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Under 30</cell><cell>12</cell><cell>22</cell><cell>18</cell><cell>8</cell><cell>10</cell><cell>70</cell></row>
+        <row><cell>30--50</cell><cell>20</cell><cell>16</cell><cell>9</cell><cell>15</cell><cell>20</cell><cell>80</cell></row>
+        <row><cell>Over 50</cell><cell>34</cell><cell>8</cell><cell>3</cell><cell>12</cell><cell>23</cell><cell>80</cell></row>
+        <row><cell>Total</cell><cell>66</cell><cell>46</cell><cell>30</cell><cell>35</cell><cell>53</cell><cell>230</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether most-used social media
+      platform is associated with age group.
+    </p>
+
+<exercise xml:id="ex-chisquare-independence-social-media">
+<title> Social Media Usage</title>
+  <statement>
+<p> Find</p>
+  </statement>
+  <solution> <title>Hypotheses</title>
+      <p>
+      This is a chi-square test of independence. A random sample was taken and at least 5 in almost every cell.
+    </p>
+    <p> The hypotheses are </p>
+     <p> <m>H_0:</m> social media platform most often used and age group are independent. </p>
+    <p> <m>H_a:</m> social media platform most often used and age group are dependent.
+    </p>
+</solution>
+<solution> <title> Expected Values</title>
+    <p>
+      The expected count for each cell is found by using
+      <m>
+        E=\dfrac{(\text{row total})(\text{column total})}{\text{grand total}}.
+      </m>
+    </p>
+    <p>
+      For example, the expected count for adults under <m>30</m> who most often
+      use Facebook is
+      <m>
+        E=\dfrac{(70)(66)}{230}\approx 20.09.
+      </m>
+    </p>
+    <table>
+      <title>Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Age Group</cell>
+          <cell>Facebook</cell>
+          <cell>Instagram</cell>
+          <cell>TikTok</cell>
+          <cell>WhatsApp</cell>
+          <cell>YouTube</cell>
+        </row>
+        <row><cell>Under 30</cell><cell><m>20.09</m></cell><cell><m>14.00</m></cell><cell><m>9.13</m></cell><cell><m>10.65</m></cell><cell><m>16.13</m></cell></row>
+        <row><cell>30--50</cell><cell><m>22.96</m></cell><cell><m>16.00</m></cell><cell><m>10.43</m></cell><cell><m>12.17</m></cell><cell><m>18.43</m></cell></row>
+        <row><cell>Over 50</cell><cell><m>22.96</m></cell><cell><m>16.00</m></cell><cell><m>10.43</m></cell><cell><m>12.17</m></cell><cell><m>18.43</m></cell></row>
+      </tabular>
+    </table>
+  </solution>
+<solution> <title> Test Statistic</title>
+    <p>
+      Using all cells, the test statistic is
+      <m>
+        \chi^2=\sum \frac{(O-E)^2}{E}\approx 36.54
+      </m>
+    </p>
+    <p>
+      The degrees of freedom are
+      <m>
+        (r-1)(c-1)=(3-1)(5-1)=8.
+      </m>
+    </p>
+    <p>
+      Using a chi-square distribution with <m>8</m> degrees of freedom, the
+      <m>p</m>-value is <m>p=0.000014</m>.
+    </p>
+    <figure xml:id="ChiSquareSocials">
+            <caption>Chi-square test for social media</caption>
+            <image source="ChiSocial.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =36.54 and p=0.000014</shortdescription>
+            </image>
+        </figure> 
+
+</solution>
+<solution> <title> Conclusion</title>
+    <p> Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the 0.05 significance level to
+      conclude that most-used social media platform is associated with age group.
+    </p>
+    <p>
+      In context, the pattern of platform use differs across the three age
+      groups. Younger adults are more likely to report Instagram and TikTok as
+      their most-used platforms, while older adults are more likely to report
+      Facebook and YouTube.
+    </p>
+  </solution>
+</exercise> 
+
+
+
 </subsection>
 
 </section> 
