@@ -14,8 +14,8 @@
   </introduction>
   <ol>
     <li> <p> Determine if the correlation is statistically significant using hypothesis testing. </p>    </li>
-    <li> <p> Determine the regression line equation. </p> </li>
-     <li> <p> Compute the coefficient of determination. </p>    </li>
+    <li> <p> Make predictions using the regression line equation. </p> </li>
+     <li> <p> Compute and interpret the coefficient of determination. </p>    </li>
      <li> <p> Compute the standard error of the estimate. </p>    </li>
         </ol>
 </objectives>
@@ -23,10 +23,10 @@
 <subsection xml:id="subsec-CorrelationReview">
   <title>Review of Correlation and Regression</title>
 <p> We will begin with a review of correlation and regression, as discussed in Chapter 2 when we graphed data and found the summary statistics. </p> 
-<p> <term> Correlation</term> is a statistical method used to determine whether a linear relationship exists between two quantitative variables exists. This can be seen visually with a scatterplot, and the strength and direction of the relationship is measured by the <em>correlation coefficient</em>. <term>Regression </term> is a method used to describe the nature of the relationship, whether positive, negative, linear, or non-linear. The regression equation allows us to make predictions using either variable. The regression line is also known as the line of best fit since it minimizes the distances each point is to the regression line.
+<p> <term> Correlation</term> is a statistical method used to determine whether a linear relationship exists between two quantitative variables. This can be seen visually with a scatterplot, and the strength and direction of the relationship is measured by the <em>correlation coefficient</em>. <term>Regression </term> is a method used to describe the nature of the relationship, whether positive, negative, linear, or non-linear. The regression equation allows us to make predictions using either variable. The regression line is also known as the line of best fit since it minimizes the distances each point is to the regression line.
 </p>
 <p> Recall that a <em> positive</em> relationship exists when both variables increase while a <em>negative </em> relationship exists when one variable increase and the other variable decreases. The correlation coefficient measures its strength on a scale from -1 to +1. Values near 0 indicate no linear relationship. The sample correlation coefficient is designated as <em> r </em> and the population value as <m> \rho</m>  (rho) .</p> 
-<p>There are several ways to compute correlation. One formula to compute the sample correlation coefficient is
+<p>There are several types of correlation coefficients. We will be using the Pearson product moment correlation coefficient, named after the statistician Karl Pearson, who pioneered research in this area. There are several ways to compute correlation. One formula to compute the sample correlation coefficient is
       <md>
         r=\frac{\sum \left(\frac{x-\bar{x}}{s_x}\right)\left(\frac{y-\bar{y}}{s_y}\right)}{n-1}
       </md>.
@@ -35,6 +35,7 @@
 <p> Another is 
   <md>r=\frac{n(\sum{xy})-(\sum{x})\times(\sum{y})}{\sqrt{n(\sum{x^2}-(\sum{x})^2)\times(n(\sum{y^2}-(\sum{y})^2)}} </md>
 </p> 
+<p>There are no units associated with <m>r</m>, thus the value will remain unchanged if the <m>x</m> and <m>y</m> values are switched.</p>
 <p> The good news is we will use technology to compute the correlation coefficient. </p>
     <p>
       The <term>regression equation</term> is an equation that describes the
@@ -57,6 +58,7 @@
 <p> The slope can also be calculated using
 <md>b=\frac{n \sum{xy}-\sum{x} \sum{y}}{n\sum{x^2}-(\sum{x})^2} </md> </p>  
 
+<p>The sign of the correlation coefficient and the sign of the slope of the regression line will always be the same. </p>
 <p> Again, we will use technology to find the values for the regression equation. </p>
  
 
@@ -82,8 +84,9 @@
   <p> A <term>correlation test</term> is a hypothesis test used to determine
       whether there is a linear relationship between two quantitative variables
       in a population. It tests the population correlation coefficient
-      <m>\rho</m> using the null hypothesis <m>H_0:\rho=0</m> saying there is no correlation and the alternative hypothesis is  <m>H_a: \rho \ne 0</m> stating there is a significant correlation. The alternative hypotheses can also be one-tailed test, stating the correlation greater than or less than 0. If <m>H_a \gt 0</m> the claim is a significant positive correlation while <m>H_a \lt 0</m> claims a significant negative correlation. 
+      <m>\rho</m> using the null hypothesis <m>H_0:\rho=0</m> saying there is no correlation between the two variables and the alternative hypothesis is  <m>H_a: \rho \ne 0</m> stating there is a significant correlation. The alternative hypotheses can also be one-tailed test, stating the correlation is greater than or less than 0. If <m>H_a \gt 0</m> the claim is a significant positive correlation while <m>H_a \lt 0</m> claims a significant negative correlation. 
     </p>
+    <p>The assumptions for a correlation test are that 1) the sample is a random sample. 2) The data pairs approximate a straight line and are measured at the interval or ratio level. 3) The variables have a joint normal distribution. This means that for any given value of x, the y values are approximately normally distributed, and for any given value of y, the x values are approximately normally distributed.</p> 
 <definition xml:id="def-correlation-test">
   <statement>
     <p>
@@ -98,23 +101,22 @@
   </statement>
 </definition>
 <p> When the p-value <m>\lt \alpha</m> we reject the null hypothesis in support of the alternative indicating a significant correlation. When we do not reject the null hypothesis, we conclude there is no significant correlation between the variables. </p> 
-
+<p>There are several other measures that are associated with correlation and regression techniques. They include the coefficient of determination, residuals, the standard errors of the estimate, and prediction intervals. </p>
 <p>
- The <term>coefficient of determination</term>, denoted <m>r^2</m>, is a measure of how well the regression line fits the data. The coefficient of determination, denoted by <m>r^2</m>, is the proportion of the variation in the response variable that is explained by the linear relationship with the explanatory variable. Its value is between <m>0</m> and <m>1</m> and often written as a percentage when in context. Larger values of <m>r^2</m> indicate that the regression line explains more of the variability in the response variable.</p>
+ The <term>coefficient of determination</term>, denoted <m>r^2</m>, is a measure of how well the regression line fits the data. The coefficient of determination, denoted by <m>r^2</m>, is the proportion of the variation in the response variable that is explained by the linear relationship with the explanatory variable. Its value is between <m>0</m> and <m>1</m> and often written as a percentage when in context. Larger values of <m>r^2</m> indicate that the regression line explains more of the variability in the response variable.The coefficient of determination is the ratio of the explained variation to the total variation.</p>
 <p> It is computed as
   <m>r^2=\frac{SS_{regression}}{SS_{total}}</m>,
   where <m>SS_{regression}</m> is the sum of squares due to regression and <m>SS_{total}</m> is the total sum of squares.
 </p>
+<p>The <term>coefficient of non-determination </term> is the unexplained variation, and computed from <m>1-r^2 </m>. </p> 
 <p>
-      A <term>residual</term> in regression is the difference between an observed
-      value of the response variable and the value predicted by the regression
-      equation. It measures how far a data point lies above or below the
-      regression line. The formula for a residual is
+  A <term>residual</term> in regression is the difference between an observed
+      value <m> y</m> of the response variable and the predicted value <m> \hat{y}</m> by the regression equation. It measures how far a data point lies above or below the regression line. The formula for a residual is
       <m>e=y-\hat{y}</m>,
       where <m>y</m> is the observed value and <m>\hat{y}</m> is the predicted
-      value.
+      value. The mean of the residuals is zero. The sum of the squares of the residual computed by using the regression line is the smallest possible value. For this reason, a regression line is also called a least-squares line.
     </p>
-
+<p>Sometimes we may be interested in plotting residual values or the prediction errors. These values can be plotted with the x-values in a residual plot. The x-values are plotted on the horizontal axis and the residuals on the vertical axis. Since the mean of the residuals is zero, a horizontal line with a y coordinate of zero is placed in the graph when completed with R Studio. If the residuals are evenly distributed about the line, the relationship between x and y is linear. If the residuals plot increases or is curved, then the regression line is not suitable for predictions. </p>
 
 
 

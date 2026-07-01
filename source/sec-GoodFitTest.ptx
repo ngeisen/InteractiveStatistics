@@ -4,7 +4,7 @@
 
   <introduction>
     <p>
-      In this section
+      A chi square distribution can be used for tests concerning frequency distributions.  Such as, is the number of colors the same for each flavor in a bag of Skittles. It can also be used to see whether a frequency distribution fits a specific pattern. Suppose traffic engineer wishes to see whether accidents occur more often on some days of the week than others. When testing to see whether a frequency distribution fits a specific pattern, we can use the <term>chi-square goodness-of-fit test</term>.  
     </p>
   </introduction>
 
@@ -14,8 +14,8 @@
   </introduction>
   <ol>
     <li> <p> Test a distribution for goodness of fit using the chi square test. </p> </li>
-     <li> <p> Determine if same. </p>    </li>
-     <li> <p> Determine if matches pattern. </p>    </li>
+     <li> <p> Determine if frequencies are the same. </p>    </li>
+     <li> <p> Determine if frequencies match a specific pattern. </p>    </li>
         </ol>
 </objectives>
 
@@ -38,19 +38,634 @@
       claimed set of proportions. The test compares the observed counts in each
       category to the expected counts that would occur if the claimed
       distribution were true. The test statistic is
-      <m>\chi^2=\sum \frac{(O-E)^2}{E}</m>,
+      <md>\chi^2=\sum \frac{(O-E)^2}{E}</md>,
       where <m>O</m> represents an observed count and <m>E</m> represents the
       corresponding expected count. The degrees of freedom for the test are <m>df=k-1</m>, where <m>k</m> is the number of categories. 
     </p>
   </statement>
 </definition>
 
+<p>Suppose a candy enthusiast wants to test if the number of candies for each flavor in a bag of Skittles is the same. He opens a big of skittles and collects a random sample of 100 candies and organizes them into flavors with the following results: 22 strawberry, 24 orange, 14 grape, 17 lemon, and 23 green apple. </p>
+<p>If there was no difference, one would expect each flavor to have the same frequency. In this case, <m>100/5=20 </m> candies per flavor is expected. Since the frequencies for each flavor were obtained from a sample, these actual frequencies are called the <term>observed frequencies</term>. The frequencies obtained by calculations are called the <term>expected frequencies</term>. </p>
+<p>The observed frequencies often differ from the expected frequencies due to sampling error. But our question is, is there a significant difference between the frequencies or is it due to chance?</p>
+<p>We are going to shift how we write hypotheses. The null hypothesis is a statement indication there is no difference or no change in the frequencies while the alternative states that the frequency is different than expected. </p>
+<p><m>H_0:</m> The flavor frequencies are equal.</p>
+<p><m>H_a:</m> The flavor frequencies are not equal.</p>
+<p>In the goodness of fit test, the degrees of freedom are equal to the number of categories minus 1. In this case, there are five flavors for <m>df=5-1=4 </m>.</p>
+<p>The formula for the chi square goodness of fit test is
+<md> \chi ^2 = \sum{\frac{(O-E)^2}{E}} </md> where O = observed frequencies, E = expected frequency. </p>
+
+<p>The assumption for the chi-square test is that the data are obtained from a random sample and the expected frequency for each category must be at least 5. Because the O-E values are squared, the answer will always be positive so every test will be a right-tailed test using the chi-square distribution.</p>
+<p>It is helpful to create a table with the observed frequencies, the expected counts, the difference between the observed and expected values.</p>
+
+    <table>
+      <title>Observed and Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Flavor</cell>
+          <cell>Observed</cell>
+          <cell>Expected</cell>
+         <cell>Difference O-E</cell>
+          <cell><m>\frac{(O-E)^2}{E}</m></cell>
+        </row>
+        <row><cell>Strawberry</cell> <cell>22</cell> <cell>20</cell><cell>2</cell> <cell><m>0.20</m></cell></row>
+        <row><cell>Orange</cell> <cell>24</cell><cell>20</cell> <cell>4</cell> <cell><m>0.80</m></cell></row>
+        <row><cell>Grape</cell> <cell>14</cell><cell>20</cell> <cell>-6</cell> <cell><m>1.80</m></cell></row>
+        <row><cell>Lemon</cell> <cell>17</cell><cell>20</cell> <cell>-3</cell> <cell><m>0.45</m></cell></row>
+        <row><cell>Green Apple</cell> <cell>23</cell><cell>20</cell> <cell>3</cell> <cell><m>0.45</m></cell></row>
+      </tabular>
+    </table>
+
+<p>The test statistic is <m> \chi^2 = \sum{\dfrac{(O-E)^2}{E}}</m>
+<md> \chi^2 = \frac{2^2}{20} + \frac{4^2}{20} + \frac{(-6)^2} {20} +\frac{(-3)^2} {20}+\frac{3^2} {20}=3.70</md></p>
+<p> Since the test statistic is relatively small for chi-squared, this means it is a good fit for having an equal distribution. If the test statistic is large, that indicates there is a larger difference between the observed and the expected values. </p> 
+<p> To find the p-value, we go to StatKey and under <term> Theoretical Distributions</term> select <m>\chi ^2 </m> and enter the degrees of freedom of 4, identify Right Tail, and enter the test statistic 3.70 along the bottom to get the p-value of 0.448, image below.  </p>
+<figure xml:id="ChiSquareSkittles1">
+            <caption>Chi-square p-value for a test statistic of 3.70</caption>
+            <image source="ChiSkittles1.png" width="80%">
+                <shortdescription>Right tail area of 0.448 for chi=3.70.</shortdescription>
+            </image>
+        </figure> 
+
+<p> On the graphing calculator press [2nd] button and [VARS] to select DISTR and scroll down to <term>7: <m>\chi^2</m> cdf( </term>  then press [ENTER] to select it and then input 3.70 [,] E99 [,] 4 [)] then press [ENTER] to calculate the p-value = 0.448126. To get the EE press the [2nd] button then [,] button and then enter 99. </p>
+<figure xml:id="ChiSquareSkittles2">
+            <caption>Chi-square p-value from calculator</caption>
+            <image source="ChiSkittles2.png" width="70%">
+                <shortdescription>Right tail area of 0.4481 for chi=3.70.</shortdescription>
+            </image>
+        </figure> 
+
+<p>Since <m> p \gt 0.05</m> we do not reject the null hypothesis. We cannot conclude a significant difference in the number of candies for each flavor. Thus, there are approximately the same number of candies for each flavor. The chi-square test indicates it is still a good fit for having approximately equal frequencies. </p>
 
 </subsection>
 
+<subsection xml:id="subsec-GoodFitExamples">
+  <title>Examples for the chi-square goodness of fit test</title>
+<p> There are two main cases for the chi-square goodness of fit test that we will be investigating. 1) the frequency distribution is equal for each category or 2) it matches a specific pattern based on previous data. We will look at an example of both cases here. </p> 
+<p> <term> Wildflowers</term> </p>
+<p>
+      A hiking enthusiast is studying whether four species of wildflowers appear in equal
+      proportions along some hiking trails in Rocky Mountain National Park. After randomly selecting and identifying  <m>120</m> wildflowers, the hiker records the following observed counts:
+    </p>
+    <table>
+      <title>Observed Wildflower Counts</title>
+      <tabular>
+        <row>
+          <cell>Species</cell>
+          <cell>Observed Count</cell>
+        </row>
+        <row><cell>Colorado Columbine</cell><cell>24</cell></row>
+        <row><cell>Mountain Bluebell</cell><cell>36</cell></row>
+        <row><cell>Lupine</cell><cell>31</cell></row>
+        <row><cell>Yarrow</cell><cell>29</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, test whether the four species of wildflowers are equally distributed along the hiking trails.
+    </p> 
+<figure xml:id="Flowers1">
+            <caption>Wildflower images</caption>
+            <image source="Flowers1.png" width="80%">
+                <shortdescription>decorative- pictures of wildflowers .</shortdescription>
+            </image>
+        </figure> 
+
+<example xml:id="ex-chisquareGOF-equal-flowers">
+  <title>Wildflowers</title>
+   
+  <statement>
+<p> State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.
+</p> 
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      Let the null hypothesis be that the four wildflower species are equally
+      distributed. So we would expect 25% in each of the four categories.
+    </p>
+    <p> The null hypotheses is </p>
+      <p><m>H_0:</m> The flower species are equally distributed or <m>p_1=p_2=p_3=p_4=0.25</m> </p>
+     <p> And the alternative hypothesis is</p>
+      <p><m>H_a:</m> The species are not equally distributed. Which means at least one of the proportions differs from 0.25.   </p>
+</solution>
+<solution><title>Assumptions</title>
+<p> It was a random sample of flowers and there are at least 5 in each category, so we can use the chi-square distribution. </p>
+</solution> 
+<solution><title> Values</title>
+    <p>
+      Since there are 120 flowers and 4 categories, the expected count for each flower species under equal distribution is <m>\dfrac{120}{4}=30</m>.
+    </p>
+    <table>
+      <title>Observed and Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Species</cell>
+          <cell>Observed</cell>
+          <cell>Expected</cell>
+         <cell>Difference O-E</cell>
+          <cell><m>\dfrac{(O-E)^2}{E}</m></cell>
+        </row>
+        <row><cell> Columbine </cell> <cell>24</cell> <cell>30</cell><cell>-6</cell> <cell><m>1.20</m></cell></row>
+        <row><cell> Bluebell </cell> <cell>36</cell><cell>30</cell> <cell>6</cell> <cell><m>1.20</m></cell></row>
+        <row><cell> Lupine </cell> <cell>31</cell><cell>30</cell> <cell>1</cell> <cell><m>0.033</m></cell></row>
+        <row><cell> Yarrow </cell> <cell>29</cell><cell>30</cell> <cell>-1</cell> <cell><m>0.033</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+<solution><title> Good Fit Test</title> 
+    <p>
+      The chi-square test statistic is  <m> \chi^2 = \sum{\dfrac{(O-E)^2}{E}}</m>
+<md> \chi^2 = \frac{(-6)^2}{30} + \frac{6^2}{30} + \frac{1^2} {30} +\frac{(-1)^2} {30} =2.467</md>
+      <md>
+        \chi^2=1.20+1.20+0.033+0.033=2.466
+      </md> from the table above.
+    </p>
+    <p> The degrees of freedom from 4 categories is <m>df=k-1=4-1=3</m>.
+    </p>
+    <p> Using a chi-square distribution with 3 degrees of freedom, the
+      <m>p</m>-value for a right tailed test is <m>p=0.481</m>.
+    </p>
+</solution>
+<solution><title> Conclusion</title>
+    <p>  Since <m>p=0.481 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>\alpha = 0.05</m> significance level to
+      conclude that the four wildflower species are not equally distributed along the hiking trails in Rocky Mountain National Park.
+    </p>
+  </solution>
+</example>
+<example> <title> TI-83 Plus</title> 
+<p>Note: The TI-83 Plus does not have the chi-square goodness of fit test, but we can program it to do the calculations from the lists.</p>
+<p> <term>Input Data: </term>Press [STAT] button and under the EDIT menu select <term>1:Edit </term> and press [ENTER].  Input the Observed values in L1 and the Expected values in L2. </p>
+<p><term>Find Sum: </term>Press [2nd] [STAT] for LIST and use the arrow twice to the right to the MATH menu across the top and select <term>5 Sum( </term> and press [ENTER] to select it.</p>
+<figure xml:id="ChiFlowers2">
+            <caption>Input values into calculator</caption>
+            <image source="Flowers2.png" width="80%">
+                <shortdescription> Input values into calculator under Lists.</shortdescription>
+            </image>
+        </figure> 
+
+<p>We are going to program the calculator to compute the chi-square value:
+You will need to add a parenthesis at the beginning since we want to square the difference in the values before dividing by the expected value for that cell. The process is [ ( ] [2nd] [1] for L1 [–] [2nd] [2] for L2 [ ) ]  [x²] [÷] [2nd] [2] for  L2 [ ) ] then press [ENTER] to perform the calculations. </p>
+<figure xml:id="ChiFlowers3">
+            <caption>Program calculator to find sum</caption>
+            <image source="Flowers3.png" width="80%">
+                <shortdescription> Program calculator to find sum (L1-L2)62 divide L2.</shortdescription>
+            </image>
+        </figure> 
+ <p>
+  The statistical test value is <m> \chi^2 = 2.467</m> and the degrees of freedom is 3.
+ </p>
+<p> To find the p-value press [2nd] button and [VARS] to select DISTR and scroll down to <term>7: <m>\chi^2</m> cdf( </term> then press [ENTER] to select it and then input 2.467 [,] E99 [,] 3 [)] then press [ENTER] to calculate the p-value = 0.48128. To get the EE press the [2nd] button then [,] button then enter 99. </p>
+  <figure xml:id="ChiFlowers4">
+            <caption>Calculate the p-value</caption>
+            <image source="Flowers4.png" width="80%">
+                <shortdescription> Test value chi=2.467 and p-value=0.481.</shortdescription>
+            </image>
+        </figure> 
+ </example> 
+
+<example> <title> TI-84 GOF-test</title> 
+<p><term>Input Data: </term> Press [STAT] button and under the EDIT menu select <term>1:Edit </term> and press [ENTER]. Input the Observed values in L1 and the Expected values in L2. </p>
+<p> Press the [STAT] button and under the TESTS menu select <term>D: GOF-Test</term> and press [ENTER] to select it. </p>
+<figure xml:id="ChiFlowers5">
+            <caption>Input values into calculator</caption>
+            <image source="Flowers5.png" width="80%">
+                <shortdescription> Input values into calculator under Lists.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Identify where the data is located, Observed in L1 and Expected in L2. Identify the degrees of freedom of 3  and then scroll to Calculate and press [ENTER]. </p>
+<figure xml:id="ChiFlowers6">
+            <caption>GOF-Test value and p-value</caption>
+            <image source="Flowers6.png" width="80%">
+                <shortdescription> Test value chi=2.467 and p-value=0.481.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The chi-square test value is <m> \chi ^2 = 2.4667</m> and the p-value is <m>p=0.4813</m> and it will list the contributions for each category. </p> 
+<p> If you select <term> Draw</term> instead it will graph the chi-square distribution and identified the chi-square test statistic 2.4667 and p-value p=0.4813. </p>
+<figure xml:id="ChiFlowers7">
+            <caption>Chi-square distribution with p-value</caption>
+            <image source="Flowers7.png" width="60%">
+                <shortdescription> Test value chi=2.467 and p-value=0.481.</shortdescription>
+            </image>
+        </figure> 
+
+</example> 
+
+<p> <term> Intersection Accidents</term> </p>
+<p>
+      A traffic safety researcher wants to test whether the distribution of
+      accidents among four types of intersections matches a previously reported
+      pattern. Past transportation data suggest that <m>20\%</m> of intersection
+      accidents occur at roundabouts, <m>30\%</m> at stop-sign intersections,
+      <m>35\%</m> at traffic-light intersections, and <m>15\%</m> at other types
+      of intersections. To investigate whether a more recent sample follows this
+      distribution, the researcher records <m>400</m> intersection accidents and
+      classifies each one by intersection type.
+    </p>
+    <table>
+      <title>Observed Accident Counts by Intersection Type</title>
+      <tabular>
+        <row>
+          <cell>Intersection Type</cell>
+          <cell>Observed Count</cell>
+        </row>
+        <row><cell>Roundabout</cell><cell>68</cell></row>
+        <row><cell>Stop Sign</cell><cell>134</cell></row>
+        <row><cell>Traffic Light</cell><cell>146</cell></row>
+        <row><cell>Other</cell><cell>52</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      distribution of accidents differs from the reported distribution.
+    </p>
+<example xml:id="ex-chi-square-GOF-intersections">
+<title> Intersection Accidents</title> 
+  <statement>
+<p> State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.
+</p> 
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      This is a chi-square goodness-of-fit test for a specific pattern. A random sample was taken and at least 5 accidents in each category.
+    </p>
+    <p> The hypotheses are: </p>
+    <p> <m>H_0:</m> the population proportions are
+      <m>0.20</m> for roundabouts,
+      <m>0.30</m> for stop-sign intersections,
+      <m>0.35</m> for traffic-light intersections,
+      and <m>0.15</m> for other intersections,
+      and </p>
+    <p> <m>H_a:</m> the population accident distribution is different.
+    </p>
+</solution>
+<solution> <title>Values</title>
+    <p>
+      Under the null hypothesis, the expected counts are the proportions multiplied by the sample size of <m>400</m>: Thus, we would expect
+      <m>400(0.20)=80</m> in roundabouts,
+      <m>400(0.30)=120</m> in stop-sign intersections,
+      <m>400(0.35)=140</m> in traffic-light intersections,
+      and
+      <m>400(0.15)=60</m> in other intersections.
+    </p>
+    <table>
+      <title>Observed and Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Intersection Type</cell>
+          <cell>Observed</cell>
+          <cell>Expected</cell>
+          <cell><m>\dfrac{(O-E)^2}{E}</m></cell>
+        </row>
+        <row><cell>Roundabout</cell><cell>68</cell><cell>80</cell><cell><m>1.80</m></cell></row>
+        <row><cell>Stop Sign</cell><cell>134</cell><cell>120</cell><cell><m>1.633</m></cell></row>
+        <row><cell>Traffic Light</cell><cell>146</cell><cell>140</cell><cell><m>0.257</m></cell></row>
+        <row><cell>Other</cell><cell>52</cell><cell>60</cell><cell><m>1.067</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+<solution> <title>Good Fit Test</title>
+    <p>  The test statistic is
+      <md>   \chi^2=\sum \frac{(O-E)^2}{E}=1.80+1.633+0.257+1.067=4.757
+      </md>.   </p>
+    <p> The degrees of freedom are <m>df=k-1=4-1=3</m>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>3</m> degrees of freedom, the
+      <m>p</m>-value is approximately <m>0.190</m>.
+    </p>
+</solution>
+<solution> <title> TI-84 GOF-test</title> 
+<p>Press [STAT] button and under the EDIT menu select <term>1:Edit </term> and press [ENTER]. <term> Input</term> the Observed values in L1 and the Expected values in L2. </p>
+<p> Press the STAT button and under the TESTS menu select <term>D: GOF-Test</term> and press [ENTER] to select it. Identify where the data is located and enter df=3 then press Calculate. </p>
+<figure xml:id="ChiIntersect1">
+            <caption>GOF-Test on calculator for Intersection Accidents</caption>
+            <image source="ChiCars.png" width="80%">
+                <shortdescription> Test value chi=4.575 and p-value=0.190.</shortdescription>
+            </image>
+        </figure> 
+<p> The statistical test value is <m>\chi^2 = 4.757</m> and p-value =0.190</p>
+</solution> 
+<solution> <title>Conclusion</title>
+    <p>
+      Since <m>p=0.19 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the population distribution of accidents among roundabouts,
+      stop-sign intersections, traffic-light intersections, and other types of
+      intersections differs from the reported distribution.
+    </p>
+  </solution>
+
+
+
+
+</example>
+
+
+
+</subsection>
+
+
 <subsection xml:id="subsec-GoodFitPractice">
   <title> Goodness of Fit Practice Problems </title>
-<p> For each problem,. </p> 
+<p> For each problem, state the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context. </p> 
+
+<p> <term> Beetles</term> </p>
+<p>
+      A biologist is studying whether four color patterns of a certain beetle
+      species occur in equal proportions in a forest habitat. After randomly
+      collecting 160 beetles, the biologist records the following observed
+      counts:
+    </p>
+    <table>
+      <title>Observed Beetle Color Pattern Counts</title>
+      <tabular>
+        <row>
+          <cell>Color Pattern</cell>
+          <cell>Observed Count</cell>
+        </row>
+        <row><cell>Green</cell><cell>52</cell></row>
+        <row><cell>Brown</cell><cell>33</cell></row>
+        <row><cell>Striped</cell><cell>41</cell></row>
+        <row><cell>Spotted</cell><cell>34</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the four beetle color
+      patterns are equally distributed in the population.
+    </p>
+<exercise xml:id="ex-chisquareGOF-equal-beetles">
+<title> Beetles</title>
+  <statement>
+<p> State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.
+</p> 
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      The null hypothesis is that the four beetle color patterns are equally
+      distributed in the population. So we would expect 25% in each category.
+    </p>
+    <p>
+      The hypotheses are
+      <m>H_0:p_1=p_2=p_3=p_4=0.25</m> or the color patterns are equally distributed
+      and
+      <m>H_a:</m> the color patterns are not equally distributed 
+    </p>
+</solution>
+<solution><title> Values</title>
+    <p>
+      Since there are <m>160</m> beetles and <m>4</m> categories, the expected
+      count for each category under equal distribution is  <m>\dfrac{160}{4}=40</m>.
+    </p>
+    <table>
+      <title>Observed and Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Color Pattern</cell>
+          <cell>Observed</cell>
+          <cell>Expected</cell>
+       <cell>Difference O=E</cell>
+          <cell><m>\dfrac{(O-E)^2}{E}</m></cell>
+        </row>
+        <row><cell>Green</cell><cell>52</cell><cell>40</cell><cell>12</cell> <cell>3.60</cell></row>
+        <row><cell>Brown</cell><cell>33</cell><cell>40</cell><cell>-7</cell> <cell><m>1.225</m></cell></row>
+        <row><cell>Striped</cell><cell>41</cell><cell>40</cell><cell>1</cell> <cell><m>0.025</m></cell></row>
+     <row><cell>Spotted</cell><cell>34</cell><cell>40</cell><cell>-6</cell> <cell><m>0.90</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+<solution><title> Good Fit Test</title> 
+    <p> The chi-square test statistic is
+      <md>   \chi^2=\sum \frac{(O-E)^2}{E}=3.60+1.225+0.025+0.90=5.75
+      </md>.
+    </p>
+    <p> The degrees of freedom are <m>df=k-1=4-1=3</m>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>3</m> degrees of freedom, the
+      <m>p</m>-value is approximately <m>0.124</m>.
+    </p>
+</solution>
+<solution> <title> TI-84 GOF-test</title> 
+<p>Press [STAT] button and under the EDIT menu select <term>1:Edit </term> and press [ENTER]. <term> Input</term> the Observed values in L1 and the Expected values in L2. </p>
+<p> Press the STAT button and under the TESTS menu select <term>D: GOF-Test</term> and press [ENTER] to select it. Identify where the data is located and enter df=3 then press Calculate </p>
+<p> The statistical test value is <m>\chi^2 = 5.75</m> and p-value =0.124</p>
+<figure xml:id="ChiBeetles">
+            <caption>GOF-Test on calculator for Beetles</caption>
+            <image source="ChiBeetles.png" width="80%">
+                <shortdescription> Test value chi=5.75 and p-value=0.124</shortdescription>
+            </image>
+        </figure> 
+</solution> 
+<solution><title> Conclusion</title>
+    <p>  Since <m>p=0.124 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the four beetle color patterns are not equally distributed
+      in the population.
+    </p>
+  </solution>
+</exercise>
+
+<p> <term> Support for Gun Laws</term> </p>
+<p>
+      A political scientist wants to test whether the distribution of opinions among United States senators matches a previously reported national distribution of stronger gun laws. In 2022 the Bipartisan Safer Communities Act passed for expanded background checks after several school shootings. A recent Gallup report suggested that among Americans, <m>60\%</m> support strong gun laws, <m>27\%</m> are neutral or keep as now,  and <m>13\%</m> oppose strong gun laws. To examine whether a current sample is consistent with that distribution, the researcher classifies a random sample of <m>100</m> senators and house representative with the following results.
+    </p>
+    <table>
+      <title>Observed Opinions on Strong Gun Laws</title>
+      <tabular>
+        <row>
+          <cell>Opinion</cell>
+          <cell>Observed Count</cell>
+        </row>
+        <row><cell>Support</cell><cell>55</cell></row>
+        <row><cell>Neutral</cell><cell>24</cell></row>
+        <row><cell>Oppose</cell><cell>21</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      distribution of opinions differs from the reported distribution.
+    </p>
+
+<exercise xml:id="ex-chisquareGOF-gun-laws">
+<title> Gun Laws</title> 
+  <statement>
+<p> State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.
+</p> 
+  </statement>
+  <solution> <title>Hypotheses</title>
+    <p>
+      This is a chi-square goodness-of-fit test looking at a specific pattern.
+    </p>
+    <p>
+      The hypotheses are
+      <m>H_0:</m> the population proportions are  <m>0.50</m>, <m>0.30</m>, and <m>0.20</m>  for support, neutral, and oppose, respectively,
+      and
+      <m>H_a:</m> the population distribution is different.
+    </p>
+</solution>
+<solution> <title>Assumptions</title>
+<p> A random sample was taken and at least 5 are in each category, thus the chi-square distribution is appropriate. </p>
+</solution>
+<solution> <title>Values</title>
+    <p>
+      Under <m>H_0</m>, the expected counts are found by multiplying each
+      proportion by the sample size <m>100</m> senators.
+    </p>
+    <table>
+      <title>Observed and Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Opinion</cell>
+          <cell>Observed</cell>
+          <cell>Expected</cell>
+          <cell><m>\dfrac{(O-E)^2}{E}</m></cell>
+        </row>
+        <row><cell>Support</cell><cell>55</cell><cell>60</cell><cell><m>0.417</m></cell></row>
+        <row><cell>Neutral</cell><cell>24</cell><cell>27</cell><cell><m>.333</m></cell></row>
+        <row><cell>Oppose</cell><cell>21</cell><cell>13</cell><cell><m>4.923</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+<solution> <title>Good Fit Test</title>
+    <p>  The test statistic is
+      <md>    \chi^2=\sum \frac{(O-E)^2}{E}=0.417+0.333+4.923=5.67
+      </md>.   </p>
+    <p> The degrees of freedom are  <m>df=k-1=3-1=2</m>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>2</m> degrees of freedom, the
+      <m>p</m>-value is approximately <m>0.059</m>.
+    </p>
+    </solution>
+  <solution> <title>Conclusion</title>
+    <p>
+      Since <m>p=0.059 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the population distribution of senators' opinions on strong
+      gun laws differs from the reported distribution.
+    </p>
+  </solution>
+</exercise> 
+
+<p> <term> Fire Department Calls</term></p>
+    <p>
+      A city manager wants to test whether the distribution of calls received by
+      the fire department matches a previously reported pattern. Past city data
+      suggest that <m>15\%</m> of calls are for auto accidents, <m>10\%</m> are
+      for fires, <m>45\%</m> are for medical emergencies, <m>20\%</m> are for
+      public assistance, and <m>10\%</m> are for other calls. To investigate
+      whether a more recent sample follows this distribution, the manager reviews
+      <m>300</m> randomly selected fire department calls and classifies each one
+      by type.
+    </p>
+    <table>
+      <title>Observed Fire Department Call Types</title>
+      <tabular>
+        <row>
+          <cell>Call Type</cell>
+          <cell>Observed Count</cell>
+        </row>
+        <row><cell>Auto Accidents</cell><cell>39</cell></row>
+        <row><cell>Fires</cell><cell>36</cell></row>
+        <row><cell>Medical Emergencies</cell><cell>126</cell></row>
+        <row><cell>Public Assistance</cell><cell>63</cell></row>
+        <row><cell>Other</cell><cell>36</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      distribution of fire department call types differs from the reported
+      distribution.
+    </p>
+
+<exercise xml:id="ex-chi-square-gof-fire-department">
+<title> Fire Department Calls</title>
+  <statement>
+<p> State the null and alternative hypotheses, verify the assumption for a chi-square test, compute the test statistic, find the p-value, and state the conclusion in context.
+</p>
+  </statement>
+  <solution> <title> Hypotheses</title> 
+    <p>
+      This is a chi-square goodness-of-fit test for a specific pattern. A random sample of calls was taken and there are at least 5 in each category. 
+    </p>
+    <p> The hypotheses are </p>
+     <p> <m>H_0:</m> the population proportions are
+      <m>0.15</m> for auto accidents,
+      <m>0.10</m> for fires,
+      <m>0.45</m> for medical emergencies,
+      <m>0.20</m> for public assistance,
+      and <m>0.10</m> for other calls,
+      and</p>
+      <p> <m>H_a:</m> the population distribution is different.   </p>
+</solution>
+<solution> <title>Values</title>
+    <p>
+      Under the null hypotheses, the expected counts are the proportions multiplied by the sample size of <m>300</m>. Thus, we would expect
+      <m>300(0.15)=45</m> auto accidents,
+      <m>300(0.10)=30</m> fires,
+      <m>300(0.45)=135</m> medical emergencies,
+      <m>300(0.20)=60</m> public assistance,
+      and
+      <m>300(0.10)=30</m> other calls.
+    </p>
+    <table>
+      <title>Observed and Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Call Type</cell>
+          <cell>Observed</cell>
+          <cell>Expected</cell>
+          <cell><m>\dfrac{(O-E)^2}{E}</m></cell>
+        </row>
+        <row><cell>Auto Accidents</cell><cell>39</cell><cell>45</cell><cell><m>0.80</m></cell></row>
+        <row><cell>Fires</cell><cell>36</cell><cell>30</cell><cell><m>1.20</m></cell></row>
+        <row><cell>Medical Emergencies</cell><cell>126</cell><cell>135</cell><cell><m>0.60</m></cell></row>
+        <row><cell>Public Assistance</cell><cell>63</cell><cell>60</cell><cell><m>0.15</m></cell></row>
+        <row><cell>Other</cell><cell>36</cell><cell>30</cell><cell><m>1.20</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+<solution> <title>Good Fit Test</title>
+    <p>  The test statistic is
+      <md>    \chi^2=\sum \frac{(O-E)^2}{E}=0.80+1.20+0.60+0.15+1.20=3.95
+      </md>.   </p>
+    <p>  The degrees of freedom are  <m>df=k-1=5-1=4</m>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>4</m> degrees of freedom, the
+      <m>p</m>-value is approximately <m>0.413</m>.
+    </p>
+    </solution>
+  <solution> <title>Conclusion</title>
+    <p>
+      Since <m>p=0.413 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the population distribution of fire department call types
+      differs from the reported distribution.
+    </p>
+  </solution>
+
+
+
+
+</exercise> 
+
+
+ 
+
+
 </subsection>
 
 </section> 
