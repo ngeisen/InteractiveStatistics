@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-AssociationTests" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chi-square Association Test</title>
+  <title>Chi-square Association Tests</title>
 
   <introduction>
     <p>
@@ -37,31 +37,28 @@
 <p> When the test statistic is small, that indicates there is little change in the observed and expected values thus there is no association and the variables are independent of each other. If the change is larger then there is an association and the variables are dependent on one or more of the categories. </p>
 
 
+</subsection>
 
 
+<subsection xml:id="subsec-AssociationExamples">
+  <title>Chi-square Independence Test</title>
+<p> For this course, the chi-square test for independence of two categorical variables is equivalent to the chi-square test for an association between two categorical variables. </p> 
 
- <definition xml:id="def-chi-square-association">
+<definition xml:id="def-chi-square-association">
   <statement>
     <p>
       A <term>chi-square test for association</term> is used to determine whether
       two categorical variables are associated in a population. The data are
       arranged in a two-way table, and the observed counts in each cell are
       compared to the expected counts that would occur if the variables were
-      independent. The expected count for a cell is
-      <m>E=\dfrac{(\text{row total})(\text{column total})}{\text{table total}}</m>,
+      independent. The expected count for each cell is
+      <md>E=\dfrac{(\text{row total})(\text{column total})}{\text{table total}}</md>,
       and the test statistic is
-      <m>\chi^2=\sum \frac{(O-E)^2}{E}</m>,
+      <md>\chi^2=\sum \frac{(O-E)^2}{E}</md>,
       where <m>O</m> is the observed count and <m>E</m> is the expected count. The degrees of freedom for the test are <m>df=(r-1)(c-1)</m>, where <m>r</m> is the number of rows and <m>c</m> is the number of columns in the table.
     </p>
   </statement>
 </definition>
-
-</subsection>
-
-
-<subsection xml:id="subsec-AssociationExamples">
-  <title>Example for the chi-square independence test</title>
-<p> For this course, the chi-square test for independence of two categorical variables is equivalent to the chi-square test for an association between two categorical variables. </p> 
 
 <p>
       A biologist wants to determine whether plant growth is independent of
@@ -263,13 +260,224 @@
 </p>
 </example> 
 
+</subsection>
 
+<subsection xml:id="subsec-HomogeneityExamples">
+  <title> Homogeneity of Proportions  </title>
+<p>A second chi-square test that uses a contingency table is the <term>homogeneity of proportions test</term>. In this situation, samples are selected from several different populations, and the researcher is interested in determining whether the proportions of elements that have a common characteristic are the same for each population. For example, a researcher may select 50 freshman, 50 sophomores, 50 juniors, and 50 seniors and find the proportion of students who smoke at each grade level. The researcher will then compare the proportions for each group to see if they are all equal. The hypotheses would be </p>
+<p><m> H_0: p_1 = p_2 = p_3 = p_4 </m></p>
+<p><m> H_a: </m> At least one proportion differs from the others.</p>
+<p> If the research does not reject the null hypothesis, it can be assumed the proportions are equal and the differences are due to chance. Hence, the proportion of students who smoke is the same across the grade levels. When the null hypothesis is rejected, it can be assumed that the proportions are not all equal. The computational procedures is the same for the test of independence. </p>
  
+<definition xml:id="def-chi-square-homogeneity">
+  <statement>
+    <p>
+      The <term>chi-square test for the homogeneity of proportions </term> is used to determine whether proportions are equal across populations. The data are
+      arranged in a two-way table, and the observed counts/proportions in each cell are
+      compared to the expected counts/proportions that would occur if the proportions are equal. The expected count for a cell is
+      <md>E=\dfrac{(\text{row total})(\text{column total})}{\text{table total}}</md>,
+      and the test statistic is
+      <md>\chi^2=\sum \frac{(O-E)^2}{E}</md>,
+      where <m>O</m> is the observed and <m>E</m> is the expected. The degrees of freedom for the test are <m>df=(r-1)(c-1)</m>, where <m>r</m> is the number of rows and <m>c</m> is the number of columns in the table.
+    </p>
+  </statement>
+</definition>
+
+    <p>
+      A criminal justice researcher wants to compare the distribution of major
+      crimes in three United States cities. The researcher selects random samples
+      of police reports from each city and classifies each reported crime as
+      violent crime, property crime, or drug-related crime.
+    </p>
+    <table>
+      <title>Major Crime Type by City</title>
+      <tabular>
+        <row>
+          <cell>City</cell>
+          <cell>Violent Crime</cell>
+          <cell>Property Crime</cell>
+          <cell>Drug-Related Crime</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>City A</cell><cell>48</cell><cell>72</cell><cell>30</cell><cell>150</cell></row>
+        <row><cell>City B</cell><cell>36</cell><cell>84</cell><cell>30</cell><cell>150</cell></row>
+        <row><cell>City C</cell><cell>60</cell><cell>66</cell><cell>24</cell><cell>150</cell></row>
+        <row><cell>Total</cell><cell>144</cell><cell>222</cell><cell>84</cell><cell>450</cell></row>
+      </tabular>
+    </table>
+    <p> 
+      At the <m>\alpha = 0.05</m> significance level, test whether the proportions of
+      major crime types are the same in the three cities.
+    </p>
+
+<example xml:id="ex-chi-square-homogeneity-major-crimes">
+<title> Major Crimes </title>
+  <statement>
+<p> Include the hypotheses, expected values table, chi-square test and p-value, and state the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      This is a chi-square test for homogeneity of proportions, to test if the proportions of major crime types are equal in all three cities.
+    </p>
+    <p> The null hypothesis is </p>
+<p>
+      <m>H_0:</m> The proportions of violent crimes, property crimes, and
+      drug-related crimes are the same in all three cities and can be written as</p>
+<p> <m> H_0: p_1 = p_2 = p_3 = p_4 </m>
+      And the alternative is</p>
+      <p><m>H_a:</m> at least one city has a different proportion of major crime
+      types.
+    </p> 
+</solution>
+  <solution> <title> Expected Values </title>
+    <p>
+      The expected count for each cell is found by using
+      <md>
+        E=\dfrac{(\text{row total})(\text{column total})}{\text{grand total}}.
+      </md>
+    </p>
+    <p>
+      Since each city has a row total of <m>150</m> crimes, the expected counts are the same for each row. </p>
+      <p> <m>
+        \dfrac{150(144)}{450}=48
+      </m>
+      for violent crime,</p>
+      <p><m>
+        \dfrac{150(222)}{450}=74
+      </m>
+      for property crime, and </p>
+      <p><m>
+        \dfrac{150(84)}{450}=28
+      </m>
+      for drug-related crime.
+    </p>
+    <p>
+      We can organize this into our expected counts table for each city and crime type.
+    </p>
+    <table>
+      <title>Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>City</cell>
+          <cell>Violent Crime</cell>
+          <cell>Property Crime</cell>
+          <cell>Drug-Related Crime</cell>
+        </row>
+        <row><cell>City A</cell><cell><m>48</m></cell><cell><m>74</m></cell><cell><m>28</m></cell></row>
+        <row><cell>City B</cell><cell><m>48</m></cell><cell><m>74</m></cell><cell><m>28</m></cell></row>
+        <row><cell>City C</cell><cell><m>48</m></cell><cell><m>74</m></cell><cell><m>28</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+  <solution> <title> Homogeneity Test </title>
+    <p>
+      Now compute the test statistic
+      <md>\chi^2=\sum \frac{(O-E)^2}{E}</md>.
+    </p>
+    <p>
+      The contributions are
+      <m>
+        \frac{(48-48)^2}{48}=0,\quad
+        \frac{(72-74)^2}{74}\approx 0.054,\quad
+        \frac{(30-28)^2}{28}\approx 0.143
+      </m>
+      for City A;
+      <m>
+        \frac{(36-48)^2}{48}=3,\quad
+        \frac{(84-74)^2}{74}\approx 1.351,\quad
+        \frac{(30-28)^2}{28}\approx 0.143
+      </m>
+      for City B; and
+      <m>
+        \frac{(60-48)^2}{48}=3,\quad
+        \frac{(66-74)^2}{74}\approx 0.865,\quad
+        \frac{(24-28)^2}{28}\approx 0.571
+      </m>
+      for City C.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        \chi^2 \approx 0+0.054+0.143+3+1.351+0.143+3+0.865+0.571=9.127.
+      </m>
+    </p>
+    <p>
+      The degrees of freedom are 3 city rows and 3 major crimes columns, thus
+      <md>df=(r-1)(c-1)=(3-1)(3-1)=(2)(2)=4</md>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>4</m> degrees of freedom, the right tailed test
+      <m>p</m>-value is <m>p=0.058</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion </title>
+    <p>
+      Since <m>p=0.058 \gt 0.05</m>, we fail to reject the null hypothesis.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportions of major crime types differ among the three
+      cities.
+    </p>
+  </solution>
+</example>
+<example> <title> Major Crimes on TI-83 Plus </title> 
+<p> We will be creating a matrix in the calculator so it can compute the expected values for us. Find the MATRIX above the [<m>x^{-1}</m>] button. </p>
+<p>Press [2nd] [<m>x^{-1}</m>] for the Matrix, use the arrow to the right twice for EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+<p>We need to identify the size of the matrix, input 3 rows (city) x 3 columns (crimes) and then input the observed data by hitting [ENTER] after each entry. Do not input the totals. </p>
+   
+<figure xml:id="ChiSquareCrime1">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiCrime1.png" width="80%">
+                <shortdescription>create 3x3 matrix.</shortdescription>
+            </image>
+        </figure> 
+<p> Next, perform the hypothesis test. </p>
+<p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+<p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+<figure xml:id="ChiSquareCrime2">
+            <caption>Chi-square test in calculator for major crimes</caption>
+            <image source="ChiCrime2.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =9.127 and p=0.058 with df=4</shortdescription>
+            </image>
+        </figure> 
+<p> The  statistical tests value is <m>\chi^2 = 9.127</m> and a p-value of <m>p=0.058</m> with 4 degrees of freedom. Since <m>p=0.058 \gt 0.05</m>, we fail to reject the null hypothesis.
+</p>
+</example> 
+
+<example> <title> Major Crimes on TI-84 </title> 
+<p> We will be creating a matrix in the calculator so it can compute the expected values for us. Find the MATRIX above the [<m>x^{-1}</m>] button. </p>
+<p>Press [2nd] [<m>x^{-1}</m>] for the Matrix, use the arrow to the right twice for EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+<p>We need to identify the size of the matrix, input 3 rows (city) x 3 columns (crimes) and then input the observed data by hitting [ENTER] after each entry. </p>
+    
+<figure xml:id="ChiSquareCrime3">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiCrime3.png" width="80%">
+                <shortdescription>create 3x3 matrix for city and crime.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Next, we will perform the hypothesis test. </p>
+<p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+<p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+  <figure xml:id="ChiSquareCrime4">
+            <caption>Chi-square test in calculator for major crimes</caption>
+            <image source="ChiCrime4.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =9.127 and p=0.058 with df=4</shortdescription>
+            </image>
+        </figure> 
+
+<p> The  statistical tests value is <m>\chi^2 = 9.127</m> and p-value of <m>p=0.058</m> with 4 degrees of freedom. Since <m>p=0.058 \gt 0.05</m>, we fail to reject the null hypothesis.
+</p>
+</example> 
+
+
+
 </subsection>
 
 <subsection xml:id="subsec-AssociationPractice">
   <title> Association Practice Problems </title>
-<p> For each problem,. </p> 
+<p> For each problem, include the hypotheses, find the expected values or use technology, calculate the chi-square test and p-value, and state the conclusion in context. </p> 
 
 <p> <term> Olympic Medals</term></p> 
     <p>
@@ -297,7 +505,7 @@
       </tabular>
     </table>
     <p> 
-      At the <m>0.05</m> significance level, test whether medal type
+      At the <m>\alpha =0.05</m> significance level, test whether medal type
       (gold, silver, or bronze) is independent of country.
     </p>
 <exercise xml:id="ex-chisquare-independence-OlympicMedals">
@@ -536,6 +744,318 @@
     </p>
   </solution>
 </exercise> 
+
+<p> <term> Blood Type in Animals</term></p> 
+    <p>
+      A life science researcher wants to compare the distribution of blood types
+      among three different animal populations living in different regions in the United States. Random samples are collected from each region, and each animal is classified as
+      having blood type A, blood type B, or blood type AB. 
+    </p>
+    <table>
+      <title>Blood Type by Region</title>
+      <tabular>
+        <row>
+          <cell>Region</cell>
+          <cell>Type A</cell>
+          <cell>Type B</cell>
+          <cell>Type AB</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Region 1</cell><cell>42</cell><cell>33</cell><cell>25</cell><cell>100</cell></row>
+        <row><cell>Region 2</cell><cell>35</cell><cell>40</cell><cell>25</cell><cell>100</cell></row>
+        <row><cell>Region 3</cell><cell>48</cell><cell>27</cell><cell>25</cell><cell>100</cell></row>
+        <row><cell>Total</cell><cell>125</cell><cell>100</cell><cell>75</cell><cell>300</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>\alpha =0.05</m> significance level, test whether the proportions of
+      blood types are the same in the three regions.
+    </p>
+<exercise xml:id="ex-chi-square-homogeneity-bloodtype">
+<title> Blood Type</title>
+  <statement>
+<p> Include the hypotheses, expected values table, chi-square test and p-value, and state the conclusion in context. </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      This is a chi-square test for homogeneity of proportions.
+    </p>
+    <p>The hypotheses are </p>
+    <p>  <m>H_0:</m> the proportions of blood types A, B, and AB are the same in
+      all three regions or or <m> H_0: p_1 = p_2 = p_3  </m></p>
+     <p> <m>H_a:</m> at least one region has a different proportion of blood
+      types.
+    </p>
+</solution>
+  <solution> <title> Expected Values</title>
+    <p>
+      The expected count for each cell is found by
+      <md>
+        E=\dfrac{(\text{row total})(\text{column total})}{\text{grand total}}.
+      </md>
+    </p>
+    <p>
+      Since each region has row total <m>100</m>, the expected counts are the
+      same for each row:
+      <m>
+        \dfrac{100(125)}{300}=41.67
+      </m>
+      for type A, </p>
+      <p><m>
+        \dfrac{100(100)}{300}=33.33
+      </m>
+      for type B, and</p>
+      <p><m>
+        \dfrac{100(75)}{300}=25
+      </m>
+      for type AB.
+    </p>
+    <table>
+      <title>Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Region</cell>
+          <cell>Type A</cell>
+          <cell>Type B</cell>
+          <cell>Type AB</cell>
+        </row>
+        <row><cell>Region 1</cell><cell><m>41.67</m></cell><cell><m>33.33</m></cell><cell><m>25</m></cell></row>
+        <row><cell>Region 2</cell><cell><m>41.67</m></cell><cell><m>33.33</m></cell><cell><m>25</m></cell></row>
+        <row><cell>Region 3</cell><cell><m>41.67</m></cell><cell><m>33.33</m></cell><cell><m>25</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      Now compute the test statistic
+      <md>\chi^2=\sum \frac{(O-E)^2}{E}</md>.
+    </p>
+    <p>
+      The contributions are
+      <m>
+        \frac{(42-41.67)^2}{41.67}\approx 0.003,\quad
+        \frac{(33-33.33)^2}{33.33}\approx 0.003,\quad
+        \frac{(25-25)^2}{25}=0
+      </m>
+      for Region 1;
+      <m>
+        \frac{(35-41.67)^2}{41.67}\approx 1.067,\quad
+        \frac{(40-33.33)^2}{33.33}\approx 1.335,\quad
+        \frac{(25-25)^2}{25}=0
+      </m>
+      for Region 2; and
+      <m>
+        \frac{(48-41.67)^2}{41.67}\approx 0.962,\quad
+        \frac{(27-33.33)^2}{33.33}\approx 1.202,\quad
+        \frac{(25-25)^2}{25}=0
+      </m>
+      for Region 3.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        \chi^2 \approx 0.003+0.003+0+1.067+1.335+0+0.962+1.202+0=4.572.
+      </m>
+    </p>
+    <p>
+      The degrees of freedom from 3 rows (region) and 3 columns (blood type) is
+      <m>(r-1)(c-1)=(3-1)(3-1)=(2)(2)=4</m>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>4</m> degrees of freedom, the
+      <m>p</m>-value is approximately <m>0.334</m>.
+    </p>
+</solution>
+<solution> <title> Blood Type on TI-84 </title> 
+  <p> We will be creating a matrix in the calculator. </p>
+  <p>Press [2nd] [<m>x^{-1}</m>] for the Matrix, use the arrow to the right twice for EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+  <p>We need to identify the size of the matrix, input 3 rows (region) x 3 columns (blood types) and then input the observed data by hitting [ENTER] after each entry. </p>
+     
+  <figure xml:id="ChiSquareBlood3">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiBlood3.png" width="80%">
+                <shortdescription>create 3x3 matrix for region and blood type.</shortdescription>
+            </image>
+        </figure> 
+
+  <p> Next, we will perform the hypothesis test. </p>
+  <p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+  <p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+  <figure xml:id="ChiSquareBlood4">
+            <caption>Chi-square test in calculator for blood types</caption>
+            <image source="ChiBlood4.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =4.572 and p=0.334 with df=4</shortdescription>
+            </image>
+        </figure> 
+  <p> The statistical tests value is <m>\chi^2 = 4.572</m> and p-value of <m>p=0.334</m> with 4 degrees of freedom. Since <m>p=0.334 \gt 0.05</m>, we fail to reject null hypothesis.
+  </p>
+  </solution> 
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p=0.334 \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportions of blood types differ among the three
+      regions.
+    </p>
+  </solution>
+</exercise>
+
+<p> <term>Lost Luggage </term></p>
+<p>
+      A travel researcher wants to compare the proportion of checked bags that
+      are lost by four major airlines. Random samples of checked bags are taken
+      from each airline, and each bag is classified as either lost or not lost.
+    </p>
+    <table>
+      <title>Lost Luggage by Airline</title>
+      <tabular>
+        <row>
+          <cell>Airline</cell>
+          <cell>Lost</cell>
+          <cell>Not Lost</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Airline A</cell><cell>18</cell><cell>482</cell><cell>500</cell></row>
+        <row><cell>Airline B</cell><cell>25</cell><cell>475</cell><cell>500</cell></row>
+        <row><cell>Airline C</cell><cell>12</cell><cell>488</cell><cell>500</cell></row>
+        <row><cell>Airline D</cell><cell>30</cell><cell>470</cell><cell>500</cell></row>
+        <row><cell>Total</cell><cell>85</cell><cell>1915</cell><cell>2000</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>\alpha =0.05</m> significance level, test whether the proportions of lost
+      luggage are the same for the four airlines.
+    </p>
+<exercise xml:id="ex-chi-square-homogeneity-lost-luggage">
+<title> Lost Luggage</title> 
+  <statement>
+<p> Include the hypotheses, expected values table or use technology, chi-square test and p-value, and state the conclusion in context. </p>
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      This is a chi-square test for homogeneity of proportions, we are testing if the proportion of lost luggage is the same for all four airlines.
+    </p>
+    <p> The hypotheses are: </p>
+      <p><m> H_0: p_1 = p_2 = p_3  =p_4</m>
+     </p>
+      <p><m>H_a:</m> at least one airline has a different proportion of lost luggage.
+    </p>
+</solution>
+  <solution><title> Expected Values</title>
+    <p>
+      The expected count for each cell is found by
+      <md>
+        E=\dfrac{(\text{row total})(\text{column total})}{\text{grand total}}.
+      </md>
+    </p>
+    <p>
+      Since each airline has row total <m>500</m>, the expected counts are the
+      same for each row:
+      <m>
+        \dfrac{500(85)}{2000}=21.25
+      </m>
+      for lost bags and
+      <m>
+        \dfrac{500(1915)}{2000}=478.75
+      </m>
+      for bags not lost.
+    </p>
+    <table>
+      <title>Expected Counts</title>
+      <tabular>
+        <row>
+          <cell>Airline</cell>
+          <cell>Lost</cell>
+          <cell>Not Lost</cell>
+        </row>
+        <row><cell>Airline A</cell><cell><m>21.25</m></cell><cell><m>478.75</m></cell></row>
+        <row><cell>Airline B</cell><cell><m>21.25</m></cell><cell><m>478.75</m></cell></row>
+        <row><cell>Airline C</cell><cell><m>21.25</m></cell><cell><m>478.75</m></cell></row>
+        <row><cell>Airline D</cell><cell><m>21.25</m></cell><cell><m>478.75</m></cell></row>
+      </tabular>
+    </table>
+</solution>
+  <solution><title> Statistical Test</title>
+    <p>
+      Now compute the test statistic
+      <md>\chi^2=\sum \dfrac{(O-E)^2}{E}</md>.
+    </p>
+    <p>
+      The contributions are
+      <m>
+        \frac{(18-21.25)^2}{21.25}\approx 0.497,\quad
+        \frac{(482-478.75)^2}{478.75}\approx 0.022
+      </m>
+      for Airline A;
+      <m>
+        \frac{(25-21.25)^2}{21.25}\approx 0.662,\quad
+        \frac{(475-478.75)^2}{478.75}\approx 0.029
+      </m>
+      for Airline B;
+      <m>
+        \frac{(12-21.25)^2}{21.25}\approx 4.026,\quad
+        \frac{(488-478.75)^2}{478.75}\approx 0.179
+      </m>
+      for Airline C; and
+      <m>
+        \frac{(30-21.25)^2}{21.25}\approx 3.603,\quad
+        \frac{(470-478.75)^2}{478.75}\approx 0.160
+      </m>
+      for Airline D.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        \chi^2 \approx 0.497+0.022+0.662+0.029+4.026+0.179+3.603+0.160=9.178.
+      </m>
+    </p>
+    <p>
+      The degrees of freedom for 4 rows (airlines) and 2 columns (lost or not) is
+      <md>(r-1)(c-1)=(4-1)(2-1)=3</md>.
+    </p>
+    <p>
+      Using a chi-square distribution with <m>3</m> degrees of freedom, the right tail 
+      <m>p</m>-value is <m>p=0.027</m>.
+    </p>
+</solution>
+<solution> <title> Luggage on TI-84 </title> 
+<p> We will be creating a matrix in the calculator. </p>
+<p>Press [2nd] [<m>x^{-1}</m>] for the Matrix, use the arrow to the right twice for EDIT menu, we are going to select matrix  <term>1: A </term> and press [ENTER]. </p>
+<p>We need to identify the size of the matrix, input 4 rows (airlines) x 2 columns (lost or not) and then input the observed data by hitting [ENTER] after each entry. 
+</p> 
+<figure xml:id="ChiSquareLuggage1">
+            <caption>Building data matrix in calculator</caption>
+            <image source="ChiLuggage1.png" width="80%">
+                <shortdescription>create 4x2 matrix for airlines.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Next, we will perform the hypothesis test. </p>
+<p>Press [STAT] button and arrow twice to the right for the TESTS menu and scroll down to option <term>C: <m>\chi^2</m>-Test  </term> and press [ENTER] to select it.</p>
+<p>Identify where the observed matrix is [A] and the expected matrix is [B] which the calculator will calculate for you. Scroll to <term> Calculate </term> and press [ENTER] to perform the test. </p>
+  <figure xml:id="ChiSquareLuggage2">
+            <caption>Chi-square test in calculator for luggage</caption>
+            <image source="ChiLuggage2.png" width="80%">
+                <shortdescription>select option C for chi-square test. Test value =9.178 and p=0.027 with df=3</shortdescription>
+            </image>
+        </figure> 
+
+<p> The statistical tests value is <m>\chi^2 = 9.178</m> and p-value of <m>p=0.027</m> 3with 4 degrees of freedom. Since <m>p=0.334 \lt 0.05</m>, we reject null hypothesis.
+</p>
+</solution> 
+<solution><title> Conclusion</title>
+    <p>
+      Since <m>p=0.027 \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportions of lost luggage are not the same for the
+      four airlines.
+    </p>
+  </solution>
+</exercise>
 
 
 
