@@ -53,14 +53,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.7';
+eBookConfig.runestone_version = '8.1.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.39f982db166f319d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -457,18 +457,20 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-AssociationTests.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Chi-square Association Test</span></a></div>
+<div class="toc-title-box"><a href="sec-AssociationTests.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Chi-square Association Tests</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationBasics" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationExamples" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Example for the chi-square independence test</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationPractice" class="internal"><span class="codenumber">9.3.3</span> <span class="title">Association Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationExamples" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Chi-square Independence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-HomogeneityExamples" class="internal"><span class="codenumber">9.3.3</span> <span class="title">Homogeneity of Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AssociationTests.html#subsec-AssociationPractice" class="internal"><span class="codenumber">9.3.4</span> <span class="title">Association Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-ANOVA.html" class="internal"><span class="codenumber">9.4</span> <span class="title">One-Way Analysis of Variance</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ANOVA.html#subsec-ANOVABasics" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ANOVA.html#subsec-ANOVAPractice" class="internal"><span class="codenumber">9.4.2</span> <span class="title">ANOVA Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ANOVA.html#subsec-ANOVAExample" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Examples for ANOVA</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ANOVA.html#subsec-ANOVAPractice" class="internal"><span class="codenumber">9.4.3</span> <span class="title">ANOVA Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -565,7 +567,15 @@ eBookConfig.enable_chatcodes =  false;
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
 </h3>
-<div class="para" id="subsec-ANOVABasics-2">Analysis of variance, or <dfn class="terminology">ANOVA</dfn>, is used to compare the means of three or more populations to determine whether at least one population mean is different from the others. Instead of performing many separate two-sample tests, ANOVA uses sample data from all groups at once and compares the variation between the group means to the variation within the groups. If the variation between groups is large relative to the variation within groups, we have evidence that not all population means are equal. In an introductory statistics course, ANOVA provides a practical method for testing differences among several groups using a single hypothesis test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ANOVABasics-2">Previously we used the F-test to compare two variances. Here we can use the F-test to compare three or more means. This technique is called <dfn class="terminology">analysis of variance</dfn> or ANOVA. The F-test can show whether a difference exists among the three means, but it cannot reveal where the difference lies or from which group.  The analysis of variance to compare three or more means is called <em class="emphasis">one-way analysis of variance</em> since it contains one variable. The analysis of variance can be extended to studies involving two variables which is called <em class="emphasis">two-way analysis of variance</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVABasics-3">One might think that to compare means we should use a t-test, but if a study contains multiple means we can only compare two at a time. The F-test allows us to compare all the means simultaneously. When comparing two means at a time, pairwise comparison, the probability of rejecting the null hypothesis when true is increases. And since more tests are conducted, the greater the likelihood of getting a significance difference by chance.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVABasics-4">Analysis of variance, or <dfn class="terminology">ANOVA</dfn>, is used to compare the means of three or more populations to determine whether at least one population mean is different from the others. ANOVA uses sample data from all groups at once and compares the variation between the group means to the variation within the groups. If the variation between groups is large relative to the variation within groups, we have evidence that not all population means are equal.  If there is no difference between the means, the variation between groups will be similar to the variation within groups. ANOVA provides a practical method for testing differences among several groups using a single hypothesis test. The f-test to compare means is always a one-tailed test since the alternative hypothesis is that at least one mean is different from the others.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVABasics-5">The null hypothesis is stated as <span class="process-math">\(H_0:\mu_1=\mu_2=\cdots=\mu_k\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVABasics-6">and the alternative hypothesis is <span class="process-math">\(H_a:\)</span> at least one population mean is different from the others.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-anova"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -574,26 +584,659 @@ eBookConfig.enable_chatcodes =  false;
 <dfn class="terminology">Analysis of variance</dfn>, or <dfn class="terminology">ANOVA</dfn>, is a hypothesis test used to determine whether the means of three or more populations are equal. The hypotheses are <span class="process-math">\(H_0:\mu_1=\mu_2=\cdots=\mu_k\)</span> and <span class="process-math">\(H_a:\)</span> at least one population mean is different.<div class="autopermalink" data-description="Paragraph"><a href="#def-anova-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <div class="para logical" id="def-anova-1-2">
-<div class="para">ANOVA compares the   variation between the groups to the variation within the groups using the test statistic</div>
+<div class="para">ANOVA compares the variation between the groups to the variation within the groups using the test statistic</div>
 <div class="displaymath process-math" id="def-anova-1-2-1">
 \begin{equation*}
-F=\dfrac{MS_{\text{between}}}{MS_{\text{within}}}\text{,}
+F=\dfrac{MSB}{MSW}\text{,}
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(MS_{\text{between}}=\dfrac{SS_{\text{between}}}{df_{\text{between}}}\)</span> and <span class="process-math">\(MS_{\text{within}}=\dfrac{SS_{\text{within}}}{df_{\text{within}}}\text{.}\)</span> Here, <span class="process-math">\(SS_{\text{between}}\)</span> measures variation among the sample means, <span class="process-math">\(SS_{\text{within}}\)</span> measures variation within the groups, <span class="process-math">\(df_{\text{between}}=k-1\text{,}\)</span> and <span class="process-math">\(df_{\text{within}}=n-k\text{.}\)</span>
+<div class="para">where <span class="process-math">\(MSB=\dfrac{SS_{\text{between}}}{df_{\text{between}}}\)</span> and <span class="process-math">\(MSW=\dfrac{SS_{\text{within}}}{df_{\text{within}}}\text{.}\)</span>
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#def-anova-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="def-anova-1-3">Here, <span class="process-math">\(SS_{\text{between}}\)</span> measures variation between the sample means, <span class="process-math">\(SS_{\text{within}}\)</span> measures variation within the groups, <span class="process-math">\(df_{\text{between}}=k-1\text{,}\)</span> and <span class="process-math">\(df_{\text{within}}=n-k\text{,}\)</span> where <span class="process-math">\(n\)</span> is the total number of observations and <span class="process-math">\(k\)</span> is the number of groups.<div class="autopermalink" data-description="Paragraph"><a href="#def-anova-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 9.4.1"><a href="#def-anova" title="Copy heading and permalink for Definition 9.4.1" aria-label="Copy heading and permalink for Definition 9.4.1">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 9.4.1: Understanding the Basics"><a href="#subsec-ANOVABasics" title="Copy heading and permalink for Subsection 9.4.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 9.4.1: Understanding the Basics">🔗</a></div>
+</article>
+<div class="para" id="subsec-ANOVABasics-8">The assumptions for a one-way ANOVA are:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-ANOVABasics-9">
+<li id="subsec-ANOVABasics-9-1">
+<div class="para" id="subsec-ANOVABasics-9-1-1">
+<em class="emphasis">Independence:</em> The observations are independent within and across groups.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-ANOVABasics-9-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-ANOVABasics-9-2">
+<div class="para" id="subsec-ANOVABasics-9-2-1">
+<em class="emphasis">Normality:</em> The population distribution of the response variable is approximately normal for each group.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-ANOVABasics-9-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-ANOVABasics-9-3">
+<div class="para" id="subsec-ANOVABasics-9-3-1">
+<em class="emphasis">Equal variances:</em> The population variances are equal across the groups.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-ANOVABasics-9-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection 9.4.1: Understanding the Basics"><a href="#subsec-ANOVABasics" title="Copy heading and permalink for Subsection 9.4.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 9.4.1: Understanding the Basics">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-ANOVAExample">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Examples for ANOVA</span>
+</h3>
+<div class="para" id="subsec-ANOVAExample-2">We will use a small sample for the first example so you can understand the process for ANOVA. Then we will use technology exclusively for the computations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAExample-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVAExample-3">
+<dfn class="terminology">Coral Reef Restoration</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAExample-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVAExample-4">A marine biologist wants to compare the mean growth of coral fragments under three different reef restoration methods. Twelve coral fragments are randomly assigned so that four fragments are treated with each method. After six months, the increase in coral length, in centimeters, is recorded.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAExample-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-ANOVAExample-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Coral Growth under Three Restoration Methods<div class="autopermalink" data-description="Table 9.4.2: Coral Growth under Three Restoration Methods"><a href="#subsec-ANOVAExample-5" title="Copy heading and permalink for Table 9.4.2: Coral Growth under Three Restoration Methods" aria-label="Copy heading and permalink for Table 9.4.2: Coral Growth under Three Restoration Methods">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Method A</td>
+<td class="l m b0 r0 l0 t0 lines">Method B</td>
+<td class="l m b0 r0 l0 t0 lines">Method C</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.2</td>
+<td class="l m b0 r0 l0 t0 lines">5.1</td>
+<td class="l m b0 r0 l0 t0 lines">6.0</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.8</td>
+<td class="l m b0 r0 l0 t0 lines">5.4</td>
+<td class="l m b0 r0 l0 t0 lines">6.3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5.0</td>
+<td class="l m b0 r0 l0 t0 lines">5.0</td>
+<td class="l m b0 r0 l0 t0 lines">5.8</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.5</td>
+<td class="l m b0 r0 l0 t0 lines">5.6</td>
+<td class="l m b0 r0 l0 t0 lines">6.1</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-ANOVAExample-6">At the <span class="process-math">\(0.05\)</span> significance level, test whether the mean coral growth is the same for the three restoration methods.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAExample-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-anova-coralreef" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coral Reef.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-anova-coralreef-2-1">State the hypotheses, compute the means, compute the test statistic and p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-anova-coralreef-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-coralreef-3-2">This is a one-way ANOVA test comparing three means. The observations are independent within and across groups. We are assuming the distribution is approximately normal and the population variances are equal across the groups.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-3-3">The hypotheses are:<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-3-4">
+<span class="process-math">\(H_0:\mu_A=\mu_B=\mu_C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-3-5">
+<span class="process-math">\(H_a:\)</span> at least one population mean differs.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.3.1: Hypotheses"><a href="#ex-anova-coralreef-3" title="Copy heading and permalink for Solution 9.4.3.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.4.3.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-anova-coralreef-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computations for Statistical Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-coralreef-4-2">First, compute the sample mean and sample standard deviation for each coral reef restoration method. We will use technology to help us out.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-3">In the calculator, input the data each method in a different List and compute the means and standard deviations. For the statistics press the [STAT] button and one arrow right to CALC and select 1:1-var Stats and identify where the data is located. You can list all the data in List 4 to compute the grand mean.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CoralReefData1"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAreef1.png" class="contained" alt="input data values."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input Coral Reef Data into Calculator<div class="autopermalink" data-description="Figure 9.4.4"><a href="#CoralReefData1" title="Copy heading and permalink for Figure 9.4.4" aria-label="Copy heading and permalink for Figure 9.4.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-coralreef-4-5">The summary statistics for each method are as follows:<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-6">
+<span class="process-math">\(\bar{x}_A=4.625\)</span> and <span class="process-math">\(s_A = 0.350\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-7">
+<span class="process-math">\(\bar{x}_B=5.275\)</span> and <span class="process-math">\(s_B = 0.275\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-8">
+<span class="process-math">\(\bar{x}_C=6.05\text{.}\)</span>and <span class="process-math">\(s_C = 0.208\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-9">The grand mean which combines all the data is <span class="process-math">\(\bar{X} _{GM}=5.3167\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-coralreef-4-10">
+<div class="para">The sum of squares between groups is the sample size of 4 per group multiped by the difference in the sample mean and grand mean squared. This finds the variance among the means by using the sample sizes as weights.</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-10-1">
+\begin{equation*}
+SSB= \sum n_i(\bar{x}_i - \bar{X}_{GM})^2 
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-10-2">
+\begin{equation*}
+SSB= 4(4.625-5.3167)^2+4(5.275-5.3167)^2+4(6.05-5.3167)^2 \approx 4.072.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-coralreef-4-11">
+<div class="para">The sum of squares within groups is</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-11-1">
+\begin{equation*}
+SSW=\sum{(n_i -1) (s_i)^2} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-11-2">
+\begin{equation*}
+SSW= (4-1)(.35)^2 + (4-1)(.275)^2 +(4-1).208)^2    
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-11-3">
+\begin{equation*}
+SSW\approx 0.3675+0.2269+0.1298=0.7242   
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-12">The total sum of squares is <span class="process-math">\(SST=SSB+SSW = 4.072+0.7242=4.7962\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-13">There are 3 methods thus k=3 and dfN=k-1=3-1=2<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-14">The total sample is 12 thus N=12 and dfD =N-k=12-3=9<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-coralreef-4-15">
+<div class="para">For the means squares:</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-15-1">
+\begin{equation*}
+MSB=\frac{SSB}{k-1} = \frac{4.072}{2}=2.036
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-15-2">
+\begin{equation*}
+MSW=\frac{SSW}{N-k} = \frac{0.7242}{9}=0.0805
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-coralreef-4-16">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-4-16-1">
+\begin{equation*}
+F=\dfrac{MSB}{MSW}=\dfrac{2.036}{0.0805}\approx 25.29\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-17">The <span class="process-math">\(p\)</span>-value for an <span class="process-math">\(F\)</span>-distribution with <span class="process-math">\(dfN=2\)</span> and <span class="process-math">\(dfD=9\)</span> for a right tailed test is <span class="process-math">\(p=0.00011\)</span> using StatKey.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-4-18">Summarizing these values in ANOVA table:<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-4-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-anova-coralreef-4-19"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Table<div class="autopermalink" data-description="Table 9.4.5: ANOVA Table"><a href="#ex-anova-coralreef-4-19" title="Copy heading and permalink for Table 9.4.5: ANOVA Table" aria-label="Copy heading and permalink for Table 9.4.5: ANOVA Table">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Source</td>
+<td class="l m b0 r0 l0 t0 lines">Sum of Squares</td>
+<td class="l m b0 r0 l0 t0 lines">Degrees of Freedom</td>
+<td class="l m b0 r0 l0 t0 lines">Mean Square</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(F\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Between Groups</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4.072\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.036\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(25.29\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Within Groups</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.7242\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(9\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.0805\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Total</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4.7962\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(11\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 9.4.3.2: Computations for Statistical Test"><a href="#ex-anova-coralreef-4" title="Copy heading and permalink for Solution 9.4.3.2: Computations for Statistical Test" aria-label="Copy heading and permalink for Solution 9.4.3.2: Computations for Statistical Test">🔗</a></div>
+</div></details>
+<details id="ex-anova-coralreef-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statistical Test with TI-83 Plus</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-coralreef-5-2">
+<dfn class="terminology">Input</dfn> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:1 Edit</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CoralReefData2"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAreef2.png" class="contained" alt="input data values into lists."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input Coral Reef Data<div class="autopermalink" data-description="Figure 9.4.6"><a href="#CoralReefData2" title="Copy heading and permalink for Figure 9.4.6" aria-label="Copy heading and permalink for Figure 9.4.6">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-coralreef-5-4">Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <dfn class="terminology">F: ANOVA(</dfn> and identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CoralReefTest1"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAreef3.png" class="contained" alt="On TI83 select F ANOVA and identify location of data as L1,l2,l3."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA test for Coral Reef Data<div class="autopermalink" data-description="Figure 9.4.7"><a href="#CoralReefTest1" title="Copy heading and permalink for Figure 9.4.7" aria-label="Copy heading and permalink for Figure 9.4.7">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="CoralReefTest2"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAreef4.png" class="contained" alt="F-test is 25.27 and p-value=.0002."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Coral Reef Results<div class="autopermalink" data-description="Figure 9.4.8"><a href="#CoralReefTest2" title="Copy heading and permalink for Figure 9.4.8" aria-label="Copy heading and permalink for Figure 9.4.8">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-coralreef-5-7">The display lets you know you performed the One-way ANOVA. The test statistic is <span class="process-math">\(F=25.27\)</span> and value of <span class="process-math">\(p=0.0002\text{.}\)</span> The values under Factor are the between the data with SSB=4.07 and MSB=2.036. Using the arrow button down the Error is the Within data so SSW=0.725 and MSW=0.0806.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-coralreef-5-8">
+<div class="para">The test statistic from the ANOVA table is</div>
+<div class="displaymath process-math" id="ex-anova-coralreef-5-8-1">
+\begin{equation*}
+F=\dfrac{MSB}{MSW}=\dfrac{2.0358}{0.08056} = 25.27\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-5-9">The <span class="process-math">\(p\)</span>-value for an <span class="process-math">\(F\)</span>-distribution with <span class="process-math">\(dfN=2\)</span> and <span class="process-math">\(dfD=9\)</span> for a right tailed test is <span class="process-math">\(p=0.0002\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.3.3: Statistical Test with TI-83 Plus"><a href="#ex-anova-coralreef-5" title="Copy heading and permalink for Solution 9.4.3.3: Statistical Test with TI-83 Plus" aria-label="Copy heading and permalink for Solution 9.4.3.3: Statistical Test with TI-83 Plus">🔗</a></div>
+</div></details>
+<details id="ex-anova-coralreef-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statistical Test with TI-84</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-coralreef-6-2">
+<dfn class="terminology">Input</dfn> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:1 Edit</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CoralReefData3"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAreef5.png" class="contained" alt="input data values."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input Coral Reef Data<div class="autopermalink" data-description="Figure 9.4.9"><a href="#CoralReefData3" title="Copy heading and permalink for Figure 9.4.9" aria-label="Copy heading and permalink for Figure 9.4.9">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-coralreef-6-4">Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <dfn class="terminology">H: ANOVA(</dfn> and [ENTER] button and then identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="CoralReefTest3"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAreef6.png" class="contained" alt="On TI84 select H: ANOVA and identify location of data as L1,l2,l3."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA test for Coral Reef Data<div class="autopermalink" data-description="Figure 9.4.10"><a href="#CoralReefTest3" title="Copy heading and permalink for Figure 9.4.10" aria-label="Copy heading and permalink for Figure 9.4.10">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="CoralReefTest4"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAreef7.png" class="contained" alt="input data values."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Coral Reef Results<div class="autopermalink" data-description="Figure 9.4.11"><a href="#CoralReefTest4" title="Copy heading and permalink for Figure 9.4.11" aria-label="Copy heading and permalink for Figure 9.4.11">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-coralreef-6-7">The display lets you know you performed the one-way ANOVA. The test statistic is <span class="process-math">\(F=25.27\)</span> and p-value of <span class="process-math">\(p=0.0002\text{.}\)</span> The values under Factor are the between the data with SSB=4.07 and MSB=2.036. Using the arrow button down the Error is the Within data so SSW=0.725 and MSW=0.0806.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.3.4: Statistical Test with TI-84"><a href="#ex-anova-coralreef-6" title="Copy heading and permalink for Solution 9.4.3.4: Statistical Test with TI-84" aria-label="Copy heading and permalink for Solution 9.4.3.4: Statistical Test with TI-84">🔗</a></div>
+</div></details>
+<details id="ex-anova-coralreef-7" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-coralreef-7-2">Since <span class="process-math">\(p \lt 0.05\text{,}\)</span> we reject the null hypothesis.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-coralreef-7-3">There is sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that at least one mean coral growth differs among the coral reef restoration methods.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-coralreef-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.3.5: Conclusion"><a href="#ex-anova-coralreef-7" title="Copy heading and permalink for Solution 9.4.3.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.4.3.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 9.4.3: Coral Reef"><a href="#ex-anova-coralreef" title="Copy heading and permalink for Example 9.4.3: Coral Reef" aria-label="Copy heading and permalink for Example 9.4.3: Coral Reef">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-ANOVAExample-8">
+<dfn class="terminology">Tornado Alley</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAExample-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVAExample-9">Research suggests that tornado alley has shifted eastward from the Great Plains with global warming.  A climate researcher wants to compare the mean annual number of tornadoes in four states: Colorado, Oklahoma, Texas, and Missouri. The researcher records the number of tornadoes for each state over five recent years.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAExample-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-ANOVAExample-10"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Annual Number of Tornadoes<div class="autopermalink" data-description="Table 9.4.12: Annual Number of Tornadoes"><a href="#subsec-ANOVAExample-10" title="Copy heading and permalink for Table 9.4.12: Annual Number of Tornadoes" aria-label="Copy heading and permalink for Table 9.4.12: Annual Number of Tornadoes">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Colorado</td>
+<td class="l m b0 r0 l0 t0 lines">Oklahoma</td>
+<td class="l m b0 r0 l0 t0 lines">Texas</td>
+<td class="l m b0 r0 l0 t0 lines">Missouri</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">48</td>
+<td class="l m b0 r0 l0 t0 lines">67</td>
+<td class="l m b0 r0 l0 t0 lines">132</td>
+<td class="l m b0 r0 l0 t0 lines">41</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">52</td>
+<td class="l m b0 r0 l0 t0 lines">71</td>
+<td class="l m b0 r0 l0 t0 lines">145</td>
+<td class="l m b0 r0 l0 t0 lines">38</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">50</td>
+<td class="l m b0 r0 l0 t0 lines">69</td>
+<td class="l m b0 r0 l0 t0 lines">138</td>
+<td class="l m b0 r0 l0 t0 lines">44</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">47</td>
+<td class="l m b0 r0 l0 t0 lines">73</td>
+<td class="l m b0 r0 l0 t0 lines">141</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">53</td>
+<td class="l m b0 r0 l0 t0 lines">68</td>
+<td class="l m b0 r0 l0 t0 lines">136</td>
+<td class="l m b0 r0 l0 t0 lines">42</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-ANOVAExample-11">At the <span class="process-math">\(0.05\)</span> significance level, test whether the mean annual number of tornadoes is the same for the four states.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAExample-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-anova-tornadoes" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tornadoes.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-anova-tornadoes-2-1">State the hypotheses, compute the means, test statistic and p-value with technology, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-anova-tornadoes-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-tornadoes-3-2">This is a one-way ANOVA test comparing four means to see if they are all equal or if at least one is different.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-3-3">The hypotheses are:<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-3-4">
+<span class="process-math">\(H_0:\mu_1=\mu_2=\mu_3=\mu_4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-3-5">
+<span class="process-math">\(H_a:\)</span> at least one population mean differs.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.13.1: Hypotheses"><a href="#ex-anova-tornadoes-3" title="Copy heading and permalink for Solution 9.4.13.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.4.13.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-anova-tornadoes-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computations</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-tornadoes-4-2">First compute the sample means for each state:<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-4-3">
+<span class="process-math">\(\bar{x}_{\text{Colorado}}=50.0\)</span> and <span class="process-math">\(s_{CO}=2.55\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-4-4">
+<span class="process-math">\(\bar{x}_{\text{Oklahoma}}=69.6\)</span> and <span class="process-math">\(s_{OK}=2.41\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-4-5">
+<span class="process-math">\(\bar{x}_{\text{Texas}}=138.4\)</span> and <span class="process-math">\(s_{TX}=4.93\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-4-6">
+<span class="process-math">\(\bar{x}_{\text{Missouri}}=41.0\)</span> and <span class="process-math">\(s_{MO}=2.24\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-4-7">The grand mean for all these tornadoes is<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-4-8">
+<span class="process-math">\(\bar{X}_{GM}=\frac{50+69.6+138.4+41}{4}=74.75.  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-tornadoes-4-9">
+<div class="para">The sum of squares between groups is</div>
+<div class="displaymath process-math" id="ex-anova-tornadoes-4-9-1">
+\begin{equation*}
+SSB=5(50-74.75)^2+5(69.6-74.75)^2+5(138.4-74.75)^2+5(41-74.75)^2 = 29147.35.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-tornadoes-4-10">
+<div class="para">The sum of squares within groups is found by adding the squared deviations within each state:</div>
+<div class="displaymath process-math" id="ex-anova-tornadoes-4-10-1">
+\begin{equation*}
+SSW= (5-1)(2.55)^2 + (5-1)(2.41)^2 +(5-1)(4.93)^2 +(5-1)(2.24)^2    
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-anova-tornadoes-4-10-2">
+\begin{equation*}
+SSW = 26.01+23.23+97.22+20.07=166.53  
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-anova-tornadoes-4-11">
+<div class="para">The total sum of squares is</div>
+<div class="displaymath process-math" id="ex-anova-tornadoes-4-11-1">
+\begin{equation*}
+SST=SSB+SSW=29147.35+166.53=29313.88.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-anova-tornadoes-4-12"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Table<div class="autopermalink" data-description="Table 9.4.14: ANOVA Table"><a href="#ex-anova-tornadoes-4-12" title="Copy heading and permalink for Table 9.4.14: ANOVA Table" aria-label="Copy heading and permalink for Table 9.4.14: ANOVA Table">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Source</td>
+<td class="l m b0 r0 l0 t0 lines">Sum of Squares</td>
+<td class="l m b0 r0 l0 t0 lines">Degrees of Freedom</td>
+<td class="l m b0 r0 l0 t0 lines">Mean Square</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(F\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Between Groups</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(29147.35\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(9715.78\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(933.31\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Within Groups</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(166.53\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(16\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(10.41\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Total</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(29313.88\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(19\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure>
+<div class="para logical" id="ex-anova-tornadoes-4-13">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="ex-anova-tornadoes-4-13-1">
+\begin{equation*}
+F=\frac{MSB}{MSW}=\frac{9715.78}{10.41}\approx 933.31.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-4-14">The <span class="process-math">\(p\)</span>-value for an <span class="process-math">\(F\)</span>-distribution with <span class="process-math">\(dfN=3\)</span> and <span class="process-math">\(dfD=16\)</span> is <span class="process-math">\(p \approx 0\)</span> since the test statistic is very large.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.13.2: Computations"><a href="#ex-anova-tornadoes-4" title="Copy heading and permalink for Solution 9.4.13.2: Computations" aria-label="Copy heading and permalink for Solution 9.4.13.2: Computations">🔗</a></div>
+</div></details>
+<details id="ex-anova-tornadoes-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tornadoes with TI-83 Plus</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-tornadoes-5-2">Input the data for each state in a different List. Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:1 Edit</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="TornadoData1"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAtorn1.png" class="contained" alt="input data values into lists."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input Tornado Data<div class="autopermalink" data-description="Figure 9.4.15"><a href="#TornadoData1" title="Copy heading and permalink for Figure 9.4.15" aria-label="Copy heading and permalink for Figure 9.4.15">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-tornadoes-5-4">Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <dfn class="terminology">F: ANOVA(</dfn> and identify the four lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [,] button  and [2nd] button [4] for L4 and  then [ )] button, then press [ENTER] to compute the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="TornadoData2"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAtorn2.png" class="contained" alt="On TI83 select F ANOVA and identify location of data as L1,L2,L3,L4."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA test for Tornado Data<div class="autopermalink" data-description="Figure 9.4.16"><a href="#TornadoData2" title="Copy heading and permalink for Figure 9.4.16" aria-label="Copy heading and permalink for Figure 9.4.16">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="TornadoData3"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAtorn3.png" class="contained" alt="F-test is 25.27 and p-value=.0002."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Tornado Results<div class="autopermalink" data-description="Figure 9.4.17"><a href="#TornadoData3" title="Copy heading and permalink for Figure 9.4.17" aria-label="Copy heading and permalink for Figure 9.4.17">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-tornadoes-5-7">The display lets you know you performed the one-way ANOVA. The test statistic is <span class="process-math">\(F=934.21\)</span> and value of <span class="process-math">\(p=0 \text{.}\)</span> The values under Factor are the between the data with SSB=29147.35 and MSB=9715.783. Using the arrow button down the Error is the Within data so SSW=166.4 and MSW=10.40.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.13.3: Tornadoes with TI-83 Plus"><a href="#ex-anova-tornadoes-5" title="Copy heading and permalink for Solution 9.4.13.3: Tornadoes with TI-83 Plus" aria-label="Copy heading and permalink for Solution 9.4.13.3: Tornadoes with TI-83 Plus">🔗</a></div>
+</div></details>
+<details id="ex-anova-tornadoes-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tornadoes with TI-84</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-tornadoes-6-2">
+<dfn class="terminology">Input</dfn> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:1 Edit</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="TornadoData4"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAtorn4.png" class="contained" alt="input data values into lists."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Input Tornado Data<div class="autopermalink" data-description="Figure 9.4.18"><a href="#TornadoData4" title="Copy heading and permalink for Figure 9.4.18" aria-label="Copy heading and permalink for Figure 9.4.18">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-tornadoes-6-4">Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <dfn class="terminology">H: ANOVA(</dfn> and [ENTER] button and then identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="TornadoData5"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAtorn5.png" class="contained" alt="On TI84 select H ANOVA and identify location of data as L1,L2,L3,L4."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA test for Tornado Data<div class="autopermalink" data-description="Figure 9.4.19"><a href="#TornadoData5" title="Copy heading and permalink for Figure 9.4.19" aria-label="Copy heading and permalink for Figure 9.4.19">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="TornadoData6"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAtorn6.png" class="contained" alt="F-test is 934.2 and p-value=0."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Tornado Results<div class="autopermalink" data-description="Figure 9.4.20"><a href="#TornadoData6" title="Copy heading and permalink for Figure 9.4.20" aria-label="Copy heading and permalink for Figure 9.4.20">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-tornadoes-6-7">The display lets you know you performed the one-way ANOVA. The test statistic is <span class="process-math">\(F=934.21\)</span> and value of <span class="process-math">\(p=0 \text{.}\)</span> The values under Factor are the between the data with SSB=29147.35 and MSB=9715.783. Using the arrow button down the Error is the Within data so SSW=166.4 and MSW=10.40.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.13.4: Tornadoes with TI-84"><a href="#ex-anova-tornadoes-6" title="Copy heading and permalink for Solution 9.4.13.4: Tornadoes with TI-84" aria-label="Copy heading and permalink for Solution 9.4.13.4: Tornadoes with TI-84">🔗</a></div>
+</div></details>
+<details id="ex-anova-tornadoes-7" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-tornadoes-7-2">Since <span class="process-math">\(p \lt 0.05\text{,}\)</span> we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-tornadoes-7-3">There is sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that at least one mean annual tornado count differs among Colorado, Oklahoma, Texas, and Missouri. The obvious choice is that Texas has more tornadoes than the other states.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-tornadoes-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.13.5: Conclusion"><a href="#ex-anova-tornadoes-7" title="Copy heading and permalink for Solution 9.4.13.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.4.13.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 9.4.13: Tornadoes"><a href="#ex-anova-tornadoes" title="Copy heading and permalink for Example 9.4.13: Tornadoes" aria-label="Copy heading and permalink for Example 9.4.13: Tornadoes">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 9.4.2: Examples for ANOVA"><a href="#subsec-ANOVAExample" title="Copy heading and permalink for Subsection 9.4.2: Examples for ANOVA" aria-label="Copy heading and permalink for Subsection 9.4.2: Examples for ANOVA">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-ANOVAPractice">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ANOVA Practice Problems</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ANOVA Practice Problems</span>
 </h3>
-<div class="para" id="subsec-ANOVAPractice-2">For each problem,.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ANOVAPractice-2">For each problem, state the hypotheses, compute the test statistic, find the p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 9.4.2: ANOVA Practice Problems"><a href="#subsec-ANOVAPractice" title="Copy heading and permalink for Subsection 9.4.2: ANOVA Practice Problems" aria-label="Copy heading and permalink for Subsection 9.4.2: ANOVA Practice Problems">🔗</a></div>
+<div class="para" id="subsec-ANOVAPractice-3">
+<dfn class="terminology">Seedlings</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVAPractice-4">A life scientist wants to compare the mean plant growth of bean seedlings grown under three different fertilizer treatments. A random sample of seedlings is assigned to each treatment, and after four weeks the growth of each plant, in centimeters, is recorded.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-ANOVAPractice-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Plant Growth under Three Fertilizer Treatments<div class="autopermalink" data-description="Table 9.4.21: Plant Growth under Three Fertilizer Treatments"><a href="#subsec-ANOVAPractice-5" title="Copy heading and permalink for Table 9.4.21: Plant Growth under Three Fertilizer Treatments" aria-label="Copy heading and permalink for Table 9.4.21: Plant Growth under Three Fertilizer Treatments">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Fertilizer A</td>
+<td class="l m b0 r0 l0 t0 lines">Fertilizer B</td>
+<td class="l m b0 r0 l0 t0 lines">Fertilizer C</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines">16</td>
+<td class="l m b0 r0 l0 t0 lines">17</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">13</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines">19</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines">17</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">11</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-ANOVAPractice-6">At the <span class="process-math">\(0.05\)</span> significance level, test whether the mean plant growth is the same for the three fertilizer treatments.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-anova-seedlings" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Seedlings.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-anova-seedlings-2-1">State the hypotheses, compute the means, test statistic and p-value with technology, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-anova-seedlings-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-seedlings-3-2">This is a one-way ANOVA test comparing three means.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-3-3">The hypotheses are <span class="process-math">\(H_0:\mu_A=\mu_B=\mu_C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-3-4">
+<span class="process-math">\(H_a:\)</span> at least one population mean differs.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.22.1: Hypotheses"><a href="#ex-anova-seedlings-3" title="Copy heading and permalink for Solution 9.4.22.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.4.22.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-anova-seedlings-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computations</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-seedlings-4-2">First compute the sample means and standard deviations:<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-3">
+<span class="process-math">\(\bar{x}_A=13\)</span> and <span class="process-math">\(x_A = 1.58\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-4">
+<span class="process-math">\(\bar{x}_B=15.4\)</span> and <span class="process-math">\(x_B = 1.14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-5">
+<span class="process-math">\(\bar{x}_C=18.4\)</span> and <span class="process-math">\(x_C = 1.14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-6">The grand mean is  <span class="process-math">\(\bar{X}_{GM}=15.6\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-7">The sum of squares between groups is<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-8">
+<span class="process-math">\(SSB=n\sum(\bar{x}_i-\bar{x})^2 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-9">
+<span class="process-math">\(SSB=5(13-15.6)^2+5(15.4-15.6)^2+5(18.4-15.6)^2 =73.2.  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-10">The sum of squares within groups is <span class="process-math">\(SSW=10+5.2+5.2=20.4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-11">The total sum of squares is <span class="process-math">\(SST=SSB+SSW=73.2+20.4=93.6\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-anova-seedlings-4-12"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Table<div class="autopermalink" data-description="Table 9.4.23: ANOVA Table"><a href="#ex-anova-seedlings-4-12" title="Copy heading and permalink for Table 9.4.23: ANOVA Table" aria-label="Copy heading and permalink for Table 9.4.23: ANOVA Table">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Source</td>
+<td class="l m b0 r0 l0 t0 lines">Sum of Squares</td>
+<td class="l m b0 r0 l0 t0 lines">Degrees of Freedom</td>
+<td class="l m b0 r0 l0 t0 lines">Mean Square</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(F\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Between Groups</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(73.2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(36.6\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(21.53\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Within Groups</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(20.4\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(12\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.7\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Total</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(93.6\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(14\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="ex-anova-seedlings-4-13">The test statistic is <span class="process-math">\(F=\dfrac{MSB}{MSW}=\dfrac{36.6}{1.7}\approx 21.53\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-4-14">The <span class="process-math">\(p\)</span>-value for an <span class="process-math">\(F\)</span>-distribution with <span class="process-math">\(dfN=2\)</span> and <span class="process-math">\(dfD=12\)</span> is <span class="process-math">\(p=0.00011\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.22.2: Computations"><a href="#ex-anova-seedlings-4" title="Copy heading and permalink for Solution 9.4.22.2: Computations" aria-label="Copy heading and permalink for Solution 9.4.22.2: Computations">🔗</a></div>
+</div></details>
+<details id="ex-anova-seedlings-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Seedlings with TI-84</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-seedlings-5-2">
+<dfn class="terminology">Input</dfn> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <dfn class="terminology">1:1 Edit</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="SeedlingData"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAseed1.png" class="contained" alt="On TI84 select H ANOVA and identify location of data as L1,L2,L3."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA test for Seedling Data<div class="autopermalink" data-description="Figure 9.4.24"><a href="#SeedlingData" title="Copy heading and permalink for Figure 9.4.24" aria-label="Copy heading and permalink for Figure 9.4.24">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-seedlings-5-4">Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <dfn class="terminology">H: ANOVA(</dfn> and [ENTER] button and then identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="SeedlingTest"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAseed2.png" class="contained" alt="F-test is 21.53 and p-value=0.00011"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Seedling Results<div class="autopermalink" data-description="Figure 9.4.25"><a href="#SeedlingTest" title="Copy heading and permalink for Figure 9.4.25" aria-label="Copy heading and permalink for Figure 9.4.25">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-seedlings-5-6">The display lets you know you performed the one-way ANOVA. The test statistic is <span class="process-math">\(F=21.529\)</span> and value of <span class="process-math">\(p=0.000107 \text{.}\)</span> The values under Factor are the between the data with SSB=73.2 and MSB=36.6. Using the arrow button down the Error is the Within data so SSW=20.4 and MSW=1.7<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.22.3: Seedlings with TI-84"><a href="#ex-anova-seedlings-5" title="Copy heading and permalink for Solution 9.4.22.3: Seedlings with TI-84" aria-label="Copy heading and permalink for Solution 9.4.22.3: Seedlings with TI-84">🔗</a></div>
+</div></details>
+<details id="ex-anova-seedlings-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-seedlings-6-2">Since <span class="process-math">\(p \lt0.05\text{,}\)</span> we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-seedlings-6-3">There is sufficient evidence at the <span class="process-math">\(0.05\)</span> significance level to conclude that at least one mean plant growth differs among the three fertilizer treatments.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-seedlings-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.22.4: Conclusion"><a href="#ex-anova-seedlings-6" title="Copy heading and permalink for Solution 9.4.22.4: Conclusion" aria-label="Copy heading and permalink for Solution 9.4.22.4: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.4.22: Seedlings"><a href="#ex-anova-seedlings" title="Copy heading and permalink for Checkpoint 9.4.22: Seedlings" aria-label="Copy heading and permalink for Checkpoint 9.4.22: Seedlings">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 9.4.3: ANOVA Practice Problems"><a href="#subsec-ANOVAPractice" title="Copy heading and permalink for Subsection 9.4.3: ANOVA Practice Problems" aria-label="Copy heading and permalink for Subsection 9.4.3: ANOVA Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.4: One-Way Analysis of Variance"><a href="#sec-ANOVA" title="Copy heading and permalink for Section 9.4: One-Way Analysis of Variance" aria-label="Copy heading and permalink for Section 9.4: One-Way Analysis of Variance">🔗</a></div>
 </section>
 </div>
