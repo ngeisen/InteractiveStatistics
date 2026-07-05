@@ -108,7 +108,7 @@
       is the same for the three restoration methods.
     </p>
 
-<example xml:id="ex-anova-coralreef ">
+<example xml:id="ex-anova-coralreef">
 <title> Coral Reef</title>
  <statement>
 <p>State the hypotheses, compute the means, compute the test statistic and p-value, and state the conclusion in context. </p> 
@@ -304,7 +304,7 @@ This is a one-way ANOVA test comparing three means. The observations are indepen
       of tornadoes is the same for the four states.
     </p>
 
-<example xml:id="ex-anova-tornadoes ">
+<example xml:id="ex-anova-tornadoes">
 <title> Tornadoes </title> 
   <statement>
 <p>State the hypotheses, compute the means, test statistic and p-value with technology, and state the conclusion in context.</p> 
@@ -399,7 +399,7 @@ This is a one-way ANOVA test comparing three means. The observations are indepen
         </figure> 
 <p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> F: ANOVA( </term> and identify the four lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [,] button  and [2nd] button [4] for L4 and  then [ )] button, then press [ENTER] to compute the test. </p>   
    
-<figure xml:id=" TornadoData2">
+<figure xml:id="TornadoData2">
             <caption>ANOVA test for Tornado Data</caption>
             <image source="ANOVAtorn2.png" width="90%">
                 <shortdescription>On TI83 select F ANOVA and identify location of data as L1,L2,L3,L4.</shortdescription>
@@ -427,7 +427,7 @@ This is a one-way ANOVA test comparing three means. The observations are indepen
         </figure> 
 <p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> H: ANOVA( </term> and [ENTER] button and then identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test. </p>   
   
-<figure xml:id=" TornadoData5">
+<figure xml:id="TornadoData5">
             <caption>ANOVA test for Tornado Data</caption>
             <image source="ANOVAtorn5.png" width="90%">
                 <shortdescription>On TI84 select H ANOVA and identify location of data as L1,L2,L3,L4.</shortdescription>
@@ -569,7 +569,7 @@ This is a one-way ANOVA test comparing three means. The observations are indepen
 <p> <term> Input </term> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <term> 1:1 Edit</term>.  </p>
 
   
-<figure xml:id=" SeedlingData">
+<figure xml:id="SeedlingData">
             <caption>ANOVA test for Seedling Data</caption>
             <image source="ANOVAseed1.png" width="90%">
                 <shortdescription>On TI84 select H ANOVA and identify location of data as L1,L2,L3.</shortdescription>
