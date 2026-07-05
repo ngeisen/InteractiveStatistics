@@ -14,49 +14,68 @@
   </introduction>
   <ol>
     <li> <p> Use one-way ANOVA to determine if there is a significant difference between three or more means.  </p> </li>
-<li> <p> Use technology appropriately.  </p> </li>
-        </ol>
+    <li> <p> Use technology appropriately.  </p> </li>
+  </ol>
 </objectives>
 
 <subsection xml:id="subsec-ANOVABasics">
   <title>Understanding the Basics</title>
-<p> Analysis of variance, or <term>ANOVA</term>, is used to compare the means of
+  <p> Previously we used the F-test to compare two variances. Here we can use the F-test to compare three or more means. This technique is called <term> analysis of variance</term> or ANOVA. The F-test can show whether a difference exists among the three means, but it cannot reveal where the difference lies or from which group.  The analysis of variance to compare three or more means is called <em>one-way analysis of variance</em> since it contains one variable. The analysis of variance can be extended to studies involving two variables which is called <em>two-way analysis of variance</em>. 
+  </p>
+  <p>One might think that to compare means we should use a t-test, but if a study contains multiple means we can only compare two at a time. The F-test allows us to compare all the means simultaneously. When comparing two means at a time, pairwise comparison, the probability of rejecting the null hypothesis when true is increases. And since more tests are conducted, the greater the likelihood of getting a significance difference by chance. 
+  </p>
+  <p> Analysis of variance, or <term>ANOVA</term>, is used to compare the means of
   three or more populations to determine whether at least one population mean is
-  different from the others. Instead of performing many separate two-sample
-  tests, ANOVA uses sample data from all groups at once and compares the
-  variation between the group means to the variation within the groups. If the
-  variation between groups is large relative to the variation within groups, we
-  have evidence that not all population means are equal. In an introductory
-  statistics course, ANOVA provides a practical method for testing differences
-  among several groups using a single hypothesis test.
+  different from the others. ANOVA uses sample data from all groups at once and compares the variation between the group means to the variation within the groups. If the variation between groups is large relative to the variation within groups, we
+  have evidence that not all population means are equal.  If there is no difference between the means, the variation between groups will be similar to the variation within groups. ANOVA provides a practical method for testing differences
+  among several groups using a single hypothesis test. The f-test to compare means is always a one-tailed test since the alternative hypothesis is that at least one mean is different from the others.
  </p> 
+ <p> The null hypothesis is stated as <m>H_0:\mu_1=\mu_2=\cdots=\mu_k</m></p>
+  <p>and the alternative hypothesis is <m>H_a:</m> at least one population mean is different from the others. </p>
+
 <definition xml:id="def-anova">
   <statement>
     <p>
       <term>Analysis of variance</term>, or <term>ANOVA</term>, is a hypothesis
       test used to determine whether the means of three or more populations are
-      equal. The hypotheses are
-      <m>H_0:\mu_1=\mu_2=\cdots=\mu_k</m>
-      and
+      equal. The hypotheses are <m>H_0:\mu_1=\mu_2=\cdots=\mu_k</m> and 
       <m>H_a:</m> at least one population mean is different. </p>
-<p> ANOVA compares the   variation between the groups to the variation within the groups using the test statistic
-      <md>F=\dfrac{MS_{\text{between}}}{MS_{\text{within}}}</md>,
+      <p> ANOVA compares the variation between the groups to the variation within the groups using the test statistic 
+      <md>F=\dfrac{MSB}{MSW}</md>,
       where
-      <m>MS_{\text{between}}=\dfrac{SS_{\text{between}}}{df_{\text{between}}}</m>
+      <m>MSB=\dfrac{SS_{\text{between}}}{df_{\text{between}}}</m>
       and
-      <m>MS_{\text{within}}=\dfrac{SS_{\text{within}}}{df_{\text{within}}}</m>.
-      Here,
-      <m>SS_{\text{between}}</m> measures variation among the sample means,
+      <m>MSW=\dfrac{SS_{\text{within}}}{df_{\text{within}}}</m>. </p>
+      <p> Here,
+      <m>SS_{\text{between}}</m> measures variation between the sample means,
       <m>SS_{\text{within}}</m> measures variation within the groups,
       <m>df_{\text{between}}=k-1</m>,
       and
-      <m>df_{\text{within}}=n-k</m>.
+      <m>df_{\text{within}}=n-k</m>, where <m>n</m> is the total number of observations and <m>k</m> is the number of groups.
     </p>
   </statement>
 </definition>
 
+<p>  The assumptions for a one-way ANOVA are: </p>
+<ol>
+  <li>
+    <p>
+      <em>Independence:</em> The observations are independent within and across groups.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Normality:</em> The population distribution of the response variable is approximately normal for each group.
+    </p>
+  </li>
+  <li>
+    <p>
+      <em>Equal variances:</em> The population variances are equal across the groups.
+    </p>
+  </li>
+</ol>
 
-
+ 
 
 
 
@@ -64,9 +83,524 @@
 
 </subsection>
 
+<subsection xml:id="subsec-ANOVAExample">
+  <title>Examples for ANOVA</title>
+<p> We will use a small sample for the first example so you can understand the process for ANOVA. Then we will use technology exclusively for the computations. </p>
+    <p><term> Coral Reef Restoration</term></p>
+     <p> A marine biologist wants to compare the mean growth of coral fragments under three different reef restoration methods. Twelve coral fragments are randomly assigned so that four fragments are treated with each method. After six months, the increase in coral length, in centimeters, is recorded.
+    </p>
+    <table>
+      <title>Coral Growth under Three Restoration Methods</title>
+      <tabular>
+        <row>
+          <cell>Method A</cell>
+          <cell>Method B</cell>
+          <cell>Method C</cell>
+        </row>
+        <row><cell>4.2</cell><cell>5.1</cell><cell>6.0</cell></row>
+        <row><cell>4.8</cell><cell>5.4</cell><cell>6.3</cell></row>
+        <row><cell>5.0</cell><cell>5.0</cell><cell>5.8</cell></row>
+        <row><cell>4.5</cell><cell>5.6</cell><cell>6.1</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean coral growth
+      is the same for the three restoration methods.
+    </p>
+
+<example xml:id="ex-anova-coralreef ">
+<title> Coral Reef</title>
+ <statement>
+<p>State the hypotheses, compute the means, compute the test statistic and p-value, and state the conclusion in context. </p> 
+</statement>
+<solution> <title> Hypotheses</title> 
+ <p> 
+This is a one-way ANOVA test comparing three means. The observations are independent within and across groups. We are assuming the distribution is approximately normal and the population variances are equal across the groups. 
+</p>
+<p>  The hypotheses are: </p>
+ <p>   <m>H_0:\mu_A=\mu_B=\mu_C</m></p>
+   <p>  <m>H_a:</m> at least one population mean differs.   </p>
+</solution>
+<solution> <title> Computations for Statistical Test</title> 
+    <p>
+      First, compute the sample mean and sample standard deviation for each coral reef restoration method. We will use technology to help us out. </p> 
+<p> In the calculator, input the data each method in a different List and compute the means and standard deviations. For the statistics press the [STAT] button and one arrow right to CALC and select 1:1-var Stats and identify where the data is located. You can list all the data in List 4 to compute the grand mean.</p>
+   
+
+<figure xml:id="CoralReefData1">
+            <caption>Input Coral Reef Data into Calculator</caption>
+            <image source="ANOVAreef1.png" width="90%">
+                <shortdescription>input data values.</shortdescription>
+            </image>
+        </figure> 
+    <p>
+      The summary statistics for each method are as follows:
+    </p>
+    <p> <m>\bar{x}_A=4.625</m> and <m> s_A = 0.350</m> </p>
+    <p> <m>\bar{x}_B=5.275</m> and <m> s_B = 0.275</m></p>
+    <p> <m>\bar{x}_C=6.05</m>.and <m> s_C = 0.208</m></p>
+    <p>  The grand mean which combines all the data is
+      <m>\bar{X} _{GM}=5.3167</m>.
+    </p>
+
+<p>   The sum of squares between groups is the sample size of 4 per group multiped by the difference in the sample mean and grand mean squared. This finds the variance among the means by using the sample sizes as weights.
+<md> SSB= \sum n_i(\bar{x}_i - \bar{X}_{GM})^2 </md>
+      <md>
+        SSB= 4(4.625-5.3167)^2+4(5.275-5.3167)^2+4(6.05-5.3167)^2 \approx 4.072.
+      </md>
+    </p>
+    <p> The sum of squares within groups is
+<md> SSW=\sum{(n_i -1) (s_i)^2} </md>
+<md> SSW= (4-1)(.35)^2 + (4-1)(.275)^2 +(4-1).208)^2    </md>
+  <md> SSW\approx 0.3675+0.2269+0.1298=0.7242   </md>
+    </p>
+    <p>
+      The total sum of squares is
+      <m>SST=SSB+SSW = 4.072+0.7242=4.7962</m>.
+    </p>
+<p> There are 3 methods thus k=3 and dfN=k-1=3-1=2</p>
+<p> The total sample is 12 thus N=12 and dfD =N-k=12-3=9 </p>
+<p> For the means squares: 
+<md> MSB=\frac{SSB}{k-1} = \frac{4.072}{2}=2.036</md>
+<md> MSW=\frac{SSW}{N-k} = \frac{0.7242}{9}=0.0805</md> </p> 
+    <p>
+      The test statistic is 
+      <md>F=\dfrac{MSB}{MSW}=\dfrac{2.036}{0.0805}\approx 25.29</md>.
+    </p>
+    <p>
+      The <m>p</m>-value for an <m>F</m>-distribution with
+      <m>dfN=2</m> and <m>dfD=9</m> for a right tailed test is <m>p=0.00011</m> using StatKey.
+    </p>
+
+<p> Summarizing these values in ANOVA table: </p>
+    <table>
+      <title>ANOVA Table</title>
+      <tabular>
+        <row>
+          <cell>Source</cell>
+          <cell>Sum of Squares</cell>
+          <cell>Degrees of Freedom</cell>
+          <cell>Mean Square</cell>
+          <cell><m>F</m></cell>
+        </row>
+        <row>
+          <cell>Between Groups</cell>
+          <cell><m>4.072</m></cell>
+          <cell><m>2</m></cell>
+          <cell><m>2.036</m></cell>
+          <cell><m>25.29</m></cell>
+        </row>
+        <row>
+          <cell>Within Groups</cell>
+          <cell><m>0.7242</m></cell>
+          <cell><m>9</m></cell>
+          <cell><m>0.0805</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Total</cell>
+          <cell><m>4.7962</m></cell>
+          <cell><m>11</m></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+</solution> 
+<solution> <title> Statistical Test with TI-83 Plus</title> 
+<p> <term> Input </term> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <term> 1:1 Edit</term>.  </p>
+  
+<figure xml:id="CoralReefData2">
+            <caption>Input Coral Reef Data</caption>
+            <image source="ANOVAreef2.png" width="90%">
+                <shortdescription>input data values into lists.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> F: ANOVA( </term> and identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test. </p>   
+  
+<figure xml:id="CoralReefTest1">
+            <caption>ANOVA test for Coral Reef Data</caption>
+            <image source="ANOVAreef3.png" width="90%">
+                <shortdescription>On TI83 select F ANOVA and identify location of data as L1,l2,l3.</shortdescription>
+            </image>
+        </figure> 
+  
+<figure xml:id="CoralReefTest2">
+            <caption>ANOVA Coral Reef Results</caption>
+            <image source="ANOVAreef4.png" width="90%">
+                <shortdescription>F-test is 25.27 and p-value=.0002.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The display lets you know you performed the One-way ANOVA. The test statistic is <m>F=25.27</m> and value of <m>p=0.0002</m>. The values under Factor are the between the data with SSB=4.07 and MSB=2.036. Using the arrow button down the Error is the Within data so SSW=0.725 and MSW=0.0806. </p>
+ <p> The test statistic from the ANOVA table is
+  <md>F=\dfrac{MSB}{MSW}=\dfrac{2.0358}{0.08056} = 25.27</md>.
+ </p>
+<p>  The <m>p</m>-value for an <m>F</m>-distribution with
+<m>dfN=2</m> and <m>dfD=9</m> for a right tailed test is <m>p=0.0002</m>.
+    </p>
+</solution> 
+<solution> <title> Statistical Test with TI-84</title> 
+<p> <term> Input </term> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <term> 1:1 Edit</term>.  </p>
+  
+<figure xml:id="CoralReefData3">
+            <caption>Input Coral Reef Data</caption>
+            <image source="ANOVAreef5.png" width="90%">
+                <shortdescription>input data values.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> H: ANOVA( </term> and [ENTER] button and then identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test. </p>   
+  
+<figure xml:id="CoralReefTest3">
+            <caption> ANOVA test for Coral Reef Data </caption>
+            <image source="ANOVAreef6.png" width="90%">
+                <shortdescription> On TI84 select H: ANOVA and identify location of data as L1,l2,l3.</shortdescription>
+            </image>
+        </figure> 
+  
+<figure xml:id="CoralReefTest4">
+            <caption>ANOVA Coral Reef Results</caption>
+            <image source="ANOVAreef7.png" width="90%">
+                <shortdescription>input data values.</shortdescription>
+            </image>
+        </figure> 
+<p> The display lets you know you performed the one-way ANOVA. The test statistic is <m>F=25.27</m> and p-value of <m>p=0.0002</m>. The values under Factor are the between the data with SSB=4.07 and MSB=2.036. Using the arrow button down the Error is the Within data so SSW=0.725 and MSW=0.0806. </p>
+</solution>
+
+  <solution> <title> Conclusion</title> 
+    <p>
+      Since <m>p \lt 0.05</m>, we reject the null hypothesis.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that at least one mean coral growth differs among the coral reef
+      restoration methods.
+    </p>
+  </solution>
+</example> 
+
+<p> <term> Tornado Alley</term> </p> 
+ <p> Research suggests that tornado alley has shifted eastward from the Great Plains with global warming.  A climate researcher wants to compare the mean annual number of tornadoes in four states: Colorado, Oklahoma, Texas, and Missouri. The researcher
+      records the number of tornadoes for each state over five recent years.
+    </p>
+    <table>
+      <title>Annual Number of Tornadoes</title>
+      <tabular>
+        <row>
+          <cell>Colorado</cell>
+          <cell>Oklahoma</cell>
+          <cell>Texas</cell>
+          <cell>Missouri</cell>
+        </row>
+        <row><cell>48</cell><cell>67</cell><cell>132</cell><cell>41</cell></row>
+        <row><cell>52</cell><cell>71</cell><cell>145</cell><cell>38</cell></row>
+        <row><cell>50</cell><cell>69</cell><cell>138</cell><cell>44</cell></row>
+        <row><cell>47</cell><cell>73</cell><cell>141</cell><cell>40</cell></row>
+        <row><cell>53</cell><cell>68</cell><cell>136</cell><cell>42</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean annual number
+      of tornadoes is the same for the four states.
+    </p>
+
+<example xml:id="ex-anova-tornadoes ">
+<title> Tornadoes </title> 
+  <statement>
+<p>State the hypotheses, compute the means, test statistic and p-value with technology, and state the conclusion in context.</p> 
+  </statement>
+  <solution> <title> Hypotheses </title>
+    <p>  This is a one-way ANOVA test comparing four means to see if they are all equal or if at least one is different.
+    </p>
+    <p> The hypotheses are: </p>
+    <p> <m>H_0:\mu_1=\mu_2=\mu_3=\mu_4</m> </p>
+    <p> <m>H_a:</m> at least one population mean differs.
+    </p>
+</solution>
+  <solution> <title> Computations </title>
+    <p>  First compute the sample means for each state:</p>
+    <p>  <m>\bar{x}_{\text{Colorado}}=50.0</m> and <m>s_{CO}=2.55</m></p>
+    <p> <m>\bar{x}_{\text{Oklahoma}}=69.6</m> and <m>s_{OK}=2.41</m></p>
+    <p> <m>\bar{x}_{\text{Texas}}=138.4</m> and <m>s_{TX}=4.93</m></p>
+    <p> <m>\bar{x}_{\text{Missouri}}=41.0</m> and <m>s_{MO}=2.24</m></p>
+    <p> The grand mean for all these tornadoes is</p>
+    <p><m> \bar{X}_{GM}=\frac{50+69.6+138.4+41}{4}=74.75.  </m>  </p>
+    <p>
+      The sum of squares between groups is
+      <md>
+        SSB=5(50-74.75)^2+5(69.6-74.75)^2+5(138.4-74.75)^2+5(41-74.75)^2 = 29147.35.
+      </md>
+    </p>
+    <p>
+      The sum of squares within groups is found by adding the squared deviations
+      within each state:
+      <md> SSW= (5-1)(2.55)^2 + (5-1)(2.41)^2 +(5-1)(4.93)^2 +(5-1)(2.24)^2    </md>
+<md>SSW = 26.01+23.23+97.22+20.07=166.53  </md>
+      
+    </p>
+    <p>
+      The total sum of squares is
+      <md>
+        SST=SSB+SSW=29147.35+166.53=29313.88.
+      </md>
+    </p>
+    <table>
+      <title>ANOVA Table</title>
+      <tabular>
+        <row>
+          <cell>Source</cell>
+          <cell>Sum of Squares</cell>
+          <cell>Degrees of Freedom</cell>
+          <cell>Mean Square</cell>
+          <cell><m>F</m></cell>
+        </row>
+        <row>
+          <cell>Between Groups</cell>
+          <cell><m>29147.35</m></cell>
+          <cell><m>3</m></cell>
+          <cell><m>9715.78</m></cell>
+          <cell><m>933.31</m></cell>
+        </row>
+        <row>
+          <cell>Within Groups</cell>
+          <cell><m>166.53</m></cell>
+          <cell><m>16</m></cell>
+          <cell><m>10.41</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Total</cell>
+          <cell><m>29313.88</m></cell>
+          <cell><m>19</m></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      The test statistic is
+      <md>
+        F=\frac{MSB}{MSW}=\frac{9715.78}{10.41}\approx 933.31.
+      </md>
+    </p>
+    <p>
+      The <m>p</m>-value for an <m>F</m>-distribution with
+      <m>dfN=3</m> and <m>dfD=16</m> is <m>p \approx 0</m> since the test statistic is very large.
+    </p>
+</solution> 
+<solution> <title> Tornadoes with TI-83 Plus</title> 
+<p> Input the data for each state in a different List. Press the [STAT] button and under the EDIT menu select <term> 1:1 Edit</term>.  </p>
+   
+<figure xml:id="TornadoData1">
+            <caption>Input Tornado Data</caption>
+            <image source="ANOVAtorn1.png" width="90%">
+                <shortdescription>input data values into lists.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> F: ANOVA( </term> and identify the four lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [,] button  and [2nd] button [4] for L4 and  then [ )] button, then press [ENTER] to compute the test. </p>   
+   
+<figure xml:id=" TornadoData2">
+            <caption>ANOVA test for Tornado Data</caption>
+            <image source="ANOVAtorn2.png" width="90%">
+                <shortdescription>On TI83 select F ANOVA and identify location of data as L1,L2,L3,L4.</shortdescription>
+            </image>
+        </figure> 
+   
+
+<figure xml:id="TornadoData3">
+            <caption>ANOVA Tornado Results</caption>
+            <image source="ANOVAtorn3.png" width="90%">
+                <shortdescription>F-test is 25.27 and p-value=.0002.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The display lets you know you performed the one-way ANOVA. The test statistic is <m>F=934.21</m> and value of <m>p=0 </m>. The values under Factor are the between the data with SSB=29147.35 and MSB=9715.783. Using the arrow button down the Error is the Within data so SSW=166.4 and MSW=10.40. </p>
+ </solution> 
+<solution> <title> Tornadoes with TI-84</title> 
+<p> <term> Input </term> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <term> 1:1 Edit</term>.  </p>
+  
+<figure xml:id="TornadoData4">
+            <caption>Input Tornado Data</caption>
+            <image source="ANOVAtorn4.png" width="90%">
+                <shortdescription>input data values into lists.</shortdescription>
+            </image>
+        </figure> 
+<p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> H: ANOVA( </term> and [ENTER] button and then identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test. </p>   
+  
+<figure xml:id=" TornadoData5">
+            <caption>ANOVA test for Tornado Data</caption>
+            <image source="ANOVAtorn5.png" width="90%">
+                <shortdescription>On TI84 select H ANOVA and identify location of data as L1,L2,L3,L4.</shortdescription>
+            </image>
+        </figure> 
+      
+    
+<figure xml:id="TornadoData6">
+            <caption>ANOVA Tornado Results</caption>
+            <image source="ANOVAtorn6.png" width="90%">
+                <shortdescription>F-test is 934.2 and p-value=0.</shortdescription>
+            </image>
+        </figure> 
+<p> The display lets you know you performed the one-way ANOVA. The test statistic is <m>F=934.21</m> and value of <m>p=0 </m>. The values under Factor are the between the data with SSB=29147.35 and MSB=9715.783. Using the arrow button down the Error is the Within data so SSW=166.4 and MSW=10.40. </p>
+</solution>
+
+<solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to conclude that at least one mean annual tornado count differs among Colorado, Oklahoma, Texas, and Missouri. The obvious choice is that Texas has more tornadoes than the other states.
+    </p>
+  </solution>
+</example> 
+
+</subsection>
+
+
+
+
 <subsection xml:id="subsec-ANOVAPractice">
   <title> ANOVA Practice Problems </title>
-<p> For each problem,. </p> 
+<p> For each problem, state the hypotheses, compute the test statistic, find the p-value, and state the conclusion in context. </p> 
+
+<p> <term> Seedlings</term> </p>
+    <p>
+      A life scientist wants to compare the mean plant growth of bean seedlings
+      grown under three different fertilizer treatments. A random sample of
+      seedlings is assigned to each treatment, and after four weeks the growth
+      of each plant, in centimeters, is recorded.
+    </p>
+    <table>
+      <title>Plant Growth under Three Fertilizer Treatments</title>
+      <tabular>
+        <row>
+          <cell>Fertilizer A</cell>
+          <cell>Fertilizer B</cell>
+          <cell>Fertilizer C</cell>
+        </row>
+        <row><cell>12</cell><cell>15</cell><cell>18</cell></row>
+        <row><cell>14</cell><cell>16</cell><cell>17</cell></row>
+        <row><cell>13</cell><cell>14</cell><cell>19</cell></row>
+        <row><cell>15</cell><cell>17</cell><cell>20</cell></row>
+        <row><cell>11</cell><cell>15</cell><cell>18</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean plant growth
+      is the same for the three fertilizer treatments.
+    </p>
+<exercise xml:id="ex-anova-seedlings">
+<title> Seedlings</title> 
+  <statement>
+<p>State the hypotheses, compute the means, test statistic and p-value with technology, and state the conclusion in context.</p>
+  </statement>
+  <solution> <title> Hypotheses</title> 
+    <p>
+      This is a one-way ANOVA test comparing three means.
+    </p>
+    <p>
+      The hypotheses are
+      <m>H_0:\mu_A=\mu_B=\mu_C</m> </p>
+  <p> <m>H_a:</m> at least one population mean differs.
+    </p>
+</solution>
+<solution> <title> Computations</title>
+   <p>  First compute the sample means and standard deviations:</p>
+   <p><m>\bar{x}_A=13</m> and <m> x_A = 1.58</m> </p>
+   <p> <m>\bar{x}_B=15.4</m> and <m> x_B = 1.14</m> </p>
+  <p>  <m>\bar{x}_C=18.4</m> and <m> x_C = 1.14</m> </p>
+<p>  The grand mean is  <m>\bar{X}_{GM}=15.6</m>.
+    </p>
+    <p> The sum of squares between groups is</p>
+<p> <m>  SSB=n\sum(\bar{x}_i-\bar{x})^2 </m></p>
+   <p> <m>    SSB=5(13-15.6)^2+5(15.4-15.6)^2+5(18.4-15.6)^2 =73.2.  </m>  </p>
+    <p>
+
+      The sum of squares within groups is
+      <m>SSW=10+5.2+5.2=20.4</m>.
+    </p>
+    <p>
+      The total sum of squares is
+      <m>SST=SSB+SSW=73.2+20.4=93.6</m>.
+    </p>
+    <table>
+      <title>ANOVA Table</title>
+      <tabular>
+        <row>
+          <cell>Source</cell>
+          <cell>Sum of Squares</cell>
+          <cell>Degrees of Freedom</cell>
+          <cell>Mean Square</cell>
+          <cell><m>F</m></cell>
+        </row>
+        <row>
+          <cell>Between Groups</cell>
+          <cell><m>73.2</m></cell>
+          <cell><m>2</m></cell>
+          <cell><m>36.6</m></cell>
+          <cell><m>21.53</m></cell>
+        </row>
+        <row>
+          <cell>Within Groups</cell>
+          <cell><m>20.4</m></cell>
+          <cell><m>12</m></cell>
+          <cell><m>1.7</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Total</cell>
+          <cell><m>93.6</m></cell>
+          <cell><m>14</m></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      The test statistic is
+      <m>F=\dfrac{MSB}{MSW}=\dfrac{36.6}{1.7}\approx 21.53</m>.
+    </p>
+    <p>
+      The <m>p</m>-value for an <m>F</m>-distribution with
+      <m>dfN=2</m> and <m>dfD=12</m> is <m>p=0.00011</m>.
+    </p>
+</solution>
+<solution> <title> Seedlings with TI-84</title> 
+<p> <term> Input </term> the data for each method in a different List. Press the [STAT] button and under the EDIT menu select <term> 1:1 Edit</term>.  </p>
+
+  
+<figure xml:id=" SeedlingData">
+            <caption>ANOVA test for Seedling Data</caption>
+            <image source="ANOVAseed1.png" width="90%">
+                <shortdescription>On TI84 select H ANOVA and identify location of data as L1,L2,L3.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> H: ANOVA( </term> and [ENTER] button and then identify the three lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 then [ )] button, then press [ENTER] to compute the test. </p>    
+    
+<figure xml:id="SeedlingTest">
+            <caption>ANOVA Seedling Results</caption>
+            <image source="ANOVAseed2.png" width="90%">
+                <shortdescription>F-test is 21.53 and p-value=0.00011</shortdescription>
+            </image>
+        </figure> 
+<p> The display lets you know you performed the one-way ANOVA. The test statistic is <m>F=21.529</m> and value of <m>p=0.000107 </m>. The values under Factor are the between the data with SSB=73.2 and MSB=36.6. Using the arrow button down the Error is the Within data so SSW=20.4 and MSW=1.7 </p>
+</solution>
+
+<solution> <title> Conclusion</title>
+    <p>  Since <m>p \lt0.05</m>, we reject <m>H_0</m>.    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that at least one mean plant growth differs among the three
+      fertilizer treatments.
+    </p>
+  </solution>
+</exercise>
+
+
+
+
+
 </subsection>
 
 

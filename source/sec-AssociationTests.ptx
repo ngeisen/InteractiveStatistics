@@ -35,7 +35,7 @@
 <p> The test statistic is the difference between the observed and expected value for each cell, squared, and divided by the expected value. Then we find the sum of the values. The formula is the same as the chi-square goodness-of-fit test. But we much be careful to pair up each cell. The formula for the test statistic is
       <md>\chi^2=\sum \frac{(O-E)^2}{E}</md> </p>
 <p> When the test statistic is small, that indicates there is little change in the observed and expected values thus there is no association and the variables are independent of each other. If the change is larger then there is an association and the variables are dependent on one or more of the categories. </p>
-
+<p> The assumptions for the chi-square independence test is that the data are obtained from a random sample and the expected value in each cell is at least 5. </p> 
 
 </subsection>
 
@@ -268,6 +268,7 @@
 <p><m> H_0: p_1 = p_2 = p_3 = p_4 </m></p>
 <p><m> H_a: </m> At least one proportion differs from the others.</p>
 <p> If the research does not reject the null hypothesis, it can be assumed the proportions are equal and the differences are due to chance. Hence, the proportion of students who smoke is the same across the grade levels. When the null hypothesis is rejected, it can be assumed that the proportions are not all equal. The computational procedures is the same for the test of independence. </p>
+<p> The assumptions for the chi-square homogeneity of proportions test is that the data are obtained from a random sample and the expected value in each cell is at least 5. </p> 
  
 <definition xml:id="def-chi-square-homogeneity">
   <statement>
