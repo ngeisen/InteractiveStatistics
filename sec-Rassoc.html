@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Associations with R</title>
+<title>Association Tests with R</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -63,6 +63,18 @@ eBookConfig.enable_chatcodes =  false;
 <script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-r' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-r",
+  "linked": true,
+  "linkKey": "linked-r",
+  "autoeval": false,
+  "languages": [
+    "r"
+  ],
+  "evalButtonText": "Evaluate (R)"
+});
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -518,12 +530,22 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Rcorr.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Correlation Tests with R</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-CorrTests" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Correlation Between Quantitative Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-AssocTests" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Association Between Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RCorrTestsHurricane" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Hurricane Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RcorrTestForearm" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Correlation of Forearm Length and Height</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Associations with R</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Association Tests with R</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-GoodFit" class="internal"><span class="codenumber">10.7.1</span> <span class="title">Chi-square Goodness of Fit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Independence" class="internal"><span class="codenumber">10.7.2</span> <span class="title">Chi-square Independence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Homogeneity" class="internal"><span class="codenumber">10.7.3</span> <span class="title">Homogeneity of Proportions Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -539,11 +561,256 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="sec-Rassoc">
 <h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Associations with R</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Association Tests with R</span>
 </h2>
-<div class="para" id="sec-Rassoc-2">Chi Square tests for Association.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Rassoc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-Rassoc-2">
+<div class="para" id="sec-Rassoc-2-1">In this section we will perform test for association between categorical variables. We will begin with the chi-square goodness of fit test for one categorical variable. We will check for the independence between two categorical variables. Then we will check the homogeneity for multiple proportions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Rassoc-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="sec-Rassoc-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-Rassoc-3-1">
+<div class="para" id="sec-Rassoc-3-1-1">At the end of this section you will be able to<div class="autopermalink" data-description="Paragraph"><a href="#sec-Rassoc-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 10.7: Associations with R"><a href="#sec-Rassoc" title="Copy heading and permalink for Section 10.7: Associations with R" aria-label="Copy heading and permalink for Section 10.7: Associations with R">🔗</a></div>
+</div>
+<ol class="decimal" id="sec-Rassoc-3-2">
+<li id="sec-Rassoc-3-2-1">
+<div class="para" id="sec-Rassoc-3-2-1-1">Use R for the chi-square goodness of fit test.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Rassoc-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 10.7.1"><a href="#sec-Rassoc-3-2-1" title="Copy heading and permalink for Objective 10.7.1" aria-label="Copy heading and permalink for Objective 10.7.1">🔗</a></div>
+</li>
+<li id="sec-Rassoc-3-2-2">
+<div class="para" id="sec-Rassoc-3-2-2-1">Use R for the chi-square independence test.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Rassoc-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 10.7.2"><a href="#sec-Rassoc-3-2-2" title="Copy heading and permalink for Objective 10.7.2" aria-label="Copy heading and permalink for Objective 10.7.2">🔗</a></div>
+</li>
+<li id="sec-Rassoc-3-2-3">
+<div class="para" id="sec-Rassoc-3-2-3-1">Use R for the chi-square homogeneity of proportions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Rassoc-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 10.7.3"><a href="#sec-Rassoc-3-2-3" title="Copy heading and permalink for Objective 10.7.3" aria-label="Copy heading and permalink for Objective 10.7.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 10.7"><a href="#sec-Rassoc-3" title="Copy heading and permalink for Objectives 10.7" aria-label="Copy heading and permalink for Objectives 10.7">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-R-GoodFit">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chi-square Goodness of Fit</span>
+</h3>
+<div class="para" id="subsec-R-GoodFit-2">
+<dfn class="terminology">Candy Flavors</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-3">A candy enthusiast wants to test if the number of candies for each flavor in a bag of Skittles is the same. He opens a big of skittles and collects a random sample of 100 candies and organizes them into flavors with the following results: 22 strawberry, 24 orange, 14 grape, 17 lemon, and 23 green apple.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-4">If there was no difference, one would expect each flavor to have the same frequency. Thus the hypotheses are:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-5">
+<span class="process-math">\(H_0:\)</span> The flavor frequencies are equal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-6">
+<span class="process-math">\(H_a:\)</span> The flavor frequencies are not equal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-7">We will create a vector to list the values, then we perform the <em class="emphasis">chisq.test</em> to check for equal frequencies. Click on Evaluate R to perform the test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-R-GoodFit-8" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Flavors= c(22,24,14,17,23)
+chisq.test(Flavors)
+</script></div>
+<div class="para" id="subsec-R-GoodFit-9">
+<em class="emphasis">Interpret</em> The test statistic for equal frequency is <span class="process-math">\(\chi^2 = 3.70\)</span> with p-value of <span class="process-math">\(p=0.448\)</span> which is not significant. Thus, we cannot conclude the flavors are not equally distributed.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-10">
+<dfn class="terminology">Intersection Accidents</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-11">A traffic safety researcher wants to test whether the distribution of accidents among four types of intersections matches a previously reported pattern. Past transportation data suggest that <span class="process-math">\(20\%\)</span> of intersection accidents occur at roundabouts, <span class="process-math">\(30\%\)</span> at stop-sign intersections, <span class="process-math">\(35\%\)</span> at traffic-light intersections, and <span class="process-math">\(15\%\)</span> at other types of intersections. To investigate whether a more recent sample follows this distribution, the researcher records <span class="process-math">\(400\)</span> intersection accidents and classifies each one by intersection type.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-R-GoodFit-12"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Observed Accident Counts by Intersection Type<div class="autopermalink" data-description="Table 10.7.1: Observed Accident Counts by Intersection Type"><a href="#subsec-R-GoodFit-12" title="Copy heading and permalink for Table 10.7.1: Observed Accident Counts by Intersection Type" aria-label="Copy heading and permalink for Table 10.7.1: Observed Accident Counts by Intersection Type">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Intersection Type</td>
+<td class="l m b0 r0 l0 t0 lines">Observed Count</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Roundabout</td>
+<td class="l m b0 r0 l0 t0 lines">68</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Stop Sign</td>
+<td class="l m b0 r0 l0 t0 lines">134</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Traffic Light</td>
+<td class="l m b0 r0 l0 t0 lines">146</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Other</td>
+<td class="l m b0 r0 l0 t0 lines">52</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-R-GoodFit-13">At the <span class="process-math">\(0.05\)</span> significance level, test whether the population distribution of accidents differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-14">This is a chi-square goodness-of-fit test for a specific pattern. The hypotheses are:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-15">
+<span class="process-math">\(H_0:\)</span> the population proportions are <span class="process-math">\(0.20\)</span> for roundabouts, <span class="process-math">\(0.30\)</span> for stop-sign intersections, <span class="process-math">\(0.35\)</span> for traffic-light intersections, and <span class="process-math">\(0.15\)</span> for other intersections,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-16">
+<span class="process-math">\(H_a:\)</span> the population accident distribution is different.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-GoodFit-17">We will create two vectors, one for the observed values and one for the expected values as the decimal version of the percentages. When we perform the test we are programming R to compare p= percentages that are expected.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-R-GoodFit-18" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Accidents=c(68,134,146,52)
+Expected=c(.20,.30,.35,.15)
+chisq.test(Accidents, p=Expected)
+</script></div>
+<div class="para" id="subsec-R-GoodFit-19">
+<em class="emphasis">Interpret</em> The test statistic to match a specific pattern is <span class="process-math">\(\chi^2 = 4.7571\)</span> with p-value of <span class="process-math">\(p=0.1905\)</span> which is not significant. Thus, we cannot conclude the distributions is different than previously claimed. There is not sufficient evidence at the 0.05 significance level to conclude that the population distribution of accidents among roundabouts, stop-sign intersections, traffic-light intersections, and other types of intersections differs from the reported distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-GoodFit-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 10.7.1: Chi-square Goodness of Fit"><a href="#subsec-R-GoodFit" title="Copy heading and permalink for Subsection 10.7.1: Chi-square Goodness of Fit" aria-label="Copy heading and permalink for Subsection 10.7.1: Chi-square Goodness of Fit">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-R-Independence">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chi-square Independence Test</span>
+</h3>
+<div class="para" id="subsec-R-Independence-2">
+<dfn class="terminology">Plant Growth</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-3">A biologist wants to determine whether plant growth is independent of fertilizer type. A sample of <span class="process-math">\(90\)</span> plants is randomly assigned to one of three fertilizer types, and after a fixed growing period each plant is classified as having low, medium, or high growth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-R-Independence-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Plant Growth by Fertilizer Type<div class="autopermalink" data-description="Table 10.7.2: Plant Growth by Fertilizer Type"><a href="#subsec-R-Independence-4" title="Copy heading and permalink for Table 10.7.2: Plant Growth by Fertilizer Type" aria-label="Copy heading and permalink for Table 10.7.2: Plant Growth by Fertilizer Type">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Fertilizer Type</td>
+<td class="l m b0 r0 l0 t0 lines">Low Growth</td>
+<td class="l m b0 r0 l0 t0 lines">Medium Growth</td>
+<td class="l m b0 r0 l0 t0 lines">High Growth</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">A</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">B</td>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">C</td>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">11</td>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-R-Independence-5">At the <span class="process-math">\(0.05\)</span> significance level, test whether plant growth category is independent of fertilizer type.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-6">First will need to create a matrix in R. The base format is Variable=matrix(c(C1, C2, C3), rows, columns) where the data is listed vertically (down column) and then we perform the <em class="emphasis">chisq.test</em>. We will list all the low growth first, then medium growth, and then high growth. There are 3 rows for fertilizer and 3 columns for growth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-7">
+<code class="code-inline tex2jax_ignore">Plants=matrix(c(14,9,7, 10,12,11, 6,9,12)3,3) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-8">Check that the data looks correct before performing the test. Just type the variable name to check.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-9">
+<code class="code-inline tex2jax_ignore">Plants </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-10">Now perform the chi-square independence test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-11">
+<code class="code-inline tex2jax_ignore"> chisq.test(Plants) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-12">If you want to see the expected values enter the command:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-13">
+<code class="code-inline tex2jax_ignore"> chisq.test(Plants)$expected </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Independence-14">You can use the following R code block to perform the test, click on Evaluate R.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-R-Independence-15" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Plants=matrix(c(14,9,7, 10,12,11, 6,9,12),3,3)
+chisq.test(Plants)
+</script></div>
+<div class="para" id="subsec-R-Independence-16">
+<em class="emphasis">Interpret</em> The test statistic for independence is <span class="process-math">\(\chi^2 = 4.7818\)</span> with p-value of <span class="process-math">\(p=0.3104\)</span> which is not significant since it is greater than 0.05. There is not sufficient evidence at the 0.05 significance level to conclude that plant growth category and fertilizer type are dependent.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Independence-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 10.7.2: Chi-square Independence Test"><a href="#subsec-R-Independence" title="Copy heading and permalink for Subsection 10.7.2: Chi-square Independence Test" aria-label="Copy heading and permalink for Subsection 10.7.2: Chi-square Independence Test">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-R-Homogeneity">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Homogeneity of Proportions Test</span>
+</h3>
+<div class="para" id="subsec-R-Homogeneity-2">
+<dfn class="terminology">Crimes</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-3">A criminal justice researcher wants to compare the distribution of major crimes in three United States cities. The researcher selects random samples of police reports from each city and classifies each reported crime as violent crime, property crime, or drug-related crime.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-R-Homogeneity-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Major Crime Type by City<div class="autopermalink" data-description="Table 10.7.3: Major Crime Type by City"><a href="#subsec-R-Homogeneity-4" title="Copy heading and permalink for Table 10.7.3: Major Crime Type by City" aria-label="Copy heading and permalink for Table 10.7.3: Major Crime Type by City">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">City</td>
+<td class="l m b0 r0 l0 t0 lines">Violent Crime</td>
+<td class="l m b0 r0 l0 t0 lines">Property Crime</td>
+<td class="l m b0 r0 l0 t0 lines">Drug-Related Crime</td>
+<td class="l m b0 r0 l0 t0 lines">Total</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">City A</td>
+<td class="l m b0 r0 l0 t0 lines">48</td>
+<td class="l m b0 r0 l0 t0 lines">72</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">150</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">City B</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+<td class="l m b0 r0 l0 t0 lines">84</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">150</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">City C</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines">66</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">150</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Total</td>
+<td class="l m b0 r0 l0 t0 lines">144</td>
+<td class="l m b0 r0 l0 t0 lines">222</td>
+<td class="l m b0 r0 l0 t0 lines">84</td>
+<td class="l m b0 r0 l0 t0 lines">450</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-R-Homogeneity-5">At the <span class="process-math">\(\alpha = 0.05\)</span> significance level, test whether the proportions of major crime types are the same in the three cities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-6">The process is the same for the independence tests.  We will need to create a matrix in R. The base format is Variable=matrix(c(C1, C2, C3), rows, columns) where the data is listed vertically (down column) and then we perform the <em class="emphasis">chisq.test</em>. There are 3 rows for cities and 3 columns for crimes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-7">
+<code class="code-inline tex2jax_ignore">Crimes=matrix(c(48,36,60,72,84,66,30,30,24),3,3) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-8">Check that the data looks correct before performing the test. Just type the variable name to check.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-9">
+<code class="code-inline tex2jax_ignore">Crimes </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-10">Now perform the chi-square homogeneity test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-11">
+<code class="code-inline tex2jax_ignore"> chisq.test(Crimes) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-12">If you want to see the expected values enter the command:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-13">
+<code class="code-inline tex2jax_ignore"> chisq.test(Crimes)$expected </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-Homogeneity-14">You can use the following R code block to perform the test, click on Evaluate R.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-R-Homogeneity-15" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Crimes=matrix(c(48,36,60,72,84,66,30,30,24),3,3) 
+chisq.test(Crimes)
+</script></div>
+<div class="para" id="subsec-R-Homogeneity-16">
+<em class="emphasis">Interpret</em> The test statistic is <span class="process-math">\(\chi^2 = 9.1274\)</span> with p-value of <span class="process-math">\(p=0.05799\)</span> which is not significant since it is greater than 0.05. There is not sufficient evidence at the 0.05 significance level to conclude that the proportions of major crime types differ among the three cities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-Homogeneity-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 10.7.3: Homogeneity of Proportions Test"><a href="#subsec-R-Homogeneity" title="Copy heading and permalink for Subsection 10.7.3: Homogeneity of Proportions Test" aria-label="Copy heading and permalink for Subsection 10.7.3: Homogeneity of Proportions Test">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 10.7: Association Tests with R"><a href="#sec-Rassoc" title="Copy heading and permalink for Section 10.7: Association Tests with R" aria-label="Copy heading and permalink for Section 10.7: Association Tests with R">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

@@ -530,12 +530,22 @@ sagecell.makeSagecell({
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Rcorr.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Correlation Tests with R</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-CorrTests" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Correlation Between Quantitative Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-AssocTests" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Association Between Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RCorrTestsHurricane" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Hurricane Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RcorrTestForearm" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Correlation of Forearm Length and Height</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Associations with R</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Association Tests with R</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-GoodFit" class="internal"><span class="codenumber">10.7.1</span> <span class="title">Chi-square Goodness of Fit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Independence" class="internal"><span class="codenumber">10.7.2</span> <span class="title">Chi-square Independence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Homogeneity" class="internal"><span class="codenumber">10.7.3</span> <span class="title">Homogeneity of Proportions Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -619,8 +629,8 @@ sagecell.makeSagecell({
 boxplot(Calories)
 summary(Calories)
 </script></div>
-<figure class="figure figure-like" id="BoxCalorie"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Rgraph1.png" class="contained" alt="Boxplot with values from 80 to 214."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Vertical Boxplot<div class="autopermalink" data-description="Figure 10.2.2"><a href="#BoxCalorie" title="Copy heading and permalink for Figure 10.2.2" aria-label="Copy heading and permalink for Figure 10.2.2">🔗</a></div></figcaption>
+<figure class="figure figure-like" id="BoxCalorie"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Rgraph1.png" class="contained" alt="Boxplot with values from 80 to 214. found in the bottom right panel of R Studio."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Vertical Boxplot in R Studio<div class="autopermalink" data-description="Figure 10.2.2"><a href="#BoxCalorie" title="Copy heading and permalink for Figure 10.2.2" aria-label="Copy heading and permalink for Figure 10.2.2">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-Boxplots-7">
 <em class="emphasis">Interpreting the Boxplot:</em> The boxplot shows the smallest value at 80 and the largest value is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The inter-quartile range = Q3-Q1 =160-113.2 =  46.8. The thick line in the middle is the median = 118 .  To calculate the actual values use the <em class="emphasis">summary</em> command with the variable name.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Boxplots-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -629,7 +639,7 @@ summary(Calories)
 <code class="code-inline tex2jax_ignore"> summary(Calories) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Boxplots-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="SummaryCalorie"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Rgraph2.png" class="contained" alt="summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of summary output<div class="autopermalink" data-description="Figure 10.2.3"><a href="#SummaryCalorie" title="Copy heading and permalink for Figure 10.2.3" aria-label="Copy heading and permalink for Figure 10.2.3">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Summary output from R Studio<div class="autopermalink" data-description="Figure 10.2.3"><a href="#SummaryCalorie" title="Copy heading and permalink for Figure 10.2.3" aria-label="Copy heading and permalink for Figure 10.2.3">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-Boxplots-10">Now let’s add a label along the x-axis and make the boxplot horizontal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Boxplots-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -644,7 +654,7 @@ summary(Calories)
 <div class="para" id="subsec-Boxplots-14">With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Boxplots-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="BoxHorzCalorie"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Rgraph3.png" class="contained" alt="horizontal boxplot with values from 80 to 214."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of horizontal boxplot<div class="autopermalink" data-description="Figure 10.2.4"><a href="#BoxHorzCalorie" title="Copy heading and permalink for Figure 10.2.4" aria-label="Copy heading and permalink for Figure 10.2.4">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Horizontal boxplot from R Studio<div class="autopermalink" data-description="Figure 10.2.4"><a href="#BoxHorzCalorie" title="Copy heading and permalink for Figure 10.2.4" aria-label="Copy heading and permalink for Figure 10.2.4">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-Boxplots-16">Suppose we want to organize the boxplot by the company that produces each brand of cereal. We will identify the numerical variable first, then the Tilde symbol <code class="code-inline tex2jax_ignore"> ~ </code> followed by the categorical variable.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Boxplots-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -679,7 +689,7 @@ summary(Calories)
 <code class="code-inline tex2jax_ignore"> hist(Sugars) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Histograms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="HistoSugar"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Rgraph6.png" class="contained" alt="Histogram of sugar content."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of histogram<div class="autopermalink" data-description="Figure 10.2.7"><a href="#HistoSugar" title="Copy heading and permalink for Figure 10.2.7" aria-label="Copy heading and permalink for Figure 10.2.7">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sugar Histogram<div class="autopermalink" data-description="Figure 10.2.7"><a href="#HistoSugar" title="Copy heading and permalink for Figure 10.2.7" aria-label="Copy heading and permalink for Figure 10.2.7">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-Histograms-5">The default for a range of 20 is 4 rectangles with a width of 5 grams for each interval. Most cereals have between 10 and 15 grams of sugar per serving. With just four rectangles, it can be difficult to describe the shape of the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Histograms-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -705,7 +715,7 @@ summary(Sugar)
 <code class="code-inline tex2jax_ignore"> hist(Sodium,breaks=9,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Histograms-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="HistoSodium"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Rgraph8.png" class="contained" alt="Histogram of sodium content."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of histogram for sodium<div class="autopermalink" data-description="Figure 10.2.9"><a href="#HistoSodium" title="Copy heading and permalink for Figure 10.2.9" aria-label="Copy heading and permalink for Figure 10.2.9">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Histogram for Sodium Content<div class="autopermalink" data-description="Figure 10.2.9"><a href="#HistoSodium" title="Copy heading and permalink for Figure 10.2.9" aria-label="Copy heading and permalink for Figure 10.2.9">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-Histograms-15">This histogram has nine intervals for the sodium content per serving. The histograms shows a peak at 200 to 250 milligrams of sodium and is more symmetric and bell shaped than the other histograms.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Histograms-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -724,7 +734,7 @@ summary(Sugar)
 <div class="para" id="subsec-Categorical-5">
 <code class="code-inline tex2jax_ignore"> table(Company) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="CompanyTable"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/RgraphC1.png" class="contained" alt="G=13 and K=11 and G=6."></div>
+<figure class="figure figure-like" id="CompanyTable"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/RgraphC1.png" class="contained" alt="G=13 and K=11 and G=6."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Company Table Output<div class="autopermalink" data-description="Figure 10.2.10"><a href="#CompanyTable" title="Copy heading and permalink for Figure 10.2.10" aria-label="Copy heading and permalink for Figure 10.2.10">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="subsec-Categorical-7">The table will appear just under the R code.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

@@ -518,12 +518,22 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Rcorr.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Correlation Tests with R</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-CorrTests" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Correlation Between Quantitative Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-AssocTests" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Association Between Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RCorrTestsHurricane" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Hurricane Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RcorrTestForearm" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Correlation of Forearm Length and Height</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Associations with R</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Association Tests with R</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-GoodFit" class="internal"><span class="codenumber">10.7.1</span> <span class="title">Chi-square Goodness of Fit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Independence" class="internal"><span class="codenumber">10.7.2</span> <span class="title">Chi-square Independence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Homogeneity" class="internal"><span class="codenumber">10.7.3</span> <span class="title">Homogeneity of Proportions Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -600,26 +610,15 @@ F=\dfrac{MSB}{MSW}\text{,}
 </article>
 <div class="para" id="subsec-ANOVABasics-8">The assumptions for a one-way ANOVA are:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ol class="decimal" id="subsec-ANOVABasics-9">
-<li id="subsec-ANOVABasics-9-1">
-<div class="para" id="subsec-ANOVABasics-9-1-1">
-<em class="emphasis">Independence:</em> The observations are independent within and across groups.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ANOVABasics-9">
+<em class="emphasis">Independence:</em> The observations are independent within and across groups.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-ANOVABasics-9-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
-</li>
-<li id="subsec-ANOVABasics-9-2">
-<div class="para" id="subsec-ANOVABasics-9-2-1">
-<em class="emphasis">Normality:</em> The population distribution of the response variable is approximately normal for each group.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ANOVABasics-10">
+<em class="emphasis">Normality:</em> The population distribution of the response variable is approximately normal for each group.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-ANOVABasics-9-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
-</li>
-<li id="subsec-ANOVABasics-9-3">
-<div class="para" id="subsec-ANOVABasics-9-3-1">
-<em class="emphasis">Equal variances:</em> The population variances are equal across the groups.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ANOVABasics-11">
+<em class="emphasis">Equal variances:</em> The population variances are equal across the groups.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVABasics-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#subsec-ANOVABasics-9-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
-</li>
-</ol>
 <div class="autopermalink" data-description="Subsection 9.4.1: Understanding the Basics"><a href="#subsec-ANOVABasics" title="Copy heading and permalink for Subsection 9.4.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 9.4.1: Understanding the Basics">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-ANOVAExample">

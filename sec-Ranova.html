@@ -518,12 +518,22 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Rcorr.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Correlation Tests with R</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-CorrTests" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Correlation Between Quantitative Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-AssocTests" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Association Between Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RCorrTestsHurricane" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Hurricane Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RcorrTestForearm" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Correlation of Forearm Length and Height</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Associations with R</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Association Tests with R</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-GoodFit" class="internal"><span class="codenumber">10.7.1</span> <span class="title">Chi-square Goodness of Fit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Independence" class="internal"><span class="codenumber">10.7.2</span> <span class="title">Chi-square Independence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Homogeneity" class="internal"><span class="codenumber">10.7.3</span> <span class="title">Homogeneity of Proportions Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -541,9 +551,154 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ANOVA with R</span>
 </h2>
-<div class="para" id="sec-Ranova-2">ANOVA with R.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Ranova-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-Ranova-2">
+<div class="para" id="sec-Ranova-2-1">In this section we will discuss the one-way analysis of variance (ANOVA) test with R, which is used to compare the means of three or more populations to determine if at least one population mean is different from the others.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Ranova-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="sec-Ranova-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-Ranova-3-1">
+<div class="para" id="sec-Ranova-3-1-1">At the end of this section you will be able to<div class="autopermalink" data-description="Paragraph"><a href="#sec-Ranova-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 10.8: ANOVA with R"><a href="#sec-Ranova" title="Copy heading and permalink for Section 10.8: ANOVA with R" aria-label="Copy heading and permalink for Section 10.8: ANOVA with R">🔗</a></div>
+</div>
+<ol class="decimal" id="sec-Ranova-3-2">
+<li id="sec-Ranova-3-2-1">
+<div class="para" id="sec-Ranova-3-2-1-1">Use R for one-way ANOVA.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Ranova-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 10.8.1"><a href="#sec-Ranova-3-2-1" title="Copy heading and permalink for Objective 10.8.1" aria-label="Copy heading and permalink for Objective 10.8.1">🔗</a></div>
+</li>
+<li id="sec-Ranova-3-2-2">
+<div class="para" id="sec-Ranova-3-2-2-1">Interpret the results of a one-way ANOVA test in R.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Ranova-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 10.8.2"><a href="#sec-Ranova-3-2-2" title="Copy heading and permalink for Objective 10.8.2" aria-label="Copy heading and permalink for Objective 10.8.2">🔗</a></div>
+</li>
+<li id="sec-Ranova-3-2-3">
+<div class="para" id="sec-Ranova-3-2-3-1">Use the format of anova(aov(numerical~categories))<div class="autopermalink" data-description="Paragraph"><a href="#sec-Ranova-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 10.8.3"><a href="#sec-Ranova-3-2-3" title="Copy heading and permalink for Objective 10.8.3" aria-label="Copy heading and permalink for Objective 10.8.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 10.8"><a href="#sec-Ranova-3" title="Copy heading and permalink for Objectives 10.8" aria-label="Copy heading and permalink for Objectives 10.8">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-R-ANOVA">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.8.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ANOVA</span>
+</h3>
+<div class="para" id="subsec-R-ANOVA-2">
+<dfn class="terminology">Tornado Alley</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-3">Research suggests that Tornado Alley has shifted eastward from the Great Plains with global warming.  A climate researcher wants to compare the mean annual number of tornadoes in four states: Colorado, Oklahoma, Texas, and Missouri. The researcher records the number of tornadoes for each state over five recent years.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-R-ANOVA-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.8.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Annual Number of Tornadoes<div class="autopermalink" data-description="Table 10.8.1: Annual Number of Tornadoes"><a href="#subsec-R-ANOVA-4" title="Copy heading and permalink for Table 10.8.1: Annual Number of Tornadoes" aria-label="Copy heading and permalink for Table 10.8.1: Annual Number of Tornadoes">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Colorado</td>
+<td class="l m b0 r0 l0 t0 lines">Oklahoma</td>
+<td class="l m b0 r0 l0 t0 lines">Texas</td>
+<td class="l m b0 r0 l0 t0 lines">Missouri</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">48</td>
+<td class="l m b0 r0 l0 t0 lines">67</td>
+<td class="l m b0 r0 l0 t0 lines">132</td>
+<td class="l m b0 r0 l0 t0 lines">41</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">52</td>
+<td class="l m b0 r0 l0 t0 lines">71</td>
+<td class="l m b0 r0 l0 t0 lines">145</td>
+<td class="l m b0 r0 l0 t0 lines">38</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">50</td>
+<td class="l m b0 r0 l0 t0 lines">69</td>
+<td class="l m b0 r0 l0 t0 lines">138</td>
+<td class="l m b0 r0 l0 t0 lines">44</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">47</td>
+<td class="l m b0 r0 l0 t0 lines">73</td>
+<td class="l m b0 r0 l0 t0 lines">141</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">53</td>
+<td class="l m b0 r0 l0 t0 lines">68</td>
+<td class="l m b0 r0 l0 t0 lines">136</td>
+<td class="l m b0 r0 l0 t0 lines">42</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-R-ANOVA-5">At the <span class="process-math">\(0.05\)</span> significance level, test whether the mean annual number of tornadoes is the same for the four states.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-6">Save and import the data file into R Studio. The data has already been formatted for the ANOVA test. We will be using the variables <em class="emphasis">Tornado</em> and <em class="emphasis">State</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-7">
+<a class="external" href="external/TornadoFour.csv" target="_blank">TornadoFour.csv</a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-8">
+<code class="code-inline tex2jax_ignore"> attach(TornadoFour)</code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-9">
+<code class="code-inline tex2jax_ignore"> anova(aov(Tornado~State)) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="AnovaTornadoFour"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/TornFour1.png" class="contained" alt="The test statistic is F=934.21 and p-value is p=0."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.8.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>R Studio output for Tornado ANOVA<div class="autopermalink" data-description="Figure 10.8.2"><a href="#AnovaTornadoFour" title="Copy heading and permalink for Figure 10.8.2" aria-label="Copy heading and permalink for Figure 10.8.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-R-ANOVA-11">
+<em class="emphasis">Interpret:</em> The test statistic is F = 934.21 and p-value of <span class="process-math">\(p\approx 0\)</span> which is significant. The values under State are the between the data with df=3 and SSB=29147.3 and MSB=9715.8. The Residuals are the Within data and has df=16 and SSW=166.4 and MSW=10.40.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-12">
+<dfn class="terminology">Coral Reef Restoration</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-13">A marine biologist wants to compare the mean growth of coral fragments under three different reef restoration methods. Twelve coral fragments are randomly assigned so that four fragments are treated with each method. After six months, the increase in coral length, in centimeters, is recorded.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-R-ANOVA-14"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.8.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Coral Growth under Three Restoration Methods<div class="autopermalink" data-description="Table 10.8.3: Coral Growth under Three Restoration Methods"><a href="#subsec-R-ANOVA-14" title="Copy heading and permalink for Table 10.8.3: Coral Growth under Three Restoration Methods" aria-label="Copy heading and permalink for Table 10.8.3: Coral Growth under Three Restoration Methods">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Method A</td>
+<td class="l m b0 r0 l0 t0 lines">Method B</td>
+<td class="l m b0 r0 l0 t0 lines">Method C</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.2</td>
+<td class="l m b0 r0 l0 t0 lines">5.1</td>
+<td class="l m b0 r0 l0 t0 lines">6.0</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.8</td>
+<td class="l m b0 r0 l0 t0 lines">5.4</td>
+<td class="l m b0 r0 l0 t0 lines">6.3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5.0</td>
+<td class="l m b0 r0 l0 t0 lines">5.0</td>
+<td class="l m b0 r0 l0 t0 lines">5.8</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.5</td>
+<td class="l m b0 r0 l0 t0 lines">5.6</td>
+<td class="l m b0 r0 l0 t0 lines">6.1</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-R-ANOVA-15">At the <span class="process-math">\(0.05\)</span> significance level, test whether the mean coral growth is the same for the three restoration methods.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-16">Save and import the data file into R Studio. The data has already been formatted for the ANOVA test. We will be using the variables <em class="emphasis">Method</em> and <em class="emphasis">Growth</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-17">
+<a class="external" href="external/Coral.csv" target="_blank">Coral.csv</a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-18">
+<code class="code-inline tex2jax_ignore"> attach(Coral)</code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-R-ANOVA-19">
+<code class="code-inline tex2jax_ignore"> anova(aov(Growth~Method)) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="AnovaCoralR"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Coral1.png" class="contained" alt="The test statistic is F=25.272 and p-value is p=0.0002"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.8.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>R output for Anova for Coral Growth<div class="autopermalink" data-description="Figure 10.8.4"><a href="#AnovaCoralR" title="Copy heading and permalink for Figure 10.8.4" aria-label="Copy heading and permalink for Figure 10.8.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-R-ANOVA-21">
+<em class="emphasis">Interpret:</em> The test statistic is F=25.272 and p-value = 0.0002029 which is significant. The values under Method are the between the data with df=2 and  SSB=4.0717 and MSB=2.03583. The Residuals has df=9 is the Within data so SSW=0.725 and MSW=0.08056.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-R-ANOVA-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 10.8.1: ANOVA"><a href="#subsec-R-ANOVA" title="Copy heading and permalink for Subsection 10.8.1: ANOVA" aria-label="Copy heading and permalink for Subsection 10.8.1: ANOVA">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 10.8: ANOVA with R"><a href="#sec-Ranova" title="Copy heading and permalink for Section 10.8: ANOVA with R" aria-label="Copy heading and permalink for Section 10.8: ANOVA with R">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

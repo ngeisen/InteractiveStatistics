@@ -63,6 +63,18 @@ eBookConfig.enable_chatcodes =  false;
 <script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-r' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-r",
+  "linked": true,
+  "linkKey": "linked-r",
+  "autoeval": false,
+  "languages": [
+    "r"
+  ],
+  "evalButtonText": "Evaluate (R)"
+});
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -518,12 +530,22 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-Rcorr.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Correlation Tests with R</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-CorrTests" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Correlation Between Quantitative Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-AssocTests" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Association Between Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RCorrTestsHurricane" class="internal"><span class="codenumber">10.6.1</span> <span class="title">Hurricane Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rcorr.html#subsec-RcorrTestForearm" class="internal"><span class="codenumber">10.6.2</span> <span class="title">Correlation of Forearm Length and Height</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Associations with R</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Rassoc.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Association Tests with R</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-GoodFit" class="internal"><span class="codenumber">10.7.1</span> <span class="title">Chi-square Goodness of Fit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Independence" class="internal"><span class="codenumber">10.7.2</span> <span class="title">Chi-square Independence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Rassoc.html#subsec-R-Homogeneity" class="internal"><span class="codenumber">10.7.3</span> <span class="title">Homogeneity of Proportions Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -578,64 +600,167 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Objectives 10.6"><a href="#sec-Rcorr-3" title="Copy heading and permalink for Objectives 10.6" aria-label="Copy heading and permalink for Objectives 10.6">🔗</a></div>
 </article>
-<section class="subsection" id="subsec-CorrTests">
+<section class="subsection" id="subsec-RCorrTestsHurricane">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Between Quantitative Variables</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hurricane Correlation</span>
 </h3>
-<div class="para" id="subsec-CorrTests-2">
-<dfn class="terminology">Hurricanes</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-2">Climate change is a long-term change in the average weather patterns that have come to define Earth’s local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature.  One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-3">Climate change is a long-term change in the average weather patterns that have come to define Earth’s local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature.  One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-3">The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-4">The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-4">First, construct a <dfn class="terminology">scatterplot</dfn> to describe the nature of the relationship. Use the <em class="emphasis">plot</em> command and identify the independent <em class="emphasis">x</em>-variable, Years, and the dependent <em class="emphasis">y</em> -variable, Hurricanes. It is also helpful to include a main title.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-5">First, construct a <dfn class="terminology">scatterplot</dfn> to describe the nature of the relationship. Use the <em class="emphasis">plot</em> command and identify the independent <em class="emphasis">x</em>-variable, Years, and the dependent <em class="emphasis">y</em> -variable, Hurricanes. It is also helpful to include a main title.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-5">
+<code class="code-inline tex2jax_ignore"> plot(Year, Hurricanes, main='Hurricanes over the Years') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-6">
-<code class="code-inline tex2jax_ignore"> plot(Year, Hurricanes, main='Hurricanes over the Years') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-6">
+<em class="emphasis">Interpret:</em> We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-7">
-<em class="emphasis">Interpret:</em> We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-7">Second, calculate the <dfn class="terminology">correlation coefficient</dfn> to describe the strength of the relationship. We will use the <em class="emphasis">cor</em> command with the x-variable and y-variable.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-8">Second, calculate the <dfn class="terminology">correlation coefficient</dfn> to describe the strength of the relationship. We will use the <em class="emphasis">cor</em> command with the x-variable and y-variable.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-8">
+<code class="code-inline tex2jax_ignore">  cor(Year, Hurricanes) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-9">
-<code class="code-inline tex2jax_ignore">  cor(Year, Hurricanes) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-9">
+<em class="emphasis">Interpret:</em> r = .361 indicates a weak positive correlation. But we want to see if this is significance at <span class="process-math">\(\alpha= 0.05\)</span> level. So we need to perform a <dfn class="terminology">correlation test</dfn>. The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-10">
-<em class="emphasis">Interpret:</em> r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a <dfn class="terminology">correlation test</dfn>. The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-10">
+<code class="code-inline tex2jax_ignore">  cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-11">
-<code class="code-inline tex2jax_ignore">  cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-11">Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the <dfn class="terminology">regression equation</dfn> so we can make predictions. We will use the command <em class="emphasis">lm</em> for a linear model and we identify the y-variable, Hurricanes, first with the tilde symbol <code class="code-inline tex2jax_ignore"> ~ </code> then the x-variable, Year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-12">Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the <dfn class="terminology">regression equation</dfn> so we can make predictions. We will use the command <em class="emphasis">lm</em> for a linear model and we identify the y-variable, Hurricanes, first with the tilde symbol <code class="code-inline tex2jax_ignore"> ~ </code> then the x-variable, Year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-12">
+<code class="code-inline tex2jax_ignore">  lm(Hurricanes~Year) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-13">
-<code class="code-inline tex2jax_ignore">  lm(Hurricanes~Year) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-13">
+<em class="emphasis">Interpret:</em> The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation <span class="process-math">\(\hat{y} =0.031x-56.01 \)</span> where <em class="emphasis">x</em> represents the year and <em class="emphasis">y</em> represents the predicted number of hurricanes for that year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-14">
-<em class="emphasis">Interpret:</em> The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation <span class="process-math">\(y =0.031x-56.01 \)</span> where <em class="emphasis">x</em> represents the year and <em class="emphasis">y</em> represents the predicted number of hurricanes for that year.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-14">We can create a Simple Linear Regression Model (naming it SLRmodelHurr for Hurricanes) and then summarize the results for some additional information.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-15">We can create a Simple Linear Regression Model (naming it SLRmodelHurr for Hurricanes) and then summarize the results for some additional information.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-15">
+<code class="code-inline tex2jax_ignore">  SLRmodelHurr=lm(Hurricanes~Year) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-16">
-<code class="code-inline tex2jax_ignore">  SLRmodelHurr=lm(Hurricanes~Year) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-16">
+<code class="code-inline tex2jax_ignore">  summary(SLRmodelHurr) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-17">
-<code class="code-inline tex2jax_ignore">  summary(SLRmodelHurr) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RCorrTestsHurricane-17">
+<em class="emphasis">Interpret:</em> This shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination is <span class="process-math">\(r^2 = .1304 \)</span> which indicates that 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RCorrTestsHurricane-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-CorrTests-18">
-<em class="emphasis">Interpret:</em> This shows the size of the residuals from the regression line to the actual data points. We can see the correlation test again with t = 4.005 which is statistically significant. The standard error is 2.579. The coefficient of determination is <span class="process-math">\(r^2 = .1304 \)</span> which indicates that 13% of the variation in the number of hurricanes is accounted for in the model and 87% is due to chance and other variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-CorrTests-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection 10.6.1: Correlation Between Quantitative Variables"><a href="#subsec-CorrTests" title="Copy heading and permalink for Subsection 10.6.1: Correlation Between Quantitative Variables" aria-label="Copy heading and permalink for Subsection 10.6.1: Correlation Between Quantitative Variables">🔗</a></div>
+<div class="autopermalink" data-description="Subsection 10.6.1: Hurricane Correlation"><a href="#subsec-RCorrTestsHurricane" title="Copy heading and permalink for Subsection 10.6.1: Hurricane Correlation" aria-label="Copy heading and permalink for Subsection 10.6.1: Hurricane Correlation">🔗</a></div>
 </section>
-<section class="subsection" id="subsec-AssocTests">
+<section class="subsection" id="subsec-RcorrTestForearm">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.6.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Association Between Categorical Variables</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.6.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation of Forearm Length and Height</span>
 </h3>
-<div class="para" id="subsec-AssocTests-2">the<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AssocTests-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-RcorrTestForearm-2">A kinesiology researcher wants to investigate whether there is a positive linear relationship between forearm length and height in adults. A random sample of 10 adults is selected, and each person’s forearm length and height are measured in centimeters.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 10.6.2: Association Between Categorical Variables"><a href="#subsec-AssocTests" title="Copy heading and permalink for Subsection 10.6.2: Association Between Categorical Variables" aria-label="Copy heading and permalink for Subsection 10.6.2: Association Between Categorical Variables">🔗</a></div>
+<figure class="table table-like" id="subsec-RcorrTestForearm-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.6.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Forearm Length and Height<div class="autopermalink" data-description="Table 10.6.1: Forearm Length and Height"><a href="#subsec-RcorrTestForearm-3" title="Copy heading and permalink for Table 10.6.1: Forearm Length and Height" aria-label="Copy heading and permalink for Table 10.6.1: Forearm Length and Height">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Person</td>
+<td class="l m b0 r0 l0 t0 lines">Forearm Length (cm)</td>
+<td class="l m b0 r0 l0 t0 lines">Height (cm)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">158</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">26</td>
+<td class="l m b0 r0 l0 t0 lines">165</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">25</td>
+<td class="l m b0 r0 l0 t0 lines">163</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">27</td>
+<td class="l m b0 r0 l0 t0 lines">167</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">29</td>
+<td class="l m b0 r0 l0 t0 lines">173</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">28.5</td>
+<td class="l m b0 r0 l0 t0 lines">170</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">33</td>
+<td class="l m b0 r0 l0 t0 lines">186</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines">31</td>
+<td class="l m b0 r0 l0 t0 lines">180</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">28</td>
+<td class="l m b0 r0 l0 t0 lines">174</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">32</td>
+<td class="l m b0 r0 l0 t0 lines">180</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-RcorrTestForearm-4">At the <span class="process-math">\(0.05\)</span> significance level, test whether there is a positive linear correlation between forearm length and height in the population.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-5">Construct a <dfn class="terminology">scatterplot</dfn> to describe the nature of the relationship. Use the plot command and identify the independent x-variable, Forearm, and the dependent y -variable, Height. It is also helpful to include a main title.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-6">
+<code class="code-inline tex2jax_ignore"> plot(Forearm, Height, main='Correlation between Forearm Length and Height') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-7">You can use the following R code block for this data. Click on the <code class="code-inline tex2jax_ignore">Evaluate R</code> button to see the graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-RcorrTestForearm-8" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Forearm=c(24,26,25,27,29,28.5,33,31,28,32)
+Height=c(158,165,163,167,173,170,186,180,174,180)
+ plot(Forearm, Height, main='Correlation between Forearm Length and Height')
+</script></div>
+<div class="para" id="subsec-RcorrTestForearm-9">Calculate the <dfn class="terminology">correlation coefficient</dfn> to describe the strength of the relationship. We will use the <em class="emphasis">cor</em> command with the x-variable and y-variable. You can copy this command into the R code block above. Click on Evaluate R to perform the calculation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-10">
+<code class="code-inline tex2jax_ignore"> cor(Forearm, Height) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-11">
+<em class="emphasis">Interpret:</em> We can see a positive linear relationship. The correlation coefficient is <span class="process-math">\(r=0.981\)</span> which indicates a strong positive correlation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-12">Perform a <dfn class="terminology">correlation test</dfn> to the significance.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-13">
+<code class="code-inline tex2jax_ignore"> cor.test(Forearm, Height, alternative ='greater', conf.level = .95) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-14">
+<em class="emphasis">Interpret:</em> The correlation test gives the test statistic <span class="process-math">\(t=14.564\)</span> with p-value of <span class="process-math">\(p \approx 0\)</span> indicting a significant positive correlation between forearm length and height.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-15">Find the <dfn class="terminology">regression equation</dfn> for a linear model.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-16">
+<code class="code-inline tex2jax_ignore"> lm(Height~Forearm) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-17">
+<em class="emphasis">Interpret:</em> The regression equation is <span class="process-math">\(\hat{y} = 2.867x+91.332\)</span> where <span class="process-math">\(x\)</span> is the forearm length.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-18">We can create a Simple Linear Regression Model (naming it SLRmodelHeight) and then summarize the results.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-19">
+<code class="code-inline tex2jax_ignore">  SLRmodelHeight=lm(Height~Forearm) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-20">
+<code class="code-inline tex2jax_ignore">  summary(SLRmodelHeight) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RcorrTestForearm-21">
+<em class="emphasis">Interpret:</em> This shows the size of the residuals from the regression line to the actual data points (2.06 below to 3.40 above). We can see the correlation test again with t = 14.56 which is statistically significant. The standard error is 1.761. The coefficient of determination is <span class="process-math">\(r^2 = .19637 \)</span> which indicates that 96% of the variation in the heights is accounted for in the model and 4% is due to chance and other variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RcorrTestForearm-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 10.6.2: Correlation of Forearm Length and Height"><a href="#subsec-RcorrTestForearm" title="Copy heading and permalink for Subsection 10.6.2: Correlation of Forearm Length and Height" aria-label="Copy heading and permalink for Subsection 10.6.2: Correlation of Forearm Length and Height">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 10.6: Correlation Tests with R"><a href="#sec-Rcorr" title="Copy heading and permalink for Section 10.6: Correlation Tests with R" aria-label="Copy heading and permalink for Section 10.6: Correlation Tests with R">🔗</a></div>
 </section>
 </div>
