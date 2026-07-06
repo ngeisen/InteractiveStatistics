@@ -1,5 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Rassoc" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Associations with R</title>
-  <p> Chi Square tests for Association. </p>
+  <title>Association Tests with R</title>
+<introduction>
+<p> In this section we will perform test for association between categorical variables. We will begin with the chi-square goodness of fit test for one categorical variable. 
+We will check for the independence between two categorical variables. Then we will check the homogeneity for multiple proportions. </p>
+</introduction>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+  <li> <p> Use R for the chi-square goodness of fit test. </p> </li>
+  <li> <p> Use R for the chi-square independence test.  </p>    </li>
+  <li> <p> Use R for the chi-square homogeneity of proportions.  </p>    </li>
+  </ol>
+</objectives>
+
+<subsection xml:id="subsec-R-GoodFit">
+  <title>Chi-square Goodness of Fit </title>
+  <p> <term>Candy Flavors</term></p>
+<p>A candy enthusiast wants to test if the number of candies for each flavor in a bag of Skittles is the same. He opens a big of skittles and collects a random sample of 100 candies and organizes them into flavors with the following results: 22 strawberry, 24 orange, 14 grape, 17 lemon, and 23 green apple. </p>
+<p>If there was no difference, one would expect each flavor to have the same frequency. Thus the hypotheses are: </p>
+<p><m>H_0:</m> The flavor frequencies are equal.</p>
+<p><m>H_a:</m> The flavor frequencies are not equal.</p>
+<p> We will create a vector to list the values, then we perform the <em>chisq.test </em> to check for equal frequencies. Click on Evaluate R to perform the test. </p>
+<sage language="r">
+ <input>
+Flavors= c(22,24,14,17,23)
+chisq.test(Flavors)
+ </input>
+ </sage>
+<p><em>Interpret</em> The test statistic for equal frequency is <m>\chi^2 = 3.70</m> with p-value of <m>p=0.448</m> which is not significant. Thus, we cannot conclude the flavors are not equally distributed. </p> 
+
+<p> <term>Intersection Accidents</term></p>
+<p>
+      A traffic safety researcher wants to test whether the distribution of
+      accidents among four types of intersections matches a previously reported
+      pattern. Past transportation data suggest that <m>20\%</m> of intersection
+      accidents occur at roundabouts, <m>30\%</m> at stop-sign intersections,
+      <m>35\%</m> at traffic-light intersections, and <m>15\%</m> at other types
+      of intersections. To investigate whether a more recent sample follows this
+      distribution, the researcher records <m>400</m> intersection accidents and
+      classifies each one by intersection type.
+    </p>
+    <table>
+      <title>Observed Accident Counts by Intersection Type</title>
+      <tabular>
+        <row>
+          <cell>Intersection Type</cell>
+          <cell>Observed Count</cell>
+        </row>
+        <row><cell>Roundabout</cell><cell>68</cell></row>
+        <row><cell>Stop Sign</cell><cell>134</cell></row>
+        <row><cell>Traffic Light</cell><cell>146</cell></row>
+        <row><cell>Other</cell><cell>52</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      distribution of accidents differs from the reported distribution.
+    </p>
+<p>  This is a chi-square goodness-of-fit test for a specific pattern. The hypotheses are: </p>
+    <p> <m>H_0:</m> the population proportions are
+      <m>0.20</m> for roundabouts,
+      <m>0.30</m> for stop-sign intersections,
+      <m>0.35</m> for traffic-light intersections,
+      and <m>0.15</m> for other intersections,
+</p>
+    <p> <m>H_a:</m> the population accident distribution is different.
+    </p>
+
+<p> We will create two vectors, one for the observed values and one for the expected values as the decimal version of the percentages. When we perform the test we are programming R to compare p= percentages that are expected. </p>
+
+<sage language="r">
+ <input>
+Accidents=c(68,134,146,52)
+Expected=c(.20,.30,.35,.15)
+chisq.test(Accidents, p=Expected)
+ </input>
+ </sage>
+<p><em>Interpret</em> The test statistic to match a specific pattern is <m>\chi^2 = 4.7571</m> with p-value of <m>p=0.1905</m> which is not significant. Thus, we cannot conclude the distributions is different than previously claimed. There is not sufficient evidence at the 0.05 significance level to conclude that the population distribution of accidents among roundabouts, stop-sign intersections, traffic-light intersections, and other types of intersections differs from the reported distribution.</p> 
+
+
+</subsection>
+
+
+<subsection xml:id="subsec-R-Independence">
+  <title>Chi-square Independence Test </title>
+<p> <term>Plant Growth</term></p>
+<p>
+      A biologist wants to determine whether plant growth is independent of
+      fertilizer type. A sample of <m>90</m> plants is randomly assigned to one
+      of three fertilizer types, and after a fixed growing period each plant is
+      classified as having low, medium, or high growth.
+    </p>
+    <table>
+      <title>Plant Growth by Fertilizer Type</title>
+      <tabular>
+        <row>
+          <cell>Fertilizer Type</cell>
+          <cell>Low Growth</cell>
+          <cell>Medium Growth</cell>
+          <cell>High Growth</cell>
+        </row>
+        <row><cell>A</cell><cell>14</cell><cell>10</cell><cell>6</cell></row>
+        <row><cell>B</cell><cell>9</cell><cell>12</cell><cell>9</cell></row>
+        <row><cell>C</cell><cell>7</cell><cell>11</cell><cell>12</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether plant growth category
+      is independent of fertilizer type.
+    </p>
+
+<p>First will need to create a matrix in R. The base format is Variable=matrix(c(C1, C2, C3), rows, columns) where the data is listed vertically (down column) and then we perform the <em>chisq.test</em>. We will list all the low growth first, then medium growth, and then high growth. There are 3 rows for fertilizer and 3 columns for growth. </p>
+
+<p> <c>Plants=matrix(c(14,9,7, 10,12,11, 6,9,12)3,3) </c></p> 
+
+<p>Check that the data looks correct before performing the test. Just type the variable name to check. </p>
+<p> <c>Plants </c> </p>
+<p> Now perform the chi-square independence test.</p>
+<p> <c> chisq.test(Plants) </c> </p>
+<p>If you want to see the expected values enter the command: </p>
+<p> <c> chisq.test(Plants)$expected </c> </p> 
+
+<p> You can use the following R code block to perform the test, click on Evaluate R. </p>
+<sage language="r">
+ <input>
+Plants=matrix(c(14,9,7, 10,12,11, 6,9,12),3,3)
+chisq.test(Plants)
+ </input>
+ </sage>
+<p><em>Interpret</em> The test statistic for independence is <m>\chi^2 = 4.7818</m> with p-value of <m>p=0.3104</m> which is not significant since it is greater than 0.05. There is not sufficient evidence at the 0.05 significance level to conclude that plant growth category and fertilizer type are dependent. </p> 
+
+</subsection>
+
+
+<subsection xml:id="subsec-R-Homogeneity">
+  <title>Homogeneity of Proportions Test </title>
+<p> <term> Crimes</term></p> 
+<p>
+      A criminal justice researcher wants to compare the distribution of major
+      crimes in three United States cities. The researcher selects random samples
+      of police reports from each city and classifies each reported crime as
+      violent crime, property crime, or drug-related crime.
+    </p>
+    <table>
+      <title>Major Crime Type by City</title>
+      <tabular>
+        <row>
+          <cell>City</cell>
+          <cell>Violent Crime</cell>
+          <cell>Property Crime</cell>
+          <cell>Drug-Related Crime</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>City A</cell><cell>48</cell><cell>72</cell><cell>30</cell><cell>150</cell></row>
+        <row><cell>City B</cell><cell>36</cell><cell>84</cell><cell>30</cell><cell>150</cell></row>
+        <row><cell>City C</cell><cell>60</cell><cell>66</cell><cell>24</cell><cell>150</cell></row>
+        <row><cell>Total</cell><cell>144</cell><cell>222</cell><cell>84</cell><cell>450</cell></row>
+      </tabular>
+    </table>
+    <p> 
+      At the <m>\alpha = 0.05</m> significance level, test whether the proportions of
+      major crime types are the same in the three cities.
+    </p>
+<p> The process is the same for the independence tests.  We will need to create a matrix in R. The base format is Variable=matrix(c(C1, C2, C3), rows, columns) where the data is listed vertically (down column) and then we perform the <em>chisq.test</em>. There are 3 rows for cities and 3 columns for crimes. </p>
+<p> <c>Crimes=matrix(c(48,36,60,72,84,66,30,30,24),3,3) </c></p> 
+<p>Check that the data looks correct before performing the test. Just type the variable name to check. </p>
+<p> <c>Crimes </c> </p>
+<p> Now perform the chi-square homogeneity test.</p>
+<p> <c> chisq.test(Crimes) </c> </p>
+<p>If you want to see the expected values enter the command: </p>
+<p> <c> chisq.test(Crimes)$expected </c> </p> 
+<p> You can use the following R code block to perform the test, click on Evaluate R. </p>
+<sage language="r">
+ <input>
+Crimes=matrix(c(48,36,60,72,84,66,30,30,24),3,3) 
+chisq.test(Crimes)
+ </input>
+ </sage>
+
+<p><em>Interpret</em> The test statistic is <m>\chi^2 = 9.1274</m> with p-value of <m>p=0.05799</m> which is not significant since it is greater than 0.05. There is not sufficient evidence at the 0.05 significance level to conclude that the proportions of major crime types differ among the three cities. </p> 
+
+
+
+
+
+</subsection>
+
+
+
+
+
 </section>

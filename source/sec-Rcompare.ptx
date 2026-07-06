@@ -3,7 +3,7 @@
   <title>Comparison Tests with R</title>
   <introduction>
     <p>
-      <p> We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group. </p>
+      We are going to investigate using R Studio using the same scenarios as in the textbook reading sections for comparing two group. 
     </p>
   </introduction>
   
@@ -15,25 +15,64 @@
   <ol>
   <li> <p> Compare two independent means using the t-test </p> </li>
   <li> <p> Interpret the confidence interval for the difference in means </p>    </li>
-<li> <p> Conduct a t-test for paired means </p> </li>
+<li> <p> Conduct a paired t-test for  means </p> </li>
 <li> <p> Compare two proportions using chi-square test </p>    </li>
 <li> <p> Interpret the confidence interval for the difference in proportions </p>    </li>
-<li> <p> Compare two variances with the F-tst </p>    </li>
+<li> <p> Compare two variances with the F-test </p>    </li>
   </ol>
 </objectives>
 
 
 <subsection xml:id="subsec-ComparingMeans">
   <title>Comparing Two Independent Means</title>
-  <p> The standard  format for a <em> t.test </em> for the mean is identifying the two variables names separated by commas, the alternative hypothesis as <em> alternative = </em>, and the confidence level using <em> conf.level =  </em> with the default being 95%.R Studio finds the difference is u1 - u2 so list them in the order you are calculating them. </p>
-<p> For our first example, we are comparing the mean time for completing a maze. Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX </p>
-<p> We are going to perform a simple t-test for the difference in mean times. Thus the alternative hypothesis is that the means are not equal. We will using the default settings at 95% level. Import the data set and <em> attach </em> the variable names. We will be using the variables WhiteMice and BrownMice. There are no spaces in the name of variables when using R. </p> 
+  <p> The standard  format for a <em> t.test </em> for the mean is identifying the two variables names separated by commas, the alternative hypothesis as <em> alternative = </em>, and the confidence level using <em> conf.level =  </em> with the default being 95%. R Studio finds the difference is <m>\mu_1 - \mu_2 </m> so it is important to list them in the order you want to calculate them. </p>
+<p> For our first example, we are comparing the mean time for for two groups of mice to complete a maze. Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At <m> \alpha = 0.05 </m>, does the color of the mice make a difference in their learning rate? The data is in the data file XX </p>
+<p> We are going to perform a t-test for the difference in mean times. Thus the alternative hypothesis is that the means are not equal. We will using the default settings at 95% level. Import the data into R Studio and <em> attach </em> the variable names. We will be using the variables WhiteMice and BrownMice. There are no spaces in the name of variables when using R. </p> 
 <p> <c> t.test(WhiteMice,BrownMice) </c> </p> 
+<p> You can use the R code block below by clicking on the Evaluate (R) button. </p> 
+<sage language="r">
+ <input>
+WhiteMice=c(18,24,20,13,15,12)
+BrownMice=c(25,16,19,14,16,10)
+ t.test(WhiteMice,BrownMice)
+ </input>
+ </sage>
 
-<p> Suppose we claim the average mean time is greater for the white mice using alpha = 0.10 level. We can use White mice is <em> greater </em> than Brown mice or brown mice is <em> less </em> than white mice as shown below, and we need to add <em>  conf.level = .90 </em> to both commands. </p> 
+<p> <em> Interpretation: </em> We completed a Welch two sample t-test for independent means. The test statistic is <m>t=0.12</m> with degrees of freedom <m>df=9.9</m> and p-value <m>p=0.9069</m> which is not statistically significant. The null hypothesis is the means are equal while the alternative is the difference in means is not equal zero implying the means are not equal. We are 95% confident the mean difference in the learning rate of the mice is between -5.86 and +6.52 minutes. Since 0 is contained within the confidence interval we do not reject the null hypothesis. </p>
+
+<p> Suppose we claim the mean time is greater for the white mice using alpha = 0.10 level. We can use White mice is <em> greater </em> than Brown mice or brown mice is <em> less </em> than white mice as shown below, and we need to add <em>  conf.level = .90 </em> to both commands. </p> 
 <p> <c> t.test(WhiteMice,BrownMice,alternative = 'greater',conf.level = .90) </c> </p>
+<p> You change the last line in the R code block above and click on the Evaluate R button for the new test results. </p> 
+
+<example>
+<statement> <p> Testing if the mean time for the White mice is greater than for Brown mice using 90% confidence, for a right tailed test.  </p> 
+<figure xml:id="MiceTest2">
+            <caption>Mice Welch t-test output</caption>
+            <image source="RtestMice1.png" width="90%">
+                <shortdescription>mean test value t=0.12with df=9.9 and p value=0.4534 .  </shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> <term> Interpretation: </term>. We completed a Welch two sample t-test for independent means. The test statistic is <m>t=0.12</m> with degrees of freedom <m>df=9.9</m> and p-value <m>p=0.4534</m> which is not statistically significant. Notice the test value and degrees of freedom are the same, just the p-value and interval has changed. The null hypothesis is the means are equal while the alternative is the difference in means is greater than zero since white mice are listed first. We are 90% confident the mean difference in the learning rate of the mice is between -3.48 and positive infinity minutes. Since 0 is contained within the confidence interval we do not reject the null hypothesis. </p> 
+</solution> 
+</example> 
+
 <p> <c> t.test(BrownMice,WhiteMice,alternative = 'less',conf.level = .90) </c> </p>
-<p> compare the R outputs </p> 
+<p> Compare the R outputs. </p> 
+<example>
+<statement> <p> Testing if the mean time for the Brown mice is less than for White mice using 90% confidence for a left tailed test.  </p> 
+<figure xml:id="MiceTest3">
+            <caption>Mice Welch t-test output</caption>
+            <image source="RtestMice2.png" width="90%">
+                <shortdescription>mean test value t=-0.12with df=9.9 and p value=0.4534 .  </shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> <term> Interpretation: </term>. We completed a Welch two sample t-test for independent means. The test statistic is <m>t=-0.12</m> with degrees of freedom <m>df=9.9</m> and p-value <m>p=0.4534</m> which is not statistically significant. Notice the test value changed sign but he values are the same. The null hypothesis is the means are equal while the alternative is the difference in means is less than zero since brown mice are listed first. We are 90% confident the mean difference in the learning rate of the mice is between negative infinity to +3.48 minutes. Since 0 is contained within the confidence interval we do not reject the null hypothesis. </p> 
+</solution> 
+</example>
 
 
 </subsection>
@@ -47,13 +86,76 @@
 <p> Use the data XX and the variables are WeightAfter and the WeightBefore. Since we are comparing the bench press weights before and after the vitamin regiment, it is a paired or dependent t-test.  Enter the following R command to compare the change in weights lifted. </p> 
 <p> <c>  t.test(WeightAfter,WeightBefore, paired=TRUE, alternative='greater', conf.level=.95) </c> </p>
 
+<p>
+      A fitness instructor wants to know whether a 6-week training
+      program improves the number of push-ups participants can complete in one
+      minute. The instructor records the number of push-ups for each participant
+      before the program and again after the program.
+    </p>
+    <tabular>
+      <row>
+        <cell>Participant</cell>
+        <cell> 1</cell>
+        <cell> 2</cell>
+        <cell> 3</cell>
+        <cell> 4</cell>
+        <cell> 5</cell>
+      </row>
+      <row>
+        <cell>Before</cell>
+        <cell> 18</cell>
+        <cell> 22</cell>
+        <cell> 20</cell>
+        <cell> 16</cell>
+        <cell> 19</cell>
+      </row>
+      <row>
+        <cell> After</cell>
+        <cell> 21</cell>
+        <cell> 25</cell>
+        <cell> 23</cell>
+        <cell> 18 </cell>
+        <cell> 22 </cell>
+      </row>
+    </tabular>
+    <p> Perform the appropriate test using R and state the conclusion in context against <m>\alpha = 0.05</m>. </p> 
+<p> You can use the R code block below by clicking on the Evaluate (R) button. </p> 
+<sage language="r">
+ <input>
+Before=c(18,22,20,16,19)
+After=c(21,25,23,18,22)
+t.test(After,Before, paired=TRUE, alternative='greater', conf.level=.95)
+ </input>
+ </sage>
+<p> <em> Interpretation:</em> You performed a paired t-test for the mean. The test statistic is <m>t=14</m> with degrees of freedom <m>df=4</m> and p-value of <m>p=0.0000755</m> which is statistically significant since it is less than 0.05. Because we claimed an increase in the mean number of pushups, the 95% confidence interval is from 2.38 to positive infinity. Since 0 is not contained within the interval it has increased significantly. </p> 
+
 </subsection>
 
 
 
 <subsection xml:id="subsec-CompareProportions">
   <title>Comparing Two Proportions</title>
-  <p> next </p> 
+  <p> Transportation researchers want to determine whether the proportion of drivers without auto insurance differs between California and Colorado.  Suppose a random sample of <m>800</m> drivers is selected from California, and <m>163</m> of them are found to be driving without auto insurance. A separate random sample of <m>750</m> drivers is selected from Colorado, and <m>146</m> of them are found to be driving without auto insurance.  </p>
+ <p> At the <m>\alpha =0.10</m> significance level, test whether the population proportion of drivers without auto insurance differs between the two states. </p>
+<p>With R we are conducting a chi-square test for two proportions. The default is a two-tailed test for a difference in proportions. We will be using the command <em>prop.test</em> and we need to identify the count and sample size for both groups, in the same order. </p>  
+
+<p> <c> prop.test(c(163,146), c(800,750), conf.level=.90)</c> </p>
+
+<p> You can use the R code block below by clicking on the Evaluate (R) button. </p> 
+<sage language="r">
+ <input>
+prop.test(c(163,146), c(800,750), conf.level=.90)
+ </input>
+ </sage>
+
+ <p> <em> Interpretation: </em> Performed a two-sample test for equality of proportions. The test statistic is <m> \chi^2 = 0.147</m> and degrees of freedom df=1 since it is two categories minus 1, and p-value of <m>p=0.7012</m> which is greater than .10 so it is not statistically significant and we do not reject the null hypothesis. Since this was a two tailed test, we are 90% confident the difference in proportion of uninsured is between -0.025 and +0.043, since the interval contains 0 it is not significant. </p> 
+ 
+ <p> Suppose we claim the proportion is greater in California than Colorado. So now we change the alternative to <q>greater</q>. </p> 
+<p> <c>prop.test(c(163,146), c(800,750), alternative ='greater', conf.level=.90)</c> </p>
+
+<p> <em> Interpretation: </em> Performed a two-sample test for equality of proportions. The test statistic is <m> \chi^2 = 0.147</m> and degrees of freedom df=1 since it is two categories minus 1, and p-value of <m>p=0.3506</m> which is greater than .10 so it is not statistically significant and we do not reject the null hypothesis. For a right tailed test, we are 90% confident the difference in proportion of uninsured is between –0.018 to positive infinity, since the interval contains 0 it is not significant. </p> 
+
+
 </subsection>
 
 
@@ -64,6 +166,18 @@
   <title>Comparing Two Variances</title>
  <p> Recall the scenario: The time (minutes) it took six white mice to learn to run a simple maze and the times it took six brown mice to learn to run the same maze are given. At alpha = 0.05, does the color of the mice make a difference in their learning rate? The data is in the data file XX. Only this time we want to compare the variance of time between the white and brown mice.  So  we are checking if the variance is equal or not equal.  We will use the R command <em> var.test </em> and we identify our two variables. </p>
    <p> <c>  var.test(WhiteMice,BrownMice) </c> </p>
+ 
+  <p> You can use the R code block below by clicking on the Evaluate (R) button. </p> 
+  <sage language="r">
+  <input>
+    WhiteMice=c(18,24,20,13,15,12)
+    BrownMice=c(25,16,19,14,16,10)
+    var.test(WhiteMice,BrownMice)
+ </input>
+ </sage>
+
+ <p> <em> Interpretation: </em> Performed the F-test to compare two variances of whether they are equal or not. The statistical test value is <m>F=0.82</m> with degrees of freedom of <m>dfN=5</m> and <m>dfD=5</m> and p-value of <m>p=0.8296</m> which is not statistically significant so we do not reject the null hypothesis. </p> 
+
 <p> Sometimes when we use a data set, not all values are included. In that case we want to ignore any cells without data. We do this by using <em> na.rm=TRUE. </em> Find the standard deviation for the times for both mice groups. </p> 
 <p> <c>  sd(WhiteMice, na.rm=TRUE) </c> </p>
 <p> <c>  sd(BrownMice, na.rm=TRUE) </c> </p>

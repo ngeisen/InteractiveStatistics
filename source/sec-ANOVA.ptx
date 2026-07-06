@@ -57,23 +57,13 @@
 </definition>
 
 <p>  The assumptions for a one-way ANOVA are: </p>
-<ol>
-  <li>
-    <p>
-      <em>Independence:</em> The observations are independent within and across groups.
+ <p> <em>Independence:</em> The observations are independent within and across groups.
     </p>
-  </li>
-  <li>
-    <p>
-      <em>Normality:</em> The population distribution of the response variable is approximately normal for each group.
+  <p> <em>Normality:</em> The population distribution of the response variable is approximately normal for each group.
     </p>
-  </li>
-  <li>
-    <p>
-      <em>Equal variances:</em> The population variances are equal across the groups.
+    <p> <em>Equal variances:</em> The population variances are equal across the groups.
     </p>
-  </li>
-</ol>
+
 
  
 

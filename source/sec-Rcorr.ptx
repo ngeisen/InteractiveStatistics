@@ -18,22 +18,22 @@
   </ol>
 </objectives>
 
-<subsection xml:id="subsec-CorrTests">
-  <title>Correlation Between Quantitative Variables </title>
-  <p> <term> Hurricanes </term> </p> 
-<p> Climate change is a long-term change in the average weather patterns that have come to define Earth's local, regional, and global climates. Changes observed in Earth’s climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature.  One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes. </p> 
+<subsection xml:id="subsec-RCorrTestsHurricane">
+  <title>Hurricane Correlation </title>
+  <p> Climate change is a long-term change in the average weather patterns that have come to define Earth's local, regional, and global climates. Changes observed in Earth's climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth's atmosphere, raising Earth's average surface temperature.  One indicator of climate change is the increased frequency of major environmental events, such as hurricanes and tornadoes. </p> 
 <p> The data in Hurricanes.csv contains the number of hurricanes that made landfall on the eastern coast of the United States from 1914 to 2022. Using R Studio, test to see whether the number of hurricanes is increasing over time is statistically significant. </p> 
 <p> First, construct a <term> scatterplot </term> to describe the nature of the relationship. Use the <em> plot </em> command and identify the independent <em> x</em>-variable, Years, and the dependent <em> y</em> -variable, Hurricanes. It is also helpful to include a main title. </p>
 <p> <c> plot(Year, Hurricanes, main='Hurricanes over the Years') </c> </p> 
+
 <p> <em> Interpret: </em> We can see a slight positive relationship. As the years increase, the number of hurricanes is increasing. About every 20 years we see a cyclical increase in the number of hurricanes. </p> 
  <p> Second, calculate the <term> correlation coefficient </term> to describe the strength of the relationship. We will use the <em> cor </em> command with the x-variable and y-variable. </p> 
 <p> <c>  cor(Year, Hurricanes) </c> </p>
-<p> <em> Interpret: </em> r = .361 indicates a weak positive correlation. But we want to see if this is significance at α = 0.05 level. So we need to perform a <term> correlation test </term>. The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant. </p> 
+<p> <em> Interpret: </em> r = .361 indicates a weak positive correlation. But we want to see if this is significance at <m> \alpha= 0.05</m> level. So we need to perform a <term> correlation test </term>. The default is a two tailed test with a null hypothesis of no correlation and the alternative as significant correlation. Since we have a positive correlation let us see if the positive correlation is significant. </p> 
 <p> <c>  cor.test(Year, Hurricanes,alternative ='greater', conf.level = .95) </c> </p>
 
 <p> Since there is a significant positive correlation for the number of hurricanes over the years, next we should find the <term> regression equation </term> so we can make predictions. We will use the command <em> lm </em> for a linear model and we identify the y-variable, Hurricanes, first with the tilde symbol <c> ~ </c> then the x-variable, Year.</p> 
 <p> <c>  lm(Hurricanes~Year) </c> </p>
-<p> <em> Interpret: </em> The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation <m> y =0.031x-56.01 </m> where <em> x </em> represents the year and <em> y </em> represents the predicted number of hurricanes for that year. </p> 
+<p> <em> Interpret: </em> The y-intercept is -56.00801 and the slope is 0.03144 which gives the regression equation <m> \hat{y} =0.031x-56.01 </m> where <em> x </em> represents the year and <em> y </em> represents the predicted number of hurricanes for that year. </p> 
 
 <p> We can create a Simple Linear Regression Model (naming it SLRmodelHurr for Hurricanes) and then summarize the results for some additional information. </p> 
 <p> <c>  SLRmodelHurr=lm(Hurricanes~Year) </c> </p>
@@ -46,9 +46,66 @@
 </subsection>
 
 
-<subsection xml:id="subsec-AssocTests">
-  <title>Association Between Categorical Variables </title>
-  <p> the </p> 
+<subsection xml:id="subsec-RcorrTestForearm">
+  <title>Correlation of Forearm Length and Height </title>
+  <p>
+      A kinesiology researcher wants to investigate whether there is a positive linear relationship between forearm length and height in adults. A random sample of 10 adults is selected, and each person's forearm length and height are measured in centimeters.
+    </p>
+    <table>
+      <title>Forearm Length and Height</title>
+      <tabular>
+        <row>
+          <cell>Person</cell>
+          <cell>Forearm Length (cm)</cell>
+          <cell>Height (cm)</cell>
+        </row>
+        <row><cell>1</cell><cell>24</cell><cell>158</cell></row>
+        <row><cell>2</cell><cell>26</cell><cell>165</cell></row>
+        <row><cell>3</cell><cell>25</cell><cell>163</cell></row>
+        <row><cell>4</cell><cell>27</cell><cell>167</cell></row>
+        <row><cell>5</cell><cell>29</cell><cell>173</cell></row>
+        <row><cell>6</cell><cell>28.5</cell><cell>170</cell></row>
+        <row><cell>7</cell><cell>33</cell><cell>186</cell></row>
+        <row><cell>8</cell><cell>31</cell><cell>180</cell></row>
+        <row><cell>9</cell><cell>28</cell><cell>174</cell></row>
+        <row><cell>10</cell><cell>32</cell><cell>180</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether there is a positive
+      linear correlation between forearm length and height in the population. 
+    </p>
+ 
+    <p> Construct a <term>scatterplot</term> to describe the nature of the relationship. Use the plot command and identify the independent x-variable, Forearm, and the dependent y -variable, Height. It is also helpful to include a main title.</p>
+
+<p> <c> plot(Forearm, Height, main='Correlation between Forearm Length and Height') </c> </p>
+<p> You can use the following R code block for this data. Click on the <c>Evaluate R</c> button to see the graph. </p>
+ 
+<sage language="r">
+ <input>
+Forearm=c(24,26,25,27,29,28.5,33,31,28,32)
+Height=c(158,165,163,167,173,170,186,180,174,180)
+ plot(Forearm, Height, main='Correlation between Forearm Length and Height') 
+ </input>
+ </sage>
+
+<p> Calculate the <term>correlation coefficient</term> to describe the strength of the relationship. We will use the <em>cor </em> command with the x-variable and y-variable. You can copy this command into the R code block above. Click on Evaluate R to perform the calculation. </p>
+  <p> <c> cor(Forearm, Height) </c> </p> 
+
+<p> <em> Interpret: </em> We can see a positive linear relationship. The correlation coefficient is <m> r=0.981</m> which indicates a strong positive correlation. </p> 
+<p> Perform a <term>correlation test</term> to the significance. </p> 
+  <p> <c> cor.test(Forearm, Height, alternative ='greater', conf.level = .95) </c> </p> 
+<p> <em> Interpret: </em> The correlation test gives the test statistic <m>t=14.564</m> with p-value of <m>p \approx 0</m> indicting a significant positive correlation between forearm length and height. </p>
+<p> Find the <term>regression equation</term> for a linear model. </p>
+<p> <c> lm(Height~Forearm) </c> </p> 
+<p> <em> Interpret: </em> The regression equation is <m> \hat{y} = 2.867x+91.332</m> where <m>x</m> is the forearm length. </p> 
+<p> We can create a Simple Linear Regression Model (naming it SLRmodelHeight) and then summarize the results. </p> 
+<p> <c>  SLRmodelHeight=lm(Height~Forearm) </c> </p>
+<p> <c>  summary(SLRmodelHeight) </c> </p>
+<p> <em> Interpret: </em> This shows the size of the residuals from the regression line to the actual data points (2.06 below to 3.40 above). We can see the correlation test again with t = 14.56 which is statistically significant. The standard error is 1.761. The coefficient of determination is <m> r^2 = .19637 </m> which indicates that 96% of the variation in the heights is accounted for in the model and 4% is due to chance and other variables. </p> 
+
+
+
 </subsection>
 
     

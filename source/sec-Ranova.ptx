@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-Ranova" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>ANOVA with R</title>
-  <p> ANOVA with R. </p>
+  <introduction>
+<p> In this section we will discuss the one-way analysis of variance (ANOVA) test with R, which is used to compare the means of three or more populations to determine if at least one population mean is different from the others.  </p>
+</introduction>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to   </p>
+  </introduction>
+  <ol>
+    <li> <p> Use R for one-way ANOVA. </p> </li>
+  </ol>
+</objectives>
+
+<subsection xml:id="subsec-R-ANOVA">
+  <title>ANOVA </title>
+  <p> <term>Tornado Alley</term></p>
+<p> Research suggests that Tornado Alley has shifted eastward from the Great Plains with global warming.  A climate researcher wants to compare the mean annual number of tornadoes in four states: Colorado, Oklahoma, Texas, and Missouri. The researcher
+      records the number of tornadoes for each state over five recent years.
+    </p>
+    <table>
+      <title>Annual Number of Tornadoes</title>
+      <tabular>
+        <row>
+          <cell>Colorado</cell>
+          <cell>Oklahoma</cell>
+          <cell>Texas</cell>
+          <cell>Missouri</cell>
+        </row>
+        <row><cell>48</cell><cell>67</cell><cell>132</cell><cell>41</cell></row>
+        <row><cell>52</cell><cell>71</cell><cell>145</cell><cell>38</cell></row>
+        <row><cell>50</cell><cell>69</cell><cell>138</cell><cell>44</cell></row>
+        <row><cell>47</cell><cell>73</cell><cell>141</cell><cell>40</cell></row>
+        <row><cell>53</cell><cell>68</cell><cell>136</cell><cell>42</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean annual number
+      of tornadoes is the same for the four states.
+    </p>
+
+
+
+
+
+
+</subsection> 
+
+
+
+
+
 </section>
