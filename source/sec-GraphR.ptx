@@ -57,15 +57,15 @@ summary(Calories)
 
 
 <figure xml:id="BoxCalorie">
-            <caption>Image of Vertical Boxplot</caption>
+            <caption>Image of Vertical Boxplot in R Studio </caption>
             <image source="Rgraph1.png" width="80%">
-                <shortdescription>Boxplot with values from 80 to 214.</shortdescription>
+                <shortdescription>Boxplot with values from 80 to 214. found in the bottom right panel of R Studio.</shortdescription>
             </image>
         </figure> 
 <p> <em> Interpreting the Boxplot:</em> The boxplot shows the smallest value at 80 and the largest value is 214 (which is unclear on the graph), this gives the range of 214 - 80 = 134 for the total spread. The box represents the quartiles values around 115 and 160 (actual are Q1= 113.2 and Q3 = 160). The box represents the middle 50% of the data values. The inter-quartile range = Q3-Q1 =160-113.2 =  46.8. The thick line in the middle is the median = 118 .  To calculate the actual values use the <em> summary </em> command with the variable name. </p>
 <p> <c> summary(Calories) </c> </p> 
 <figure xml:id="SummaryCalorie">
-            <caption>Image of summary output</caption>
+            <caption>Summary output from R Studio</caption>
             <image source="Rgraph2.png" width="80%">
                 <shortdescription>summary values of min =80, Q1=113.2, Median=118, Q3=160, Max=214.</shortdescription>
             </image>
@@ -84,7 +84,7 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
 
 <p> With the horizontal boxplot it is easier to see the right skewness of the data and it is easier to read the quartile values. </p>
  <figure xml:id="BoxHorzCalorie">
-            <caption>Image of horizontal boxplot</caption>
+            <caption>Horizontal boxplot from R Studio</caption>
             <image source="Rgraph3.png" width="80%">
                 <shortdescription>horizontal boxplot with values from 80 to 214.</shortdescription>
             </image>
@@ -119,7 +119,7 @@ boxplot(Calories,horizontal = TRUE,xlab = "Calories per Serving")
 <p> Now let us explore the amount of sugar per serving by looking at the shape of the distribution with a histogram.  The R command is <c>hist</c> followed by the variable name in parentheses. </p>
 <p>  <c> hist(Sugars) </c> </p>
 <figure xml:id="HistoSugar">
-            <caption>Image of histogram</caption>
+            <caption>Sugar Histogram</caption>
             <image source="Rgraph6.png" width="80%">
                 <shortdescription> Histogram of sugar content.</shortdescription>
             </image>
@@ -148,7 +148,7 @@ summary(Sugar)
 <p> Next, let us investigate the amount of sodium in each serving and add some labels to the axes and give the graph a main title. </p>			
 <p>  <c> hist(Sodium,breaks=9,xlab='Sodium Content (mg)',ylab='Frequency',main='Histogram for Sodium Content') </c> </p>
 <figure xml:id="HistoSodium">
-            <caption>Image of histogram for sodium</caption>
+            <caption>Histogram for Sodium Content</caption>
             <image source="Rgraph8.png" width="80%">
                 <shortdescription> Histogram of sodium content.</shortdescription>
             </image>
@@ -167,7 +167,7 @@ summary(Sugar)
 
 <figure xml:id="CompanyTable">
             <caption>Company Table Output</caption>
-            <image source="RgraphC1.png" width="50%">
+            <image source="RgraphC1.png" width="40%">
                 <shortdescription>G=13 and K=11 and G=6.</shortdescription>
             </image>
         </figure> 

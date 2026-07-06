@@ -4,17 +4,43 @@
   <p> This section gives you the directions for download R for the first time. R is a free, open-source programming language for statistical computing. </p>
 
 <p> <term> Download R </term> </p> 
-<p> How to download R visit </p> 
+ 
+<activity>
+  <p> How to download R for the first time: </p>
+  <ol>
+  <li>  <p>  Go to the official CRAN website for R:
+          <url href= "https://cran.r-project.org/" />.   </p> </li>
+  <li>  <p> In the first box <q>Download and Install R</q>, Click the link for your operating system: Windows, macOS, or Linux.     </p>   </li>
+  <li>  <p>  Click on <q>install R for the first time</q> and select the newest version of R. Such as <c>Download R-4.6.1</c> as of this date. </p>  </li>
+  <li>  <p> Download the installer file.    </p>  </li>
+  <li>  <p> Open the installer and follow the directions on the screen. </p>  </li>
+  <li> <p>Launch R after installation to make sure it works.  </p> </li>
+</ol>
 
-<p> <term> Download R Studio </term> </p> 
-<p> How to download R Studio visit </p> 
+</activity>
 
-<p> For UNC students only: if you cannot download R and R Studio, you can still access the programs through UNC’s Apporto link. Log in with your UNC credentials. Details can be found in Canvas.  </p> 
+<p> <term> Then Download R Studio </term> </p> 
+<activity>
+  <p> To download R Studio visit:  
+  <url href="https://www.rstudio.com/products/rstudio/download/" /> </p>
+    <p> First, make sure you already have <term>R</term> installed on your computer. </p>  
+   <p>  Next, go to the RStudio download page from Posit.   </p>  
+  <p>       Choose the version for your operating system:     Windows, macOS, or Linux. Then download the installer file. Such as <c>RStudio-2026.06.0-242.exe </c> </p>
+    <p>  Open the downloaded file. 
+      On Windows, run the <c>.exe</c> installer.
+      On macOS, open the <c>.dmg</c> file and drag RStudio into your Applications folder.
+Follow the directions on the screen to finish the installation.</p>
+<p>After installation, open RStudio.  It should connect to the version of R installed on your computer.</p>
+
+</activity>
+
+
+<p> For UNC students only: if you cannot download R and R Studio, you can still access the programs through UNC's Apporto link. Log in with your UNC credentials. Details can be found in Canvas.  </p> 
 <p> Note: For my classes we will be using R Studio since it has a friendlier interface. R Studio will split the screen into 4 panels, each panel has a different purpose. The top left is where you will see the files that are currently open in R Studio. The bottom left panel is where you will type in the commands and see the computational outputs. The top right panel summarizes the variables. The bottom right panel is where you can access the folders, and this is where the graphical output will show. The R commands are the same for both programs. </p>
 <p> <term> Getting ready to use R </term> </p> 
 <ul>
 <li> <p> Set up a folder for the Using R Files</p> </li>
-<li> <p> Save the data and lesson files in this folder </p> </li>
+<li> <p> Save the data and lesson files in this folder so it is easy to import </p> </li>
 <li> <p> Launch R or R Studio</p> </li>
 <li> <p> Set up the working directory </p> </li>
 <li> <p> You are ready to begin. </p> </li>
