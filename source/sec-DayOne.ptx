@@ -159,7 +159,7 @@ If we asked the students (each student is a case) in class, there will be lots o
     <p> What is the sample in this scenario?  </p>
     </statement>
     <choices randomize="yes">
-    <choice >
+    <choice>
         <statement>
         <p> Every animal at the Denver Zoo. </p>
         </statement>
