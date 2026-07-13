@@ -116,7 +116,7 @@ Generalizing the pattern, we can determine the probability of each event with th
 
 <definition xml:id="def-BinomialFormula">
             <statement>    
-<p> The <term> Binomial Probability Formula </term>  for exactly X successes in n trials is <me> P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X} </me> </p>         </statement>
+<p> The <term> Binomial Probability Formula </term>  for exactly X successes in n trials is <md> P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X} </md> </p>         </statement>
         </definition>
 
  <note> <p> See how the first part of the binomial formula for the number of ways the event occurs is the same as the combination formula for nCr .  Also note that the sum of the exponents equals <m> n</m> for the total number of trials. </p> </note> 
@@ -311,7 +311,7 @@ So we will use the <c>2nd </c> button  <c>VARS</c> to select [DISTR] and then se
 
 <subsection xml:id="subsec-BinomialPractice">
   <title>Practice Problems</title>
-
+<p>the  </p>
   
   </subsection>
 

@@ -431,7 +431,8 @@ F=\frac{(s_1)^2}{(s_2)^2}
       At the <m>0.05</m> significance level, test whether the population
       variances in customer wait times are different for the two locations.
     </p>
-<exercise> <title> Restaurant Times </title>
+<exercise xml:id="ex-two-variance-restaurant"> 
+  <title> Restaurant Times </title>
   <statement>
 <p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context. </p>
   </statement>
@@ -507,7 +508,8 @@ F=\frac{(s_1)^2}{(s_2)^2}
       At the <m>0.10</m> significance level, test whether the population
       variances in bolt diameters are different for the two machines.
   </p>
-<exercise> <title> Bolt Diameters </title>
+<exercise xml:id="ex-two-variance-bolts">
+  <title> Bolt Diameters </title>
 <statement>
 <p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context. </p>
   </statement>
@@ -573,7 +575,165 @@ F=\frac{(s_1)^2}{(s_2)^2}
   </solution>
 </exercise>
 
+    <p>
+      A medical researcher wants to compare the variability in systolic blood
+      pressure readings for patients using two different blood pressure
+      medications. A random sample of patients taking Medication A and a random
+      sample of patients taking Medication B are selected, and each patient’s
+      systolic blood pressure is recorded in mmHg.
+    </p>
+    <table>
+      <title>Systolic Blood Pressure by Medication (mmHg)</title>
+      <tabular>
+        <row>
+          <cell>Medication A</cell>
+          <cell>Medication B</cell>
+        </row>
+        <row><cell>118</cell><cell>121</cell></row>
+        <row><cell>122</cell><cell>135</cell></row>
+        <row><cell>120</cell><cell>128</cell></row>
+        <row><cell>119</cell><cell>140</cell></row>
+        <row><cell>121</cell><cell>126</cell></row>
+        <row><cell>123</cell><cell>132</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      variances in systolic blood pressure are different for the two
+      medications.
+    </p>
+<exercise xml:id="ex-two-variance-blood">
+<title> Blood Pressure </title> 
+  <statement>
+<p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context.</p> 
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      This is an <m>F</m>-test for comparing two population variances.
+    </p>
+    <p>
+      Let <m>\sigma_1^2</m> be the variance in systolic blood pressure for
+      Medication A and <m>\sigma_2^2</m> be the variance for Medication B.
+      The hypotheses are
+      <m>H_0:\sigma_1^2=\sigma_2^2</m>
+      and
+      <m>H_a:\sigma_1^2\ne\sigma_2^2</m>.
+    </p>
+</solution>
+<solution><title> Statistical Test</title>
+    <p>
+      For Medication A, the sample standard deviation is <m>s_1=1.87</m> and the variance is      <m>s_1^2=3.5</m>. </p>
+     <p> For Medication B, the sample standard deviation is <m>s_2=6.77</m> and the sample variance is  <m>s_2^2=45.83</m>.
+    </p>
+    <p>
+      Using the larger sample variance in the numerator, the test statistic is
+      <m>
+        F=\frac{45.83}{3.5}\approx 13.09.
+      </m>
+    </p>
+    <p>  The degrees of freedom for the numerator are  <m>dfN=6-1=5</m> </p>
+<p>  and degrees of freedom for the denominator are <m>dfD=6-1=5</m>  .   </p>
+    <p>
+      For a two-tailed test this gives a p-value <m>p=2(0.0067)=0.0134</m>.
+    </p>
+</solution>
+<solution><title> Conclusion</title>
+    <p> Since the p-value = 0.0134 is less than 0.05,  we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the 0.05 significance level to conclude that the population variances in systolic blood pressure differ between the two medications.
+    </p>
+    <p>
+      Since Medication B has the larger sample variance, the data suggest that
+      systolic blood pressure readings are more variable for patients taking
+      Medication B.
+    </p>
+  </solution>
+</exercise>
 
+<p>
+      Atmospheric scientists want to compare the variability in daily carbon
+      dioxide concentrations measured at two monitoring stations. Station A is
+      located near a coastal site, and Station B is located farther inland. A
+      random sample of <m>8</m> daily carbon dioxide measurements, in parts per
+      million (ppm), is collected from each station.
+    </p>
+    <table>
+      <title>Daily Atmospheric Carbon Dioxide Concentrations (ppm)</title>
+      <tabular>
+        <row>
+          <cell>Station A</cell>
+          <cell>Station B</cell>
+        </row>
+        <row><cell>421.2</cell><cell>418.5</cell></row>
+        <row><cell>422.1</cell><cell>425.7</cell></row>
+        <row><cell>420.8</cell><cell>419.3</cell></row>
+        <row><cell>421.5</cell><cell>427.1</cell></row>
+        <row><cell>422.0</cell><cell>423.8</cell></row>
+        <row><cell>421.7</cell><cell>428.0</cell></row>
+        <row><cell>420.9</cell><cell>417.9</cell></row>
+        <row><cell>421.4</cell><cell>426.2</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the population
+      variances in daily atmospheric carbon dioxide concentrations differ
+      between the two monitoring stations.
+    </p>
+  <exercise xml:id="ex-two-variance-atmospheric-co2">
+    <title> Atmospheric Carbon Dioxide</title> 
+    <statement>
+    <p> State the hypotheses, compute the statistical test value and p-value, and write the conclusion in context.</p> 
+    </statement>
+    <solution> <title> Hypotheses</title>
+    <p>
+      This is an <m>F</m>-test for comparing two population variances.
+    </p>
+    <p>
+      Let <m>\sigma_1^2</m> be the population variance for Station A and
+      <m>\sigma_2^2</m> be the population variance for Station B. The
+      hypotheses are
+      <m>H_0:\sigma_1^2=\sigma_2^2</m>
+      and
+      <m>H_a:\sigma_1^2\ne\sigma_2^2</m>.
+    </p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p> For Station A the sample standard deviation is <m>s_1 =0.475 </m> and the sample variances is <m>s_1^2\approx 0.226</m></p>
+      <p>And for Station B the sample standard deviation is <m>s_2 =4.13</m>
+      <m>s_2^2\approx 17.06</m>   .
+    </p>
+    <p>
+      Using the larger sample variance in the numerator, the test statistic is
+      <m>
+        F=\frac{17.06}{0.475} = 35.92.
+      </m>
+    </p>
+    <p>
+      The degrees of freedom are  <m>dfN=8-1=7</m>
+      for the numerator and
+      <m>dfD=8-1=7</m>  for the denominator.
+    </p>
+    <p>
+      For a two-sided test, the <m>p</m>-value is <m>p=2(0.000058)=0.000116</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the 0.05 significance level to
+      conclude that the population variances in daily atmospheric carbon dioxide
+      concentrations differ between the two monitoring stations.
+    </p>
+    <p>
+      Because Station B has the larger sample variance, the data suggest that
+      daily atmospheric carbon dioxide concentrations are more variable at
+      Station B than at Station A.
+    </p>
+  </solution>
+  </exercise>
 
 
 

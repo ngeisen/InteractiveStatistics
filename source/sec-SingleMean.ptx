@@ -482,8 +482,262 @@
   </solution>
 </exercise>
 
+<example xml:id="ex-one-mean-ocean-salinity">
+<title> Ocean Salinity</title>
+  <statement>
+    <p>
+      The average salinity of ocean water is often taken to be about
+      35 practical salinity units (psu). A group of marine scientists
+      wants to know whether the mean salinity of surface water near the polar
+      oceans is lower than 35 psu, possibly because of melting sea ice
+      and freshwater input.
+    </p>
+    <p>
+      A random sample of <m>10</m> salinity measurements is taken from surface
+      waters near the poles, with the following results:
+    </p>
+    <table>
+      <title>Surface Ocean Salinity Near the Poles (psu)</title>
+      <tabular>
+        <row>
+          <cell>34.7</cell>
+          <cell>34.8</cell>
+          <cell>34.6</cell>
+          <cell>34.9</cell>
+          <cell>34.5</cell>
+        </row>
+        <row>
+          <cell>34.7</cell>
+          <cell>34.8</cell>
+          <cell>34.6</cell>
+          <cell>34.7</cell>
+          <cell>34.9</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>\alpha =0.05</m> significance level, test whether the mean salinity of
+      surface water near the poles is less than 35 psu.
+    </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      This is a one-sample <m>t</m>-test for a population mean.
+    </p>
+    <p>
+      Let <m>\mu</m> be the true mean salinity of surface water near the poles.
+      The hypotheses are
+      <m>H_0:\mu=35</m>
+      and
+      <m>H_a:\mu \lt 35</m>.
+    </p>
+  </solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      For the sample, the sample mean is
+      <m>\bar{x}=34.72</m> psu,  the sample standard deviation is  <m>s\approx 0.132</m> psu, and the sample size is  <m>n=10</m>.
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}} =\frac{34.72-35}{0.132/\sqrt{10}}   \approx -6.71.
+      </md>
+    </p>
+</solution>
+  <solution> <title> p-value</title>
+    <p>
+      The degrees of freedom are <m>df=n-1=9</m>.
+    </p>
+    <p>
+      Using a <m>t</m>-distribution with <m>9</m> degrees of freedom, the
+      <m>p</m>-value is less than <m>0.0001</m>. StatKey gives <m>p=.000047</m>
+    </p>
+  </solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the mean salinity of surface water near the poles is less
+      than <m>35</m> psu.
+    </p>
+    <p>
+      In context, these data support the idea that polar surface waters are less
+      salty than the typical average ocean salinity.
+    </p>
+  </solution>
+</example>
 
+<exercise xml:id="ex-one-mean-audiology">
+<title>Hearing</title>
+  <statement>
+    <p>
+      An audiologist wants to determine whether the mean hearing threshold at
+      1000 Hz for a group of adults differs from the standard reference level of 20 decibels (dB). A random sample of 10 adults is  selected, and each person's hearing threshold at 1000 Hz is  measured.
+    </p>
+    <table>
+      <title>Hearing Thresholds at 1000 Hz (dB)</title>
+      <tabular>
+        <row>
+          <cell>22</cell>
+          <cell>19</cell>
+          <cell>24</cell>
+          <cell>21</cell>
+          <cell>23</cell>
+        </row>
+        <row>
+          <cell>20</cell>
+          <cell>25</cell>
+          <cell>18</cell>
+          <cell>22</cell>
+          <cell>24</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean hearing
+      threshold differs from <m>20</m> dB.
+    </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      This is a one-sample <m>t</m>-test for a population mean.
+    </p>
+    <p>
+      Let <m>\mu</m> be the true mean hearing threshold at 1000 Hz. The
+      hypotheses are
+      <md>H_0:\mu=20</md>
+      <md>H_a:\mu \neq 20</md>.
+    </p>
+  </solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      For the sample, the sample size is <m>n=10</m>, the sample mean is
+      <m>\bar{x}=21.8</m>, and the sample standard deviation is
+      <m>s\approx 2.30</m>.
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}
+        =\frac{21.8-20}{2.30/\sqrt{10}}     \approx 2.47.
+      </md>
+    </p>
+</solution>
+  <solution> <title> p-value</title>
+    <p>   The degrees of freedom are  <m>df=n-1=9</m>.
+    </p>
+    <p>
+      Using a <m>t</m>-distribution with <m>9</m> degrees of freedom, the two-tailed test gives   <m>p =2(0.018)=0.036</m>.
+    </p>
+  </solution> 
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the 0.05 significance level to
+      conclude that the mean hearing threshold at 1000 Hz differs from 20 dB.
+    </p>
+    <p>
+      Because the sample mean is greater than 20 dB, the data suggest
+      that this group has a higher average hearing threshold than the standard
+      reference level.
+    </p>
+  </solution>
+</exercise>
 
+<exercise xml:id="ex-one-mean-carbon-dioxide-ocean">
+<title> Coastal Carbon Dioxide</title>
+  <statement>
+    <p>
+      Oceanographers are studying the amount of dissolved carbon dioxide in a
+      coastal region of the ocean. Historical records indicate that the mean
+      dissolved carbon dioxide concentration in this region is 2.10 millimoles per liter. A researcher wants to determine whether the current mean dissolved carbon dioxide concentration differs from this historical value.
+    </p>
+    <p>
+      A random sample of <m>12</m> water measurements is collected, with the
+      following dissolved carbon dioxide concentrations, in millimoles per liter:
+    </p>
+    <table>
+      <title>Dissolved Carbon Dioxide Concentrations (mmol/L)</title>
+      <tabular>
+        <row>
+          <cell>2.18</cell>
+          <cell>2.24</cell>
+          <cell>2.09</cell>
+          <cell>2.15</cell>
+          <cell>2.21</cell>
+          <cell>2.12</cell>
+        </row>
+        <row>
+          <cell>2.19</cell>
+          <cell>2.27</cell>
+          <cell>2.14</cell>
+          <cell>2.20</cell>
+          <cell>2.16</cell>
+          <cell>2.23</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the current mean
+      dissolved carbon dioxide concentration differs from 2.10 millimoles per liter.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a one-sample <m>t</m>-test for a population mean.
+    </p>
+    <p>
+      Let <m>\mu</m> be the true mean dissolved carbon dioxide concentration.
+      The hypotheses are
+      <m>H_0:\mu=2.10</m>
+      and
+      <m>H_a:\mu \ne 2.10</m>.
+    </p>
+  </solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      For the sample, the sample size is <m>n=12</m>, the sample mean is
+      <m>\bar{x}=2.1817</m>, and the sample standard deviation is
+      <m>s\approx 0.0549</m>.
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}
+        =\frac{2.1817-2.10}{0.0549/\sqrt{12}}
+        \approx 5.16.
+      </md>
+    </p>
+</solution>
+  <solution> <title> p-value</title>
+    <p>
+      The degrees of freedom are <m>df=n-1=11</m>.
+    </p>
+    <p>
+      Using a <m>t</m>-distribution with <m>11</m> degrees of freedom, the
+      <m>p</m>-value is less than <m>0.001</m>. In StatKey identify Two Tail to get <m>p=2(0.00016)=0.00032</m> 
+    </p>
+  </solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the current mean dissolved carbon dioxide concentration
+      differs from 2.10 millimoles per liter.
+    </p>
+    <p>
+      Because the sample mean is greater than 2.10, the data suggest that
+      the current dissolved carbon dioxide concentration is higher than the
+      historical mean.
+    </p>
+  </solution>
+</exercise>
 
   </subsection>
 

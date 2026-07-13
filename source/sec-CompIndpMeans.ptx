@@ -626,6 +626,100 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
   <title>Comparing Means Practice Problems</title>
 <p> Choose which form of technology you prefer for this type of analysis. </p> 
   
+<example xml:id="ex-two-sample-recovery">
+<title> Care Plans</title> 
+  <statement>
+    <p>
+      A nursing researcher wants to compare the mean recovery time for patients
+      receiving two different postoperative care plans. A random sample of
+      patients is assigned to Care Plan A and another random sample is assigned Care Plan B, and the recovery time for each patient, in days, is recorded.
+    </p>
+    <table>
+      <title>Recovery Time by Postoperative Care Plan (days)</title>
+      <tabular>
+        <row>
+          <cell>Care Plan A</cell>
+          <cell>Care Plan B</cell>
+        </row>
+        <row><cell>8</cell><cell>11</cell></row>
+        <row><cell>9</cell><cell>10</cell></row>
+        <row><cell>7</cell><cell>12</cell></row>
+        <row><cell>10</cell><cell>13</cell></row>
+        <row><cell>8</cell><cell>11</cell></row>
+        <row><cell>9</cell><cell>12</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, test whether the mean recovery time
+      differs between the two postoperative care plans.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a two-sample <m>t</m>-test for a difference in independent means.
+    </p>
+    <p>
+      Let <m>\mu_1</m> be the mean recovery time for Care Plan A and
+      <m>\mu_2</m> be the mean recovery time for Care Plan B. The hypotheses are
+      <md>H_0:\mu_1=\mu_2</md>
+      and
+      <md>H_a:\mu_1\ne\mu_2</md> for a two-tailed test.
+    </p>
+  </solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The sample statistics are
+      <m>\bar{x}_1=8.5</m>,
+      <m>s_1=1.05</m>,
+      <m>n_1=6</m>
+      for Care Plan A, and
+      <m>\bar{x}_2=11.5</m>,
+      <m>s_2=1.05</m>,
+      <m>n_2=6</m>
+      for Care Plan B.
+    </p>
+    <p>
+      Even though the sample variances are equal, we use the un-pooled two-sample
+      <m>t</m>-test for the mean in this class.
+    </p>
+    <p>
+      The test statistic is
+      <m>
+        t=
+        \frac{\bar{x}_1-\bar{x}_2}
+        {\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+        =
+        \frac{8.5-11.5}
+        {\sqrt{1.1\left(\frac{1}{6}+\frac{1}{6}\right)}}
+        \approx -4.95.
+      </m>
+    </p>
+    <p>
+      The degrees of freedom are
+      <m>df=n_1+n_2-2=10</m>.
+    </p>
+    <p>
+      The <m>p</m>-value for a two-sided test is less than <m>0.001</m>.
+    </p>
+    <p>
+      Since <m>p lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the mean recovery time differs between the two postoperative
+      care plans.
+    </p>
+    <p>
+      Because <m>\bar{x}_1 \lt \bar{x}_2</m>, the data suggest that patients in
+      Care Plan A have a shorter average recovery time than patients in Care
+      Plan B.
+    </p>
+  </solution>
+</example>
+
+
+
+
 
   </subsection>
 

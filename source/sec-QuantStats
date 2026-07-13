@@ -4,7 +4,7 @@
     <title>Summary Statistics  </title>
 
     <introduction>
-        <p> In this section we will investigate some ways to summarize the data with graphs and numerical statistics. </p>
+        <p> In this section we will investigate some ways to summarize the data with numerical statistics. We will spend more time with the measures of central tendency and variability in the next chapter. </p>
       </introduction> 
 
       <objectives>
@@ -45,19 +45,6 @@ data set. There are three measures of the <term> center </term> of the data. The
     <p> <term> Example: </term> A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72. </p>
     <p> <term> Solution: </term> This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)/2=42,  thus the median is 42. The mean is the sum of the values divided by 6, thus 289/6 = 48.167 apps per phone. The range is 72 - 25 = 47 apps, which represents the spread in the number of apps on these phones. </p> 
         
-<exercise>
-        <title>measures of center</title>
-        <statement><p>Find the mode, median, and mean for the data set 4, 5, 6?</p></statement>
-        <hint><p> Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values.</p></hint>
-        <answer><p> No mode, median = 5, mean = 5 </p> </answer>
-        <solution>
-          <p> No mode since each value occurs just once.</p>
-          <p> The middle value is 4, <c> 5</c>, 6 thus median is 5.</p>
-          <p> Find the mean <m>(4+5+6)/3=5 </m> </p>
-        </solution>
-    </exercise>
-
-
 <example>
   <title>Find the measures of center</title>
   <statement>
@@ -71,6 +58,17 @@ data set. There are three measures of the <term> center </term> of the data. The
   </solution>
 </example>
 
+<exercise>
+    <title>Weights</title>
+      <statement><p>Find the mode, median,  mean and range for the following sample of student weights: 162, 138, 140, 238, 120, 115, 175.</p></statement>
+        <hint><p> Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values, range is the difference between the largest and smallest values.</p></hint>
+            <solution>
+          <p> No mode since each value occurs just once.</p>
+          <p> The middle value is 115, 120, 138, [140], 162, 175, 238 thus median is 140.</p>
+          <p> Find the mean <m>1088/7=155.4 </m>pounds </p>
+          <p> range = 238-115 = 123 pounds </p>
+        </solution>
+    </exercise>
 
 <p> <term> Data Exploration </term> </p>
 <p>  Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste a graph and the summary statistics table into a word document and summarize the statistics from the sample. For the variable identified state the mean, median, mode, and range. Relate these values to one of the graphs. </p>

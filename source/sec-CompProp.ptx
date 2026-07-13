@@ -381,7 +381,7 @@ SE=\sqrt{\frac{0.21}{180}+\frac{0.16}{160}}
 
   </subsection>
 
- 
+  
 
 <subsection xml:id="subsec-CompareProportionsCalc">
   <title>Using Technology</title>
@@ -653,6 +653,505 @@ This is a two-tailed test. </p>
 </exercise>
 
 <p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" /> </p>
+
+<exercise xml:id="ex-two-proportion-audiology">
+<title> Hearing Aids</title>
+  <statement>
+    <p>
+      An audiologist wants to compare the proportion of patients who show
+      measurable improvement in speech recognition after using two different
+      hearing aid programs. A random sample of patients is assigned to
+      Program A and Program B, and each patient is classified as either
+      showing improvement or not showing improvement after six weeks.
+    </p>
+    <table>
+      <title>Speech Recognition Improvement by Hearing Aid Program</title>
+      <tabular>
+        <row>
+          <cell>Program</cell>
+          <cell>Improved</cell>
+          <cell>Not Improved</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Program A</cell><cell>42</cell><cell>18</cell><cell>60</cell></row>
+        <row><cell>Program B</cell><cell>31</cell><cell>29</cell><cell>60</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the proportion of
+      patients who improve is different for the two hearing aid programs.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      This is a two-proportion <m>z</m>-test.
+    </p>
+    <p>
+      Let <m>p_1</m> be the proportion of patients who improve with Program A,
+      and let <m>p_2</m> be the proportion of patients who improve with
+      Program B.
+      The hypotheses are
+      <md>H_0:p_1 = p_2</md>
+      <md>H_a:p_1\ne p_2</md> for a two tailed test.
+    </p>
+  </solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The sample proportions are
+      <md>
+        \hat{p}_1=\frac{42}{60}=0.70
+      </md>
+       <md>
+        \hat{p}_2=\frac{31}{60}\approx 0.5167.
+      </md>
+    </p>
+    <p>
+      Under the null hypothesis, the pooled proportion is
+      <md>
+        \hat{p}=\frac{42+31}{60+60}=\frac{73}{120}\approx 0.6083.
+      </md>
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        z=
+        \frac{\hat{p}_1-\hat{p}_2}
+        {\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+        =   \frac{0.70-0.5167}
+        {\sqrt{(0.6083)(0.3917)\left(\frac{1}{60}+\frac{1}{60}\right)}}
+        \approx 2.05.
+      </md>
+    </p>
+    <p>
+      The <m>p</m>-value for a two-sided test is approximately <m>0.040</m>.
+    </p>
+  </solution>
+  <solution> <title> Conclusion</title>
+
+    <p>
+      Since <m>p \lt0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportion of patients who improve differs between the
+      two hearing aid programs.
+    </p>
+    <p>
+      Because <m>\hat{p}_1 \gt  \hat{p}_2</m>, the data suggest that Program A
+      has a higher improvement rate than Program B.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-two-proportion-postoperative">
+<title> Postoperative Infection </title>
+  <statement>
+    <p>
+      A nursing researcher wants to compare the proportion of patients who
+      develop a postoperative infection under two different wound-care
+      protocols. A random sample of surgical patients is assigned to Protocol A
+      and Protocol B, and each patient is classified as either developing an
+      infection or not developing an infection during recovery.
+    </p>
+    <table>
+      <title>Postoperative Infection by Wound-Care Protocol</title>
+      <tabular>
+        <row>
+          <cell>Protocol</cell>
+          <cell>Infection</cell>
+          <cell>No Infection</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Protocol A</cell><cell>14</cell><cell>106</cell><cell>120</cell></row>
+        <row><cell>Protocol B</cell><cell>27</cell><cell>93</cell><cell>120</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the proportion of
+      patients who develop a postoperative infection differs between the two
+      wound-care protocols.
+    </p>
+  </statement>
+  <solution><title> Hypotheses </title>
+    <p>
+      This is a two-proportion <m>z</m>-test.
+    </p>
+    <p>
+      Let <m>p_1</m> be the proportion of patients who develop an infection
+      under Protocol A, and let <m>p_2</m> be the proportion of patients who
+      develop an infection under Protocol B. The hypotheses are
+      <md>H_0:p_1=p_2</md>
+      and
+      <md>H_a:p_1\ne p_2</md>.
+    </p>
+  </solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The sample proportions are
+      <md>
+        \hat{p}_1=\frac{14}{120}\approx 0.1167
+      </md>
+      and
+      <md>
+        \hat{p}_2=\frac{27}{120}=0.225.
+      </md>
+    </p>
+    <p>
+      Under the null hypothesis, the pooled proportion is
+      <md>
+        \hat{p}=\frac{14+27}{120+120}=\frac{41}{240}\approx 0.1708.
+      </md>
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        z=     \frac{\hat{p}_1-\hat{p}_2}
+        {\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+        =     \frac{0.1167-0.225}
+        {\sqrt{(0.1708)(0.8292)\left(\frac{1}{120}+\frac{1}{120}\right)}}
+        \approx -2.22.
+      </md>
+    </p>
+    <p>
+      The <m>p</m>-value for a two-sided test is approximately <m>0.026</m>.
+    </p>
+  </solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportion of patients who develop a postoperative
+      infection differs between the two wound-care protocols.
+    </p>
+    <p>
+      Because <m>\hat{p}_1 \lt \hat{p}_2</m>, the data suggest that Protocol A
+      has a lower infection rate than Protocol B.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-two-proportion-groundwater">
+<title>Groundwater</title>
+  <statement>
+    <p>
+      Earth scientists want to compare the proportion of groundwater wells that
+      test above the safe nitrate ion limit of 3.0 mg/L in two agricultural regions. A random  sample of wells is selected from Region A and Region B, and each well is classified as either above the safe nitrate limit or not above the safe nitrate limit.
+    </p>
+    <table>
+      <title>Groundwater Wells Above Safe Nitrate Limit</title>
+      <tabular>
+        <row>
+          <cell>Region</cell>
+          <cell>Above Limit</cell>
+          <cell>Not Above Limit</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Region A</cell><cell>36</cell><cell>84</cell><cell>120</cell></row>
+        <row><cell>Region B</cell><cell>22</cell><cell>98</cell><cell>120</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the proportion of
+      wells above the safe nitrate limit differs between the two regions.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a two-proportion <m>z</m>-test.
+    </p>
+    <p>
+      Let <m>p_1</m> be the proportion of wells above the safe nitrate limit in
+      Region A, and let <m>p_2</m> be the proportion of wells above the safe
+      nitrate limit in Region B. The hypotheses are
+      <md>H_0:p_1=p_2</md>
+       <md>H_a:p_1\ne p_2</md>.
+    </p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The sample proportions are
+      <md>\hat{p}_1=\frac{36}{120}=0.30</md>
+       <md>\hat{p}_2=\frac{22}{120}\approx 0.1833</md>.
+    </p>
+    <p>
+      Under the null hypothesis, the pooled proportion is
+      <md>
+        \hat{p}=\frac{36+22}{120+120}=\frac{58}{240}\approx 0.2417.
+      </md>
+    </p>
+    <p>
+      The test statistic is
+      <m>
+        z=   \frac{\hat{p}_1-\hat{p}_2}
+        {\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+        =    \frac{0.30-0.1833}
+        {\sqrt{(0.2417)(0.7583)\left(\frac{1}{120}+\frac{1}{120}\right)}}
+        \approx 2.11.
+      </m>
+    </p>
+    <p>
+      The <m>p</m>-value for a two-sided test is approximately <m>0.035</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportion of wells above the safe nitrate limit differs
+      between the two regions.
+    </p>
+    <p>
+      Because <m>\hat{p}_1 \gt  \hat{p}_2</m>, the data suggest that Region A
+      has a higher proportion of wells above the safe nitrate ion limit of 3.0 mg/L than
+      Region B.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-two-proportion-articulation-methods ">
+<title> Articulation Methods</title> 
+  <statement>
+    <p>
+      A speech-language pathologist wants to compare the proportion of children
+      who show improvement in articulation after receiving one of two different
+      therapy approaches. A random sample of children receives Therapy A through <em>oral-motor exercise</em> to strength the mouth, lips and tongue for more precise sound production, and another random sample receives Therapy B by <em>sound modeling </em>where the  child imitates it during play-based drills. After eight weeks, each child is classified as either showing improvement in articulation or not showing improvement.
+    </p>
+    <table>
+      <title>Articulation Improvement by Therapy Approach</title>
+      <tabular>
+        <row>
+          <cell>Therapy Approach</cell>
+          <cell>Improved</cell>
+          <cell>Did Not Improve</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Therapy A</cell><cell>34</cell><cell>16</cell><cell>50</cell></row>
+        <row><cell>Therapy B</cell><cell>25</cell><cell>25</cell><cell>50</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the proportion of
+      children who improve differs between the two therapy approaches.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a two-proportion <m>z</m>-test.
+    </p>
+    <p>
+      Let <m>p_1</m> be the proportion of children who improve with Therapy A,
+      and let <m>p_2</m> be the proportion of children who improve with
+      Therapy B. The hypotheses are
+      <md>H_0:p_1=p_2</md>
+      and
+      <md>H_a:p_1\ne p_2</md>.
+    </p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>  The sample proportions are
+      <md>\hat{p}_1=\frac{34}{50}=0.68</md>
+       <md>\hat{p}_2=\frac{25}{50}=0.50</md>.
+    </p>
+    <p>
+      Under the null hypothesis, the pooled proportion is
+      <md>     \hat{p}=\frac{34+25}{50+50}=\frac{59}{100}=0.59.
+      </md>
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        z=     \frac{\hat{p}_1-\hat{p}_2}
+        {\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+</md>
+<md> z   =      \frac{0.68-0.50}
+        {\sqrt{(0.59)(0.41)\left(\frac{1}{50}+\frac{1}{50}\right)}}
+        \approx 1.84.
+      </md>
+    </p>
+    <p>
+      The <m>p</m>-value for a two-sided test is approximately <m>0.066</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportion of children who improve differs between the
+      two therapy approaches.
+    </p>
+    <p>
+      Although the sample proportion is higher for Therapy A, the difference is
+      not statistically significant at the 0.05 level.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-two-proportion-sleep-psychology">
+<title> Sleep Quality</title>
+  <statement>
+    <p>
+      A psychologist wants to compare the proportion of participants who report
+      improved sleep quality after using one of two different stress-reduction
+      programs. A random sample of participants is assigned to Program A, journaling technique to write down anxious thoughts, and another random sample is assigned to Program B, a progressive muscle relaxation. After four weeks, each participant is classified as either reporting improved sleep quality or not reporting improvement.
+    </p>
+    <table>
+      <title>Improved Sleep Quality by Stress-Reduction Program</title>
+      <tabular>
+        <row>
+          <cell>Program</cell>
+          <cell>Improved Sleep</cell>
+          <cell>Did Not Improve</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Program A</cell><cell>48</cell><cell>32</cell><cell>80</cell></row>
+        <row><cell>Program B</cell><cell>36</cell><cell>44</cell><cell>80</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the proportion of
+      participants who report improved sleep quality differs between the two
+      stress-reduction programs.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a two-proportion <m>z</m>-test.
+    </p>
+    <p>
+      Let <m>p_1</m> be the proportion of participants who report improved sleep
+      quality in Program A, and let <m>p_2</m> be the proportion of participants
+      who report improved sleep quality in Program B. The hypotheses are
+      <md>H_0:p_1=p_2</md>
+      and
+      <md>H_a:p_1\ne p_2</md>.
+    </p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The sample proportions are
+      <md>\hat{p}_1=\frac{48}{80}=0.60</md>
+       <md>\hat{p}_2=\frac{36}{80}=0.45</md>.
+    </p>
+    <p>
+      Under the null hypothesis, the pooled proportion is
+      <m>
+        \hat{p}=\frac{48+36}{80+80}=\frac{84}{160}=0.525.
+      </m>
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        z=    \frac{0.60-0.45}
+        {\sqrt{(0.525)(0.475)\left(\frac{1}{80}+\frac{1}{80}\right)}}
+        \approx 1.90.
+      </md>
+    </p>
+    <p>
+      The <m>p</m>-value for a two-sided test is approximately <m>0.057</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \gt 0.05</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not sufficient evidence at the 0.05 significance level to
+      conclude that the proportion of participants who report improved sleep
+      quality differs between the two stress-reduction programs.
+    </p>
+    <p>
+      Although the sample proportion is higher for Program A, the difference is
+      not statistically significant at the 0.05 level.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-two-proportion-renew">
+<title> Renewals</title>
+  <statement>
+    <p>
+      A company wants to compare the proportion of customers who renew their
+      annual subscription after receiving one of two different email reminders.
+      A random sample of customers receives Email A, and another random sample
+      receives Email B. Each customer is then classified as either renewing the
+      subscription or not renewing it.
+    </p>
+    <table>
+      <title>Subscription Renewal by Email Reminder</title>
+      <tabular>
+        <row>
+          <cell>Email Reminder</cell>
+          <cell>Renewed</cell>
+          <cell>Did Not Renew</cell>
+          <cell>Total</cell>
+        </row>
+        <row><cell>Email A</cell><cell>78</cell><cell>102</cell><cell>180</cell></row>
+        <row><cell>Email B</cell><cell>59</cell><cell>121</cell><cell>180</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the proportion of
+      customers who renew differs between the two email reminders.
+    </p>
+  </statement>
+  <solution><title>Hypotheses</title> 
+    <p>
+      This is a two-proportion <m>z</m>-test.
+    </p>
+    <p>
+      Let <m>p_1</m> be the proportion of customers who renew after receiving
+      Email A, and let <m>p_2</m> be the proportion of customers who renew after
+      receiving Email B. The hypotheses are
+      <md>H_0:p_1=p_2</md>
+      and
+      <md>H_a:p_1\ne p_2</md>.
+    </p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The sample proportions are
+      <md>\hat{p}_1=\frac{78}{180}=0.4333</md>
+      <md>\hat{p}_2=\frac{59}{180}=0.3278</md>.
+    </p>
+    <p>
+      Under the null hypothesis, the pooled proportion is
+      <md>
+        \hat{p}=\frac{78+59}{180+180}=\frac{137}{360}\approx 0.3806.
+      </md>
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        z=     \frac{\hat{p}_1-\hat{p}_2}
+        {\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+        =     \frac{0.4333-0.3278}
+        {\sqrt{(0.3806)(0.6194)\left(\frac{1}{180}+\frac{1}{180}\right)}}
+        \approx 2.08.
+      </md>
+    </p>
+    <p>
+      The <m>p</m>-value for a two-sided test is approximately <m>0.038</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion</title>
+    <p>   Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.    
+   </p>
+    <p>  There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the proportion of customers who renew differs between the
+      two email reminders.
+    </p>
+    <p>
+      Because <m>\hat{p}_1 \gt  \hat{p}_2</m>, the data suggest that Email A
+      leads to a higher subscription renewal rate than Email B.
+    </p>
+  </solution>
+</exercise>
 
 
   </subsection>

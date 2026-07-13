@@ -778,7 +778,281 @@ where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sa
 </solution>
 </exercise> 
 
+<exercise xml:id="ex-paired-relaxing">
+<title> Relaxation Intervention </title>
+  <statement>
+    <p>
+      A nursing researcher wants to determine whether a relaxation intervention changes the mean stress level of hospital nurses during a work shift.   A sample of 8 nurses is selected, and each nurse’s stress score is measured before the intervention and again after the intervention.
+    </p>
+    <table>
+      <title>Stress Scores Before and After Relaxation Intervention</title>
+      <tabular>
+        <row>
+          <cell>Nurse</cell>
+          <cell>Before</cell>
+          <cell>After</cell>
+          <cell>Difference (Before - After)</cell>
+        </row>
+        <row><cell>1</cell><cell>32</cell><cell>28</cell><cell>4</cell></row>
+        <row><cell>2</cell><cell>30</cell><cell>27</cell><cell>3</cell></row>
+        <row><cell>3</cell><cell>35</cell><cell>31</cell><cell>4</cell></row>
+        <row><cell>4</cell><cell>28</cell><cell>26</cell><cell>2</cell></row>
+        <row><cell>5</cell><cell>31</cell><cell>29</cell><cell>2</cell></row>
+        <row><cell>6</cell><cell>33</cell><cell>30</cell><cell>3</cell></row>
+        <row><cell>7</cell><cell>29</cell><cell>27</cell><cell>2</cell></row>
+        <row><cell>8</cell><cell>34</cell><cell>30</cell><cell>4</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean stress score
+      changes after the relaxation intervention.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a paired-samples <m>t</m>-test for the mean.
+    </p>
+    <p>
+      Let <m>\mu_d</m> be the mean difference, where
+      <m>d = \text{Before} - \text{After}</m>.
+      The hypotheses are
+      <md>H_0:\mu_d=0</md>
+      and
+      <md>H_a:\mu_d\ne 0</md>.
+    </p>
+  </solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The differences are
+      <m>4, 3, 4, 2, 2, 3, 2, 4</m>.
+    </p>
+    <p>
+      The sample mean difference is
+      <m>
+        \bar{d}=\frac{4+3+4+2+2+3+2+4}{8}=3.
+      </m>
+    </p>
+    <p>
+      The sample standard deviation of the differences is
+      <m>
+        s_d=\sqrt{\frac{(1)^2+0^2+(1)^2+(-1)^2+(-1)^2+0^2+(-1)^2+(1)^2}{7}}
+        =\sqrt{\frac{6}{7}}
+        \approx 0.926.
+      </m>
+    </p>
+    <p>
+      The test statistic is
+      <md>
+        t=\frac{\bar{d}-0}{s_d/\sqrt{n}}
+        =\frac{3}{0.926/\sqrt{8}}    \approx 9.16.
+      </md>
+    </p>
+    <p>
+      The degrees of freedom are
+      <m>df=n-1=7</m>.
+    </p>
+    <p>
+      The <m>p</m>-value is <m>p=0.000038</m>.
+    </p>
+  </solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the mean stress score changes after the relaxation
+      intervention.
+    </p>
+    <p>
+      Because the mean difference is positive, the data suggests that stress
+      scores are lower after the intervention.
+    </p>
+  </solution>
+</exercise>
 
+<exercise xml:id="ex-paired-cell-cultures">
+<title>Cell Cultures</title>
+  <statement>
+    <p>
+      A molecular biologist wants to determine whether a treatment changes the
+      mean expression level of a particular gene in a set of cell cultures.
+      Expression is measured in the same 8 cell cultures before treatment
+      and again after treatment, so the data are paired.
+    </p>
+    <table>
+      <title>Gene Expression Levels Before and After Treatment</title>
+      <tabular>
+        <row>
+          <cell>Culture</cell>
+          <cell>Before</cell>
+          <cell>After</cell>
+          <cell>Difference (After - Before)</cell>
+        </row>
+        <row><cell>1</cell><cell>12.4</cell><cell>14.1</cell><cell>1.7</cell></row>
+        <row><cell>2</cell><cell>11.8</cell><cell>13.0</cell><cell>1.2</cell></row>
+        <row><cell>3</cell><cell>13.1</cell><cell>14.8</cell><cell>1.7</cell></row>
+        <row><cell>4</cell><cell>12.7</cell><cell>13.9</cell><cell>1.2</cell></row>
+        <row><cell>5</cell><cell>11.9</cell><cell>13.3</cell><cell>1.4</cell></row>
+        <row><cell>6</cell><cell>12.5</cell><cell>14.0</cell><cell>1.5</cell></row>
+        <row><cell>7</cell><cell>12.2</cell><cell>13.6</cell><cell>1.4</cell></row>
+        <row><cell>8</cell><cell>13.0</cell><cell>14.5</cell><cell>1.5</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean gene
+      expression level changes after treatment.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a paired-samples <m>t</m>-test for the mean.
+    </p>
+    <p>
+      Let <m>\mu_d</m> be the mean difference, where
+      <m>d = \text{After} - \text{Before}</m>.
+      The hypotheses are
+      <md>H_0:\mu_d=0</md>
+      and
+      <md>H_a:\mu_d\ne 0</md>.
+    </p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>  The differences are    <m>1.7, 1.2, 1.7, 1.2, 1.4, 1.5, 1.4, 1.5</m>.
+    </p>
+    <p>  The sample mean difference is
+      <m>   \bar{d}=\frac{1.7+1.2+1.7+1.2+1.4+1.5+1.4+1.5}{8}=1.45.
+      </m>
+    </p>
+    <p>
+      The sample standard deviation of the differences is
+      <m>
+        s_d \approx 0.213.
+      </m>
+    </p>
+    <p>
+      The test statistic is
+      <m>
+        t=\frac{\bar{d}-0}{s_d/\sqrt{n}}
+        =\frac{1.45}{0.213/\sqrt{8}}
+        \approx 19.27.
+      </m>
+    </p>
+    <p>
+      The degrees of freedom are
+      <m>df=n-1=7</m>.
+    </p>
+    <p>
+      The <m>p</m>-value is less than <m>0.0001</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the mean gene expression level changes after treatment.
+    </p>
+    <p>
+      Because the mean difference is positive, the data suggest that the
+      treatment increases mean gene expression.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-paired-nitrates">
+<title> Nitrates in Groundwater</title>
+  <statement>
+    <p>
+      An earth scientist wants to determine whether the mean nitrate concentration
+      in groundwater changes after a major flooding event. Water samples are
+      collected from the same 8 monitoring wells before the flood and
+      again after the flood, so the data are paired.
+    </p>
+    <table>
+      <title>Nitrate Concentration Before and After Flooding (mg/L)</title>
+      <tabular>
+        <row>
+          <cell>Well</cell>
+          <cell>Before</cell>
+          <cell>After</cell>
+          <cell>Difference (After - Before)</cell>
+        </row>
+        <row><cell>1</cell><cell>3.2</cell><cell>4.0</cell><cell>0.8</cell></row>
+        <row><cell>2</cell><cell>2.9</cell><cell>3.6</cell><cell>0.7</cell></row>
+        <row><cell>3</cell><cell>3.5</cell><cell>4.4</cell><cell>0.9</cell></row>
+        <row><cell>4</cell><cell>3.1</cell><cell>3.7</cell><cell>0.6</cell></row>
+        <row><cell>5</cell><cell>3.0</cell><cell>3.8</cell><cell>0.8</cell></row>
+        <row><cell>6</cell><cell>3.4</cell><cell>4.1</cell><cell>0.7</cell></row>
+        <row><cell>7</cell><cell>3.3</cell><cell>4.2</cell><cell>0.9</cell></row>
+        <row><cell>8</cell><cell>2.8</cell><cell>3.5</cell><cell>0.7</cell></row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>0.05</m> significance level, test whether the mean nitrate
+      concentration changes after the flooding event.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      This is a paired <m>t</m>-test for the mean.
+    </p>
+    <p>
+      Let <m>\mu_d</m> be the mean difference, where
+      <m>d = \text{After} - \text{Before}</m>.
+      The hypotheses are
+      <m>H_0:\mu_d=0</m>
+      and
+      <m>H_a:\mu_d\ne 0</m>.
+    </p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The differences are   <m>0.8, 0.7, 0.9, 0.6, 0.8, 0.7, 0.9, 0.7</m>.
+    </p>
+    <p>
+      The sample mean difference is
+      <m>
+        \bar{d}=\frac{0.8+0.7+0.9+0.6+0.8+0.7+0.9+0.7}{8}=0.7625.
+      </m>
+    </p>
+    <p>
+      The sample standard deviation of the differences is
+      <m>
+        s_d\approx 0.1035.
+      </m>
+    </p>
+    <p>
+      The test statistic is
+      <m>
+        t=\frac{\bar{d}-0}{s_d/\sqrt{n}}
+        =\frac{0.7625}{0.1035/\sqrt{8}}
+        \approx 20.83.
+      </m>
+    </p>
+    <p>
+      The degrees of freedom are  <m>df=n-1=7</m>.
+    </p>
+    <p>
+      The <m>p</m>-value is less than <m>0.001</m>.
+    </p>
+</solution>
+  <solution> <title> Conclusion</title>
+    <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence at the <m>0.05</m> significance level to
+      conclude that the mean nitrate concentration changes after the flooding
+      event.
+    </p>
+    <p>
+      Because the mean difference is positive, the data suggest that nitrate
+      concentration is higher after the flood.
+    </p>
+  </solution>
+</exercise>
 
 
   </subsection>

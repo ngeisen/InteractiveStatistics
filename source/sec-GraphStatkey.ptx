@@ -9,6 +9,21 @@
    <p> Save the following data file on your computer where it is easily accessible: </p> 
     <p>  <url href="external/ClassSurvey1.csv"> ClassSurvey1.csv</url> </p>
 </introduction>
+<objectives>
+        <introduction>
+          <p>
+            At the end of this section you will able to:
+          </p>
+        </introduction>
+        <ol>
+          <li>  <p> Graph one categorical variable with a bar graph. </p> </li>
+            <li> <p> Graph one quantitative variable with a dotplot, boxplot, and histogram. </p> </li>
+          <li> <p> Graph one quantitative variable with one categorical variable. </p>   </li>
+          <li> <p> Graph two categorical variables. </p> </li>
+        <li> <p> Graph two quantitative variables. </p> </li>
+        </ol>
+      </objectives>
+
 
 <subsection xml:id="subsec-OneCatStatkey">
   <title>Graphing One Categorical Variable</title>
@@ -114,7 +129,7 @@
   <title> Graphing One Quantitative Variable </title>
 <p> In this section we will explore the number of siblings for these UNC students. This is a discrete quantitative variable (although one student claimed 1.5 siblings).  StatKey will construct a dotplot, histogram, and boxplot for the data. StatKey will also create a Summary Statistics table identifying the sample size, mean, median, standard deviation, and the five-number summary. </p>
 <p> Click on the following link to take you to StatKey  <url href="http://www.lock5stat.com/StatKey/" /> </p>
-    <p> Download the csv file <c> ClassSurvey1.csv </c> posted in the Data Set Chapter and save to your computer where it is easily accessible. We are going to analyze the numerical data. </p>
+    <p> Download the csv file <c> ClassSurvey1.csv </c> posted above and save to your computer where it is easily accessible. We are going to analyze the numerical data. </p>
     <p> Under the <em> Descriptive Statistics and Graph </em> column on the left, choose the <em> One Quantitative Variable </em>. </p>
         <figure xml:id="OneQuantStatKey">
             <caption>Image of StatKey menu</caption>
@@ -372,7 +387,7 @@
 <p> If you click on the box <c> Show Regression Line </c>, the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line. </p> 
 
 <p> <term> Data Exploration </term> </p>
-
+<p>Click on the <c> Change Column(s)</c> button near the top to change the variables. Make sure to select two quantitative variables. You are going to investigate if there is a correlation between any pairs. From ClassSurvey1 investigate the relationship between Weight and Height. Is there a correlation between Siblings and Weight? Which other pair will give you a slight negative correlation? </p> 
 
 </subsection>
 

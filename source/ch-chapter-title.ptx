@@ -6,16 +6,18 @@
   <introduction>
     <p> This first chapter is a review of terminology needed to understand statistics. We will begin with who the study is about, what variables and data we will analyze, how the data can be collected, and the type of study design. We will look at several case studies to apply this to. As the semester progresses, we will refer back to some of these case studies to apply our newfound knowledge. </p>
   </introduction>
+  
 <objectives>
         <introduction>
           <p> At the end of this chapter you will able to: </p>
-            <ol>
+        </introduction>
+        <ol>
           <li> <p> Identify the cases and variables in a data set.</p> </li>
           <li> <p> Distinguish between a sample and a population. </p> </li>
           <li> <p> Classify variables as qualitative or quantitative. </p> </li>
-            <li> <p> Distinguish between an observational study and an experiment. </p> </li>
-            </ol>
-        </introduction>
+          <li> <p> Distinguish between an observational study and an experiment. </p> </li>
+          </ol>
+       
 </objectives>
   <!-- include sections -->
   <xi:include href="sec-DayOne.ptx" />
