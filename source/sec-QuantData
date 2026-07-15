@@ -287,6 +287,8 @@ The number of pets is discrete data.
 <p>      </p>
 
 <p> See the section for <em>Graphing with StatKey </em> for uploading one quantitative variable into StatKey to graph the data. It is often easier to look at the histogram to describe the shape of the distribution of the data. But caution should be used when interpreting the histogram for small datasets. The shape is supported with the boxplot appearance.</p>  
+
+<p> <term> Practice Problems </term></p> 
 <exercise> <title> Shape of Pets</title>
 <statement> 
 <p> Describe the shape of the distribution for the number of pets students have. </p>

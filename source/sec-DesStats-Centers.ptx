@@ -35,8 +35,16 @@
 <p> The <term> median </term> is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to largest and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actual data value. When there is an even number of values you will need to average the middle two values. </p>
 <p> <em> Example: </em>  A sample of five students are taking the number of credits this semester: 18, 12, 15,16, 14. </p>
 <p> <em> Solution:</em> First put the value in order: 12, 14, <c>15</c>,16, 18. There are 5 values so the middle value when in order is 15. </p>
-<p> <em> Example: </em>  A sample of six students are taking the number of credits this semester: 18, 16, 15,19, 12, 14. </p>
-<p> <em> Solution: </em> First put the values in order: 12, 14, 15,16, 18, 19. There are 6 values so the middle value is between the middle two values of 15 and 16, thus the median is <m>  (15+16)/2 = 15.5 </m> credits. </p>
+
+<example>
+<statement>
+<p>  A sample of six students are taking the number of credits this semester: 18, 16, 15,19, 12, 14. </p>
+</statement>
+<solution>
+<p>First put the values in order: 12, 14, 15,16, 18, 19. </p>
+<p>There are 6 values so the middle value is between the middle two values of 15 and 16, thus the median is <m>  (15+16)/2 = 15.5 </m> credits. </p>
+</solution>
+</example> 
 
 <p> The <term> mean </term> is the arithmetic average of the numbers. You will add all the values together and then divide by the number of values. </p>
 <p> The formula for the sample mean is </p>
@@ -101,13 +109,13 @@
       Find the mean, median, and mode hearing threshold level.
     </p>
   </statement>
-  <solution>
+  <solution> <title>mean</title>
     <p>  The sample mean is  <m> \bar{x}=\frac{\sum x}{n} = \frac{230}{11}\approx 20.91.    </m>   </p>
     <p> The sample mean hearing threshold level is approximately  <m>20.91</m> decibels.
     </p>
   </solution>
 <solution><title>median</title>
-<p> The median is the sixth value, thus 21 decibels.  </p> 
+<p> The median is the sixth value when arranged in increasing order, thus 21 decibels.  </p> 
   </solution>
 <solution><title>mode</title>
 <p> The data is bimodal with two modes of 20 and 21. </p>
@@ -207,6 +215,110 @@ It should say <em>Done</em>. </p>
 </solution> 
 </exercise>
 
+<exercise xml:id="ex-centers-Faithful">
+<title> Old Faithful</title> 
+<statement>
+    <p>
+      A park researcher wants to determine the typical time between eruptions
+      of Old Faithful in Yellowstone National Park. A random sample of 20 waiting times, measured in minutes, is recorded below.
+    </p>
+    <table>
+      <title>Waiting Times Between Old Faithful Eruptions (minutes)</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row bottom="minor">
+          <cell right="minor">82</cell>
+          <cell right="minor">88</cell>
+          <cell right="minor">91</cell>
+          <cell right="minor">95</cell>
+          <cell>87</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">93</cell>
+          <cell right="minor">88</cell>
+          <cell right="minor">84</cell>
+          <cell right="minor">96</cell>
+          <cell>90</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">85</cell>
+          <cell right="minor">92</cell>
+          <cell right="minor">94</cell>
+          <cell right="minor">86</cell>
+          <cell>89</cell>
+        </row>
+        <row>
+          <cell right="minor">91</cell>
+          <cell right="minor">88</cell>
+          <cell right="minor">97</cell>
+          <cell right="minor">83</cell>
+          <cell>90</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Find the mean, median, mode and midrange time between eruptions.
+    </p>
+</statement>
+ <solution><title>mean</title>
+     <p> The mean is  <m>  \bar{x}=\frac{1781}{20}=89.45 </m> minutes.  </p>
+   </solution>
+<solution><title>median</title>
+<p> The median is 89.5 minutes</p>
+</solution> 
+<solution><title>mode</title>
+<p> The median is 88 minutes</p>
+</solution> 
+<solution><title>midrange</title>
+<p> The midrange is <m>(82+97)/2=89.5</m>  minutes. </p>
+</solution> 
+</exercise> 
+
+<exercise xml:id="ex-centers-salinity">
+<title> Ocean Salinity</title>
+  <statement>
+    <p>
+     A group of marine scientists wants to know the typical salinity of surface water near the polar oceans. It believed it has changed due to melting sea ice and freshwater input.
+    </p>
+    <p>
+      A random sample of <m>10</m> salinity measurements is taken from surface
+      waters near the poles, with the following results:
+    </p>
+    <table>
+      <title>Surface Ocean Salinity Near the Poles (psu)</title>
+      <tabular>
+        <row>
+          <cell>34.7</cell>
+          <cell>34.8</cell>
+          <cell>34.6</cell>
+          <cell>34.9</cell>
+          <cell>34.5</cell>
+        </row>
+        <row>
+          <cell>34.7</cell>
+          <cell>34.8</cell>
+          <cell>34.6</cell>
+          <cell>34.7</cell>
+          <cell>34.9</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Find the mean, median, mode and midrange salinity levels, measured in practical salinity units (psu).
+    </p>
+      </statement>
+ <solution><title>mean</title>
+     <p> The mean is  <m>  \bar{x}=\frac{347.2}{10}=34.72 </m> psu.  </p>
+   </solution>
+<solution><title>median</title>
+<p> The median is 34.7 psu</p>
+</solution> 
+<solution><title>mode</title>
+<p> The median is 34.7 psu</p>
+</solution> 
+<solution><title>midrange</title>
+<p> The midrange is <m>(34.9-34.5)/2=0.4</m> psu. </p>
+</solution> 
+</exercise> 
 
 
   </subsection>

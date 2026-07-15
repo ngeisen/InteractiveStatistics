@@ -111,7 +111,8 @@
 <p> Lower extreme = 6 - 1.5(12) = -12 thus no lower outliers since no value below -12. </p>
 <p> Upper extreme = 18 + 1.5(12) = 36 thus 50 pairs of shoes is an outlier since it is more than 36. So having 50 pairs of shoes is atypical for this group. </p>
 <p>     </p> 
-<example> 
+
+<exercise> 
 <title> Check for Outliers </title>
 <statement> <p>
 A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 120, 175, 165, 145, 157, 220. Are there any outliers in the sample? </p>
@@ -122,7 +123,7 @@ A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 
 <p> Lower extreme = 140-1.5x35 = 87.5 so no lower outliers. </p>
 <p> Upper extreme = 175+1.5x35 = 192.5 thus 220 and 238 are both outliers. </p>
  </solution>
-</example>
+</exercise>
 
 
 <p>     </p> 
@@ -157,8 +158,93 @@ A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 
 
   <subsection xml:id="subsec-PositionApply">
   <title>Application</title>
-<p> the </p> 
-  
+
+<exercise xml:id="ex-percentile-birthweights">
+<title> Birth Weights </title>
+  <statement>
+    <p>
+      A nurse records the birth weights, in pounds, of 10 newborns in a  hospital nursery. The weights are:
+    </p>
+    <p>
+      <m>6.2, 7.8, 6.9, 8.1, 7.0, 6.5, 7.0, 8.4, 7.6, 6.8</m>
+    </p>
+<p> A. Find the percentile ranking for the newborn that weighed 6.5 pounds.
+    </p>
+    <p>B.  Find the percentile ranking for the newborn that weighed 7.0 pounds.
+    </p>
+    <p> C. Find the percentile ranking for the newborn that weighed 8.1 pounds.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      First, order the data from smallest to largest:
+    </p>
+    <p>  <m>6.2, 6.5, 6.8, 6.9, 7.0, 7.0, 7.6, 7.8, 8.1, 8.4</m>   </p>
+  <p> There is 1 value below 6.5 and 1 value at 6.5 pounds. </p>
+     <p> The percentile ranking for 6.5 pounds is <m>  \frac{1+0.5(1)}{10} = 0.15 </m> thus the 15th percentile. </p>
+    <p> There are 4 values below 7.0 and two values at 7.0 pounds.</p>
+     <p>  The percentile ranking for 7.0 pounds us <m>  \frac{4+0.5(2)}{10} = 0.50 </m> thus the 50th percentile.</p>
+    <p> There are 8 values below 8.1 and one values at 8.1 pounds.</p>
+     <p>  The percentile ranking for 8.1 pounds is <m>  \frac{8+0.5(1)}{10} = 0.85 </m> thus the 85th percentile. </p>
+  </solution>
+</exercise>
+
+ <exercise xml:id="ex-z-score-temperature">
+<title> Temperatures</title>
+  <statement>
+    <p>
+      A health researcher studies body temperatures in a clinic population. The mean
+      temperature of the population is <m>98.6</m>°F and a standard deviation of
+      <m>0.6</m>°F. Find the z-score for the following patient temperatures and note if they are above or below average. </p>
+  <p> A. Patient Liam has a temperature of <m>99.4</m>°F.   </p>
+ <p> A. Patient Noah has a temperature of <m>98.3</m>°F.   </p>
+ <p> A. Patient Violet  has a temperature of <m>101.2</m>°F.   </p>
+  </statement>
+  <solution><title> Liam</title> 
+    <p>  Use the z-score formula  <m>    z=\frac{x-\mu}{\sigma}.    </m>   </p>
+        <p>  Liam is <m>  z=\frac{99.4-98.6}{0.6}=\frac{0.8}{0.6}=1.33   </m> which is above average.  </p>
+    <p>   This means the Liam's temperature is <m>1.33</m> standard deviations
+      above the mean.    </p>
+  </solution>
+  <solution><title> Noah</title> 
+    <p>  Use the z-score formula  <m>    z=\frac{x-\mu}{\sigma}.    </m>   </p>
+        <p>  Noah is <m>  z=\frac{98.3-98.6}{0.6}=\frac{-0.3}{0.6}=1-0.50</m> which is below average.  </p>
+    <p>   This means the Noah's temperature is <m>0.5</m> standard deviations
+      below the mean.    </p>
+  </solution>
+  <solution><title> Violet</title> 
+    <p>  Use the z-score formula  <m>    z=\frac{x-\mu}{\sigma}.    </m>   </p>
+        <p>  Violet is <m>  z=\frac{101.2-98.6}{0.6}=\frac{2.6}{0.6}=4.33   </m> which is above average.  </p>
+    <p>   This means the Violet's temperature is <m>4.33</m> standard deviations
+      above the mean.    </p>
+  </solution>
+</exercise>
+ 
+<exercise xml:id="ex-outlier-pH">
+<title> pH Solution</title> 
+  <statement>
+    <p>
+      A chemistry student measures the pH of 10 liquid samples from the
+      same solution. Find the quartiles and determine if there is an outlier in the samples.
+    </p>
+    <p> The pH levels are:  <m>6.8, 7.0, 6.9, 7.1, 6.7, 6.9, 7.0, 6.8, 7.1, 9.4</m>
+    </p>
+</statement>
+<solution><title> Quartiles </title> 
+  <p> Arrange values in order: <m> 6.7, 6.8, 6.8, 6.9, 6.9, 7.0, 7.0, 7.1, 7.1, 9.4 </m> </p>
+  <p> The median is <m>M=6.95</m> since there are an even number of values. </p>
+  <p>The quartiles are <m>Q_1=6.8</m> and <m>Q_3=7.1</m>.  </p>
+</solution>
+<solution> <title> Outlier Check </title>
+  <p>  The interquartile range is <m>IQR=Q_3 - Q_1=7.1-6.8=0.3</m>.  </p>
+  <p> The lower outlier bound is <m>6.8-1.5(0.3)=6.35</m>, so no lower outlier.  </p>
+  <p> The upper outlier bound is <m>7.1+1.5(0.3)=7.55</m>, since 9.4 is greater than 7.55, it is an outlier.  </p>
+  <p>  In this data set, 9.4 is an outlier because it is far from the rest of the pH values.  </p>
+  </solution>
+</exercise>
+
+
   </subsection>
 
 

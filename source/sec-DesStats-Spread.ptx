@@ -122,7 +122,156 @@
 
 <subsection xml:id="subsec-SpreadApply">
   <title> Application Problems </title>
-  <p> the </p> 
+
+<exercise xml:id="ex-standard-deviation-leaf">
+<title> Leaf Length</title>
+  <statement>
+    <p>  A biologist measures the lengths of 10 leaves from the same plant species. The lengths, in centimeters, are:   </p>
+    <p> <m>12, 15, 14, 13, 16, 12, 15, 14, 13, 16</m>   </p>
+    <p>
+      Find the range and sample standard deviation of the leaf lengths.
+    </p>
+  </statement>
+  <solution><title> range</title>
+    <p> Range is max - min, thus <m>16-12=4 </m> cm spread. </p>
+  </solution>
+  <solution> <title> Formula</title>
+    <p>  The sample standard deviation is found using
+      <md>   s=\sqrt{\frac{\sum (x-\bar{x})^2}{n-1}}.
+      </md>
+    </p>
+    <p> First, find the sample mean:
+      <m>   \bar{x}= \frac{140}{10}=14.  </m>
+    </p>
+    <p>
+      Next, find each squared deviation from the mean for each leaf:
+    </p>
+    <p>
+      <m>
+        (12-14)^2=4,\quad
+        (15-14)^2=1,\quad
+        (14-14)^2=0,\quad
+        (13-14)^2=1,\quad
+        (16-14)^2=4,
+      </m>
+    </p>
+    <p>
+      <m>
+        (12-14)^2=4,\quad
+        (15-14)^2=1,\quad
+        (14-14)^2=0,\quad
+        (13-14)^2=1,\quad
+        (16-14)^2=4.
+      </m>
+    </p>
+    <p>
+      Add the squared deviations:
+      <m>
+        4+1+0+1+4+4+1+0+1+4=20.
+      </m>
+    </p>
+    <p>
+      Since <m>n=10</m>, the sample variance is
+      <md>  s^2=\frac{20}{10-1}=\frac{20}{9}\approx 2.2222.
+      </md>
+    </p>
+    <p>
+      Therefore, the sample standard deviation is  <m>   s=\sqrt{2.2222}\approx 1.49.
+      </m>
+    </p>
+    <p>
+      So, the sample standard deviation of the leaf lengths is approximately
+      <m>1.49</m> cm.
+    </p>
+  </solution>
+  <solution> <title> Calculator </title>
+  <p> First, enter the raw data into one of the lists: Start with the <c> STAT </c>button and under the EDIT menu choose option <term> 1:Edit </term> and then hit the <c> enter </c> button to select it. </p>
+  <image source="Center1.png" width="60%">
+                <shortdescription> image of STAT button 1:Edit</shortdescription>
+            </image>
+  <p> Type in the length values in L1 and hit [enter] after each entry. </p>
+  <p> Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for <term>1-Var Stats </term> and then hit [enter]. Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then [1] and press [enter] button. This will give the summary statistics. The mean is <m> \bar{x}=13.78 </m> and the sample standard deviation is <m>Sx=1.49</m>, to find the variance we square the value thus <m> 1.49^2 = 2.22 </m>. </p>
+  <image source="Leaf2.png" width="80%">
+                <shortdescription> enter data in L1 and find summary statistics</shortdescription>
+            </image>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-standard-deviation-monkeys">
+<title> Monkey Weights</title>
+  <statement>
+    <p>
+      A wildlife researcher records the weights, in kilograms, of 10
+      monkeys in a habitat study. The weights are:
+    </p>
+    <p>
+      <m>14, 16, 15, 18, 17, 14, 19, 16, 15, 18</m>
+    </p>
+    <p>
+      Find the range and sample standard deviation of the monkey weights.
+    </p>
+  </statement>
+<solution><title> range</title>
+<p> Range is 19-14=5 kg. </p>
+</solution>
+<solution> <title> standard deviation </title> 
+    <p> The sample standard deviation of the monkey weights is 1.75 kg. This measures how spread out the values are from the mean of 16.2 kg.
+    </p>
+<image source="Monkey1.png" width="60%">
+                <shortdescription> mean 16.2 and Sx=1.75</shortdescription>
+            </image>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-standard-deviation-aspirin">
+  <title> Aspirin </title>
+  <statement>
+    <p>
+      A quality control analyst measures the amount of aspirin, in milligrams,
+      in a random sample of 10 tablets from a production batch. The amount of aspirin are:
+    </p>
+    <p>
+      <m>98, 101, 100, 99, 102, 97, 103, 100, 99, 101</m>
+    </p>
+    <p>
+      Find the range and standard deviation of the aspirin amounts.
+    </p>
+  </statement>
+  <solution><title> range</title>
+<p> Range is 101-97=4 mg. </p>
+</solution>
+<solution> <title> standard deviation </title> 
+    <p>
+      The sample standard deviation of the aspirin amounts is <m>1.83</m> mg.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-standard-deviation-juice">
+<title> Juice Bottles</title>
+  <statement>
+    <p>
+      A quality control technician measures the amount of juice, in ounces, in
+      <m>9</m> random bottles labeled as <m>20</m> oz. The recorded amounts of juice in each bottle are:
+    </p>
+    <p>
+      <m>19.8, 20.1, 20.0, 19.9, 20.2, 19.7, 20.1, 19.8, 20.0</m>
+    </p>
+    <p>
+      Find the range and  standard deviation of the juice amounts.
+    </p>
+  </statement>
+    <solution><title> range</title>
+    <p> Range is 20.2-19.7=0.5 ounces. </p>
+    </solution>
+    <solution> <title> standard deviation </title> 
+    <p>
+      The sample standard deviation of the juice amounts is  <m>0.167</m> oz.
+    </p>
+  </solution>
+</exercise>
+
+
   </subsection>
 
 </section>

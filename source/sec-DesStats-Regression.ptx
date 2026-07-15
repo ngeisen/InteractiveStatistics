@@ -83,10 +83,7 @@
 
 <subsection xml:id="subsec-RegressionPractice">
   <title>Practice Problems</title>
-<p> the </p> 
- 
 
-<p> <term> Practice </term> </p> 
 <p> Now complete the correlation and regression analysis for different scenario. </p>
 <p> Seismologists use tools like seismograms to record and analyze earthquake data, including their location, magnitude, depth, and other factors.  Seismologists indicate the size of an earthquake in units of magnitude. Some methods are based on body waves (which travel deep within the structure of the earth) and surface waves. Earthquake magnitude is a logarithmic scale meaning the shaking will be 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. </p> 
 <p>Suppose a seismologist wanted to know if there was a correlation between the magnitude of an earthquake and its depth at the epicenter (where the earthquake originates, measured in kilometers below the earth’s surface).  The data file includes a list of earthquakes that were felt during a one-week period between April 19 and April 25, 2025 around the world, as recorded by the Southern California Earthquake Data Center. Generally, earthquakes with a magnitude of 2.5 can be felt. Use the variables <em> Magnitude</em> and <em>Depth</em> for these earthquakes. </p> 

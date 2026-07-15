@@ -482,7 +482,7 @@
   </solution>
 </exercise>
 
-<example xml:id="ex-one-mean-ocean-salinity">
+<exercise xml:id="ex-one-mean-ocean-salinity">
 <title> Ocean Salinity</title>
   <statement>
     <p>
@@ -567,7 +567,7 @@
       salty than the typical average ocean salinity.
     </p>
   </solution>
-</example>
+</exercise>
 
 <exercise xml:id="ex-one-mean-audiology">
 <title>Hearing</title>
