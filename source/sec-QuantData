@@ -47,6 +47,210 @@
 
 
 <p> Another graph you may occasional see is the <term> ogive</term>, also know as the cumulative frequency graph. At the end of each boundary you plot the total number of cases to that point. This is always an increasing function. If you think of your accumulated credit hours for college, if you plot the total number of credits have have complete at the end of each semester you just created an ogive. The graph always starts at zero. </p>
+
+<p> <term> Practice Problems </term></p> 
+<p> Below is a dotplot for the number of pets for 42 students . Interpret the results. </p>
+<figure xml:id="PetDotplot">
+            <caption>Dotplot for Number of Pets</caption>
+            <image source="PetDotplot.png" width="80%">
+                <shortdescription>Students had between 0 and 8 pets, with most students having 0 pets, 11 students had none, 13 students had none, 11 students had1 pet, 9 students had 2 pets, 5 students had 3 pets, no students had 4 pets, 1 student had 5, 6, 7, and 8 pets each.</shortdescription>
+            </image>
+        </figure> 
+<exercise label="pets-dotplot-matching">
+    <title> Number of Pets </title>
+    <statement>
+    <p>
+        Using the dotplot and summary statistics above for the number of pets students have, select all statements that are true.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p>
+            Most students have no pets
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct,13 students have no pets, which occurs most often.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+The number of pets is discrete data.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, since whole number counts.
+        </p>
+        </feedback>
+    </choice>
+<choice> 
+        <statement>
+        <p>
+        The most pets any student had was 10.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+           The maximum was 8 pets.
+        </p>
+        </feedback>
+    </choice>
+<choice>
+        <statement>
+        <p>
+        Three students had 4 pets.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            No students had four pets.
+        </p>
+        </feedback>
+    </choice>
+     </choices>
+</exercise>
+ 
+<p> Below is a histogram for the number of credit hours taken one semester for 43 students. Interpret the results. </p>
+ <figure xml:id="CreditHistogram">
+            <caption>Histogram for number of credits</caption>
+            <image source="CreditHisto.png" width="80%">
+                <shortdescription>Students take between 12 and 21 credits with more taking 15-16 credit hours.</shortdescription>
+            </image>
+        </figure> 
+<exercise label="credits-histogram-matching">
+    <title> Histogram of Credit Hours </title>
+    <statement>
+    <p>
+        Using the histogram for the number of credit hours students are taking, select all statements that are true.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice>
+        <statement>
+        <p>
+            Most students are taking 15-16 credit hours.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, there are 25 students in this range.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+      The most credit hours a student is taking is 21.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct.
+        </p>
+        </feedback>
+    </choice>
+<choice>
+        <statement>
+        <p>
+        The least number of credits a student is taking is 13.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+           The least is 12 credits.
+        </p>
+        </feedback>
+    </choice>
+<choice>
+        <statement>
+        <p>
+         Three students are taking more than 17 credits.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+        There are 5 students taking more than 17 credits.
+        </p>
+        </feedback>
+    </choice>
+     </choices>
+</exercise>
+
+<p> Below is a boxplot for the number of credit hours taken in one semester for 43 students. Interpret the results. </p>
+<figure xml:id="CreditBoxplot">
+            <caption>Boxplot for number of credits</caption>
+            <image source="CreditBox.png" width="80%">
+                <shortdescription>Students take between 12 and 21 credits with more taking 14-16 credit hours.</shortdescription>
+            </image>
+        </figure> 
+
+<exercise label="credits-boxplot-matching">
+    <title> Boxplot of Credit Hours </title>
+    <statement>
+    <p>
+        Using the boxplot for the number of credit hours students are taking, select all statements that are true.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p>
+            Most students are taking 14-16 credit hours.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, 50% of the students are taking between 14-16 credits as represented by the box.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+      The boxplot contains an outlier.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, the 21 credits is an outlier as indicated by the asterisk.
+        </p>
+        </feedback>
+    </choice>
+<choice> 
+        <statement>
+        <p>
+        The least number of credits a student is taking is 13.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+           The least is 12 credits.
+        </p>
+        </feedback>
+    </choice>
+<choice>
+        <statement>
+        <p>
+        The maximum number of credits is 19.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+        The maximum is the 21 credits.
+        </p>
+        </feedback>
+    </choice>
+     </choices>
+</exercise>
+
+
+
+
 </subsection> 
 
 <subsection xml:id="subsec-QNshapes">
@@ -82,8 +286,53 @@
             </image>
 <p>      </p>
 
-<p> See the section for <em>Graphing with StatKey </em> for uploading one quantitative variable into StatKey to graph the data. </p>  
-<p>         </p>
+<p> See the section for <em>Graphing with StatKey </em> for uploading one quantitative variable into StatKey to graph the data. It is often easier to look at the histogram to describe the shape of the distribution of the data. But caution should be used when interpreting the histogram for small datasets. The shape is supported with the boxplot appearance.</p>  
+<exercise> <title> Shape of Pets</title>
+<statement> 
+<p> Describe the shape of the distribution for the number of pets students have. </p>
+<figure xml:id="PetDotplot2">
+            <caption>Dotplot for Number of Pets</caption>
+            <image source="PetDotplot.png" width="80%">
+                <shortdescription>Students had between 0 and 8 pets, with most students having 0 pets, 11 students had none, 13 students had none, 11 students had1 pet, 9 students had 2 pets, 5 students had 3 pets, no students had 4 pets, 1 student had 5, 6, 7, and 8 pets each.</shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> It is right skewed since the tail goes to the right.</p>
+</solution>
+</exercise> 
+
+<exercise> <title> Shape Credit Hours</title>
+<statement> 
+<p> Describe the shape of the distribution for the number of credit hours students are taking. </p>
+<figure xml:id="CreditHistogram2">
+            <caption>Histogram for number of credits</caption>
+            <image source="CreditHisto.png" width="80%">
+                <shortdescription>Students take between 12 and 21 credits with more taking 15-16 credit hours.</shortdescription>
+            </image>
+        </figure> 
+
+</statement>
+<solution>
+<p> It is roughly bell-shaped since most values are around 14-17 credits and fewer at the tails.</p>
+</solution>
+</exercise> 
+
+<exercise> <title> Shape of Tattoos</title>
+<statement> 
+<p> Describe the shape of the distribution for the number of tattoos students have. </p>
+<figure xml:id="TattooDotplot2">
+            <caption>Dotplot of Tattoos</caption>
+            <image source="DotplotTattoos.png" width="80%">
+                <shortdescription>Students have between 0 and 12 tattoos with 0 occurring more often than more tattoos.</shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> It is right skewed since the tail goes to the right. Most students have no tattoos.</p>
+</solution>
+</exercise> 
+
 
   </subsection>
 
@@ -130,7 +379,7 @@
 
 <p> A few words of warning: just because a correlation between variables exists it does not indicate one variable <em>causes </em> the other to occur. It is possible a third variable, known as a lurking variable, may account for the correlation. Just because a student is tall, does not <em> cause </em> their shoe size to be large. Just as having a larger shoe size does not <em> cause </em> a student to be taller. When working with observational studies, we cannot assume causation even if there is a strong correlation between variables. </p>
 
-<p> <term> Practice </term> </p>
+<p> <term> Practice Problem </term> </p>
 <p> Now let's investigate the type of relationship between a person's weight and height. Do you think this will be positive, negative, or no relationship? Click on the <c>Change Columns</c> to change the variables and describe the nature of the relationship from the scatterplot and the correlation coefficient. </p>
 <figure xml:id="WeightHeightScatterplot">
   <caption>Image of Scatterplot for Weight and Height </caption>
@@ -184,10 +433,9 @@
 <p>  <term> A. </term> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graphs and summary statistics table into a word document and summarize the data. </p>
 <p> Your summary should include at least two graphs (dotplot and boxplot if discrete, or histogram and boxplot if continuous) and the summary statistics table. Your summary of the data should report the shape of the distribution and what values appear typical. Describe any other relevant information such as outliers. </p>
 <p>  <term>B.</term> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate the relationship between <em>two</em> quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data. </p>
-<p> In the summary describe the nature of the relationship from the scatterplot and support ir with the correlation coefficient. Give the regression equation and interpret the slope. </p>
+<p> In the summary describe the nature of the relationship from the scatterplot and support it with the correlation coefficient. Give the regression equation and interpret the slope. </p>
 
-<p>     </p>
-<P> <term> Other Graphs</term></P>
+
 
 
 

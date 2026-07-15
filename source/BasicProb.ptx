@@ -225,13 +225,48 @@
 <subsection xml:id="subsec-ProbabilityPractice">
   <title> Practice Problems</title>
 
-<p> <term> Practice Problems </term> </p> 
+  
+
+<p> Now it is your turn to practice what you have learned. </p> 
+<exercise xml:id="ex-probability-child">
+<title> Clinic</title>
+  <statement>
+    <p>
+      A medical clinic schedules <m>12</m> patients for checkups in one
+      afternoon. Suppose exactly <m>3</m> of these patients are children and
+      the remaining <m>9</m> are adults. One patient is selected at random.
+      Find the probability that the selected patient is a child.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The probability of a simple event is
+      <m>
+        P(E)=\frac{\text{number of favorable outcomes}}{\text{number of possible outcomes}}.
+      </m>
+    </p>
+    <p>
+      In this example, the event of interest is selecting a child.
+      There are <m>3</m> favorable outcomes and <m>12</m> possible outcomes.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(\text{child})=\frac{3}{12}=\frac{1}{4}=0.25.
+      </m>
+    </p>
+    <p>
+      So, the probability that the selected patient is a child is 25%.
+    </p>
+  </solution>
+</exercise>
+
 <exercise> <title> Blood Probabilities </title>
     <statement>
      <p> Suppose in a sample of 50 people the following blood types were recorded: 19 Type O, 22 Type A, 6 Type B, and 3 Type AB. Find the probability of getting the specified blood type if one person is selected at random from this sample. </p>
     <p> a. Type A blood. </p>
     <p>  b. Type O or Type B. </p>
-    <p>  c. Not type AB. </p>
+    <p>  c. Not Type AB. </p>
     </statement>
 <solution> 
 <p> a. P(A)=22/50 </p>
@@ -244,7 +279,7 @@
     <statement>
      <p>  Suppose the weather person predicted the probability of it raining today is 0.45.  What is the probability of it not raining?  </p>
     </statement>
-    <solution> <p>  Since not raining is the complement of raining, then P(not rain) = 1-P(rain) = 1-.45=0.55 
+    <solution> <p>  Since not raining is the complement of raining, then P(not rain) = 1-P(rain) = 1 - 0.45 = 0.55 
  </p>  </solution> 
 </exercise>
 <exercise> <title> COVID </title>
@@ -254,6 +289,66 @@
     <solution> <p>  Using the complement, P(COVID) = 1-P(vaccine)=1-.95=0.05 
 </p>  </solution> 
 </exercise>
+
+<exercise xml:id="ex-probability-bookstore">
+<title> Bookstore</title>
+  <statement>
+    <p>
+      A college bookstore records purchases made by students during the first
+      week of classes. Suppose that 60 students bought only a notebook,
+      45 students bought only a calculator, and 25 students bought
+      both a notebook and a calculator. One student is selected at random from
+      the group. </p>
+  <p> A. How big is the sample? </p>
+  <p>  B. Find the probability that the student bought only a notebook  </p>
+  <p>  C. Find the probability that the student bought only a calculator </p>  
+  <p>  D. Find the probability that the student bought both a notebook and a calculator.
+    </p>
+  </statement>
+  <solution> <title> sample</title>
+<p> Total is <m>60+45+25=130</m> students. </p>
+</solution>
+<solution> <title> notebook</title>
+<p> P(notebook) = 60/130 = 0.461 thus 46.1% chance of buying a notebook.</p>
+</solution>
+<solution> <title> calculator</title>
+<p> P(calculator) = 45/130 = 0.346 thus 34.6% chance of buying a calculator.</p>
+</solution>
+<solution> <title> both</title>
+<p> P(notebook and calculator) = 25/130 = 0.192 thus 19.2% chance of purchasing both.</p>
+  </solution>
+</exercise>
+
+ <exercise xml:id="ex-probability-audiology">
+<title> Audiology</title> 
+  <statement>
+    <p>
+      An audiology clinic reviews records for 80 patients. Of these, 50 patients reported tinnitus, and the remaining patients showed measurable hearing loss, and 18 patients had both tinnitus and measurable  hearing loss. One patient is selected at random from the records.</p>
+ <p> a)  Find the probability that the selected patient had both reported tinnitus and
+      showed measurable hearing loss.</p>
+<p> b) Find the probability that the selected patient  showed measurable hearing loss. </p> 
+  </statement>
+  <solution> <title>Both</title>
+    <p> There are 18 patients with both tinnitus and measurable hearing
+      loss out of 80 total patients.
+    </p>
+    <p>  Therefore, <m>  P(T\cap H)=\frac{18}{80}=0.225.  </m>
+    </p>
+    <p>  So, the probability that a randomly selected patient reported 
+      tinnitus and showed measurable hearing loss is 22.5%
+    </p>
+  </solution>
+  <solution> <title>Hearing Loss</title>
+    <p>  From the sample 80 total patients, 50 had tinnitus and the rest had hearing loss, thus <m>80-50=30</m> had hearing loss.
+    </p>
+    <p> Therefore, P(hearing loss) <m>=\frac{30}{80}=0.375.  </m>
+    </p>
+    <p>  So, the probability that a randomly selected patient reported 
+measurable hearing loss is 37.5%
+    </p>
+  </solution>
+</exercise>
+
 
   </subsection>
 

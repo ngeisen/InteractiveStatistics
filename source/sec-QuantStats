@@ -65,11 +65,21 @@ data set. There are three measures of the <term> center </term> of the data. The
             <solution>
           <p> No mode since each value occurs just once.</p>
           <p> The middle value is 115, 120, 138, [140], 162, 175, 238 thus median is 140.</p>
-          <p> Find the mean <m>1088/7=155.4 </m>pounds </p>
+          <p> Find the mean <m>1088/7=155.4 </m> pounds </p>
           <p> range = 238-115 = 123 pounds </p>
         </solution>
     </exercise>
 
+ <p> Identify the summary statistics from StatKey</p>
+ <figure xml:id="TattooDotplot3">
+            <caption>Summary Statistics for Tattoos</caption>
+            <image source="Tattoos.png" width="100%">
+                <shortdescription>Students have between 0 and 12 tattoos with 0 occurring more often than more tattoos.</shortdescription>
+            </image>
+        </figure> 
+<p> The sample size is 42 students. The dotplot shows 0 occurs most often for the mode = 0. The mean is 1.395 because of the large values to the right. The minimum value is 0 and the maximum value is 12. This gives the range 12-0 = 12. The median = 0 since over half the values are 0. </p>
+
+ 
 <p> <term> Data Exploration </term> </p>
 <p>  Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste a graph and the summary statistics table into a word document and summarize the statistics from the sample. For the variable identified state the mean, median, mode, and range. Relate these values to one of the graphs. </p>
 

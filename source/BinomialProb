@@ -312,7 +312,367 @@ So we will use the <c>2nd </c> button  <c>VARS</c> to select [DISTR] and then se
 <subsection xml:id="subsec-BinomialPractice">
   <title>Practice Problems</title>
 <p>the  </p>
-  
+  <exercise xml:id="ex-binomial-nursing">
+<title>Nursing</title> 
+  <statement>
+    <p>
+      A nurse educator knows that the probability a nursing student correctly
+      performs a sterile dressing change on the first attempt is 0.80.
+      Suppose 6 students are selected independently.
+    </p>
+    <p>
+      Let <m>X</m> be the number of students who correctly perform the procedure
+      on the first attempt.
+    </p>
+    <p>
+      A. Find the probability that exactly <m>4</m> of the <m>6</m> students
+      correctly perform the sterile dressing change on the first attempt.
+    </p>
+    <p>
+      B. Find the probability that at least 4 of the 6 students
+      correctly perform the sterile dressing change on the first attempt.
+    </p>
+
+  </statement>
+  <solution> <title>Exactly 4</title>
+    <p>
+      Since there are a fixed number of trials <m>n=6</m>, there are two possible outcomes for each (correct or not), the trials are independent, and a constant probability of success for each trial with <m>p=.80</m>, this is a binomial distribution.
+    </p>
+    <p>
+      Thus,
+      <m>X \sim \text{Binomial}(n=6,p=0.80)</m>.
+    </p>
+    <p>
+      The binomial probability formula is
+      <m>
+        P(X=x)=\binom{n}{x}p^x(q)^{n-x}.
+      </m> 
+    </p>
+    <p>
+      For this problem, <m>n=6</m>, <m>x=4</m>, <m>p=0.80</m>, and <m>q=1-p=0.20</m>.
+      So,
+    </p>
+    <p> <m>  P(X=4)=\binom{6}{4}(0.80)^4(0.20)^2.   </m>
+    </p>
+    <p>
+      Compute each part:
+      <m>\binom{6}{4}=15</m> ways,
+      <m>(0.80)^4=0.4096</m>,
+      and
+      <m>(0.20)^2=0.04</m>.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X=4)=15(0.4096)(0.04)=0.24576.
+      </m>
+    </p>
+    <p>
+      So, the probability that exactly 4 of the 6 students
+      correctly perform the sterile dressing change on the first attempt is
+      approximately <m>0.2458</m>.
+    </p>
+  </solution>
+  <solution> <title>At Least 4</title>
+    <p>
+      To find the probability that at least 4 of the 6 students correctly perform the sterile dressing change on the first attempt, we need to calculate <m>P(X \geq 4)</m>.
+    </p>
+    <p>
+      This is equivalent to calculating <m>P(X=4) + P(X=5) + P(X=6)</m>.
+    </p>
+    <p>
+      We already calculated <m>P(X=4)=0.24576</m>.
+    </p>
+    <p>
+      For <m>P(X=5)</m>, using the binomial probability formula:
+      <m>
+        P(X=5)=\binom{6}{5}(0.80)^5(0.20)^1.
+      </m>
+    </p>
+    <p>
+      Compute each part:
+      <m>\binom{6}{5}=6</m> ways,
+      <m>(0.80)^5=0.32768</m>,
+      and
+      <m>(0.20)^1=0.20</m>.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X=5)=6(0.32768)(0.20)=0.393216.
+      </m>
+    </p>
+    <p>
+      For <m>P(X=6)</m>, using the binomial probability formula:
+      <m>
+        P(X=6)=\binom{6}{6}(0.80)^6(0.20)^0.
+      </m>
+    </p>
+    <p>
+      Compute each part:
+      <m>\binom{6}{6}=1</m> way,
+      <m>(0.80)^6=0.262144</m>,
+      and
+      <m>(0.20)^0=1</m>.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X=6)=1(0.262144)(1)=0.262144.
+      </m>
+    </p>
+    <p>
+      Thus,
+      <m>
+        P(X \geq 4)=P(X=4)+P(X=5)+P(X=6).
+      </m>
+    </p>
+    <p>
+      Substituting the values:
+      <m>
+        P(X \geq 4)=0.24576+0.393216+0.262144=0.90112.
+      </m>
+    </p>
+<p>
+      So, the probability that at least <m>4</m> of the <m>6</m> students
+      correctly perform the sterile dressing change on the first attempt is
+      approximately <m>0.9011</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-binomial-pathogen">
+<title> Pathogen</title>
+  <statement>
+    <p>
+      A chemist knows that the probability a laboratory test correctly detects a
+      pathogen compound in a sample is <m>0.85</m>. Suppose <m>7</m> samples are
+      tested independently.
+    </p>
+    <p>
+      Let <m>X</m> be the number of samples for which the test correctly detects
+      the targeted pathogen compound.
+    </p>
+    <p>
+      A. Find the probability that exactly 5 of the 7 samples are correctly identified.
+    </p>
+    <p>
+    B.  Find the probability that fewer than 4 of the 7 samples are correctly detected.
+    </p>
+
+  </statement>
+  <solution> <title>Exactly 5</title>
+    <p>
+      Since there are a fixed number of trials <m>n=7</m>, each trial has two possible
+      outcomes, the trials are independent, and the probability of success is
+      constant with <m>p=0.85</m>, this is a binomial distribution.
+    </p>
+    <p>
+      Thus,
+      <m>X \sim \text{Binomial}(n=7,p=0.85)</m>.
+    </p>
+    <p>
+      The binomial probability formula is
+      <m>
+        P(X=x)=\binom{n}{x}p^x(1-p)^{n-x}.
+      </m>
+    </p>
+    <p> Thus, 
+      <m>
+        P(X=5)=\binom{7}{5}(0.85)^5(0.15)^2.
+      </m>
+    </p>
+    <p>
+      Compute each part:
+      <m>\binom{7}{5}=21</m> ways,
+      <m>(0.85)^5\approx 0.4437</m>,
+      and
+      <m>(0.15)^2=0.0225</m>.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X=5)=21(0.4437)(0.0225)\approx 0.2097.
+      </m>
+    </p>
+    <p>
+      So, the probability that exactly 5 of the 7 samples are
+      correctly identified is approximately 0.2097.
+    </p>
+  </solution>
+  <solution> <title>Fewer than 4</title>
+    <p>
+      We want to find <m>P(X \lt 4)</m>, which is the same as <m>P(X \leq 3)</m>.
+    </p>
+    <p>
+      Using the binomial probability formula:
+      <m>
+        P(X=0)=\binom{7}{0}(0.85)^0(0.15)^7,
+      </m>
+    </p>
+    <p>
+      Compute each part:
+      <m>\binom{7}{0}=1</m> way,
+      <m>(0.85)^0=1</m>,
+      and
+      <m>(0.15)^7\approx 0.0000017</m>.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X=0)\approx 1(1)(0.0000017)=0.0000017.
+      </m>
+    </p>
+    <p>
+      Similarly, we can compute the probabilities for <m>X=1,2,3</m>.
+    </p>
+    <p>
+      Substituting the values:
+      <m>
+        P(X \lt 4)=P(X=0)+P(X=1)+P(X=2)+P(X=3).
+      </m>
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X \lt 4)\approx 0.0000017+0.00006777+0.00115+0.01088\approx 0.012115.
+      </m>
+    </p>
+    <p>
+      So, the probability that fewer than 4 of the 7 samples are
+      correctly detected is approximately 0.0121.
+    </p>
+  </solution>
+</exercise>
+<exercise xml:id="ex-binomial-pathogen-mean">
+<title> Pathogen Mean</title>
+  <statement>
+    <p>
+      A chemist knows that the probability of a laboratory test correctly detects a particular
+      pathogen compound in a sample is 0.85. Suppose 200 samples are
+      tested independently in a given day.
+    </p>
+  <p> Find the mean and standard deviation for the correct number of pathogens detected. 
+  </p>
+ </statement>
+  <solution> 
+    <p> We know that <m> p=0.85</m> thus <m>q=0.15</m> and <m>n=200</m></p>
+    <p> Mean is <m> \mu = np =0.85 \times 200 = 170</m> </p> 
+    <p> Variance is <m> \sigma^2 = npq=(200)(0.85)(.15)=25.5 </m> </p>
+    <p> Standard deviation is <m> \sigma=\sqrt{25.5}=5.05 </m> </p>
+    <p> Estimate a mean of 170 correctly detected out of 200 samples. The variance is 25.5 with a standard deviation of 5.05 which measures the spread from the mean. </p>
+  </solution>
+</exercise> 
+
+<exercise xml:id="ex-binomial-rainfall">
+<title> Rainfall</title>
+  <statement>
+    <p>
+      A meteorologist knows that the probability of a forecasting model correctly
+      predicts rainfall for a given day is <m>0.70</m>. Suppose the model is
+      used for <m>8</m> independent days.
+    </p>
+    <p>
+      Let <m>X</m> be the number of days for which the model correctly predicts rainfall.
+    </p>
+    <p> A. Find the probability that exactly 6 of the 8 daily forecasts correctly predicted rainfall.
+    </p>
+    <p> B. Find the probability that more than 6 of the 8 daily forecasts correctly predicted rainfall.
+    </p>
+   <p> C. Find the mean number of days the model correctly predicts rainfall in a sample of 30 days. 
+</p>
+  </statement>
+  <solution><title> Six Days</title>
+    <p>
+      Since there are a fixed number of trials, each trial has two possible
+      Outcomes (rain or not), the trials are independent, and the probability of success is
+      constant, this is a binomial distribution.
+    </p>
+    <p>
+      Thus,
+      <m>X \sim \text{Binomial}(n=8,p=0.70)</m>.
+    </p>
+    <p>
+      The binomial probability formula is
+      <m>
+        P(X=x)=\binom{n}{x}p^x(1-p)^{n-x}.
+      </m>
+    </p>
+    <p>
+      Here,
+      <m>n=8</m>,
+      <m>x=6</m>,
+      and
+      <m>p=0.70</m>.
+      So,
+    </p>
+    <p>
+      <m>
+        P(X=6)=\binom{8}{6}(0.70)^6(0.30)^2.
+      </m>
+    </p>
+    <p>
+      Compute each part:
+      <m>\binom{8}{6}=28</m> ways,
+      <m>(0.70)^6=0.117649</m>,
+      and
+      <m>(0.30)^2=0.09</m>.
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X=6)=28(0.117649)(0.09)\approx 0.2965.
+      </m>
+    </p>
+    <p>
+      So, the probability that exactly 6 of the 8 daily forecasts
+      correctly predict rainfall is approximately <m>0.2965</m>.
+    </p>
+  </solution>
+<solution> <title> More than 6</title>
+<p> We want to find   <m>P(X \gt 6)</m>, which is  <m>    P(X \gt 6)=P(X=7)+P(X=8).
+      </m>  </p>
+    <p>
+      Using the binomial formula    <m>  P(X=x)=\binom{n}{x}p^x(1-p)^{n-x},
+      </m>    we calculate each probability.
+    </p>
+    <p>
+      First,
+      <m>
+        P(X=7)=\binom{8}{7}(0.70)^7(0.30)^1
+        =8(0.0823543)(0.30)
+        \approx 0.1977.
+      </m>
+    </p>
+    <p>
+      Next,
+      <m>
+        P(X=8)=\binom{8}{8}(0.70)^8(0.30)^0
+        =1(0.05764801)(1)
+        =0.0576.
+      </m>
+    </p>
+    <p>
+      Therefore,
+      <m>
+        P(X \gt 6)=0.1977+0.0576=0.2553.
+      </m>
+    </p>
+    <p>
+      So, the probability that the model correctly predicts rainfall on more
+      than 6 of the 8 days is approximately <m>0.2553</m>.
+    </p>
+  </solution>
+<solution><title>Mean</title>
+<p> We know that <m> p=0.70</m> thus <m>q=0.30</m> and <m>n=30</m></p>
+<p> Mean is <m> \mu = np =0.70 \times 30 = 21</m> days </p> 
+<p> Variance is <m> \sigma^2 = npq=(30)(0.70)(.30)=6.3 </m> </p>
+ <p> Standard deviation is <m> \sigma=\sqrt{6.3}=2.5 </m> </p>
+<p> Estimate a mean of 21 correctly predicted rainfalls out of 30 days. The variance is 6.3 with a standard deviation of 2.5 days. </p>
+</solution>
+</exercise>
+
+
   </subsection>
 
 

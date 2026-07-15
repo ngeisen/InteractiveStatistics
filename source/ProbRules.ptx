@@ -301,7 +301,79 @@
 <solution> <p>  P(neg | O) = 25/162 = .154 </p>  </solution> 
 </exercise>
 
+<p> <term>Groundwater</term> 
+      An earth science team studies 100 groundwater samples from two
+      regions. Each sample is classified by whether it comes from
+      <q>Region A</q> or <q>Region B</q> and whether the nitrate concentration is
+      <q>Above Safe Limit</q> or <q>Within Safe Limit</q>.
+    </p>
+    <p>
+      The data are summarized in the following two-way table.
+    </p>
+    <table>
+      <title>Groundwater Samples by Region and Nitrate Level</title>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell>Above Safe Limit</cell>
+          <cell>Within Safe Limit</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Region A</cell>
+          <cell>28</cell>
+          <cell>22</cell>
+          <cell>50</cell>
+        </row>
+        <row>
+          <cell>Region B</cell>
+          <cell>12</cell>
+          <cell>38</cell>
+          <cell>50</cell>
+        </row>
+        <row>
+          <cell>Total</cell>
+          <cell>40</cell>
+          <cell>60</cell>
+          <cell>100</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>  One groundwater sample is selected at random. Use the table to find the following
+      probabilities.</p> 
 
+<exercise xml:id="ex-probability-groundwater">
+<title>Groundwater</title>
+  <statement>
+<p>  One groundwater sample is selected at random. Use the table to find the following
+      probabilities.</p>
+<p> a) Find the probability that the water sample is within a safe limit. </p>
+<p> b) Find the probability that the water sample is from Region A and within a safe limit. </p>
+<p> c) Find the probability that the water sample is either from Region B or within a safe limit. </p>
+<p> d) If the sample is from Region A, find the  probability that it is above the safe nitrate limit. </p>
+<p> e) If the sample is from Region B, find the probability it is within the safe limit.
+    </p>
+  </statement>
+<solution><title>Safe</title>
+<p> P(safe)=<m> 60/100=0.60</m> </p>
+  </solution>
+    <solution><title>Region A and Safe</title>
+<p> Probability that the water sample is from Region A and within a safe limit is the intersection. </p>
+<p> P(region A and safe)=<m> 22/100=0.22</m> </p>
+  </solution>
+<solution><title>Region B or Safe</title>
+<p> P(region B or safe)=<m> 50/100+60/100 - 38/300=0.72</m> </p>
+  </solution>
+<solution><title>Above Safe Limit</title>
+<p> We are only focusing on the Region A, so the sample is out of 50. </p>
+<p> P(above safe| region A)<m> = \frac{28}{50}=0.56 </m></p>
+  </solution>
+
+    <solution><title> Safe Limit</title>
+<p> We are only focusing on the Region B, so the sample is out of 50. </p>
+<p> P(safe| region B)<m> = \frac{38}{50}=0.76 </m></p>
+  </solution>
+</exercise>
 
 
 

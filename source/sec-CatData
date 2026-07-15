@@ -93,7 +93,142 @@
             </image>
 <p>      </p>
    <p> See the section for <term>Graphing with StatKey </term> for graphing one categorical variable with technology. </p> 
- </subsection>
+ 
+   <p> <term> Practice Problems </term></p> 
+<p> Here is a bar graph from the ClassSurvey2 for students favorite seasons. Interpret the results. </p>
+<figure xml:id="FavSeasonBar">
+            <caption>Favorite Season Bar Graph</caption>
+            <image source="FavSeason1.png" width="90%">
+                <shortdescription>Frequency of 15 fall, 11 summer, 11 spring, 6 winter for a total of 43 student votes.</shortdescription>
+            </image>
+        </figure> 
+<exercise label="season-bar-matching">
+    <title> Interpreting Favorite Seasons </title>
+    <statement>
+    <p>
+        Using the bar graph and summary statistics, select all true statements that apply to the Favorite Seasons graph.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p>
+            Most students preferred the Fall season.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Yes, Fall occurred 15 times for 34.9% of student votes.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+            Winter was preferred by 14% of students
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, Winter was preferred for 6 of 43 students for 14%.
+        </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p>
+            Summer was preferred more often than Spring.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            False, Spring and Summer were both chosen by 11 students for 25.6% of votes.
+        </p>
+        </feedback>
+    </choice>   
+    <choice>
+        <statement>
+        <p>
+            The sample consists of 35 students.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            The sample size is 43 students.
+        </p>
+        </feedback>
+    </choice>    
+     <choice correct="yes">
+        <statement>
+        <p>
+            The graph is an example of a Pareto Chart.
+        </p>
+        </statement>
+        <feedback>
+        <p> Yes since the proportions are decreasing going to the right.
+        </p>
+        </feedback>
+    </choice>
+</choices>
+</exercise>
+ 
+<p> Below is a pie graph of the students' dominant hand from the ClassSurvey2 . Interpret the results. </p>
+<figure xml:id="DominantHandPie">
+            <caption>Dominant Hand Pie Graph</caption>
+            <image source="HandPie1.png" width="60%">
+                <shortdescription>percents of 9 for left, 5 ambidextrous, and 86 right handed.</shortdescription>
+            </image>
+        </figure> 
+<exercise label="dominant-pie-matching">
+    <title> Dominant Hand </title>
+    <statement>
+    <p>
+        Using the pie graph above, select all true statements that apply to the student’s dominant hand.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice>
+        <statement>
+        <p>
+            Most students are left-handed.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Right-handed occurs more often at 86% of students.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+           5% of the sample are ambidextrous
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+        Over half the class was right handed.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, 86% of the students were right handed.
+        </p>
+        </feedback>
+    </choice>
+     </choices>
+</exercise>
+
+
+
+</subsection>
 
 
  <subsection xml:id="subsec-GraphTwoCategorical">
@@ -170,7 +305,7 @@
 
 <p> <term> Case Study Exploration </term> </p>
 <p> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the categorical variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data from the sample. </p>
-<p> In your summary include the variable and the categories. Include the size of the sample. Summarize each category with either the count or percentage. Which categories occur most often or least frequently? Include any other observations or comparisons based on the data. What can you infer about the population? </p>
+<p> In your summary include the variable and the categories. Include the size of the sample. Summarize each category with either the count or percentage. Which categories occur most often or least frequently? Include any other observations or comparisons based on the data. What can you infer about the population from the sample? </p>
 
  </subsection>
 
