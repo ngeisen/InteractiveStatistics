@@ -197,15 +197,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-DesStat-Position.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Measures of Position</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionBasics" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Application</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PercentileBasics" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-Quartiles" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Finding Quartiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-Outliers" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Checking for Outliers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-Zscores" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Finding Z-Scores</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Application</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DesStat-Regression.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Linear Regression</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-SimpleLinear" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Simple Linear Regression</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionPractice" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionEarthquakes" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Earthquake Analysis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionPractice" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -252,9 +256,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="BinomialProb.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Binomial Distribution</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialBasics" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialStatistics" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Summary Statistics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialCalc" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Using Technology</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialPractice" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialEyeColor" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Eye Color Application</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialStatistics" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialCalc" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialPractice" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -583,58 +588,58 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Objectives 3.3"><a href="#sec-DesStat-Position-3" title="Copy heading and permalink for Objectives 3.3" aria-label="Copy heading and permalink for Objectives 3.3">🔗</a></div>
 </article>
-<section class="subsection" id="subsec-PositionBasics">
+<section class="subsection" id="subsec-PercentileBasics">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Percentiles</span>
 </h3>
-<div class="para" id="subsec-PositionBasics-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="subsec-PositionBasics-3">
-<dfn class="terminology">Percentiles</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-PercentileBasics-3">
+<dfn class="terminology">Percentiles</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-4">Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <dfn class="terminology">percentile</dfn>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child’s growth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-4">Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <dfn class="terminology">percentile</dfn>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child’s growth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-5">The percentile corresponding to a given X value is computed by<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-5">The percentile corresponding to a given X value is computed by<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-PositionBasics-6">
-<div class="displaymath process-math" id="subsec-PositionBasics-6-1">
+<div class="para logical" id="subsec-PercentileBasics-6">
+<div class="displaymath process-math" id="subsec-PercentileBasics-6-1">
 \begin{equation*}
 p=\frac{\text{number  of  values below X plus one-half values at X}}{\text{total number of values}}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-7">
-<dfn class="terminology">Example:</dfn> A teacher gives a 20-point test to ten students.  The scores are 18, 15, 12, 6, 8, 12, 3, 5, 20, 10. Find the percentile rank of the student who scored 12.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-7">
+<dfn class="terminology">Example:</dfn> A teacher gives a 20-point test to ten students.  The scores are 18, 15, 12, 6, 8, 12, 3, 5, 20, 10. Find the percentile rank of the student who scored 12.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-8">
-<em class="emphasis">Solution:</em> There are 5 scores below 12. There are 2 scores at 12. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{5+0.5(2)}{10} = 0.60 \)</span> thus the 60th percentile. This student did better than or equal to 60% of the classmates on the test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-8">
+<em class="emphasis">Solution:</em> There are 5 scores below 12. There are 2 scores at 12. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{5+0.5(2)}{10} = 0.60 \)</span> thus the 60th percentile. This student did better than or equal to 60% of the classmates on the test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-9"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<details id="subsec-PositionBasics-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="subsec-PercentileBasics-9"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<details id="subsec-PercentileBasics-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Percentile.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-PositionBasics-10-2-1">A teacher gives a 20-point quiz to ten students.  The scores are 16, 15, 16, 6, 8, 16, 3, 5, 20, 10. Find the percentile ranking of the student who scored 16.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-10-2-1">A teacher gives a 20-point quiz to ten students.  The scores are 16, 15, 16, 6, 8, 16, 3, 5, 20, 10. Find the percentile ranking of the student who scored 16.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-PositionBasics-10-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-PercentileBasics-10-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-PositionBasics-10-3-1">There are 6 scores below 16. There are 3 scores at 16. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{6+0.5(3)}{10} = 0.75 \)</span> thus the 75th percentile. This student did better than or equal to 75% of the classmates on the quiz.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-10-3-1">There are 6 scores below 16. There are 3 scores at 16. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{6+0.5(3)}{10} = 0.75 \)</span> thus the 75th percentile. This student did better than or equal to 75% of the classmates on the quiz.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.1.1"><a href="#subsec-PositionBasics-10-3" title="Copy heading and permalink for Solution 3.3.1.1" aria-label="Copy heading and permalink for Solution 3.3.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.1.1"><a href="#subsec-PercentileBasics-10-3" title="Copy heading and permalink for Solution 3.3.1.1" aria-label="Copy heading and permalink for Solution 3.3.1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 3.3.1: Percentile"><a href="#subsec-PositionBasics-10" title="Copy heading and permalink for Checkpoint 3.3.1: Percentile" aria-label="Copy heading and permalink for Checkpoint 3.3.1: Percentile">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 3.3.1: Percentile"><a href="#subsec-PercentileBasics-10" title="Copy heading and permalink for Checkpoint 3.3.1: Percentile" aria-label="Copy heading and permalink for Checkpoint 3.3.1: Percentile">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-PositionBasics-11">The kth percentile is the data value that has k% of the data at or below that value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-11">The kth percentile is the data value that has k% of the data at or below that value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-12">
-<dfn class="terminology">Example:</dfn> Carlos scored a 1350 on the SAT exam and the report said he was at the 89th percentile. What does this indicate?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-12">
+<dfn class="terminology">Example:</dfn> Carlos scored a 1350 on the SAT exam and the report said he was at the 89th percentile. What does this indicate?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-13">
-<em class="emphasis">Solution:</em> Carlos scored the same or better than 89% of the students taking the SAT that year nationwide.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-13">
+<em class="emphasis">Solution:</em> Carlos scored the same or better than 89% of the students taking the SAT that year nationwide.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-14"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-PercentileBasics-14"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
 <details id="Percentile-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Percentile Interpretation.</span>
 </h4></summary>
@@ -666,175 +671,188 @@ p=\frac{\text{number  of  values below X plus one-half values at X}}{\text{total
 </div></div>
 <div class="autopermalink" data-description="Checkpoint 3.3.2: Percentile Interpretation"><a href="#Percentile-matching" title="Copy heading and permalink for Checkpoint 3.3.2: Percentile Interpretation" aria-label="Copy heading and permalink for Checkpoint 3.3.2: Percentile Interpretation">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-PositionBasics-16"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="subsec-PositionBasics-17">
-<dfn class="terminology">Quartiles</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-16"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Subsection 3.3.1: Percentiles"><a href="#subsec-PercentileBasics" title="Copy heading and permalink for Subsection 3.3.1: Percentiles" aria-label="Copy heading and permalink for Subsection 3.3.1: Percentiles">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-Quartiles">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding Quartiles</span>
+</h3>
+<div class="para" id="subsec-Quartiles-2">There are special percentiles called quartiles. <dfn class="terminology">Quartiles</dfn> are numbers that divide the data into four equal parts. One fourth (or a quarter) of the data falls between consecutive quartile values. To find the quartiles, we find the median and the divide each half of the data into two parts again.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-18">There are special percentiles called quartiles. <dfn class="terminology">Quartiles</dfn> are numbers that divide the data into four equal parts. One fourth (or a quarter) of the data falls between consecutive quartile values. To find the quartiles, we find the median and the divide each half of the data into two parts again.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="subsec-Quartiles-3">
+<li id="subsec-Quartiles-3-1">
+<div class="para" id="subsec-Quartiles-3-1-1">Sort the data in increasing order.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ol class="decimal" id="subsec-PositionBasics-19">
-<li id="subsec-PositionBasics-19-1">
-<div class="para" id="subsec-PositionBasics-19-1-1">Sort the data in increasing order.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-PositionBasics-19-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-Quartiles-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="subsec-PositionBasics-19-2">
-<div class="para" id="subsec-PositionBasics-19-2-1">Find the median, this divides the data list into 2 halves, thus the 50th percentile.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-Quartiles-3-2">
+<div class="para" id="subsec-Quartiles-3-2-1">Find the median, this divides the data list into 2 halves, thus the 50th percentile.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-PositionBasics-19-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-Quartiles-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
-<li id="subsec-PositionBasics-19-3">
-<div class="para" id="subsec-PositionBasics-19-3-1">Find the median of the data below the median. This value is Q1 which is the 25th percentile.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-19-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-Quartiles-3-3">
+<div class="para" id="subsec-Quartiles-3-3-1">Find the median of the data below the median. This value is Q1 which is the 25th percentile.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#subsec-PositionBasics-19-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-Quartiles-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
-<li id="subsec-PositionBasics-19-4">
-<div class="para" id="subsec-PositionBasics-19-4-1">Find the median of the data above the median. This value is Q3 which is the 75th percentile.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-19-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-Quartiles-3-4">
+<div class="para" id="subsec-Quartiles-3-4-1">Find the median of the data above the median. This value is Q3 which is the 75th percentile.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4"><a href="#subsec-PositionBasics-19-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsec-Quartiles-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 </ol>
-<div class="para" id="subsec-PositionBasics-20">
-<dfn class="terminology">Example:</dfn>  The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-4">
+<dfn class="terminology">Example:</dfn>  The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-21">
-<em class="emphasis">Solution:</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-5">
+<em class="emphasis">Solution:</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-22">Put the values in order and find the median: 5, 6, 12, <code class="code-inline tex2jax_ignore">13</code>, 15, 18, 20<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-6">Put the values in order and find the median: 5, 6, 12, <code class="code-inline tex2jax_ignore">13</code>, 15, 18, 20<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-23">Find Q1 of the values below 13: thus 5, <code class="code-inline tex2jax_ignore">6</code>, 12<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-7">Find Q1 of the values below 13: thus 5, <code class="code-inline tex2jax_ignore">6</code>, 12<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-24">Find Q3 of the values above 13: thus 15, <code class="code-inline tex2jax_ignore">18</code>, 20<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-8">Find Q3 of the values above 13: thus 15, <code class="code-inline tex2jax_ignore">18</code>, 20<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-25">Thus Q1 = 6, Q2 = 13, Q3 = 15.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-9">Thus Q1 = 6, Q2 = 13, Q3 = 15.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-26">If you record the quartiles together with the maximum and minimum you have five-number summary. The <dfn class="terminology">five-number summary</dfn> consists of the minimum, the first quartile (Q1), the median (Q2), the third quartile (Q3), and the maximum (in that order). These are the values that make up the boxplot.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-10">If you record the quartiles together with the maximum and minimum you have five-number summary. The <dfn class="terminology">five-number summary</dfn> consists of the minimum, the first quartile (Q1), the median (Q2), the third quartile (Q3), and the maximum (in that order). These are the values that make up the boxplot.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-27">The <dfn class="terminology">interquartile range (IQR)</dfn>, is the difference between the first and third quartiles, thus <span class="process-math">\(IQR = Q3 - Q1\)</span> which represents the middle 50% of the data. If the IQR is <em class="emphasis">large</em> the data is spread out and if the IQR is <em class="emphasis">small</em> the data is closer together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-11">The <dfn class="terminology">interquartile range (IQR)</dfn>, is the difference between the first and third quartiles, thus <span class="process-math">\(IQR = Q3 - Q1\)</span> which represents the middle 50% of the data. If the IQR is <em class="emphasis">large</em> the data is spread out and if the IQR is <em class="emphasis">small</em> the data is closer together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-28">
-<dfn class="terminology">Example:</dfn> The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20, 25<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-12">
+<dfn class="terminology">Example:</dfn> The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20, 25<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-29">Solution: Put the values in order and find the median   5, 6, 12, 13, | 15, 18, 20, 25 which occurs between 13 and 15 since there are an even number of values, thus the median = 14. Q1 is between 6 and 12 and Q3 is between 18 and 20, thus Q1 = 9 and Q3 = 19. Therefore, 50% of the students in ths sample are taking between 9 and 19 credits. The IQR = 19 - 9 = 10, thus the spread is 10 credits.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Quartiles-13">Solution: Put the values in order and find the median   5, 6, 12, 13, | 15, 18, 20, 25 which occurs between 13 and 15 since there are an even number of values, thus the median = 14. Q1 is between 6 and 12 and Q3 is between 18 and 20, thus Q1 = 9 and Q3 = 19. Therefore, 50% of the students in ths sample are taking between 9 and 19 credits. The IQR = 19 - 9 = 10, thus the spread is 10 credits.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quartiles-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-30"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="subsec-PositionBasics-31">
-<dfn class="terminology">Outliers</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Subsection 3.3.2: Finding Quartiles"><a href="#subsec-Quartiles" title="Copy heading and permalink for Subsection 3.3.2: Finding Quartiles" aria-label="Copy heading and permalink for Subsection 3.3.2: Finding Quartiles">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-Outliers">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Checking for Outliers</span>
+</h3>
+<div class="para" id="subsec-Outliers-2">Data should be checked for extremely high or extremely low values when compared to the rest of the data, these are known as <dfn class="terminology">outliers</dfn>. Often you see the outliers as the starred values in a boxplot.  To determine the possible outliers using the IQR method, we look at any value that is:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-32">Data should be checked for extremely high or extremely low values when compared to the rest of the data, these are known as <dfn class="terminology">outliers</dfn>. Often you see the outliers as the starred values in a boxplot.  To determine the possible outliers using the IQR method, we look at any value that is:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="subsec-Outliers-3">
+<li id="subsec-Outliers-3-1">
+<div class="para" id="subsec-Outliers-3-1-1">
+<em class="emphasis">less</em> than <span class="process-math">\(Q1-1.5 * IQR \)</span>  or<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ul class="disc" id="subsec-PositionBasics-33">
-<li id="subsec-PositionBasics-33-1">
-<div class="para" id="subsec-PositionBasics-33-1-1">
-<em class="emphasis">less</em> than <span class="process-math">\(Q1-1.5 * IQR \)</span>  or<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-33-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-PositionBasics-33-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Outliers-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-PositionBasics-33-2">
-<div class="para" id="subsec-PositionBasics-33-2-1">
-<em class="emphasis">more</em>  than <span class="process-math">\(Q3+1.5 * IQR \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-33-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-Outliers-3-2">
+<div class="para" id="subsec-Outliers-3-2-1">
+<em class="emphasis">more</em>  than <span class="process-math">\(Q3+1.5 * IQR \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-PositionBasics-33-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Outliers-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para" id="subsec-PositionBasics-34">
-<dfn class="terminology">Example:</dfn> A sample of seven students identified how many pairs of shoes they have in their closet: 6, 10, 15, 13, 4, 18, 50. Check for any outliers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-4">
+<dfn class="terminology">Example:</dfn> A sample of seven students identified how many pairs of shoes they have in their closet: 6, 10, 15, 13, 4, 18, 50. Check for any outliers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-35">Intuitively we can see that 50 is much larger than the rest of the data, thus we anticipate it being an outlier. But we check mathematically.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-5">Intuitively we can see that 50 is much larger than the rest of the data, thus we anticipate it being an outlier. But we check mathematically.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-36">First, find the Quartiles:	 4, <code class="code-inline tex2jax_ignore">6</code>, 10, <code class="code-inline tex2jax_ignore">13</code>, 15, <code class="code-inline tex2jax_ignore">18</code>, 50<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-6">First, find the Quartiles:	 4, <code class="code-inline tex2jax_ignore">6</code>, 10, <code class="code-inline tex2jax_ignore">13</code>, 15, <code class="code-inline tex2jax_ignore">18</code>, 50<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-37">Second, find IRQ= 18 - 6 = 12<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-7">Second, find IRQ= 18 - 6 = 12<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-38">Lower extreme = 6 - 1.5(12) = -12 thus no lower outliers since no value below -12.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-8">Lower extreme = 6 - 1.5(12) = -12 thus no lower outliers since no value below -12.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-39">Upper extreme = 18 + 1.5(12) = 36 thus 50 pairs of shoes is an outlier since it is more than 36. So having 50 pairs of shoes is atypical for this group.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-9">Upper extreme = 18 + 1.5(12) = 36 thus 50 pairs of shoes is an outlier since it is more than 36. So having 50 pairs of shoes is atypical for this group.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-40"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-40" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<details id="subsec-PositionBasics-41" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Check for Outliers.</span>
+<div class="para" id="subsec-Outliers-10"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-Outliers-11">When using technology, the outliers are often identified as an asterisk in the boxplot. Quartile 1 and Quartile 3 make up the box with a line drawn to the smallest non-outlier value and a line drawn to the largest non-outlier value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BoxplotOutliers"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ShoeBoxplot.png" class="contained" alt="Boxplot with smallest 4 to largest 50,  since 50 is outlier it is marked with an asterisk ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Boxplot of Shoes<div class="autopermalink" data-description="Figure 3.3.3"><a href="#BoxplotOutliers" title="Copy heading and permalink for Figure 3.3.3" aria-label="Copy heading and permalink for Figure 3.3.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-Outliers-13">The boxplot shows <span class="process-math">\(Q_1=8\)</span> and <span class="process-math">\(Q_3=16.5\)</span> as the box, the median of 13 is the center bar. There is line to the smallest value of 4 extending from <span class="process-math">\(Q_1\text{.}\)</span> The value 50 is the outlier and is marked as an asterisk. The upper line goes from <span class="process-math">\(Q_3\)</span> to 18 which is the largest non-outlier in the data set.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-Outliers-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Check for Outliers.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-PositionBasics-41-2-1">A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 120, 175, 165, 145, 157, 220. Are there any outliers in the sample?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-41-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-14-2-1">A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 120, 175, 165, 145, 157, 220. Are there any outliers in the sample?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-PositionBasics-41-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-Outliers-14-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="answer solution-like knowl__content">
-<div class="para" id="subsec-PositionBasics-41-3-1">Yes, 220 and 238 are both outliers<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-41-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-14-3-1">Yes, 220 and 238 are both outliers<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-14-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 3.3.3.1"><a href="#subsec-PositionBasics-41-3" title="Copy heading and permalink for Answer 3.3.3.1" aria-label="Copy heading and permalink for Answer 3.3.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 3.3.4.1"><a href="#subsec-Outliers-14-3" title="Copy heading and permalink for Answer 3.3.4.1" aria-label="Copy heading and permalink for Answer 3.3.4.1">🔗</a></div>
 </div></details>
-<details id="subsec-PositionBasics-41-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-Outliers-14-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-PositionBasics-41-4-1">First, find quartiles: 120, 138, <code class="code-inline tex2jax_ignore">140</code>, 145, 157, <code class="code-inline tex2jax_ignore"> M=159.5 </code> 162, 165, <code class="code-inline tex2jax_ignore">175</code>, 220, 238<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-41-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-14-4-1">First, find quartiles: 120, 138, <code class="code-inline tex2jax_ignore">140</code>, 145, 157, <code class="code-inline tex2jax_ignore"> M=159.5 </code> 162, 165, <code class="code-inline tex2jax_ignore">175</code>, 220, 238<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-14-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-41-4-2">Find IQR = 175 - 140 = 35<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-41-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-14-4-2">Find IQR = 175 - 140 = 35<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-14-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-41-4-3">Lower extreme = 140-1.5x35 = 87.5 so no lower outliers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-41-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-14-4-3">Lower extreme = 140-1.5x35 = 87.5 so no lower outliers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-14-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-41-4-4">Upper extreme = 175+1.5x35 = 192.5 thus 220 and 238 are both outliers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-41-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Outliers-14-4-4">Upper extreme = 175+1.5x35 = 192.5 thus 220 and 238 are both outliers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Outliers-14-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.3.1"><a href="#subsec-PositionBasics-41-4" title="Copy heading and permalink for Solution 3.3.3.1" aria-label="Copy heading and permalink for Solution 3.3.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.4.1"><a href="#subsec-Outliers-14-4" title="Copy heading and permalink for Solution 3.3.4.1" aria-label="Copy heading and permalink for Solution 3.3.4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 3.3.3: Check for Outliers"><a href="#subsec-PositionBasics-41" title="Copy heading and permalink for Checkpoint 3.3.3: Check for Outliers" aria-label="Copy heading and permalink for Checkpoint 3.3.3: Check for Outliers">🔗</a></div>
-</article></details>
-<div class="para" id="subsec-PositionBasics-42"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-42" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="subsec-PositionBasics-43">
-<dfn class="terminology">z-score</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-43" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 3.3.4: Check for Outliers"><a href="#subsec-Outliers-14" title="Copy heading and permalink for Checkpoint 3.3.4: Check for Outliers" aria-label="Copy heading and permalink for Checkpoint 3.3.4: Check for Outliers">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 3.3.3: Checking for Outliers"><a href="#subsec-Outliers" title="Copy heading and permalink for Subsection 3.3.3: Checking for Outliers" aria-label="Copy heading and permalink for Subsection 3.3.3: Checking for Outliers">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-Zscores">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding Z-Scores</span>
+</h3>
+<div class="para" id="subsec-Zscores-2">There is an old saying  that “You can’t compare apples to oranges.” But with statistics, we can in a way. There are times when we want to compare how a particular value is in relation to the mean. A <dfn class="terminology">z-score</dfn>  or <em class="emphasis">standard score</em> for a value is obtained by subtracting the mean from the value and dividing the result by the standard deviation.  The z-score represents the number of standard deviations that a data value falls above or below the mean. This allows us to compare two different groups of data to determine which did better in relation to the mean (thus comparing apples to oranges).  If the z-score is positive then it is above the mean, and if the z-score is negative it is below the mean. The formula is:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-44">There is an old saying  that “You can’t compare apples to oranges.” But with statistics, we can in a way. There are times when we want to compare how a particular value is in relation to the mean. A <dfn class="terminology">z-score</dfn>  or <em class="emphasis">standard score</em> for a value is obtained by subtracting the mean from the value and dividing the result by the standard deviation.  The z-score represents the number of standard deviations that a data value falls above or below the mean. This allows us to compare two different groups of data to determine which did better in relation to the mean (thus comparing apples to oranges).  If the z-score is positive then it is above the mean, and if the z-score is negative it is below the mean. The formula is:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-44" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="subsec-PositionBasics-45">
-<div class="displaymath process-math" id="subsec-PositionBasics-45-1">
+<div class="para logical" id="subsec-Zscores-3">
+<div class="displaymath process-math" id="subsec-Zscores-3-1">
 \begin{equation*}
 z=\frac{X-μ} {\sigma} 
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-46">
-<dfn class="terminology">Example:</dfn> A student scored 88 on a calculus test that had a mean of 75 and a standard deviation of 8.  The same student scored 30 on a biology quiz with a mean of 25 and standard deviation of 4.  Compare the student’s relative positions on the two tests by finding the z-scores.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-46" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-4">
+<dfn class="terminology">Example:</dfn> A student scored 88 on a calculus test that had a mean of 75 and a standard deviation of 8.  The same student scored 30 on a biology quiz with a mean of 25 and standard deviation of 4.  Compare the student’s relative positions on the two tests by finding the z-scores.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-47">Calculus test <span class="process-math">\(z = \frac{88-75}{8} =1.625 \)</span>  standard deviation above average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-47" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-5">Calculus test <span class="process-math">\(z = \frac{88-75}{8} =1.625 \)</span>  standard deviation above average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-48">Biology quiz <span class="process-math">\(z = \frac{30-25}{4} =1.25 \)</span>  standard deviation above average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-48" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-6">Biology quiz <span class="process-math">\(z = \frac{30-25}{4} =1.25 \)</span>  standard deviation above average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-49">Thus the student did better on the calculus test since the z-score is higher in comparison.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-49" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-7">Thus the student did better on the calculus test since the z-score is higher in comparison.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-PositionBasics-50" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Compare z-scores.</span>
+<details id="subsec-Zscores-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Compare z-scores.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-PositionBasics-50-2-1">Compare the three test scores to see who did the best overall in terms of z-scores.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-50-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-8-2-1">Compare the three test scores to see who did the best overall in terms of z-scores.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="subsec-PositionBasics-50-2-2">Angela earned a 200 on an aptitude test which has a mean of 220 and a standard deviation of 15.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-50-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-8-2-2">Angela earned a 200 on an aptitude test which has a mean of 220 and a standard deviation of 15.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="subsec-PositionBasics-50-2-3">Bryce scored 75 on the math test with a mean of 72 and standard deviation of 8.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-50-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-8-2-3">Bryce scored 75 on the math test with a mean of 72 and standard deviation of 8.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="subsec-PositionBasics-50-2-4">Chris earned a 78 on chemistry test with a mean of 81 and standard deviation of 10.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-50-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-8-2-4">Chris earned a 78 on chemistry test with a mean of 81 and standard deviation of 10.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-8-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-PositionBasics-50-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-Zscores-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-PositionBasics-50-3-1">Angela <span class="process-math">\(z = \frac{200 - 220}{15} = -1.33 \)</span> which is below average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-50-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-8-3-1">Angela <span class="process-math">\(z = \frac{200 - 220}{15} = -1.33 \)</span> which is below average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-50-3-2">Bryce <span class="process-math">\(z = \frac{75-72}{8} = 0.375 \)</span>  which is slightly above average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-50-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-8-3-2">Bryce <span class="process-math">\(z = \frac{75-72}{8} = 0.375 \)</span>  which is slightly above average.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-8-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PositionBasics-50-3-3">Chris <span class="process-math">\(z = \frac{78-81}{10} = - 0.30 \)</span>  which is slightly below average. Therefore Bruce did the best since he has the highest positive score. Angela did the worst overall since she has the lowest z-score (most negative).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PositionBasics-50-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Zscores-8-3-3">Chris <span class="process-math">\(z = \frac{78-81}{10} = - 0.30 \)</span>  which is slightly below average. Therefore Bruce did the best since he has the highest positive score. Angela did the worst overall since she has the lowest z-score (most negative).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Zscores-8-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.4.1"><a href="#subsec-PositionBasics-50-3" title="Copy heading and permalink for Solution 3.3.4.1" aria-label="Copy heading and permalink for Solution 3.3.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.5.1"><a href="#subsec-Zscores-8-3" title="Copy heading and permalink for Solution 3.3.5.1" aria-label="Copy heading and permalink for Solution 3.3.5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 3.3.4: Compare z-scores"><a href="#subsec-PositionBasics-50" title="Copy heading and permalink for Checkpoint 3.3.4: Compare z-scores" aria-label="Copy heading and permalink for Checkpoint 3.3.4: Compare z-scores">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 3.3.1: Understanding the Basics"><a href="#subsec-PositionBasics" title="Copy heading and permalink for Subsection 3.3.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 3.3.1: Understanding the Basics">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 3.3.5: Compare z-scores"><a href="#subsec-Zscores-8" title="Copy heading and permalink for Checkpoint 3.3.5: Compare z-scores" aria-label="Copy heading and permalink for Checkpoint 3.3.5: Compare z-scores">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 3.3.4: Finding Z-Scores"><a href="#subsec-Zscores" title="Copy heading and permalink for Subsection 3.3.4: Finding Z-Scores" aria-label="Copy heading and permalink for Subsection 3.3.4: Finding Z-Scores">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-PositionApply">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Application</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Application</span>
 </h3>
 <details id="ex-percentile-birthweights" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Birth Weights.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Birth Weights.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="ex-percentile-birthweights-2-1">A nurse records the birth weights, in pounds, of 10 newborns in a  hospital nursery. The weights are:<div class="autopermalink" data-description="Paragraph"><a href="#ex-percentile-birthweights-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -868,13 +886,13 @@ z=\frac{X-μ} {\sigma}
 </div>
 <div class="para" id="ex-percentile-birthweights-3-8">The percentile ranking for 8.1 pounds is <span class="process-math">\(\frac{8+0.5(1)}{10} = 0.85 \)</span> thus the 85th percentile.<div class="autopermalink" data-description="Paragraph"><a href="#ex-percentile-birthweights-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.5.1"><a href="#ex-percentile-birthweights-3" title="Copy heading and permalink for Solution 3.3.5.1" aria-label="Copy heading and permalink for Solution 3.3.5.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.6.1"><a href="#ex-percentile-birthweights-3" title="Copy heading and permalink for Solution 3.3.6.1" aria-label="Copy heading and permalink for Solution 3.3.6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 3.3.5: Birth Weights"><a href="#ex-percentile-birthweights" title="Copy heading and permalink for Checkpoint 3.3.5: Birth Weights" aria-label="Copy heading and permalink for Checkpoint 3.3.5: Birth Weights">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 3.3.6: Birth Weights"><a href="#ex-percentile-birthweights" title="Copy heading and permalink for Checkpoint 3.3.6: Birth Weights" aria-label="Copy heading and permalink for Checkpoint 3.3.6: Birth Weights">🔗</a></div>
 </article></details>
 <details id="ex-z-score-temperature" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Temperatures.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Temperatures.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="ex-z-score-temperature-2-1">A health researcher studies body temperatures in a clinic population. The mean temperature of the population is <span class="process-math">\(98.6\)</span>°F and a standard deviation of <span class="process-math">\(0.6\)</span>°F. Find the z-score for the following patient temperatures and note if they are above or below average.<div class="autopermalink" data-description="Paragraph"><a href="#ex-z-score-temperature-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -894,17 +912,17 @@ z=\frac{X-μ} {\sigma}
 </div>
 <div class="para" id="ex-z-score-temperature-3-4">This means the Liam’s temperature is <span class="process-math">\(1.33\)</span> standard deviations above the mean.<div class="autopermalink" data-description="Paragraph"><a href="#ex-z-score-temperature-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.6.1: Liam"><a href="#ex-z-score-temperature-3" title="Copy heading and permalink for Solution 3.3.6.1: Liam" aria-label="Copy heading and permalink for Solution 3.3.6.1: Liam">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.7.1: Liam"><a href="#ex-z-score-temperature-3" title="Copy heading and permalink for Solution 3.3.7.1: Liam" aria-label="Copy heading and permalink for Solution 3.3.7.1: Liam">🔗</a></div>
 </div></details>
 <details id="ex-z-score-temperature-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Noah</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para" id="ex-z-score-temperature-4-2">Use the z-score formula  <span class="process-math">\(z=\frac{x-\mu}{\sigma}.    \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-z-score-temperature-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-z-score-temperature-4-3">Noah is <span class="process-math">\(z=\frac{98.3-98.6}{0.6}=\frac{-0.3}{0.6}=1-0.50\)</span> which is below average.<div class="autopermalink" data-description="Paragraph"><a href="#ex-z-score-temperature-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-z-score-temperature-4-3">Noah is <span class="process-math">\(z=\frac{98.3-98.6}{0.6}=\frac{-0.3}{0.6}=-0.50\)</span> which is below average.<div class="autopermalink" data-description="Paragraph"><a href="#ex-z-score-temperature-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ex-z-score-temperature-4-4">This means the Noah’s temperature is <span class="process-math">\(0.5\)</span> standard deviations below the mean.<div class="autopermalink" data-description="Paragraph"><a href="#ex-z-score-temperature-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.6.2: Noah"><a href="#ex-z-score-temperature-4" title="Copy heading and permalink for Solution 3.3.6.2: Noah" aria-label="Copy heading and permalink for Solution 3.3.6.2: Noah">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.7.2: Noah"><a href="#ex-z-score-temperature-4" title="Copy heading and permalink for Solution 3.3.7.2: Noah" aria-label="Copy heading and permalink for Solution 3.3.7.2: Noah">🔗</a></div>
 </div></details>
 <details id="ex-z-score-temperature-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Violet</span></summary>
 <div class="solution solution-like knowl__content">
@@ -914,13 +932,13 @@ z=\frac{X-μ} {\sigma}
 </div>
 <div class="para" id="ex-z-score-temperature-5-4">This means the Violet’s temperature is <span class="process-math">\(4.33\)</span> standard deviations above the mean.<div class="autopermalink" data-description="Paragraph"><a href="#ex-z-score-temperature-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.6.3: Violet"><a href="#ex-z-score-temperature-5" title="Copy heading and permalink for Solution 3.3.6.3: Violet" aria-label="Copy heading and permalink for Solution 3.3.6.3: Violet">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.7.3: Violet"><a href="#ex-z-score-temperature-5" title="Copy heading and permalink for Solution 3.3.7.3: Violet" aria-label="Copy heading and permalink for Solution 3.3.7.3: Violet">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 3.3.6: Temperatures"><a href="#ex-z-score-temperature" title="Copy heading and permalink for Checkpoint 3.3.6: Temperatures" aria-label="Copy heading and permalink for Checkpoint 3.3.6: Temperatures">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 3.3.7: Temperatures"><a href="#ex-z-score-temperature" title="Copy heading and permalink for Checkpoint 3.3.7: Temperatures" aria-label="Copy heading and permalink for Checkpoint 3.3.7: Temperatures">🔗</a></div>
 </article></details>
 <details id="ex-outlier-pH" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">pH Solution.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">pH Solution.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="ex-outlier-pH-2-1">A chemistry student measures the pH of 10 liquid samples from the same solution. Find the quartiles and determine if there is an outlier in the samples.<div class="autopermalink" data-description="Paragraph"><a href="#ex-outlier-pH-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -936,7 +954,7 @@ z=\frac{X-μ} {\sigma}
 </div>
 <div class="para" id="ex-outlier-pH-3-4">The quartiles are <span class="process-math">\(Q_1=6.8\)</span> and <span class="process-math">\(Q_3=7.1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-outlier-pH-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.7.1: Quartiles"><a href="#ex-outlier-pH-3" title="Copy heading and permalink for Solution 3.3.7.1: Quartiles" aria-label="Copy heading and permalink for Solution 3.3.7.1: Quartiles">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.8.1: Quartiles"><a href="#ex-outlier-pH-3" title="Copy heading and permalink for Solution 3.3.8.1: Quartiles" aria-label="Copy heading and permalink for Solution 3.3.8.1: Quartiles">🔗</a></div>
 </div></details>
 <details id="ex-outlier-pH-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Outlier Check</span></summary>
 <div class="solution solution-like knowl__content">
@@ -948,11 +966,11 @@ z=\frac{X-μ} {\sigma}
 </div>
 <div class="para" id="ex-outlier-pH-4-5">In this data set, 9.4 is an outlier because it is far from the rest of the pH values.<div class="autopermalink" data-description="Paragraph"><a href="#ex-outlier-pH-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.7.2: Outlier Check"><a href="#ex-outlier-pH-4" title="Copy heading and permalink for Solution 3.3.7.2: Outlier Check" aria-label="Copy heading and permalink for Solution 3.3.7.2: Outlier Check">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.8.2: Outlier Check"><a href="#ex-outlier-pH-4" title="Copy heading and permalink for Solution 3.3.8.2: Outlier Check" aria-label="Copy heading and permalink for Solution 3.3.8.2: Outlier Check">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 3.3.7: pH Solution"><a href="#ex-outlier-pH" title="Copy heading and permalink for Checkpoint 3.3.7: pH Solution" aria-label="Copy heading and permalink for Checkpoint 3.3.7: pH Solution">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 3.3.2: Application"><a href="#subsec-PositionApply" title="Copy heading and permalink for Subsection 3.3.2: Application" aria-label="Copy heading and permalink for Subsection 3.3.2: Application">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 3.3.8: pH Solution"><a href="#ex-outlier-pH" title="Copy heading and permalink for Checkpoint 3.3.8: pH Solution" aria-label="Copy heading and permalink for Checkpoint 3.3.8: pH Solution">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 3.3.5: Application"><a href="#subsec-PositionApply" title="Copy heading and permalink for Subsection 3.3.5: Application" aria-label="Copy heading and permalink for Subsection 3.3.5: Application">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 3.3: Measures of Position"><a href="#sec-DesStat-Position" title="Copy heading and permalink for Section 3.3: Measures of Position" aria-label="Copy heading and permalink for Section 3.3: Measures of Position">🔗</a></div>
 </section>
 </div>

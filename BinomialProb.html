@@ -197,15 +197,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DesStat-Position.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Measures of Position</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionBasics" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Application</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PercentileBasics" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-Quartiles" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Finding Quartiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-Outliers" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Checking for Outliers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-Zscores" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Finding Z-Scores</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Position.html#subsec-PositionApply" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Application</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DesStat-Regression.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Linear Regression</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-SimpleLinear" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Simple Linear Regression</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionPractice" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionEarthquakes" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Earthquake Analysis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionPractice" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -252,9 +256,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="BinomialProb.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Binomial Distribution</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialBasics" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Understanding the Basics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialStatistics" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Summary Statistics</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialCalc" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Using Technology</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialPractice" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialEyeColor" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Eye Color Application</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialStatistics" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialCalc" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="BinomialProb.html#subsec-BinomialPractice" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -793,172 +798,190 @@ P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X}
 <div class="para" id="subsec-BinomialBasics-23-1">See how the first part of the binomial formula for the number of ways the event occurs is the same as the combination formula for nCr .  Also note that the sum of the exponents equals <span class="process-math">\(n\)</span> for the total number of trials.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-23-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Note 4.5.9"><a href="#subsec-BinomialBasics-23" title="Copy heading and permalink for Note 4.5.9" aria-label="Copy heading and permalink for Note 4.5.9">🔗</a></div>
-</article>
-<div class="para" id="subsec-BinomialBasics-24">
-<dfn class="terminology">Application</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 4.5.1: Understanding the Basics"><a href="#subsec-BinomialBasics" title="Copy heading and permalink for Subsection 4.5.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 4.5.1: Understanding the Basics">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-BinomialEyeColor">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eye Color Application</span>
+</h3>
+<div class="para" id="subsec-BinomialEyeColor-2">During the first week of class, we investigated the eye colors of students. About 2% of the world population has green eyes and about 9% of the US population has green eyes. Consider a group of 20 people who were randomly selected from the US.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BinomialBasics-25">During the first week of class, we investigated the eye colors of students. About 2% of the world population has green eyes and about 9% of the US population has green eyes. Consider a group of 20 people who were randomly selected from the US.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-3">Let x = number of people with green eyes<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BinomialBasics-26">Let x = number of people with green eyes<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="subsec-BinomialBasics-27" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Binomial experiment.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-27-2-1">Check if this is a binomial experiment.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-27-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-4-2-1">Check if this is a binomial experiment.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-27-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-27-3-1">1. There are 20 people, and each person is a trial, so there are a fixed number of trials. In this case, n = 20.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-27-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-4-3-1">1. There are 20 people, and each person is a trial, so there are a fixed number of trials. In this case, n = 20.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BinomialBasics-27-3-2">2. If you assume that each person in the group is chosen at random the eye color of one person doesn’t affect the eye color of the next person, thus the trials are independent.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-27-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-4-3-2">2. If you assume that each person in the group is chosen at random the eye color of one person doesn’t affect the eye color of the next person, thus the trials are independent.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BinomialBasics-27-3-3">3. Either a person has green eyes or they do not have green eyes, so there are only two outcomes. In this case, success is a person who has green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-27-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-4-3-3">3. Either a person has green eyes or they do not have green eyes, so there are only two outcomes. In this case, success is a person who has green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-BinomialBasics-27-3-4">4. The probability of a person having green eyes is 0.09 in the US. This is the same for every trial since each person has the same chance of having green eyes. <span class="process-math">\(p = 0.09\)</span> and <span class="process-math">\(q = 1− 0.09 = 0.91\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-27-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-4-3-4">4. The probability of a person having green eyes is 0.09 in the US. This is the same for every trial since each person has the same chance of having green eyes. <span class="process-math">\(p = 0.09\)</span> and <span class="process-math">\(q = 1− 0.09 = 0.91\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-4-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.10.1"><a href="#subsec-BinomialBasics-27-3" title="Copy heading and permalink for Solution 4.5.10.1" aria-label="Copy heading and permalink for Solution 4.5.10.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.10.1"><a href="#subsec-BinomialEyeColor-4-3" title="Copy heading and permalink for Solution 4.5.10.1" aria-label="Copy heading and permalink for Solution 4.5.10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.10: Binomial experiment"><a href="#subsec-BinomialBasics-27" title="Copy heading and permalink for Example 4.5.10: Binomial experiment" aria-label="Copy heading and permalink for Example 4.5.10: Binomial experiment">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.10: Binomial experiment"><a href="#subsec-BinomialEyeColor-4" title="Copy heading and permalink for Example 4.5.10: Binomial experiment" aria-label="Copy heading and permalink for Example 4.5.10: Binomial experiment">🔗</a></div>
 </article></details>
-<details id="subsec-BinomialBasics-28" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">None green.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-28-2-1">Find the probability that none in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-28-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-5-2-1">Find the probability that none in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-28-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-28-3-1">To find the number of ways 0 people have green eyes in a group of 20 people is <span class="process-math">\(_{20} C_0 = 1\text{.}\)</span> Thus <span class="process-math">\(P(x=0) = 1(.09)^0 (.91)^{20} = 0.1516 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-28-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-5-3-1">To find the number of ways 0 people have green eyes in a group of 20 people is <span class="process-math">\(_{20} C_0 = 1\text{.}\)</span> Thus <span class="process-math">\(P(x=0) = 1(.09)^0 (.91)^{20} = 0.1516 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.11.1"><a href="#subsec-BinomialBasics-28-3" title="Copy heading and permalink for Solution 4.5.11.1" aria-label="Copy heading and permalink for Solution 4.5.11.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.11.1"><a href="#subsec-BinomialEyeColor-5-3" title="Copy heading and permalink for Solution 4.5.11.1" aria-label="Copy heading and permalink for Solution 4.5.11.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.11: None green"><a href="#subsec-BinomialBasics-28" title="Copy heading and permalink for Example 4.5.11: None green" aria-label="Copy heading and permalink for Example 4.5.11: None green">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.11: None green"><a href="#subsec-BinomialEyeColor-5" title="Copy heading and permalink for Example 4.5.11: None green" aria-label="Copy heading and permalink for Example 4.5.11: None green">🔗</a></div>
 </article></details>
-<details id="subsec-BinomialBasics-29" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">One green.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-29-2-1">Find the probability that exactly one person in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-29-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-6-2-1">Find the probability that exactly one person in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-29-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-29-3-1">To find the number of ways 1 person has green eyes in a group of 20 people is <span class="process-math">\(_{20} C_1 = 20\)</span> ways. Thus <span class="process-math">\(P(x=1) = 20(.09)^1 (.91)^{19} = 0.3000 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-29-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-6-3-1">To find the number of ways 1 person has green eyes in a group of 20 people is <span class="process-math">\(_{20} C_1 = 20\)</span> ways. Thus <span class="process-math">\(P(x=1) = 20(.09)^1 (.91)^{19} = 0.3000 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.12.1"><a href="#subsec-BinomialBasics-29-3" title="Copy heading and permalink for Solution 4.5.12.1" aria-label="Copy heading and permalink for Solution 4.5.12.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.12.1"><a href="#subsec-BinomialEyeColor-6-3" title="Copy heading and permalink for Solution 4.5.12.1" aria-label="Copy heading and permalink for Solution 4.5.12.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.12: One green"><a href="#subsec-BinomialBasics-29" title="Copy heading and permalink for Example 4.5.12: One green" aria-label="Copy heading and permalink for Example 4.5.12: One green">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.12: One green"><a href="#subsec-BinomialEyeColor-6" title="Copy heading and permalink for Example 4.5.12: One green" aria-label="Copy heading and permalink for Example 4.5.12: One green">🔗</a></div>
 </article></details>
-<details id="subsec-BinomialBasics-30" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two green.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-30-2-1">Find the probability that exactly two people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-30-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-7-2-1">Find the probability that exactly two people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-30-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-30-3-1">To find the number of ways 2 people have green eyes in a group of 20 people is <span class="process-math">\(_{20} C_2 = 190\)</span> ways. Thus <span class="process-math">\(P(x=2) = 190(.09)^2 (.91)^{18} = 0.2818 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-30-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-7-3-1">To find the number of ways 2 people have green eyes in a group of 20 people is <span class="process-math">\(_{20} C_2 = 190\)</span> ways. Thus <span class="process-math">\(P(x=2) = 190(.09)^2 (.91)^{18} = 0.2818 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.13.1"><a href="#subsec-BinomialBasics-30-3" title="Copy heading and permalink for Solution 4.5.13.1" aria-label="Copy heading and permalink for Solution 4.5.13.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.13.1"><a href="#subsec-BinomialEyeColor-7-3" title="Copy heading and permalink for Solution 4.5.13.1" aria-label="Copy heading and permalink for Solution 4.5.13.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.13: Two green"><a href="#subsec-BinomialBasics-30" title="Copy heading and permalink for Example 4.5.13: Two green" aria-label="Copy heading and permalink for Example 4.5.13: Two green">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.13: Two green"><a href="#subsec-BinomialEyeColor-7" title="Copy heading and permalink for Example 4.5.13: Two green" aria-label="Copy heading and permalink for Example 4.5.13: Two green">🔗</a></div>
 </article></details>
-<details id="subsec-BinomialBasics-31" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Three green.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-31-2-1">Find the probability that exactly three people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-31-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-8-2-1">Find the probability that exactly three people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-31-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-31-3-1">To find the number of ways 3 people have green eyes in a group of 20 people is <span class="process-math">\(_{20} C_3 = 1140\)</span> ways. Thus <span class="process-math">\(P(x=3) = 1140(.09)^3 (.91)^{17} = 0.1672 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-31-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-8-3-1">To find the number of ways 3 people have green eyes in a group of 20 people is <span class="process-math">\(_{20} C_3 = 1140\)</span> ways. Thus <span class="process-math">\(P(x=3) = 1140(.09)^3 (.91)^{17} = 0.1672 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.14.1"><a href="#subsec-BinomialBasics-31-3" title="Copy heading and permalink for Solution 4.5.14.1" aria-label="Copy heading and permalink for Solution 4.5.14.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.14.1"><a href="#subsec-BinomialEyeColor-8-3" title="Copy heading and permalink for Solution 4.5.14.1" aria-label="Copy heading and permalink for Solution 4.5.14.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.14: Three green"><a href="#subsec-BinomialBasics-31" title="Copy heading and permalink for Example 4.5.14: Three green" aria-label="Copy heading and permalink for Example 4.5.14: Three green">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.14: Three green"><a href="#subsec-BinomialEyeColor-8" title="Copy heading and permalink for Example 4.5.14: Three green" aria-label="Copy heading and permalink for Example 4.5.14: Three green">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-BinomialBasics-32">We can also find the probability of multiple events by finding the binomial probability of each event and adding them together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-9">We can also find the probability of multiple events by finding the binomial probability of each event and adding them together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-BinomialBasics-33" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">One or Two.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-33-2-1">Find the probability that exactly one or two people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-33-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-10-2-1">Find the probability that exactly one or two people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-33-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-10-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-33-3-1">Previously we found <span class="process-math">\(P(x=1)= 0.3000 \)</span> and <span class="process-math">\(P(x=2)= 0.2818\text{,}\)</span>  therefore P(1 or 2)<span class="process-math">\(=0.3000+0.2818 =0.5818\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-33-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-10-3-1">Previously we found <span class="process-math">\(P(x=1)= 0.3000 \)</span> and <span class="process-math">\(P(x=2)= 0.2818\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.15.1"><a href="#subsec-BinomialBasics-33-3" title="Copy heading and permalink for Solution 4.5.15.1" aria-label="Copy heading and permalink for Solution 4.5.15.1">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-10-3-2">Therefore P(1 or 2)<span class="process-math">\(=0.3000+0.2818 =0.5818\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-10-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.5.15.1"><a href="#subsec-BinomialEyeColor-10-3" title="Copy heading and permalink for Solution 4.5.15.1" aria-label="Copy heading and permalink for Solution 4.5.15.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.15: One or Two"><a href="#subsec-BinomialBasics-33" title="Copy heading and permalink for Example 4.5.15: One or Two" aria-label="Copy heading and permalink for Example 4.5.15: One or Two">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.15: One or Two"><a href="#subsec-BinomialEyeColor-10" title="Copy heading and permalink for Example 4.5.15: One or Two" aria-label="Copy heading and permalink for Example 4.5.15: One or Two">🔗</a></div>
 </article></details>
-<details id="subsec-BinomialBasics-34" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Less than three.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-34-2-1">Find the probability that less than 3 people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-34-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-11-2-1">Find the probability that less than 3 people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-34-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-11-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-34-3-1">Since we want less than three we write it as <span class="process-math">\(P(x \lt 3) = P(0)+P(1)+P(2)\text{.}\)</span> We do not count when <span class="process-math">\(x=3\text{.}\)</span> Previously we found <span class="process-math">\(P(x=0)= 0.1516 \)</span> and <span class="process-math">\(P(x=1)= 0.3000\)</span>  and<span class="process-math">\(P(x=2)= 0.2818\text{,}\)</span>  therefore P(0 or 1 or 2) <span class="process-math">\(= 0.1516 +0.3000+0.2818 =0.7334 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-34-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-11-3-1">Since we want less than three we write it as <span class="process-math">\(P(x \lt 3) = P(0)+P(1)+P(2)\text{.}\)</span> We do not count when <span class="process-math">\(x=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-11-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.16.1"><a href="#subsec-BinomialBasics-34-3" title="Copy heading and permalink for Solution 4.5.16.1" aria-label="Copy heading and permalink for Solution 4.5.16.1">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-11-3-2">Previously we found <span class="process-math">\(P(x=0)= 0.1516 \)</span> and <span class="process-math">\(P(x=1)= 0.3000\)</span>  and<span class="process-math">\(P(x=2)= 0.2818\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-11-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BinomialEyeColor-11-3-3">Therefore P(0 or 1 or 2) <span class="process-math">\(= 0.1516 +0.3000+0.2818 =0.7334 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-11-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.5.16.1"><a href="#subsec-BinomialEyeColor-11-3" title="Copy heading and permalink for Solution 4.5.16.1" aria-label="Copy heading and permalink for Solution 4.5.16.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.16: Less than three"><a href="#subsec-BinomialBasics-34" title="Copy heading and permalink for Example 4.5.16: Less than three" aria-label="Copy heading and permalink for Example 4.5.16: Less than three">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.16: Less than three"><a href="#subsec-BinomialEyeColor-11" title="Copy heading and permalink for Example 4.5.16: Less than three" aria-label="Copy heading and permalink for Example 4.5.16: Less than three">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-BinomialBasics-35">Sometimes using the complement helps us find the total probability.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-12">Sometimes using the complement helps us find the total probability.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-BinomialBasics-36" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">More than two.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-36-2-1">Find the probability that more than 2 people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-36-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-13-2-1">Find the probability that more than 2 people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-36-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-13-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-36-3-1">Since we want more than 2 we can write it as <span class="process-math">\(P(x \gt 2) = P(3)+P(4)+…+(19)+P(20)\text{.}\)</span> We would need to find the probability of each event. Way too much work. So instead, use the complement which becomes <span class="process-math">\(P(x \gt 2) = 1- (P(0)+P(1)+P(2))\text{.}\)</span> Previously we found <span class="process-math">\(P(x \lt 2)= 0.1516 +0.3000+0.2818 =0.7334\text{,}\)</span> therefore <span class="process-math">\(1-0.7334 = 0.2666\text{.}\)</span> Which is much easier.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-36-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-13-3-1">Since we want more than 2 we can write it as <span class="process-math">\(P(x \gt 2) = P(3)+P(4)+…+(19)+P(20)\text{.}\)</span> We would need to find the probability of each event. Way too much work!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-13-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.17.1"><a href="#subsec-BinomialBasics-36-3" title="Copy heading and permalink for Solution 4.5.17.1" aria-label="Copy heading and permalink for Solution 4.5.17.1">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-13-3-2">So instead, use the complement which becomes <span class="process-math">\(P(x \gt 2) = 1- (P(0)+P(1)+P(2))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-13-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BinomialEyeColor-13-3-3">Previously we found <span class="process-math">\(P(x \lt 2)= 0.1516 +0.3000+0.2818 =0.7334\text{,}\)</span> therefore <span class="process-math">\(1-0.7334 = 0.2666\text{.}\)</span> Which is much easier.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-13-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.5.17.1"><a href="#subsec-BinomialEyeColor-13-3" title="Copy heading and permalink for Solution 4.5.17.1" aria-label="Copy heading and permalink for Solution 4.5.17.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.17: More than two"><a href="#subsec-BinomialBasics-36" title="Copy heading and permalink for Example 4.5.17: More than two" aria-label="Copy heading and permalink for Example 4.5.17: More than two">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.17: More than two"><a href="#subsec-BinomialEyeColor-13" title="Copy heading and permalink for Example 4.5.17: More than two" aria-label="Copy heading and permalink for Example 4.5.17: More than two">🔗</a></div>
 </article></details>
-<details id="subsec-BinomialBasics-37" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<details id="subsec-BinomialEyeColor-14" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">At most 18.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-37-2-1">Find the probability that at most18 people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-37-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-14-2-1">Find the probability that at most18 people in the group will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-BinomialBasics-37-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-BinomialEyeColor-14-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-BinomialBasics-37-3-1">Since we want at most 18 we can write it as <span class="process-math">\(P(x \le 18) = P(0)+P(1)+…+(16)+P(17)+P(18)\text{.}\)</span> At most includes P(18). Using the complement, the expression becomes <span class="process-math">\(1-(P(19)+P(20))\text{.}\)</span> <span class="process-math">\(P(19)= 20(.09)^{19} (.90)^1 = 2.46 \times 10^{-19}\)</span> and <span class="process-math">\(P(20)= 1(.09)^{20} (.90)^0 = 1.22 \times 10^{-21} \text{,}\)</span> note these are in scientific notation and basically 0. Therefore<span class="process-math">\(P(x \le18)=  1-0.0000 = 1\text{.}\)</span> Therefore it’s very likely that at most 18 will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialBasics-37-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-14-3-1">Since we want at most 18 we can write it as <span class="process-math">\(P(x \le 18) = P(0)+P(1)+…+(16)+P(17)+P(18)\text{.}\)</span> At most includes P(18).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-14-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.18.1"><a href="#subsec-BinomialBasics-37-3" title="Copy heading and permalink for Solution 4.5.18.1" aria-label="Copy heading and permalink for Solution 4.5.18.1">🔗</a></div>
+<div class="para" id="subsec-BinomialEyeColor-14-3-2">Using the complement, the expression becomes <span class="process-math">\(1-(P(19)+P(20))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-14-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BinomialEyeColor-14-3-3">Solve <span class="process-math">\(P(19)= 20(.09)^{19} (.90)^1 = 2.46 \times 10^{-19}\)</span> and <span class="process-math">\(P(20)= 1(.09)^{20} (.90)^0 = 1.22 \times 10^{-21} \text{,}\)</span> note these are in scientific notation and basically 0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-14-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BinomialEyeColor-14-3-4">Therefore<span class="process-math">\(P(x \le18)=  1-0.0000 = 1\text{.}\)</span> Therefore it’s very likely that at most 18 will have green eyes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialEyeColor-14-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.5.18.1"><a href="#subsec-BinomialEyeColor-14-3" title="Copy heading and permalink for Solution 4.5.18.1" aria-label="Copy heading and permalink for Solution 4.5.18.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.18: At most 18"><a href="#subsec-BinomialBasics-37" title="Copy heading and permalink for Example 4.5.18: At most 18" aria-label="Copy heading and permalink for Example 4.5.18: At most 18">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 4.5.1: Understanding the Basics"><a href="#subsec-BinomialBasics" title="Copy heading and permalink for Subsection 4.5.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 4.5.1: Understanding the Basics">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.18: At most 18"><a href="#subsec-BinomialEyeColor-14" title="Copy heading and permalink for Example 4.5.18: At most 18" aria-label="Copy heading and permalink for Example 4.5.18: At most 18">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 4.5.2: Eye Color Application"><a href="#subsec-BinomialEyeColor" title="Copy heading and permalink for Subsection 4.5.2: Eye Color Application" aria-label="Copy heading and permalink for Subsection 4.5.2: Eye Color Application">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-BinomialStatistics">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary Statistics</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary Statistics</span>
 </h3>
 <div class="para" id="subsec-BinomialStatistics-2">As with probability distributions, we want to be able to compute the summary statistics for the binomial distribution. Here is the summary of the formulas where <span class="process-math">\(n\)</span> represents the number of trials or sample size, <span class="process-math">\(p\)</span> is the probability of the event success while <span class="process-math">\(q\)</span> is the complement which is the probability of failure.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialStatistics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1027,11 +1050,11 @@ P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X}
 </div></details>
 </div>
 <div class="autopermalink" data-description="Example 4.5.20: autism"><a href="#subsec-BinomialStatistics-14" title="Copy heading and permalink for Example 4.5.20: autism" aria-label="Copy heading and permalink for Example 4.5.20: autism">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 4.5.2: Summary Statistics"><a href="#subsec-BinomialStatistics" title="Copy heading and permalink for Subsection 4.5.2: Summary Statistics" aria-label="Copy heading and permalink for Subsection 4.5.2: Summary Statistics">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 4.5.3: Summary Statistics"><a href="#subsec-BinomialStatistics" title="Copy heading and permalink for Subsection 4.5.3: Summary Statistics" aria-label="Copy heading and permalink for Subsection 4.5.3: Summary Statistics">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-BinomialCalc">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
 </h3>
 <div class="para" id="subsec-BinomialCalc-2">
 <dfn class="terminology">Factorial Button</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialCalc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1086,14 +1109,12 @@ P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X}
 </div>
 <figure class="figure figure-like" id="BinomialFormula5"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/Binomial5.png" class="contained" alt="three out of twenty."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Binomial for three green eyes<div class="autopermalink" data-description="Figure 4.5.24"><a href="#BinomialFormula5" title="Copy heading and permalink for Figure 4.5.24" aria-label="Copy heading and permalink for Figure 4.5.24">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Subsection 4.5.3: Using Technology"><a href="#subsec-BinomialCalc" title="Copy heading and permalink for Subsection 4.5.3: Using Technology" aria-label="Copy heading and permalink for Subsection 4.5.3: Using Technology">🔗</a></div>
+</figure><div class="autopermalink" data-description="Subsection 4.5.4: Using Technology"><a href="#subsec-BinomialCalc" title="Copy heading and permalink for Subsection 4.5.4: Using Technology" aria-label="Copy heading and permalink for Subsection 4.5.4: Using Technology">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-BinomialPractice">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
 </h3>
-<div class="para" id="subsec-BinomialPractice-2">the<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BinomialPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
 <details id="ex-binomial-nursing" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Nursing.</span>
 </h4></summary>
@@ -1311,7 +1332,7 @@ P(X)=\frac{n!}{(n-X)!\cdot X!}\cdot\ p^X\cdot\ q^{n-X}
 </div></details>
 </div>
 <div class="autopermalink" data-description="Checkpoint 4.5.28: Rainfall"><a href="#ex-binomial-rainfall" title="Copy heading and permalink for Checkpoint 4.5.28: Rainfall" aria-label="Copy heading and permalink for Checkpoint 4.5.28: Rainfall">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 4.5.4: Practice Problems"><a href="#subsec-BinomialPractice" title="Copy heading and permalink for Subsection 4.5.4: Practice Problems" aria-label="Copy heading and permalink for Subsection 4.5.4: Practice Problems">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 4.5.5: Practice Problems"><a href="#subsec-BinomialPractice" title="Copy heading and permalink for Subsection 4.5.5: Practice Problems" aria-label="Copy heading and permalink for Subsection 4.5.5: Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 4.5: Binomial Distribution"><a href="#BinomialProb" title="Copy heading and permalink for Section 4.5: Binomial Distribution" aria-label="Copy heading and permalink for Section 4.5: Binomial Distribution">🔗</a></div>
 </section>
 </div>
