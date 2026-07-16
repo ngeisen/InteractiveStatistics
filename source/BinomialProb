@@ -121,7 +121,11 @@ Generalizing the pattern, we can determine the probability of each event with th
 
  <note> <p> See how the first part of the binomial formula for the number of ways the event occurs is the same as the combination formula for nCr .  Also note that the sum of the exponents equals <m> n</m> for the total number of trials. </p> </note> 
    
- <p> <term> Application </term> </p> 
+  </subsection>
+
+<subsection xml:id="subsec-BinomialEyeColor">
+  <title> Eye Color Application </title>
+
 <p>During the first week of class, we investigated the eye colors of students. About 2% of the world population has green eyes and about 9% of the US population has green eyes. Consider a group of 20 people who were randomly selected from the US. </p>
 <p>Let x = number of people with green eyes</p> 
 <example> 
@@ -178,7 +182,8 @@ Generalizing the pattern, we can determine the probability of each event with th
 <statement> <p>  Find the probability that exactly one or two people in the group will have green eyes. </p>
 </statement>  
 <solution> 
-<p> Previously we found <m>P(x=1)= 0.3000 </m> and <m>P(x=2)= 0.2818</m>,  therefore P(1 or 2)<m>=0.3000+0.2818 =0.5818</m> </p>
+<p> Previously we found <m>P(x=1)= 0.3000 </m> and <m>P(x=2)= 0.2818</m>. </p>
+<p> Therefore P(1 or 2)<m>=0.3000+0.2818 =0.5818</m> </p>
 </solution>
 </example> 
 
@@ -187,7 +192,9 @@ Generalizing the pattern, we can determine the probability of each event with th
 <statement> <p>  Find the probability that less than 3 people in the group will have green eyes. </p>
 </statement>  
 <solution> 
-<p> Since we want less than three we write it as <m>P(x \lt 3) = P(0)+P(1)+P(2)</m>. We do not count when <m>x=3</m>. Previously we found <m>P(x=0)= 0.1516 </m> and <m>P(x=1)= 0.3000</m>  and<m> P(x=2)= 0.2818</m>,  therefore P(0 or 1 or 2) <m>= 0.1516 +0.3000+0.2818 =0.7334 </m></p>
+<p> Since we want less than three we write it as <m>P(x \lt 3) = P(0)+P(1)+P(2)</m>. We do not count when <m>x=3</m>. </p>
+ <p> Previously we found <m>P(x=0)= 0.1516 </m> and <m>P(x=1)= 0.3000</m>  and<m> P(x=2)= 0.2818</m>. </p>
+ <p> Therefore P(0 or 1 or 2) <m>= 0.1516 +0.3000+0.2818 =0.7334 </m></p>
 </solution>
 </example> 
 
@@ -197,7 +204,9 @@ Generalizing the pattern, we can determine the probability of each event with th
 <statement> <p>  Find the probability that more than 2 people in the group will have green eyes. </p>
 </statement>  
 <solution> 
-<p> Since we want more than 2 we can write it as <m>P(x \gt 2) = P(3)+P(4)+…+(19)+P(20)</m>. We would need to find the probability of each event. Way too much work. So instead, use the complement which becomes <m>P(x \gt 2) = 1- (P(0)+P(1)+P(2))</m>. Previously we found <m>P(x \lt 2)= 0.1516 +0.3000+0.2818 =0.7334</m>, therefore <m>1-0.7334 = 0.2666</m>. Which is much easier. </p>
+<p> Since we want more than 2 we can write it as <m>P(x \gt 2) = P(3)+P(4)+…+(19)+P(20)</m>. We would need to find the probability of each event. Way too much work! </p>
+<p> So instead, use the complement which becomes <m>P(x \gt 2) = 1- (P(0)+P(1)+P(2))</m>. </p>
+<p> Previously we found <m>P(x \lt 2)= 0.1516 +0.3000+0.2818 =0.7334</m>, therefore <m>1-0.7334 = 0.2666</m>. Which is much easier. </p>
 </solution>
 </example> 
 
@@ -206,7 +215,10 @@ Generalizing the pattern, we can determine the probability of each event with th
 <statement> <p>  Find the probability that at most18 people in the group will have green eyes. </p>
 </statement>  
 <solution> 
-<p> Since we want at most 18 we can write it as <m>P(x \le 18) = P(0)+P(1)+…+(16)+P(17)+P(18)</m>. At most includes P(18). Using the complement, the expression becomes <m> 1-(P(19)+P(20))</m>. <m>P(19)= 20(.09)^{19} (.90)^1 = 2.46 \times 10^{-19}</m> and <m>P(20)= 1(.09)^{20} (.90)^0 = 1.22 \times 10^{-21} </m>, note these are in scientific notation and basically 0. Therefore<m> P(x \le18)=  1-0.0000 = 1</m>. Therefore it’s very likely that at most 18 will have green eyes. </p>
+<p> Since we want at most 18 we can write it as <m>P(x \le 18) = P(0)+P(1)+…+(16)+P(17)+P(18)</m>. At most includes P(18). </p>
+<p>Using the complement, the expression becomes <m> 1-(P(19)+P(20))</m>. </p>
+<p> Solve <m>P(19)= 20(.09)^{19} (.90)^1 = 2.46 \times 10^{-19}</m> and <m>P(20)= 1(.09)^{20} (.90)^0 = 1.22 \times 10^{-21} </m>, note these are in scientific notation and basically 0. </p>
+<p> Therefore<m> P(x \le18)=  1-0.0000 = 1</m>. Therefore it's very likely that at most 18 will have green eyes. </p>
 </solution>
 </example> 
 
@@ -311,7 +323,7 @@ So we will use the <c>2nd </c> button  <c>VARS</c> to select [DISTR] and then se
 
 <subsection xml:id="subsec-BinomialPractice">
   <title>Practice Problems</title>
-<p>the  </p>
+
   <exercise xml:id="ex-binomial-nursing">
 <title>Nursing</title> 
   <statement>

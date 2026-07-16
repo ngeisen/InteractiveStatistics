@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <section xml:id="sec-DesStat-Spread" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Spread</title>
 
@@ -95,9 +96,9 @@
 <subsection xml:id="subsec-SpreadUses">
   <title> Using the Standard Deviation </title>
 <p> One of the uses of the standard deviation is to describe how a population is distributed by using the Empirical Rule. This rule describes how much data is within a certain distance on either side of the mean. </p>
-<p> Approximately 68% of the data fall with one standard deviation of the mean, giving the interval from μ − σ to μ + σ  for the middle 68% of the values in a distribution. </p>
-<p> Approximately 95% of the data fall with two standard deviations of the mean, giving the interval from μ − 2σ to μ + 2σ . This gives the middle 95% of the values in the distribution. This is often called the 95% Rule. </p>
-<p> Approximately 99% of the data fall with three standard deviations of the mean, giving the interval from μ − 3σ to μ + 3σ . </p>
+<p> Approximately 68% of the data fall with one standard deviation of the mean, giving the interval from <m> \mu- \sigma</m>  to <m> \mu + \sigma</m>  for the middle 68% of the values in a distribution. </p>
+<p> Approximately 95% of the data fall with two standard deviations of the mean, giving the interval from <m> \mu - 2\sigma</m> to <m> \mu + 2\sigma</m> . This gives the middle 95% of the values in the distribution. This is often called the 95% Rule. </p>
+<p> Approximately 99% of the data fall with three standard deviations of the mean, giving the interval from <m> \mu - 3\sigma</m> to <m> \mu + 3\sigma</m> . </p>
 <p> <term> Example: </term> Find the interval for middle 68% of time that the stain will last for Brand A. </p> 
 <p> <em> Solution: </em> The 68% rules says the values are within 1 standard deviation of the mean, Since the mean is 35 months and the standard deviation is 7.9, the interval is 35 - 7.9 to 35 + 7.9 giving 27.1 to 42.9 months for the typical time the stain will last. </p>
 <p> <term> Example: </term> Use the 95% rule for the time interval that Brand B will last. </p>
@@ -108,7 +109,7 @@
 
 
 <p> <term> Summary of formulas and notations </term> </p>
-<p> range = maximum - minimum </p>
+<p> Range = maximum - minimum </p>
 <p> The sample standard deviation is designated by <m> s </m> and the sample variance is <m> s^2 </m>. The formula for the sample standard deviation is </p>
 <p> <md> s = \sqrt { \frac{\sum{(x-\bar x)^2}} {n-1} } </md> </p> 
 <p> The formula says we took each value <m> x </m>  and subtract the sample mean <m> \bar x </m>, we square the difference, then add them all together, and then divided by one less than the sample size to get the variance. Then we take the square root to get the standard deviation.  Aren't you glad we can do this with technology! </p>
@@ -191,7 +192,7 @@
             </image>
   <p> Type in the length values in L1 and hit [enter] after each entry. </p>
   <p> Select the [STAT] button and use an arrow to the right once to highlight CALC across the top. Then select option 1 for <term>1-Var Stats </term> and then hit [enter]. Next you need to identify where the data is located, so select L1 by hitting the [2nd] button then [1] and press [enter] button. This will give the summary statistics. The mean is <m> \bar{x}=13.78 </m> and the sample standard deviation is <m>Sx=1.49</m>, to find the variance we square the value thus <m> 1.49^2 = 2.22 </m>. </p>
-  <image source="Leaf2.png" width="80%">
+  <image source="Leaf1.png" width="80%">
                 <shortdescription> enter data in L1 and find summary statistics</shortdescription>
             </image>
   </solution>
@@ -212,7 +213,7 @@
     </p>
   </statement>
 <solution><title> range</title>
-<p> Range is 19-14=5 kg. </p>
+<p> Range is <m>19-14=5</m> kg. </p>
 </solution>
 <solution> <title> standard deviation </title> 
     <p> The sample standard deviation of the monkey weights is 1.75 kg. This measures how spread out the values are from the mean of 16.2 kg.
@@ -238,7 +239,7 @@
     </p>
   </statement>
   <solution><title> range</title>
-<p> Range is 101-97=4 mg. </p>
+<p> Range is <m>101-97=4</m> mg. </p>
 </solution>
 <solution> <title> standard deviation </title> 
     <p>
@@ -262,7 +263,7 @@
     </p>
   </statement>
     <solution><title> range</title>
-    <p> Range is 20.2-19.7=0.5 ounces. </p>
+    <p> Range is <m>20.2-19.7=0.5</m>  ounces. </p>
     </solution>
     <solution> <title> standard deviation </title> 
     <p>

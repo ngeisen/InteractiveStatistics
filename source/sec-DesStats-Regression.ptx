@@ -81,14 +81,14 @@
 
 </subsection>
 
-<subsection xml:id="subsec-RegressionPractice">
-  <title>Practice Problems</title>
+<subsection xml:id="subsec-RegressionEarthquakes">
+  <title>Earthquake Analysis</title>
 
 <p> Now complete the correlation and regression analysis for different scenario. </p>
 <p> Seismologists use tools like seismograms to record and analyze earthquake data, including their location, magnitude, depth, and other factors.  Seismologists indicate the size of an earthquake in units of magnitude. Some methods are based on body waves (which travel deep within the structure of the earth) and surface waves. Earthquake magnitude is a logarithmic scale meaning the shaking will be 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. </p> 
-<p>Suppose a seismologist wanted to know if there was a correlation between the magnitude of an earthquake and its depth at the epicenter (where the earthquake originates, measured in kilometers below the earth’s surface).  The data file includes a list of earthquakes that were felt during a one-week period between April 19 and April 25, 2025 around the world, as recorded by the Southern California Earthquake Data Center. Generally, earthquakes with a magnitude of 2.5 can be felt. Use the variables <em> Magnitude</em> and <em>Depth</em> for these earthquakes. </p> 
+<p>Suppose a seismologist wanted to know if there was a correlation between the magnitude of an earthquake and its depth at the epicenter (where the earthquake originates, measured in kilometers below the earth's surface).  The data file includes a list of earthquakes that were felt during a one-week period between April 19 and April 25, 2025 around the world, as recorded by the Southern California Earthquake Data Center. Generally, earthquakes with a magnitude of 2.5 can be felt. Save the data file where you can easily access it and upload it into StatKey or other software program.Use the variables <em> Magnitude</em> and <em>Depth</em> for these earthquakes. </p> 
 
-<p> insert the data file </p> 
+<p>  <url href="external/EarthquakesApril.csv"> Earthquakes April 2025</url> </p> 
 
 <figure xml:id="EarthquakeRegression">
   <caption>Image of regression line for magnitude and depth of earthquakes </caption>
@@ -97,43 +97,143 @@
   </image>
 </figure>
 
-<example>
+<exercise>
   <title> Correlation </title> 
   <statement> <p> State the correlation coefficient. </p> </statement>
-  <solution> <p> Correlation r = 0.473 is a moderate positive relationship (note: this is statistically significant which we will investigate later in the semester).</p> </solution>
-  </example>
-  <example>
+  <solution> <p> Correlation r = 0.473 is a moderate positive relationship (note: this is statistically significant which we will investigate later in the semester).</p> 
+  </solution>
+  </exercise>
+  <exercise>
   <title> Nature of the relationship </title> 
   <statement> <p> Describe the nature of the relationship. </p> </statement>
-  <solution> <p> As the magnitude of an earthquake increases, its depth below the surface also increases </p> </solution>
-  </example>
-  <example>
+  <solution> <p> As the magnitude of an earthquake increases, its depth below the surface also increases. </p> 
+  </solution>
+  </exercise>
+  <exercise>
     <title> Slope </title> 
     <statement> <p> Identify the slope when x = magnitude and y = depth. </p> </statement>
-    <solution> <p> Slope = 14.78 is positive.</p> </solution>
-    </example>
-    <example>
+    <solution> <p> Slope = 14.78 is positive. The slope indicates the depth below the surface increases by 14.78 km for each 1 increase in magnitude. </p> 
+    </solution>
+    </exercise>
+    <exercise>
     <title> Y-intercept </title> 
     <statement> <p> Identify the y-intercept when x = magnitude and y = depth. </p> </statement>
-    <solution> <p> The y-intercept = -23.334 km below surface.</p> </solution>
-    </example>
-    <example>
+    <solution> <p> The y-intercept = -23.334 km below surface.</p> 
+    </solution>
+    </exercise>
+    <exercise>
       <title> Regression Equation </title> 
       <statement> <p> Identify the regression equation where x = magnitude and y = depth. </p> </statement>
-      <solution> <p> Depth = 14.78(magnitude)-23.334 or <m> \hat y = 14.78x-23.334 </m>.</p> </solution>
-      </example>
-      <example>
+      <solution> <p> Depth = 14.78(magnitude) - 23.334 or <m> \hat y = 14.78x-23.334 </m>.</p> 
+      </solution>
+      </exercise>
+      <exercise>
       <title> Prediction </title> 
       <statement> <p> Predict the depth of the epicenter for an earthquake with a magnitude of 6.0. </p> </statement>
-      <solution> <p> <m> \hat y = 14.78(6)-23.334=65.34 </m> km below surface.</p> </solution>
-      </example>
-      <example>
+      <solution> <p> <m> \hat y = 14.78(6)-23.334=65.34 </m> km below surface.</p> 
+      </solution>
+      </exercise>
+      <exercise>
         <title> Residual </title> 
         <statement> <p> Find the residual for a 4.8 earthquake with a depth of 62.7 km from El Salvador. </p> </statement>
-        <solution> <p> Predict <m> \hat y = 14.78(4.8)-23.334=47.61 </m> km below surface. Residual <m>y-\hat y = 62.7-47.61 = 15.09 </m> km deeper than predicted .</p> </solution>
-        </example>
+        <solution> 
+          <p> Predict <m> \hat y = 14.78(4.8)-23.334=47.61 </m> km below surface. </p>
+          <p> Residual <m>y-\hat y = 62.7-47.61 = 15.09 </m> km deeper than predicted .</p> </solution>
+        </exercise>
                
  </subsection>
+
+ <subsection xml:id="subsec-RegressionPractice">
+  <title>Practice Problems</title>
+<p> Now complete the correlation and regression analysis for the following scenario. </p>
+<p><term> Knee Surgery Mobility</term></p> 
+    <p>
+      A medical researcher wants to study the relationship between a patient's
+      age and the number of days after knee surgery until the patient becomes
+      independently mobile. Use the following data file for the variables <em>Age</em> and <em>DaysMobility</em>.
+    </p> 
+    <p>  <url href="external/KneeSurgery.csv"> Knee Surgery Mobility</url> </p>
+    <p>
+      The data below were collected from <m>18</m> patients recovering from knee
+      surgery.
+    </p>
+    <table>
+      <title>Age and Days Until Mobility After Knee Surgery</title>
+      <tabular>
+        <row>
+          <cell>Age, <m>x</m></cell>
+          <cell>Days Until Mobile, <m>y</m></cell>
+        </row>
+        <row><cell>50</cell><cell>4</cell></row>
+        <row ><cell>83</cell><cell>12</cell></row>
+        <row ><cell>55</cell><cell>5</cell></row>
+        <row ><cell>42</cell><cell>3</cell></row>
+        <row ><cell>67</cell><cell>7</cell></row>
+        <row><cell>72</cell><cell>8</cell></row>
+        <row ><cell>78</cell><cell>9</cell></row>
+        <row><cell>61</cell><cell>5</cell></row>
+        <row><cell>46</cell><cell>4</cell></row>
+        <row><cell>64</cell><cell>6</cell></row>
+        <row><cell>56</cell><cell>6</cell></row>
+        <row><cell>70</cell><cell>7</cell></row>
+        <row><cell>48</cell><cell>3</cell></row>
+        <row><cell>58</cell><cell>5</cell></row>
+        <row><cell>75</cell><cell>10</cell></row>
+        <row><cell>60</cell><cell>8</cell></row>
+        <row><cell>68</cell><cell>8</cell></row>
+        <row><cell>53</cell><cell>4</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Find the correlation coefficient and the linear regression line.
+      Then interpret the results. The solutions are based on StatKey output. You can use other software to find the correlation and regression line.
+    </p>
+<exercise>
+  <title> Correlation </title> 
+  <statement> <p> State the correlation coefficient. </p> </statement>
+  <solution> <p> Correlation r = 0.934 is a strong positive relationship.</p> 
+  </solution>
+  </exercise>
+<exercise>
+  <title> Nature of the relationship </title> 
+  <statement> <p> Describe the nature of the relationship. </p> </statement>
+  <solution> <p> As the age of the patient increases, the length of time before independent mobility after knee surgery also increases. </p> 
+  </solution>
+  </exercise>
+<exercise>
+    <title> Slope </title> 
+    <statement> <p> Identify the slope when x = age and y = Days to mobility. </p> </statement>
+    <solution> <p> Slope = 0.202 is positive. The slope indicates 0.2 more days for independent mobility for each 1-year increase in age. Another way to interpret this is it will take 2 more days for every 10 years in age increase. </p> 
+    </solution>
+    </exercise>
+<exercise>
+    <title> Y-intercept </title> 
+    <statement> <p> Identify the y-intercept when x = age and y = days to mobility. </p> </statement>
+    <solution> <p> The y-intercept = -6.06.</p> 
+    </solution>
+    </exercise>
+<exercise>
+      <title> Regression Equation </title> 
+      <statement> <p> Identify the regression equation where x = age and y = days to mobility. </p> </statement>
+      <solution> <p> Days = 0.202(age) - 6.06 or <m> \hat y = 0.202x-6.06 </m>.</p> 
+      </solution>
+      </exercise>
+<exercise>
+      <title> Prediction </title> 
+      <statement> <p> Predict the number of days to independent mobility for someone who is 60 years of age at the time of knee surgery. </p> </statement>
+      <solution> <p> <m> \hat y = 0.202(60)-6.06 =6.06</m>  days.</p> 
+      </solution>
+      </exercise>
+<exercise>
+    <title> Residual </title> 
+    <statement> <p> Find the residual for someone who is 60 years of age at the time of knee surgery. </p> </statement>
+    <solution> 
+      <p> Predict <m> \hat y = 0.202(60)-6.06 =6</m>  days.</p>
+      <p> Residual <m>y-\hat y = 8-6 =2</m> days longer than predicted .</p> </solution>
+  </exercise>
+
+
+</subsection>
 
 
 </section>

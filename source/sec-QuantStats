@@ -4,7 +4,7 @@
     <title>Summary Statistics  </title>
 
     <introduction>
-        <p> In this section we will investigate some ways to summarize the data with numerical statistics. We will spend more time with the measures of central tendency and variability in the next chapter. </p>
+        <p> In this section we will investigate some ways to summarize the data with numerical statistics. This is a brief introduction to the summary statistics so you can understand the table seen in StatKey. We will spend more time with the measures of central tendency and variability in the next chapter. </p>
       </introduction> 
 
       <objectives>
@@ -16,14 +16,12 @@
         <ol>
            <li> <p> Describe the center of the data with mean, median, mode. </p>
           </li>
-          <li> <p> Describe the spread of a data with range of values. </p> </li>
+          <li> <p> Describe the spread of a data with range and standard deviation. </p> </li>
         </ol>
       </objectives>
 
 <p>
-        This section focuses on measures of central tendency. Many times you are asking what
-to expect "on average" or what is a typical value. These types of questions can be answered by knowing the center of the
-data set. There are three measures of the <term> center </term> of the data. They are the mean, median, and mode.
+        This section focuses on measures of central tendency. Many times you are asking what to expect "on average" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the <term> center </term> of the data. They are the mean, median, and mode.
       </p>
       <p>  
         The <term> mode </term> is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs
@@ -37,24 +35,27 @@ data set. There are three measures of the <term> center </term> of the data. The
      <p> <term> Example: </term> A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48. </p>
     <p> <term> Solution: </term> The mode is 36 since it occurs most often (twice). Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72,  thus the median is 36. The mean is the sum of the values divided by 5, thus 217/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72. </p> 
     
-    <p> A data set can have more than one mode. If there is a tie between two values for the most
-        number of times, then both values are the mode and the data is called <em> bimodal </em> (two
-        modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being <em> multimodal </em>. </p>
-       
- <p> The <term> range </term> of a data set is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are. </p>      
+    <p> A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called <em> bimodal </em> (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being <em> multimodal </em>. </p>
+   
+    <p>Another aspect of analyzing data is how spread out the values are. </p> 
+    <p> The <term> range </term> of a data set is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are. </p>      
     <p> <term> Example: </term> A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72. </p>
     <p> <term> Solution: </term> This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)/2=42,  thus the median is 42. The mean is the sum of the values divided by 6, thus 289/6 = 48.167 apps per phone. The range is 72 - 25 = 47 apps, which represents the spread in the number of apps on these phones. </p> 
+    <p>Another measure of spread is the <term>standard deviation</term>, which is the average distance each value is from the mean. When the standard deviation is small the values are clustered closer together. When the standard deviation is large the values are more spread apart and often has a larger range. We will discuss this in the next chapter. </p>  
         
 <example>
-  <title>Find the measures of center</title>
+  <title>Phone Apps</title>
   <statement>
-    <p>   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72      </p>
+    <p>   A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72. Find the mode, median, mean, and range. </p>
   </statement>
   <answer>
-    <p>  bimodal with modes 36 and 72, median = 42 and mean = 48.167  </p>
+    <p> The data is bimodal with modes 36 and 72, median = 42, mean = 48.167,  and range = 47.  </p>
   </answer>
   <solution>
-    <p>       This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289/6 = 48.167 for the mean.</p>
+    <p> This is bimodal with modes of 36 and 72 since both occur twice. </p>
+    <p> Since there are six values, the middle value is (36+48)/2=42, thus the median is 42 apps. </p>
+    <p> The mean is the sum of the values divided by 6, thus 289/6 = 48.167 apps per person for the mean.</p>
+    <p> The range is the difference between the largest and smallest values, thus 72 - 25 = 47 apps. </p>
   </solution>
 </example>
 
@@ -64,24 +65,127 @@ data set. There are three measures of the <term> center </term> of the data. The
         <hint><p> Mode occurs most often, median is the middle value, for the mean find the sum of the values and divide by the number of values, range is the difference between the largest and smallest values.</p></hint>
             <solution>
           <p> No mode since each value occurs just once.</p>
-          <p> The middle value is 115, 120, 138, [140], 162, 175, 238 thus median is 140.</p>
-          <p> Find the mean <m>1088/7=155.4 </m> pounds </p>
-          <p> range = 238-115 = 123 pounds </p>
+          <p> The middle value is 115, 120, 138, [140], 162, 175, 238 thus median is 140 pounds.</p>
+          <p> The mean is <m>1088/7=155.4 </m> pounds </p>
+          <p> The range is <m>238 - 115 = 123</m> pounds </p>
         </solution>
     </exercise>
 
- <p> Identify the summary statistics from StatKey</p>
+ <p> <term> Identify the Summary Statistics from StatKey</term> </p>
  <figure xml:id="TattooDotplot3">
             <caption>Summary Statistics for Tattoos</caption>
             <image source="Tattoos.png" width="100%">
                 <shortdescription>Students have between 0 and 12 tattoos with 0 occurring more often than more tattoos.</shortdescription>
             </image>
         </figure> 
-<p> The sample size is 42 students. The dotplot shows 0 occurs most often for the mode = 0. The mean is 1.395 because of the large values to the right. The minimum value is 0 and the maximum value is 12. This gives the range 12-0 = 12. The median = 0 since over half the values are 0. </p>
+<p>  <em> Interpretation:</em> The sample size is 42 students. The dotplot shows 0 occurs most often for the mode = 0. The median = 0 since over half the values are 0. The mean is 1.395 which is larger because of the large tattoo values pulls it to the right. The minimum value is 0 and the maximum value is 12. This gives the range 12-0 = 12. The standard deviation is 2.647 </p>
 
- 
+<p> <term>Summary Statistics for Heights</term></p> 
+<p> The histogram shows the height of students, measured in inches, from the ClassSurvey1. Use the graph and summary statistics to answer the following questions. </p> 
+ <figure xml:id="HeightHistogramSummary">
+            <caption> Height Histogram and Summary Statistics</caption>
+            <image source="HeightHisto.png" width="100%">
+                <shortdescription>Histogram showing bars for heights with values ranging from 59 to 78 inches.</shortdescription>
+            </image>
+        </figure>
+<exercise label="Height-statistics-matching">
+    <title> Identifying Height Statistics </title>
+    <statement>
+    <p>
+        Identify the summary statistics from the students’ height histogram and summary statistics table shown above. Select all statements that are true.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p>
+            The sample consists of heights for 42 students.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, sample is 42 students.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+            The range is 19 inches.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Range = max-min = 78-59 = 19 inches.
+        </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p>
+            The mean is 67 feet.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            The mean is 67.9 inches, make sure to round up. The units are inches.
+        </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p>
+            The mode is 66-68 inches.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            The graph is bimodal with 62-64 inches and 66-68 inches.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+            The standard deviation is 4.822 inches.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct.
+        </p>
+        </feedback>
+    </choice>
+<choice>
+        <statement>
+        <p>
+            The shortest person was 60  inches.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            The shortest person was 59 inches, the minimum value.
+        </p>
+        </feedback>
+    </choice>
+<choice correct="yes">
+        <statement>
+        <p>
+            The tallest person was 78 inches.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Correct, the maximum height was 78 inches
+        </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
+
 <p> <term> Data Exploration </term> </p>
-<p>  Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste a graph and the summary statistics table into a word document and summarize the statistics from the sample. For the variable identified state the mean, median, mode, and range. Relate these values to one of the graphs. </p>
+<p>  Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste a graph and the summary statistics table into a word document and summarize the statistics from the sample. For the variable identified state the mean, median, mode, range, and standard deviation. Relate these values to one of the graphs. </p>
 
 
       </section>

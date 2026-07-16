@@ -50,7 +50,7 @@
 <p> The formula for the sample mean is </p>
 <p> <md> \bar{x}=\frac{\sum x}{n} </md> </p>
 
-<p> where x-bar represents the mean, the sigma symbol indicates to find the sum of the data values, where each <em> x</em> is a data value, and then divide by the sample size of <em> n </em>. </p>
+<p> where <q>x-bar</q> represents the mean, the sigma symbol indicates to find the sum of the data values, where each <em> x</em> is a data value, and then divide by the sample size of <em> n </em>. </p>
 <p> <em> Example: </em>  A sample of five students are taking the number of credits this semester: 12, 14, 15,16, 18. </p>
 <p> <em> Solution: </em> The sum is 75 divided by the 5 values so the mean is 15 credits per person. </p>
 <p> <m> \bar{x}=\frac{75}{5}=15 </m></p>
@@ -64,7 +64,7 @@
 
 <p>     </p>
 
-<example>
+<example> <title> Phone Apps</title> 
 <statement><p>  A sample of five students have the following number of apps on their cellular phones: 36, 48, 36, 72, 25. Find the measures of center.</p> </statement>
 <solution> <p> The mode is 36 since it occurs most often. </p> 
   <p> Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72 when arranged in order, thus the median is 36. </p> 
@@ -72,6 +72,7 @@
   <p>The midrange<m> = (25+72)/2 = 48.5 </m> which is also shifted to the right. </p> 
 </solution>
 </example>
+<p> Now you try finding the measures of center in the following problems. </p>
 
 <exercise xml:id="ex-sample-center-nursing">
 <title> Nursing</title> 
@@ -81,7 +82,7 @@
       complete a patient admission assessment. The times measured in minutes are:   </p>
     <p>   <m>28, 32, 30, 27, 35, 31, 29, 33, 30, 34, 28, 31</m>  </p>
     <p>
-      Find the mean, median, and mode time for completing the patient admission  assessment. 
+      Find the mean, median, mode, and midrange time for completing the patient admission  assessment. 
     </p>
   </statement>
     <solution><title>mean</title>
@@ -92,10 +93,15 @@
     </p>
   </solution>
 <solution><title>median</title>
-<p> The median is between the sixth and seventh value, thus the median is 30.5 minutes. </p> 
+<p> The median is between the sixth and seventh value, </p>
+<p> 20, 27, 28, 28, 29, 30, [median] , 31, 31, 32, 33, 34, 35 </p>
+<p> thus the median is <m>(30+31)/2=30.5 </m> minutes. </p> 
   </solution>
 <solution><title>mode</title>
 <p> The data is multimodal with three modes of 28, 30, 31 minutes. </p>
+</solution> 
+<solution> <title> midrange</title>
+<p> The midrange is <m>(20+35)/2=27.5</m>minutes. </p> 
 </solution> 
 </exercise>
 
@@ -106,7 +112,7 @@
       An audiologist records the hearing threshold levels, in decibels, for 11 patients at a specific test frequency. The recorded values are:   </p>
     <p>  <m>18, 22, 20, 25, 19, 21, 23, 17, 24, 20, 21</m>     </p>
     <p>
-      Find the mean, median, and mode hearing threshold level.
+      Find the mean, median, mode, and midrange hearing threshold level.
     </p>
   </statement>
   <solution> <title>mean</title>
@@ -120,6 +126,9 @@
 <solution><title>mode</title>
 <p> The data is bimodal with two modes of 20 and 21. </p>
 </solution> 
+<solution> <title> midrange</title>
+<p> midrange is <m>(17+25)/2=21</m>decibels. </p> 
+</solution>
 </exercise>
 
 
@@ -196,14 +205,14 @@ It should say <em>Done</em>. </p>
   <solution><title>mean</title>
     <p>   The sample mean is found using  <m>  \bar{x}=\frac{\sum x}{n}.   </m>
     </p>
-        <p> The sample mean is  <m>  \bar{x}=\frac{262}{13}=20.1538.   </m>
+    <p> The sample mean is  <m>  \bar{x}=\frac{262}{13}=20.1538.   </m>
     </p>
-    <p>    So, the sample mean sediment concentration is approximately
+    <p> The sample mean sediment concentration is approximately
       <m>20.15</m> mg/L.
     </p>
   </solution>
 <solution><title>median</title>
-<p> arrange the values in order and it lands on the seventh value. </p>
+<p> Arrange the values in order and the median lands on the seventh value. </p>
 <p> 17, 18, 18, 19, 19, 20, [20], 20, 21, 21, 22, 23, 24 </p>
 <p> The median is 20 mg/L. </p> 
   </solution>
@@ -307,16 +316,16 @@ It should say <em>Done</em>. </p>
     </p>
       </statement>
  <solution><title>mean</title>
-     <p> The mean is  <m>  \bar{x}=\frac{347.2}{10}=34.72 </m> psu.  </p>
-   </solution>
+  <p> The mean is <m> \bar{x}=\frac{347.2}{10}=34.72 </m> psu.  </p>
+  </solution>
 <solution><title>median</title>
 <p> The median is 34.7 psu</p>
 </solution> 
 <solution><title>mode</title>
-<p> The median is 34.7 psu</p>
+<p> The mode is 34.7 psu</p>
 </solution> 
 <solution><title>midrange</title>
-<p> The midrange is <m>(34.9-34.5)/2=0.4</m> psu. </p>
+<p> The midrange is <m>(34.9+34.5)/2=34.7</m> psu. </p>
 </solution> 
 </exercise> 
 
