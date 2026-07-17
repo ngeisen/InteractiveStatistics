@@ -612,7 +612,7 @@ This is a one-way ANOVA test comparing three means. The observations are indepen
       Construct and interpret a one-way ANOVA to test whether the mean
       number of mimicked words differs among these four species.
     </p>
-<exercise xml:id="ex-anova-parrots ">
+<exercise xml:id="ex-anova-parrots">
 <title> Parrots Mimicked Words </title> 
   <statement>
     <p>
@@ -690,7 +690,7 @@ This is a one-way ANOVA test comparing three means. The observations are indepen
 </solution> 
 <solution> <title> Test on TI-84</title>
 <p> Enter each parrot species in a separate list. You can compute the summary statistics for each parrot species using CALC 1-Var Stats. </p>
-<figure xml:id=" ParrotAnovaData">
+<figure xml:id="ParrotAnovaData">
             <caption>ANOVA Parrot Data</caption>
             <image source="ANOVAparrot1.png" width="90%">
                 <shortdescription>On TI84 select H for ANOVA and identify location of data as L1,L2,L3,L4.</shortdescription>

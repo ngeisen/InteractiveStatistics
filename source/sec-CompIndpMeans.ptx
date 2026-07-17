@@ -708,7 +708,7 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
     <solution> <title> Test with TI-84</title>
       <p> Input the data values and find the summary statistics for each sample.</p> 
       <p> Click on the <term>[STAT] </term> button and under Edit select <term> 1Edit</term> to input the data values. The click on the <term>[STAT] </term> button and press the arrow once to the right to highlight CALC across the top and select option <term>1-Var-Stats</term> then identify the list L1 and then repeat for L2. </p>
-    <figure xml:id=" TwoCarePlans1">
+    <figure xml:id="TwoCarePlans1">
             <caption>Finding Summary Statistics for Care Plans </caption>
             <image source="TwoPlans1.png" width="90%">
                 <shortdescription> input the data in List 1 and List 2 then find the summary statistics.</shortdescription>
@@ -721,7 +721,7 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
     </p>
     <p> Identify the alternative hypothesis for <q>not equal</q> and the <term>Pooled: NO</term> for this course. Then click on <term> Calculate</term> and press [ENTER] to evaluate the test. 
     </p>
-    <figure xml:id=" TwoCarePlans2">
+    <figure xml:id="TwoCarePlans2">
             <caption>Two Sample Test Results</caption>
             <image source="TwoPlans2.png" width="90%">
                 <shortdescription> test statistic is t=-4.59 with p-value =0.000057 and the Welch's degrees of freedom 10.</shortdescription>
