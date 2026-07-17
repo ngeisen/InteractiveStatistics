@@ -240,6 +240,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CondProb.html#subsec-Dependent" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Dependent Events</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CondProb.html#subsec-Conditional" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Conditional Events</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CondProb.html#subsec-Permutations" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Permutations and Combinations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CondProb.html#subsec-ConditionalPractice" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -250,6 +251,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ExpectedValue" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Expected Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistCalc" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Using Technology</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistPhones" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Random Phones Investigation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistPractice" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -904,9 +906,32 @@ eBookConfig.enable_chatcodes =  false;
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
 </h3>
-<div class="para" id="subsec-BootstrapPractice-2">samples<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<details id="ex-bootstrap-mean-seedlings" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Seedlings.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-bootstrap-mean-seedlings-2-1">A biologist records the heights, in centimeters, of <span class="process-math">\(5\)</span> seedlings: <span class="process-math">\(12\text{,}\)</span> <span class="process-math">\(15\text{,}\)</span> <span class="process-math">\(14\text{,}\)</span> <span class="process-math">\(13\text{,}\)</span> and <span class="process-math">\(16\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-bootstrap-mean-seedlings-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-bootstrap-mean-seedlings-2-2">To study the variability of the sample mean, the biologist takes a bootstrap sample by sampling 5 values with replacement from the original data.<div class="autopermalink" data-description="Paragraph"><a href="#ex-bootstrap-mean-seedlings-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-bootstrap-mean-seedlings-2-3">To simulate this, the biologist records the seedlings heights on five cards and shuffles them. The biologist selects a card at random, records the height, and returns it to the stack. Then repeats the process until five values are recorded. Suppose bootstrap sample is: 15, 12, 16, 15, 13.<div class="autopermalink" data-description="Paragraph"><a href="#ex-bootstrap-mean-seedlings-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-bootstrap-mean-seedlings-2-4">Find the mean of this bootstrap sample. <span class="process-math">\(\bar{x}=\frac{71}{5}=14.2    \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-bootstrap-mean-seedlings-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-bootstrap-mean-seedlings-2-5">The mean of 14.2 is plotted on a doplot and the process is repeated many times. Create a bootstrap distribution in StatKey using the original five values to create a confidence interval for a single mean. Click on Edit data and change the values to 12, 15, 14, 13, 16. Generate 1000 samples and find the mean and standard error of the distribution. Find the 90% confidence interval for the mean height of the seedlings.<div class="autopermalink" data-description="Paragraph"><a href="#ex-bootstrap-mean-seedlings-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 5.2.5: Practice Problems"><a href="#subsec-BootstrapPractice" title="Copy heading and permalink for Subsection 5.2.5: Practice Problems" aria-label="Copy heading and permalink for Subsection 5.2.5: Practice Problems">🔗</a></div>
+<div class="solutions">
+<details id="ex-bootstrap-mean-seedlings-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-bootstrap-mean-seedlings-3-1">The bootstrap distribution is center at the mean 14.0 with a standard error around 0.62. The 90% confidence interval is between 13 and 15 cm. Recall each dot represents a mean from 5 seedlings, with replacement. There are 1000 samples in the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#ex-bootstrap-mean-seedlings-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="SeedlingBootstrap"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/SeedlingBoot.png" class="contained" alt="distribution of 1000 samples of size 5 centered at mean 14 and standard error of 0.625. the distribution is bell shaped with values ranging from 12 to 16.."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Seedling Bootstrap Distributions<div class="autopermalink" data-description="Figure 5.2.21"><a href="#SeedlingBootstrap" title="Copy heading and permalink for Figure 5.2.21" aria-label="Copy heading and permalink for Figure 5.2.21">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 5.2.20.1"><a href="#ex-bootstrap-mean-seedlings-3" title="Copy heading and permalink for Solution 5.2.20.1" aria-label="Copy heading and permalink for Solution 5.2.20.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.20: Seedlings"><a href="#ex-bootstrap-mean-seedlings" title="Copy heading and permalink for Checkpoint 5.2.20: Seedlings" aria-label="Copy heading and permalink for Checkpoint 5.2.20: Seedlings">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 5.2.5: Practice Problems"><a href="#subsec-BootstrapPractice" title="Copy heading and permalink for Subsection 5.2.5: Practice Problems" aria-label="Copy heading and permalink for Subsection 5.2.5: Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 5.2: Bootstrap Distributions"><a href="#sec-BootstrapDist" title="Copy heading and permalink for Section 5.2: Bootstrap Distributions" aria-label="Copy heading and permalink for Section 5.2: Bootstrap Distributions">🔗</a></div>
 </section>
 </div>
