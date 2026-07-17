@@ -143,13 +143,15 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
 </p>
     <p>
       Substituting in the values, the test statistic is
-        <md>
-t=\frac{(\bar{x}_1-\bar{x}_2)-0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
-=\frac{52.4-39.1}{\sqrt{\frac{18.6^2}{18}+\frac{15.2^2}{16}}}
-=\frac{13.3}{\sqrt{19.22+14.44}}
-=\frac{13.3}{\sqrt{33.66}}
-\approx \frac{13.3}{5.80}
-\approx 2.29.
+    <md>
+  t=\frac{(\bar{x}_1-\bar{x}_2)-0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+    =\frac{52.4-39.1}{\sqrt{\frac{18.6^2}{18}+\frac{15.2^2}{16}}} 
+  </md>
+ <md>     
+  t=\frac{13.3}{\sqrt{19.22+14.44}}
+    =\frac{13.3}{\sqrt{33.66}}
+    \approx \frac{13.3}{5.80}
+    \approx 2.29.
     </md>
 </p>
     <p>
@@ -626,7 +628,7 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
   <title>Comparing Means Practice Problems</title>
 <p> Choose which form of technology you prefer for this type of analysis. </p> 
   
-<example xml:id="ex-two-sample-recovery">
+<exercise xml:id="ex-two-sample-recovery">
 <title> Care Plans</title> 
   <statement>
     <p>
@@ -666,6 +668,11 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
       <md>H_a:\mu_1\ne\mu_2</md> for a two-tailed test.
     </p>
   </solution>
+  <solution> <title> Assumptions</title>
+    <p> The t-test is appropriate since the two samples are independent of each other and they were random samples. We are assuming the populations are normally distributed.
+    </p>
+  </solution> 
+
   <solution> <title> Statistical Test</title>
     <p>
       The sample statistics are
@@ -684,25 +691,49 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
     </p>
     <p>
       The test statistic is
-      <m>
-        t=
-        \frac{\bar{x}_1-\bar{x}_2}
-        {\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
-        =
-        \frac{8.5-11.5}
-        {\sqrt{1.1\left(\frac{1}{6}+\frac{1}{6}\right)}}
+    <md> 
+      t=\frac{(\bar{x}_1-\bar{x}_2)-0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+      =\frac{8.5-11.5} {\sqrt{\frac{1.05^2}{6}+\frac{1.05^2}{6}}}
         \approx -4.95.
-      </m>
+      </md>
     </p>
     <p>
       The degrees of freedom are
       <m>df=n_1+n_2-2=10</m>.
     </p>
     <p>
-      The <m>p</m>-value for a two-sided test is less than <m>0.001</m>.
+      The <m>p</m>-value for a two-tailed test is <m>p=0.00057</m>.
     </p>
-    <p>
-      Since <m>p lt 0.05</m>, we reject <m>H_0</m>.
+    </solution>
+    <solution> <title> Test with TI-84</title>
+      <p> Input the data values and find the summary statistics for each sample.</p> 
+      <p> Click on the <term>[STAT] </term> button and under Edit select <term> 1Edit</term> to input the data values. The click on the <term>[STAT] </term> button and press the arrow once to the right to highlight CALC across the top and select option <term>1-Var-Stats</term> then identify the list L1 and then repeat for L2. </p>
+    <figure xml:id=" TwoCarePlans1">
+            <caption>Finding Summary Statistics for Care Plans </caption>
+            <image source="TwoPlans1.png" width="90%">
+                <shortdescription> input the data in List 1 and List 2 then find the summary statistics.</shortdescription>
+            </image>
+        </figure> 
+
+    <p> Click on the <term>[STAT] </term> button and press the arrow twice to the right to highlight <term>TESTS</term> across the top and select option <term>4: 2-Samp T-test</term> and press [ENTER] to select it.
+    </p>
+    <p> Use the arrow to highlight <term> Data</term> and identify which List the data values are located . 
+    </p>
+    <p> Identify the alternative hypothesis for <q>not equal</q> and the <term>Pooled: NO</term> for this course. Then click on <term> Calculate</term> and press [ENTER] to evaluate the test. 
+    </p>
+    <figure xml:id=" TwoCarePlans2">
+            <caption>Two Sample Test Results</caption>
+            <image source="TwoPlans2.png" width="90%">
+                <shortdescription> test statistic is t=-4.59 with p-value =0.000057 and the Welch's degrees of freedom 10.</shortdescription>
+            </image>
+        </figure> 
+
+    <p> The statistical test value is <m>t=-4.95</m> and p-value is <m>p=0.00057</m> with degrees of freedom <m>df=10</m>.</p> 
+  </solution> 
+
+    <solution> <title>Conclusion </title>
+     <p>
+      Since <m>p \lt 0.05</m>, we reject <m>H_0</m>.
     </p>
     <p>
       There is sufficient evidence at the <m>0.05</m> significance level to
@@ -715,7 +746,7 @@ n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
       Plan B.
     </p>
   </solution>
-</example>
+</exercise>
 
 
 

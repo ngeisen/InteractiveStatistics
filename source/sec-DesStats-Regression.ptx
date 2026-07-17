@@ -53,6 +53,7 @@
 </figure>
 
 <p> <term> Making Predictions </term> </p> 
+<p> Now that we have the regression equation, we can make predictions for other values. </p>
 <p> <em> Example: </em> Predict a person's height if the person has a size 8 shoe using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
 <p> Solution: Using the linear regression equation  <md> \hat y = 48.396 +2.014(8) = 65.508 </md>  So we predict the person's height to be 65.5 inches or 5 feet 5.5 inches tall. This does align with the scatter plot. On the x-axis we start at size 8, go up to the regression line then move to the left to find the height around 65 inches. </p> 
 <p> <em> Example: </em> Predict a person's height for shoe size 11 using the regression equation. Does this seem reasonable given the data in the scatterplot? </p> 
@@ -144,9 +145,8 @@
  </subsection>
 
  <subsection xml:id="subsec-RegressionPractice">
-  <title>Practice Problems</title>
+  <title>Knee Surgery Mobility Analysis</title>
 <p> Now complete the correlation and regression analysis for the following scenario. </p>
-<p><term> Knee Surgery Mobility</term></p> 
     <p>
       A medical researcher wants to study the relationship between a patient's
       age and the number of days after knee surgery until the patient becomes

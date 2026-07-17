@@ -587,7 +587,148 @@ This is a one-way ANOVA test comparing three means. The observations are indepen
   </solution>
 </exercise>
 
+<p> <term> Parrots Mimicked Words </term></p> 
+  
+    <p>
+      A researcher wants to compare the mean number of mimicked words among
+      four companion parrot groups :  Grey Parrots, Blue-and-yellow Macaws, Fischer's Lovebirds, and Cockatiels. The research enlists volunteers to identify the number of mimicked works from four parrots in each species, as shown below.
+    </p>
+    <table>
+      <title>Sample of Parrots</title>
+      <tabular>
+        <row>
+          <cell>Grey Parrot</cell>
+          <cell>Macaw</cell>
+          <cell>Cockatiel</cell>
+          <cell>Fischer's Lovebird</cell>
+        </row>
+        <row><cell>55</cell><cell>24</cell><cell>18</cell><cell>1</cell></row>
+        <row><cell>61</cell><cell>29</cell><cell>22</cell><cell>2</cell></row>
+        <row><cell>64</cell><cell>34</cell><cell>27</cell><cell>3</cell></row>
+        <row><cell>63</cell><cell>33</cell><cell>30</cell><cell>5</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Construct and interpret a one-way ANOVA to test whether the mean
+      number of mimicked words differs among these four species.
+    </p>
+<exercise xml:id="ex-anova-parrots ">
+<title> Parrots Mimicked Words </title> 
+  <statement>
+    <p>
+      Construct and interpret a one-way ANOVA to test whether the mean
+      number of mimicked words differs among these four species.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title> 
+    <p>
+      Step 1: State the hypotheses.
+    </p>
+    <p>
+      <m>H_0:\mu_1=\mu_2=\mu_3=\mu_4</m>
+    </p>
+    <p>
+      <m>H_a:</m> At least one species mean is different.
+    </p>
+    </solution>
+      <solution> <title> Summary Statistics</title>
+       <p> First, find the sample means and standard deviation. Use technology.
+    </p>
+    <p>Grey Parrot is
+      <m>\bar{x}_1=\frac{55+61+64+63}{4}=60.75</m> and <m>s_1=4.03</m>
+    </p>
+    <p> Macaw is
+      <m>\bar{x}_2=\frac{24+29+34+33}{4}=30.00</m> and <m>s_2=4.546</m>
+    </p>
+    <p>Cockatiel is
+      <m>\bar{x}_3=\frac{18+22+27+30}{4}=24.25</m> and <m>s_3=5.315</m>
+    </p>
+    <p>Lovebird is
+      <m>\bar{x}_4=\frac{1+2+3+5}{4}=2.75</m> and <m>s_4=1.708</m>
+    </p>
+    <p>
+      The grand mean is
+      <m>
+        \bar{x}=\frac{243+120+97+11}{16}=\frac{471}{16}=29.4375.
+      </m>
+    </p>
+</solution> 
+<solution><title> ANOVA Table</title> 
+<table>
+  <title>ANOVA Table for Number of Mimicked Words by Parrot Species</title>
+  <tabular>
+    <row>
+      <cell>Source of Variation</cell>
+      <cell>Sum of Squares (SS)</cell>
+      <cell>Degrees of Freedom (df)</cell>
+      <cell>Mean Square (MS)</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>Between Groups</cell>
+      <cell>6879.69</cell>
+      <cell>3</cell>
+      <cell>2293.23</cell>
+      <cell>134.74</cell>
+    </row>
+    <row>
+      <cell>Within Groups</cell>
+      <cell>204.25</cell>
+      <cell>12</cell>
+      <cell>17.02</cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Total</cell>
+      <cell>7083.94</cell>
+      <cell>15</cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+  </tabular>
+</table>
+</solution> 
+<solution> <title> Test on TI-84</title>
+<p> Enter each parrot species in a separate list. You can compute the summary statistics for each parrot species using CALC 1-Var Stats. </p>
+<figure xml:id=" ParrotAnovaData">
+            <caption>ANOVA Parrot Data</caption>
+            <image source="ANOVAparrot1.png" width="90%">
+                <shortdescription>On TI84 select H for ANOVA and identify location of data as L1,L2,L3,L4.</shortdescription>
+            </image>
+        </figure> 
 
+<p> Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <term> H: ANOVA( </term> and [ENTER] button and then identify the four lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 and [,] and [2nd] button [4] for L then [ )] button, then press [ENTER] to compute the test. </p>   
+<figure xml:id="AnovaParrotTest">
+            <caption>ANOVA Parrot Results</caption>
+            <image source="ANOVAparrot2.png" width="90%">
+                <shortdescription>F-test is 134.73 and p-value=0</shortdescription>
+            </image>
+        </figure> 
+<p> The display lets you know you performed the one-way ANOVA. The test statistic is <m>F=134.73</m> and value of <m>p=0 </m>. The dfN=3 and dfD=12.</p>
+</solution> 
+
+<solution> <title> Conclusion</title> 
+    <p>The test statistic is
+      <m>
+        F=\frac{MSB}{MSW}=\frac{2293.23}{17.02}\approx 134.74
+      </m>
+    </p>
+        <p>
+      At <m>\alpha=0.05</m>, with <m>dfN=3</m> and <m>dfD=12</m>, the critical
+      value is about <m>3.49</m>.
+    </p>
+    <p>
+      Since <m>F=134.74 \gt 3.49</m> and the p-value <m>\approx 0</m>, reject <m>H_0</m>.
+    </p>
+    <p>
+      Conclusion: There is strong evidence that the mean number of mimicked
+      words differs among these four parrot species.
+    </p>
+<p> We can see from the data that the Grey Parrots can mimic more words than the other species.</p> 
+  </solution>
+
+
+</exercise> 
 
 
 
