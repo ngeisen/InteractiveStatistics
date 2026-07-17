@@ -209,7 +209,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-SimpleLinear" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Simple Linear Regression</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionEarthquakes" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Earthquake Analysis</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionPractice" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DesStat-Regression.html#subsec-RegressionPractice" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Knee Surgery Mobility Analysis</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -1240,6 +1240,148 @@ F=\frac{MSB}{MSW}=\frac{9715.78}{10.41}\approx 933.31.
 </div></details>
 </div>
 <div class="autopermalink" data-description="Checkpoint 9.4.22: Seedlings"><a href="#ex-anova-seedlings" title="Copy heading and permalink for Checkpoint 9.4.22: Seedlings" aria-label="Copy heading and permalink for Checkpoint 9.4.22: Seedlings">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-ANOVAPractice-8">
+<dfn class="terminology">Parrots Mimicked Words</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ANOVAPractice-9">A researcher wants to compare the mean number of mimicked words among four companion parrot groups :  Grey Parrots, Blue-and-yellow Macaws, Fischer’s Lovebirds, and Cockatiels. The research enlists volunteers to identify the number of mimicked works from four parrots in each species, as shown below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-ANOVAPractice-10"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sample of Parrots<div class="autopermalink" data-description="Table 9.4.26: Sample of Parrots"><a href="#subsec-ANOVAPractice-10" title="Copy heading and permalink for Table 9.4.26: Sample of Parrots" aria-label="Copy heading and permalink for Table 9.4.26: Sample of Parrots">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Grey Parrot</td>
+<td class="l m b0 r0 l0 t0 lines">Macaw</td>
+<td class="l m b0 r0 l0 t0 lines">Cockatiel</td>
+<td class="l m b0 r0 l0 t0 lines">Fischer’s Lovebird</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">55</td>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">61</td>
+<td class="l m b0 r0 l0 t0 lines">29</td>
+<td class="l m b0 r0 l0 t0 lines">22</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">64</td>
+<td class="l m b0 r0 l0 t0 lines">34</td>
+<td class="l m b0 r0 l0 t0 lines">27</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">63</td>
+<td class="l m b0 r0 l0 t0 lines">33</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-ANOVAPractice-11">Construct and interpret a one-way ANOVA to test whether the mean number of mimicked words differs among these four species.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ANOVAPractice-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-anova-parrots" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parrots Mimicked Words.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-anova-parrots-2-1">Construct and interpret a one-way ANOVA to test whether the mean number of mimicked words differs among these four species.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-anova-parrots-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-parrots-3-2">Step 1: State the hypotheses.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-3-3">
+<span class="process-math">\(H_0:\mu_1=\mu_2=\mu_3=\mu_4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-3-4">
+<span class="process-math">\(H_a:\)</span> At least one species mean is different.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.27.1: Hypotheses"><a href="#ex-anova-parrots-3" title="Copy heading and permalink for Solution 9.4.27.1: Hypotheses" aria-label="Copy heading and permalink for Solution 9.4.27.1: Hypotheses">🔗</a></div>
+</div></details>
+<details id="ex-anova-parrots-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary Statistics</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-parrots-4-2">First, find the sample means and standard deviation. Use technology.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-4-3">Grey Parrot is <span class="process-math">\(\bar{x}_1=\frac{55+61+64+63}{4}=60.75\)</span> and <span class="process-math">\(s_1=4.03\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-4-4">Macaw is <span class="process-math">\(\bar{x}_2=\frac{24+29+34+33}{4}=30.00\)</span> and <span class="process-math">\(s_2=4.546\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-4-5">Cockatiel is <span class="process-math">\(\bar{x}_3=\frac{18+22+27+30}{4}=24.25\)</span> and <span class="process-math">\(s_3=5.315\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-4-6">Lovebird is <span class="process-math">\(\bar{x}_4=\frac{1+2+3+5}{4}=2.75\)</span> and <span class="process-math">\(s_4=1.708\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-4-7">The grand mean is <span class="process-math">\(\bar{x}=\frac{243+120+97+11}{16}=\frac{471}{16}=29.4375.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.27.2: Summary Statistics"><a href="#ex-anova-parrots-4" title="Copy heading and permalink for Solution 9.4.27.2: Summary Statistics" aria-label="Copy heading and permalink for Solution 9.4.27.2: Summary Statistics">🔗</a></div>
+</div></details>
+<details id="ex-anova-parrots-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ANOVA Table</span></summary>
+<div class="solution solution-like knowl__content">
+<figure class="table table-like" id="ex-anova-parrots-5-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Table for Number of Mimicked Words by Parrot Species<div class="autopermalink" data-description="Table 9.4.28: ANOVA Table for Number of Mimicked Words by Parrot Species"><a href="#ex-anova-parrots-5-2" title="Copy heading and permalink for Table 9.4.28: ANOVA Table for Number of Mimicked Words by Parrot Species" aria-label="Copy heading and permalink for Table 9.4.28: ANOVA Table for Number of Mimicked Words by Parrot Species">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Source of Variation</td>
+<td class="l m b0 r0 l0 t0 lines">Sum of Squares (SS)</td>
+<td class="l m b0 r0 l0 t0 lines">Degrees of Freedom (df)</td>
+<td class="l m b0 r0 l0 t0 lines">Mean Square (MS)</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Between Groups</td>
+<td class="l m b0 r0 l0 t0 lines">6879.69</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">2293.23</td>
+<td class="l m b0 r0 l0 t0 lines">134.74</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Within Groups</td>
+<td class="l m b0 r0 l0 t0 lines">204.25</td>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">17.02</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Total</td>
+<td class="l m b0 r0 l0 t0 lines">7083.94</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 9.4.27.3: ANOVA Table"><a href="#ex-anova-parrots-5" title="Copy heading and permalink for Solution 9.4.27.3: ANOVA Table" aria-label="Copy heading and permalink for Solution 9.4.27.3: ANOVA Table">🔗</a></div>
+</div></details>
+<details id="ex-anova-parrots-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Test on TI-84</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-parrots-6-2">Enter each parrot species in a separate list. You can compute the summary statistics for each parrot species using CALC 1-Var Stats.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ParrotAnovaData"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAparrot1.png" class="contained" alt="On TI84 select H for ANOVA and identify location of data as L1,L2,L3,L4."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Parrot Data<div class="autopermalink" data-description="Figure 9.4.29"><a href="#ParrotAnovaData" title="Copy heading and permalink for Figure 9.4.29" aria-label="Copy heading and permalink for Figure 9.4.29">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-parrots-6-4">Press the [STAT] button and arrow twice to the right to the TESTS menu and select option <dfn class="terminology">H: ANOVA(</dfn> and [ENTER] button and then identify the four lists for the data. Press the [2nd] button [1] for L1 then [,] button  and [2nd] button [2] for L2 then [,] button  and [2nd] button [3] for L3 and [,] and [2nd] button [4] for L then [ )] button, then press [ENTER] to compute the test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="AnovaParrotTest"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/ANOVAparrot2.png" class="contained" alt="F-test is 134.73 and p-value=0"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.4.30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>ANOVA Parrot Results<div class="autopermalink" data-description="Figure 9.4.30"><a href="#AnovaParrotTest" title="Copy heading and permalink for Figure 9.4.30" aria-label="Copy heading and permalink for Figure 9.4.30">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ex-anova-parrots-6-6">The display lets you know you performed the one-way ANOVA. The test statistic is <span class="process-math">\(F=134.73\)</span> and value of <span class="process-math">\(p=0 \text{.}\)</span> The dfN=3 and dfD=12.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.27.4: Test on TI-84"><a href="#ex-anova-parrots-6" title="Copy heading and permalink for Solution 9.4.27.4: Test on TI-84" aria-label="Copy heading and permalink for Solution 9.4.27.4: Test on TI-84">🔗</a></div>
+</div></details>
+<details id="ex-anova-parrots-7" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-anova-parrots-7-2">The test statistic is <span class="process-math">\(F=\frac{MSB}{MSW}=\frac{2293.23}{17.02}\approx 134.74\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-7-3">At <span class="process-math">\(\alpha=0.05\text{,}\)</span> with <span class="process-math">\(dfN=3\)</span> and <span class="process-math">\(dfD=12\text{,}\)</span> the critical value is about <span class="process-math">\(3.49\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-7-4">Since <span class="process-math">\(F=134.74 \gt 3.49\)</span> and the p-value <span class="process-math">\(\approx 0\text{,}\)</span> reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-7-5">Conclusion: There is strong evidence that the mean number of mimicked words differs among these four parrot species.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-7-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-anova-parrots-7-6">We can see from the data that the Grey Parrots can mimic more words than the other species.<div class="autopermalink" data-description="Paragraph"><a href="#ex-anova-parrots-7-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.27.5: Conclusion"><a href="#ex-anova-parrots-7" title="Copy heading and permalink for Solution 9.4.27.5: Conclusion" aria-label="Copy heading and permalink for Solution 9.4.27.5: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 9.4.27: Parrots Mimicked Words"><a href="#ex-anova-parrots" title="Copy heading and permalink for Checkpoint 9.4.27: Parrots Mimicked Words" aria-label="Copy heading and permalink for Checkpoint 9.4.27: Parrots Mimicked Words">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Subsection 9.4.3: ANOVA Practice Problems"><a href="#subsec-ANOVAPractice" title="Copy heading and permalink for Subsection 9.4.3: ANOVA Practice Problems" aria-label="Copy heading and permalink for Subsection 9.4.3: ANOVA Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.4: One-Way Analysis of Variance"><a href="#sec-ANOVA" title="Copy heading and permalink for Section 9.4: One-Way Analysis of Variance" aria-label="Copy heading and permalink for Section 9.4: One-Way Analysis of Variance">🔗</a></div>
 </section>
