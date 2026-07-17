@@ -221,7 +221,43 @@
 
 <subsection xml:id="subsec-BootstrapPractice">
   <title>Practice Problems</title>
-  <p> samples </p> 
+
+<exercise xml:id="ex-bootstrap-mean-seedlings">
+<title>Seedlings</title>
+  <statement>
+    <p>
+      A biologist records the heights, in centimeters, of <m>5</m> seedlings:
+      <m>12</m>, <m>15</m>, <m>14</m>, <m>13</m>, and <m>16</m>.
+    </p>
+    <p>
+      To study the variability of the sample mean, the biologist takes a
+      bootstrap sample by sampling 5 values with replacement from the
+      original data.
+    </p>
+    <p> To simulate this, the biologist records the seedlings heights on five cards and shuffles them. The biologist selects a card at random, records the height, and returns it to the stack. Then repeats the process until five values are recorded. Suppose bootstrap sample is: 15, 12, 16, 15, 13. 
+    </p>
+    <p>
+      Find the mean of this bootstrap sample.
+          <m> \bar{x}=\frac{71}{5}=14.2    </m>
+    </p>
+    <p>
+      The mean of 14.2 is plotted on a doplot and the process is repeated many times. Create a bootstrap distribution in StatKey using the original five values to create a confidence interval for a single mean. Click on Edit data and change the values to 12, 15, 14, 13, 16. Generate 1000 samples and find the mean and standard error of the distribution. Find the 90% confidence interval for the mean height of the seedlings.
+    </p>
+    </statement>
+    <solution>
+    <p> The bootstrap distribution is center at the mean 14.0 with a standard error around 0.62. The 90% confidence interval is between 13 and 15 cm. Recall each dot represents a mean from 5 seedlings, with replacement. There are 1000 samples in the distribution.</p>
+    <figure xml:id="SeedlingBootstrap">
+            <caption>Seedling Bootstrap Distributions</caption>
+            <image source="SeedlingBoot.png" width="80%">
+                <shortdescription>distribution of 1000 samples of size 5 centered at mean 14 and standard error of 0.625. the distribution is bell shaped with values ranging from 12 to 16..</shortdescription>
+            </image>
+        </figure> 
+
+    </solution>
+</exercise>
+
+ 
+
   </subsection>
 
 

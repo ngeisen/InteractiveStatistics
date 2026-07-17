@@ -468,6 +468,528 @@ How many phones were returned to the correct student? </p>
   </subsection>
 
 
+<subsection xml:id="subsec-ProbDistPractice">
+  <title>Practice Problems</title>
+
+<exercise xml:id="ex-probability-distribution-patients">
+    <title>Patient Arrival </title>
+  <statement>
+    <p>
+      A hospital administrator records the number of patients arriving at a
+      small clinic during a 10-minute period. Let <m>X</m> represent the number
+      of patient arrivals. The probability distribution for <m>X</m> is shown
+      below.
+    </p>
+    <table>
+      <title>Probability Distribution for Patient Arrivals</title>
+      <tabular>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>P(x)</m></cell>
+        </row>
+        <row><cell>0</cell><cell>0.10</cell></row>
+        <row><cell>1</cell><cell>0.20</cell></row>
+        <row><cell>2</cell><cell>0.30</cell></row>
+        <row><cell>3</cell><cell>0.25</cell></row>
+        <row><cell>4</cell><cell>0.15</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Find the mean and standard deviation of the probability distribution.
+    </p>
+  </statement>
+  <solution><title>Mean</title>
+    <p>
+      First, verify that this is a probability distribution:
+    </p>
+    <p>
+      <m>
+        0.10+0.20+0.30+0.25+0.15=1.00
+      </m>
+    </p>
+    <p>
+      Since the probabilities add to 1, this is a valid probability  distribution.
+    </p>
+    <p>
+      Find the mean using
+      <m>
+        \mu=\sum xP(x).
+      </m>
+    </p>
+    <p>
+      <m>
+        \mu=(0)(0.10)+(1)(0.20)+(2)(0.30)+(3)(0.25)+(4)(0.15)
+      </m>
+    </p>
+    <p>
+      <m>
+        \mu=0+0.20+0.60+0.75+0.60=2.15
+      </m>
+    </p>
+    <p>
+      So, the mean is <m>\mu=2.15</m> patients.
+    </p>
+</solution>
+<solution><title> standard deviation</title> 
+    <p>
+Find the standard deviation using
+      <m>
+        \sigma=\sqrt{\sum (x-\mu)^2P(x)}.
+      </m>
+    </p>
+    <p>
+      Compute each part:
+    </p>
+    <p>
+      <m>
+        (0-2.15)^2(0.10)=4.6225(0.10)=0.46225
+      </m>
+    </p>
+    <p>
+      <m>
+        (1-2.15)^2(0.20)=1.3225(0.20)=0.26450
+      </m>
+    </p>
+    <p>
+      <m>
+        (2-2.15)^2(0.30)=0.0225(0.30)=0.00675
+      </m>
+    </p>
+    <p>
+      <m>
+        (3-2.15)^2(0.25)=0.7225(0.25)=0.180625
+      </m>
+    </p>
+    <p>
+      <m>
+        (4-2.15)^2(0.15)=3.4225(0.15)=0.513375
+      </m>
+    </p>
+    <p>
+      Add these values for the variance:
+      <md>
+        \sigma ^2 = 0.46225+0.26450+0.00675+0.180625+0.513375=1.4275
+      </md>
+    </p>
+    <p>
+      Therefore,
+      <m>
+        \sigma=\sqrt{1.4275}\approx 1.19
+      </m>
+    </p>
+    <p>
+      So, the standard deviation is approximately <m>1.19</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-probability-distribution-germinate">
+<title>Germination</title>
+  <statement>
+    <p>
+      A biologist studies the number of seeds that germinate out of a small test
+      group in a controlled experiment. Let <m>X</m> represent the number of
+      seeds that germinate in one tray. The probability distribution for
+      <m>X</m> is shown below.
+    </p>
+    <table>
+      <title>Probability Distribution for Number of Germinated Seeds</title>
+      <tabular>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>P(x)</m></cell>
+        </row>
+        <row><cell>0</cell><cell>0.08</cell></row>
+        <row><cell>1</cell><cell>0.17</cell></row>
+        <row><cell>2</cell><cell>0.30</cell></row>
+        <row><cell>3</cell><cell>0.27</cell></row>
+        <row><cell>4</cell><cell>0.18</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Find the mean, variance, and standard deviation of the probability distribution.
+    </p>
+  </statement>
+  <solution><title>Mean</title>
+    <p>
+      First, verify that this is a probability distribution:
+    </p>
+    <p>
+      <m>
+        0.08+0.17+0.30+0.27+0.18=1.00
+      </m>
+    </p>
+    <p>
+      Since the probabilities add to 1, this is a valid probability distribution.
+    </p>
+    <p>
+      Find the mean using  <m>  \mu=\sum xP(x).   </m>
+    </p>
+    <p>
+      <m>
+        \mu=(0)(0.08)+(1)(0.17)+(2)(0.30)+(3)(0.27)+(4)(0.18)
+      </m>
+    </p>
+    <p>
+      <m>
+        \mu=0+0.17+0.60+0.81+0.72=2.30
+      </m>
+    </p>
+    <p>
+      The mean is <m>\mu=2.30</m> plants germinate.
+    </p>
+</solution>
+<solution><title> standard deviation</title>
+    <p>
+      Find the standard deviation using
+      <m>   \sigma=\sqrt{\sum (x-\mu)^2P(x)} </m> or technology.
+    </p>
+    <p>
+      Compute each part:
+    </p>
+    <p>
+      <m>
+        (0-2.30)^2(0.08)=5.29(0.08)=0.4232
+      </m>
+    </p>
+    <p>
+      <m>
+        (1-2.30)^2(0.17)=1.69(0.17)=0.2873
+      </m>
+    </p>
+    <p>
+      <m>
+        (2-2.30)^2(0.30)=0.09(0.30)=0.0270
+      </m>
+    </p>
+    <p>
+      <m>
+        (3-2.30)^2(0.27)=0.49(0.27)=0.1323
+      </m>
+    </p>
+    <p>
+      <m>
+        (4-2.30)^2(0.18)=2.89(0.18)=0.5202
+      </m>
+    </p>
+    <p>
+      Add these values for the variance:
+      <md>
+        \sigma ^2 = 0.4232+0.2873+0.0270+0.1323+0.5202=1.3900
+      </md>
+    </p>
+    <p>
+      Therefore, the standard deviation is 
+      <m>
+        \sigma=\sqrt{1.3900}\approx 1.18
+      </m>
+    </p>
+    <p>
+      The standard deviation is approximately <m>1.18</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-probability-distribution-microbiology">
+<title> Bacterial Colonies</title> 
+  <statement>
+    <p>
+      A microbiologist studies the number of bacterial colonies that appear on a
+      small culture plate after incubation. Let <m>X</m> represent the number of
+      visible colonies on one plate. The probability distribution for <m>X</m>
+      is shown below.
+    </p>
+    <table>
+      <title>Probability Distribution for Number of Bacterial Colonies</title>
+      <tabular>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>P(x)</m></cell>
+        </row>
+        <row><cell>0</cell><cell>0.12</cell></row>
+        <row><cell>1</cell><cell>0.18</cell></row>
+        <row><cell>2</cell><cell>0.26</cell></row>
+        <row><cell>3</cell><cell>0.24</cell></row>
+        <row><cell>4</cell><cell>0.20</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Find the mean, variance, and standard deviation of the probability distribution.
+    </p>
+  </statement>
+  <solution><title>Mean</title>
+    <p>
+      First, verify that this is a probability distribution:
+    </p>
+    <p>
+      <m>
+        0.12+0.18+0.26+0.24+0.20=1.00
+      </m>
+    </p>
+    <p>
+      Since the probabilities add to <m>1</m>, this is a valid probability
+      distribution.
+    </p>
+    <p>
+      Find the mean using <m> \mu=\sum xP(x).    </m>
+    </p>
+    <p>
+      <m>
+        \mu=(0)(0.12)+(1)(0.18)+(2)(0.26)+(3)(0.24)+(4)(0.20)
+      </m>
+    </p>
+    <p>
+      <m>
+        \mu=0+0.18+0.52+0.72+0.80=2.22
+      </m>
+    </p>
+    <p>
+      So, the mean is <m>\mu=2.22</m> bacterial colonies.
+    </p>
+</solution>
+<solution><title> Variance</title>
+    <p>
+      Find the variance using
+      <m>
+        \sigma^2 = \sum (x-\mu)^2P(x).
+      </m>
+    </p>
+    <p>
+      Compute each part:
+    </p>
+    <p>
+      <m>
+        (0-2.22)^2(0.12)=4.9284(0.12)=0.5914
+      </m>
+    </p>
+    <p>
+      <m>
+        (1-2.22)^2(0.18)=1.4884(0.18)=0.2679
+      </m>
+    </p>
+    <p>
+      <m>
+        (2-2.22)^2(0.26)=0.0484(0.26)=0.0126
+      </m>
+    </p>
+    <p>
+      <m>
+        (3-2.22)^2(0.24)=0.6084(0.24)=0.1460
+      </m>
+    </p>
+    <p>
+      <m>
+        (4-2.22)^2(0.20)=3.1684(0.20)=0.6337
+      </m>
+    </p>
+    <p>
+      Add these values for the variance:
+      <md>
+        \sigma ^2 = 0.5914+0.2679+0.0126+0.1460+0.6337=1.6516
+      </md>
+    </p>
+</solution>
+<solution><title> Standard Deviation</title>
+    <p>
+      Therefore,
+      <m>
+        \sigma=\sqrt{1.6516}\approx 1.29
+      </m>
+    </p>
+    <p>
+      The standard deviation is approximately <m>1.29</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-probability-distribution-chemistry">
+<title> Chemistry</title>
+  <statement>
+    <p>
+      A chemistry lab studies the number of drops of indicator needed to cause a
+      color change in a small titration test. Let <m>X</m> represent the number
+      of drops required in one trial. The probability distribution for <m>X</m>
+      is shown below.
+    </p>
+    <table>
+      <title>Probability Distribution for Number of Indicator Drops</title>
+      <tabular>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>P(X=x)</m></cell>
+        </row>
+        <row><cell>1</cell><cell>0.10</cell></row>
+        <row><cell>2</cell><cell>0.20</cell></row>
+        <row><cell>3</cell><cell>0.30</cell></row>
+        <row><cell>4</cell><cell>0.25</cell></row>
+        <row><cell>5</cell><cell>0.15</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Find the mean and standard deviation of the probability distribution.
+    </p>
+  </statement>
+  <solution><title> Mean</title>
+    <p>
+      First, verify that this is a probability distribution:
+    </p>
+    <p>
+      <m>
+        0.10+0.20+0.30+0.25+0.15=1.00
+      </m>
+    </p>
+    <p>
+      Since the probabilities add to <m>1</m>, this is a valid probability
+      distribution.
+    </p>
+    <p>
+      Step 1: Find the mean using  <m>   \mu=\sum xP(x).   </m>
+    </p>
+    <p>
+      <m>
+        \mu=(1)(0.10)+(2)(0.20)+(3)(0.30)+(4)(0.25)+(5)(0.15)
+      </m>
+    </p>
+    <p>
+      <m>
+        \mu=0.10+0.40+0.90+1.00+0.75=3.15
+      </m>
+    </p>
+    <p>
+      So, the mean is <m>\mu=3.15</m> drops of the indicator.
+    </p>
+</solution>
+<solution><title> Standard Deviation</title>
+    <p>
+      Step 2: Find the standard deviation using
+      <m>
+        \sigma=\sqrt{\sum (x-\mu)^2P(x)}.
+      </m>
+    </p>
+    <p>
+      Compute each part:
+    </p>
+    <p>
+      <m>
+        (1-3.15)^2(0.10)=4.6225(0.10)=0.46225
+      </m>
+    </p>
+    <p>
+      <m>
+        (2-3.15)^2(0.20)=1.3225(0.20)=0.26450
+      </m>
+    </p>
+    <p>
+      <m>
+        (3-3.15)^2(0.30)=0.0225(0.30)=0.00675
+      </m>
+    </p>
+    <p>
+      <m>
+        (4-3.15)^2(0.25)=0.7225(0.25)=0.180625
+      </m>
+    </p>
+    <p>
+      <m>
+        (5-3.15)^2(0.15)=3.4225(0.15)=0.513375
+      </m>
+    </p>
+    <p>
+      Add these values for the variance:
+      <md>
+       \sigma^2 =  0.46225+0.26450+0.00675+0.180625+0.513375=1.4275
+      </md>
+    </p>
+    <p>
+      Therefore,
+      <m>
+        \sigma=\sqrt{1.4275}\approx 1.19
+      </m>
+    </p>
+    <p>
+      The standard deviation is approximately <m>1.19</m> drops.
+    </p>
+  </solution> 
+</exercise>
+
+<exercise xml:id="ex-expected-value-event">
+<title> Vaccination Event</title> 
+  <statement>
+    <p> A health clinic is planning a vaccination event. Let <m>X</m> represent
+      the number of people who arrive during a one-hour time block. The
+      probability distribution is shown below.
+    </p>
+    <table>
+      <title>Probability Distribution for Event Attendance</title>
+      <tabular>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>P(x)</m></cell>
+        </row>
+        <row><cell>10</cell><cell>0.15</cell></row>
+        <row><cell>20</cell><cell>0.25</cell></row>
+        <row><cell>30</cell><cell>0.35</cell></row>
+        <row><cell>40</cell><cell>0.25</cell></row>
+      </tabular>
+    </table>
+    <p>  Find the expected value of <m>X</m> so the clinic can ensure enough staffing.
+    </p>
+  </statement>
+<response/>
+
+  <solution>
+    <p>   The expected value of a discrete random variable is found using</p>
+<p> <m>  E(X)=\sum xP(x).    </m>    </p>
+    <p>  <m>
+        E(X)=(10)(0.15)+(20)(0.25)+(30)(0.35)+(40)(0.25)=27
+      </m>     </p>
+    <p> The expected value is <m>27</m> people.     </p>
+    <p>  Interpretation: On average, the clinic can expect about 27 people during a one-hour time block during the vaccination event.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-expected-value-fish">
+<title> Fish</title>
+  <statement>
+    <p>
+      A biologist is studying the number of fish caught in a sampling net during
+      a short observation period. Let <m>X</m> represent the number of fish
+      caught in one trial. The probability distribution is shown below.
+    </p>
+    <table>
+      <title>Probability Distribution for Number of Fish Caught</title>
+      <tabular>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>P(x)</m></cell>
+        </row>
+        <row><cell>0</cell><cell>0.10</cell></row>
+        <row><cell>1</cell><cell>0.20</cell></row>
+        <row><cell>2</cell><cell>0.35</cell></row>
+        <row><cell>3</cell><cell>0.25</cell></row>
+        <row><cell>4</cell><cell>0.10</cell></row>
+      </tabular>
+    </table>
+    <p>
+      Find the expected value of <m>X</m>.
+    </p>
+  </statement>
+<response/>
+
+  <solution>
+    <p> The expected value of a discrete random variable is found using</p>
+      <p> <m> E(X)=\sum xP(x).  </m>  </p>
+        <p> <m> E(X)=(0)(0.10)+(1)(0.20)+(2)(0.35)+(3)(0.25)+(4)(0.10) =2.05  </m> </p>
+    <p> The expected value is <m>2.05</m> fish.  </p>
+    <p>  Interpretation: On average, the biologist can expect to catch about
+      <m>2.05</m> fish per trial.
+    </p>
+  </solution>
+</exercise>
+
+
+  </subsection>
 
 
 

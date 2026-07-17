@@ -24,8 +24,8 @@
   <title>Independent Events</title>
 <p> Previously we found probabilities for compound events when one event was chosen. Now we will expand these concepts for when multiple events take place. We can still use a tree diagram to find all possible outcomes, but using some of the probability rules will simplify the process. </p>
 <p> Two events A and B are <term>independent events </term> if the fact that A occurs does not affect the probability of B occurring. When flipping two coins, what happens on the first coin toss does not impact what happens on the second coin toss. Same with rolling multiple dice. Each dice roll is independent of the others. </p> 
-<p> When two events are independent, the probability of both occurring is <me> P(\text{A and B}) = P(A) \times P(B) </me> </p> 
-<p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is  <me> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </me> </p> 
+<p> When two events are independent, the probability of both occurring is <md> P(\text{A and B}) = P(A) \times P(B) </md> </p> 
+<p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is  <m> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </m> </p> 
 <p> If we used a tree diagram, we would list the four outcomes for the die and add two branches to each die value to represent heads or tails. Since each outcome is equally likely on the dice and the coin, the probability for each event is 1/8. </p>
 
 <p> <term>Practice Problems</term> </p> 
@@ -101,7 +101,7 @@
   <title>Dependent Events</title>
 <p> Not all probabilistic events are independent. Sometimes the subsequent events depend on what has happened previously. If you think of a bag full of colored marbles. If you pull a marble out and do not replace it, the probability of drawing the same color on the next draw depends on what was removed. The probability of every event has now changed based on what has already happened. </p> 
 <p> A <term> dependent event </term> is when the outcome of the second event is dependent upon the outcome of the first event.  The probability of what will occur on the second event is based off what occurs on the first event. </p> 
-<p> When two events are dependent, the probability of both occurring is  <me> P(\text{A and B}) = P(A) \times P(B|A) </me> </p>
+<p> When two events are dependent, the probability of both occurring is  <m> P(\text{A and B}) = P(A) \times P(B|A) </m> </p>
 <p> The formula reads as the product of the probability of event A times the probability of B occurring, given that A has already happened. This makes better sense with an example. </p> 
 <p> Three cards are drawn from a deck of 52 cards and <term> not replaced. </term> Find each probability of each event. </p> 
 <p> Example: Getting three Aces in a row. </p>
@@ -151,14 +151,59 @@
 
 <p> <term>Conditional probability </term>  of an event B in relationship to an event A is defined as the probability that event B occurs after event A has already occurred. It's the quotient of the events.  P(B|A) = P(A and B) ÷ P(A) </p> 
 <p> The probability that Sam parks in a no-parking zone and gets a parking ticket is 6%, The probability that Sam cannot find a legal parking space thus parks in the no-parking zone is 20%. What's the probability Sam will get a ticket given that he parks in a no-parking zone? </p> 
-<p> Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is <me> P(\text{ticket|no-park zone})=\frac{P(T and No)}{P(no)}=\frac{0.06}{0.20}=0.30</me> </p> 
+<p> Solution: P(ticket and No-parking zone) = 0.06 and the P(no parking zone) = 0.20, therefore the probability that Sam gets a ticket given he parks in a no-parking zone is <md> P(\text{ticket|no-park zone})=\frac{P(T and No)}{P(no)}=\frac{0.06}{0.20}=0.30</md> </p> 
 
-<exercise>
+<exercise> <title>Balls </title>
   <statement>
   <p> A box contains some white tennis balls and some yellow tennis balls. A person selects two tennis balls without replacement to practice serves. If the probability of selecting a white tennis ball and a yellow ball is 30% and the probability if selecting a white tennis all on the first draw is 40,  find the probability of selecting a yellow tennis ball  on the second draw given that the first ball was yellow. </p>
   </statement>
 <solution> <p> This is conditional probability. We are told that P(white and yellow) = .30 and P(white)=0.40. We need to find P(yellow|white) = P(white and yellow) divide by P(white) = 0.30/0.40 = 0.75 or 75%. </p> 
 </solution>
+</exercise>
+
+<exercise xml:id="ex-conditional-courses">
+<title>Courses</title>
+  <statement>
+    <p>
+      In a class of <m>40</m> students, <m>16</m> are enrolled in biology, and
+      <m>10</m> are enrolled in both biology and chemistry.
+    </p>
+    <p>
+      Let event <m>B</m> be that a randomly selected student is enrolled in
+      biology.
+    </p>
+    <p>
+      Let event <m>C</m> be that a randomly selected student is enrolled in
+      chemistry.
+    </p>
+    <p>
+      Find the conditional probability that a student is enrolled in chemistry
+      given that the student is enrolled in biology.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Use the conditional probability formula:</p>
+     <p> P(C and B) <m>=\frac{P(C and B)}{P(B)}.  </m>
+    </p>
+    <p> From the problem:  <m>  P(C and B)=\frac{10}{40}  </m>
+      And  <m> P(B)=\frac{16}{40}.   </m>
+    </p>
+    <p>
+      Substitute into the formula:
+      <m>
+        P(C\mid B)=\frac{10/40}{16/40}=\frac{10}{16}=\frac{5}{8} =0.625.
+      </m>
+    </p>
+    <p>
+      Therefore, the conditional probability is <m>\frac{5}{8}</m> or 62.5%.
+    </p>
+    <p>
+      Interpretation: Given that a student is enrolled in biology, the
+      probability that the student is also enrolled in chemistry is
+      <m>\frac{5}{8}</m> or 62.5%.
+    </p>
+  </solution>
 </exercise>
 
 
@@ -217,7 +262,7 @@
 <p>However, you were picking random numbers for the lottery, it does not matter which number you pick first or last.  As long as you have the same correct numbers that the lottery people pick, you win.  In this case the order does not matter.  </p>
 <p> A <term> permutation </term> is an arrangement of items with a specific order.  You use permutations to count items when the order matters, such as passwords or phone numbers.  When the order does not matter you use a <term>combination </term> since the order arrangement of items is not important.  When you do a counting problem, the first thing you should ask yourself is “does order matter?” </p> 
 <p> <term>Permutation Formula</term></p>
-<p>Picking <m>r</m> object from <m>n</m> total object when order matters: <me> nPr=\frac{n!}{(n-r)!}</me> </p> 
+<p>Picking <m>r</m> object from <m>n</m> total object when order matters: <md> nPr=\frac{n!}{(n-r)!}</md> </p> 
 
 
 
@@ -243,7 +288,7 @@
 
 
 <p> <term>Combination Formula</term></p>
-<p>Picking <m>r</m> object from <m>n</m> total object when order does not matters: <me> nCr=\frac{n!}{r!(n-r)!}</me> </p> 
+<p>Picking <m>r</m> object from <m>n</m> total object when order does not matters: <md> nCr=\frac{n!}{r!(n-r)!}</md> </p> 
 <p> <em> Example: </em> In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is <m>n=30</m> and we are selecting <m> r=5</m>. Therefore, nCr = 30C5 </p>
 <p> Thus <m> _n C_r =30 C_5 =\frac{30!}{5!(30-5)!} = 142,506 </m> combinations for a group of 5 people. </p>
 <p> To enter this in the calculator: </p> 
@@ -268,7 +313,7 @@
   <p>  In a biology club with 15 members, how many ways can a slate of 3 officers consisting of a president, vice-president and secretary/treasurer be chosen? </p>
   </statement>
 <solution> <p>  This is a permutation since the order matters when choosing officers. 
-15P3 = 2730 ways to shoe officers </p> 
+15P3 = 2730 ways to choose officers </p> 
  </solution> 
 </exercise>
 
@@ -295,6 +340,505 @@
 
  </subsection>
 
+<subsection xml:id="subsec-ConditionalPractice">
+  <title> Practice Problems</title>
+
+<exercise xml:id="ex-independent-tubes">
+<title>Tubes</title> 
+  <statement>
+    <p>
+      A laboratory technician selects one test tube from a rack containing
+      <m>5</m> sterile tubes and <m>3</m> contaminated tubes. At the same time,
+      a second technician flips a coin to decide whether to repeat the test.
+    </p>
+    <p>
+      Let event <m>A</m> be selecting a sterile test tube.
+    </p>
+    <p>
+      Let event <m>B</m> be getting heads on the coin flip.
+    </p>
+    <p>
+      Find the probability that both events occur.
+    </p>
+  </statement>
+  
+  <solution>
+    <p>
+      Since selecting a test tube does not affect the outcome of the coin flip,
+      the events are independent.
+    </p>
+    <p> For event <m>A</m>, the probability of selecting a sterile tube is</p>
+      <p><m>P(A)=\frac{5}{8} = 0.625. </m>    </p>
+    <p>  For event <m>B</m>, the probability of getting heads is
+      <m> P(B)=\frac{1}{2} = 0.5.   </m> </p>
+    <p>
+      For independent events, the probability that both occur is
+      <m> P(A\text{ and }B)=P(A)P(B).   </m>
+    </p>
+    <p> Substitute the values:
+      <m>   P(A\text{ and }B)=\frac{5}{8}\cdot\frac{1}{2}=\frac{5}{16}=0.3125.
+      </m>
+    </p>
+    <p>
+      Therefore, the probability that both events occur is 31.25%    
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-independent-flowering">
+<title>Flowering</title>
+  <statement>
+    <p>
+      A biologist performs two unrelated actions during a field study. First,
+      one plant is selected from a group of <m>10</m> plants, of which <m>6</m>
+      are flowering. Second, a number cube with six sides is rolled to determine the sampling
+      location.
+    </p>
+    <p>
+      Let event <m>A</m> be selecting a flowering plant.
+    </p>
+    <p>
+      Let event <m>B</m> be rolling a number greater than <m>4</m>.
+    </p>
+    <p>
+      Find the probability that both events occur.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      These two events are independent because selecting a plant does not affect
+      the outcome of the number cube roll.
+    </p>
+    <p>The probability of selecting a flowering plant is </p>
+      <p><m> P(A)=\frac{6}{10}=\frac{3}{5}=0.6.   </m>  </p>
+    <p> The probability of rolling a number greater than <m>4</m> is</p>
+    <p>  <m> P(B)=\frac{2}{6}=\frac{1}{3} \approx 0.333  </m>  </p>
+    <p>
+      For independent events,  <m>   P(A\text{ and }B)=P(A)P(B).   </m>
+    </p>
+    <p>
+      Substitute:
+      <md>
+        P(A\text{ and }B)=\frac{3}{5}\cdot\frac{1}{3}=\frac{3}{15}=\frac{1}{5} = 0.20.
+      </md>
+    </p>
+    <p>
+      Therefore, the probability that both events occur is 20%.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-dependent-bacteria">
+<title> Bacteria </title> 
+  <statement>
+    <p>
+      A microbiologist selects two bacterial samples from a tray containing
+      <m>7</m> resistant samples and <m>5</m> non-resistant samples. The samples
+      are selected one after the other without replacement.
+    </p>
+    <p>
+      Let event <m>A</m> be selecting a resistant sample on the first draw.
+    </p>
+    <p>
+      Let event <m>B</m> be selecting a resistant sample on the second draw.
+    </p>
+    <p>
+      Find the probability that both events occur.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      These are dependent events because the first selection changes the total
+      number of samples available for the second selection.
+    </p>
+    <p>
+      The probability of selecting a resistant sample on the first draw is
+      <m>
+        P(A)=\frac{7}{12}.
+      </m>
+    </p>
+    <p>
+      Given that the first sample was resistant, there are now <m>6</m>
+      resistant samples left out of <m>11</m> total samples.
+    </p>
+    <p>
+      So, the conditional probability of selecting a resistant sample on the
+      second draw is
+      <m>
+        P(B\mid A)=\frac{6}{11}.
+      </m>
+    </p>
+    <p>
+      For dependent events,
+      <m>
+        P(A\text{ and }B)=\frac{7}{12}\cdot\frac{6}{11}=\frac{42}{132}=\frac{7}{22} \approx. 0.318.
+      </m>
+    </p>
+    <p>
+      Therefore, the probability that both events occur is    <m>\frac{7}{22}</m> or 31.8%.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-dependent-acids">
+<title>Acids</title>
+  <statement>
+    <p>
+      A chemistry instructor places <m>9</m> test tubes in a tray. Of these,
+      <m>4</m> contain an acid solution and <m>5</m> contain a base solution.
+      Two test tubes are selected one after the other without replacement.
+    </p>
+    <p>
+      Let event <m>A</m> be selecting an acid solution on the first draw.
+    </p>
+    <p>
+      Let event <m>B</m> be selecting an acid solution on the second draw.
+    </p>
+    <p>
+      Find the probability that both events occur.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      These are dependent events because the first selection changes the number
+      of remaining test tubes.
+    </p>
+    <p>
+      The probability of selecting an acid solution on the first draw is
+      <m>
+        P(A)=\frac{4}{9}.
+      </m>
+    </p>
+    <p>
+      If the first draw is an acid solution, then <m>3</m> acid tubes remain out
+      of <m>8</m> total tubes.
+    </p>
+    <p>
+      So the conditional probability of selecting an acid solution on the second
+      draw is
+      <m>
+        P(B\mid A)=\frac{3}{8}.
+      </m>
+    </p>
+    <p>
+      For dependent events,
+      <m>
+        P(A\text{ and }B)=\frac{4}{9}\cdot\frac{3}{8}=\frac{12}{72}=\frac{1}{6}.
+      </m>
+    </p>
+    <p>
+      Therefore, the probability that both events occur is <m>\frac{1}{6}</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-dependent-nursing">
+<title>Patient Cards</title>
+  <statement>
+    <p>
+      A nursing instructor has a stack of <m>10</m> patient case cards. Of these,
+      <m>6</m> involve adult patients and <m>4</m> involve pediatric patients.
+      Two cards are selected one after the other without replacement.
+    </p>
+    <p>
+      Let event <m>A</m> be selecting an adult patient case on the first draw.
+    </p>
+    <p>
+      Let event <m>B</m> be selecting an adult patient case on the second draw.
+    </p>
+    <p>
+      Find the probability that both events occur.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      These are dependent events because the first selection changes the number
+      of cards remaining.
+    </p>
+    <p>
+      The probability of selecting an adult patient case on the first draw is
+      <m>
+        P(A)=\frac{6}{10}=\frac{3}{5}.
+      </m>
+    </p>
+    <p>
+      If the first selected card is an adult patient case, then <m>5</m> adult
+      cases remain out of <m>9</m> cards.
+    </p>
+    <p>
+      So, the conditional probability of selecting an adult patient case on the
+      second draw is
+      <m>
+        P(B\mid A)=\frac{5}{9}.
+      </m>
+    </p>
+    <p>  For dependent events,
+            <m>
+        P(A\text{ and }B)=\frac{3}{5}\cdot\frac{5}{9}=\frac{15}{45}=\frac{1}{3}.
+      </m>
+    </p>
+    <p>
+      Therefore, the probability that both events occur is <m>\frac{1}{3}</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-conditional-diabetes">
+<title>Diabetes</title>
+  <statement>
+    <p>
+      In a clinic, <m>50</m> patients are waiting to be seen. Of these,
+      <m>18</m> have diabetes, and <m>12</m> have both diabetes and high blood
+      pressure.
+    </p>
+    <p>
+      Let event <m>D</m> be that a randomly selected patient has diabetes.
+    </p>
+    <p>
+      Let event <m>H</m> be that a randomly selected patient has high blood
+      pressure.
+    </p>
+    <p>
+      Find the conditional probability that a patient has high blood pressure
+      given that the patient has diabetes.
+    </p>
+  </statement>
+  <solution>
+    <p>  Use the conditional probability formula:</p>
+     <p> <m>  P(H\mid D)=\frac{P(H\cap D)}{P(D)}  </m>  </p>
+    <p>  From the problem:
+    </p>
+    <p> <m>  P(H\cap D)=\frac{12}{50}  </m>
+      and
+      <m> P(D)=\frac{18}{50}. </m>
+    </p>
+    <p>
+      Substitute into the formula:
+      <m>
+        P(H\mid D)=\frac{12/50}{18/50}=\frac{12}{18}=\frac{2}{3}.
+      </m>
+    </p>
+    <p>
+      Therefore, the conditional probability is  <m>\frac{2}{3} \approx 0.667</m>.
+    </p>
+    <p>
+      Interpretation: Given that a patient has diabetes, the probability that
+      the patient also has high blood pressure is <m>\frac{2}{3}</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-conditional-biology">
+<title>Greenhouse</title>
+  <statement>
+    <p>
+      A biologist studies a group of <m>80</m> plants in a greenhouse. Of these,
+      <m>30</m> plants have purple flowers, and <m>18</m> plants have both
+      purple flowers and spotted leaves.
+    </p>
+    <p>
+      Let event <m>P</m> be that a randomly selected plant has purple flowers.
+    </p>
+    <p>
+      Let event <m>S</m> be that a randomly selected plant has spotted leaves.
+    </p>
+    <p>
+      Find the conditional probability that a plant has spotted leaves given
+      that it has purple flowers.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Use the conditional probability formula:
+      <m>
+        P(S\mid P)=\frac{P(S\cap P)}{P(P)}.
+      </m>
+    </p>
+    <p>
+      From the problem:
+      <m>
+        P(S\cap P)=\frac{18}{80}
+      </m>
+      and
+      <m>
+        P(P)=\frac{30}{80}.
+      </m>
+    </p>
+    <p>
+      Substitute:
+      <m>
+        P(S\mid P)=\frac{18/80}{30/80}=\frac{18}{30}=\frac{3}{5}.
+      </m>
+    </p>
+    <p>
+      Therefore, the conditional probability is <m>\frac{3}{5} \approx 0.60</m>.
+    </p>
+    <p>
+      Interpretation: Given that a plant has purple flowers, the probability
+      that it also has spotted leaves is <m>\frac{3}{5}</m> or 60%.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-permutation-biology">
+<title> Bird Specimens</title>
+  <statement>
+    <p>
+      A biology instructor has <m>6</m> different preserved bird specimens and wants
+      to place <m>3</m> of them in a display case in a row outside the Biology Department.
+    </p>
+    <p>
+      How many different arrangements are possible?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Since order matters in how they are arranged in the display case, this is a permutation problem.
+    </p>
+    <p> The permutation formula:
+      <m>
+        {}_nP_r=\frac{n!}{(n-r)!}
+      </m>
+    </p>
+    <p> Here, <m>n=6</m> and <m>r=3</m>.  </p>
+    <p>
+      Substitute into the formula:
+      <m>
+        {}_6P_3=\frac{6!}{(6-3)!}=\frac{6!}{3!} =120
+      </m>
+    </p>
+    <p>
+      Therefore, the number of different arrangements for the bird specimens is <m>120</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-permutation-bottles">
+<title>Bottle</title>
+  <statement>
+    <p>
+      A chemistry lab has <m>7</m> different reagent bottles, and a technician
+      wants to arrange <m>4</m> of them on a shelf for an experiment setup.
+    </p>
+    <p>
+      How many different arrangements are possible?
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      Since the order of the bottles matters, this is a permutation.
+    </p>
+    <p>
+      Use the permutation formula:
+      <m>
+        {}_nP_r=\frac{n!}{(n-r)!}
+      </m>
+    </p>
+    <p>
+      Here,
+      <m>n=7</m>
+      and
+      <m>r=4</m>.
+    </p>
+    <p>
+      Substitute into the formula:
+      <m>
+        {}_7P_4=\frac{7!}{(7-4)!}=\frac{7!}{3!} = 840
+      </m>
+    </p>
+    <p>
+      Therefore, the number of different bottle arrangements is <m>840</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-permutation-weather">
+<title>Weather Stations</title>
+  <statement>
+    <p>
+      A meteorologist has <m>6</m> different weather monitoring stations and
+      wants to choose and arrange <m>2</m> of them in order for a field
+      inspection schedule.
+    </p>
+    <p>
+      How many different arrangements are possible?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Since the order of selection matters, this is a permutation.
+    </p>
+    <p>  Use the permutation formula:
+      <m>    {}_nP_r=\frac{n!}{(n-r)!}     </m>
+    </p>
+    <p>  <m>   {}_6P_2=\frac{6!}{(6-2)!}=\frac{6!}{4!} =30  </m>  </p>
+        <p>
+      Therefore, the number of different weather monitoring stations arrangements is <m>30</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-combination-articles">
+<title>Articles</title>
+  <statement>
+    <p>
+      A health science instructor has <m>9</m> different medical articles and
+      wants to choose <m>3</m> of them for a student reading assignment.
+    </p>
+    <p>
+      How many different groups of articles can be selected?
+    </p>
+  </statement>
+  <solution>
+    <p>  Since order does not matter, this is a combination problem.
+    </p>
+    <p> Use the combination formula:
+      <m>
+        \binom{n}{r}=\frac{n!}{r!(n-r)!}
+      </m>
+    </p>
+    <p> Here, <m>n=9</m> and <m>r=3</m>.
+    </p>
+    <p>
+      Substitute into the formula:</p>
+     <p> <m>
+        \binom{9}{3}=\frac{9!}{3!(9-3)!}=\frac{9!}{3!6!} = 84
+      </m> </p>
+        <p>
+      Therefore, the number of different article groupings is <m>84</m>.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-combination-microscope">
+<title> Microscope Slides </title>
+  <statement>
+    <p>
+      A biology teacher has <m>7</m> different microscope tissue slides and wants to
+      choose <m>2</m> of them for a classroom demonstration.
+    </p>
+    <p>
+      How many different pairs of slides can be selected?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Since order does not matter, this is a combination problem.
+    </p>
+    <p> Use the combination formula:</p>
+     <p> <m>    \binom{n}{r}=\frac{n!}{r!(n-r)!}    </m>    </p>
+        <p> Substitute:
+      <m>   \binom{7}{2}=\frac{7!}{2!(7-2)!}=\frac{7!}{2!5!}   =21  </m>
+    </p>
+        <p>
+      Therefore, the number of different pairs of microscope slides for the demonstration is <m>21</m>.
+    </p>
+  </solution>
+</exercise>
+
+
+  </subsection>
 
 
 
