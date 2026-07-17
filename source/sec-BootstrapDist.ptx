@@ -81,7 +81,7 @@
 <exercise>
     <statement> 
 <p> As you generate more samples, what happens to the shape of the distribution? </p></statement>
-<solution> <p> Notice how the distribution becomes more bell shaped and symmetric with more samples. </p> </solution>
+<solution> <p> Notice how the distribution becomes more bell shaped and symmetric with more samples. The center of the distribution is approximately the same as the original sample mean. </p> </solution>
 </exercise> 
 
 <exercise> <statement>
@@ -93,6 +93,7 @@
 <p> Compare the standard deviation of the original sample to the standard error of the distribution. </p></statement> 
 <solution> <p> The standard error is smaller since there is less variation with the distribution than a single sample.  </p> </solution> 
 </exercise> 
+
 <p> Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter. </p> 
 <p> When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using <term> statistics </term> <m>  \pm 2 \bullet  SE </m>   where SE denotes the standard error of the statistic estimated from the bootstrap distribution. </p> 
 <p> Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives </p>
@@ -100,7 +101,7 @@
 <p> <md> 94.2 \pm 2 (12.797) </md></p>
 <p> <md> 94.2 \pm 25.594 </md> </p>
 <p> <md> (68.606, 119.794) </md> </p>
-<p> We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles. </p> 
+<p> We can be 95% confidence that the mean combined MPGe for all electric vehicles in 2023 is between 68.6 and 119.8 miles. </p> 
 
 <p> If we click on <c>Two Tail </c> we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles. </p> 
 <figure xml:id="BootstrapCIMPGe1">
@@ -241,7 +242,7 @@
           <m> \bar{x}=\frac{71}{5}=14.2    </m>
     </p>
     <p>
-      The mean of 14.2 is plotted on a doplot and the process is repeated many times. Create a bootstrap distribution in StatKey using the original five values to create a confidence interval for a single mean. Click on Edit data and change the values to 12, 15, 14, 13, 16. Generate 1000 samples and find the mean and standard error of the distribution. Find the 90% confidence interval for the mean height of the seedlings.
+      The mean of 14.2 is plotted on a dotplot and the process is repeated many times. Create a bootstrap distribution in StatKey using the original five values to create a confidence interval for a single mean. Click on Edit data and change the values to 12, 15, 14, 13, 16. Generate 1000 samples and find the mean and standard error of the distribution. Find the 90% confidence interval for the mean height of the seedlings.
     </p>
     </statement>
     <solution>
@@ -256,7 +257,230 @@
     </solution>
 </exercise>
 
- 
+ <exercise xml:id="ex-bootstrap-proportion-health">
+<title> Exercise</title>
+  <statement>
+    <p>
+      A health researcher surveys 8 college students to determine whether they
+      exercise at least three times per week. The original sample results are:
+    </p>
+    <p>yes, no, yes, yes, no, yes, no, yes.
+    </p>
+    <p>
+      To create a bootstrap distribution for the sample proportion, the
+      researcher takes a bootstrap sample of size 8 by sampling with
+      replacement from the original responses.
+    </p>
+<p> A. How would the health researcher simulate this? </p> 
+<p> B. Create a bootstrap distribution is StatKey for a single proportion. Edit the data for a count of 5 yes from the sample size of 8. Generate 200 samples and find the mean proportion and standard error of the distribution.</p>
+<p>C. Construct a 90% confidence interval and construct 99% confidence interval. Compare the intervals. </p>
+  </statement>
+<solution> <title> Simulate</title>
+<p> The health research could write <q>yes</q> on 5 cards and <q>no</q> on 3 cards to replicate the original sample. The research would shuffle the cards, randomly pull one card and note the  response, and then return the card to the deck. The researcher would shuffle the deck and repeat the process for a sample of 8 responses.
+</p>
+    <p>
+      Suppose one bootstrap sample is: yes, yes, no, yes, no, yes, yes, no.
+    </p>
+    <p>
+      Find the sample proportion of college students in this bootstrap sample who
+      exercise at least three times per week.
+    </p>
+      <p>
+      There are <m>5</m> yes responses out of <m>8</m> total responses.
+    </p>
+    <p>
+      So the sample proportion is
+      <m>  \hat{p}=\frac{5}{8}=0.625.  </m>
+    </p>
+    <p>
+      This value is plotted on a dotplot and the process is repeated many times until a bell shaped bootstrap distribution is created.
+    </p>
+</solution>
+<solution> <title> Bootstrap</title>
+<p> With a smaller sampling of 200, there will be more variation in the possible center values. The mean proportion should be around 0.625 and a standard error of around 0.163 to 0.175. If your values are off, try adding more samples to the distribution or you can Reset Plot and create a new one. </p>
+<figure xml:id="ExerciseBootstrap1">
+            <caption>Exercise Bootstrap Distribution</caption>
+            <image source="ExerciseBoot1.png" width="80%">
+                <shortdescription>distribution of 200 samples of size  centered at 0.623 and standard error of 0.168. the distribution is bell shaped with values ranging from 0.20 to 1.00.</shortdescription>
+            </image>
+        </figure>
+
+</solution>
+<solution> <title> Compare Intervals</title>
+<p> A possible 90% confidence interval for the proportion of students who exercise at least three times per week is around 37.5% to 87.5%. </p>
+<figure xml:id="ExerciseBootstrap2">
+            <caption>90% Exercise Bootstrap Interval</caption>
+            <image source="ExerciseBoot2.png" width="80%">
+                <shortdescription>distribution of 200 samples of size centered at 0.623 and standard error of 0.168. interval is 0.375 to 0.875.</shortdescription>
+            </image>
+        </figure>
+
+<p> A possible 99% confidence interval for the proportion of students who exercise at least three times per week is around 25.0% to 100%. </p>
+<figure xml:id="ExerciseBootstrap3">
+            <caption>99% Exercise Bootstrap Interval</caption>
+            <image source="ExerciseBoot3.png" width="80%">
+                <shortdescription>distribution of 200 samples of size  centered at 0.623 and standard error of 0.168. the interval is 0.25 to 1.00.</shortdescription>
+            </image>
+        </figure>
+
+<p> By increasing the confidence level, we are including more values in the estimate for the true proportion of student who exercise at least three times per week. We are allowing for more margin of error with the  higher confidence level, yet the standard error remains the same. </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-bootstrap-fishing">
+<title> Fish Tags</title>
+  <statement>
+    <p>
+      A marine biologist wants to estimate the proportion of fish in a small
+      coastal area that carry a certain harmless tag. The biologist collects an
+      original sample of 10 fish and records whether each fish has the tracking
+      tag. There are 4 fish with the tracking tag.
+    </p>
+    <p>
+      To investigate how much the sample proportion might vary from sample to
+      sample, the biologist uses bootstrap sampling. 
+</p>
+<p> A. How would the marine biologist simulate this? </p> 
+<p> B. Create a bootstrap distribution is StatKey for a single proportion. Edit the data for a count of 4 trackers from the sample size of 10. Generate 200 samples and find the mean proportion and standard error of the distribution.</p>
+<p>C. Construct a 95% confidence interval for the proportion of fish with the tracking tag in that coastal area. </p>
+</statement>
+<solution> <title> Simulate</title>
+<p>The biologist repeatedly draws new samples of size 10 with replacement from the
+      original sample data and then calculates the proportion of fish with a tag in the simulated sample. After many bootstrap samples are taken, the resulting proportions form a bootstrap distribution that should be symmetric and bell shaped, centered around the sample proportion of 40%.
+    </p>    
+<p>
+      This bootstrap distribution can then be used to estimate the variability of the sample proportion and to build a confidence interval for the true population proportion.
+    </p>
+</solution>
+<solution> <title> Bootstrap</title>
+<p> In StatKey under Bootstrap Confidence Intervals, select <term> CI for Single Proportion</term> . Click on Edit Data and change count to 4 trackers from the sample size of 10. Generate 200 samples and find the mean proportion and standard error of the distribution. The distribution should be centered around 0.40 and standard error of between 0.16 to 0.17. The example below has a mean proportion of 0.410 and SE=0.161 with sample proportions ranging from 0 to 0.90. </p>
+<figure xml:id="FishBootstrap1">
+            <caption>Fish Tab Bootstrap Distribution</caption>
+            <image source="FishBoot1.png" width="80%">
+                <shortdescription>distribution of 200 samples of size 10  centered at 0.41 and standard error of 0.161. the distribution is bell shaped with values ranging from 0 to 0.90.</shortdescription>
+            </image>
+        </figure>
+
+</solution>
+  <solution> <title> Intervals</title>
+<p> A possible 95% confidence interval for the proportion of fish in the costal area with the tracking tag is between 10% and 80%. A larger confidence level will make the interval wider while a smaller confidence level will make it narrower. </p>
+<figure xml:id="FishBootstrap2">
+            <caption>95% Fish Tab Bootstrap Interval</caption>
+            <image source="FishBoot2.png" width="80%">
+                <shortdescription>distribution of 200 samples of size 10  centered at 0.41 and standard error of 0.161. the interval is .10 to .80.</shortdescription>
+            </image>
+        </figure>
+
+</solution> 
+</exercise>
+
+<exercise xml:id="ex-bootstrap-sleep">
+<title> Sleep</title>
+  <statement>
+    <p>
+      A health researcher wants to estimate the average number of hours of sleep
+      per night for college students. The researcher collects an original sample
+      of 43 students and records number of hours of sleep for the previous night.
+    </p>
+  <p> We will use the ClassSurvey2 data for the variable <em> Sleep</em>. 
+  </p> 
+    <p>  A. Describe how the researcher might create a bootstrap distribution to understand how much the sample mean sleep time might vary. 
+    </p>
+  <p> B. Construct a bootstrap distribution with technology to estimate with 95% confidence the mean sleep time for college students. 
+  </p>
+  </statement>
+<solution> <title> Simulate</title> 
+    <p> The researcher repeatedly creates new samples of size 43 with replacement from the original sample data. For each bootstrap sample, the researcher calculates the mean number of hours of sleep for that sample of 43 and plots the value. After many bootstrap samples are generated, the collection of sample means forms a bootstrap distribution.
+    </p>
+    <p>
+      This bootstrap distribution can be used to estimate the variability of the sample means and to construct a confidence interval for the population mean for the number of hours of sleep for college students.
+    </p>
+</solution>
+<solution><title> Bootstrap Interval</title> 
+<p> Each dot in the bootstrap distribution is the mean from a random sample of 43 values from the original sample. This bootstrap distribution is based on 1000 samples and is center at the mean 7.118 which is close to the original sample mean of 7.121 hours of sleep. The standard error of the distribution is <m>SE=0.198</m>. The 95% confidence interval estimates the mean sleep time for college students between 6.7 to 7.5 hours. 
+</p>
+<figure xml:id="SleepBootstrap">
+            <caption>95% Sleep Bootstrap Interval</caption>
+            <image source="SleepBoot.png" width="80%">
+                <shortdescription>distribution of 1000 samples of size 43  centered at 7.1 and standard error of 0.198. The 95% interval is between 6.7 to 7.5 hours sleep.</shortdescription>
+            </image>
+        </figure>
+</solution>  
+</exercise>
+
+<exercise xml:id="ex-bootstrap-pets">
+<title>Pets</title>
+  <statement>
+    <p>
+      A future veterinarian wants to estimate the average number of pets college students have, to determine job stability. The future veterinarian collects data from a sample
+      of 43 college students and records number pets they currently have.
+    </p>
+  <p> We will use the ClassSurvey2 data for the variable <em> Pets</em>.
+  </p> 
+  <p> Construct a bootstrap distribution with technology to estimate with 90% confidence the mean number of pets for college students. 
+  </p>
+  </statement>
+<solution><title> Bootstrap Interval</title> 
+  <p> Each dot in the bootstrap distribution is the mean from a random sample of 43 values from the original sample. This bootstrap distribution is based on 1000 samples and is center at the mean 2.04 which is close to the original sample mean of 2.07. The distribution is approximately bell shaped even though the original sample was right skewed. The standard error of the distribution is <m>SE=0.493</m>. The 90% confidence interval estimates the mean number of pets for college students is between 1.3 to 2.9 pets. 
+  </p>
+  <figure xml:id="PetsBootstrap">
+            <caption>90% Pets Bootstrap Interval</caption>
+            <image source="PetsBoot.png" width="80%">
+                <shortdescription>distribution of 1000 samples of size 43  centered at 2.04 pets and standard error of 0.493. The 90% interval is between 1.3 to 2.9 pets. </shortdescription>
+            </image>
+        </figure>
+</solution>  
+</exercise> 
+
+<exercise xml:id="ex-bootstrap-credits">
+<title>Credit Hours</title>
+  <statement>
+    <p>
+      An admissions counselor wants to estimate the average number of credit hours taken by college students in the fall semester. The admissions counselor collects data from a sample of 43 college students and records number credits they are taking that semester.
+    </p>
+<p> We will use the ClassSurvey2 data for the variable <em> Credit hours</em>.
+</p> 
+    <p> Construct a bootstrap distribution with technology to estimate with 95% confidence the mean credit hours college students take. 
+</p>
+</statement>
+<solution><title> Bootstrap Interval</title> 
+<p> Each dot in the bootstrap distribution is the mean from a random sample of 43 values from the original sample. This bootstrap distribution is based on 1000 samples and is center at the mean 15.04 credits which is close to the original sample mean of 15.047. The standard error of the distribution is <m>SE=0.293</m>. The 95% confidence interval estimates the mean credit hours for college students is between 14.488 to 15.651 credits. 
+</p>
+<figure xml:id="CreditHoursBootstrap">
+            <caption>95% Credit Hours Bootstrap Interval</caption>
+            <image source="CreditBoot.png" width="80%">
+                <shortdescription>distribution of 1000 samples of size 43  centered at 15 credits and standard error of 0.293. The 95% interval is between 14.488 and 15.651 credits. </shortdescription>
+            </image>
+        </figure>
+
+</solution>  
+</exercise> 
+
+<exercise xml:id="ex-bootstrap-tattoos">
+<title>Tattoos</title>
+  <statement>
+    <p>
+      A tattoo artist wants to estimate the average number of tattoos college students have, to determine job stability. The tattoo artist collects data from a sample  of 43 college students and records number tattoos they currently have.
+    </p>
+<p> We will use the ClassSurvey2 data for the variable <em> Tattoos</em>.
+</p> 
+    <p> Construct a bootstrap distribution with technology to estimate with 95% confidence the mean number of tattoos for college students. 
+</p>
+</statement>
+<solution><title> Bootstrap Interval</title> 
+<p> Each dot in the bootstrap distribution is the mean from a random sample of 43 values from the original sample. This bootstrap distribution is based on 1000 samples and is center at the mean 1.38 tattoos which is close to the original sample mean of 1.395. The distribution is approximately bell shaped even though the original sample was right skewed with up to 12 tattoos. The standard error of the distribution is <m>SE=0.391</m>. The 95% confidence interval estimates the mean number of tattoos for college students is between 0.7 to 2.2 tattoos. 
+</p>
+<figure xml:id="TattoosBootstrap">
+            <caption>95% Tattoo Bootstrap Interval</caption>
+            <image source="TattooBoot.png" width="80%">
+                <shortdescription>distribution of 1000 samples of size 43  centered at 1.38 tattoos and standard error of 0.391. The 95% interval is between 0.7 and 2.2 tattoos. </shortdescription>
+            </image>
+        </figure>
+
+</solution>  
+</exercise> 
+
+
 
   </subsection>
 
