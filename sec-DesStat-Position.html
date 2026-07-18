@@ -539,7 +539,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA: Tornado Alley</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA-Coral" class="internal"><span class="codenumber">10.8.2</span> <span class="title">ANOVA: Coral Reef Restoration</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -594,54 +597,50 @@ eBookConfig.enable_chatcodes =  false;
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Percentiles</span>
 </h3>
-<div class="para" id="subsec-PercentileBasics-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="subsec-PercentileBasics-3">
-<dfn class="terminology">Percentiles</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-2">Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <dfn class="terminology">percentile</dfn>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child’s growth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-4">Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <dfn class="terminology">percentile</dfn>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child’s growth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-3">The percentile corresponding to a given X value is computed by<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-5">The percentile corresponding to a given X value is computed by<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="subsec-PercentileBasics-6">
-<div class="displaymath process-math" id="subsec-PercentileBasics-6-1">
+<div class="para logical" id="subsec-PercentileBasics-4">
+<div class="displaymath process-math" id="subsec-PercentileBasics-4-1">
 \begin{equation*}
 p=\frac{\text{number  of  values below X plus one-half values at X}}{\text{total number of values}}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-7">
-<dfn class="terminology">Example:</dfn> A teacher gives a 20-point test to ten students.  The scores are 18, 15, 12, 6, 8, 12, 3, 5, 20, 10. Find the percentile rank of the student who scored 12.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-5">
+<dfn class="terminology">Example:</dfn> A teacher gives a 20-point test to ten students.  The scores are 18, 15, 12, 6, 8, 12, 3, 5, 20, 10. Find the percentile rank of the student who scored 12.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-8">
-<em class="emphasis">Solution:</em> There are 5 scores below 12. There are 2 scores at 12. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{5+0.5(2)}{10} = 0.60 \)</span> thus the 60th percentile. This student did better than or equal to 60% of the classmates on the test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-6">
+<em class="emphasis">Solution:</em> There are 5 scores below 12. There are 2 scores at 12. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{5+0.5(2)}{10} = 0.60 \)</span> thus the 60th percentile. This student did better than or equal to 60% of the classmates on the test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-9"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<details id="subsec-PercentileBasics-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="subsec-PercentileBasics-7"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<details id="subsec-PercentileBasics-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Percentile.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-PercentileBasics-10-2-1">A teacher gives a 20-point quiz to ten students.  The scores are 16, 15, 16, 6, 8, 16, 3, 5, 20, 10. Find the percentile ranking of the student who scored 16.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-8-2-1">A teacher gives a 20-point quiz to ten students.  The scores are 16, 15, 16, 6, 8, 16, 3, 5, 20, 10. Find the percentile ranking of the student who scored 16.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-PercentileBasics-10-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="subsec-PercentileBasics-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="subsec-PercentileBasics-10-3-1">There are 6 scores below 16. There are 3 scores at 16. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{6+0.5(3)}{10} = 0.75 \)</span> thus the 75th percentile. This student did better than or equal to 75% of the classmates on the quiz.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-8-3-1">There are 6 scores below 16. There are 3 scores at 16. There is a total of 10 scores. The percentile ranking <span class="process-math">\(= \frac{6+0.5(3)}{10} = 0.75 \)</span> thus the 75th percentile. This student did better than or equal to 75% of the classmates on the quiz.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.1.1"><a href="#subsec-PercentileBasics-10-3" title="Copy heading and permalink for Solution 3.3.1.1" aria-label="Copy heading and permalink for Solution 3.3.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.3.1.1"><a href="#subsec-PercentileBasics-8-3" title="Copy heading and permalink for Solution 3.3.1.1" aria-label="Copy heading and permalink for Solution 3.3.1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 3.3.1: Percentile"><a href="#subsec-PercentileBasics-10" title="Copy heading and permalink for Checkpoint 3.3.1: Percentile" aria-label="Copy heading and permalink for Checkpoint 3.3.1: Percentile">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 3.3.1: Percentile"><a href="#subsec-PercentileBasics-8" title="Copy heading and permalink for Checkpoint 3.3.1: Percentile" aria-label="Copy heading and permalink for Checkpoint 3.3.1: Percentile">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-PercentileBasics-11">The kth percentile is the data value that has k% of the data at or below that value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-9">The kth percentile is the data value that has k% of the data at or below that value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-12">
-<dfn class="terminology">Example:</dfn> Carlos scored a 1350 on the SAT exam and the report said he was at the 89th percentile. What does this indicate?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-10">
+<dfn class="terminology">Example:</dfn> Carlos scored a 1350 on the SAT exam and the report said he was at the 89th percentile. What does this indicate?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-13">
-<em class="emphasis">Solution:</em> Carlos scored the same or better than 89% of the students taking the SAT that year nationwide.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-PercentileBasics-11">
+<em class="emphasis">Solution:</em> Carlos scored the same or better than 89% of the students taking the SAT that year nationwide.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-PercentileBasics-14"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-PercentileBasics-12"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
 <details id="Percentile-matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Percentile Interpretation.</span>
 </h4></summary>
@@ -673,7 +672,7 @@ p=\frac{\text{number  of  values below X plus one-half values at X}}{\text{total
 </div></div>
 <div class="autopermalink" data-description="Checkpoint 3.3.2: Percentile Interpretation"><a href="#Percentile-matching" title="Copy heading and permalink for Checkpoint 3.3.2: Percentile Interpretation" aria-label="Copy heading and permalink for Checkpoint 3.3.2: Percentile Interpretation">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-PercentileBasics-16"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-PercentileBasics-14"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PercentileBasics-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
 <div class="autopermalink" data-description="Subsection 3.3.1: Percentiles"><a href="#subsec-PercentileBasics" title="Copy heading and permalink for Subsection 3.3.1: Percentiles" aria-label="Copy heading and permalink for Subsection 3.3.1: Percentiles">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-Quartiles">

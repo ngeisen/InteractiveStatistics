@@ -551,7 +551,10 @@ sagecell.makeSagecell({
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Ranova.html" class="internal"><span class="codenumber">10.8</span> <span class="title">ANOVA with R</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA" class="internal"><span class="codenumber">10.8.1</span> <span class="title">ANOVA: Tornado Alley</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Ranova.html#subsec-R-ANOVA-Coral" class="internal"><span class="codenumber">10.8.2</span> <span class="title">ANOVA: Coral Reef Restoration</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -746,7 +749,7 @@ summary(Sugar)
 </figure>
 <div class="para" id="subsec-Categorical-7">The table will appear just under the R code.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Categorical-8">Notice that the categories are G, K and Q. Next, we will create a vector I’m calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Categorical-8">Notice that the categories are G, K and Q. Next, we will create a vector I’m calling “Brand” to create the labels for our future graph using the full company names. Then we will create a “Totals” vector to list the summarized frequencies. It is important to keep them in the same order.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-Categorical-9">
 <code class="code-inline tex2jax_ignore">  Brand </code> <span class="process-math">\(\lt-\)</span> <code class="code-inline tex2jax_ignore"> c('General Mills', 'Kelloggs',  'Quacker') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -758,7 +761,7 @@ summary(Sugar)
 <div class="para" id="subsec-Categorical-12">
 <dfn class="terminology">Pie Graph</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Categorical-13">Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the <em class="emphasis">labels</em> = Brand names were created.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Categorical-13">Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the <em class="emphasis">labels</em> = Brand names we created.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-Categorical-14">
 <code class="code-inline tex2jax_ignore"> pie(Totals, labels=Brand) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -766,29 +769,41 @@ summary(Sugar)
 <figure class="figure figure-like" id="CompanyPie"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/RgraphC2.jpg" class="contained" alt="Circle graph showing Kelloggs count of 11, Quaker at 6, and General Mills at 13."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Pie Graph of Cereal Company<div class="autopermalink" data-description="Figure 10.2.11"><a href="#CompanyPie" title="Copy heading and permalink for Figure 10.2.11" aria-label="Copy heading and permalink for Figure 10.2.11">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="subsec-Categorical-16">Next let us add some brighter colors to the graph and give it a main title.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Categorical-16">You can also use the following code block with the frequency totals. Click on Evaluate (R) to see the pie graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Categorical-17">
-<code class="code-inline tex2jax_ignore">  pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div id="subsec-Categorical-17" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Brand=c('General Mills','Kelloggs','Quacker') 
+Totals=c(13,11,6)
+pie(Totals, labels=Brand)
+</script></div>
+<div class="para" id="subsec-Categorical-18">Next let us add some brighter colors to the graph and give it a main title.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Categorical-19">
+<code class="code-inline tex2jax_ignore">  pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="CompanyCircle"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/RgraphC3.png" class="contained" alt="Colorful circle graph showing company categories."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Colorful Circle Graph of Cereal Company<div class="autopermalink" data-description="Figure 10.2.12"><a href="#CompanyCircle" title="Copy heading and permalink for Figure 10.2.12" aria-label="Copy heading and permalink for Figure 10.2.12">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="subsec-Categorical-19">
-<dfn class="terminology">Bar Graph</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-Categorical-20">Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the <em class="emphasis">names.arg</em> = Brand names were created.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
 <div class="para" id="subsec-Categorical-21">
-<code class="code-inline tex2jax_ignore">   barplot(Totals, names.arg=Brand) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<dfn class="terminology">Bar Graph</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Categorical-22">Now we can construct a simple bar graph for the frequency of cereals by each company. We are listing the numerical Totals first, and the <em class="emphasis">names.arg</em> = Brand names were created.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Categorical-23">
+<code class="code-inline tex2jax_ignore">   barplot(Totals, names.arg=Brand) </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="CompanyBar"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/RgraphC4.png" class="contained" alt="Bar graph showing company frequencies of 13, 11, 6."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bar Graph of Cereal Company<div class="autopermalink" data-description="Figure 10.2.13"><a href="#CompanyBar" title="Copy heading and permalink for Figure 10.2.13" aria-label="Copy heading and permalink for Figure 10.2.13">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="subsec-Categorical-23">Next let us add some brighter colors to the graph and give the bar graph a main title and label the x-axis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Categorical-25">You can also use the following code block with the summary data. Click on Evaluate (R) to see the basic bar graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Categorical-24">
-<code class="code-inline tex2jax_ignore">   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div id="subsec-Categorical-26" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Brand=c('General Mills','Kelloggs','Quacker') 
+Totals=c(13,11,6)
+barplot(Totals, names.arg=Brand)
+</script></div>
+<div class="para" id="subsec-Categorical-27">Next let us add some brighter colors to the graph and give the bar graph a main title and label the x-axis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Categorical-28">
+<code class="code-inline tex2jax_ignore">   barplot(Totals, names.arg=Brand, cex.names=0.8, col=rainbow(3), xlab='Cereal Brands', ylab='Frequency', main='Bar Graph of Cereal Companies') </code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Categorical-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="ColorfulBar"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/RgraphC5.png" class="contained" alt="Colorful bar graph showing company frequencies of 13, 11, 6."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.2.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Colorful Bar Graph of Cereal Company<div class="autopermalink" data-description="Figure 10.2.14"><a href="#ColorfulBar" title="Copy heading and permalink for Figure 10.2.14" aria-label="Copy heading and permalink for Figure 10.2.14">🔗</a></div></figcaption>
@@ -823,6 +838,13 @@ summary(Sugar)
 </div>
 <div class="para" id="subsec-Scatterplots-11">The correlation coefficient value is <span class="process-math">\(0.4563773\)</span> which appears just below the R code. This tells us we have a moderate positive relationship between the Fat content and Carbohydrates in these cereals.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Scatterplots-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="para" id="subsec-Scatterplots-12">You can also use the following code block which is analyzing the correlation between the number of Calories and the Sugar content of the cereals. Click on Evaluate (R) to see the basic scatterplot and the correlation value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Scatterplots-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-Scatterplots-13" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Calories=c(117,118,144,169,130,117,117,101,117, 113, 120,118,175,149,214,192,80,87,160,114,108,100,195,171,94,160,182,117,129,107)
+Sugar=c(15,14,16,13.3,16,14,13,3,15,3,8,12,10,14.7,17,13,4,2.3,8,13,6,4,20,16,1.6,12,14,4,6.7,4)
+plot(Calories,Sugar)
+cor(Calories,Sugar)
+</script></div>
 <div class="autopermalink" data-description="Subsection 10.2.5: Scatterplots"><a href="#subsec-Scatterplots" title="Copy heading and permalink for Subsection 10.2.5: Scatterplots" aria-label="Copy heading and permalink for Subsection 10.2.5: Scatterplots">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-Quantiles">
@@ -842,6 +864,12 @@ summary(Sugar)
 </figure>
 <div class="para" id="subsec-Quantiles-6">Since the z-score values do not form a straight line when paired with the data values, this variable is not normally distributed.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quantiles-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="para" id="subsec-Quantiles-7">You can also use the following code block with the Calories data. Click on Evaluate (R) to see the quantile plot.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Quantiles-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-Quantiles-8" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Calories=c(117,118,144,169,130,117,117,101,117, 113, 120,118,175,149,214,192,80,87,160,114,108,100,195,171,94,160,182,117,129,107)
+qqnorm(Calories) 
+ qqline(Calories)
+</script></div>
 <div class="autopermalink" data-description="Subsection 10.2.6: Quantile Plots"><a href="#subsec-Quantiles" title="Copy heading and permalink for Subsection 10.2.6: Quantile Plots" aria-label="Copy heading and permalink for Subsection 10.2.6: Quantile Plots">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 10.2: Graphing with R"><a href="#sec-GraphR" title="Copy heading and permalink for Section 10.2: Graphing with R" aria-label="Copy heading and permalink for Section 10.2: Graphing with R">🔗</a></div>
 </section>
