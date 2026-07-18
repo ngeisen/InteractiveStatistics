@@ -20,7 +20,7 @@
   <title>A Quick Review</title>
  <p> The rest of the semester we will focus on statistical inference. </p>
 
-<definition xml:id="def-statisticalinference">
+<definition xml:id="def-statistical-inference">
   <statement>
     <p>
       <term> Statistical inference </term> is a process of drawing conclusions about the population based on the information from a sample. 
@@ -212,7 +212,7 @@ The top right graph shows the original data with 268 words with an average of 4.
  <solution><p> When the sample size is larger, the standard error becomes smaller since there is less variation within larger samples.  </p> </solution> 
 </exercise>
 
-<example>
+<exercise>
   <statement>
     <p> Let's change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on <c> Reset Plot</c> and change the <term> choose samples of size n =</term> <c> 25 </c>. Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task. </p> 
 <figure xml:id="StatkeySampling5">
@@ -224,7 +224,7 @@ The top right graph shows the original data with 268 words with an average of 4.
   </statement>
 <solution> <p> This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.  </p> 
 </solution>
-</example>
+</exercise>
 
  </subsection>
 
@@ -314,7 +314,186 @@ The top right graph shows the original data with 268 words with an average of 4.
 
 <subsection xml:id="subsec-SamplingPractice">
   <title>Practice Problems</title>
-  <p> the </p> 
+ <p>Under the sampling distribution for the mean, you are going to investigate the data set for <term>Baseball Players-4e (2024 Salary in Millions)</term> .  The data sets list the salary for each player in the MLB for the 2024 season. Answer the following questions using this data.</p> 
+
+<exercise xml:id="multiple-choice-baseball-population" > 
+<title> population</title>
+<statement>
+<p> Why is this considered a population </p>
+</statement>
+<choices randomize="yes">
+<choice correct="yes">
+<statement> <p> It lists the baseball salary for every player in 2024.
+</p> 
+</statement>
+<feedback> <p> The represents a population because it includes every player. </p> </feedback> 
+</choice>
+<choice>
+<statement> <p> It lists the baseball salary for 20 players in 2024.
+</p> 
+</statement>
+<feedback> <p>  This is a sample because it does not include every player.
+</p> </feedback>
+</choice>
+</choices>
+</exercise> 
+ <exercise xml:id="multiple-choice-baseball-original1" > 
+<title> Original Data Shape</title>
+<statement>
+<p> Describe the shape of the original distribution?
+ </p>
+</statement>
+<choices randomize="yes">
+<choice correct="yes">
+<statement> <p> right skewed.
+</p> </statement>
+</choice>
+
+
+<choice>
+<statement> <p> left skewed.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> symmetric and bell shaped.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> uniform.
+</p> </statement>
+</choice>
+</choices>
+</exercise> 
+
+<exercise xml:id="multiple-choice-baseball-original2" > 
+<title> Original Data Mean</title>
+<statement>
+<p> Which value represents the mean salary, in millions, of the original data?
+ </p>
+</statement>
+<choices randomize="yes">
+<choice correct="yes">
+<statement> <p> $5.018 million.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> 952 million.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> 1.5 million.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> 7.485 million
+</p> </statement>
+</choice>
+</choices>
+</exercise> 
+
+<exercise xml:id="multiple-choice-baseball-original3" > 
+<title> Original Data Spread</title>
+<statement>
+<p> Which value represents the spread of values?
+ </p>
+</statement>
+<choices randomize="yes">
+<choice correct="yes">
+<statement> <p> 7.485 million.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> 1.5 million.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> 952 million.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> 5.018 million.
+</p> </statement>
+</choice>
+</choices>
+</exercise> 
+
+<p> Use StatKey or other statistical software to create a sampling distribution using the for <term>Baseball Players-4e (2024 Salary in Millions)</term> data. Generate at least 1000 samples of size 20 and answer the following questions about the distribution. </p> 
+
+<exercise xml:id="multiple-choice-baseball3" > 
+<title> Sampling Distribution Shape</title>
+<statement>
+<p> Describe the shape of the sampling distribution?
+ </p>
+</statement>
+<choices randomize="yes">
+<choice correct="yes">
+<statement> <p> approximately bell shaped.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> left skewed.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> right skewed.
+</p> </statement>
+</choice>
+<choice>
+<statement> <p> uniform.
+</p> </statement>
+</choice>
+</choices>
+</exercise> 
+
+<exercise xml:id="matching-baseball" label="matching-statistics">
+  <title>Baseball Sampling Distribution</title>
+  <idx>matching statistics</idx>
+  <statement>
+    <p>
+      Match the sampling distribution statistics. The values may be slightly different than your distribution, but should be close. Drag the appropriate name to the value.
+    </p>
+  </statement>
+  <feedback>
+    <p> Look for the values about the sampling distribution </p>
+  </feedback>
+  <cardsort>
+  <match>
+  <premise order="4">distribution mean</premise>
+  <response>5.0</response>
+  </match>
+  <match>
+  <premise order="3">standard error</premise>
+  <response>1.6</response>
+  </match>
+  <match>
+  <premise order="1">number of samples</premise>
+  <response>1000</response>
+  </match>
+  <match>
+  <premise order="2">sample size</premise>
+  <response>20</response>
+  </match>
+  </cardsort>
+</exercise>
+
+<exercise label="short-answer-compare-baseball">
+  <title> Importance of Sample Size </title>
+  <statement>
+    <p>
+   Reset the sampling distribution and change the sample size to 10. Generate at least 1000 samples and describe the shape, center, and spread of the distribution.  
+</p>
+<p>
+Reset the sampling distribution and change the sample size to 50. Generate at least 1000 samples and describe the shape, center, and spread of the distribution.  
+</p>
+<p>
+Reset the sampling distribution and change the sample size to 100. Generate at least 1000 samples and describe the shape, center, and spread of the distribution.  
+</p>
+<p>
+Compare: what do you notice as the sample size increases?
+    </p>
+  </statement>
+  <response/>
+</exercise>
 
 
   </subsection>

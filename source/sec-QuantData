@@ -434,9 +434,28 @@ The number of pets is discrete data.
 
 <p>  <term> A. </term> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate at least one of the quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graphs and summary statistics table into a word document and summarize the data. </p>
 <p> Your summary should include at least two graphs (dotplot and boxplot if discrete, or histogram and boxplot if continuous) and the summary statistics table. Your summary of the data should report the shape of the distribution and what values appear typical. Describe any other relevant information such as outliers. </p>
+<exercise label="short-answer-OneQuantData">
+  <title>Quantitative Data Exploration</title>
+  <statement>
+    <p>
+      Clearly identify the data set and which variable(s) you are analyzing. Include your summary here.
+    </p>
+  </statement>
+  <response/>
+</exercise>
+
 <p>  <term>B.</term> Choose one of the studies in the 1.4 Case Studies section or a data set from class. You are going to investigate the relationship between <em>two</em> quantitative variables for that study. Upload the data file into StatKey or other technology. Copy and paste the graph and summary statistics table into a word document and summarize the data. </p>
 <p> In the summary describe the nature of the relationship from the scatterplot and support it with the correlation coefficient. Give the regression equation and interpret the slope. </p>
 
+<exercise label="short-answer-TwoQuantData">
+  <title>Correlation Data Exploration</title>
+  <statement>
+    <p>
+      Clearly identify the data set and which variables you are analyzing. Include your correlation summary here.
+    </p>
+  </statement>
+  <response/>
+</exercise>
 
 
 

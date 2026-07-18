@@ -73,7 +73,7 @@ mean(Sodium)
 <p> The R code block has sugar content for the cereals. Change the R command for the appropriate statistic. Click on Evaluate (R) to see the results.</p>
 <sage language="r">
  <input>
-Sugar=c(15,14,16,13.3,16.14,13,3,15,3,8,12,10,14.7,17,13,4,2.3,8,13,6,4,20,16,1.6,12,14,4,6.7,4)
+Sugar=c(15,14,16,13.3,16,14,13,3,15,3,8,12,10,14.7,17,13,4,2.3,8,13,6,4,20,16,1.6,12,14,4,6.7,4)
 median(Sugar)
  </input>
  </sage>

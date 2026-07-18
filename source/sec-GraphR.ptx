@@ -173,14 +173,14 @@ summary(Sugar)
         </figure> 
 <p> The table will appear just under the R code. </p>
 
-<p> Notice that the categories are G, K and Q. Next, we will create a vector I'm calling Brand to create the labels for our future graph using the full company names. Then we will create a Totals vector to list the summarized frequencies. It is important to keep them in the same order.  </p>
+<p> Notice that the categories are G, K and Q. Next, we will create a vector I'm calling <q>Brand</q> to create the labels for our future graph using the full company names. Then we will create a <q>Totals</q> vector to list the summarized frequencies. It is important to keep them in the same order.  </p>
 <p> <c>  Brand </c> <m>\lt-</m> <c> c('General Mills', 'Kelloggs',  'Quacker') </c> </p>
 <p>  <c> Totals</c> <m>\lt-</m> <c> c(13,11,6) </c> </p>
 <p>        </p> 
 <!-- Warning: There needs to be a left pointing arrow before the dashed sign which PreTeXt does not like.-->
 
 <p> <term> Pie Graph </term> </p>
-<p> Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the <em>labels </em> = Brand names were created. </p>
+<p> Now we can construct a simple pie graph for the proportion of cereals by each company. We are listing the numerical Totals first, and the <em>labels </em> = Brand names we created. </p>
 <p>  <c> pie(Totals, labels=Brand) </c> </p>
 
 <figure xml:id="CompanyPie">
@@ -190,6 +190,15 @@ summary(Sugar)
             </image>
         </figure> 
 
+ <p> You can also use the following code block with the frequency totals. Click on Evaluate (R) to see the pie graph. </p> 
+  <sage language="r">
+ <input>
+Brand=c('General Mills','Kelloggs','Quacker') 
+Totals=c(13,11,6)
+pie(Totals, labels=Brand)
+ </input>
+ </sage>
+       
 <p> Next let us add some brighter colors to the graph and give it a main title. </p>
 <p>  <c>  pie(Totals, labels=Brand, col=rainbow(3), main='Pie Chart of Cereal Companies') </c> </p>
 
@@ -211,6 +220,15 @@ summary(Sugar)
                 <shortdescription>Bar graph showing company frequencies of 13, 11, 6.</shortdescription>
             </image>
         </figure> 
+
+<p> You can also use the following code block with the summary data. Click on Evaluate (R) to see the basic bar graph. </p> 
+  <sage language="r">
+ <input>
+Brand=c('General Mills','Kelloggs','Quacker') 
+Totals=c(13,11,6)
+barplot(Totals, names.arg=Brand)
+ </input>
+ </sage>
 
 
 <p> Next let us add some brighter colors to the graph and give the bar graph a main title and label the x-axis. </p>
@@ -251,7 +269,20 @@ summary(Sugar)
 
 <p>  To find the linear correlation coefficient we use the <em> cor </em> command and identify the x-variable first, and then the y-variable. The correlation value should match our scatterplot for how tightly the points form a line. If we see a positive trend in the graph, then the correlation coefficient value will also be positive, and if we see a negative trend in the scatter plot we would expect the correlation value to be negative. The tighter the points are together, the larger the value in the correlation. </p>			 
 <p> <c> cor(Fat,Carbs)   </c> </p>    
-  <p> The correlation coefficient value is <m> 0.4563773</m> which appears just below the R code. This tells us we have a moderate positive relationship between the Fat content and Carbohydrates in these cereals. </p>                          
+  <p> The correlation coefficient value is <m> 0.4563773</m> which appears just below the R code. This tells us we have a moderate positive relationship between the Fat content and Carbohydrates in these cereals. </p>    
+  
+  <p> You can also use the following code block which is analyzing the correlation between the number of Calories and the Sugar content of the cereals. Click on Evaluate (R) to see the basic scatterplot and the correlation value. </p> 
+  <sage language="r">
+ <input>
+Calories=c(117,118,144,169,130,117,117,101,117, 113, 120,118,175,149,214,192,80,87,160,114,108,100,195,171,94,160,182,117,129,107)
+Sugar=c(15,14,16,13.3,16,14,13,3,15,3,8,12,10,14.7,17,13,4,2.3,8,13,6,4,20,16,1.6,12,14,4,6.7,4)
+plot(Calories,Sugar)
+cor(Calories,Sugar)
+ </input>
+ </sage>
+
+
+  
 </subsection>
 
 <subsection xml:id="subsec-Quantiles">
@@ -268,6 +299,16 @@ summary(Sugar)
             </image>
         </figure>
 <p> Since the z-score values do not form a straight line when paired with the data values, this variable is not normally distributed. </p>
+
+<p> You can also use the following code block with the Calories data. Click on Evaluate (R) to see the quantile plot. </p> 
+  <sage language="r">
+ <input>
+Calories=c(117,118,144,169,130,117,117,101,117, 113, 120,118,175,149,214,192,80,87,160,114,108,100,195,171,94,160,182,117,129,107)
+qqnorm(Calories) 
+ qqline(Calories)
+ </input>
+ </sage>
+
 
 </subsection>
 

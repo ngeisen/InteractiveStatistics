@@ -17,8 +17,8 @@
 </objectives>
 
 <subsection xml:id="subsec-R-ANOVA">
-  <title>ANOVA </title>
-  <p> <term>Tornado Alley</term></p>
+  <title>ANOVA: Tornado Alley </title>
+  
 <p> Research suggests that Tornado Alley has shifted eastward from the Great Plains with global warming.  A climate researcher wants to compare the mean annual number of tornadoes in four states: Colorado, Oklahoma, Texas, and Missouri. The researcher
       records the number of tornadoes for each state over five recent years.
     </p>
@@ -56,6 +56,23 @@
 
 <p> <em>Interpret:</em> The test statistic is F = 934.21 and p-value of <m> p\approx 0</m> which is significant. The values under State are the between the data with df=3 and SSB=29147.3 and MSB=9715.8. The Residuals are the Within data and has df=16 and SSW=166.4 and MSW=10.40. </p> 
 
+<p> You can use the following code block for the ANOVA test. There must be a category listed in quotes to match up with each numerical value. The notation is a bit different for the code block. Click on Evaluate (R) to see test results for the tornadoes.</p>
+
+<sage language="r">
+<input>
+Tornado=c(48,52,51,47,53, 67,71,69,73,68, 132,145,138,141,136, 41,38,44,40,42)
+State=c("CO","CO", "CO", "CO", "CO", "OK", "OK", "OK", "OK", "OK", "TX", "TX", "TX", "TX", "TX", "MO", "MO", "MO","MO", "MO")
+Model=aov(Tornado~State)
+summary(Model)
+</input>
+</sage>
+  
+
+
+</subsection>
+<subsection xml:id="subsec-R-ANOVA-Coral">
+  <title>ANOVA: Coral Reef Restoration </title>
+
 <p><term> Coral Reef Restoration</term></p>
      <p> A marine biologist wants to compare the mean growth of coral fragments under three different reef restoration methods. Twelve coral fragments are randomly assigned so that four fragments are treated with each method. After six months, the increase in coral length, in centimeters, is recorded.
     </p>
@@ -89,6 +106,17 @@
         </figure> 
 
 <p> <em>Interpret:</em> The test statistic is F=25.272 and p-value = 0.0002029 which is significant. The values under Method are the between the data with df=2 and  SSB=4.0717 and MSB=2.03583. The Residuals has df=9 is the Within data so SSW=0.725 and MSW=0.08056. </p> 
+
+<p> You can use the following code block for the ANOVA test. There must be a category listed in quotes to match up with each numerical value. Click on Evaluate (R) to see test results.</p>
+
+<sage language="r">
+<input>
+  Growth=c(4.2, 4.8, 5.0, 4.5, 5.1, 5.4, 5.0, 5.6, 6.0, 6.3, 5.8, 6.1)
+  Method=c("A", "A", "A", "A", "B", "B", "B", "B", "C", "C", "C", "C")
+  Model=aov(Growth ~ Method)
+  summary(Model)
+</input>
+</sage>
 
 
 

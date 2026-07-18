@@ -21,9 +21,7 @@
 
 <subsection xml:id="subsec-PercentileBasics">
   <title>Percentiles </title>
-<p>      
-</p>
-<p> <term> Percentiles </term> </p> 
+
 <p> Along with the center and the variability, another useful numerical measure is the ranking of a value in the data. A <term> percentile </term>  is ranking measurements used to indicate the position of an individual in a group to the rest of the values. Percentiles divide the data set into 100 equal groups. Many standardized tests give the results as a percentile. Doctors also use percentiles to track a child's growth. </p>
 
 <p> The percentile corresponding to a given X value is computed by </p> 
