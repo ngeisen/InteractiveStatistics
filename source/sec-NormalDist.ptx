@@ -74,7 +74,7 @@
         </figure>
 
 <p><em> Example: </em> Find the area right of <m>z=1.75</m> on the standard normal distribution. </p>
-  <p> In StatKey click on <c>Right Tail </c> and enter the value 1.75 along the bottom. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area. </p>
+  <p> In StatKey click on <c>Right Tail </c> and enter the value 1.75 along the bottom. Since the z-value is positive, it is to the right of the mean of 0. The shaded region represents the area of 0.040, since a small region is shaded we expect a smaller area. </p>
 <figure xml:id="Normalright175">
             <caption> Normal Distribution right of z = 1.75</caption>
             <image source="Normal3.png" width="75%">
@@ -85,7 +85,7 @@
 
 <example>
 <statement> <p>Find the area right of <m>z=-1.81</m>. </p> </statement> 
-<solution> <p> In StatKey, click on <c>Right Tail </c> and change the value along the bottom to -1.81. Note how over half the curve is shaded giving an area of 0.965. </p>
+<solution> <p> In StatKey, click on <c>Right Tail </c> and change the value along the bottom to -1.81. Since the z-value is negative, it is to the left of the mean of 0. Note how over half the curve is shaded giving an area of 0.965. </p>
 <figure xml:id="Normalright181">
             <caption> Normal Distribution right of z = -1.81</caption>
             <image source="Normal4.png" width="75%">
@@ -127,7 +127,7 @@
             </image>
         </figure>
 </solution>
-</example>
+</example> 
 
 <example>
 <statement>
@@ -154,7 +154,9 @@
 
 <p> <em> Example:</em> Suppose we want to find the area to the right of <m>z=1.25</m> and the area to the left of <m>z=-1.36</m>. We just need to add the area of those two regions shaded in red. The area is <m>0.087+0.106=0.193 </m>. </p>
 
+<p> <term> Finding Z-score</term></p>
 <p> Sometimes when working with the normal distribution, we want to find which z-score correlates with a certain percentage of the curve. </p>
+<example> <title> Middle 80%</title>
 <p> <em> Example:</em> Suppose we want to know the z-scored for the middle 80% of the values of the normal distribution. </p>
 <p>Click on <c>Reset Plot</c> and click on the <c>Two Tail</c>. Change the middle white region from the default of 0.95 (which have the z-values of -1.960 and +1.960) to 0.80 to change the z-values to -1.282 and +1.282 along the bottom of the graph. The larger the middle percentage, the larger the z-scores will be. Since the normal curve is symmetric, the values are the same just one positive and one negative. </p> 
 
@@ -164,15 +166,17 @@
                 <shortdescription>middle area is 80% giving the cut scores of -1.282 and 1.282.</shortdescription>
             </image>
         </figure>
-
-<p> <em> Example:</em> If we want to know the z-score cut off for the top 10% of the curve, click on <c>Right Tail</c> and change the area value to 0.100 to get the z-score of 1.282. </p> 
+    </example> 
+<example> <title> Top 10%</title>
+<p> <em> Example:</em> If we want to know the z-score cut off for the top 10% of the curve, click on <c>Right Tail</c> and change the right area value to 0.100 to get the z-score of 1.282. </p> 
 <figure xml:id="NormalTop10">
             <caption> Top 10% on Normal Distribution </caption>
             <image source="Normal9.png" width="75%">
                 <shortdescription>top 10% shaded on right side for z=1.282.</shortdescription>
             </image>
         </figure>
-
+    </example> 
+ <example> <title> Bottom 20% </title>  
 <p> <em> Example:</em> If we want the cut off score for the bottom 20% of the values on the normal distribution, click on the <c>Left Tail</c> and change the area value to 0.200 to get <m>z=-.842</m>. Anything below the mean will be negative, anything greater than the mean will be positive. </p>
 <figure xml:id="NormalBottom20">
             <caption> Bottom 20% on Normal Distribution </caption>
@@ -180,7 +184,7 @@
                 <shortdescription>bottom 20% shaded on left side for z=-.842.</shortdescription>
             </image>
         </figure>
-
+    </example>
 
 
   </subsection>
@@ -323,9 +327,9 @@ pnorm(280, 272, 9, lower.tail=TRUE)-pnorm(265, 272, 9, lower.tail=TRUE)
 <p> b. Middle 99% of curve. </p>
 </statement>
 <solution><p> right tail gives z =0.674    </p> </solution> 
-<solution><p>  Two tail  gives left = -1.96 and right = 1.96  </p> </solution> 
+<solution><p>  Two tail  gives left z = -1.96 and right z = 1.96  </p> </solution> 
 <solution><p> left tail gives z = -1.036  </p> </solution> 
-<solution><p>  right tail gives z =0.524 </p> </solution> 
+<solution><p>  right tail gives z = 0.524 </p> </solution> 
 <solution><p> left tail gives z = -1.645 . </p> </solution> 
 <solution><p> > Lower tail = -2.576 and upper tail = 2.576 </p> </solution> 
 </exercise> 

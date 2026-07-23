@@ -30,7 +30,7 @@
   </colophon>
 
 <preface>
-  <p> This is an introductory textbook for statistics, intended for freshman or first-year undergraduate students. Each section begins with understanding the basics of the vocabulary and formulas, a few simple exercises to test your understanding, and followed by a case study illustrating a way to analyze the data with the new content. The goal is to make the textbook interactive so you can test your understanding as the semester progresses. We will be using StatKey as a free online tool for graphing data and creating simulations illustrating …. There is a section explaining how to use R and R Studio for statistical analysis. I tend to save using R until about midpoint in the class, then we can spiral through the content as a review as we learn to use R for the hypothesis testing. </p> 
+  <p> This is an introductory textbook for statistics, intended for freshman or first-year undergraduate students. Each section begins with understanding the basics of the vocabulary and formulas, an example to show you the step by step process, a few  exercises to test your understanding, and followed by a case study illustrating a way to analyze the data with the new content. The goal is to make the textbook interactive so you can test your understanding as the semester progresses. We will be using StatKey as a free online tool for graphing data and creating simulations illustrating …. There is a chapter dedicated to using R and R Studio for statistical analysis, with some editable code blocks. I tend to save using R until about midpoint in the class, then we can spiral through the content as a review as we learn to use R for the hypothesis testing. </p> 
 </preface> 
 
   <acknowledgement> 
@@ -38,10 +38,10 @@
   <p> Special thanks to my contributors: </p> 
   <p> Kathryn Kozak, Coconio Community College, <em> Statistics Using Technology (2018).</em> </p> 
   <p> Lauryn Benedict, Alexandra Charles, and Amirah Brockington from Biology Sciences at the University of Northern Colorado, and Cristine Dahlin from the University of Pettsburgh, for <em> A survey of vocal mimicry in companion parrots. </em> </p> 
-  <p> Kristin King, Robert Powers, and Sam R at UNC</p> 
-  <p> Oscar Levin and COMat </p>
+  <p> Kristin King, Robert Powers, and Samantha Renner at UNC</p> 
+  <p> Oscar Levin and COMat Workshop for an introduction to PreTeXt.</p>
 
-
+<p> Special thanks for the support of the Colorado Open Educational Resources Grant Program and UNC COOLER - Community Collaboration and Learning for Climate Resilience.</p>
 
 
 
