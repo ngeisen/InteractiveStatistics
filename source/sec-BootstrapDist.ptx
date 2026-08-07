@@ -35,7 +35,7 @@
 </ul> 
 
 <p> We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution. </p>
-<p> To generate a bootstrap distribution, we: </p>
+<p> To generate a <term> bootstrap distribution </term>, we: </p>
 <ol>
 <li> <p> Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size. </p> </li>
 <li> <p> Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples. </p> </li>
@@ -44,8 +44,23 @@
 <p> To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.</p> 
 <p> The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation. </p> 
 
-<p> Give example </p> 
+  <p> This random bootstrap sample, with replacement, contains the values 107, 107, 85, 140, 140 for a mean of 115.8. </p>
+    <figure xml:id="BootstrapSingleSample">
+            <caption> Bootstrap Sample </caption>
+            <image source="boot6.png" width="50%">
+                <shortdescription>a single bootstrap sample of the values 107, 107, 85, 140, 140.</shortdescription>
+            </image>
+        </figure>
+
 <p> To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology. </p> 
+  <definition xml:id="def-bootstrap-distribution">
+  <statement>
+    <p>A 
+      <term> Bootstrap Distribution</term> is a collection of many bootstrap statistics,  where the statistic is computed from a random sample with replacement from the original sample using the same sample size. 
+    </p>
+  </statement>
+</definition> 
+
 
 </subsection>
 

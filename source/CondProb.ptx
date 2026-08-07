@@ -25,7 +25,7 @@
 <p> Previously we found probabilities for compound events when one event was chosen. Now we will expand these concepts for when multiple events take place. We can still use a tree diagram to find all possible outcomes, but using some of the probability rules will simplify the process. </p>
 <p> Two events A and B are <term>independent events </term> if the fact that A occurs does not affect the probability of B occurring. When flipping two coins, what happens on the first coin toss does not impact what happens on the second coin toss. Same with rolling multiple dice. Each dice roll is independent of the others. </p> 
 <p> When two events are independent, the probability of both occurring is <md> P(\text{A and B}) = P(A) \times P(B) </md> </p> 
-<p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is  <m> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </m> </p> 
+<p> For example, if a four-sided die is rolled and then a quarter is flipped. What's the probability of rolling a four then flipping a head? Since what happens on the dice does not affect the quarter, the events are independent so we can multiply each event together. The chance of rolling a four is ¼ since there are four sides, and getting a head is ½ on the coin, the probability that both occur is  <md> P(\text{4 and H}) = 1/4 \times 1/2 = 1/8 </md> </p> 
 <p> If we used a tree diagram, we would list the four outcomes for the die and add two branches to each die value to represent heads or tails. Since each outcome is equally likely on the dice and the coin, the probability for each event is 1/8. </p>
 
 <p> <term>Practice Problems</term> </p> 
@@ -101,7 +101,7 @@
   <title>Dependent Events</title>
 <p> Not all probabilistic events are independent. Sometimes the subsequent events depend on what has happened previously. If you think of a bag full of colored marbles. If you pull a marble out and do not replace it, the probability of drawing the same color on the next draw depends on what was removed. The probability of every event has now changed based on what has already happened. </p> 
 <p> A <term> dependent event </term> is when the outcome of the second event is dependent upon the outcome of the first event.  The probability of what will occur on the second event is based off what occurs on the first event. </p> 
-<p> When two events are dependent, the probability of both occurring is  <m> P(\text{A and B}) = P(A) \times P(B|A) </m> </p>
+<p> When two events are dependent, the probability of both occurring is  <md> P(\text{A and B}) = P(A) \times P(B|A) </md> </p>
 <p> The formula reads as the product of the probability of event A times the probability of B occurring, given that A has already happened. This makes better sense with an example. </p> 
 <p> Three cards are drawn from a deck of 52 cards and <term> not replaced. </term> Find each probability of each event. </p> 
 <p> Example: Getting three Aces in a row. </p>
@@ -261,9 +261,15 @@
 <p>Sometimes we are trying to select <em>r</em> objects from <em>n</em> total objects.  The number of ways to do this depends on whether the order you choose the <em>r</em> objects matters or not.  As an example, if you are trying to call a person on the phone, you have to have their number in the right order.  Otherwise, you call someone you did not mean to call.  In this case, the order of the numbers matters.  </p>
 <p>However, you were picking random numbers for the lottery, it does not matter which number you pick first or last.  As long as you have the same correct numbers that the lottery people pick, you win.  In this case the order does not matter.  </p>
 <p> A <term> permutation </term> is an arrangement of items with a specific order.  You use permutations to count items when the order matters, such as passwords or phone numbers.  When the order does not matter you use a <term>combination </term> since the order arrangement of items is not important.  When you do a counting problem, the first thing you should ask yourself is “does order matter?” </p> 
-<p> <term>Permutation Formula</term></p>
-<p>Picking <m>r</m> object from <m>n</m> total object when order matters: <md> nPr=\frac{n!}{(n-r)!}</md> </p> 
 
+
+<definition xml:id="def-permutation-formula">
+  <statement>
+    <p>
+      <term> Permutation Formula</term> for picking <m>r</m> object from <m>n</m> total object when order matters is: <md> nPr=\frac{n!}{(n-r)!}</md> . 
+    </p>
+  </statement>
+</definition> 
 
 
 <p>  <em> Example: </em> Eight horses that were in the 2024 Kentucky Derby were named: Dornoch, Sierra Leone, Mystik Dan, Catching Freedom, Forever Young, Just Steel, Honor Marie, and Stronghold. In how many ways can the first three finishers turn out from this list of eight horses?</p>
@@ -286,9 +292,15 @@
             </image>
         </figure>
 
+<definition xml:id="def-combination-formula">
+  <statement>
+    <p>
+      <term> Combination Formula</term> for picking <m>r</m> object from <m>n</m> total object when order does not matters is: <md> nCr=\frac{n!}{r!(n-r)!}</md> . 
+    </p>
+  </statement>
+</definition> 
 
-<p> <term>Combination Formula</term></p>
-<p>Picking <m>r</m> object from <m>n</m> total object when order does not matters: <md> nCr=\frac{n!}{r!(n-r)!}</md> </p> 
+ 
 <p> <em> Example: </em> In how many different ways could a committee of 5 people be chosen from a class of 30 students? Since the order people are selected does not matter, this will be a combination. The total is <m>n=30</m> and we are selecting <m> r=5</m>. Therefore, nCr = 30C5 </p>
 <p> Thus <m> _n C_r =30 C_5 =\frac{30!}{5!(30-5)!} = 142,506 </m> combinations for a group of 5 people. </p>
 <p> To enter this in the calculator: </p> 

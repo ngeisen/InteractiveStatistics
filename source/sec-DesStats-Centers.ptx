@@ -51,6 +51,7 @@
 <p> <md> \bar{x}=\frac{\sum x}{n} </md> </p>
 
 <p> where <q>x-bar</q> represents the mean, the sigma symbol indicates to find the sum of the data values, where each <em> x</em> is a data value, and then divide by the sample size of <em> n </em>. </p>
+
 <p> <em> Example: </em>  A sample of five students are taking the number of credits this semester: 12, 14, 15,16, 18. </p>
 <p> <em> Solution: </em> The sum is 75 divided by the 5 values so the mean is 15 credits per person. </p>
 <p> <m> \bar{x}=\frac{75}{5}=15 </m></p>
