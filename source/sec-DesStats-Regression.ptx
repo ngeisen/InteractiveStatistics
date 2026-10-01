@@ -152,7 +152,7 @@
       age and the number of days after knee surgery until the patient becomes
       independently mobile. Use the following data file for the variables <em>Age</em> and <em>DaysMobility</em>.
     </p> 
-    <p>  <url href="external/KneeSurgery.csv"> Knee Surgery Mobility</url> </p>
+    <p>  <url href="external/KneeSurgery.xlsx"> Knee Surgery Mobility</url> </p>
     <p>
       The data below were collected from <m>18</m> patients recovering from knee
       surgery.
