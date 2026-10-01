@@ -53,15 +53,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.2';
+eBookConfig.runestone_version = '8.3.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.ed2cce180827a7ad.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.18fa7ea1d9f376c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/prefix-runtime.dd07797f77620576.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.11d27cdc38930c2c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><script>// Make *any* div with class 'sagecell-r' an executable Sage cell
 // Their results will be linked, only within language type
@@ -630,7 +630,7 @@ sagecell.makeSagecell({
 <div class="autopermalink" data-description="Item"><a href="#subsec-NormalityBasics-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-NormalityBasics-5-2">
-<div class="para" id="subsec-NormalityBasics-5-2-1">Below than Quartile 3 minus 1.5 times the interquartile range (IQR)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-NormalityBasics-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-NormalityBasics-5-2-1">Below than Quartile 1 minus 1.5 times the interquartile range (IQR)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-NormalityBasics-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#subsec-NormalityBasics-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -912,10 +912,22 @@ summary(Kiama)
 </h3>
 <div class="para" id="subsec-NormalityPractice-2">Determine if the following variables are normally distributed by checking the histogram, boxplot, and quantile plots.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-NormalityPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-NormalityPractice-3">1. The US National Center for Health Statistics (NCHS) conducted a series of health and nutrition surveys called NHANES. One of the many variables in NHANES is pulse. Determine if pulse is a normally distributed variable.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-NormalityPractice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-NormalityPractice-3">1. The US National Center for Health Statistics (NCHS) conducted a series of health and nutrition surveys called NHANES. One of the many variables in NHANES is pulse. Determine if this sample of pulse rates is a normally distributed variable.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-NormalityPractice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-NormalityPractice-4">2. The size of fish is very important to commercial fishing. A study conducted in 2012 collected the lengths of Atlantic cod caught in nets in Karlskrona (Ovegard, Berndt and Lunneryd, 2012). Data based on information from the study is in table #6.2.4. Determine if the data is from a population that is normally distributed.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-NormalityPractice-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div id="subsec-NormalityPractice-4" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Pulse = c(68,69,70,71,68,72,75,62,58,70,71,72,73,77,78,79,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,82,68,72,78,83,61,77)
+boxplot(Pulse, horizontal = TRUE)
+hist(Pulse)
+qqnorm(Pulse)
+summary(Pulse)
+</script></div>
+<div class="para" id="subsec-NormalityPractice-5">2. The size of fish is very important to commercial fishing. A study conducted in 2012 collected the lengths of Atlantic cod caught in nets in Karlskrona (Ovegard, Berndt and Lunneryd, 2012). Data based on information from the study is in the code block below. Determine if the data is from a population that is normally distributed.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-NormalityPractice-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div id="subsec-NormalityPractice-6" class="ptx-sagecell sagecell-r"><script type="text/x-sage">Fish = c(48,50,50,55,53,50,49,52,61,48,45,47,53,46,50,48,42,44,50,60,54,48,50,49,53,48,52,56,46,46,47,48,48,49,52,47,51,48,45,47)
+boxplot(Fish, horizontal = TRUE)
+hist(Fish)
+qqnorm(Fish)
+summary(Fish)
+</script></div>
 <div class="autopermalink" data-description="Subsection 5.3.5: Practice Problems"><a href="#subsec-NormalityPractice" title="Copy heading and permalink for Subsection 5.3.5: Practice Problems" aria-label="Copy heading and permalink for Subsection 5.3.5: Practice Problems">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 5.3: Assessing Normality"><a href="#sec-AssessNormality" title="Copy heading and permalink for Section 5.3: Assessing Normality" aria-label="Copy heading and permalink for Section 5.3: Assessing Normality">🔗</a></div>
 </section>
